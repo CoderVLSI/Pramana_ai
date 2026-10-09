@@ -162,12 +162,12 @@ export async function registerSettingsRoutes(app: FastifyInstance) {
             work_ids: {
               type: "array",
               items: { type: "string" },
-              maxItems: 32,
+              maxItems: 160,
             },
             edition_ids: {
               type: "array",
               items: { type: "string" },
-              maxItems: 32,
+              maxItems: 160,
             },
           },
         },

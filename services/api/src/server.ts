@@ -1,3 +1,4 @@
+import { upanishadRegister } from "../../../packages/corpus-schema/upanishads";
 import { gitaPressRegister, gitaPressEpicRegister, gitaPressVedaRegister } from "../../../packages/corpus-schema/register";
 import Fastify from "fastify";
 import cors from "@fastify/cors";
@@ -59,8 +60,8 @@ const questionSchema = {
   additionalProperties: false,
   properties: {
     query: { type: "string", minLength: 1, maxLength: 2000, pattern: "\\S" },
-    work_ids: { type: "array", maxItems: 32, items: { type: "string" } },
-    edition_ids: { type: "array", maxItems: 32, items: { type: "string" } },
+    work_ids: { type: "array", maxItems: 160, items: { type: "string" } },
+    edition_ids: { type: "array", maxItems: 160, items: { type: "string" } },
   },
 };
 app.get("/health", async () => ({
@@ -71,13 +72,14 @@ app.get("/v1/works", async () => works);
 app.get("/v1/corpus/register", async () => ({
   publisher: "Gita Press",
   location: "Gorakhpur",
-  total_works: 24,
+  total_works: 132,
+  upanishad_count: 108,
   veda_count: 4,
   mahapurana_count: 18,
   epic_count: 2,
   indexed_passages: 0,
   rights_status: "pending",
-  works: [...gitaPressRegister, ...gitaPressEpicRegister, ...gitaPressVedaRegister],
+  works: [...gitaPressRegister, ...gitaPressEpicRegister, ...gitaPressVedaRegister, ...upanishadRegister],
 }));
 app.get("/v1/passages", async () => passages);
 app.get<{ Params: { id: string } }>("/v1/passages/:id", async (req, reply) => {

@@ -1,3 +1,4 @@
+import { UPANISHAD_TARGETS } from "../../../packages/corpus-schema/upanishads";
 import { gitaPressRegister } from "../../../packages/corpus-schema/register";
 import { createHash } from "node:crypto";
 import { RELEASE, type Passage } from "../../../packages/citation-schema/index";
@@ -142,3 +143,6 @@ for (const work of works) {
 
 for (const [id, title] of [["rigveda", "Rigveda"], ["yajurveda", "Yajurveda"], ["samaveda", "Samaveda"], ["atharvaveda", "Atharvaveda"]])
   works.push({id, title, subtitle: "Recension and full Gita Press edition not yet established", status: "Planned · source verification pending", passage_count: 0, editions: []});
+
+for (const [id, title] of UPANISHAD_TARGETS)
+  works.push({id, title, subtitle: "Muktika list · Gita Press edition and coverage pending", status: "Planned · source review pending", passage_count: 0, editions: []});

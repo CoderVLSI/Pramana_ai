@@ -1,3 +1,4 @@
+import { UPANISHAD_SCOPE, UPANISHAD_TARGETS } from "../../packages/corpus-schema/upanishads";
 import {
   GITA_PRESS_SCOPE,
   MAHAPURANA_TARGETS,
@@ -158,6 +159,8 @@ function StudyApp() {
           work_ids:
             scope === GITA_PRESS_SCOPE
               ? MAHAPURANA_TARGETS.map(([id]) => id)
+              : scope === UPANISHAD_SCOPE
+                ? UPANISHAD_TARGETS.map(([id]) => id)
               : [scope],
         }),
       );
@@ -435,6 +438,8 @@ function StudyApp() {
                         ? "18 Mahapuranas · Gita Press"
                         : scope === "bhagavad-gita"
                           ? "Bhagavad Gita · fixtures"
+                          : scope === UPANISHAD_SCOPE
+                          ? "108 Upanishads · Muktika list"
                           : VEDA_TARGETS.some(([id]) => id === scope)
                             ? (VEDA_TARGETS.find(([id]) => id === scope)?.[1] || "Veda")
                           : scope === "valmiki-ramayana"
@@ -451,6 +456,7 @@ function StudyApp() {
                         GITA_PRESS_SCOPE,
                         "All 18 Mahapuranas · Gita Press, Gorakhpur",
                       ],
+                      [UPANISHAD_SCOPE, "108 Upanishads · separate collection · editions pending"],
                       ["bhagavad-gita", "Bhagavad Gita · development fixtures"],
                       ...VEDA_TARGETS.map(([id, title]) => [id, `${title} · planned · edition pending`]),
                       ["valmiki-ramayana", "Valmiki Ramayana · Gita Press · awaiting corpus"],
@@ -534,7 +540,7 @@ function StudyApp() {
                 ) : scope !== "bhagavad-gita" ? (
                   <View style={s.passage}>
                     <Text style={s.sectionTitle}>
-                      {scope === GITA_PRESS_SCOPE ? "The 18-work reference collection" : scope === "valmiki-ramayana" ? "Valmiki Ramayana reference collection" : scope === "mahabharata" ? "Vyasa’s Mahabharata reference collection" : "Vedic source collection · recension pending"}
+                      {scope === GITA_PRESS_SCOPE ? "The 18-work reference collection" : scope === UPANISHAD_SCOPE ? "108 Upanishads · Muktika reference list" : scope === "valmiki-ramayana" ? "Valmiki Ramayana reference collection" : scope === "mahabharata" ? "Vyasa’s Mahabharata reference collection" : "Vedic source collection · recension pending"}
                     </Text>
                     <Text style={s.body}>
                       Keep original passages, translations, and edition details
