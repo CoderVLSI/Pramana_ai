@@ -78,7 +78,15 @@ export const works = [
   {
     id: "mahabharata",
     title: "Mahabharata",
-    subtitle: "The great epic, examined passage by passage",
+    subtitle: "Traditionally attributed to Vyasa · Gita Press edition pending",
+    passage_count: 0,
+    status: "Awaiting reviewed corpus",
+    editions: [],
+  },
+  {
+    id: "valmiki-ramayana",
+    title: "Valmiki Ramayana",
+    subtitle: "Valmiki's Sanskrit epic · Gita Press edition pending",
     passage_count: 0,
     status: "Awaiting reviewed corpus",
     editions: [],
@@ -131,3 +139,6 @@ for (const work of works) {
     work.subtitle = "Gita Press reference collection · not indexed";
   }
 }
+
+for (const [id, title] of [["rigveda", "Rigveda"], ["yajurveda", "Yajurveda"], ["samaveda", "Samaveda"], ["atharvaveda", "Atharvaveda"]])
+  works.push({id, title, subtitle: "Recension and full Gita Press edition not yet established", status: "Planned · source verification pending", passage_count: 0, editions: []});

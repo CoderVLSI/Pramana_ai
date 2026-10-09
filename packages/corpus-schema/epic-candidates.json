@@ -1,0 +1,444 @@
+{
+  "checked_on": "2026-10-09",
+  "note": "Publisher catalogue metadata and uploader metadata only. No content downloaded or approved. Exact edition, publisher scan identity and complete coverage remain pending.",
+  "works": [
+    {
+      "work_id": "valmiki-ramayana",
+      "publisher_target": "Gita Press, Gorakhpur",
+      "author_attribution": "Valmiki",
+      "preferred_languages": [
+        "Sanskrit original",
+        "Hindi translation"
+      ],
+      "required_divisions": [
+        "Bala",
+        "Ayodhya",
+        "Aranya",
+        "Kishkindha",
+        "Sundara",
+        "Yuddha",
+        "Uttara"
+      ],
+      "catalogue_candidates": [
+        {
+          "catalogue_code": "75",
+          "title": "Shrimad Valmiki Ramayana Hindi - (Part 1) – Illustrated Hindi Translation | Gita Press Gorakhpur Publication",
+          "source_url": "https://gitapress.org/product/shrimad-valmiki-ramayana-hindi-part-1-illustrated-hindi-translation-or-gita-press-gorakhpur-publication",
+          "catalogue_language": "Hindi",
+          "volume": 1,
+          "coverage_status": "requires_copy_inspection",
+          "edition_verified": false,
+          "print_year": null,
+          "rights_status": "pending"
+        },
+        {
+          "catalogue_code": "76",
+          "title": "Shrimad Valmiki Ramayana Hindi (Part 2) – Illustrated Hindi Translation | Gita Press Gorakhpur Publication",
+          "source_url": "https://gitapress.org/product/shrimad-valmiki-ramayana-hindi-part-2-illustrated-hindi-translation-or-gita-press-gorakhpur-publication",
+          "catalogue_language": "Hindi",
+          "volume": 2,
+          "coverage_status": "requires_copy_inspection",
+          "edition_verified": false,
+          "print_year": null,
+          "rights_status": "pending"
+        },
+        {
+          "catalogue_code": "77",
+          "title": "Shrimad Valmiki Ramayana Hindi  | Gita Press Gorakhpur Publication",
+          "source_url": "https://gitapress.org/product/shrimad-valmiki-ramayana-hindi-or-gita-press-gorakhpur-publication",
+          "catalogue_language": "Hindi",
+          "volume": null,
+          "coverage_status": "requires_copy_inspection",
+          "edition_verified": false,
+          "print_year": null,
+          "rights_status": "pending"
+        },
+        {
+          "catalogue_code": "583",
+          "title": "Srimad Valmiki Ramayana Shlokas  by Shri Maharshi Valmiki | Language: Sanskrit | Code: 583",
+          "source_url": "https://gitapress.org/product/srimad-valmiki-ramayana-shlokas-by-shri-maharshi-valmiki-or-language-sanskrit-or-code-583",
+          "catalogue_language": "Sanskrit",
+          "volume": null,
+          "coverage_status": "requires_copy_inspection",
+          "edition_verified": false,
+          "print_year": null,
+          "rights_status": "pending"
+        },
+        {
+          "catalogue_code": "CB005",
+          "title": "Shrimad Valmiki Ramayan Hindi Set – Part 1 & 2 (Complete Set) (Book Codes: 75, 76)",
+          "source_url": "https://gitapress.org/product/shrimad-valmiki-ramayan-hindi-set-part-1-and-2-complete-set-book-codes-75-76",
+          "catalogue_language": "Hindi",
+          "volume": null,
+          "coverage_status": "requires_copy_inspection",
+          "edition_verified": false,
+          "print_year": null,
+          "rights_status": "pending"
+        },
+        {
+          "catalogue_code": "1338",
+          "title": "Shrimad Valmiki Ramayan Hindi Gita Press Gorakhpur Code 1338 | Gita Press, Gorakhpur | श्रीमद् वाल्मीकि रामायण | Hindi |Size: |Code: 1338",
+          "source_url": "https://gitapress.org/product/shrimad-valmiki-ramayan-hindi-gita-press-gorakhpur-code-1338-or-gita-press-gorakhpur-or-or-hindi-orsize-orcode-1338",
+          "catalogue_language": "Hindi",
+          "volume": null,
+          "coverage_status": "requires_copy_inspection",
+          "edition_verified": false,
+          "print_year": null,
+          "rights_status": "pending"
+        }
+      ],
+      "archive_candidates": [
+        {
+          "identifier": "valmiki-ramayan-part-1-gita-press",
+          "source_url": "https://archive.org/details/valmiki-ramayan-part-1-gita-press",
+          "title": "Valmiki Ramayan Part 1 Gita Press",
+          "language": null,
+          "publisher_claim": null,
+          "uploader_license_claim": null,
+          "metadata_checked": true,
+          "publisher_verified": false,
+          "edition_verified": false,
+          "coverage_verified": false,
+          "rights_verified": false,
+          "files": [
+            {
+              "name": "Valmiki Ramayan Part 1 Gita press.pdf",
+              "bytes": 321251128
+            },
+            {
+              "name": "Valmiki Ramayan Part 1 Gita press_djvu.xml",
+              "bytes": 40645919
+            },
+            {
+              "name": "Valmiki Ramayan Part 1 Gita press_text.pdf",
+              "bytes": 44056136
+            }
+          ]
+        },
+        {
+          "identifier": "valmiki-ramayan-part-2-gita-press",
+          "source_url": "https://archive.org/details/valmiki-ramayan-part-2-gita-press",
+          "title": "Valmiki Ramayan Part 2 Gita Press",
+          "language": null,
+          "publisher_claim": null,
+          "uploader_license_claim": null,
+          "metadata_checked": true,
+          "publisher_verified": false,
+          "edition_verified": false,
+          "coverage_verified": false,
+          "rights_verified": false,
+          "files": [
+            {
+              "name": "Valmiki Ramayan Part 2 Gita press.pdf",
+              "bytes": 314073107
+            },
+            {
+              "name": "Valmiki Ramayan Part 2 Gita press_djvu.xml",
+              "bytes": 40872311
+            }
+          ]
+        },
+        {
+          "identifier": "fdag_shrimad-valmiki-ramayan-with-hindi-trans.-part-2-series-no.-76-gita-press",
+          "source_url": "https://archive.org/details/fdag_shrimad-valmiki-ramayan-with-hindi-trans.-part-2-series-no.-76-gita-press",
+          "title": "Shrimad Valmiki Ramayan With Hindi Trans. Part 2 Series No. 76 Gita Press",
+          "language": "san",
+          "publisher_claim": null,
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "metadata_checked": true,
+          "publisher_verified": false,
+          "edition_verified": false,
+          "coverage_verified": false,
+          "rights_verified": false,
+          "files": [
+            {
+              "name": "Shrimad Valmiki Ramayan with Hindi Trans. Part 2 Series No. 76 - Gita Press.pdf",
+              "bytes": 619908447
+            },
+            {
+              "name": "Shrimad Valmiki Ramayan with Hindi Trans. Part 2 Series No. 76 - Gita Press_djvu.xml",
+              "bytes": 48752779
+            },
+            {
+              "name": "Shrimad Valmiki Ramayan with Hindi Trans. Part 2 Series No. 76 - Gita Press_text.pdf",
+              "bytes": 197427943
+            }
+          ]
+        }
+      ],
+      "indexed_approved_passages": 0,
+      "edition_verified": false,
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "mahabharata",
+      "publisher_target": "Gita Press, Gorakhpur",
+      "author_attribution": "Vyasa",
+      "preferred_languages": [
+        "Sanskrit original",
+        "Hindi translation"
+      ],
+      "required_divisions": [
+        "Adi",
+        "Sabha",
+        "Vana",
+        "Virata",
+        "Udyoga",
+        "Bhishma",
+        "Drona",
+        "Karna",
+        "Shalya",
+        "Sauptika",
+        "Stri",
+        "Shanti",
+        "Anushasana",
+        "Ashvamedhika",
+        "Ashramavasika",
+        "Mausala",
+        "Mahaprasthanika",
+        "Svargarohana"
+      ],
+      "catalogue_candidates": [
+        {
+          "catalogue_code": "32",
+          "title": "Mahabharat - Volume 1 (Adi Parva & Sabha Parva, Illustrated Hindi Translation) | Language: Hindi | Code: 32",
+          "source_url": "https://gitapress.org/product/mahabharat-volume-1-adi-parva-and-sabha-parva-illustrated-hindi-translation-or-language-hindi-or-code-32",
+          "catalogue_language": "Hindi",
+          "volume": 1,
+          "coverage_status": "requires_copy_inspection",
+          "edition_verified": false,
+          "print_year": null,
+          "rights_status": "pending"
+        },
+        {
+          "catalogue_code": "33",
+          "title": "Mahabharat – Volume 2 (Van Parva & Virat Parva, Illustrated Hindi Translation) | Language: Hindi | Code: 33",
+          "source_url": "https://gitapress.org/product/mahabharat-volume-2-van-parva-and-virat-parva-illustrated-hindi-translation-or-language-hindi-or-code-33",
+          "catalogue_language": "Hindi",
+          "volume": 2,
+          "coverage_status": "requires_copy_inspection",
+          "edition_verified": false,
+          "print_year": null,
+          "rights_status": "pending"
+        },
+        {
+          "catalogue_code": "34",
+          "title": "Mahabharat - Volume 3 (Udyoga Parva & Bhishma Parva, Illustrated Hindi Translation) | Language: Hindi | Code: 34",
+          "source_url": "https://gitapress.org/product/mahabharat-volume-3-udyoga-parva-and-bhishma-parva-illustrated-hindi-translation-or-language-hindi-or-code-34",
+          "catalogue_language": "Hindi",
+          "volume": 3,
+          "coverage_status": "requires_copy_inspection",
+          "edition_verified": false,
+          "print_year": null,
+          "rights_status": "pending"
+        },
+        {
+          "catalogue_code": "35",
+          "title": "Mahabharat - Volume 4 Sampurna Mahakavya with Simple Hindi Translation & Illustrations | Language: Hindi | Code: 35",
+          "source_url": "https://gitapress.org/product/mahabharat-volume-4-sampurna-mahakavya-with-simple-hindi-translation-and-illustrations-or-language-hindi-or-code-35",
+          "catalogue_language": "Hindi",
+          "volume": 4,
+          "coverage_status": "requires_copy_inspection",
+          "edition_verified": false,
+          "print_year": null,
+          "rights_status": "pending"
+        },
+        {
+          "catalogue_code": "36",
+          "title": "Mahabharat-Volume 5 (Shanti Parva) With Illustrations and Simple Hindi Translation | Language: Hindi | Code: 36",
+          "source_url": "https://gitapress.org/product/mahabharat-volume-5-shanti-parva-with-illustrations-and-simple-hindi-translation-or-language-hindi-or-code-36",
+          "catalogue_language": "Hindi",
+          "volume": 5,
+          "coverage_status": "requires_copy_inspection",
+          "edition_verified": false,
+          "print_year": null,
+          "rights_status": "pending"
+        },
+        {
+          "catalogue_code": "37",
+          "title": "Mahabharat-Volume 6 Anushasan, Ashwamedhika, Ashramavasika, Mausal, Mahaprasthanika & Svargarohan Parva With Illustrations and Simple Hindi Translation | Language: Hindi | Code: 37",
+          "source_url": "https://gitapress.org/product/mahabharat-volume-6-anushasan-ashwamedhika-ashramavasika-mausal-mahaprasthanika-and-svargarohan-parva-with-illustrations-and-simple-hindi-translation-or-language-hindi-or-code-37",
+          "catalogue_language": "Hindi",
+          "volume": 6,
+          "coverage_status": "requires_copy_inspection",
+          "edition_verified": false,
+          "print_year": null,
+          "rights_status": "pending"
+        },
+        {
+          "catalogue_code": "728",
+          "title": "Mahabharata (In Six Volumes)  (Hindi)",
+          "source_url": "https://gitapress.org/product/mahabharata-in-six-volumes-hindi",
+          "catalogue_language": "Hindi",
+          "volume": null,
+          "coverage_status": "requires_copy_inspection",
+          "edition_verified": false,
+          "print_year": null,
+          "rights_status": "pending"
+        }
+      ],
+      "archive_candidates": [
+        {
+          "identifier": "mahabharata-by-gita-press-in-hindi-and-sanskrit",
+          "source_url": "https://archive.org/details/mahabharata-by-gita-press-in-hindi-and-sanskrit",
+          "title": "Mahabharata by Gita Press in Hindi and sanskrit",
+          "language": "hin",
+          "publisher_claim": null,
+          "uploader_license_claim": null,
+          "metadata_checked": true,
+          "publisher_verified": false,
+          "edition_verified": false,
+          "coverage_verified": false,
+          "rights_verified": false,
+          "files": [
+            {
+              "name": "Mahabharata Volume 1.pdf",
+              "bytes": 11939327
+            },
+            {
+              "name": "Mahabharata Volume 1_djvu.xml",
+              "bytes": 48230010
+            },
+            {
+              "name": "Mahabharata Volume 2.pdf",
+              "bytes": 16500656
+            },
+            {
+              "name": "Mahabharata Volume 2_djvu.xml",
+              "bytes": 54328191
+            },
+            {
+              "name": "Mahabharata Volume 3.pdf",
+              "bytes": 12222494
+            },
+            {
+              "name": "Mahabharata Volume 3_djvu.xml",
+              "bytes": 55119373
+            },
+            {
+              "name": "Mahabharata Volume 4.pdf",
+              "bytes": 15189908
+            },
+            {
+              "name": "Mahabharata Volume 4_djvu.xml",
+              "bytes": 71047626
+            },
+            {
+              "name": "Mahabharata Volume 5.pdf",
+              "bytes": 10253166
+            },
+            {
+              "name": "Mahabharata Volume 5_djvu.xml",
+              "bytes": 56509579
+            },
+            {
+              "name": "Mahabharata Volume 6.pdf",
+              "bytes": 12009642
+            },
+            {
+              "name": "Mahabharata Volume 6_djvu.xml",
+              "bytes": 56863489
+            }
+          ]
+        },
+        {
+          "identifier": "unabridged-mahabharata-6-volumes-set-in-hindi-by-veda-vyasa_202412",
+          "source_url": "https://archive.org/details/unabridged-mahabharata-6-volumes-set-in-hindi-by-veda-vyasa_202412",
+          "title": "MAHABHARAT. Sampurn. Gitapress",
+          "language": null,
+          "publisher_claim": null,
+          "uploader_license_claim": null,
+          "metadata_checked": true,
+          "publisher_verified": false,
+          "edition_verified": false,
+          "coverage_verified": false,
+          "rights_verified": false,
+          "files": [
+            {
+              "name": "Unabridged Mahabharata 6 Volumes Set in Hindi by Veda Vyasa.pdf",
+              "bytes": 93760826
+            },
+            {
+              "name": "Unabridged Mahabharata 6 Volumes Set in Hindi by Veda Vyasa_djvu.xml",
+              "bytes": 342525657
+            }
+          ]
+        },
+        {
+          "identifier": "EQlZ_mahabharat-6-khandas-with-translation-and-illustration-by-ramnarayan-datt-pandey",
+          "source_url": "https://archive.org/details/EQlZ_mahabharat-6-khandas-with-translation-and-illustration-by-ramnarayan-datt-pandey",
+          "title": "Mahabharat ( 6 Khandas) With Translation And Illustration By Ramnarayan Datt Pandey Gita Press Gorakhpur",
+          "language": null,
+          "publisher_claim": null,
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "metadata_checked": true,
+          "publisher_verified": false,
+          "edition_verified": false,
+          "coverage_verified": false,
+          "rights_verified": false,
+          "files": [
+            {
+              "name": "Mahabharat (6 Khandas) with Translation and Illustration by Ramnarayan Datt Pandey - Gita Press Gorakhpur.pdf",
+              "bytes": 909684213
+            },
+            {
+              "name": "Mahabharat (6 Khandas) with Translation and Illustration by Ramnarayan Datt Pandey - Gita Press Gorakhpur_djvu.xml",
+              "bytes": 61806812
+            }
+          ]
+        },
+        {
+          "identifier": "mahabharata-part-6",
+          "source_url": "https://archive.org/details/mahabharata-part-6",
+          "title": "Mahabharata Part 6",
+          "language": "Sanskrit-Hindi",
+          "publisher_claim": null,
+          "uploader_license_claim": null,
+          "metadata_checked": true,
+          "publisher_verified": false,
+          "edition_verified": false,
+          "coverage_verified": false,
+          "rights_verified": false,
+          "files": [
+            {
+              "name": "Mahabharata Part6.pdf",
+              "bytes": 75328121
+            },
+            {
+              "name": "Mahabharata Part6_djvu.xml",
+              "bytes": 52818136
+            }
+          ]
+        },
+        {
+          "identifier": "ivzc-mahabharat-chaturth-khand-by-vedavyas-sanskrit-and",
+          "source_url": "https://archive.org/details/ivzc-mahabharat-chaturth-khand-by-vedavyas-sanskrit-and",
+          "title": "Mahabharat Chaturth Khand By Vedavyas Sanskrit And Hindi Itihasa Illustrated Missing Pages Gorakhpur 1987 Gita Press",
+          "language": null,
+          "publisher_claim": null,
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "metadata_checked": true,
+          "publisher_verified": false,
+          "edition_verified": false,
+          "coverage_verified": false,
+          "rights_verified": false,
+          "files": [
+            {
+              "name": "Mahabharat Chaturth Khand By Vedavyas Sanskrit And Hindi Itihasa Illustrated Missing Pages Gorakhpur 1987 - Gita Press.pdf",
+              "bytes": 912775863
+            },
+            {
+              "name": "Mahabharat Chaturth Khand By Vedavyas Sanskrit And Hindi Itihasa Illustrated Missing Pages Gorakhpur 1987 - Gita Press_djvu.xml",
+              "bytes": 3304268
+            }
+          ]
+        }
+      ],
+      "indexed_approved_passages": 0,
+      "edition_verified": false,
+      "coverage_verified": false,
+      "rights_verified": false
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 import {
   GITA_PRESS_SCOPE,
   MAHAPURANA_TARGETS,
+  VEDA_TARGETS,
 } from "../../packages/corpus-schema/register";
 import SettingsScreen from "./SettingsScreen";
 import RishiPreview from "./RishiAvatar";
@@ -434,7 +435,11 @@ function StudyApp() {
                         ? "18 Mahapuranas · Gita Press"
                         : scope === "bhagavad-gita"
                           ? "Bhagavad Gita · fixtures"
-                          : "Mahabharata"}{" "}
+                          : VEDA_TARGETS.some(([id]) => id === scope)
+                            ? (VEDA_TARGETS.find(([id]) => id === scope)?.[1] || "Veda")
+                          : scope === "valmiki-ramayana"
+                            ? "Valmiki Ramayana · Gita Press"
+                            : "Mahabharata · Gita Press"}{" "}
                       ▾
                     </Text>
                   </Pressable>
@@ -447,7 +452,9 @@ function StudyApp() {
                         "All 18 Mahapuranas · Gita Press, Gorakhpur",
                       ],
                       ["bhagavad-gita", "Bhagavad Gita · development fixtures"],
-                      ["mahabharata", "Mahabharata · awaiting corpus"],
+                      ...VEDA_TARGETS.map(([id, title]) => [id, `${title} · planned · edition pending`]),
+                      ["valmiki-ramayana", "Valmiki Ramayana · Gita Press · awaiting corpus"],
+                      ["mahabharata", "Vyasa’s Mahabharata · Gita Press · awaiting corpus"],
                     ].map(([id, label]) => (
                       <Pressable
                         key={id}
@@ -466,15 +473,15 @@ function StudyApp() {
                     ))}
                   </View>
                 )}
-                {scope === GITA_PRESS_SCOPE && !answer && (
+                {scope !== "bhagavad-gita" && !answer && (
                   <View style={s.info}>
                     <Text style={s.body}>
                       Gita Press, Gorakhpur is the selected reference publisher
-                      for all 18 Mahapuranas.
+                      for this collection; a full matching edition must be established.
                     </Text>
                     <Text style={s.small}>
                       Edition selection, usage rights, and source review are
-                      pending. No Purana passages are indexed yet. Select
+                      pending. No approved passages are indexed for this collection; a full matching edition must be established. Select
                       development fixtures to explore the working reader.
                     </Text>
                   </View>
@@ -524,10 +531,10 @@ function StudyApp() {
                       <Text style={s.body}>Start a new question</Text>
                     </Pressable>
                   </View>
-                ) : scope === GITA_PRESS_SCOPE ? (
+                ) : scope !== "bhagavad-gita" ? (
                   <View style={s.passage}>
                     <Text style={s.sectionTitle}>
-                      The 18-work reference collection
+                      {scope === GITA_PRESS_SCOPE ? "The 18-work reference collection" : scope === "valmiki-ramayana" ? "Valmiki Ramayana reference collection" : scope === "mahabharata" ? "Vyasa’s Mahabharata reference collection" : "Vedic source collection · recension pending"}
                     </Text>
                     <Text style={s.body}>
                       Keep original passages, translations, and edition details

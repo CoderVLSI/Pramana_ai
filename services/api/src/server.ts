@@ -1,4 +1,4 @@
-import { gitaPressRegister } from "../../../packages/corpus-schema/register";
+import { gitaPressRegister, gitaPressEpicRegister, gitaPressVedaRegister } from "../../../packages/corpus-schema/register";
 import Fastify from "fastify";
 import cors from "@fastify/cors";
 import { mkdir, appendFile } from "node:fs/promises";
@@ -71,10 +71,13 @@ app.get("/v1/works", async () => works);
 app.get("/v1/corpus/register", async () => ({
   publisher: "Gita Press",
   location: "Gorakhpur",
-  total_works: 18,
+  total_works: 24,
+  veda_count: 4,
+  mahapurana_count: 18,
+  epic_count: 2,
   indexed_passages: 0,
   rights_status: "pending",
-  works: gitaPressRegister,
+  works: [...gitaPressRegister, ...gitaPressEpicRegister, ...gitaPressVedaRegister],
 }));
 app.get("/v1/passages", async () => passages);
 app.get<{ Params: { id: string } }>("/v1/passages/:id", async (req, reply) => {

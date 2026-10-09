@@ -47,3 +47,34 @@ export const gitaPressRegister = MAHAPURANA_TARGETS.map(([work_id, title]) => ({
     catalogueCandidates.find((w) => w.work_id === work_id)?.status ??
     "not_checked",
 }));
+
+export const EPIC_TARGETS = [
+  ["valmiki-ramayana", "Valmiki Ramayana", "Valmiki", "kanda"],
+  ["mahabharata", "Mahabharata", "Vyasa", "parva"],
+] as const;
+export const gitaPressEpicRegister = EPIC_TARGETS.map(([work_id, title, traditional_author, division]) => ({
+  work_id, title, traditional_author, division,
+  intended_publisher: "Gita Press", publisher_location: "Gorakhpur",
+  edition_status: "not_selected", edition_id: null,
+  completeness: "unconfirmed", rights_status: "pending", review_status: "pending",
+  indexed_passages: 0,
+  citation_hierarchy: [division, "chapter", "verse"],
+  catalogue_url: "https://gitapress.org/catalogue",
+  requested_assets: ["Sanskrit source text", "Hindi translation where licensed"],
+  required_permissions: ["index", "quote", "remote_embedding", "audio"],
+}));
+
+export const VEDA_TARGETS = [
+  ["rigveda", "Rigveda"], ["yajurveda", "Yajurveda"],
+  ["samaveda", "Samaveda"], ["atharvaveda", "Atharvaveda"],
+] as const;
+export const gitaPressVedaRegister = VEDA_TARGETS.map(([work_id, title]) => ({
+  work_id, title, intended_publisher: "Gita Press", publisher_location: "Gorakhpur",
+  edition_status: "not_selected", edition_id: null, recension: null,
+  completeness: "unconfirmed", rights_status: "pending", review_status: "pending",
+  indexed_passages: 0, catalogue_status: "full_editions_not_established",
+  citation_hierarchy: "To be selected from the actual recension",
+  accent_review_status: "pending",
+  requested_assets: ["Accented Sanskrit Samhita text", "Hindi translation where licensed"],
+  required_permissions: ["index", "quote", "remote_embedding", "audio"],
+}));
