@@ -37,15 +37,26 @@ const C = {
   accent: "#b27e42",
 };
 async function request(path: string, body?: unknown) {
-  const r = await fetch(API + path, {
-    method: body ? "POST" : "GET",
-    headers: { "Content-Type": "application/json" },
-    body: body ? JSON.stringify(body) : undefined,
-  });
-  const data = await r.json();
-  if (!r.ok) throw Error(data.error || data.message || "Request failed");
-  return data;
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 12000);
+  try {
+    const r = await fetch(API + path, {
+      method: body ? "POST" : "GET",
+      headers: { "Content-Type": "application/json" },
+      body: body ? JSON.stringify(body) : undefined,
+      signal: controller.signal,
+    });
+    const data = await r.json();
+    if (!r.ok) throw Error(data.error || data.message || "Request failed");
+    return data;
+  } catch (error) {
+    if (controller.signal.aborted) throw Error("The connection timed out. Please try again.");
+    throw error;
+  } finally {
+    clearTimeout(timer);
+  }
 }
+
 function Icon({
   name,
   size = 22,

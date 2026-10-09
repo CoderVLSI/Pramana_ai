@@ -14,7 +14,8 @@
     "test": "tsx --test eval/*.test.ts",
     "build:web": "npm run build -w @pramana/mobile",
     "build:android": "npm exec -w @pramana/mobile -- expo export --platform android --output-dir dist-android",
-    "ingest:gita-press": "tsx services/ingest/gita-press.ts"
+    "ingest:gita-press": "tsx services/ingest/gita-press.ts",
+    "release:preflight": "node scripts/release-preflight.mjs"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",
