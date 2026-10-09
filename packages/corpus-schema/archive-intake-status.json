@@ -1,0 +1,369 @@
+{
+  "checked_on": "2026-10-09",
+  "works": [
+    {
+      "work_id": "brahma-purana",
+      "candidate_url": "https://archive.org/details/brahma-puran-gita-press-gorakhpur_202204",
+      "title": "Brahma Puran Gita Press Gorakhpur",
+      "identifier": "brahma-puran-gita-press-gorakhpur_202204",
+      "status": "metadata_checked_not_edition_verified",
+      "pdf_files": [
+        {
+          "name": "Brahma Puran - Gita Press Gorakhpur.pdf",
+          "bytes": "75603799"
+        },
+        {
+          "name": "Brahma Puran - Gita Press Gorakhpur_text.pdf",
+          "bytes": "20148921"
+        }
+      ],
+      "page_ocr_available": true,
+      "uploader_license_claim": "http://creativecommons.org/publicdomain/mark/1.0/",
+      "publisher_verified": false,
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "padma-purana",
+      "candidate_url": "https://archive.org/details/padma-puran-gita-press",
+      "title": "Padma Purana (पद्म पुराण) - Gita Press",
+      "identifier": "padma-puran-gita-press",
+      "status": "metadata_checked_not_edition_verified",
+      "pdf_files": [
+        {
+          "name": "Padma Puran - Gita Press.pdf",
+          "bytes": "88296325"
+        },
+        {
+          "name": "Padma Puran - Gita Press_text.pdf",
+          "bytes": "130046360"
+        }
+      ],
+      "page_ocr_available": true,
+      "uploader_license_claim": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "publisher_verified": false,
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "vishnu-purana",
+      "candidate_url": "https://archive.org/details/vishnu-puran-gita-press_202502",
+      "title": "Vishnu Puran Gita Press",
+      "identifier": "vishnu-puran-gita-press_202502",
+      "status": "metadata_checked_not_edition_verified",
+      "pdf_files": [
+        {
+          "name": "Vishnu Puran - Gita Press.pdf",
+          "bytes": "47603617"
+        },
+        {
+          "name": "Vishnu Puran - Gita Press_text.pdf",
+          "bytes": "61236786"
+        }
+      ],
+      "page_ocr_available": true,
+      "uploader_license_claim": null,
+      "publisher_verified": false,
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "shiva-purana",
+      "candidate_url": "https://archive.org/details/shiva-purana-odia-gita-press",
+      "title": "ସଂକ୍ଷିପ୍ତ ଶିବପୁରାଣ - Shiva Purana - Gita Press",
+      "identifier": "shiva-purana-odia-gita-press",
+      "status": "metadata_checked_not_edition_verified",
+      "pdf_files": [
+        {
+          "name": "Shiva Purana - Gita Press (Odia).pdf",
+          "bytes": "86451475"
+        },
+        {
+          "name": "Shiva Purana - Gita Press (Odia)_text.pdf",
+          "bytes": "114234090"
+        }
+      ],
+      "page_ocr_available": true,
+      "uploader_license_claim": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "publisher_verified": false,
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "bhagavata-purana",
+      "candidate_url": "https://archive.org/details/EaDg_shrimad-bhagvat-maha-puran-of-vedvyas-vol-2-translated-by-munilal-gita-press-gorakhpur",
+      "title": "Shrimad Bhagvat Maha Puran Of Vedvyas Vol 2 Translated By Munilal Gita Press, Gorakhpur",
+      "identifier": "EaDg_shrimad-bhagvat-maha-puran-of-vedvyas-vol-2-translated-by-munilal-gita-press-gorakhpur",
+      "status": "metadata_checked_not_edition_verified",
+      "pdf_files": [
+        {
+          "name": "Shrimad Bhagvat Maha Puran Of Vedvyas Vol 2 Translated By Munilal - Gita Press, Gorakhpur.pdf",
+          "bytes": "568665414"
+        },
+        {
+          "name": "Shrimad Bhagvat Maha Puran Of Vedvyas Vol 2 Translated By Munilal - Gita Press, Gorakhpur_text.pdf",
+          "bytes": "57998786"
+        }
+      ],
+      "page_ocr_available": true,
+      "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "publisher_verified": false,
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "narada-purana",
+      "candidate_url": "https://archive.org/details/narada-puran-gita-press-gorakhpur",
+      "title": "Narada Puran Gita Press Gorakhpur",
+      "identifier": "narada-puran-gita-press-gorakhpur",
+      "status": "metadata_checked_not_edition_verified",
+      "pdf_files": [
+        {
+          "name": "Narada Puran - Gita Press Gorakhpur.pdf",
+          "bytes": "2289410734"
+        }
+      ],
+      "page_ocr_available": true,
+      "uploader_license_claim": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "publisher_verified": false,
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "markandeya-purana",
+      "candidate_url": "https://archive.org/details/markandeya-purana-gita-press.pdf",
+      "title": "Markandeya Purana Gita Press.pdf",
+      "identifier": "markandeya-purana-gita-press.pdf",
+      "status": "metadata_checked_not_edition_verified",
+      "pdf_files": [
+        {
+          "name": "markandeya purana gita press.pdf_text.pdf",
+          "bytes": "14626974"
+        }
+      ],
+      "page_ocr_available": true,
+      "uploader_license_claim": null,
+      "publisher_verified": false,
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "agni-purana",
+      "candidate_url": "https://archive.org/details/ubsc_kalyan-agni-puran-garga-samhita-anka-gita-press-gorakhpur",
+      "title": "Kalyan Agni Puran Garga Samhita Anka Gita Press Gorakhpur",
+      "identifier": "ubsc_kalyan-agni-puran-garga-samhita-anka-gita-press-gorakhpur",
+      "status": "metadata_checked_not_edition_verified",
+      "pdf_files": [
+        {
+          "name": "Kalyan Agni Puran Garga Samhita Anka - Gita Press Gorakhpur.pdf",
+          "bytes": "534441243"
+        }
+      ],
+      "page_ocr_available": true,
+      "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "publisher_verified": false,
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "bhavishya-purana",
+      "candidate_url": "https://archive.org/details/rqrh-bhavishya-puran-gita-press-gorakhpur_202608",
+      "title": "Bhavishya Puran Gita Press Gorakhpur",
+      "identifier": "rqrh-bhavishya-puran-gita-press-gorakhpur_202608",
+      "status": "metadata_checked_not_edition_verified",
+      "pdf_files": [
+        {
+          "name": "Bhavishya Puran - Gita Press Gorakhpur.pdf",
+          "bytes": "1550977141"
+        }
+      ],
+      "page_ocr_available": true,
+      "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "publisher_verified": false,
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "brahmavaivarta-purana",
+      "candidate_url": "https://archive.org/details/brahma-vaivarta-purana-gitapress-hindi",
+      "title": "ब्रह्मवैवर्त पुराण - Brahma Vaivarta Purana - Gitapress (Hindi)",
+      "identifier": "brahma-vaivarta-purana-gitapress-hindi",
+      "status": "metadata_checked_not_edition_verified",
+      "pdf_files": [
+        {
+          "name": "Brahma Vaivarta Purana - Gitapress (Hindi).pdf",
+          "bytes": "79002498"
+        },
+        {
+          "name": "Brahma Vaivarta Purana - Gitapress (Hindi)_text.pdf",
+          "bytes": "121607898"
+        }
+      ],
+      "page_ocr_available": true,
+      "uploader_license_claim": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "publisher_verified": false,
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "linga-purana",
+      "candidate_url": "https://archive.org/details/linga-mahapuran-of-veda-vyas-with-illustration-gita-press",
+      "title": "Linga Mahapuran Of Veda Vyas With Illustration Gita Press",
+      "identifier": "linga-mahapuran-of-veda-vyas-with-illustration-gita-press",
+      "status": "metadata_checked_not_edition_verified",
+      "pdf_files": [
+        {
+          "name": "Linga Mahapuran of Veda Vyas with Illustration - Gita Press.pdf",
+          "bytes": "666768842"
+        },
+        {
+          "name": "Linga Mahapuran of Veda Vyas with Illustration - Gita Press_text.pdf",
+          "bytes": "56567022"
+        }
+      ],
+      "page_ocr_available": true,
+      "uploader_license_claim": null,
+      "publisher_verified": false,
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "varaha-purana",
+      "candidate_url": "https://archive.org/details/oriv-varaha-puran-illustrated-with-hindi-translations-g",
+      "title": "Varaha Puran Illustrated With Hindi Translations Gita Press Gorakhpur",
+      "identifier": "oriv-varaha-puran-illustrated-with-hindi-translations-g",
+      "status": "metadata_checked_not_edition_verified",
+      "pdf_files": [
+        {
+          "name": "Varaha Puran Illustrated with Hindi Translations - Gita Press Gorakhpur.pdf",
+          "bytes": "934212973"
+        }
+      ],
+      "page_ocr_available": true,
+      "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "publisher_verified": false,
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "skanda-purana",
+      "candidate_url": "https://archive.org/details/mtfu_shri-prem-sudha-sagar-bhagavat-dasham-skandh-saral-hindi-vyakhya-hanuman-pr",
+      "title": "Shri Prem Sudha Sagar Bhagavat Dasham Skandh Saral Hindi Vyakhya Hanuman Prasad Poddar By Veda Vyasa Hindi Sanskrit Purana Illustrated Gorakhpur 1951 Gita Press",
+      "identifier": "mtfu_shri-prem-sudha-sagar-bhagavat-dasham-skandh-saral-hindi-vyakhya-hanuman-pr",
+      "status": "metadata_checked_not_edition_verified",
+      "pdf_files": [
+        {
+          "name": "Shri Prem Sudha Sagar Bhagavat Dasham Skandh Saral Hindi Vyakhya Hanuman Prasad Poddar By Veda Vyasa Hindi Sanskrit Purana Illustrated Gorakhpur 1951 - Gita Press.pdf",
+          "bytes": "287452546"
+        }
+      ],
+      "page_ocr_available": true,
+      "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "publisher_verified": false,
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "vamana-purana",
+      "candidate_url": "https://archive.org/details/Etjz_kalyan-vamana-purana-ank-edited-by-hanuman-prasad-poddar-1982-gorakhpur-gita-press",
+      "title": "Kalyan Vamana Purana Ank Edited By Hanuman Prasad Poddar 1982 Gorakhpur Gita Press",
+      "identifier": "Etjz_kalyan-vamana-purana-ank-edited-by-hanuman-prasad-poddar-1982-gorakhpur-gita-press",
+      "status": "metadata_checked_not_edition_verified",
+      "pdf_files": [
+        {
+          "name": "Kalyan Vamana Purana Ank Edited By Hanuman Prasad Poddar 1982 Gorakhpur - Gita Press.pdf",
+          "bytes": "598911580"
+        }
+      ],
+      "page_ocr_available": true,
+      "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "publisher_verified": false,
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "kurma-purana",
+      "candidate_url": "https://archive.org/details/kurma-puran-gita-press",
+      "title": "Kurma Puran (कूर्मपुराण) - Gita Press",
+      "identifier": "kurma-puran-gita-press",
+      "status": "metadata_checked_not_edition_verified",
+      "pdf_files": [
+        {
+          "name": "Kurma Puran - Gita Press.pdf",
+          "bytes": "40596823"
+        },
+        {
+          "name": "Kurma Puran - Gita Press_text.pdf",
+          "bytes": "56700847"
+        }
+      ],
+      "page_ocr_available": true,
+      "uploader_license_claim": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "publisher_verified": false,
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "matsya-purana",
+      "candidate_url": "https://archive.org/details/matsya-puran-gita-press-gorakhpur",
+      "title": "Matsya Puran Gita Press Gorakhpur",
+      "identifier": "matsya-puran-gita-press-gorakhpur",
+      "status": "metadata_checked_not_edition_verified",
+      "pdf_files": [
+        {
+          "name": "Matsya Puran MP - Gita Press Gorakhpur.pdf",
+          "bytes": "2581646500"
+        }
+      ],
+      "page_ocr_available": true,
+      "uploader_license_claim": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "publisher_verified": false,
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "garuda-purana",
+      "candidate_url": "https://archive.org/details/garuda-puran-gita-press-gorakhpur",
+      "title": "Garuda Puran Gita Press Gorakhpur",
+      "identifier": "garuda-puran-gita-press-gorakhpur",
+      "status": "metadata_checked_not_edition_verified",
+      "pdf_files": [
+        {
+          "name": "Garuda Puran - Gita Press Gorakhpur.pdf",
+          "bytes": "1609310855"
+        }
+      ],
+      "page_ocr_available": true,
+      "uploader_license_claim": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "publisher_verified": false,
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "brahmanda-purana",
+      "candidate_url": "https://archive.org/details/14.-brahmand-puran-1st-part-gita-press",
+      "title": "14. Brahmand Puran (1st & 2nd Part) Gita Press",
+      "identifier": "14.-brahmand-puran-1st-part-gita-press",
+      "status": "metadata_checked_not_edition_verified",
+      "pdf_files": [
+        {
+          "name": "14.Brahmand puran (1st Part) Gita Press.pdf",
+          "bytes": "1404592029"
+        },
+        {
+          "name": "14.Brahmand puran (1st Part) Gita Press_text.pdf",
+          "bytes": "83735713"
+        },
+        {
+          "name": "14.Brahmand puran (2nd Part)Adhyatam Ramayan  Gita Press.pdf",
+          "bytes": "1719820"
+        }
+      ],
+      "page_ocr_available": true,
+      "uploader_license_claim": null,
+      "publisher_verified": false,
+      "coverage_verified": false,
+      "rights_verified": false
+    }
+  ]
+}

@@ -8,3 +8,5 @@ dist-android/
 
 .env.*
 !.env.example
+
+services/ingest/private/

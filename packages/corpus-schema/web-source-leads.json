@@ -1,0 +1,2224 @@
+{
+  "checked_on": "2026-10-09",
+  "note": "Discovery metadata only. Uploader license claims are not independently verified publisher permissions. Matching titles do not establish edition or full coverage.",
+  "works": [
+    {
+      "work_id": "brahma-purana",
+      "official_ebook_leads": [],
+      "archive_candidates": [
+        {
+          "title": "Brahma Puran Gita Press Gorakhpur",
+          "url": "https://archive.org/details/brahma-puran-gita-press-gorakhpur_202204",
+          "identifier": "brahma-puran-gita-press-gorakhpur_202204",
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/mark/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "2. Brahma Puran Gita Press",
+          "url": "https://archive.org/details/2.-brahma-puran-gita-press",
+          "identifier": "2.-brahma-puran-gita-press",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Kalyan Markandeya Brahma Purana Ank Edited By Hanuman Prasad Poddar 1945 Gorakhpur Gita Press",
+          "url": "https://archive.org/details/JNGt_kalyan-markandeya-brahma-purana-ank-edited-by-hanuman-prasad-poddar-1945-gorakhpur-gita-press",
+          "identifier": "JNGt_kalyan-markandeya-brahma-purana-ank-edited-by-hanuman-prasad-poddar-1945-gorakhpur-gita-press",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Brahma Puran Gita Press Gorakhpur",
+          "url": "https://archive.org/details/gkws-brahma-puran-gita-press-gorakhpur_202608",
+          "identifier": "gkws-brahma-puran-gita-press-gorakhpur_202608",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "संक्षिप्त ब्रह्मपुराण - Brahma Puran - Gita Press",
+          "url": "https://archive.org/details/brahma-puran-gita-press",
+          "identifier": "brahma-puran-gita-press",
+          "uploader_license_claim": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Brahma Puran Gita Press Gorakhpur",
+          "url": "https://archive.org/details/brahma-puran-gita-press-gorakhpur",
+          "identifier": "brahma-puran-gita-press-gorakhpur",
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Brahma Puran Gita Press",
+          "url": "https://archive.org/details/brahma-puran-gita-press_202310",
+          "identifier": "brahma-puran-gita-press_202310",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        }
+      ],
+      "rights_status": "unverified",
+      "indexed_approved_passages": 0
+    },
+    {
+      "work_id": "padma-purana",
+      "official_ebook_leads": [],
+      "archive_candidates": [
+        {
+          "title": "Padma Purana (पद्म पुराण) - Gita Press",
+          "url": "https://archive.org/details/padma-puran-gita-press",
+          "identifier": "padma-puran-gita-press",
+          "uploader_license_claim": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "3. Padma Puran Gita Press",
+          "url": "https://archive.org/details/3.-padma-puran-gita-press",
+          "identifier": "3.-padma-puran-gita-press",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "44 Padmapurana",
+          "url": "https://archive.org/details/44-padmapurana",
+          "identifier": "44-padmapurana",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Padma Puran Edited By Jaydayal Goyenka 2013 Gorakhpur Gita Press",
+          "url": "https://archive.org/details/MoPq_padma-puran-edited-by-jaydayal-goyenka-2013-gorakhpur-gita-press",
+          "identifier": "MoPq_padma-puran-edited-by-jaydayal-goyenka-2013-gorakhpur-gita-press",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Padma Puran Gita Press Gorakhpur",
+          "url": "https://archive.org/details/padma-puran-gita-press-gorakhpur",
+          "identifier": "padma-puran-gita-press-gorakhpur",
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Padma Puran Gita Press",
+          "url": "https://archive.org/details/padma-puran-gita-press_202310",
+          "identifier": "padma-puran-gita-press_202310",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Kalyan Sanskhipt Padma Puran Ank Year 19 No 1 Ed By Hanuman Prasad Poddar And C L Goswami 1945 Gita Press Goarkhpur",
+          "url": "https://archive.org/details/VLyS_kalyan-sanskhipt-padma-puran-ank-year-19-no-1-ed-by-hanuman-prasad-poddar-and-c-",
+          "identifier": "VLyS_kalyan-sanskhipt-padma-puran-ank-year-19-no-1-ed-by-hanuman-prasad-poddar-and-c-",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Padma Puran In Hindi Series No. 44 Gita Press",
+          "url": "https://archive.org/details/DhgH_padma-puran-in-hindi-series-no.-44-gita-press",
+          "identifier": "DhgH_padma-puran-in-hindi-series-no.-44-gita-press",
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "पद्म पुराण, Padma Puran",
+          "url": "https://archive.org/details/padma-puran-gita-press_202512",
+          "identifier": "padma-puran-gita-press_202512",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Padma Puran Gita Press",
+          "url": "https://archive.org/details/padma-puran-gita-press_202303",
+          "identifier": "padma-puran-gita-press_202303",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Padma Puran Gita Press Compressed",
+          "url": "https://archive.org/details/padma-puran-gita-press-compressed-1-removed",
+          "identifier": "padma-puran-gita-press-compressed-1-removed",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        }
+      ],
+      "rights_status": "unverified",
+      "indexed_approved_passages": 0
+    },
+    {
+      "work_id": "vishnu-purana",
+      "official_ebook_leads": [
+        {
+          "title": "Sri Vishnu Puran | Language: Hindi | Code: 48",
+          "catalogue_code": "48",
+          "url": "https://gitapress.org/product/sri-vishnu-puran-or-language-hindi-or-code-48",
+          "pdf_url": null,
+          "online_reader_available": true
+        }
+      ],
+      "archive_candidates": [
+        {
+          "title": "Vishnu Puran Gita Press",
+          "url": "https://archive.org/details/vishnu-puran-gita-press_202502",
+          "identifier": "vishnu-puran-gita-press_202502",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Shri Vishnu Puran Translated By Shri Munilal Gupta, 1934 ( Shri Banarasi Devi Chudilal Dharma Series 1) Gita Press, Gorakhpur",
+          "url": "https://archive.org/details/AxNv_shri-vishnu-puran-translated-by-shri-munilal-gupta-1934-shri-banarasi-devi-chudi",
+          "identifier": "AxNv_shri-vishnu-puran-translated-by-shri-munilal-gupta-1934-shri-banarasi-devi-chudi",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Vishnu Puran",
+          "url": "https://archive.org/details/vishnu-puran_202204",
+          "identifier": "vishnu-puran_202204",
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/mark/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Vishnu Puran Gita Press",
+          "url": "https://archive.org/details/vishnu-puran-gita-press_202303",
+          "identifier": "vishnu-puran-gita-press_202303",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Vishnu Puran",
+          "url": "https://archive.org/details/vishnu-puran_202507",
+          "identifier": "vishnu-puran_202507",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Vishnu Puran Gita Press",
+          "url": "https://archive.org/details/vishnu-puran-gita-press_202310",
+          "identifier": "vishnu-puran-gita-press_202310",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Vishnu Puran Gita Press",
+          "url": "https://archive.org/details/vishnu-puran-gita-press-2",
+          "identifier": "vishnu-puran-gita-press-2",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Sri Sri Vishnu Purana Sachitra With Hindi Trans. By Sri Muni Lal Gupta 1984 Gorakhpur Gita Press",
+          "url": "https://archive.org/details/AQrq_sri-sri-vishnu-purana-sachitra-with-hindi-trans.-by-sri-muni-lal-gupta-1984-gorakhpur-gita-pres",
+          "identifier": "AQrq_sri-sri-vishnu-purana-sachitra-with-hindi-trans.-by-sri-muni-lal-gupta-1984-gorakhpur-gita-pres",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Vishnu Puran, विष्णु पुराण",
+          "url": "https://archive.org/details/vishnu-puran_hindi",
+          "identifier": "vishnu-puran_hindi",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Vishnu Puran Illustrated With Hindi Translations Gita Press Gorakhpur",
+          "url": "https://archive.org/details/vishnu-puran-illustrated-with-hindi-translations-gita-press-gorakhpur",
+          "identifier": "vishnu-puran-illustrated-with-hindi-translations-gita-press-gorakhpur",
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Vishnu Purana",
+          "url": "https://archive.org/details/vishnu-purana_202407",
+          "identifier": "vishnu-purana_202407",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "1. Vishnu Puran Gita Press",
+          "url": "https://archive.org/details/1.-vishnu-puran-gita-press",
+          "identifier": "1.-vishnu-puran-gita-press",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Vishnu Puran Gita Press",
+          "url": "https://archive.org/details/vishnu-puran-gita-press_202212",
+          "identifier": "vishnu-puran-gita-press_202212",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "सम्पूर्ण विष्णु पुराण, संस्कृत, हिन्दी अनुवाद सहित",
+          "url": "https://archive.org/details/vishnu-puran-gita-press",
+          "identifier": "vishnu-puran-gita-press",
+          "uploader_license_claim": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Kalyan Narad Vishnu Puran Ank Year 28 No 1 Ed By Hanuman Prasad Poddar Gita Press",
+          "url": "https://archive.org/details/oYUe_kalyan-narad-vishnu-puran-ank-year-28-no-1-ed-by-hanuman-prasad-poddar-gita-press",
+          "identifier": "oYUe_kalyan-narad-vishnu-puran-ank-year-28-no-1-ed-by-hanuman-prasad-poddar-gita-press",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "SHREE VISHNU PURANA SANSKRIT HINDI Mula Shloka Aur Hindi Anuvadsahit Munilala Gupta Gita Press 625 Pages NEW SCAN",
+          "url": "https://archive.org/details/zkmx_shree-vishnu-purana-sanskrit-hindi-mula-shloka-aur-hindi-anuvadsahit-munilala-gu",
+          "identifier": "zkmx_shree-vishnu-purana-sanskrit-hindi-mula-shloka-aur-hindi-anuvadsahit-munilala-gu",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Vishnu Puran Illustrated With Hindi Translations Gita Press Gorakhpur",
+          "url": "https://archive.org/details/pnur-vishnu-puran-illustrated-with-hindi-translations-g",
+          "identifier": "pnur-vishnu-puran-illustrated-with-hindi-translations-g",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        }
+      ],
+      "rights_status": "unverified",
+      "indexed_approved_passages": 0
+    },
+    {
+      "work_id": "shiva-purana",
+      "official_ebook_leads": [],
+      "archive_candidates": [
+        {
+          "title": "ସଂକ୍ଷିପ୍ତ ଶିବପୁରାଣ - Shiva Purana - Gita Press",
+          "url": "https://archive.org/details/shiva-purana-odia-gita-press",
+          "identifier": "shiva-purana-odia-gita-press",
+          "uploader_license_claim": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Sankshipt Shiv Puran With Illustration Gita Press",
+          "url": "https://archive.org/details/dvoJ_sankshipt-shiv-puran-with-illustration-gita-press",
+          "identifier": "dvoJ_sankshipt-shiv-puran-with-illustration-gita-press",
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Kalyan Sankshipt Shiv Puran Ank Year 36 No 1 Ed By Hanuman Prasad Poddar Gita Press, Gorakhpur",
+          "url": "https://archive.org/details/KDXM_kalyan-sankshipt-shiv-puran-ank-year-36-no-1-ed-by-hanuman-prasad-poddar-gita-press-gorakhpur",
+          "identifier": "KDXM_kalyan-sankshipt-shiv-puran-ank-year-36-no-1-ed-by-hanuman-prasad-poddar-gita-press-gorakhpur",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Shri Shiva Mahapuranam Prathama Khanda Purvardha By Maharshi Veda Vyasa Edited By Kashinath Nyaupane Sanskrit And Nepali Purana Illustrated Gorakhpur 2023 Gita Press",
+          "url": "https://archive.org/details/dekk-shri-shiva-mahapuranam-prathama-khanda-purvardha-b",
+          "identifier": "dekk-shri-shiva-mahapuranam-prathama-khanda-purvardha-b",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Shiv Mahapuran Of Veda Vyas Chapter 2 Second Half With Hindi Vyakhya Illustration Gita Press",
+          "url": "https://archive.org/details/SzWh_shiv-mahapuran-of-veda-vyas-chapter-2-second-half-with-hindi-vyakhya-illustration-gita-press",
+          "identifier": "SzWh_shiv-mahapuran-of-veda-vyas-chapter-2-second-half-with-hindi-vyakhya-illustration-gita-press",
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "SHIV PURAN",
+          "url": "https://archive.org/details/shiv-puran_202402",
+          "identifier": "shiv-puran_202402",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Kalyan Shiva Mahapuran Anka With Hindi Trans. Part 1 Year 11 Gita Press",
+          "url": "https://archive.org/details/kalyan-shiva-mahapuran-anka-with-hindi-trans.-part-1-year-11-gita-press",
+          "identifier": "kalyan-shiva-mahapuran-anka-with-hindi-trans.-part-1-year-11-gita-press",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "4. Shiva Mahapuran Ank . Part 2 Year 12 Gita Press",
+          "url": "https://archive.org/details/4.-shiva-mahapuran-ank-.-part-2-year-12-gita-press",
+          "identifier": "4.-shiva-mahapuran-ank-.-part-2-year-12-gita-press",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "ସଂକ୍ଷିପ୍ତ ଶିବ ପୁରାଣ(Sankhipta Shiv Puran Odia)",
+          "url": "https://archive.org/details/sankhipta-shiba-purana",
+          "identifier": "sankhipta-shiba-purana",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Shiv Mahapuran Of Veda Vyas Chapter 2 Second Half With Hindi Vyakhya Illustration Gita Press Compressed",
+          "url": "https://archive.org/details/shiv-mahapuran-of-veda-vyas-chapter-2-second-half-with-hindi-vyakhya-illustratio_202401",
+          "identifier": "shiv-mahapuran-of-veda-vyas-chapter-2-second-half-with-hindi-vyakhya-illustratio_202401",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Shiva Purana Katha Saar",
+          "url": "https://archive.org/details/shiv-puran-katha-saar",
+          "identifier": "shiv-puran-katha-saar",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "शिव पुराण खंड 1, Shiv Puran",
+          "url": "https://archive.org/details/shiv-puran-hindi",
+          "identifier": "shiv-puran-hindi",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Kalyan Shiva Mahapuran Anka With Hindi Trans. Part 2 Year 12 Gita Press",
+          "url": "https://archive.org/details/kalyan-shiva-mahapuran-anka-with-hindi-trans.-part-2-year-12-gita-press",
+          "identifier": "kalyan-shiva-mahapuran-anka-with-hindi-trans.-part-2-year-12-gita-press",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Shiv Mahapuran Of Veda Vyas Chapter 2 Second Half With Hindi Vyakhya Illustration Gita Press",
+          "url": "https://archive.org/details/shiv-mahapuran-of-veda-vyas-chapter-2-second-half-with-hindi-vyakhya-illustration-gita-press",
+          "identifier": "shiv-mahapuran-of-veda-vyas-chapter-2-second-half-with-hindi-vyakhya-illustration-gita-press",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Shiva Mahapuran Part 1 First Half By Veda Vyas With Explanation And Illustration Gita Press Compressed Compressed",
+          "url": "https://archive.org/details/shiva-mahapuran-part-1-first-half-by-veda-vyas-with-explanation-and-illustration",
+          "identifier": "shiva-mahapuran-part-1-first-half-by-veda-vyas-with-explanation-and-illustration",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Shiva Mahapuran Part 1 First Half By Veda Vyas With Explanation And Illustration Gita Press Compressed Compressed",
+          "url": "https://archive.org/details/shiva-mahapuran-part-1-first-half-by-veda-vyas-with-explanation-and-illustration_202402",
+          "identifier": "shiva-mahapuran-part-1-first-half-by-veda-vyas-with-explanation-and-illustration_202402",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Shiva Mahapuran Part 1 First Half By Veda Vyas With Explanation And Illustration Gita Press",
+          "url": "https://archive.org/details/shiva-mahapuran-part-1-first-half-by-veda-vyas-with-explanation-and-illustration-gita-press",
+          "identifier": "shiva-mahapuran-part-1-first-half-by-veda-vyas-with-explanation-and-illustration-gita-press",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Sankshipt Shiv Puran संक्षिप्त शिवपुराण",
+          "url": "https://archive.org/details/sankshipt-shiv-puran",
+          "identifier": "sankshipt-shiv-puran",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Shiv Mahapuran Of Veda Vyas Chapter 2 Second Half With Hindi Vyakhya Illustration Gita Press Compressed",
+          "url": "https://archive.org/details/shiv-mahapuran-of-veda-vyas-chapter-2-second-half-with-hindi-vyakhya-illustratio",
+          "identifier": "shiv-mahapuran-of-veda-vyas-chapter-2-second-half-with-hindi-vyakhya-illustratio",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "शिव पुराण खंड-2, Shiv Puran",
+          "url": "https://archive.org/details/shiv-puran-2",
+          "identifier": "shiv-puran-2",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Shiv Samhita (शिव संहिता) Pancham Patal, complete twenty chapters",
+          "url": "https://archive.org/details/shivsamhita",
+          "identifier": "shivsamhita",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Shiv Maha Puran Part 1 First Half By Veda Vyas With Explanation And Illustration Gita Press Gorakhpur",
+          "url": "https://archive.org/details/shiva-mahapuran-part-1-first-half-by-veda-vyas-with-explanation-and-illustration_202401",
+          "identifier": "shiva-mahapuran-part-1-first-half-by-veda-vyas-with-explanation-and-illustration_202401",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        }
+      ],
+      "rights_status": "unverified",
+      "indexed_approved_passages": 0
+    },
+    {
+      "work_id": "bhagavata-purana",
+      "official_ebook_leads": [
+        {
+          "title": "Shrimad Bhagavat Mahapuran Hindi - First Part with Hindi Commentary and Illustrations | Gita Press Gorakhpur Publication",
+          "catalogue_code": "26",
+          "url": "https://gitapress.org/product/shrimad-bhagavat-mahapuran-hindi-first-part-with-hindi-commentary-and-illustrations-or-gita-press-gorakhpur-publication",
+          "pdf_url": null,
+          "online_reader_available": true
+        },
+        {
+          "title": "Shrimad Bhagavat Mahapuran Hindi – Second Part with Hindi Commentary and Illustrations | Gita Press Gorakhpur Publication",
+          "catalogue_code": "27",
+          "url": "https://gitapress.org/product/shrimad-bhagavat-mahapuran-hindi-second-part-with-hindi-commentary-and-illustrations-or-gita-press-gorakhpur-publication",
+          "pdf_url": null,
+          "online_reader_available": true
+        }
+      ],
+      "archive_candidates": [
+        {
+          "title": "Shrimad Bhagvat Maha Puran Of Vedvyas Vol 2 Translated By Munilal Gita Press, Gorakhpur",
+          "url": "https://archive.org/details/EaDg_shrimad-bhagvat-maha-puran-of-vedvyas-vol-2-translated-by-munilal-gita-press-gorakhpur",
+          "identifier": "EaDg_shrimad-bhagvat-maha-puran-of-vedvyas-vol-2-translated-by-munilal-gita-press-gorakhpur",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Bhagavat Maha Purana Part 1 Gita Press Gorakhpur",
+          "url": "https://archive.org/details/cpij-bhagavat-maha-purana-part-1-gita-press-gorakhpur",
+          "identifier": "cpij-bhagavat-maha-purana-part-1-gita-press-gorakhpur",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "ଅତିବଡ଼ୀ ଜଗନ୍ନାଥଦାସ ପ୍ରଣୀତ ଶ୍ରୀମଦ୍ଭାଗବତ ମହାପୁରାଣ",
+          "url": "https://archive.org/details/srimad-bhagavata-mahapuran-jagannath-das-odia",
+          "identifier": "srimad-bhagavata-mahapuran-jagannath-das-odia",
+          "uploader_license_claim": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Devi Purana ( Mahabhagwat) Gita Press Gorakhpur",
+          "url": "https://archive.org/details/devi-purana-mahabhagwat-gita-press-gorakhpur",
+          "identifier": "devi-purana-mahabhagwat-gita-press-gorakhpur",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Shri Prem Sudha Sagar Bhagavat Dasham Skandh Saral Hindi Vyakhya Hanuman Prasad Poddar By Veda Vyasa Hindi Sanskrit Purana Illustrated Gorakhpur 1951 Gita Press",
+          "url": "https://archive.org/details/mtfu_shri-prem-sudha-sagar-bhagavat-dasham-skandh-saral-hindi-vyakhya-hanuman-pr",
+          "identifier": "mtfu_shri-prem-sudha-sagar-bhagavat-dasham-skandh-saral-hindi-vyakhya-hanuman-pr",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Srimad Bhagavata Maha Purana Of Maharshi Veda Vyasa Part 1 ( Book 1 To 8) With Hindi Commentary Gita Press, Gorakhpur",
+          "url": "https://archive.org/details/TabK_srimad-bhagavata-maha-purana-of-maharshi-veda-vyasa-part-1-book-1-to-8-with-hind",
+          "identifier": "TabK_srimad-bhagavata-maha-purana-of-maharshi-veda-vyasa-part-1-book-1-to-8-with-hind",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Devi Bhagavata Hindi Gitapress Edition",
+          "url": "https://archive.org/details/DeviBhagwatGitapress",
+          "identifier": "DeviBhagwatGitapress",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Arogya Ank Parivardhit Sanskaran Hindi Health 2005 Gita Press Gorakhpur Devi Purana Maha Bhagavata Shakti Pithank Hindi Puranas 2005 Gita Press Gorakhpur Shri Harivan.pdf",
+          "url": "https://archive.org/details/remi_arogya-ank-parivardhit-sanskaran-hindi-health-2005-gita-press-gorakhpur-dev",
+          "identifier": "remi_arogya-ank-parivardhit-sanskaran-hindi-health-2005-gita-press-gorakhpur-dev",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Shrimad Bhagavat Maha Puran Of Veda Vyas Vol 2 Translated By Munilal ( Skanda 8 To ! 2) Gita Press, Gorakhpur",
+          "url": "https://archive.org/details/zCFR_shrimad-bhagavat-maha-puran-of-veda-vyas-vol-2-translated-by-munilal-skanda-8-to",
+          "identifier": "zCFR_shrimad-bhagavat-maha-puran-of-veda-vyas-vol-2-translated-by-munilal-skanda-8-to",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Devi Bhagavata With Hindi Translation Volume 1 Gita Press",
+          "url": "https://archive.org/details/devi-bhagavata-with-hindi-translation-volume-1-gita-press_202502",
+          "identifier": "devi-bhagavata-with-hindi-translation-volume-1-gita-press_202502",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Bhagwat Puran Part 2, श्रीमद्भागवत महापुराण, द्वितीय खण्ड",
+          "url": "https://archive.org/details/bhagwat-puran-2",
+          "identifier": "bhagwat-puran-2",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "21 Devi Bhagavat Puran Sanskrit and Hindi with Durga Saptashati",
+          "url": "https://archive.org/details/21-devi-bhagavata-with-hindi-translation-vol-1-gitapress-2010",
+          "identifier": "21-devi-bhagavata-with-hindi-translation-vol-1-gitapress-2010",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Shrimat Bhagavat Maha Puran Vol 2 By Vedvyas 1935 Govind Bhavan Karyalay, Gita Press, Gorakhpur",
+          "url": "https://archive.org/details/NRbS_shrimat-bhagavat-maha-puran-vol-2-by-vedvyas-1935-govind-bhavan-karyalay-gita-press-gorakhpur",
+          "identifier": "NRbS_shrimat-bhagavat-maha-puran-vol-2-by-vedvyas-1935-govind-bhavan-karyalay-gita-press-gorakhpur",
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Bhagvat Maha Puran Of Maharshi Vyas Gita Press Gorakhpur",
+          "url": "https://archive.org/details/RIrF_bhagvat-maha-puran-of-maharshi-vyas-gita-press-gorakhpur",
+          "identifier": "RIrF_bhagvat-maha-puran-of-maharshi-vyas-gita-press-gorakhpur",
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Srimad Bhagavata Maha Purana With Sanskrit Text And English Trans. By C. L. Goswami, Part 1 ( Book 1 To 8) Gita Press, Gorakhpur",
+          "url": "https://archive.org/details/zaFz_srimad-bhagavata-maha-purana-with-sanskrit-text-and-english-trans.-by-c.-l.-gosw",
+          "identifier": "zaFz_srimad-bhagavata-maha-purana-with-sanskrit-text-and-english-trans.-by-c.-l.-gosw",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Bhagavata Purana Gita Press",
+          "url": "https://archive.org/details/bhagavatapuranagitapress_201907",
+          "identifier": "bhagavatapuranagitapress_201907",
+          "uploader_license_claim": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Srimad Bhagavata Maha Purana Of Veda Vyasa ( Mula Matra) Gita Press Gorakhpur",
+          "url": "https://archive.org/details/NMcy_srimad-bhagavata-maha-purana-of-veda-vyasa-mula-matra-gita-press-gorakhpur",
+          "identifier": "NMcy_srimad-bhagavata-maha-purana-of-veda-vyasa-mula-matra-gita-press-gorakhpur",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Kalyan 79 1 Devi Puran Mahabhagavat Shakti Pithank Gita Press Gorakhpur",
+          "url": "https://archive.org/details/kalyan-79-1-devi-puran-mahabhagavat-shakti-pithank-gita-press-gorakhpur",
+          "identifier": "kalyan-79-1-devi-puran-mahabhagavat-shakti-pithank-gita-press-gorakhpur",
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "श्रीमद्भागवत महापुराण, सम्पूर्ण Bhagwat Mahapuran",
+          "url": "https://archive.org/details/Bhagwat_Mahapuran",
+          "identifier": "Bhagwat_Mahapuran",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "देवी भागवत पुराण, प्रथम खण्ड Devi Bhagwat Puran, Part - 1",
+          "url": "https://archive.org/details/devi-bhagwat-1",
+          "identifier": "devi-bhagwat-1",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Bhagavata Purana Part 2",
+          "url": "https://archive.org/details/bhagavata-purana-part-2",
+          "identifier": "bhagavata-purana-part-2",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Srimad Bhagavata Mahapurana (English) Part 1&2 Complete",
+          "url": "https://archive.org/details/bhagavata-purana-sanskrit-english-gp-1997",
+          "identifier": "bhagavata-purana-sanskrit-english-gp-1997",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Devi Bhagavata With Hindi Translation Vol 2 ( Gitapress) 2010",
+          "url": "https://archive.org/details/devi-bhagavata-with-hindi-translation-vol-2-gitapress-2010",
+          "identifier": "devi-bhagavata-with-hindi-translation-vol-2-gitapress-2010",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Devi Bhagavata With Hindi Translation Volume 2 Gita Press",
+          "url": "https://archive.org/details/devi-bhagavata-with-hindi-translation-volume-2-gita-press",
+          "identifier": "devi-bhagavata-with-hindi-translation-volume-2-gita-press",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Bhagavata Purana Motilal English Full",
+          "url": "https://archive.org/details/bhagavatapuranamotilalenglishfull",
+          "identifier": "bhagavatapuranamotilalenglishfull",
+          "uploader_license_claim": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Shrimad Bhagavata Mahapuranam Mula Matram By Veda Vyasa Sanskrit Purana Gorakhpur 1965 Gita Press",
+          "url": "https://archive.org/details/mshy-shrimad-bhagavata-mahapuranam-mula-matram-by-veda-",
+          "identifier": "mshy-shrimad-bhagavata-mahapuranam-mula-matram-by-veda-",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Shrimad Bhagvat Maha Puran Of Veda Vyas Vol 2 Canto 8 To 12 Translated By Muni Lal Gita Press, Gorakhpur",
+          "url": "https://archive.org/details/Fwjk_shrimad-bhagvat-maha-puran-of-veda-vyas-vol-2-canto-8-to-12-translated-by-muni-l",
+          "identifier": "Fwjk_shrimad-bhagvat-maha-puran-of-veda-vyas-vol-2-canto-8-to-12-translated-by-muni-l",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "देवी भागवत पुराण, द्वितीय खण्ड Devi Bhagwat Puran, Part-2",
+          "url": "https://archive.org/details/devi-bhagwat-2",
+          "identifier": "devi-bhagwat-2",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Bhagwat Puran Part 1, श्रीमद्भागवत महापुराण",
+          "url": "https://archive.org/details/bhagwat-puran-part-1",
+          "identifier": "bhagwat-puran-part-1",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Bhagavata Purana, English Translation",
+          "url": "https://archive.org/details/bhagavata-purana-gita-press-edition-2015",
+          "identifier": "bhagavata-purana-gita-press-edition-2015",
+          "uploader_license_claim": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Bhagavata Purana Gita Press English Complete",
+          "url": "https://archive.org/details/bhagavata-purana-sanskrit-english-gp",
+          "identifier": "bhagavata-purana-sanskrit-english-gp",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Srimad Devi Bhagavat Maha Puran, Part 1 With Hindi Commentary And Pictures, Chapter 1 To 6 Gita Press, Gorakhpur",
+          "url": "https://archive.org/details/zSMI_srimad-devi-bhagavat-maha-puran-part-1-with-hindi-commentary-and-pictures-chapte",
+          "identifier": "zSMI_srimad-devi-bhagavat-maha-puran-part-1-with-hindi-commentary-and-pictures-chapte",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Shrimad Bhagavata Mahapurana Mula Matram By Vyasa Sanskrit Purana Gorakhpur 1949 Gita Press",
+          "url": "https://archive.org/details/mcfm-shrimad-bhagavata-mahapurana-mula-matram-by-vyasa-",
+          "identifier": "mcfm-shrimad-bhagavata-mahapurana-mula-matram-by-vyasa-",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Srimad Bhagwat Mahapuran - Complete - Gitapress (Hindi)",
+          "url": "https://archive.org/details/srimad-bhagwat-mahapuran-gitapress-hindi",
+          "identifier": "srimad-bhagwat-mahapuran-gitapress-hindi",
+          "uploader_license_claim": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Arogya Ank Parivardhit Sanskaran Hindi Health 2005 Gita Press Gorakhpur Devi Purana Maha Bhagavata Shakti Pithank Hindi Puranas 2005 Gita Press Gorakhpur Shri Harivan.pdf",
+          "url": "https://archive.org/details/wihx_arogya-ank-parivardhit-sanskaran-hindi-health-2005-gita-press-gorakhpur-dev",
+          "identifier": "wihx_arogya-ank-parivardhit-sanskaran-hindi-health-2005-gita-press-gorakhpur-dev",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Srimad Bhagwat Mahapuran (Gujarati) Part 1-5 (2156, 2157, 2158, 2159, 2160)",
+          "url": "https://archive.org/details/2159-srimad-bhagwat-mahapuran-gujarati-part-4-all-pages-1-to-1104",
+          "identifier": "2159-srimad-bhagwat-mahapuran-gujarati-part-4-all-pages-1-to-1104",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Shrimad Bhagavat Maha Puran Vol 1 Of Veda Vyas Translated By Munilal, 1941 Gita Press, Gorakhpur",
+          "url": "https://archive.org/details/PTsA_shrimad-bhagavat-maha-puran-vol-1-of-veda-vyas-translated-by-munilal-1941-gita-press-gorakhpur",
+          "identifier": "PTsA_shrimad-bhagavat-maha-puran-vol-1-of-veda-vyas-translated-by-munilal-1941-gita-press-gorakhpur",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Shrimad Bhagavata Mahatmyam By Vyasa Sanskrit Purana Illustrated Gita Press",
+          "url": "https://archive.org/details/eybv-shrimad-bhagavata-mahatmyam-by-vyasa-sanskrit-pura",
+          "identifier": "eybv-shrimad-bhagavata-mahatmyam-by-vyasa-sanskrit-pura",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "ଶ୍ରୀମଦ୍‍ଭାଗବତମହାପୁରାଣମ୍ - ଗୀତାପ୍ରେସ୍ - ପ୍ରଥମ ଓ ଦ୍ଵିତୀୟ ଭାଗ",
+          "url": "https://archive.org/details/srimad-bhagavata-mahapurana-gita-press-odia",
+          "identifier": "srimad-bhagavata-mahapurana-gita-press-odia",
+          "uploader_license_claim": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "bhagwat-puran",
+          "url": "https://archive.org/details/bhagwat-puran_202109",
+          "identifier": "bhagwat-puran_202109",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Bhagavata Purana Gita Press English",
+          "url": "https://archive.org/details/bhagavata-purana-gita-press-english",
+          "identifier": "bhagavata-purana-gita-press-english",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Bhagavata Purana Part 1",
+          "url": "https://archive.org/details/bhagavata-purana-part-1",
+          "identifier": "bhagavata-purana-part-1",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Shrimat Bhagavat Maha Puran Vol 1 By Vedvyas 1935 Govind Bhavan Karyalay, Gita Press, Gorakhpur",
+          "url": "https://archive.org/details/NndC_shrimat-bhagavat-maha-puran-vol-1-by-vedvyas-1935-govind-bhavan-karyalay-gita-press-gorakhpur",
+          "identifier": "NndC_shrimat-bhagavat-maha-puran-vol-1-by-vedvyas-1935-govind-bhavan-karyalay-gita-press-gorakhpur",
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Shrimad Bhagavata Antargata Ekadasha Skandha Sateeka Translated By Munilal Sanskrit And Hindi Bhagavata Purana Illustrated Gorakhpur 1924 Gita Press",
+          "url": "https://archive.org/details/lxmh_shrimad-bhagavata-antargata-ekadasha-skandha-sateeka-translated-by-munilal-",
+          "identifier": "lxmh_shrimad-bhagavata-antargata-ekadasha-skandha-sateeka-translated-by-munilal-",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Gita Press Srimad Bhagavat Mahapuran 2 Volume Set Sanskrit Hindi",
+          "url": "https://archive.org/details/srimad-bhagavat-mahapuran-2-volume-set-sanskrit-hindi",
+          "identifier": "srimad-bhagavat-mahapuran-2-volume-set-sanskrit-hindi",
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/mark/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Purana ,Shrmad Bhagwat, Mahabharata पुराण, श्रीमद्भागवत, महाभारत",
+          "url": "https://archive.org/details/puran_202409",
+          "identifier": "puran_202409",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "श्रीमद्भागवत-महापुराण - [पदच्छेद, अन्वय, हिन्दी शब्दार्थ टीका सहित] - सम्पूर्ण",
+          "url": "https://archive.org/details/shrimad-bhagwat-anvaya-sudarshan-singh-chakra",
+          "identifier": "shrimad-bhagwat-anvaya-sudarshan-singh-chakra",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        }
+      ],
+      "rights_status": "unverified",
+      "indexed_approved_passages": 0
+    },
+    {
+      "work_id": "narada-purana",
+      "official_ebook_leads": [],
+      "archive_candidates": [
+        {
+          "title": "संक्षिप्त नारद पुराण, केवल हिन्दी - गीताप्रेस",
+          "url": "https://archive.org/details/narada-puran-gita-press",
+          "identifier": "narada-puran-gita-press",
+          "uploader_license_claim": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Narada Puran Gita Press Gorakhpur",
+          "url": "https://archive.org/details/narada-puran-gita-press-gorakhpur",
+          "identifier": "narada-puran-gita-press-gorakhpur",
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Narada Puran",
+          "url": "https://archive.org/details/narada-puran",
+          "identifier": "narada-puran",
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/mark/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Astrology in Narada Purana",
+          "url": "https://archive.org/details/NaradPuranJyotish",
+          "identifier": "NaradPuranJyotish",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "6. Narada Puran Gita Press",
+          "url": "https://archive.org/details/6.-narada-puran-gita-press",
+          "identifier": "6.-narada-puran-gita-press",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Narada Puran Gita Press",
+          "url": "https://archive.org/details/narada-puran-gita-press_202310",
+          "identifier": "narada-puran-gita-press_202310",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Kalyan Narad Vishnu Puran Ank Year 28 No 1 Ed By Hanuman Prasad Poddar Gita Press",
+          "url": "https://archive.org/details/oYUe_kalyan-narad-vishnu-puran-ank-year-28-no-1-ed-by-hanuman-prasad-poddar-gita-press",
+          "identifier": "oYUe_kalyan-narad-vishnu-puran-ank-year-28-no-1-ed-by-hanuman-prasad-poddar-gita-press",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Narad Puran In Hindi Series No. 1183 Gita Press",
+          "url": "https://archive.org/details/fJau_narad-puran-in-hindi-series-no.-1183-gita-press",
+          "identifier": "fJau_narad-puran-in-hindi-series-no.-1183-gita-press",
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Narada Puran Gita Press Gorakhpur",
+          "url": "https://archive.org/details/mofv-narada-puran-gita-press-gorakhpur_202608",
+          "identifier": "mofv-narada-puran-gita-press-gorakhpur_202608",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Debarshi Narad",
+          "url": "https://archive.org/details/in.ernet.dli.2015.513460",
+          "identifier": "in.ernet.dli.2015.513460",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        }
+      ],
+      "rights_status": "unverified",
+      "indexed_approved_passages": 0
+    },
+    {
+      "work_id": "markandeya-purana",
+      "official_ebook_leads": [],
+      "archive_candidates": [
+        {
+          "title": "Markandeya Purana Gita Press.pdf",
+          "url": "https://archive.org/details/markandeya-purana-gita-press.pdf",
+          "identifier": "markandeya-purana-gita-press.pdf",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Markandeya Puran Gitapress",
+          "url": "https://archive.org/details/MarkandeyaPuranGitapress",
+          "identifier": "MarkandeyaPuranGitapress",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Kalyan Markandeya Brahma Purana Ank Edited By Hanuman Prasad Poddar 1945 Gorakhpur Gita Press",
+          "url": "https://archive.org/details/JNGt_kalyan-markandeya-brahma-purana-ank-edited-by-hanuman-prasad-poddar-1945-gorakhpur-gita-press",
+          "identifier": "JNGt_kalyan-markandeya-brahma-purana-ank-edited-by-hanuman-prasad-poddar-1945-gorakhpur-gita-press",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "7. Markandeya Purana Gita Press",
+          "url": "https://archive.org/details/7.-markandeya-purana-gita-press",
+          "identifier": "7.-markandeya-purana-gita-press",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Markandeya Puran",
+          "url": "https://archive.org/details/markandeya-puran_202402",
+          "identifier": "markandeya-puran_202402",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Sanshipt Markandeya Purana Gita Press",
+          "url": "https://archive.org/details/sanshipt-markandeya-purana-gita-press",
+          "identifier": "sanshipt-markandeya-purana-gita-press",
+          "uploader_license_claim": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Sanshipt Markandeya Purana Gita Press",
+          "url": "https://archive.org/details/sanshipt-markandeya-purana-gita-press_202310",
+          "identifier": "sanshipt-markandeya-purana-gita-press_202310",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        }
+      ],
+      "rights_status": "unverified",
+      "indexed_approved_passages": 0
+    },
+    {
+      "work_id": "agni-purana",
+      "official_ebook_leads": [],
+      "archive_candidates": [
+        {
+          "title": "Kalyan Agni Puran Garga Samhita Anka Gita Press Gorakhpur",
+          "url": "https://archive.org/details/ubsc_kalyan-agni-puran-garga-samhita-anka-gita-press-gorakhpur",
+          "identifier": "ubsc_kalyan-agni-puran-garga-samhita-anka-gita-press-gorakhpur",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Agni Puran Gita Press",
+          "url": "https://archive.org/details/agni-puran-gita-press_202502",
+          "identifier": "agni-puran-gita-press_202502",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Agni Puran Gita Press Gorakhpur",
+          "url": "https://archive.org/details/agni-puran-gita-press-gorakhpur",
+          "identifier": "agni-puran-gita-press-gorakhpur",
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "अग्नि पुराण, Agni Puran",
+          "url": "https://archive.org/details/agni-puran-hindi",
+          "identifier": "agni-puran-hindi",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Agni Puran - Gita Press (Hindi)",
+          "url": "https://archive.org/details/agni-puran-gita-press",
+          "identifier": "agni-puran-gita-press",
+          "uploader_license_claim": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "8. Agni Puran Gita Press",
+          "url": "https://archive.org/details/8.-agni-puran-gita-press",
+          "identifier": "8.-agni-puran-gita-press",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Agni Puran Gita Press Gorakhpur",
+          "url": "https://archive.org/details/yrcq-agni-puran-gita-press-gorakhpur_202608",
+          "identifier": "yrcq-agni-puran-gita-press-gorakhpur_202608",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Kalyan ( Agni Puran) Edited By Hanuman Prasad Poddar 1970 Gorakhpur 176, 188, Blur Pages 761, 762 Folded Papers Gita Press",
+          "url": "https://archive.org/details/keds_kalyan-agni-puran-edited-by-hanuman-prasad-poddar-1970-gorakhpur-176-188-blur-pa",
+          "identifier": "keds_kalyan-agni-puran-edited-by-hanuman-prasad-poddar-1970-gorakhpur-176-188-blur-pa",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Agni Puran Gita Press Gorakhpur",
+          "url": "https://archive.org/details/agni-puran-gita-press-gorakhpur_202204",
+          "identifier": "agni-puran-gita-press-gorakhpur_202204",
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/mark/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Agni Puran Gita Press",
+          "url": "https://archive.org/details/agni-puran-gita-press_20231027",
+          "identifier": "agni-puran-gita-press_20231027",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Agni Puran अग्नि पुराण",
+          "url": "https://archive.org/details/agni-puran-gita-press_202310",
+          "identifier": "agni-puran-gita-press_202310",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        }
+      ],
+      "rights_status": "unverified",
+      "indexed_approved_passages": 0
+    },
+    {
+      "work_id": "bhavishya-purana",
+      "official_ebook_leads": [],
+      "archive_candidates": [
+        {
+          "title": "Bhavishya Puran Gita Press Gorakhpur",
+          "url": "https://archive.org/details/rqrh-bhavishya-puran-gita-press-gorakhpur_202608",
+          "identifier": "rqrh-bhavishya-puran-gita-press-gorakhpur_202608",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "9. Bhavishya Puran Gita Press",
+          "url": "https://archive.org/details/9.-bhavishya-puran-gita-press",
+          "identifier": "9.-bhavishya-puran-gita-press",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Bhavishya Puran Gita Press",
+          "url": "https://archive.org/details/bhavishya-puran-gita-press",
+          "identifier": "bhavishya-puran-gita-press",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Bhavishya Puran Gita Press Gorakhpur",
+          "url": "https://archive.org/details/bhavishya-puran-gita-press-gorakhpur_202204",
+          "identifier": "bhavishya-puran-gita-press-gorakhpur_202204",
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/mark/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Bhavishya Puran Gita Press Gorakhpur",
+          "url": "https://archive.org/details/bhavishya-puran-gita-press-gorakhpur",
+          "identifier": "bhavishya-puran-gita-press-gorakhpur",
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "संक्षिप्त भविष्य पुराण (गीता प्रेस) - Sankshipt Bhavishya Puran - Gita Press",
+          "url": "https://archive.org/details/sankshipt-bhavishya-puran-gita-press",
+          "identifier": "sankshipt-bhavishya-puran-gita-press",
+          "uploader_license_claim": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Sankshipt Bhavishya Puran Gita Press",
+          "url": "https://archive.org/details/sankshipt-bhavishya-puran-gita-press_202310",
+          "identifier": "sankshipt-bhavishya-puran-gita-press_202310",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        }
+      ],
+      "rights_status": "unverified",
+      "indexed_approved_passages": 0
+    },
+    {
+      "work_id": "brahmavaivarta-purana",
+      "official_ebook_leads": [],
+      "archive_candidates": [
+        {
+          "title": "Kalyan Sankshipt Brahma Vaivart Puran Ank Year 37 No 1 Ed By Hanuman Prasad Poddar Gita Press, Gorakhpur",
+          "url": "https://archive.org/details/kNtA_kalyan-sankshipt-brahma-vaivart-puran-ank-year-37-no-1-ed-by-hanuman-prasad-podd",
+          "identifier": "kNtA_kalyan-sankshipt-brahma-vaivart-puran-ank-year-37-no-1-ed-by-hanuman-prasad-podd",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "ब्रह्मवैवर्त पुराण - Brahma Vaivarta Purana - Gitapress (Hindi)",
+          "url": "https://archive.org/details/brahma-vaivarta-purana-gitapress-hindi",
+          "identifier": "brahma-vaivarta-purana-gitapress-hindi",
+          "uploader_license_claim": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Brahma Vaivarta Puran Gita Press Gorakhpur",
+          "url": "https://archive.org/details/cehh-brahma-vaivarta-puran-gita-press-gorakhpur_202608",
+          "identifier": "cehh-brahma-vaivarta-puran-gita-press-gorakhpur_202608",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "10. Brahma Vaivarta Puran Gita Press",
+          "url": "https://archive.org/details/10.-brahma-vaivarta-puran-gita-press_202507",
+          "identifier": "10.-brahma-vaivarta-puran-gita-press_202507",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Brahma Vaivarta Puran",
+          "url": "https://archive.org/details/brahma-vaivarta-puran_202607",
+          "identifier": "brahma-vaivarta-puran_202607",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "631 Brahma Vaivart Puran",
+          "url": "https://archive.org/details/631-brahma-vaivart-puran",
+          "identifier": "631-brahma-vaivart-puran",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Brahma Vaivarta Puran Gita Press Gorakhpur",
+          "url": "https://archive.org/details/brahma-vaivarta-puran-gita-press-gorakhpur",
+          "identifier": "brahma-vaivarta-puran-gita-press-gorakhpur",
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Brahma Vaivarta Puran",
+          "url": "https://archive.org/details/brahma-vaivarta-puran_202204",
+          "identifier": "brahma-vaivarta-puran_202204",
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/mark/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Brahma Vaivarta Purana Gitapress ( Hindi)",
+          "url": "https://archive.org/details/brahma-vaivarta-purana-gitapress-hindi_202310",
+          "identifier": "brahma-vaivarta-purana-gitapress-hindi_202310",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "महर्षि वेदव्यास रचित ब्रह्मा वैवर्त पुराण Brahma Vaivarta Puran Gita Press Gorakhpur",
+          "url": "https://archive.org/details/brahma-vaivarta-puran-gita-press-gorakhpur_202502",
+          "identifier": "brahma-vaivarta-puran-gita-press-gorakhpur_202502",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Brahma Vaivarta Purana Gitapress ( Hindi)",
+          "url": "https://archive.org/details/brahma-vaivarta-purana-gitapress-hindi_202303",
+          "identifier": "brahma-vaivarta-purana-gitapress-hindi_202303",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Kalyan Sankshipt Brahma Vaivarta Purana Ank Varsh 37 Sankhya 1 Edited By Hanuman Prasad JI Poddar 1963 Gorakhpur Gita Press",
+          "url": "https://archive.org/details/ZEav_kalyan-sankshipt-brahma-vaivarta-purana-ank-varsh-37-sankhya-1-edited-by-hanuman",
+          "identifier": "ZEav_kalyan-sankshipt-brahma-vaivarta-purana-ank-varsh-37-sankhya-1-edited-by-hanuman",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        }
+      ],
+      "rights_status": "unverified",
+      "indexed_approved_passages": 0
+    },
+    {
+      "work_id": "linga-purana",
+      "official_ebook_leads": [],
+      "archive_candidates": [
+        {
+          "title": "लिंग पुराण, Linga Puran",
+          "url": "https://archive.org/details/ling-puran",
+          "identifier": "ling-puran",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Ling Puran Kritya kalptaru Part!! लिंगपुराण कृत्यकल्पतरु अनुवाद!!",
+          "url": "https://archive.org/details/sri-ling-mahapuran-gita-press-1",
+          "identifier": "sri-ling-mahapuran-gita-press-1",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Sri Linga Mahapuran श्री लिंग पुराण",
+          "url": "https://archive.org/details/sri-ling-mahapuran-gita-press_202310",
+          "identifier": "sri-ling-mahapuran-gita-press_202310",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Linga Mahapuran Of Veda Vyas With Illustration Gita Press",
+          "url": "https://archive.org/details/linga-mahapuran-of-veda-vyas-with-illustration-gita-press",
+          "identifier": "linga-mahapuran-of-veda-vyas-with-illustration-gita-press",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "श्रीलिंगमहापुराण (संस्कृत एवं हिन्दी अनुवाद) - Linga MahaPurana - Gita Press",
+          "url": "https://archive.org/details/sri-ling-mahapuran-gita-press",
+          "identifier": "sri-ling-mahapuran-gita-press",
+          "uploader_license_claim": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        }
+      ],
+      "rights_status": "unverified",
+      "indexed_approved_passages": 0
+    },
+    {
+      "work_id": "varaha-purana",
+      "official_ebook_leads": [],
+      "archive_candidates": [
+        {
+          "title": "Kalyan Sankshipta Varaha Purana Ankha Editor Motilal Jalan Gorakhpur 1977 Gita Press",
+          "url": "https://archive.org/details/LhUw_kalyan-sankshipta-varaha-purana-ankha-editor-motilal-jalan-gorakhpur-1977-gita-press",
+          "identifier": "LhUw_kalyan-sankshipta-varaha-purana-ankha-editor-motilal-jalan-gorakhpur-1977-gita-press",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Varaha Puran Illustrated With Hindi Translations Gita Press Gorakhpur",
+          "url": "https://archive.org/details/oriv-varaha-puran-illustrated-with-hindi-translations-g",
+          "identifier": "oriv-varaha-puran-illustrated-with-hindi-translations-g",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Varaha Puran Illustrated With Hindi Translations Gita Press Gorakhpur",
+          "url": "https://archive.org/details/varaha-puran-illustrated-with-hindi-translations-gita-press-gorakhpur",
+          "identifier": "varaha-puran-illustrated-with-hindi-translations-gita-press-gorakhpur",
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Varaha Puran",
+          "url": "https://archive.org/details/varaha-puran",
+          "identifier": "varaha-puran",
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/mark/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "12. Varaha Puran Gita Press",
+          "url": "https://archive.org/details/12.-varaha-puran-gita-press",
+          "identifier": "12.-varaha-puran-gita-press",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Varaha Puran Gita Press",
+          "url": "https://archive.org/details/varaha-puran-gita-press_202310",
+          "identifier": "varaha-puran-gita-press_202310",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "संक्षिप्त श्रीवराह पुराण (गीताप्रेस)",
+          "url": "https://archive.org/details/varaha-puran-gita-press",
+          "identifier": "varaha-puran-gita-press",
+          "uploader_license_claim": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        }
+      ],
+      "rights_status": "unverified",
+      "indexed_approved_passages": 0
+    },
+    {
+      "work_id": "skanda-purana",
+      "official_ebook_leads": [],
+      "archive_candidates": [
+        {
+          "title": "Skanda Puran sankshipt Gita Press गीता प्रेस",
+          "url": "https://archive.org/details/skanda-puran-gita-press_202310",
+          "identifier": "skanda-puran-gita-press_202310",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Skanda Puran sankshipt Gita Press Gorakhpur गीता प्रेस हिंदी translation",
+          "url": "https://archive.org/details/skanda-puran-gita-press_20231004",
+          "identifier": "skanda-puran-gita-press_20231004",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Shri Prem Sudha Sagar Bhagavat Dasham Skandh Saral Hindi Vyakhya Hanuman Prasad Poddar By Veda Vyasa Hindi Sanskrit Purana Illustrated Gorakhpur 1951 Gita Press",
+          "url": "https://archive.org/details/mtfu_shri-prem-sudha-sagar-bhagavat-dasham-skandh-saral-hindi-vyakhya-hanuman-pr",
+          "identifier": "mtfu_shri-prem-sudha-sagar-bhagavat-dasham-skandh-saral-hindi-vyakhya-hanuman-pr",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Skanda Puran Gita Press Gorakhpur",
+          "url": "https://archive.org/details/jgry-skanda-puran-gita-press-gorakhpur_202608",
+          "identifier": "jgry-skanda-puran-gita-press-gorakhpur_202608",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Sankshipt Skand Puran Gita Press, Gorakhpur",
+          "url": "https://archive.org/details/WBbG_sankshipt-skand-puran-gita-press-gorakhpur",
+          "identifier": "WBbG_sankshipt-skand-puran-gita-press-gorakhpur",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Shrimad Bhagavat Maha Puran Of Veda Vyas Vol 2 Translated By Munilal ( Skanda 8 To ! 2) Gita Press, Gorakhpur",
+          "url": "https://archive.org/details/zCFR_shrimad-bhagavat-maha-puran-of-veda-vyas-vol-2-translated-by-munilal-skanda-8-to",
+          "identifier": "zCFR_shrimad-bhagavat-maha-puran-of-veda-vyas-vol-2-translated-by-munilal-skanda-8-to",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Ayodhaya Mahatamya Of Rudrayamala And Skanda Purana",
+          "url": "https://archive.org/details/ayodhaya-mahatamya-of-rudrayamala-and-skanda-purana",
+          "identifier": "ayodhaya-mahatamya-of-rudrayamala-and-skanda-purana",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "13. Skanda Puran Gita Press",
+          "url": "https://archive.org/details/13.-skanda-puran-gita-press",
+          "identifier": "13.-skanda-puran-gita-press",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Skanda Puran Gita Press",
+          "url": "https://archive.org/details/skanda-puran-gita-press_20231028",
+          "identifier": "skanda-puran-gita-press_20231028",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Puran in Hindi",
+          "url": "https://archive.org/details/skanda-puran-gita-press_202303",
+          "identifier": "skanda-puran-gita-press_202303",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Skanda Puran Gita Press Text",
+          "url": "https://archive.org/details/skanda-puran-gita-press-text",
+          "identifier": "skanda-puran-gita-press-text",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Skanda Puran Gita Press",
+          "url": "https://archive.org/details/skanda-puran-gita-press_20230328",
+          "identifier": "skanda-puran-gita-press_20230328",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Skanda Puran Gita Press Gorakhpur",
+          "url": "https://archive.org/details/skanda-puran-gita-press-gorakhpur",
+          "identifier": "skanda-puran-gita-press-gorakhpur",
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Kalyan Sankshipt Skanda Puran Ank Year 25 No 1 Ed By Hanuman Prasad Poddar And Chimman Lal Goswami Gita Press Gorakhpur",
+          "url": "https://archive.org/details/Wopd_kalyan-sankshipt-skanda-puran-ank-year-25-no-1-ed-by-hanuman-prasad-poddar-and-c",
+          "identifier": "Wopd_kalyan-sankshipt-skanda-puran-ank-year-25-no-1-ed-by-hanuman-prasad-poddar-and-c",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Skanda Puran Gita Press",
+          "url": "https://archive.org/details/skanda-puran-gita-press_202304",
+          "identifier": "skanda-puran-gita-press_202304",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "संन्क्षिप्त स्कन्दपुराण - गीताप्रेस, गोरखपुर",
+          "url": "https://archive.org/details/skanda-puran-gita-press",
+          "identifier": "skanda-puran-gita-press",
+          "uploader_license_claim": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Skanda Puran",
+          "url": "https://archive.org/details/skanda-puran_202204",
+          "identifier": "skanda-puran_202204",
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/mark/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Shrimad Bhagavata Antargata Ekadasha Skandha Sateeka Translated By Munilal Sanskrit And Hindi Bhagavata Purana Illustrated Gorakhpur 1924 Gita Press",
+          "url": "https://archive.org/details/lxmh_shrimad-bhagavata-antargata-ekadasha-skandha-sateeka-translated-by-munilal-",
+          "identifier": "lxmh_shrimad-bhagavata-antargata-ekadasha-skandha-sateeka-translated-by-munilal-",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        }
+      ],
+      "rights_status": "unverified",
+      "indexed_approved_passages": 0
+    },
+    {
+      "work_id": "vamana-purana",
+      "official_ebook_leads": [],
+      "archive_candidates": [
+        {
+          "title": "Kalyan Vamana Purana Ank Edited By Hanuman Prasad Poddar 1982 Gorakhpur Gita Press",
+          "url": "https://archive.org/details/Etjz_kalyan-vamana-purana-ank-edited-by-hanuman-prasad-poddar-1982-gorakhpur-gita-press",
+          "identifier": "Etjz_kalyan-vamana-purana-ank-edited-by-hanuman-prasad-poddar-1982-gorakhpur-gita-press",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Vaman Puran Gita Press",
+          "url": "https://archive.org/details/vaman-puran-gita-press_202309",
+          "identifier": "vaman-puran-gita-press_202309",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "श्रीवामनपुराण: (संस्कृत एवं हिन्दी अनुवाद) (Shri Vamana Purana)",
+          "url": "https://archive.org/details/vaman-puran-gita-press",
+          "identifier": "vaman-puran-gita-press",
+          "uploader_license_claim": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "15. Vaman Puran Gita Press",
+          "url": "https://archive.org/details/15.-vaman-puran-gita-press",
+          "identifier": "15.-vaman-puran-gita-press",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Vaman Puran",
+          "url": "https://archive.org/details/vaman-puran",
+          "identifier": "vaman-puran",
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/mark/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Vaman Puran Gita Press",
+          "url": "https://archive.org/details/vaman-puran-gita-press_202310",
+          "identifier": "vaman-puran-gita-press_202310",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Vaman Puran Illustrated With Hindi Translations Gita Press Gorakhpur",
+          "url": "https://archive.org/details/vaman-puran-illustrated-with-hindi-translations-gita-press-gorakhpur",
+          "identifier": "vaman-puran-illustrated-with-hindi-translations-gita-press-gorakhpur",
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "वामन पुराण, Vaman Puran",
+          "url": "https://archive.org/details/vaman-puran-hindi",
+          "identifier": "vaman-puran-hindi",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Vaman Puran Gitapress",
+          "url": "https://archive.org/details/VamanPuranGitapress",
+          "identifier": "VamanPuranGitapress",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Vaman Puran Illustrated With Hindi Translations Gita Press Gorakhpur",
+          "url": "https://archive.org/details/qdnp-vaman-puran-illustrated-with-hindi-translations-gi",
+          "identifier": "qdnp-vaman-puran-illustrated-with-hindi-translations-gi",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        }
+      ],
+      "rights_status": "unverified",
+      "indexed_approved_passages": 0
+    },
+    {
+      "work_id": "kurma-purana",
+      "official_ebook_leads": [],
+      "archive_candidates": [
+        {
+          "title": "Kurma Puran (कूर्मपुराण) - Gita Press",
+          "url": "https://archive.org/details/kurma-puran-gita-press",
+          "identifier": "kurma-puran-gita-press",
+          "uploader_license_claim": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Kurma Puran Gita Press ( 1)",
+          "url": "https://archive.org/details/kurma-puran-gita-press-1",
+          "identifier": "kurma-puran-gita-press-1",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Kurma Puran Illustrated With Hindi Translations Gita Press Gorakhpur",
+          "url": "https://archive.org/details/nmqj-kurma-puran-illustrated-with-hindi-translations-gi",
+          "identifier": "nmqj-kurma-puran-illustrated-with-hindi-translations-gi",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Kalyan Kurma Purana Ank Edited By Radheshyam Khemka Hindi Sanskrit Hinduism Puranas Spirituality Magazine Volume 71 Issue 1 January February 1997 Gorakhpur Gita Press",
+          "url": "https://archive.org/details/eafv_kalyan-kurma-purana-ank-edited-by-radheshyam-khemka-hindi-sanskrit-hinduism",
+          "identifier": "eafv_kalyan-kurma-purana-ank-edited-by-radheshyam-khemka-hindi-sanskrit-hinduism",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Hindi Book Kurma Puran By Gita Press",
+          "url": "https://archive.org/details/HindiBookKurmaPuranByGitaPress",
+          "identifier": "HindiBookKurmaPuranByGitaPress",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Kurma Puran Gita Press",
+          "url": "https://archive.org/details/kurma-puran-gita-press_202310",
+          "identifier": "kurma-puran-gita-press_202310",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "16. Kurma Puran Gita Press",
+          "url": "https://archive.org/details/16.-kurma-puran-gita-press",
+          "identifier": "16.-kurma-puran-gita-press",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Hindi Book Kurma Puran By Gita Press",
+          "url": "https://archive.org/details/HindiBookKurmaPuranByGitaPress_201706",
+          "identifier": "HindiBookKurmaPuranByGitaPress_201706",
+          "uploader_license_claim": "http://creativecommons.org/licenses/by-nd/3.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Kurma Puran Illustrated With Hindi Translations Gita Press Gorakhpur",
+          "url": "https://archive.org/details/kurma-puran-illustrated-with-hindi-translations-gita-press-gorakhpur",
+          "identifier": "kurma-puran-illustrated-with-hindi-translations-gita-press-gorakhpur",
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Kurma Puran",
+          "url": "https://archive.org/details/kurma-puran",
+          "identifier": "kurma-puran",
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/mark/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        }
+      ],
+      "rights_status": "unverified",
+      "indexed_approved_passages": 0
+    },
+    {
+      "work_id": "matsya-purana",
+      "official_ebook_leads": [
+        {
+          "title": "Matasyamahapuran  (Hindi)",
+          "catalogue_code": "557",
+          "url": "https://gitapress.org/product/matasyamahapuran-hindi",
+          "pdf_url": null,
+          "online_reader_available": true
+        }
+      ],
+      "archive_candidates": [
+        {
+          "title": "Matsya Puran",
+          "url": "https://archive.org/details/matsya-puran",
+          "identifier": "matsya-puran",
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/mark/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Matsya Puran Gita Press Gorakhpur",
+          "url": "https://archive.org/details/matsya-puran-gita-press-gorakhpur",
+          "identifier": "matsya-puran-gita-press-gorakhpur",
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "17. Matsya Puran Gita Press",
+          "url": "https://archive.org/details/17.-matsya-puran-gita-press",
+          "identifier": "17.-matsya-puran-gita-press",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Matsya Purana Antim Khanda By Vyasa Radheshyam Khemka Sanskrit And Hindi Puranas Journal Illustrated Gorakhpur 1985 Gita Press",
+          "url": "https://archive.org/details/whnr_matsya-purana-antim-khanda-by-vyasa-radheshyam-khemka-sanskrit-and-hindi-pu",
+          "identifier": "whnr_matsya-purana-antim-khanda-by-vyasa-radheshyam-khemka-sanskrit-and-hindi-pu",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Matsya Purana Antim Khanda By Vyasa Radheshyam Khemka Sanskrit And Hindi Puranas Journal Illustrated Gorakhpur 1985 Gita Press",
+          "url": "https://archive.org/details/fyrh_matsya-purana-antim-khanda-by-vyasa-radheshyam-khemka-sanskrit-and-hindi-pu",
+          "identifier": "fyrh_matsya-purana-antim-khanda-by-vyasa-radheshyam-khemka-sanskrit-and-hindi-pu",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Kalyan Matsya Puran Edition 58 No 1 Ed By Jaydayal Goyandaka Gita Press, Gorakhpur",
+          "url": "https://archive.org/details/hfYU_kalyan-matsya-puran-edition-58-no-1-ed-by-jaydayal-goyandaka-gita-press-gorakhpur",
+          "identifier": "hfYU_kalyan-matsya-puran-edition-58-no-1-ed-by-jaydayal-goyandaka-gita-press-gorakhpur",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "मत्स्य महापुराण (सचित्र, हिन्दी-अनुवादसहित): Matsya Purana",
+          "url": "https://archive.org/details/matsya-puran-gita-press",
+          "identifier": "matsya-puran-gita-press",
+          "uploader_license_claim": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Matsya Puran Gita Press Gorakhpur",
+          "url": "https://archive.org/details/jjjs-matsya-puran-gita-press-gorakhpur_202608",
+          "identifier": "jjjs-matsya-puran-gita-press-gorakhpur_202608",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Kalyan Matsya Puran Part 2 Edition 59 No 1 Ed By Jaydayal Goyandaka Gita Press, Gorakhpur",
+          "url": "https://archive.org/details/Kssq_kalyan-matsya-puran-part-2-edition-59-no-1-ed-by-jaydayal-goyandaka-gita-press-gorakhpur",
+          "identifier": "Kssq_kalyan-matsya-puran-part-2-edition-59-no-1-ed-by-jaydayal-goyandaka-gita-press-gorakhpur",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Hindi Book Matsya Puran By Gita Press",
+          "url": "https://archive.org/details/HindiBookMatsyaPuranByGitaPress",
+          "identifier": "HindiBookMatsyaPuranByGitaPress",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "मत्स्य पुराण, Matsya Puran",
+          "url": "https://archive.org/details/matsya-puran-hindi",
+          "identifier": "matsya-puran-hindi",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Matsya Puran Gita Press",
+          "url": "https://archive.org/details/matsya-puran-gita-press_202303",
+          "identifier": "matsya-puran-gita-press_202303",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Matsya Puran Gita Press",
+          "url": "https://archive.org/details/matsya-puran-gita-press_202603",
+          "identifier": "matsya-puran-gita-press_202603",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "18 Puran By Gita Press Gorakhpur",
+          "url": "https://archive.org/details/matsya-puran-mp-gita-press-gorakhpur",
+          "identifier": "matsya-puran-mp-gita-press-gorakhpur",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Matsya Puran Gita Press",
+          "url": "https://archive.org/details/matsya-puran-gita-press_202310",
+          "identifier": "matsya-puran-gita-press_202310",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        }
+      ],
+      "rights_status": "unverified",
+      "indexed_approved_passages": 0
+    },
+    {
+      "work_id": "garuda-purana",
+      "official_ebook_leads": [],
+      "archive_candidates": [
+        {
+          "title": "Garuda Puran Gita Press Gorakhpur",
+          "url": "https://archive.org/details/garuda-puran-gita-press-gorakhpur",
+          "identifier": "garuda-puran-gita-press-gorakhpur",
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Garuda Purana Gita Press Gorakhpur",
+          "url": "https://archive.org/details/garuda-purana-gita-press-gorakhpur-compressed",
+          "identifier": "garuda-purana-gita-press-gorakhpur-compressed",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "18. Garuda Puran Gita Press",
+          "url": "https://archive.org/details/18.-garuda-puran-gita-press",
+          "identifier": "18.-garuda-puran-gita-press",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Garuda Puran",
+          "url": "https://archive.org/details/garuda-puran_202204",
+          "identifier": "garuda-puran_202204",
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/mark/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "संक्षिप्त गरुडपुराण - Garuda Purana (Sankshipt) Gita Press Gorakhpur",
+          "url": "https://archive.org/details/garuda-purana-sankshipt-gita-press-gorakhpur",
+          "identifier": "garuda-purana-sankshipt-gita-press-gorakhpur",
+          "uploader_license_claim": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Garuda Purana Gita Press Gorakhpur",
+          "url": "https://archive.org/details/GarudaPuranaGitaPressGorakhpur",
+          "identifier": "GarudaPuranaGitaPressGorakhpur",
+          "uploader_license_claim": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Garuda Purana Sara Uddhar Edited By Pandit Naunidhisharmaji Sanskrit Translated Into Hindi Hinduism Puranas Gorakhpur 2018 Gita Press",
+          "url": "https://archive.org/details/obvu_garuda-purana-sara-uddhar-edited-by-pandit-naunidhisharmaji-sanskrit-transl",
+          "identifier": "obvu_garuda-purana-sara-uddhar-edited-by-pandit-naunidhisharmaji-sanskrit-transl",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Sankshipt Garuda Purana Gita Press",
+          "url": "https://archive.org/details/sankshipt-garuda-purana-gita-press",
+          "identifier": "sankshipt-garuda-purana-gita-press",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Garuda Puran Gita Press Gorakhpur",
+          "url": "https://archive.org/details/qkps-garuda-puran-gita-press-gorakhpur_202608",
+          "identifier": "qkps-garuda-puran-gita-press-gorakhpur_202608",
+          "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        },
+        {
+          "title": "Sankshipt Garuda Purana Gita Press",
+          "url": "https://archive.org/details/sankshipt-garuda-purana-gita-press_202310",
+          "identifier": "sankshipt-garuda-purana-gita-press_202310",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        }
+      ],
+      "rights_status": "unverified",
+      "indexed_approved_passages": 0
+    },
+    {
+      "work_id": "brahmanda-purana",
+      "official_ebook_leads": [],
+      "archive_candidates": [
+        {
+          "title": "14. Brahmand Puran (1st & 2nd Part) Gita Press",
+          "url": "https://archive.org/details/14.-brahmand-puran-1st-part-gita-press",
+          "identifier": "14.-brahmand-puran-1st-part-gita-press",
+          "uploader_license_claim": null,
+          "publisher_verified": false,
+          "coverage": "unknown",
+          "status": "candidate_not_verified"
+        }
+      ],
+      "rights_status": "unverified",
+      "indexed_approved_passages": 0
+    }
+  ]
+}

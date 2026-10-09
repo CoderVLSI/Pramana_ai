@@ -1,6 +1,6 @@
 # All 18 Mahapuranas: Gita Press, Gorakhpur references
 
-Publisher choice is confirmed by the user. Usage permission for the user's books/PDFs is currently unclear. No publisher text has been downloaded, transcribed, embedded, quoted by the app, or indexed into approved RAG.
+Publisher choice is confirmed by the user. Usage permission for the user's books/PDFs is currently unclear. A public Vishnu Purana candidate now has a private, unreviewed page-aware OCR index. No publisher text is embedded remotely, quoted by the app, or indexed into approved RAG. See `archive-sourcing.md`.
 
 Official catalog metadata was inspected on 9 October 2026. Candidate catalog codes and product URLs are in `packages/corpus-schema/catalogue-candidates.json`. These are acquisition leads, not selected print editions or licensed texts. A catalog listing is not a redistribution or API-use license. The terms page did not establish permission for these operations.
 
@@ -21,6 +21,6 @@ Source register: `GET /v1/corpus/register`. The app now defaults to the 18-work 
 
 ## Source material needed next
 
-The actual Gita Press PDF/book copies, including title/copyright pages and all volumes, and the available usage-permission record. No Purana content has been supplied in this workspace; the architecture PDF is the only attached PDF.
+The actual Gita Press PDF/book copies, including title/copyright pages and all volumes, and the available usage-permission record. The architecture PDF remains the only user attachment. Web sourcing is now handled directly; one archive candidate has a private draft OCR index.
 
 Sources: [Gita Press catalog](https://gitapress.org/catalogue), [Gita Press terms page](https://gitapress.org/terms-condition), [Gita Press e-books page](https://www.gitapress.org/ebook).

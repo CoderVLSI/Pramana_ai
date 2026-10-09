@@ -1,0 +1,9 @@
+# Gita Press web sourcing and private draft retrieval
+
+Discovery now runs without asking the user to locate or paste PDFs. `packages/corpus-schema/web-source-leads.json` records public discovery leads for all 18 target works, including official online reader metadata and Archive.org candidates. `archive-intake-status.json` records inspected archive file metadata. Candidate titles and uploader license claims do not certify publisher, complete coverage, or reuse rights. Some matches may be different works or abridgments; verify scans before selecting an edition.
+
+A Vishnu Purana candidate described by its uploader as a 1934 Gita Press edition has been downloaded as page-aware OCR and indexed locally: 582 scan pages. A local FTS query for विष्णु returned matching scan pages. OCR has visibly significant errors. Title-page OCR suggests Munilal Gupta and a first edition but does not establish publisher identity reliably. This is a private research draft, not an approved source or a verse-cited answer corpus.
+
+Run `python services/ingest/draft_archive.py ARCHIVE_IDENTIFIER --query SEARCH_TERM` to acquire publicly accessible page-aware OCR and build a private SQLite FTS index. Search emits page ordinals only. Source metadata, OCR checksum and draft status are recorded locally. Downloads and databases stay in ignored `services/ingest/private/`; they are excluded from source archives and GitHub. No remote embedding submission occurs. No app answer or audio endpoint reads these drafts.
+
+Next: inspect scan title/imprint and coverage for each candidate, correct OCR, map printed pages and hierarchical verse references, document applicable rights, then use the reviewed source bundle importer. Scan page ordinals must not be passed off as printed page or verse citations. Full vector retrieval and publication remain pending.
