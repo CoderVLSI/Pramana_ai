@@ -12,3 +12,5 @@ Validated 9 October 2026:
 Screenshots: `study-desktop.png`, `study-mobile.png`.
 
 Not completed: source licensing and human review, all-18 ingestion, semantic RAG, independent claim entailment model, production database/auth, signed APK/AAB, live voice, store release, 250-question benchmark, native-device testing.
+
+Bottom navigation now uses react-native-safe-area-context for system insets and a compact 56-point bar with 44-point minimum tab targets. TypeScript and Android export passed after the change; native navigation-mode testing remains pending.

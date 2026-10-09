@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import {
-  SafeAreaView,
   ScrollView,
   View,
   Text,
@@ -12,6 +11,11 @@ import {
   ActivityIndicator,
   Platform,
 } from "react-native";
+import {
+  SafeAreaProvider,
+  SafeAreaView,
+  initialWindowMetrics,
+} from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import type { Answer, Passage } from "../../packages/citation-schema";
@@ -82,6 +86,13 @@ function PassageCard({
   );
 }
 export default function App() {
+  return (
+    <SafeAreaProvider initialMetrics={initialWindowMetrics}>
+      <StudyApp />
+    </SafeAreaProvider>
+  );
+}
+function StudyApp() {
   const { width } = useWindowDimensions(),
     wide = width > 850;
   const [tab, setTab] = useState("Study"),
@@ -177,7 +188,7 @@ export default function App() {
   ] as const;
 
   return (
-    <SafeAreaView style={s.root}>
+    <SafeAreaView style={s.root} edges={["top", "right", "bottom", "left"]}>
       <View style={[s.shell, !wide && { flexDirection: "column" }]}>
         {wide && (
           <View style={s.sidebar}>
@@ -668,7 +679,7 @@ export default function App() {
                     setTab(name);
                     setReader(null);
                   }}
-                  style={{ alignItems: "center", gap: 4 }}
+                  style={s.tabItem}
                 >
                   <Icon name={icon} color={tab === name ? C.green : C.muted} />
                   <Text style={s.small}>{name}</Text>
@@ -933,10 +944,19 @@ const s = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
+  tabItem: {
+    flex: 1,
+    minHeight: 44,
+    justifyContent: "center",
+    alignItems: "center",
+    gap: 2,
+  },
   bottomNav: {
     flexDirection: "row",
     justifyContent: "space-around",
-    padding: 14,
+    paddingHorizontal: 8,
+    paddingVertical: 6,
+    minHeight: 56,
     borderTopWidth: 1,
     borderColor: C.line,
     backgroundColor: C.paper,
