@@ -1,0 +1,116 @@
+import { createHash, randomUUID } from "node:crypto";
+import { passages } from "./corpus";
+import {
+  RELEASE,
+  type Answer,
+  type Passage,
+} from "../../../packages/citation-schema/index";
+export interface Selection {
+  work_ids?: string[];
+  edition_ids?: string[];
+}
+export function search(query: string, selection: Selection = {}): Passage[] {
+  const pool = passages.filter(
+    (p) =>
+      (!selection.work_ids?.length || selection.work_ids.includes(p.work_id)) &&
+      (!selection.edition_ids?.length ||
+        selection.edition_ids.includes(p.edition_id)),
+  );
+  const ref = query.match(/(?:gita|गीता|bg)?\s*(\d+)\s*[.:]\s*(\d+)/i);
+  if (ref)
+    return pool.filter((p) => p.chapter === +ref[1] && p.verse === +ref[2]);
+  // Unsupported identity questions must not become answers from incidental keyword matches.
+  if (
+    /draupadi|shachi|shri|jara|vali|ashwatthama|rukmini|sita|reborn|reincarnat/i.test(
+      query,
+    )
+  )
+    return [];
+  const terms = query.toLowerCase().match(/[\p{L}]+/gu) || [];
+  return pool
+    .map((p) => ({
+      p,
+      score: terms.filter((t) => p.keywords.includes(t)).length,
+    }))
+    .filter((x) => x.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 3)
+    .map((x) => x.p);
+}
+export function verify(answer: Answer, packet: Passage[]): boolean {
+  if (!answer.claims.length)
+    return (
+      answer.support_state === "NOT_VERIFIED" &&
+      answer.citations.length === 0 &&
+      !answer.safe_to_speak
+    );
+  const ids = new Set(packet.map((p) => p.id));
+  if (
+    answer.corpus_release !== RELEASE ||
+    answer.citations.length !== answer.claims.length
+  )
+    return false;
+  for (const c of answer.claims) {
+    if (c.type !== "DIRECT" || c.evidence_ids.length !== 1) return false;
+    const id = c.evidence_ids[0],
+      p = packet.find((p) => p.id === id),
+      stored = passages.find((p) => p.id === id),
+      citation = answer.citations.find((p) => p.id === id);
+    if (
+      !ids.has(id) ||
+      !p ||
+      !stored ||
+      !citation ||
+      JSON.stringify(citation) !== JSON.stringify(stored) ||
+      p.released_in !== RELEASE ||
+      createHash("sha256").update(p.original).digest("hex") !== p.content_sha256
+    )
+      return false;
+    if (
+      c.quote_span[0] !== 0 ||
+      c.quote_span[1] !== p.translation.length ||
+      c.text !== p.translation
+    )
+      return false;
+  }
+  return (
+    !answer.safe_to_speak || packet.every((p) => p.review_status === "approved")
+  );
+}
+export function answerStrict(query: string, selection: Selection = {}): Answer {
+  const hits = search(query, selection);
+  const empty: Answer = {
+    id: randomUUID(),
+    query,
+    answer: "Not verified in the selected corpus.",
+    support_state: "NOT_VERIFIED",
+    claims: [],
+    citations: [],
+    caveats: [
+      "The pilot contains five development passages from the Bhagavad Gita. Absence here does not establish absence in scripture.",
+    ],
+    corpus_release: RELEASE,
+    safe_to_speak: false,
+  };
+  if (!hits.length) return empty;
+  const answer: Answer = {
+    ...empty,
+    answer:
+      "The following passages match your question. Read their wording and context below.",
+    support_state: "DIRECT",
+    claims: hits.map((p) => ({
+      text: p.translation,
+      evidence_ids: [p.id],
+      type: "DIRECT",
+      quote_span: [0, p.translation.length],
+    })),
+    citations: structuredClone(hits),
+    caveats: [
+      "Development fixtures: edition provenance and scholarly review are pending.",
+      "English text is a development rendering, not a named publisher’s translation.",
+      "Keyword retrieval returns passage excerpts; it does not infer an answer to a doctrinal question.",
+    ],
+    safe_to_speak: false,
+  };
+  return verify(answer, hits) ? answer : empty;
+}

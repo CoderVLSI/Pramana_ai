@@ -1,0 +1,18 @@
+BEGIN;
+CREATE EXTENSION IF NOT EXISTS vector;
+CREATE TABLE licenses (id text PRIMARY KEY, rights_holder text NOT NULL, permission_proof text NOT NULL, allowed_operations text[] NOT NULL, approved_at timestamptz);
+CREATE TABLE works (id text PRIMARY KEY, title text NOT NULL, aliases text[] NOT NULL DEFAULT '{}');
+CREATE TABLE editions (id text PRIMARY KEY, work_id text NOT NULL REFERENCES works, publisher text NOT NULL, editor text, print_year integer, license_id text NOT NULL REFERENCES licenses);
+CREATE TABLE index_versions (id text PRIMARY KEY, released_at timestamptz, reviewers text[] NOT NULL CHECK(cardinality(reviewers)>=2));
+CREATE TABLE passages (id text PRIMARY KEY, edition_id text NOT NULL REFERENCES editions, chapter text NOT NULL, verse text NOT NULL, original text NOT NULL, content_sha256 text NOT NULL, review_status text NOT NULL CHECK(review_status IN ('pending','approved','rejected')), release_id text NOT NULL REFERENCES index_versions, source_locator jsonb NOT NULL, embedding vector(1536), search_vector tsvector GENERATED ALWAYS AS (to_tsvector('simple',original)) STORED, UNIQUE(edition_id,release_id,chapter,verse));
+CREATE INDEX passage_search ON passages USING gin(search_vector);
+CREATE TABLE translations (id text PRIMARY KEY, passage_id text NOT NULL REFERENCES passages, author text NOT NULL, language text NOT NULL, text text NOT NULL, license_id text NOT NULL REFERENCES licenses);
+CREATE TABLE alignments (from_passage text REFERENCES passages, to_passage text REFERENCES passages, reviewer text NOT NULL, confidence numeric CHECK(confidence BETWEEN 0 AND 1), PRIMARY KEY(from_passage,to_passage));
+CREATE TABLE answers (id uuid PRIMARY KEY, query text NOT NULL, support_state text NOT NULL, release_id text REFERENCES index_versions, created_at timestamptz DEFAULT now());
+CREATE TABLE claims (id uuid PRIMARY KEY, answer_id uuid REFERENCES answers, statement text NOT NULL, statement_kind text NOT NULL);
+CREATE TABLE evidence_links (claim_id uuid REFERENCES claims, passage_id text REFERENCES passages, quote_start integer NOT NULL, quote_end integer NOT NULL CHECK(quote_end>quote_start), PRIMARY KEY(claim_id,passage_id));
+CREATE TABLE feedback (id uuid PRIMARY KEY, passage_id text REFERENCES passages, reason text NOT NULL, status text DEFAULT 'received');
+CREATE TABLE audits (id uuid PRIMARY KEY, answer_id uuid REFERENCES answers, versions jsonb NOT NULL, result jsonb NOT NULL);
+CREATE FUNCTION reject_passage_mutation() RETURNS trigger LANGUAGE plpgsql AS $$ BEGIN IF OLD.review_status='approved' THEN RAISE EXCEPTION 'Approved passages are immutable; publish a new release'; END IF; RETURN NEW; END $$;
+CREATE TRIGGER immutable_passage BEFORE UPDATE OR DELETE ON passages FOR EACH ROW EXECUTE FUNCTION reject_passage_mutation();
+COMMIT;

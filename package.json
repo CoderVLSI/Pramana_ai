@@ -1,0 +1,26 @@
+{
+  "name": "pramana",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "services/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -k \"npm run dev -w @pramana/api\" \"npm run web -w @pramana/mobile\"",
+    "api": "npm run dev -w @pramana/api",
+    "web": "npm run web -w @pramana/mobile",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test eval/*.test.ts",
+    "build:web": "npm run build -w @pramana/mobile",
+    "build:android": "npm exec -w @pramana/mobile -- expo export --platform android --output-dir dist-android"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "~19.1.10",
+    "concurrently": "^9.2.0",
+    "prettier": "^3.9.9",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "Pramana",
+    "slug": "pramana",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "android": {
+      "package": "org.pramana.study",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#143D29"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "name": "Pramana \u00b7 Scripture study",
+      "favicon": "./assets/icon.png"
+    },
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#143D29"
+    }
+  }
+}

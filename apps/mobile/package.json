@@ -1,0 +1,21 @@
+{
+  "name": "@pramana/mobile",
+  "private": true,
+  "main": "index.ts",
+  "scripts": {
+    "web": "expo start --web --port 8081",
+    "android": "expo start --android",
+    "build": "expo export --platform web"
+  },
+  "dependencies": {
+    "expo": "~54.0.0",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-dom": "19.1.0",
+    "react-native-web": "^0.21.0",
+    "@expo/vector-icons": "^15.0.0",
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "expo-speech": "~14.0.8",
+    "@expo/metro-runtime": "~6.1.2"
+  }
+}
