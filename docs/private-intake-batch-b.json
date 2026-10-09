@@ -1,0 +1,190 @@
+{
+  "checked_on": "2026-10-09",
+  "status": "private_unreviewed_intake_only",
+  "download_policy": {
+    "serial": true,
+    "max_ocr_xml_bytes": 150000000,
+    "network_socket_timeout_seconds": 60,
+    "per_item_process_timeout_seconds": 300
+  },
+  "approved_app_connection": false,
+  "external_embeddings": false,
+  "note": "Only page-aware OCR and metadata downloaded. No scripture snippets reproduced in this report. Scan ordinal is not printed page or verse. Initial OCR indicators are automated string observations, not independent edition review.",
+  "results": [
+    {
+      "identifier": "shiva-mahapuran-part-1-first-half-by-veda-vyas-with-explanation-and-illustration-gita-press",
+      "status": "private_unreviewed_draft",
+      "title": "Shiva Mahapuran Part 1 First Half By Veda Vyas With Explanation And Illustration Gita Press",
+      "metadata_language": null,
+      "ocr_assets": [
+        {
+          "name": "Shiva Mahapuran Part 1 First Half by Veda Vyas with Explanation and Illustration - Gita Press_djvu.xml",
+          "bytes": 39527154
+        }
+      ],
+      "publisher_verified": false,
+      "rights_verified": false,
+      "verse_mapping_verified": false,
+      "source_url": "https://archive.org/details/shiva-mahapuran-part-1-first-half-by-veda-vyas-with-explanation-and-illustration-gita-press",
+      "ocr_sha256": "3b8cdadcf416a8a856a9c55f18f51b360e988622d7010b6b7a232fdd420fbdce",
+      "scan_pages": 1085,
+      "indexed_approved_passages": 0,
+      "note": "Scan page ordinal only; not printed page or verse citation. No external embeddings.",
+      "smoke_query": "पुराण",
+      "matching_scan_pages": [
+        1081,
+        66,
+        742,
+        20,
+        7
+      ],
+      "initial_ocr_devanagari_characters": 37209,
+      "initial_ocr_division_terms_present": [
+        "विद्येश्वर",
+        "रुद्र",
+        "संहिता",
+        "प्रथम",
+        "द्वितीय",
+        "अग्नि",
+        "हिन्दी",
+        "अनुवाद",
+        "गीता",
+        "गीताप्रेस"
+      ],
+      "work_id": "shiva-purana",
+      "edition_verified": false,
+      "coverage_verified": false,
+      "independently_reviewed": false,
+      "pending_checks": [
+        "Confirm publisher and printing from title/copyright pages",
+        "Establish both files belong to matching edition",
+        "Map all samhitas, chapters, verses and printed pages",
+        "Confirm volume overlap and omissions; combined 2193 scan pages is not completeness proof"
+      ]
+    },
+    {
+      "identifier": "shiv-mahapuran-of-veda-vyas-chapter-2-second-half-with-hindi-vyakhya-illustration-gita-press",
+      "status": "private_unreviewed_draft",
+      "title": "Shiv Mahapuran Of Veda Vyas Chapter 2 Second Half With Hindi Vyakhya Illustration Gita Press",
+      "metadata_language": null,
+      "ocr_assets": [
+        {
+          "name": "Shiv Mahapuran of Veda Vyas Chapter 2 Second Half with Hindi Vyakhya Illustration - Gita Press_djvu.xml",
+          "bytes": 39650908
+        }
+      ],
+      "publisher_verified": false,
+      "rights_verified": false,
+      "verse_mapping_verified": false,
+      "source_url": "https://archive.org/details/shiv-mahapuran-of-veda-vyas-chapter-2-second-half-with-hindi-vyakhya-illustration-gita-press",
+      "ocr_sha256": "ec0ff5d776582f580b6c4ede54a1f2fd3d2459eade5e51d417ed4b76b149a765",
+      "scan_pages": 1108,
+      "indexed_approved_passages": 0,
+      "note": "Scan page ordinal only; not printed page or verse citation. No external embeddings.",
+      "smoke_query": "पुराण",
+      "matching_scan_pages": [
+        1072,
+        1071,
+        708,
+        736,
+        628
+      ],
+      "initial_ocr_devanagari_characters": 27830,
+      "initial_ocr_division_terms_present": [
+        "रुद्र",
+        "संहिता",
+        "प्रथम",
+        "द्वितीय",
+        "अग्नि",
+        "हिन्दी",
+        "अनुवाद",
+        "गीता",
+        "गीताप्रेस"
+      ],
+      "work_id": "shiva-purana",
+      "edition_verified": false,
+      "coverage_verified": false,
+      "independently_reviewed": false,
+      "pending_checks": [
+        "Confirm publisher and printing from title/copyright pages",
+        "Establish both files belong to matching edition",
+        "Map all samhitas, chapters, verses and printed pages",
+        "Confirm volume overlap and omissions; combined 2193 scan pages is not completeness proof"
+      ]
+    },
+    {
+      "identifier": "agni-puran-gita-press",
+      "status": "private_unreviewed_draft",
+      "title": "Agni Puran - Gita Press (Hindi)",
+      "metadata_language": "hin",
+      "ocr_assets": [
+        {
+          "name": "Agni Puran - Gita Press_djvu.xml",
+          "bytes": 36366718
+        }
+      ],
+      "publisher_verified": false,
+      "rights_verified": false,
+      "verse_mapping_verified": false,
+      "source_url": "https://archive.org/details/agni-puran-gita-press",
+      "ocr_sha256": "2933749feaa20c5d87c456f362da2b4eddf6210dd059463f2ad204d24fbedbe7",
+      "scan_pages": 864,
+      "indexed_approved_passages": 0,
+      "note": "Scan page ordinal only; not printed page or verse citation. No external embeddings.",
+      "smoke_query": "पुराण",
+      "matching_scan_pages": [
+        567,
+        566,
+        424,
+        840,
+        13
+      ],
+      "initial_ocr_devanagari_characters": 35951,
+      "initial_ocr_division_terms_present": [
+        "रुद्र",
+        "संहिता",
+        "द्वितीय",
+        "अग्नि",
+        "वामन",
+        "हिन्दी",
+        "अनुवाद",
+        "गीता",
+        "गीताप्रेस"
+      ],
+      "work_id": "agni-purana",
+      "edition_verified": false,
+      "coverage_verified": false,
+      "independently_reviewed": false,
+      "pending_checks": [
+        "Confirm catalogue code and printing",
+        "Map chapters verses printed pages",
+        "Check omitted or damaged pages",
+        "Language metadata and Devanagari script do not distinguish all Sanskrit and Hindi content"
+      ]
+    },
+    {
+      "identifier": "vaman-puran-gita-press",
+      "status": "upstream_http_500_no_index",
+      "title": "श्रीवामनपुराण: (संस्कृत एवं हिन्दी अनुवाद) (Shri Vamana Purana)",
+      "metadata_language": "hin",
+      "ocr_assets": [
+        {
+          "name": "Vaman Puran - Gita Press_djvu.xml",
+          "bytes": 18336822
+        }
+      ],
+      "error": "Private OCR intake failed: HTTP Error 500: Internal Server Error\n",
+      "work_id": "vamana-purana",
+      "edition_verified": false,
+      "coverage_verified": false,
+      "independently_reviewed": false,
+      "pending_checks": [
+        "Retry source OCR when upstream recovers or inspect another candidate",
+        "Confirm title-page publisher and printing",
+        "Map chapter and verse coverage"
+      ],
+      "attempts": 2,
+      "indexed_approved_passages": 0
+    }
+  ]
+}

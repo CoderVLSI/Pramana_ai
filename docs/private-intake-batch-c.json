@@ -1,0 +1,126 @@
+{
+  "status": "private_unreviewed_intake",
+  "limits": {
+    "max_ocr_bytes": 150000000,
+    "initial_max_seconds_per_item": 240,
+    "retry_max_seconds": 60,
+    "max_retries": 1,
+    "serial_downloads": true
+  },
+  "approved_passages": 0,
+  "app_connected": false,
+  "items": [
+    {
+      "work_id": "narada-purana",
+      "archive_identifier": "narada-puran-gita-press-gorakhpur",
+      "coverage": "likely_abridged_catalogue_1183",
+      "publisher_verified": false,
+      "rights_verified": false,
+      "verse_mapping_verified": false,
+      "ocr_file": "Narada Puran - Gita Press Gorakhpur_djvu.xml",
+      "expected_bytes": 25943657,
+      "expected_sha1": "50b3a9890c439dc09386862a600d63e557461e70",
+      "state": "private_index_ocr_quality_blocked",
+      "attempts": 2,
+      "first_attempt_error": "Per-item 240 second limit exceeded",
+      "first_attempt_limit_seconds": 240,
+      "retry_limit_seconds": 60,
+      "ocr_sha256": "f9145b7cdaad9a1458276fabd56412ffda228975dec27b0951d75afcaa847bb7",
+      "scan_pages": 784,
+      "query": "धर्म",
+      "matching_scan_pages": [],
+      "matching_scan_page_count": 0,
+      "size_verified": true,
+      "archive_sha1_verified": true,
+      "ocr_script_check": {
+        "characters": 1246139,
+        "devanagari_characters": 0,
+        "latin_characters": 0,
+        "alphabetic_script_counts": {
+          "ARABIC": 279311
+        }
+      },
+      "limitations": [
+        "Hindi search terms returned no matches; OCR script quality requires review. Index creation does not establish useful Hindi retrieval."
+      ]
+    },
+    {
+      "work_id": "markandeya-purana",
+      "archive_identifier": "markandeya-purana-gita-press.pdf",
+      "coverage": "likely_abridged_catalogue_539",
+      "publisher_verified": false,
+      "rights_verified": false,
+      "verse_mapping_verified": false,
+      "ocr_file": "markandeya purana gita press.pdf_djvu.xml",
+      "expected_bytes": 10901716,
+      "expected_sha1": "ad1eabbe43fd27b063714baf6bd5f707ebb6144a",
+      "state": "private_searchable_draft",
+      "ocr_sha256": "b07882382240ef3c706442521c44af4f8c26cc8d7f3557735c78e32dee0ac456",
+      "scan_pages": 312,
+      "query": "धर्म",
+      "matching_scan_pages": [
+        101,
+        117,
+        102,
+        64,
+        132
+      ],
+      "matching_scan_page_count": 5,
+      "size_verified": true,
+      "archive_sha1_verified": true,
+      "attempts": 1
+    },
+    {
+      "work_id": "bhavishya-purana",
+      "archive_identifier": "rqrh-bhavishya-puran-gita-press-gorakhpur_202608",
+      "coverage": "coverage_unverified_catalogue_gujarati_abridged_not_hindi_match",
+      "publisher_verified": false,
+      "rights_verified": false,
+      "verse_mapping_verified": false,
+      "ocr_file": "Bhavishya Puran - Gita Press Gorakhpur_djvu.xml",
+      "expected_bytes": 25569840,
+      "expected_sha1": "deeb68289ef9a0a8a36ac09764b2ff393fe8de2a",
+      "state": "private_searchable_draft",
+      "ocr_sha256": "1682141177fe7647c1ddbe5005a1bfa9bd1c94cfe14af08f4cf793ee2691c156",
+      "scan_pages": 654,
+      "query": "धर्म",
+      "matching_scan_pages": [
+        218,
+        16,
+        34,
+        222,
+        20
+      ],
+      "matching_scan_page_count": 5,
+      "size_verified": true,
+      "archive_sha1_verified": true,
+      "attempts": 1
+    },
+    {
+      "work_id": "brahmavaivarta-purana",
+      "archive_identifier": "brahma-vaivarta-purana-gitapress-hindi",
+      "coverage": "likely_abridged_catalogue_631",
+      "publisher_verified": false,
+      "rights_verified": false,
+      "verse_mapping_verified": false,
+      "ocr_file": "Brahma Vaivarta Purana - Gitapress (Hindi)_djvu.xml",
+      "expected_bytes": 32442426,
+      "expected_sha1": "b06191783eb1ace48f2a9851cad70b8c3419e963",
+      "state": "private_searchable_draft",
+      "ocr_sha256": "108c5c9a2aeb274511c24e602149d7281448114f17b7136713591e99dcd669ae",
+      "scan_pages": 810,
+      "query": "धर्म",
+      "matching_scan_pages": [
+        86,
+        32,
+        645,
+        643,
+        716
+      ],
+      "matching_scan_page_count": 5,
+      "size_verified": true,
+      "archive_sha1_verified": true,
+      "attempts": 1
+    }
+  ]
+}

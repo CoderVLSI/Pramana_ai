@@ -1,0 +1,105 @@
+{
+  "scope": "private_unreviewed_page_ocr_only",
+  "approved_passages": 0,
+  "items": [
+    {
+      "identifier": "linga-mahapuran-of-veda-vyas-with-illustration-gita-press",
+      "title": "Linga Mahapuran Of Veda Vyas With Illustration Gita Press",
+      "coverage": "pending_verification",
+      "limitations": [
+        "Publisher, edition and completeness unverified",
+        "OCR unreviewed; scan ordinal is not printed-page or verse citation",
+        "Rights unverified; no approved app connection or external embeddings"
+      ],
+      "ocr_filename": "Linga Mahapuran of Veda Vyas with Illustration - Gita Press_djvu.xml",
+      "expected_bytes": 32098196,
+      "archive_sha1": "622dc14ddd927aa234ef91a37769cc244ccea0e2",
+      "status": "private_unreviewed_draft",
+      "scan_pages": 852,
+      "ocr_sha256": "0f40ae467c5d1ca09928d13b2f8462562fae4c6526d244b707aedd6cf0aacb66",
+      "query": "धर्म",
+      "hit_scan_pages": [
+        68,
+        192,
+        747,
+        195,
+        581
+      ]
+    },
+    {
+      "identifier": "oriv-varaha-puran-illustrated-with-hindi-translations-g",
+      "title": "Varaha Puran Illustrated With Hindi Translations Gita Press Gorakhpur",
+      "coverage": "pending_likely_abridged",
+      "limitations": [
+        "Publisher, edition and completeness unverified",
+        "OCR unreviewed; scan ordinal is not printed-page or verse citation",
+        "Rights unverified; no approved app connection or external embeddings"
+      ],
+      "ocr_filename": "Varaha Puran Illustrated with Hindi Translations - Gita Press Gorakhpur_djvu.xml",
+      "expected_bytes": 16641025,
+      "archive_sha1": "c0f2177e47b8845ea469f02fcb3b72a0cbcfeafa",
+      "status": "private_unreviewed_draft",
+      "scan_pages": 414,
+      "ocr_sha256": "2d4920cf7fed89df78f4e8c4fe719414fe6790dbb0620e66a95ed2abe21a63f3",
+      "query": "धर्म",
+      "hit_scan_pages": [
+        380,
+        212,
+        89,
+        368,
+        195
+      ]
+    },
+    {
+      "identifier": "matsya-puran-gita-press-gorakhpur",
+      "title": "Matsya Puran Gita Press Gorakhpur",
+      "coverage": "pending_verification",
+      "limitations": [
+        "Publisher, edition and completeness unverified",
+        "OCR unreviewed; scan ordinal is not printed-page or verse citation",
+        "Rights unverified; no approved app connection or external embeddings"
+      ],
+      "ocr_filename": "Matsya Puran MP - Gita Press Gorakhpur_djvu.xml",
+      "expected_bytes": 46247208,
+      "archive_sha1": "8ff9809e3fbc5a88c8f1c4b050b8aeec1a49434e",
+      "status": "private_unreviewed_draft",
+      "scan_pages": 1104,
+      "ocr_sha256": "1c45396cc976aaa80274f37b797d59ed02cefee5043077b057c1e3798877bb2f",
+      "query": "धर्म",
+      "hit_scan_pages": [
+        544,
+        863,
+        699,
+        529,
+        532
+      ]
+    },
+    {
+      "identifier": "garuda-puran-gita-press-gorakhpur",
+      "title": "Garuda Puran Gita Press Gorakhpur",
+      "coverage": "pending_likely_abridged",
+      "limitations": [
+        "Publisher, edition and completeness unverified",
+        "OCR unreviewed; scan ordinal is not printed-page or verse citation",
+        "Rights unverified; no approved app connection or external embeddings",
+        "OCR contains zero Devanagari characters; Hindi query has no hits. Local re-OCR needed before useful Hindi retrieval."
+      ],
+      "ocr_filename": "Garuda Puran - Gita Press Gorakhpur_djvu.xml",
+      "expected_bytes": 20959471,
+      "archive_sha1": "12da0e1d4f3951d93e767a6328a3153ed8e03a93",
+      "status": "private_unreviewed_draft",
+      "scan_pages": 638,
+      "ocr_sha256": "9888c75a7efe69b68d6f0767d73eb3b3b0836259609795e417f9a7f9e76af046",
+      "query": "धर्म",
+      "hit_scan_pages": [],
+      "ocr_quality": {
+        "devanagari_characters": 0,
+        "latin_characters": 0,
+        "alphabetic_unicode_scripts": {
+          "ARABIC": 265748
+        },
+        "hindi_search_usable": false
+      }
+    }
+  ]
+}

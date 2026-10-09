@@ -10,3 +10,6 @@ dist-android/
 !.env.example
 
 services/ingest/private/
+
+__pycache__/
+*.pyc

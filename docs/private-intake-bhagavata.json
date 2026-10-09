@@ -1,0 +1,49 @@
+{
+  "identifier": "srimad-bhagavat-mahapuran-2-volume-set-sanskrit-hindi",
+  "assets": [
+    {
+      "status": "private_unreviewed_draft",
+      "publisher_verified": false,
+      "rights_verified": false,
+      "verse_mapping_verified": false,
+      "source_url": "https://archive.org/details/srimad-bhagavat-mahapuran-2-volume-set-sanskrit-hindi",
+      "ocr_sha256": "ebbee9b089171dd95a9e301abab39314538dd6ae0d87a6f3756cb5e821cd6304",
+      "scan_pages": 1617,
+      "indexed_approved_passages": 0,
+      "note": "Scan page ordinal only; not printed page or verse citation. No external embeddings.",
+      "asset_name": "Srimad Bhagavat Mahapuran Volume 1 Sanskrit Hindi_djvu.xml",
+      "asset_identity_verified": false,
+      "coverage_verified": false,
+      "query_test_hit_pages": [
+        1172,
+        343,
+        332,
+        337,
+        15
+      ]
+    },
+    {
+      "status": "private_unreviewed_draft",
+      "publisher_verified": false,
+      "rights_verified": false,
+      "verse_mapping_verified": false,
+      "source_url": "https://archive.org/details/srimad-bhagavat-mahapuran-2-volume-set-sanskrit-hindi",
+      "ocr_sha256": "ba4b23f8028ece90428f9bee7fc8be1fa8b80b402c21edaf2bbb1aacaa43f8d2",
+      "scan_pages": 1520,
+      "indexed_approved_passages": 0,
+      "note": "Scan page ordinal only; not printed page or verse citation. No external embeddings.",
+      "asset_name": "Srimad Bhagavat Mahapuran Volume 2 Sanskrit Hindi_djvu.xml",
+      "asset_identity_verified": false,
+      "coverage_verified": false,
+      "query_test_hit_pages": [
+        432,
+        738,
+        379,
+        856,
+        254
+      ]
+    }
+  ],
+  "edition_pair_verified": false,
+  "twelve_skandhas_verified": false
+}

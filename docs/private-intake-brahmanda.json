@@ -1,0 +1,49 @@
+{
+  "identifier": "14.-brahmand-puran-1st-part-gita-press",
+  "assets": [
+    {
+      "status": "private_unreviewed_draft",
+      "publisher_verified": false,
+      "rights_verified": false,
+      "verse_mapping_verified": false,
+      "source_url": "https://archive.org/details/14.-brahmand-puran-1st-part-gita-press",
+      "ocr_sha256": "fa38f75819ecb8af15caab8cdae65c2d905a833ff59a4468499c018d0773175a",
+      "scan_pages": 1354,
+      "indexed_approved_passages": 0,
+      "note": "Scan page ordinal only; not printed page or verse citation. No external embeddings.",
+      "asset_name": "14.Brahmand puran (1st Part) Gita Press_djvu.xml",
+      "asset_identity_verified": false,
+      "coverage_verified": false,
+      "query_test_hit_pages": [
+        997,
+        1063,
+        883,
+        597,
+        1054
+      ]
+    },
+    {
+      "status": "private_unreviewed_draft",
+      "publisher_verified": false,
+      "rights_verified": false,
+      "verse_mapping_verified": false,
+      "source_url": "https://archive.org/details/14.-brahmand-puran-1st-part-gita-press",
+      "ocr_sha256": "808708252f0cc57632157cc81118c05b74b55158b196373e2ab8eb3363ea63f1",
+      "scan_pages": 368,
+      "indexed_approved_passages": 0,
+      "note": "Scan page ordinal only; not printed page or verse citation. No external embeddings.",
+      "asset_name": "14.Brahmand puran (2nd Part)Adhyatam Ramayan  Gita Press_djvu.xml",
+      "asset_identity_verified": false,
+      "coverage_verified": false,
+      "query_test_hit_pages": [
+        5,
+        29,
+        364,
+        314,
+        21
+      ]
+    }
+  ],
+  "coverage_status": "hold_unverified_partial_or_mixed",
+  "note": "Adhyatma Ramayana filename does not prove full Brahmanda coverage."
+}
