@@ -22,6 +22,7 @@
       "image": "./assets/icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#143D29"
-    }
+    },
+    "plugins": ["expo-secure-store"]
   }
 }

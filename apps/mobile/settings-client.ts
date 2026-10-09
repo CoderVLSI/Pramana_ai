@@ -1,0 +1,99 @@
+import { Platform } from "react-native";
+import * as SecureStore from "expo-secure-store";
+const API = process.env.EXPO_PUBLIC_API_URL || "http://localhost:3001";
+const TOKEN_KEY = "pramana.settings.session.v1";
+export type Provider = "openai" | "gemini";
+export interface PublicProfile {
+  active_provider: Provider;
+  cross_provider_fallback: boolean;
+  openai: { model: string; configured: boolean; fallback_models: string[] };
+  gemini: { model: string; configured: boolean; fallback_models: string[] };
+}
+export interface Model {
+  id: string;
+  label: string;
+  recommended: boolean;
+  source: string;
+  expires_on?: string;
+}
+export interface Catalog {
+  models: Record<Provider, Model[]>;
+  researched_on: string;
+  voice_ready: boolean;
+  reason: string;
+}
+let tokenPromise: Promise<string> | undefined;
+async function raw(
+  path: string,
+  method = "GET",
+  body?: unknown,
+  token?: string,
+) {
+  const r = await fetch(API + path, {
+    method,
+    headers: {
+      ...(body !== undefined ? { "Content-Type": "application/json" } : {}),
+      ...(token ? { Authorization: `Bearer ${token}` } : {}),
+    },
+    body: body ? JSON.stringify(body) : undefined,
+  });
+  const data = await r.json();
+  if (!r.ok) throw Error(data.error || "Settings request failed.");
+  return data;
+}
+async function readToken() {
+  return Platform.OS === "web"
+    ? sessionStorage.getItem(TOKEN_KEY)
+    : SecureStore.getItemAsync(TOKEN_KEY);
+}
+async function storeToken(token: string) {
+  if (Platform.OS === "web") sessionStorage.setItem(TOKEN_KEY, token);
+  else
+    await SecureStore.setItemAsync(TOKEN_KEY, token, {
+      keychainAccessible: SecureStore.WHEN_UNLOCKED_THIS_DEVICE_ONLY,
+    });
+}
+async function removeToken() {
+  if (Platform.OS === "web") sessionStorage.removeItem(TOKEN_KEY);
+  else await SecureStore.deleteItemAsync(TOKEN_KEY);
+}
+async function settingsToken() {
+  if (!tokenPromise)
+    tokenPromise = (async () => {
+      let token = await readToken();
+      if (!token) {
+        token = (await raw("/v1/settings/session", "POST")).token;
+        await storeToken(token!);
+      }
+      return token!;
+    })().catch((e) => {
+      tokenPromise = undefined;
+      throw e;
+    });
+  return tokenPromise;
+}
+export const loadCatalog = (): Promise<Catalog> => raw("/v1/voice/models");
+export const loadSettings = async (): Promise<PublicProfile> =>
+  raw("/v1/settings", "GET", undefined, await settingsToken());
+export const saveSettings = async (body: {
+  provider: Provider;
+  model: string;
+  api_key?: string;
+  remove_key?: boolean;
+  fallback_models: string[];
+  cross_provider_fallback: boolean;
+}): Promise<PublicProfile> =>
+  raw("/v1/settings", "PUT", body, await settingsToken());
+export const testSettings = async (
+  provider: Provider,
+): Promise<{ message: string }> =>
+  raw("/v1/settings/test", "POST", { provider }, await settingsToken());
+export async function disconnectSettings() {
+  await raw("/v1/settings/session", "DELETE", undefined, await settingsToken());
+  await removeToken();
+  tokenPromise = undefined;
+}
+export async function resetSettingsSession() {
+  await removeToken();
+  tokenPromise = undefined;
+}

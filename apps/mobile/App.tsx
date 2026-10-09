@@ -1,3 +1,4 @@
+import SettingsScreen from "./SettingsScreen";
 import React, { useEffect, useState } from "react";
 import {
   ScrollView,
@@ -240,9 +241,16 @@ function StudyApp() {
             <View style={s.row}>
               <View style={s.dot} />
               <Text style={s.small}>Strict sources</Text>
-              <View style={s.avatar}>
-                <Text style={{ color: C.green }}>P</Text>
-              </View>
+              <Pressable
+                accessibilityLabel="Settings"
+                onPress={() => {
+                  setTab("Settings");
+                  setReader(null);
+                }}
+                style={s.avatar}
+              >
+                <Icon name="settings-outline" size={20} />
+              </Pressable>
             </View>
           </View>
           <ScrollView
@@ -616,8 +624,21 @@ function StudyApp() {
                   ))
                 )}
               </>
+            ) : tab === "Settings" ? (
+              <SettingsScreen />
             ) : (
               <>
+                <Pressable
+                  accessibilityLabel="Open API settings"
+                  onPress={() => {
+                    setTab("Settings");
+                    setReader(null);
+                  }}
+                  style={s.secondary}
+                >
+                  <Icon name="settings-outline" />
+                  <Text style={s.body}>API keys & voice settings</Text>
+                </Pressable>
                 <Text style={s.kicker}>OUR APPROACH</Text>
                 <Text style={s.title}>Trust begins with the source.</Text>
                 <View style={s.info}>

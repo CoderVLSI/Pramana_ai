@@ -34,9 +34,9 @@ npm run build:web
 
 ## Trust and privacy
 
-Answers contain verbatim development translation excerpts only. No LLM calls or provider keys are needed. The gate checks IDs, release, hashes, metadata, and excerpt spans; it does not establish scholarly accuracy. All fixture responses have `safe_to_speak: false`. Voice stays unavailable until approved sources and a provider are configured.
+Answers contain verbatim development translation excerpts only. Text study needs no LLM calls or provider keys. Optional provider keys can be configured in Settings. The gate checks IDs, release, hashes, metadata, and excerpt spans; it does not establish scholarly accuracy. All fixture responses have `safe_to_speak: false`. Voice stays unavailable until approved sources and a provider are configured.
 
-Bookmarks remain on the device. Corrections are stored in the local API's ignored `services/api/data/reports.jsonl`. No accounts, analytics, or raw audio recording are connected. This API is for local development, not public production exposure.
+Bookmarks remain on the device. Corrections are stored in the local API's ignored `services/api/data/reports.jsonl`. No accounts, analytics, or raw audio recording are connected. Voice keys are encrypted on your backend; only a settings-session token is saved on the device. This API is for local development, not public production exposure.
 
 ## Corpus import
 
@@ -52,8 +52,16 @@ Manifest requires `edition_id`, `license_id`, `release`, `publisher`, `source_ur
 
 ## Before launch
 
-Select precise editions, clear licenses, complete scholarly review, connect Postgres/auth/audits, add hybrid retrieval and entailment verification, and pass the plan's 250-case benchmark. Then integrate verified voice. Edition comparison, Hindi/Telugu UI, offline packs, and full-duplex voice remain future work.
+Select precise editions, clear licenses, complete scholarly review, connect Postgres/auth/audits, add hybrid retrieval and entailment verification, and pass the plan's 250-case benchmark. Then validate the provider adapters with real accounts and integrate native microphone capture and audio playback. Edition comparison, Hindi/Telugu UI, offline packs, and full-duplex voice remain future work.
+
+## Voice provider settings and fallback
+
+Use the header gear or About → API keys & voice settings. Add/replace/remove provider keys, select models, reorder fallback models, and test metadata access. Defaults are OpenAI Realtime 2.1 and Gemini 3.8 Live. Cross-provider backup is optional and off by default. See [research and setup details](docs/voice-provider-research.md).
+
+The backend encrypts keys with AES-256-GCM. Production requires `SETTINGS_MASTER_KEY`; local development creates an ignored owner-only encryption key. Android uses SecureStore for the session token, and web uses tab-scoped sessionStorage. Use HTTPS for remote credentials. Native LAN HTTP development requires the explicit non-production setting `ALLOW_INSECURE_LOCAL_SETTINGS=true`.
+
+Provider audio is buffered and checked before release. Fixtures still cannot pass the voice source gate. The adapters and fallback routing have mocked tests; live microphone streaming, in-app audio playback, and real-account provider audio validation remain pending.
 
 ## Corpus scope
 
-All 18 Mahapuranas are listed in the library as planned, with no ingested passages. See [corpus register](docs/corpus-register.md), [validation record](docs/verification.md), and [original architecture plan](docs/architecture-plan.pdf).
+All 18 Mahapuranas are listed in the library as planned; none is ingested into RAG yet. See the [corpus register](docs/corpus-register.md), [validation record](docs/verification.md), and [original architecture plan](docs/architecture-plan.pdf).

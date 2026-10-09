@@ -6,9 +6,35 @@ import { fileURLToPath } from "node:url";
 const dataDirectory = fileURLToPath(new URL("../data/", import.meta.url));
 import { passages, works } from "./corpus";
 import { answerStrict, search } from "./engine";
-const app = Fastify({ logger: true, bodyLimit: 16384 });
+import { registerSettingsRoutes } from "./settings-routes";
+import { VaultError } from "./settings-vault";
+const app = Fastify({
+  logger: { redact: ["req.headers.authorization", "req.body.api_key"] },
+  bodyLimit: 16384,
+  trustProxy: process.env.TRUST_PROXY || false,
+});
+app.setErrorHandler((error, req, reply) => {
+  if (error instanceof VaultError)
+    return reply.code(error.statusCode).send({ error: error.message });
+  if (error && typeof error === "object" && "validation" in error)
+    return reply
+      .code(400)
+      .send({ error: "Invalid request. Check the required fields." });
+  if (
+    error &&
+    typeof error === "object" &&
+    "statusCode" in error &&
+    [400, 413, 415].includes(Number(error.statusCode))
+  )
+    return reply
+      .code(Number(error.statusCode))
+      .send({ error: "Invalid request format or size." });
+  req.log.error({ message: "Request failed" });
+  return reply.code(500).send({ error: "The request could not be completed." });
+});
 await app.register(cors, {
   origin: process.env.CLIENT_ORIGIN || "http://localhost:8081",
+  methods: ["GET", "POST", "PUT", "DELETE"],
 });
 const rates = new Map<string, { count: number; reset: number }>();
 app.addHook("onRequest", async (req, reply) => {
@@ -95,10 +121,5 @@ app.post<{ Body: { passage_id: string; reason: string } }>(
     return reply.code(201).send(report);
   },
 );
-app.post("/v1/voice/token", async (_req, reply) =>
-  reply.code(503).send({
-    error:
-      "Voice is unavailable until approved sources and a provider are configured.",
-  }),
-);
+await registerSettingsRoutes(app);
 await app.listen({ port: Number(process.env.PORT || 3001), host: "0.0.0.0" });

@@ -5,3 +5,6 @@ dist/
 *.log
 services/api/data/
 dist-android/
+
+.env.*
+!.env.example
