@@ -3,6 +3,7 @@ import {
   MAHAPURANA_TARGETS,
 } from "../../packages/corpus-schema/register";
 import SettingsScreen from "./SettingsScreen";
+import RishiPreview from "./RishiAvatar";
 import React, { useEffect, useState } from "react";
 import {
   ScrollView,
@@ -348,6 +349,7 @@ function StudyApp() {
                   Explore scripture with care. Ask a question, find the passage,
                   {"\n"}and make room for a deeper understanding.
                 </Text>
+                <RishiPreview />
                 <View style={s.composer}>
                   <TextInput
                     accessibilityLabel="Ask a scripture question"
