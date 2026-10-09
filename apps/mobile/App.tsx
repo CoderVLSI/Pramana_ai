@@ -1,3 +1,4 @@
+import ProfileScreen, { EMPTY_PROFILE, PROFILE_KEY, type StudyProfile } from "./ProfileScreen";
 import { UPANISHAD_SCOPE, UPANISHAD_TARGETS } from "../../packages/corpus-schema/upanishads";
 import {
   GITA_PRESS_SCOPE,
@@ -133,6 +134,38 @@ function StudyApp() {
     [reason, setReason] = useState(""),
     [notice, setNotice] = useState(""),
     [ready, setReady] = useState(false);
+  const [profile, setProfile] = useState<StudyProfile>(EMPTY_PROFILE);
+  const [profileReady, setProfileReady] = useState(false);
+  const [setup, setSetup] = useState(false);
+  useEffect(() => {
+    AsyncStorage.getItem(PROFILE_KEY).then(raw => {
+      if (raw) {
+        const parsed = JSON.parse(raw);
+        if (parsed?.profile && typeof parsed.profile === "object") {
+          const value = parsed.profile;
+          setProfile({
+            name: typeof value.name === "string" ? value.name.slice(0,80) : "",
+            language: ["English","Hindi","Sanskrit"].includes(value.language) ? value.language : "English",
+            mode: ["Text","Voice + text"].includes(value.mode) ? value.mode : "Text",
+            interests: typeof value.interests === "string" ? value.interests.slice(0,200) : "",
+            ishtaDevata: typeof value.ishtaDevata === "string" ? value.ishtaDevata.slice(0,80) : "",
+          });
+        }
+      } else setSetup(true);
+    }).catch(() => setError("Study preferences could not be loaded.")).finally(() => setProfileReady(true));
+  }, []);
+  async function saveProfile(value: StudyProfile) {
+    await AsyncStorage.setItem(PROFILE_KEY, JSON.stringify({profile:value,completed:true}));
+    setProfile(value); setSetup(false); setTab("Study");
+  }
+  async function closeProfile() {
+    if (setup) await AsyncStorage.setItem(PROFILE_KEY, JSON.stringify({completed:true}));
+    setSetup(false); setTab("Study");
+  }
+  async function deleteProfile() {
+    await AsyncStorage.removeItem(PROFILE_KEY);
+    setProfile(EMPTY_PROFILE); setSetup(false); setTab("Study");
+  }
   useEffect(() => {
     AsyncStorage.getItem("pramana-bookmarks")
       .then((v) => {
@@ -214,6 +247,9 @@ function StudyApp() {
     ["Saved", "bookmark-outline"],
     ["About", "information-circle-outline"],
   ] as const;
+
+  if (!profileReady) return <SafeAreaView style={s.root}><ActivityIndicator accessibilityLabel="Loading study preferences" /></SafeAreaView>;
+  if (setup || tab === "Profile") return <SafeAreaView style={s.root}><ProfileScreen initial={profile} firstTime={setup} onSave={saveProfile} onClose={closeProfile} onDelete={deleteProfile} /></SafeAreaView>;
 
   return (
     <SafeAreaView style={s.root} edges={["top", "right", "bottom", "left"]}>
@@ -357,6 +393,7 @@ function StudyApp() {
                   <Text style={s.kicker}>THE SCRIPTURE STUDY COMPANION</Text>
                   <Text style={s.small}>✦ Begin with a question</Text>
                 </View>
+                {profile.name ? <Text style={s.kicker}>Welcome, {profile.name}.</Text> : null}
                 <Text style={[s.title, !wide && { fontSize: 36 }]}>
                   Let curiosity lead.{"\n"}Let the source speak.
                 </Text>
@@ -717,7 +754,10 @@ function StudyApp() {
                 )}
               </>
             ) : tab === "Settings" ? (
-              <SettingsScreen />
+              <>
+                <Pressable accessibilityRole="button" onPress={() => setTab("Profile")} style={s.secondary}><Text style={s.body}>Name & study preferences</Text></Pressable>
+                <SettingsScreen />
+              </>
             ) : (
               <>
                 <Pressable

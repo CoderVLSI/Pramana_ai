@@ -58,3 +58,7 @@ Target age group and any children's-use handling: **[REQUIRED — owner decision
 For privacy questions or deletion requests, contact **[REQUIRED — privacy contact]**. Applicable user-rights request handling and response process: **[REQUIRED — operator process appropriate to deployment/users]**.
 
 Future changes to data processing must be reflected in this policy and communicated as appropriate. Before release, the operator must verify these disclosures against the signed application, backend deployment and third-party SDKs, and provide a public policy accessible from both the app and store listing.
+
+## Study profile update
+
+The first-time flow optionally stores a preferred name, language, interaction preference, study interests and Ishta Devata on the device using AsyncStorage. These values are not encrypted by the app and are not sent to the backend or AI providers in the current implementation. Ishta Devata may reveal religious preferences and can be left blank; the entire setup can be skipped. Settings → Name & study preferences allows editing or deleting this profile. Deleting the profile does not delete API credentials or bookmarks; those are separate controls. The preferred name is used in the local greeting, without changing source quotations.
