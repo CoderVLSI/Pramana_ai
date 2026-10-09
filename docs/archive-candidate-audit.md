@@ -1,0 +1,54 @@
+# Archive candidate audit
+
+Checked 9 October 2026 against the recorded Internet Archive titles and file metadata in `packages/corpus-schema/web-source-leads.json` and `archive-intake-status.json`, plus the official Gita Press catalogue snapshot in `catalogue-candidates.json`. This is a metadata audit: no scripture files were downloaded for this audit, no title/copyright pages were inspected, and no edition, completeness, OCR, reviewer or rights approval is established here.
+
+## Immediate correction
+
+The current selected **Skanda Purana** intake item is wrong: [Prem Sudha Sagar, Bhagavat Dasham Skandh](https://archive.org/details/mtfu_shri-prem-sudha-sagar-bhagavat-dasham-skandh-saral-hindi-vyakhya-hanuman-pr) identifies commentary on Bhagavata's tenth skandha. “Skandh” is a division of Bhagavata here, not the independent Skanda Purana. Remove it from the Skanda work selection. Prefer [Skanda Purana, Gita Press](https://archive.org/details/skanda-puran-gita-press) for inspection, with an explicit **abridged** flag: its recorded Hindi title says संन्क्षिप्त, and official catalogue code 279 says “Sankshipt ... Abridged Edition.” This does not establish that the scan is that exact catalogue edition.
+
+## Work and edition risks in discovery
+
+- **Bhagavata is not Devi Bhagavata or Devi Purana/Mahabhagavata.** Exclude titles containing Devi from the current `bhagavata-purana` target, rather than silently substituting another work. This is a work-identity rule for this project's register, not an adjudication of alternative traditional lists.
+- Explicit false Bhagavata target leads include `DeviBhagwatGitapress`, `devi-purana-mahabhagwat-gita-press-gorakhpur`, `devi-bhagwat-1`, `devi-bhagwat-2`, both `devi-bhagavata-with-hindi-translation-volume-*` records, `21-devi-bhagavata-with-hindi-translation-vol-1-gitapress-2010`, `devi-bhagavata-with-hindi-translation-vol-2-gitapress-2010`, the `zSMI_...devi-bhagavat...` record, and `kalyan-79-1-devi-puran-mahabhagavat-shakti-pithank-gita-press-gorakhpur`. The `remi_...arogya...` and `wihx_...arogya...` leads have mixed health/Devi titles and cannot establish Bhagavata coverage.
+- Bhagavata `bhagavatapuranamotilalenglishfull` explicitly names **Motilal**, outside the user's Gita Press-only scope. Jagannath Das Odia Bhagavata identifies a different authored rendition; do not treat it as the registered Sanskrit/Hindi Gita Press edition without identifying its text and publisher.
+- Bhagavata “Dasham Skandh,” “Ekadasha Skandha” and “Mahatmyam” leads cover commentary, a single division, or a associated text. They cannot fill a complete twelve-skandha requirement.
+- Additional false Skanda leads are `zCFR_...shrimad-bhagavat...skanda-8-to...` and `lxmh_...bhagavata...ekadasha-skandha...`. `ayodhaya-mahatamya-of-rudrayamala-and-skanda-purana` is explicitly a mixed/excerpt work, not evidence of complete Skanda.
+- `shivsamhita` is **Shiv Samhita**, not Shiva Purana. `shiv-puran-katha-saar` announces a narrative digest.
+- Narada `in.ernet.dli.2015.513460` is titled **Debarshi Narad**; a name match does not identify Narada Purana. `NaradPuranJyotish` identifies an astrology subject/excerpt and cannot prove complete coverage.
+- **Brahma, Brahmavaivarta and Brahmanda are three separate targets.** Existing title groups do not show a definite cross-match among the three, but broad “Brahma” matching would merge them. Preserve explicit distinct names. The joint “Kalyan Markandeya Brahma Purana Ank” item needs chapter/work segmentation before either target can use its passages.
+- “Sankshipt,” “Sankshipta,” “Sanshipt,” संक्षिप्त and the Odia ସଂକ୍ଷିପ୍ତ indicate abridgement; “Sara Uddhar,” “Saroddhar,” or “Katha Saar” indicates a digest/summary. An English upload title omitting these words does not establish an unabridged edition.
+- Kalyan “Ank/Anka” means an issue/edition. An issue may contain useful scripture material, but its title alone cannot prove complete coverage. Combined Agni/Garga, Narada/Vishnu, and Brahma/Markandeya issues require separate work boundaries.
+- “Compressed” is a file-quality label, not by itself proof of abridgement. Likewise PDF file size and scan-page count do not establish complete chapter/verse coverage.
+
+## Recommended inspection queue
+
+These are candidate selections for inspection, not approved editions. Catalogue codes below are official reference targets; no code-to-scan match is verified.
+
+| Work | Recorded intake assessment | Next candidate or check | Official reference / coverage caution |
+|---|---|---|---|
+| Brahma | Title plausibly identifies correct work. | Keep selected `brahma-puran-gita-press-gorakhpur_202204`; compare title pages against `brahma-puran-gita-press`, whose title explicitly says संक्षिप्त. | Code 1111 is abridged. Do not upgrade selected scan to complete because English title omits that qualifier. |
+| Padma | Correct work name, coverage unknown. | Keep `padma-puran-gita-press`; compare `44-padmapurana` or `DhgH_padma-puran-in-hindi-series-no.-44-gita-press` to confirm code. | Code 44. A recorded Kalyan candidate explicitly says Sanskhipt; complete coverage needs contents and chapter mapping. |
+| Vishnu | Correct work name; private test scan is not yet edition verified. | Keep `vishnu-puran-gita-press_202502`; the `zkmx_...625-pages-new-scan` lead provides a potentially useful independent comparison, not proof. | Codes 48 / 1364; identify exact printing, translator and divisions. |
+| Shiva | Selected item is explicitly **abridged Odia**, not an identified full Hindi set. | Prefer `shiva-mahapuran-part-1-first-half-by-veda-vyas-with-explanation-and-illustration-gita-press` plus `shiv-mahapuran-of-veda-vyas-chapter-2-second-half-with-hindi-vyakhya-illustration-gita-press`. | Codes 2223 / 2224 identify first/second parts. Verify matching edition and all samhitas; “Chapter 2” in upload title may mean volume, so do not map it as a chapter automatically. Code 789 is abridged. |
+| Bhagavata | Selected item is **volume 2 only**. | Inspect `srimad-bhagavat-mahapuran-2-volume-set-sanskrit-hindi` or `srimad-bhagwat-mahapuran-gitapress-hindi`; alternatively pair selected volume 2 with `cpij-bhagavat-maha-purana-part-1-gita-press-gorakhpur` only after edition matching. | Match pair 26/27 or 1951/1952. Record all twelve skandhas. Several upload descriptions put book 8 in both volumes, so inspect the actual split instead of assuming no overlap. |
+| Narada | Correct work name but omissions cannot be inferred. | Keep selected item for identity check; compare `fJau_narad-puran-in-hindi-series-no.-1183-gita-press`. | Code 1183 is abridged; another recorded title says केवल हिन्दी (Hindi only). Do not promise original Sanskrit where absent. |
+| Markandeya | Correct work name, no full-coverage proof. | Keep selected item; compare `sanshipt-markandeya-purana-gita-press`. | Code 539 is abridged. Selected file list contains only a `_text.pdf` derivative; preservation original needs locating. |
+| Agni | Selected **combined Agni/Garga Kalyan issue** needs segmentation. | Prefer `agni-puran-gita-press` or `agni-puran-gita-press_202502` for inspection. | Code 1362. The `keds_...` upload title explicitly mentions blur pages 176/188 and folded papers 761/762; route those defects to manual review. |
+| Bhavishya | Correct work name, language and edition unverified. | Keep selected item for identity; compare `sankshipt-bhavishya-puran-gita-press`. | Only catalogue candidate currently recorded is Gujarati, code 2073, abridged. This is not proof that Hindi editions do not exist. |
+| Brahmavaivarta | Correct explicit work name. | Keep `brahma-vaivarta-purana-gitapress-hindi`; compare `631-brahma-vaivart-puran`. | Code 631 and recorded Kalyan leads explicitly abridged. Preserve all khanda names and do not merge with Brahma. |
+| Linga | Correct work name. | Keep selected item or inspect `sri-ling-mahapuran-gita-press`. | Code 1985. `sri-ling-mahapuran-gita-press-1` has “Kritya kalptaru Part” in title; uncertain section/mixed text, requiring inspection. |
+| Varaha | Correct work name, not proof of full edition. | Keep selected item; compare `varaha-puran-gita-press`. | Code 1361 and another recorded title explicitly abridged. |
+| Skanda | **Reject selected Bhagavata tenth-skandha item.** | Inspect `skanda-puran-gita-press` with abridged label. | Code 279 is explicitly abridged. No complete Skanda candidate is established by this audit. |
+| Vamana | Kalyan issue; completeness unknown. | Prefer `vaman-puran-gita-press` or `vaman-puran-illustrated-with-hindi-translations-gita-press-gorakhpur`. | Code 1432; inspect matching publication and chapter coverage. |
+| Kurma | Correct work name. | Keep `kurma-puran-gita-press`. | Code 1131; verify both major divisions and chapter numbering from the copy. |
+| Matsya | Correct work name; file metadata alone insufficient. | Keep `matsya-puran-gita-press-gorakhpur`; compare `matsya-puran-gita-press`. | Code 557. “Antim Khanda” leads represent a final part; Kalyan edition 58 and part 2 edition 59 require pairing and boundaries. `matsya-puran-mp-gita-press-gorakhpur` title says “18 Puran” and cannot be assumed to contain only Matsya. |
+| Garuda | Correct work name, no full-coverage proof. | Keep selected item for identity; compare `garuda-purana-sankshipt-gita-press-gorakhpur`. | Code 1189 is abridged; code 1416 / `obvu_...sara-uddhar...` is a digest. Preserve distinction. |
+| Brahmanda | Only one discovered lead; files label part 1 and part 2 **Adhyatma Ramayana**. | Hold `14.-brahmand-puran-1st-part-gita-press` pending title-page and contents inspection of each asset. | No current official catalogue candidate. Adhyatma Ramayana is not proof that all Brahmanda sections are covered. Do not equate two uploaded files with a complete two-volume Mahapurana. |
+
+## Release consequences
+
+1. Remove known wrong-work candidates before any bulk indexing. Prefer exact work-title matching with an exclusion list over substring ranking.
+2. Track volume, language, publisher identity, edition/code, abridged/digest status and chapter coverage per asset. Neither a library item's title nor an uploader's Gita Press publisher field verifies those attributes.
+3. Treat matching first/second-part filenames as leads. Confirm printing/code, translators, contents, beginning/end and missing pages before assembling a corpus release.
+4. Preserve `publisher_verified: false`, `coverage_verified: false`, `rights_verified: false` and zero approved passages until the independent gates actually pass. Public-domain/CC uploader declarations remain unverified claims; they do not establish publisher authorization.
+5. Page-aware OCR can support private search experiments while these checks are pending. App citations must retain the registered edition/printed page/verse identity and approved release status; OCR page hits alone cannot supply that verification.

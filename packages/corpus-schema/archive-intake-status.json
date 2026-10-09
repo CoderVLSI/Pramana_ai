@@ -247,21 +247,31 @@
     },
     {
       "work_id": "skanda-purana",
-      "candidate_url": "https://archive.org/details/mtfu_shri-prem-sudha-sagar-bhagavat-dasham-skandh-saral-hindi-vyakhya-hanuman-pr",
-      "title": "Shri Prem Sudha Sagar Bhagavat Dasham Skandh Saral Hindi Vyakhya Hanuman Prasad Poddar By Veda Vyasa Hindi Sanskrit Purana Illustrated Gorakhpur 1951 Gita Press",
-      "identifier": "mtfu_shri-prem-sudha-sagar-bhagavat-dasham-skandh-saral-hindi-vyakhya-hanuman-pr",
-      "status": "metadata_checked_not_edition_verified",
+      "candidate_url": "https://archive.org/details/skanda-puran-gita-press",
+      "title": "संन्क्षिप्त स्कन्दपुराण - गीताप्रेस, गोरखपुर",
+      "identifier": "skanda-puran-gita-press",
+      "status": "abridged_candidate_metadata_checked",
       "pdf_files": [
         {
-          "name": "Shri Prem Sudha Sagar Bhagavat Dasham Skandh Saral Hindi Vyakhya Hanuman Prasad Poddar By Veda Vyasa Hindi Sanskrit Purana Illustrated Gorakhpur 1951 - Gita Press.pdf",
-          "bytes": "287452546"
+          "name": "Skanda Puran - Gita Press.pdf",
+          "bytes": "117447015"
+        },
+        {
+          "name": "Skanda Puran - Gita Press_text.pdf",
+          "bytes": "175303671"
         }
       ],
       "page_ocr_available": true,
-      "uploader_license_claim": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "uploader_license_claim": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
       "publisher_verified": false,
       "coverage_verified": false,
-      "rights_verified": false
+      "rights_verified": false,
+      "rejected_previous_candidate": {
+        "title": "Shri Prem Sudha Sagar Bhagavat Dasham Skandh Saral Hindi Vyakhya Hanuman Prasad Poddar By Veda Vyasa Hindi Sanskrit Purana Illustrated Gorakhpur 1951 Gita Press",
+        "candidate_url": "https://archive.org/details/mtfu_shri-prem-sudha-sagar-bhagavat-dasham-skandh-saral-hindi-vyakhya-hanuman-pr",
+        "rejection_reason": "Title identifies Bhagavata Dasham Skandh commentary, not Skanda Purana."
+      },
+      "coverage_note": "Abridged Sanskrit/Hindi candidate. Does not satisfy complete Skanda target."
     },
     {
       "work_id": "vamana-purana",
