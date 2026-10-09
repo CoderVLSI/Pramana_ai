@@ -65,3 +65,9 @@ Provider audio is buffered and checked before release. Fixtures still cannot pas
 ## Corpus scope
 
 All 18 Mahapuranas are listed in the library as planned; none is ingested into RAG yet. See the [corpus register](docs/corpus-register.md), [validation record](docs/verification.md), and [original architecture plan](docs/architecture-plan.pdf).
+
+## Gita Press reference collection
+
+The app now defaults to all 18 Mahapuranas with Gita Press, Gorakhpur as the chosen reference publisher. All 18 remain pending source intake, precise print-edition selection, usage rights, review, and indexing. Gita development fixtures remain separately selectable. `GET /v1/corpus/register` reports acquisition/coverage status without inventing edition records.
+
+`npm run ingest:gita-press -- input.json output.json` validates and normalizes supplied reviewed bundles with edition-specific hierarchy, immutable passage IDs, original-text hashes, exact page locators, independent translation permissions, and completeness checks. This prepares input packs; it does not yet connect a production lexical/vector index or full RAG generation. See [Gita Press intake workflow](docs/gita-press-intake.md).

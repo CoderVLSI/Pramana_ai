@@ -1,3 +1,4 @@
+import { gitaPressRegister } from "../../../packages/corpus-schema/register";
 import { createHash } from "node:crypto";
 import { RELEASE, type Passage } from "../../../packages/citation-schema/index";
 const rows = [
@@ -122,3 +123,11 @@ export const mahapuranas = [
 for (const work of mahapuranas)
   if (!works.some((w) => w.id === work.id))
     works.push({ ...work, subtitle: "Planned source corpus" });
+
+for (const work of works) {
+  const target = gitaPressRegister.find((r) => r.work_id === work.id);
+  if (target) {
+    work.status = "Gita Press, Gorakhpur · edition and rights pending";
+    work.subtitle = "Gita Press reference collection · not indexed";
+  }
+}

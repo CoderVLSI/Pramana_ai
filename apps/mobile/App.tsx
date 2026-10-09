@@ -1,3 +1,7 @@
+import {
+  GITA_PRESS_SCOPE,
+  MAHAPURANA_TARGETS,
+} from "../../packages/corpus-schema/register";
 import SettingsScreen from "./SettingsScreen";
 import React, { useEffect, useState } from "react";
 import {
@@ -109,7 +113,8 @@ function StudyApp() {
     [works, setWorks] = useState<
       { id: string; title: string; status: string; passage_count: number }[]
     >([]),
-    [scope, setScope] = useState("bhagavad-gita"),
+    [scope, setScope] = useState(GITA_PRESS_SCOPE),
+    [showSources, setShowSources] = useState(false),
     [report, setReport] = useState(false),
     [reason, setReason] = useState(""),
     [notice, setNotice] = useState(""),
@@ -146,7 +151,13 @@ function StudyApp() {
     setQuery(text);
     try {
       setAnswer(
-        await request("/v1/questions", { query: text, work_ids: [scope] }),
+        await request("/v1/questions", {
+          query: text,
+          work_ids:
+            scope === GITA_PRESS_SCOPE
+              ? MAHAPURANA_TARGETS.map(([id]) => id)
+              : [scope],
+        }),
       );
     } catch (e) {
       setError((e as Error).message);
@@ -413,22 +424,59 @@ function StudyApp() {
                   </Text>
                   <Text style={s.small}>·</Text>
                   <Pressable
-                    onPress={() =>
-                      setScope(
-                        scope === "bhagavad-gita"
-                          ? "mahabharata"
-                          : "bhagavad-gita",
-                      )
-                    }
+                    accessibilityLabel="Choose source collection"
+                    onPress={() => setShowSources(!showSources)}
                   >
                     <Text style={[s.small, { color: C.green }]}>
-                      {scope === "bhagavad-gita"
-                        ? "Bhagavad Gita"
-                        : "Mahabharata"}{" "}
+                      {scope === GITA_PRESS_SCOPE
+                        ? "18 Mahapuranas · Gita Press"
+                        : scope === "bhagavad-gita"
+                          ? "Bhagavad Gita · fixtures"
+                          : "Mahabharata"}{" "}
                       ▾
                     </Text>
                   </Pressable>
                 </View>
+                {showSources && (
+                  <View style={s.info}>
+                    {[
+                      [
+                        GITA_PRESS_SCOPE,
+                        "All 18 Mahapuranas · Gita Press, Gorakhpur",
+                      ],
+                      ["bhagavad-gita", "Bhagavad Gita · development fixtures"],
+                      ["mahabharata", "Mahabharata · awaiting corpus"],
+                    ].map(([id, label]) => (
+                      <Pressable
+                        key={id}
+                        accessibilityLabel={label}
+                        style={s.secondary}
+                        onPress={() => {
+                          setScope(id);
+                          setShowSources(false);
+                          setAnswer(null);
+                        }}
+                      >
+                        <Text style={s.body}>
+                          {scope === id ? "◉" : "○"} {label}
+                        </Text>
+                      </Pressable>
+                    ))}
+                  </View>
+                )}
+                {scope === GITA_PRESS_SCOPE && !answer && (
+                  <View style={s.info}>
+                    <Text style={s.body}>
+                      Gita Press, Gorakhpur is the selected reference publisher
+                      for all 18 Mahapuranas.
+                    </Text>
+                    <Text style={s.small}>
+                      Edition selection, usage rights, and source review are
+                      pending. No Purana passages are indexed yet. Select
+                      development fixtures to explore the working reader.
+                    </Text>
+                  </View>
+                )}
                 {!!notice && (
                   <Text style={[s.small, { marginTop: 12 }]}>{notice}</Text>
                 )}
@@ -472,6 +520,24 @@ function StudyApp() {
                       style={s.secondary}
                     >
                       <Text style={s.body}>Start a new question</Text>
+                    </Pressable>
+                  </View>
+                ) : scope === GITA_PRESS_SCOPE ? (
+                  <View style={s.passage}>
+                    <Text style={s.sectionTitle}>
+                      The 18-work reference collection
+                    </Text>
+                    <Text style={s.body}>
+                      Keep original passages, translations, and edition details
+                      together. Each source needs a mapped volume and verse
+                      locator before it can support an answer.
+                    </Text>
+                    <Pressable
+                      onPress={() => setTab("Library")}
+                      style={s.secondary}
+                    >
+                      <Text style={s.body}>View the source library</Text>
+                      <Icon name="arrow-forward" size={18} />
                     </Pressable>
                   </View>
                 ) : (

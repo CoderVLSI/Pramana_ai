@@ -87,7 +87,9 @@ export function answerStrict(query: string, selection: Selection = {}): Answer {
     claims: [],
     citations: [],
     caveats: [
-      "The pilot contains five development passages from the Bhagavad Gita. Absence here does not establish absence in scripture.",
+      selection.work_ids?.some((id) => id !== "bhagavad-gita")
+        ? "No approved passages are indexed for the selected works. Gita Press editions and usage rights are pending. Absence from this index does not establish absence in scripture."
+        : "The pilot contains five development passages from the Bhagavad Gita. Absence here does not establish absence in scripture.",
     ],
     corpus_release: RELEASE,
     safe_to_speak: false,

@@ -22,3 +22,13 @@ Provider-settings update:
 - Mobile browser settings flow passes: masked key entry, save/reload, provider switching, fallback controls, mocked connection check, key removal, and session deletion.
 - Web and Android exports pass with the new Settings screen and SecureStore dependency.
 - No real provider keys were used. Provider audio access, native SecureStore behavior, microphone capture, and playback still require account/device testing.
+
+Gita Press collection update:
+
+- Publisher target locked to Gita Press, Gorakhpur for the 18-work collection; precise print editions remain unselected.
+- Official catalog metadata inspected; abridged/digest candidate labels retained. No current Brahmanda candidate identified. No conclusion about publisher availability or full-edition completeness is inferred.
+- Seventeen tests pass, including intake rights/coverage checks, section-aware passage identities, independently licensed translations, and no reassignment of Gita fixtures to Gita Press.
+- TypeScript and web/Android exports pass.
+- No Purana text is supplied or indexed. User-held books/PDFs have unclear usage permission. Production lexical/vector RAG integration remains pending input and rights/editorial approval.
+
+All-18 collection browser and API checks pass: 18 selected work IDs are accepted, unindexed sources abstain, and Gita fixtures remain separately selectable.
