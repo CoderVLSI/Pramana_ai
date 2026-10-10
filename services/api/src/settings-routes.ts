@@ -1,3 +1,4 @@
+import { attachLiveSessions } from "./live-session";
 import { join } from "node:path";
 import type { FastifyInstance, FastifyRequest } from "fastify";
 import { fileURLToPath } from "node:url";
@@ -24,6 +25,7 @@ export async function registerSettingsRoutes(
     process.env.SETTINGS_MASTER_KEY,
   );
   await vault.init();
+  attachLiveSessions(app, vault);
   function transport(req: FastifyRequest) {
     const loopback = ["127.0.0.1", "::1", "::ffff:127.0.0.1"].includes(req.ip);
     if (
@@ -244,6 +246,9 @@ export async function registerSettingsRoutes(
     researched_on: modelResearchDate,
     mode: "strict_verified_script",
     voice_ready: true,
+    live_ready: true,
+    live_source_mode: "generated_unverified",
+    live_tools: ["search_scripture", "corpus_status", "provider_web_search"],
     approved_source_audio_ready: false,
     reason:
       "Voice turns support greetings and source-status messages. Scripture audio requires approved, audio-enabled sources; the current corpus remains unapproved.",

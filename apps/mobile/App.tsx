@@ -1,3 +1,4 @@
+import LiveConversation from "./LiveConversation";
 import VoiceMode from "./VoiceMode";
 import { isAppConversation } from "../../packages/citation-schema/conversation";
 import {
@@ -137,6 +138,7 @@ function StudyApp() {
     [busy, setBusy] = useState(false),
     [voiceEnabled, setVoiceEnabled] = useState(false),
     [speaking, setSpeaking] = useState(false),
+    [liveMode, setLiveMode] = useState(false),
     [voiceResponse, setVoiceResponse] = useState<{
       id: number;
       text: string;
@@ -159,6 +161,9 @@ function StudyApp() {
     [notice, setNotice] = useState(""),
     [ready, setReady] = useState(false);
   const [profile, setProfile] = useState<StudyProfile>(EMPTY_PROFILE);
+  useEffect(() => {
+    if (tab !== "Study") setLiveMode(false);
+  }, [tab]);
   useEffect(() => {
     if (tab !== "Study" && voiceResponse) setVoiceResponse(null);
   }, [tab, voiceResponse]);
@@ -412,7 +417,11 @@ function StudyApp() {
             <Text style={s.headerTitle}>{wide ? tab : "pramāṇa"}</Text>
             <View style={s.row}>
               <View style={s.dot} />
-              <Text style={s.small}>Strict sources</Text>
+              <Text style={s.small}>
+                {liveMode && tab === "Study"
+                  ? "Live AI · sources separate"
+                  : "Strict sources"}
+              </Text>
               <Pressable
                 accessibilityLabel="Settings"
                 onPress={() => {
@@ -513,75 +522,123 @@ function StudyApp() {
                   {"\n"}and make room for a deeper understanding.
                 </Text>
                 <RishiPreview speaking={speaking} />
-                <View style={s.composer}>
-                  <TextInput
-                    accessibilityLabel="Ask a scripture question"
-                    value={query}
-                    onChangeText={setQuery}
-                    onSubmitEditing={() => ask()}
-                    placeholder="What does the Gita say about attachment?"
-                    placeholderTextColor="#959c92"
-                    multiline
-                    style={s.input}
+                <Pressable
+                  accessibilityRole="switch"
+                  accessibilityLabel="Live conversation mode"
+                  accessibilityState={{ checked: liveMode }}
+                  disabled={busy}
+                  style={s.secondary}
+                  onPress={() => {
+                    setLiveMode((value) => !value);
+                    setVoiceResponse(null);
+                    setAnswer(null);
+                    setConversation(null);
+                    setNotice("");
+                    setSpeaking(false);
+                  }}
+                >
+                  <Icon name="radio-outline" size={20} />
+                  <Text style={s.body}>
+                    Live conversation · {liveMode ? "on" : "off"}
+                  </Text>
+                </Pressable>
+                {liveMode && (
+                  <LiveConversation
+                    language={
+                      profile.language === "Hindi"
+                        ? "hi-IN"
+                        : profile.language === "Sanskrit"
+                          ? "sa-IN"
+                          : "en-IN"
+                    }
+                    preferredName={profile.name}
+                    workIds={
+                      scope === GITA_PRESS_SCOPE
+                        ? MAHAPURANA_TARGETS.map(([id]) => id)
+                        : scope === UPANISHAD_SCOPE
+                          ? UPANISHAD_TARGETS.map(([id]) => id)
+                          : [scope]
+                    }
+                    onSpeakingChange={setSpeaking}
+                    onNotice={setNotice}
                   />
-                  <View
-                    style={[
-                      s.row,
-                      {
-                        borderTopWidth: 1,
-                        borderColor: C.line,
-                        paddingTop: 16,
-                      },
-                    ]}
-                  >
-                    <Pressable
-                      style={s.row}
-                      disabled={busy}
-                      accessibilityRole="switch"
-                      accessibilityState={{ checked: voiceEnabled }}
-                      accessibilityLabel="Voice mode"
-                      onPress={() => {
-                        setVoiceEnabled((value) => !value);
-                        setVoiceResponse(null);
-                        setSpeaking(false);
-                      }}
-                    >
-                      <Icon
-                        name={
-                          voiceEnabled ? "volume-high-outline" : "mic-outline"
-                        }
-                        size={20}
-                      />
-                      <Text style={[s.small, { marginLeft: 8 }]}>
-                        Voice mode · {voiceEnabled ? "on" : "off"}
-                      </Text>
-                    </Pressable>
-                    <Pressable
-                      accessibilityLabel="Ask question"
-                      disabled={busy || !query.trim()}
-                      onPress={() => ask()}
+                )}
+
+                {!liveMode && (
+                  <View style={s.composer}>
+                    <TextInput
+                      accessibilityLabel="Ask a scripture question"
+                      value={query}
+                      onChangeText={setQuery}
+                      onSubmitEditing={() => ask()}
+                      placeholder="What does the Gita say about attachment?"
+                      placeholderTextColor="#959c92"
+                      multiline
+                      style={s.input}
+                    />
+                    <View
                       style={[
-                        s.button,
-                        (!query.trim() || busy) && { opacity: 0.5 },
+                        s.row,
+                        {
+                          borderTopWidth: 1,
+                          borderColor: C.line,
+                          paddingTop: 16,
+                        },
                       ]}
                     >
-                      {busy ? (
-                        <ActivityIndicator color="white" />
-                      ) : (
-                        <>
-                          <Text style={s.buttonText}>
-                            {voiceEnabled
-                              ? "Ask aloud"
-                              : isAppConversation(query)
-                                ? "Send message"
-                                : "Find sources"}
-                          </Text>
-                          <Icon name="arrow-forward" size={16} color="white" />
-                        </>
-                      )}
-                    </Pressable>
+                      <Pressable
+                        style={s.row}
+                        disabled={busy}
+                        accessibilityRole="switch"
+                        accessibilityState={{ checked: voiceEnabled }}
+                        accessibilityLabel="Voice mode"
+                        onPress={() => {
+                          setVoiceEnabled((value) => !value);
+                          setVoiceResponse(null);
+                          setSpeaking(false);
+                        }}
+                      >
+                        <Icon
+                          name={
+                            voiceEnabled ? "volume-high-outline" : "mic-outline"
+                          }
+                          size={20}
+                        />
+                        <Text style={[s.small, { marginLeft: 8 }]}>
+                          Voice mode · {voiceEnabled ? "on" : "off"}
+                        </Text>
+                      </Pressable>
+                      <Pressable
+                        accessibilityLabel="Ask question"
+                        disabled={busy || !query.trim()}
+                        onPress={() => ask()}
+                        style={[
+                          s.button,
+                          (!query.trim() || busy) && { opacity: 0.5 },
+                        ]}
+                      >
+                        {busy ? (
+                          <ActivityIndicator color="white" />
+                        ) : (
+                          <>
+                            <Text style={s.buttonText}>
+                              {voiceEnabled
+                                ? "Ask aloud"
+                                : isAppConversation(query)
+                                  ? "Send message"
+                                  : "Find sources"}
+                            </Text>
+                            <Icon
+                              name="arrow-forward"
+                              size={16}
+                              color="white"
+                            />
+                          </>
+                        )}
+                      </Pressable>
+                    </View>
                   </View>
-                </View>
+                )}
                 <View
                   style={[
                     s.row,
@@ -655,6 +712,7 @@ function StudyApp() {
                         style={s.secondary}
                         onPress={() => {
                           setScope(id);
+                          setLiveMode(false);
                           setConversation(null);
                           setVoiceResponse(null);
                           setShowSources(false);
@@ -668,7 +726,7 @@ function StudyApp() {
                     ))}
                   </View>
                 )}
-                {voiceEnabled && (
+                {voiceEnabled && !liveMode && (
                   <VoiceMode
                     busy={busy}
                     language={
@@ -1001,7 +1059,8 @@ function StudyApp() {
                 </View>
                 <Text style={s.small}>
                   Bookmarks are stored on your device. Submitted corrections are
-                  stored by the local API. No raw audio is recorded.
+                  stored by the local API. Live audio is processed during the
+                  session; microphone recordings are not saved by the app.
                 </Text>
               </>
             )}

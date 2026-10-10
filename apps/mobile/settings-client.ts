@@ -151,3 +151,16 @@ export const requestVoiceTurn = async (body: {
   work_ids: string[];
 }): Promise<VoiceTurn> =>
   raw("/v1/voice/turn", "POST", body, await settingsToken(), 75000);
+
+/** Credentials stay out of URLs and are sent only in the authenticated socket's first frame. */
+export async function liveSessionCredentials(): Promise<{
+  url: string;
+  token: string;
+}> {
+  const endpoint = new URL(API);
+  endpoint.pathname = "/v1/live";
+  endpoint.search = "";
+  endpoint.hash = "";
+  endpoint.protocol = endpoint.protocol === "https:" ? "wss:" : "ws:";
+  return { url: endpoint.toString(), token: await settingsToken() };
+}
