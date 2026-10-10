@@ -1,0 +1,780 @@
+{
+  "checked_on": "2026-10-10",
+  "status": "private_draft_retrieval_ready_review_pending",
+  "approved_passages": 0,
+  "sources": [
+    {
+      "source_id": "14.-brahmand-puran-1st-part-gita-press/asset-8d20584f231456d8",
+      "identifier": "14.-brahmand-puran-1st-part-gita-press",
+      "asset_name": "14.Brahmand puran (2nd Part)Adhyatam Ramayan  Gita Press_djvu.xml",
+      "scan_pages": 368,
+      "ocr_sha256": "808708252f0cc57632157cc81118c05b74b55158b196373e2ab8eb3363ea63f1",
+      "status": "private_unreviewed_draft",
+      "source_url": "https://archive.org/details/14.-brahmand-puran-1st-part-gita-press",
+      "sample_script_metrics": {
+        "characters": 10677,
+        "devanagari_characters": 8423,
+        "devanagari_fraction_of_letters": 1.0,
+        "script_smoke_pass": true
+      },
+      "needs_script_repair": false,
+      "approved_passages": 0,
+      "repaired_scan_pages": 0,
+      "scan_pages_without_local_repair": 368
+    },
+    {
+      "source_id": "14.-brahmand-puran-1st-part-gita-press/asset-e3a2da03fab84725",
+      "identifier": "14.-brahmand-puran-1st-part-gita-press",
+      "asset_name": "14.Brahmand puran (1st Part) Gita Press_djvu.xml",
+      "scan_pages": 1354,
+      "ocr_sha256": "fa38f75819ecb8af15caab8cdae65c2d905a833ff59a4468499c018d0773175a",
+      "status": "private_unreviewed_draft",
+      "source_url": "https://archive.org/details/14.-brahmand-puran-1st-part-gita-press",
+      "sample_script_metrics": {
+        "characters": 14667,
+        "devanagari_characters": 11954,
+        "devanagari_fraction_of_letters": 1.0,
+        "script_smoke_pass": true
+      },
+      "needs_script_repair": false,
+      "approved_passages": 0,
+      "repaired_scan_pages": 0,
+      "scan_pages_without_local_repair": 1354
+    },
+    {
+      "source_id": "AxNv_shri-vishnu-puran-translated-by-shri-munilal-gupta-1934-shri-banarasi-devi-chudi",
+      "identifier": "AxNv_shri-vishnu-puran-translated-by-shri-munilal-gupta-1934-shri-banarasi-devi-chudi",
+      "asset_name": null,
+      "scan_pages": 582,
+      "ocr_sha256": "63b7e51d15cd3303de5329da429913529c3eae196dc33a4cf8d9e6464975aca0",
+      "status": "private_unreviewed_draft",
+      "source_url": "https://archive.org/details/AxNv_shri-vishnu-puran-translated-by-shri-munilal-gupta-1934-shri-banarasi-devi-chudi",
+      "sample_script_metrics": {
+        "characters": 10725,
+        "devanagari_characters": 8132,
+        "devanagari_fraction_of_letters": 0.9097,
+        "script_smoke_pass": true
+      },
+      "needs_script_repair": false,
+      "approved_passages": 0,
+      "repaired_scan_pages": 0,
+      "scan_pages_without_local_repair": 582
+    },
+    {
+      "source_id": "agni-puran-gita-press",
+      "identifier": "agni-puran-gita-press",
+      "asset_name": null,
+      "scan_pages": 864,
+      "ocr_sha256": "2933749feaa20c5d87c456f362da2b4eddf6210dd059463f2ad204d24fbedbe7",
+      "status": "private_unreviewed_draft",
+      "source_url": "https://archive.org/details/agni-puran-gita-press",
+      "sample_script_metrics": {
+        "characters": 15659,
+        "devanagari_characters": 11884,
+        "devanagari_fraction_of_letters": 1.0,
+        "script_smoke_pass": true
+      },
+      "needs_script_repair": false,
+      "approved_passages": 0,
+      "repaired_scan_pages": 0,
+      "scan_pages_without_local_repair": 864
+    },
+    {
+      "source_id": "brahma-puran-gita-press-gorakhpur_202204",
+      "identifier": "brahma-puran-gita-press-gorakhpur_202204",
+      "asset_name": null,
+      "scan_pages": 440,
+      "ocr_sha256": "facf138e8dfaf6b29eadbbf366fd72fa4e3d5c5cf21a0c8f0476bf6026ddcf2b",
+      "status": "private_unreviewed_draft",
+      "source_url": "https://archive.org/details/brahma-puran-gita-press-gorakhpur_202204",
+      "sample_script_metrics": {
+        "characters": 8496,
+        "devanagari_characters": 6794,
+        "devanagari_fraction_of_letters": 1.0,
+        "script_smoke_pass": true
+      },
+      "needs_script_repair": false,
+      "approved_passages": 0,
+      "repaired_scan_pages": 0,
+      "scan_pages_without_local_repair": 440
+    },
+    {
+      "source_id": "brahma-vaivarta-purana-gitapress-hindi",
+      "identifier": "brahma-vaivarta-purana-gitapress-hindi",
+      "asset_name": null,
+      "scan_pages": 810,
+      "ocr_sha256": "108c5c9a2aeb274511c24e602149d7281448114f17b7136713591e99dcd669ae",
+      "status": "private_unreviewed_draft",
+      "source_url": "https://archive.org/details/brahma-vaivarta-purana-gitapress-hindi",
+      "sample_script_metrics": {
+        "characters": 15271,
+        "devanagari_characters": 11536,
+        "devanagari_fraction_of_letters": 1.0,
+        "script_smoke_pass": true
+      },
+      "needs_script_repair": false,
+      "approved_passages": 0,
+      "repaired_scan_pages": 0,
+      "scan_pages_without_local_repair": 810
+    },
+    {
+      "source_id": "garuda-puran-gita-press-gorakhpur",
+      "identifier": "garuda-puran-gita-press-gorakhpur",
+      "asset_name": null,
+      "scan_pages": 638,
+      "ocr_sha256": "9888c75a7efe69b68d6f0767d73eb3b3b0836259609795e417f9a7f9e76af046",
+      "status": "private_unreviewed_draft",
+      "source_url": "https://archive.org/details/garuda-puran-gita-press-gorakhpur",
+      "sample_script_metrics": {
+        "characters": 8417,
+        "devanagari_characters": 0,
+        "devanagari_fraction_of_letters": 0.0,
+        "script_smoke_pass": false
+      },
+      "needs_script_repair": true,
+      "approved_passages": 0,
+      "repaired_scan_pages": 16,
+      "scan_pages_without_local_repair": 622
+    },
+    {
+      "source_id": "ishavasya-upanishad-with-hindi-translation-gita-press-gorakhpur",
+      "identifier": "ishavasya-upanishad-with-hindi-translation-gita-press-gorakhpur",
+      "asset_name": null,
+      "scan_pages": 58,
+      "ocr_sha256": "3a477ea2fe2215f0f4e505c678076f2951bf999d9c044171f362387dc2711b35",
+      "status": "private_unreviewed_draft",
+      "source_url": "https://archive.org/details/ishavasya-upanishad-with-hindi-translation-gita-press-gorakhpur",
+      "sample_script_metrics": {
+        "characters": 1682,
+        "devanagari_characters": 0,
+        "devanagari_fraction_of_letters": 0.0,
+        "script_smoke_pass": false
+      },
+      "needs_script_repair": true,
+      "approved_passages": 0,
+      "repaired_scan_pages": 5,
+      "scan_pages_without_local_repair": 53
+    },
+    {
+      "source_id": "kena-upanishad-gita-press-gorakhpur",
+      "identifier": "kena-upanishad-gita-press-gorakhpur",
+      "asset_name": null,
+      "scan_pages": 152,
+      "ocr_sha256": "8b76063a8cd326a4fa3ce822a0542ce7c42d458cd4ceb287b6ae5effdfb0448a",
+      "status": "private_unreviewed_draft",
+      "source_url": "https://archive.org/details/kena-upanishad-gita-press-gorakhpur",
+      "sample_script_metrics": {
+        "characters": 2281,
+        "devanagari_characters": 0,
+        "devanagari_fraction_of_letters": 0.0,
+        "script_smoke_pass": false
+      },
+      "needs_script_repair": true,
+      "approved_passages": 0,
+      "repaired_scan_pages": 5,
+      "scan_pages_without_local_repair": 147
+    },
+    {
+      "source_id": "kurma-puran-gita-press",
+      "identifier": "kurma-puran-gita-press",
+      "asset_name": null,
+      "scan_pages": 506,
+      "ocr_sha256": "d2ab36024c91229ffa475a5581cf8b81f4bcb837c6948856ccdbd2f1d3284f84",
+      "status": "private_unreviewed_draft",
+      "source_url": "https://archive.org/details/kurma-puran-gita-press",
+      "sample_script_metrics": {
+        "characters": 14201,
+        "devanagari_characters": 11530,
+        "devanagari_fraction_of_letters": 1.0,
+        "script_smoke_pass": true
+      },
+      "needs_script_repair": false,
+      "approved_passages": 0,
+      "repaired_scan_pages": 0,
+      "scan_pages_without_local_repair": 506
+    },
+    {
+      "source_id": "linga-mahapuran-of-veda-vyas-with-illustration-gita-press",
+      "identifier": "linga-mahapuran-of-veda-vyas-with-illustration-gita-press",
+      "asset_name": null,
+      "scan_pages": 852,
+      "ocr_sha256": "0f40ae467c5d1ca09928d13b2f8462562fae4c6526d244b707aedd6cf0aacb66",
+      "status": "private_unreviewed_draft",
+      "source_url": "https://archive.org/details/linga-mahapuran-of-veda-vyas-with-illustration-gita-press",
+      "sample_script_metrics": {
+        "characters": 12053,
+        "devanagari_characters": 9936,
+        "devanagari_fraction_of_letters": 0.9861,
+        "script_smoke_pass": true
+      },
+      "needs_script_repair": false,
+      "approved_passages": 0,
+      "repaired_scan_pages": 0,
+      "scan_pages_without_local_repair": 852
+    },
+    {
+      "source_id": "mahabharata-by-gita-press-in-hindi-and-sanskrit/asset-00359ff7c77fa4f1",
+      "identifier": "mahabharata-by-gita-press-in-hindi-and-sanskrit",
+      "asset_name": "Mahabharata Volume 2_djvu.xml",
+      "scan_pages": 2580,
+      "ocr_sha256": "9661bd66c34286330952ae86287ae6c50cb679cc357b19d48f6e11349e599aeb",
+      "status": "private_unreviewed_draft",
+      "source_url": "https://archive.org/details/mahabharata-by-gita-press-in-hindi-and-sanskrit",
+      "sample_script_metrics": {
+        "characters": 5125,
+        "devanagari_characters": 4091,
+        "devanagari_fraction_of_letters": 1.0,
+        "script_smoke_pass": true
+      },
+      "needs_script_repair": false,
+      "approved_passages": 0,
+      "repaired_scan_pages": 0,
+      "scan_pages_without_local_repair": 2580
+    },
+    {
+      "source_id": "mahabharata-by-gita-press-in-hindi-and-sanskrit/asset-289368db2ad48b32",
+      "identifier": "mahabharata-by-gita-press-in-hindi-and-sanskrit",
+      "asset_name": "Mahabharata Volume 6_djvu.xml",
+      "scan_pages": 2566,
+      "ocr_sha256": "62b014f740fc68917fd434ebed1dab69d6b73f9d9df38f556e7e2b99ba3793af",
+      "status": "private_unreviewed_draft",
+      "source_url": "https://archive.org/details/mahabharata-by-gita-press-in-hindi-and-sanskrit",
+      "sample_script_metrics": {
+        "characters": 5195,
+        "devanagari_characters": 4193,
+        "devanagari_fraction_of_letters": 1.0,
+        "script_smoke_pass": true
+      },
+      "needs_script_repair": false,
+      "approved_passages": 0,
+      "repaired_scan_pages": 0,
+      "scan_pages_without_local_repair": 2566
+    },
+    {
+      "source_id": "mahabharata-by-gita-press-in-hindi-and-sanskrit/asset-2a6b67f7912cb109",
+      "identifier": "mahabharata-by-gita-press-in-hindi-and-sanskrit",
+      "asset_name": "Mahabharata Volume 3_djvu.xml",
+      "scan_pages": 2343,
+      "ocr_sha256": "85256ba19d3a5fad6e4f81a10fbb01ef7b8dc39bc0645210470ee221e6aff72f",
+      "status": "private_unreviewed_draft",
+      "source_url": "https://archive.org/details/mahabharata-by-gita-press-in-hindi-and-sanskrit",
+      "sample_script_metrics": {
+        "characters": 5836,
+        "devanagari_characters": 4698,
+        "devanagari_fraction_of_letters": 1.0,
+        "script_smoke_pass": true
+      },
+      "needs_script_repair": false,
+      "approved_passages": 0,
+      "repaired_scan_pages": 0,
+      "scan_pages_without_local_repair": 2343
+    },
+    {
+      "source_id": "mahabharata-by-gita-press-in-hindi-and-sanskrit/asset-3591a9480d77c0d5",
+      "identifier": "mahabharata-by-gita-press-in-hindi-and-sanskrit",
+      "asset_name": "Mahabharata Volume 1_djvu.xml",
+      "scan_pages": 2256,
+      "ocr_sha256": "ba85ae926fdef34e16e2412f1bc79fcfb913a7cda3ca315f942bbb7be5abb0bc",
+      "status": "private_unreviewed_draft",
+      "source_url": "https://archive.org/details/mahabharata-by-gita-press-in-hindi-and-sanskrit",
+      "sample_script_metrics": {
+        "characters": 6235,
+        "devanagari_characters": 5126,
+        "devanagari_fraction_of_letters": 1.0,
+        "script_smoke_pass": true
+      },
+      "needs_script_repair": false,
+      "approved_passages": 0,
+      "repaired_scan_pages": 0,
+      "scan_pages_without_local_repair": 2256
+    },
+    {
+      "source_id": "mahabharata-by-gita-press-in-hindi-and-sanskrit/asset-6ee8b0345e631907",
+      "identifier": "mahabharata-by-gita-press-in-hindi-and-sanskrit",
+      "asset_name": "Mahabharata Volume 5_djvu.xml",
+      "scan_pages": 2450,
+      "ocr_sha256": "e1caf266d40b374cc42a246564e5daef653abe046fc4b447673827e9910f8d56",
+      "status": "private_unreviewed_draft",
+      "source_url": "https://archive.org/details/mahabharata-by-gita-press-in-hindi-and-sanskrit",
+      "sample_script_metrics": {
+        "characters": 5154,
+        "devanagari_characters": 4166,
+        "devanagari_fraction_of_letters": 1.0,
+        "script_smoke_pass": true
+      },
+      "needs_script_repair": false,
+      "approved_passages": 0,
+      "repaired_scan_pages": 0,
+      "scan_pages_without_local_repair": 2450
+    },
+    {
+      "source_id": "mahabharata-by-gita-press-in-hindi-and-sanskrit/asset-fbad6f6f9ae15a23",
+      "identifier": "mahabharata-by-gita-press-in-hindi-and-sanskrit",
+      "asset_name": "Mahabharata Volume 4_djvu.xml",
+      "scan_pages": 3237,
+      "ocr_sha256": "a5a9f53d3a11c0e37d20f77e12ab0b78b6a957cfe6675d6d1092b3d1d77c00a8",
+      "status": "private_unreviewed_draft",
+      "source_url": "https://archive.org/details/mahabharata-by-gita-press-in-hindi-and-sanskrit",
+      "sample_script_metrics": {
+        "characters": 6498,
+        "devanagari_characters": 5220,
+        "devanagari_fraction_of_letters": 1.0,
+        "script_smoke_pass": true
+      },
+      "needs_script_repair": false,
+      "approved_passages": 0,
+      "repaired_scan_pages": 0,
+      "scan_pages_without_local_repair": 3237
+    },
+    {
+      "source_id": "markandeya-purana-gita-press.pdf",
+      "identifier": "markandeya-purana-gita-press.pdf",
+      "asset_name": null,
+      "scan_pages": 312,
+      "ocr_sha256": "b07882382240ef3c706442521c44af4f8c26cc8d7f3557735c78e32dee0ac456",
+      "status": "private_unreviewed_draft",
+      "source_url": "https://archive.org/details/markandeya-purana-gita-press.pdf",
+      "sample_script_metrics": {
+        "characters": 8874,
+        "devanagari_characters": 7041,
+        "devanagari_fraction_of_letters": 1.0,
+        "script_smoke_pass": true
+      },
+      "needs_script_repair": false,
+      "approved_passages": 0,
+      "repaired_scan_pages": 0,
+      "scan_pages_without_local_repair": 312
+    },
+    {
+      "source_id": "matsya-puran-gita-press-gorakhpur",
+      "identifier": "matsya-puran-gita-press-gorakhpur",
+      "asset_name": null,
+      "scan_pages": 1104,
+      "ocr_sha256": "1c45396cc976aaa80274f37b797d59ed02cefee5043077b057c1e3798877bb2f",
+      "status": "private_unreviewed_draft",
+      "source_url": "https://archive.org/details/matsya-puran-gita-press-gorakhpur",
+      "sample_script_metrics": {
+        "characters": 15983,
+        "devanagari_characters": 12846,
+        "devanagari_fraction_of_letters": 1.0,
+        "script_smoke_pass": true
+      },
+      "needs_script_repair": false,
+      "approved_passages": 0,
+      "repaired_scan_pages": 0,
+      "scan_pages_without_local_repair": 1104
+    },
+    {
+      "source_id": "narada-puran-gita-press-gorakhpur",
+      "identifier": "narada-puran-gita-press-gorakhpur",
+      "asset_name": null,
+      "scan_pages": 784,
+      "ocr_sha256": "f9145b7cdaad9a1458276fabd56412ffda228975dec27b0951d75afcaa847bb7",
+      "status": "private_unreviewed_draft",
+      "source_url": "https://archive.org/details/narada-puran-gita-press-gorakhpur",
+      "sample_script_metrics": {
+        "characters": 7874,
+        "devanagari_characters": 0,
+        "devanagari_fraction_of_letters": 0.0,
+        "script_smoke_pass": false
+      },
+      "needs_script_repair": true,
+      "approved_passages": 0,
+      "repaired_scan_pages": 16,
+      "scan_pages_without_local_repair": 768
+    },
+    {
+      "source_id": "oriv-varaha-puran-illustrated-with-hindi-translations-g",
+      "identifier": "oriv-varaha-puran-illustrated-with-hindi-translations-g",
+      "asset_name": null,
+      "scan_pages": 414,
+      "ocr_sha256": "2d4920cf7fed89df78f4e8c4fe719414fe6790dbb0620e66a95ed2abe21a63f3",
+      "status": "private_unreviewed_draft",
+      "source_url": "https://archive.org/details/oriv-varaha-puran-illustrated-with-hindi-translations-g",
+      "sample_script_metrics": {
+        "characters": 11699,
+        "devanagari_characters": 9182,
+        "devanagari_fraction_of_letters": 0.9478,
+        "script_smoke_pass": true
+      },
+      "needs_script_repair": false,
+      "approved_passages": 0,
+      "repaired_scan_pages": 0,
+      "scan_pages_without_local_repair": 414
+    },
+    {
+      "source_id": "padma-puran-gita-press",
+      "identifier": "padma-puran-gita-press",
+      "asset_name": null,
+      "scan_pages": 1018,
+      "ocr_sha256": "a63bd5228ee9c01cc61ccd2f9cca31efbd40f087ccc9fb2f5d11aa3e722f8824",
+      "status": "private_unreviewed_draft",
+      "source_url": "https://archive.org/details/padma-puran-gita-press",
+      "sample_script_metrics": {
+        "characters": 16964,
+        "devanagari_characters": 13483,
+        "devanagari_fraction_of_letters": 1.0,
+        "script_smoke_pass": true
+      },
+      "needs_script_repair": false,
+      "approved_passages": 0,
+      "repaired_scan_pages": 0,
+      "scan_pages_without_local_repair": 1018
+    },
+    {
+      "source_id": "rqrh-bhavishya-puran-gita-press-gorakhpur_202608",
+      "identifier": "rqrh-bhavishya-puran-gita-press-gorakhpur_202608",
+      "asset_name": null,
+      "scan_pages": 654,
+      "ocr_sha256": "1682141177fe7647c1ddbe5005a1bfa9bd1c94cfe14af08f4cf793ee2691c156",
+      "status": "private_unreviewed_draft",
+      "source_url": "https://archive.org/details/rqrh-bhavishya-puran-gita-press-gorakhpur_202608",
+      "sample_script_metrics": {
+        "characters": 14091,
+        "devanagari_characters": 11271,
+        "devanagari_fraction_of_letters": 0.967,
+        "script_smoke_pass": true
+      },
+      "needs_script_repair": false,
+      "approved_passages": 0,
+      "repaired_scan_pages": 0,
+      "scan_pages_without_local_repair": 654
+    },
+    {
+      "source_id": "shiv-mahapuran-of-veda-vyas-chapter-2-second-half-with-hindi-vyakhya-illustration-gita-press",
+      "identifier": "shiv-mahapuran-of-veda-vyas-chapter-2-second-half-with-hindi-vyakhya-illustration-gita-press",
+      "asset_name": null,
+      "scan_pages": 1108,
+      "ocr_sha256": "ec0ff5d776582f580b6c4ede54a1f2fd3d2459eade5e51d417ed4b76b149a765",
+      "status": "private_unreviewed_draft",
+      "source_url": "https://archive.org/details/shiv-mahapuran-of-veda-vyas-chapter-2-second-half-with-hindi-vyakhya-illustration-gita-press",
+      "sample_script_metrics": {
+        "characters": 10449,
+        "devanagari_characters": 8524,
+        "devanagari_fraction_of_letters": 0.9755,
+        "script_smoke_pass": true
+      },
+      "needs_script_repair": false,
+      "approved_passages": 0,
+      "repaired_scan_pages": 0,
+      "scan_pages_without_local_repair": 1108
+    },
+    {
+      "source_id": "shiva-mahapuran-part-1-first-half-by-veda-vyas-with-explanation-and-illustration-gita-press",
+      "identifier": "shiva-mahapuran-part-1-first-half-by-veda-vyas-with-explanation-and-illustration-gita-press",
+      "asset_name": null,
+      "scan_pages": 1085,
+      "ocr_sha256": "3b8cdadcf416a8a856a9c55f18f51b360e988622d7010b6b7a232fdd420fbdce",
+      "status": "private_unreviewed_draft",
+      "source_url": "https://archive.org/details/shiva-mahapuran-part-1-first-half-by-veda-vyas-with-explanation-and-illustration-gita-press",
+      "sample_script_metrics": {
+        "characters": 10454,
+        "devanagari_characters": 8530,
+        "devanagari_fraction_of_letters": 0.9799,
+        "script_smoke_pass": true
+      },
+      "needs_script_repair": false,
+      "approved_passages": 0,
+      "repaired_scan_pages": 0,
+      "scan_pages_without_local_repair": 1085
+    },
+    {
+      "source_id": "skanda-puran-gita-press",
+      "identifier": "skanda-puran-gita-press",
+      "asset_name": null,
+      "scan_pages": 1394,
+      "ocr_sha256": "371e264af04c178b30e125f9eb1607083424176499b8009c64ad8f0c3280ce8f",
+      "status": "private_unreviewed_draft",
+      "source_url": "https://archive.org/details/skanda-puran-gita-press",
+      "sample_script_metrics": {
+        "characters": 15847,
+        "devanagari_characters": 11911,
+        "devanagari_fraction_of_letters": 1.0,
+        "script_smoke_pass": true
+      },
+      "needs_script_repair": false,
+      "approved_passages": 0,
+      "repaired_scan_pages": 0,
+      "scan_pages_without_local_repair": 1394
+    },
+    {
+      "source_id": "srimad-bhagavat-mahapuran-2-volume-set-sanskrit-hindi/asset-6de0a3912bb583d7",
+      "identifier": "srimad-bhagavat-mahapuran-2-volume-set-sanskrit-hindi",
+      "asset_name": "Srimad Bhagavat Mahapuran Volume 1 Sanskrit Hindi_djvu.xml",
+      "scan_pages": 1617,
+      "ocr_sha256": "ebbee9b089171dd95a9e301abab39314538dd6ae0d87a6f3756cb5e821cd6304",
+      "status": "private_unreviewed_draft",
+      "source_url": "https://archive.org/details/srimad-bhagavat-mahapuran-2-volume-set-sanskrit-hindi",
+      "sample_script_metrics": {
+        "characters": 9699,
+        "devanagari_characters": 7932,
+        "devanagari_fraction_of_letters": 1.0,
+        "script_smoke_pass": true
+      },
+      "needs_script_repair": false,
+      "approved_passages": 0,
+      "repaired_scan_pages": 0,
+      "scan_pages_without_local_repair": 1617
+    },
+    {
+      "source_id": "srimad-bhagavat-mahapuran-2-volume-set-sanskrit-hindi/asset-ae19afc34e7cdc9e",
+      "identifier": "srimad-bhagavat-mahapuran-2-volume-set-sanskrit-hindi",
+      "asset_name": "Srimad Bhagavat Mahapuran Volume 2 Sanskrit Hindi_djvu.xml",
+      "scan_pages": 1520,
+      "ocr_sha256": "ba4b23f8028ece90428f9bee7fc8be1fa8b80b402c21edaf2bbb1aacaa43f8d2",
+      "status": "private_unreviewed_draft",
+      "source_url": "https://archive.org/details/srimad-bhagavat-mahapuran-2-volume-set-sanskrit-hindi",
+      "sample_script_metrics": {
+        "characters": 7915,
+        "devanagari_characters": 6557,
+        "devanagari_fraction_of_letters": 1.0,
+        "script_smoke_pass": true
+      },
+      "needs_script_repair": false,
+      "approved_passages": 0,
+      "repaired_scan_pages": 0,
+      "scan_pages_without_local_repair": 1520
+    },
+    {
+      "source_id": "valmiki-ramayan-part-1-gita-press/asset-628290062ab9cfcc",
+      "identifier": "valmiki-ramayan-part-1-gita-press",
+      "asset_name": "Valmiki Ramayan Part 1 Gita press_djvu.xml",
+      "scan_pages": 944,
+      "ocr_sha256": "8348c14654d838004acce2f570371d9cce4a21c2a0554e0f3a513bec770e2cb6",
+      "status": "private_unreviewed_draft",
+      "source_url": "https://archive.org/details/valmiki-ramayan-part-1-gita-press",
+      "sample_script_metrics": {
+        "characters": 13139,
+        "devanagari_characters": 10516,
+        "devanagari_fraction_of_letters": 0.9833,
+        "script_smoke_pass": true
+      },
+      "needs_script_repair": false,
+      "approved_passages": 0,
+      "repaired_scan_pages": 0,
+      "scan_pages_without_local_repair": 944
+    },
+    {
+      "source_id": "valmiki-ramayan-part-2-gita-press/asset-d053668f5e8239e1",
+      "identifier": "valmiki-ramayan-part-2-gita-press",
+      "asset_name": "Valmiki Ramayan Part 2 Gita press_djvu.xml",
+      "scan_pages": 946,
+      "ocr_sha256": "0a98a9f716e752cb838b76478997a28f027503342c7e0ca689c9fb7569c022c2",
+      "status": "private_unreviewed_draft",
+      "source_url": "https://archive.org/details/valmiki-ramayan-part-2-gita-press",
+      "sample_script_metrics": {
+        "characters": 6729,
+        "devanagari_characters": 5421,
+        "devanagari_fraction_of_letters": 0.9696,
+        "script_smoke_pass": true
+      },
+      "needs_script_repair": false,
+      "approved_passages": 0,
+      "repaired_scan_pages": 0,
+      "scan_pages_without_local_repair": 946
+    },
+    {
+      "source_id": "vaman-puran-gita-press",
+      "identifier": "vaman-puran-gita-press",
+      "asset_name": null,
+      "scan_pages": 489,
+      "ocr_sha256": "f5a3bb2faab1f2d54c46a1447d9ca1f7ab81d246f8d34a7c88f882126a8832d0",
+      "status": "private_unreviewed_draft",
+      "source_url": "https://archive.org/details/vaman-puran-gita-press",
+      "sample_script_metrics": {
+        "characters": 10922,
+        "devanagari_characters": 8723,
+        "devanagari_fraction_of_letters": 1.0,
+        "script_smoke_pass": true
+      },
+      "needs_script_repair": false,
+      "approved_passages": 0,
+      "repaired_scan_pages": 0,
+      "scan_pages_without_local_repair": 489
+    }
+  ],
+  "source_count": 31,
+  "draft_scan_pages": 35445,
+  "rejected": [],
+  "retrieval_checks": [
+    {
+      "query": "विष्णु धर्म",
+      "scope": null,
+      "elapsed_ms": 698,
+      "hit_count": 10,
+      "error_count": 0,
+      "top_locators": [
+        {
+          "source_id": "14.-brahmand-puran-1st-part-gita-press/asset-8d20584f231456d8",
+          "scan_page": 359,
+          "ocr_engine": "archive_ocr"
+        },
+        {
+          "source_id": "14.-brahmand-puran-1st-part-gita-press/asset-e3a2da03fab84725",
+          "scan_page": 916,
+          "ocr_engine": "archive_ocr"
+        },
+        {
+          "source_id": "agni-puran-gita-press",
+          "scan_page": 567,
+          "ocr_engine": "archive_ocr"
+        }
+      ]
+    },
+    {
+      "query": "राम",
+      "scope": null,
+      "elapsed_ms": 720,
+      "hit_count": 10,
+      "error_count": 0,
+      "top_locators": [
+        {
+          "source_id": "14.-brahmand-puran-1st-part-gita-press/asset-8d20584f231456d8",
+          "scan_page": 163,
+          "ocr_engine": "archive_ocr"
+        },
+        {
+          "source_id": "14.-brahmand-puran-1st-part-gita-press/asset-e3a2da03fab84725",
+          "scan_page": 39,
+          "ocr_engine": "archive_ocr"
+        },
+        {
+          "source_id": "AxNv_shri-vishnu-puran-translated-by-shri-munilal-gupta-1934-shri-banarasi-devi-chudi",
+          "scan_page": 468,
+          "ocr_engine": "archive_ocr"
+        }
+      ]
+    },
+    {
+      "query": "कृष्ण",
+      "scope": null,
+      "elapsed_ms": 664,
+      "hit_count": 10,
+      "error_count": 0,
+      "top_locators": [
+        {
+          "source_id": "14.-brahmand-puran-1st-part-gita-press/asset-e3a2da03fab84725",
+          "scan_page": 1239,
+          "ocr_engine": "archive_ocr"
+        },
+        {
+          "source_id": "AxNv_shri-vishnu-puran-translated-by-shri-munilal-gupta-1934-shri-banarasi-devi-chudi",
+          "scan_page": 556,
+          "ocr_engine": "archive_ocr"
+        },
+        {
+          "source_id": "agni-puran-gita-press",
+          "scan_page": 40,
+          "ocr_engine": "archive_ocr"
+        }
+      ]
+    },
+    {
+      "query": "moksha",
+      "scope": null,
+      "elapsed_ms": 698,
+      "hit_count": 10,
+      "error_count": 0,
+      "top_locators": [
+        {
+          "source_id": "14.-brahmand-puran-1st-part-gita-press/asset-8d20584f231456d8",
+          "scan_page": 149,
+          "ocr_engine": "archive_ocr"
+        },
+        {
+          "source_id": "14.-brahmand-puran-1st-part-gita-press/asset-e3a2da03fab84725",
+          "scan_page": 1010,
+          "ocr_engine": "archive_ocr"
+        },
+        {
+          "source_id": "AxNv_shri-vishnu-puran-translated-by-shri-munilal-gupta-1934-shri-banarasi-devi-chudi",
+          "scan_page": 251,
+          "ocr_engine": "archive_ocr"
+        }
+      ]
+    },
+    {
+      "query": "भक्ति",
+      "scope": [
+        "narada-puran-gita-press-gorakhpur"
+      ],
+      "elapsed_ms": 202,
+      "hit_count": 5,
+      "error_count": 0,
+      "top_locators": [
+        {
+          "source_id": "narada-puran-gita-press-gorakhpur",
+          "scan_page": 8,
+          "ocr_engine": "local_repair"
+        },
+        {
+          "source_id": "narada-puran-gita-press-gorakhpur",
+          "scan_page": 250,
+          "ocr_engine": "local_repair"
+        },
+        {
+          "source_id": "narada-puran-gita-press-gorakhpur",
+          "scan_page": 100,
+          "ocr_engine": "local_repair"
+        }
+      ]
+    },
+    {
+      "query": "ईश्वर",
+      "scope": [
+        "ishavasya-upanishad-with-hindi-translation-gita-press-gorakhpur"
+      ],
+      "elapsed_ms": 194,
+      "hit_count": 0,
+      "error_count": 0,
+      "top_locators": []
+    },
+    {
+      "query": "ब्रह्म",
+      "scope": [
+        "kena-upanishad-gita-press-gorakhpur"
+      ],
+      "elapsed_ms": 204,
+      "hit_count": 2,
+      "error_count": 0,
+      "top_locators": [
+        {
+          "source_id": "kena-upanishad-gita-press-gorakhpur",
+          "scan_page": 20,
+          "ocr_engine": "local_repair"
+        },
+        {
+          "source_id": "kena-upanishad-gita-press-gorakhpur",
+          "scan_page": 7,
+          "ocr_engine": "local_repair"
+        }
+      ]
+    },
+    {
+      "query": "प्रथम",
+      "scope": [
+        "ishavasya-upanishad-with-hindi-translation-gita-press-gorakhpur"
+      ],
+      "elapsed_ms": 246,
+      "hit_count": 1,
+      "error_count": 0,
+      "top_locators": [
+        {
+          "source_id": "ishavasya-upanishad-with-hindi-translation-gita-press-gorakhpur",
+          "scan_page": 6,
+          "ocr_engine": "local_repair"
+        }
+      ]
+    }
+  ],
+  "new_repaired_pages_this_batch": 30,
+  "total_local_repaired_pages": 42,
+  "validation": "16 Python ingest tests pass. Benchmarks are local offline lexical searches, not end-to-end AI latency or OCR accuracy measurements.",
+  "pending": [
+    "Complete remaining wrong-script OCR repairs",
+    "Verify source editions, complete vs abridged coverage and all volume sets",
+    "Map printed pages and verse/chapter hierarchy",
+    "Compare OCR text against scans and record applicable usage evidence",
+    "Load reviewed bundles into approved app retrieval"
+  ]
+}

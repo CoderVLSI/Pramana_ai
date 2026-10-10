@@ -23,6 +23,16 @@
       "requested_scan_pages": [
         1,
         6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
         20,
         100,
         250,
@@ -31,6 +41,16 @@
       "repaired_scan_pages": [
         1,
         6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
         20,
         100,
         250,
@@ -42,7 +62,7 @@
       "verse_mapping_verified": false,
       "independently_reviewed": false,
       "approved_passages": 0,
-      "remaining_scan_pages_without_repair": 778,
+      "remaining_scan_pages_without_repair": 768,
       "resume_verified_without_network_or_ocr_rerun": true,
       "page_metrics": [
         {
@@ -60,6 +80,96 @@
           "text_sha256": "e872bf620e08b82db22c6c683de2527061b9ab6e767bca3126a6c5f3ee6aa16d",
           "characters": 1421,
           "devanagari_characters": 1118,
+          "devanagari_fraction_of_letters": 1.0,
+          "script_smoke_pass": true
+        },
+        {
+          "scan_page": 7,
+          "image_sha256": "3ab2aa11bf01f605e34994b91f697b76860c14e9542c4e949025bd7200569ffd",
+          "text_sha256": "837f239a246839b8c8d41d9f7053b45ac2d7629d65fc5bc50b69ce175aecbb0f",
+          "characters": 466,
+          "devanagari_characters": 328,
+          "devanagari_fraction_of_letters": 1.0,
+          "script_smoke_pass": true
+        },
+        {
+          "scan_page": 8,
+          "image_sha256": "430dd6245ccc19b27b8060d7054a5b53fc4d6435562b221fae96a372cb734881",
+          "text_sha256": "0ae9e621256d08fdf9e5f71fb61ec0629d4b16024a08f37cb9d53b49e5428715",
+          "characters": 1924,
+          "devanagari_characters": 1453,
+          "devanagari_fraction_of_letters": 1.0,
+          "script_smoke_pass": true
+        },
+        {
+          "scan_page": 9,
+          "image_sha256": "23808571bf33cf5acaa1eaa36941365fd31bfadd91da7fd341f14dcb294bcc2d",
+          "text_sha256": "f182d1ba93f8b66088292daa0d60cf3b732a36e5dfc80fd223ab00bf12f68730",
+          "characters": 2355,
+          "devanagari_characters": 1663,
+          "devanagari_fraction_of_letters": 1.0,
+          "script_smoke_pass": true
+        },
+        {
+          "scan_page": 10,
+          "image_sha256": "13f4255980507dff24bc2067ddd9b51e981b6e0caccd14ae397d5685108d7aad",
+          "text_sha256": "e14233d52f9a8df9d0fa6d7710a9d777985f8db590a761d99d734c5164051075",
+          "characters": 2510,
+          "devanagari_characters": 1746,
+          "devanagari_fraction_of_letters": 1.0,
+          "script_smoke_pass": true
+        },
+        {
+          "scan_page": 11,
+          "image_sha256": "b6dbd1485c4a1f10491f9ae6034307e85d6aad6932ad9ac90ca14d101ef3fbf5",
+          "text_sha256": "be47e6789a8e0c41b66096c167bbeadc8452375fc5f2484586f531bb28ad4d9b",
+          "characters": 2390,
+          "devanagari_characters": 1572,
+          "devanagari_fraction_of_letters": 1.0,
+          "script_smoke_pass": true
+        },
+        {
+          "scan_page": 12,
+          "image_sha256": "f7bea5235c074e0b36974974896f27c0c4007b2c43afa336fd9aeee68c2d952a",
+          "text_sha256": "7f33de7cd2d77bf4c8bd09b33d7eb3a2f5c554998a515325cd6c94d21f61422c",
+          "characters": 1951,
+          "devanagari_characters": 1469,
+          "devanagari_fraction_of_letters": 1.0,
+          "script_smoke_pass": true
+        },
+        {
+          "scan_page": 13,
+          "image_sha256": "f31cdba7819c5f195a1d94d195bb2e769fae7d16855ef20bee1e018aa5924863",
+          "text_sha256": "bba068b36e7c6d4664ae18f8a7bbcbaafdd8683da673673c83e5f86e5439b45f",
+          "characters": 2319,
+          "devanagari_characters": 1741,
+          "devanagari_fraction_of_letters": 1.0,
+          "script_smoke_pass": true
+        },
+        {
+          "scan_page": 14,
+          "image_sha256": "bb85ee77a600c6352735bbafd5aaeeca737ed5151bc02ec87ed02c9d39cc3633",
+          "text_sha256": "79b50fb3c3cb843d4927debbe7483190c53f7a64fc9553f607747e571e67576f",
+          "characters": 2535,
+          "devanagari_characters": 1843,
+          "devanagari_fraction_of_letters": 1.0,
+          "script_smoke_pass": true
+        },
+        {
+          "scan_page": 15,
+          "image_sha256": "d188942858702f81c299061063988c6bcb8f9101aea8c809a9ff913a076f9ba9",
+          "text_sha256": "db9d261d152deccb7ae4ba3a25cc20006ddb3d3bd26de80475168a5340e62722",
+          "characters": 919,
+          "devanagari_characters": 642,
+          "devanagari_fraction_of_letters": 1.0,
+          "script_smoke_pass": true
+        },
+        {
+          "scan_page": 16,
+          "image_sha256": "befabab35eecca3d4bc49356769b7e4af1dc129341e3c78e536e86343bfaaef8",
+          "text_sha256": "e9f1969209e93e5c01b2a74124df8c6e40ad74c67fb348aa560aef8bb86c142e",
+          "characters": 3118,
+          "devanagari_characters": 1791,
           "devanagari_fraction_of_letters": 1.0,
           "script_smoke_pass": true
         },
@@ -124,6 +234,16 @@
       "requested_scan_pages": [
         1,
         6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
         20,
         100,
         250,
@@ -132,6 +252,16 @@
       "repaired_scan_pages": [
         1,
         6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
         20,
         100,
         250,
@@ -143,7 +273,7 @@
       "verse_mapping_verified": false,
       "independently_reviewed": false,
       "approved_passages": 0,
-      "remaining_scan_pages_without_repair": 632,
+      "remaining_scan_pages_without_repair": 622,
       "resume_verified_without_network_or_ocr_rerun": true,
       "page_metrics": [
         {
@@ -161,6 +291,96 @@
           "text_sha256": "2abf1b9be2e0efd1fa784d865d36feb3ec65e81633fd988e5a0d0d09601eb95d",
           "characters": 2530,
           "devanagari_characters": 2051,
+          "devanagari_fraction_of_letters": 1.0,
+          "script_smoke_pass": true
+        },
+        {
+          "scan_page": 7,
+          "image_sha256": "8b80e5b501a254c7350fd176af0f38fa60e6e95f0388e50ee9dfa73c9242ae3d",
+          "text_sha256": "965177f26c179ec88255114e1d40fbe501f1f7f157edda969a362a26d4fb4c81",
+          "characters": 3798,
+          "devanagari_characters": 2177,
+          "devanagari_fraction_of_letters": 1.0,
+          "script_smoke_pass": true
+        },
+        {
+          "scan_page": 8,
+          "image_sha256": "db5d713662ac900fcd3181999bd6f34da896b1ff2e3e49572e2d01bf51378d12",
+          "text_sha256": "58ca548e585cfa32b0409f5d72fc4f9171f8498dfec3878704603f95f42a0871",
+          "characters": 4195,
+          "devanagari_characters": 2439,
+          "devanagari_fraction_of_letters": 1.0,
+          "script_smoke_pass": true
+        },
+        {
+          "scan_page": 9,
+          "image_sha256": "ae3e8d0984c4af810514b93244349b0bef5ca0a5a46e5f7dd067e5524b081406",
+          "text_sha256": "91776e8d4648d4603632288e4c050584fa8ec23dec89e4c4882f2d86164c5860",
+          "characters": 4103,
+          "devanagari_characters": 2353,
+          "devanagari_fraction_of_letters": 1.0,
+          "script_smoke_pass": true
+        },
+        {
+          "scan_page": 10,
+          "image_sha256": "19bf7ef5371d8421e9138573134aee4a11358f7246c05a5aab4d1ed41218efa3",
+          "text_sha256": "adedf23038ccc4578109cdba900e9db053d8c9b6b195e667687c538f50917626",
+          "characters": 4216,
+          "devanagari_characters": 2616,
+          "devanagari_fraction_of_letters": 1.0,
+          "script_smoke_pass": true
+        },
+        {
+          "scan_page": 11,
+          "image_sha256": "1ebd7766764200b3eb0d1c661a7ee170eb45482fedd24842f0caa8883db361f7",
+          "text_sha256": "03b14404f62593d86027459384b7775ee61b20a7677bf9caeccdcd509fb9fa4d",
+          "characters": 3547,
+          "devanagari_characters": 2729,
+          "devanagari_fraction_of_letters": 1.0,
+          "script_smoke_pass": true
+        },
+        {
+          "scan_page": 12,
+          "image_sha256": "27aa0d7568e021778e1d6f7249440fa8d892f4f49c77c4008e1a0f8806f336ab",
+          "text_sha256": "1161df6cba79db358ffce18a169262db493517e672d95909ac35a07cc4e878c7",
+          "characters": 3515,
+          "devanagari_characters": 2481,
+          "devanagari_fraction_of_letters": 1.0,
+          "script_smoke_pass": true
+        },
+        {
+          "scan_page": 13,
+          "image_sha256": "ad802736fb5426003ff50fb78caaa212c0b5a12a84c2da0297deb24ecb58ac68",
+          "text_sha256": "5fb40111fead95d313c7d0ff2caebcb31dc27856455f43dac2d3745d37334e79",
+          "characters": 2278,
+          "devanagari_characters": 1230,
+          "devanagari_fraction_of_letters": 1.0,
+          "script_smoke_pass": true
+        },
+        {
+          "scan_page": 14,
+          "image_sha256": "24e58a2ddce16937dc025bfb01729217b459545194f9bc20b2e0ad6056b5ae45",
+          "text_sha256": "c708573ee425107550453451a72c5e651464bd84b9687968e06d1efcc9ef14c2",
+          "characters": 1672,
+          "devanagari_characters": 1311,
+          "devanagari_fraction_of_letters": 1.0,
+          "script_smoke_pass": true
+        },
+        {
+          "scan_page": 15,
+          "image_sha256": "25b5895e7e92fe455ef105c5ed0f6e5d3fd9247ac48a6df632f0431c7add9189",
+          "text_sha256": "68ba9366bde1a84ae2d7ce5e55b5c5f9bd816db0ccba3505bd35429abc797059",
+          "characters": 3072,
+          "devanagari_characters": 2428,
+          "devanagari_fraction_of_letters": 1.0,
+          "script_smoke_pass": true
+        },
+        {
+          "scan_page": 16,
+          "image_sha256": "36a1608e4fad7168cffce1b403b11ee39361762c3003aef198ccb5891e46ef90",
+          "text_sha256": "711a811c7dbbcd9ab2c83c6e6349279ad9a46240957a2379efa90b05de48af94",
+          "characters": 2754,
+          "devanagari_characters": 2166,
           "devanagari_fraction_of_letters": 1.0,
           "script_smoke_pass": true
         },
