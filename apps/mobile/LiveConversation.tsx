@@ -1,3 +1,4 @@
+import { shouldStopLive } from "../../packages/provider-client/live-lifecycle";
 import { Pressable, ScrollView, Text, TextInput, View } from "./ui";
 import React, { useEffect, useRef, useState } from "react";
 import { AppState, Linking, Platform, StyleSheet, Switch } from "react-native";
@@ -136,6 +137,8 @@ export default function LiveConversation({
   onNotice,
 }: Props) {
   const [state, setState] = useState<State>("stopped");
+  const [sessionNotice, setSessionNotice] = useState("");
+  const requestingPermission = useRef(false);
   const [connectedModel, setConnectedModel] = useState("");
   const [lines, setLines] = useState<Line[]>([]);
   const [sources, setSources] = useState<Source[]>([]);
@@ -179,7 +182,10 @@ export default function LiveConversation({
   const restartTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const playEpoch = useRef(0);
 
-  const notice = (text: string) => callbacks.current.onNotice(text);
+  const notice = (text: string) => {
+    setSessionNotice(text);
+    callbacks.current.onNotice(text);
+  };
   const addLine = (role: string, text: string, delta = false) =>
     setLines((previous) => {
       const safe = text.slice(0, 3000),
@@ -505,6 +511,7 @@ export default function LiveConversation({
     setMicrophoneEnabled(captureMic);
     recognitionBlocked.current = false;
     const session = generation.current;
+    setSessionNotice("");
     setState("connecting");
     setConnectedModel("");
     setSources([]);
@@ -543,8 +550,20 @@ export default function LiveConversation({
         const module = (await import("expo-speech-recognition"))
           .ExpoSpeechRecognitionModule;
         if (!active.current || session !== generation.current) return;
-        const permission = await module.requestPermissionsAsync();
+        requestingPermission.current = true;
+        let permission;
+        try {
+          permission = await module.requestPermissionsAsync();
+        } finally {
+          requestingPermission.current = false;
+        }
         if (!active.current || session !== generation.current) return;
+        if (AppState.currentState === "background") {
+          fail(
+            "Pramana is in the background. Return to the app and tap Retry.",
+          );
+          return;
+        }
         if (!permission.granted) {
           fail(
             "Microphone permission is required for device transcription. You can use the regular text chat.",
@@ -811,7 +830,12 @@ export default function LiveConversation({
   }
   useEffect(() => {
     const subscription = AppState.addEventListener("change", (value) => {
-      if (value !== "active" && active.current) stop();
+      if (shouldStopLive(value, active.current, requestingPermission.current)) {
+        stop();
+        notice(
+          "Live paused because Pramana moved to the background. Tap Retry to reconnect.",
+        );
+      }
     });
     const hidden = () => {
       if (document.hidden && active.current) stop();
@@ -829,6 +853,11 @@ export default function LiveConversation({
   return (
     <View style={styles.card}>
       <Text style={styles.title}>Live conversation</Text>
+      {!!sessionNotice && (
+        <Text accessibilityLiveRegion="assertive" style={styles.detail}>
+          {sessionNotice}
+        </Text>
+      )}
       <Text style={styles.disclosure}>
         Live AI generated · citations checked separately
       </Text>
