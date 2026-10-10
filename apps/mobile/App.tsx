@@ -1466,7 +1466,16 @@ function StudyApp() {
                 >
                   <Text style={s.body}>Profile & study preferences</Text>
                 </Pressable>
-                <SettingsScreen />
+                <SettingsScreen
+                  studyProfile={profile}
+                  onRestoreProfile={async (value) => {
+                    await AsyncStorage.setItem(
+                      PROFILE_KEY,
+                      JSON.stringify({ profile: value, completed: true }),
+                    );
+                    setProfile(value);
+                  }}
+                />
               </>
             ) : (
               <>

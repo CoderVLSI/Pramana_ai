@@ -58,3 +58,7 @@ Target age group/children's handling: **[REQUIRED — actual product decision an
 User-rights/deletion request handling: **[REQUIRED — operator contact and applicable process]**.
 
 Before publication, verify this policy against the signed build, providers, optional hosting and SDKs, complete the placeholders, host it publicly, and link it from the app and store. Future changes in processing must be reflected here.
+
+### Optional cloud account and backups
+
+Users may create an email/password account with Supabase. Supabase processes account credentials and email confirmation. Pramana keeps session tokens in device secure storage on Android, or browser tab session storage on web; passwords are not persisted by the app. Signing in does not upload local study data. Users can manually upload profile and reading preferences, and separately choose whether to include approved memories. The latest upload replaces their previous backup. API keys, private scratchpad, chat history, screenshots, and unapproved suggestions are excluded. Users can restore with confirmation or delete the cloud backup. Backup deletion leaves the authentication account intact; account deletion support is a release requirement still pending.

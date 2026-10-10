@@ -1,3 +1,4 @@
+import CloudAccount from "./CloudAccount";
 import DeviceDataSettings from "./DeviceDataSettings";
 import ReadingSettings from "./ReadingSettings";
 import ReminderSettings from "./ReminderSettings";
@@ -24,7 +25,15 @@ import {
   type Catalog,
   type PublicProfile,
 } from "./settings-client";
-export default function SettingsScreen() {
+export default function SettingsScreen({
+  studyProfile,
+  onRestoreProfile,
+}: {
+  studyProfile: import("./ProfileScreen").StudyProfile;
+  onRestoreProfile: (
+    profile: import("./ProfileScreen").StudyProfile,
+  ) => Promise<void>;
+}) {
   const [haptics, setHaptics] = useState(true);
   useEffect(() => {
     let active = true;
@@ -135,6 +144,10 @@ export default function SettingsScreen() {
   const models = catalog?.models[provider] || [];
   return (
     <View>
+      <CloudAccount
+        profile={studyProfile}
+        onRestoreProfile={onRestoreProfile}
+      />
       <ReadingSettings />
       <ReminderSettings />
       <DeviceDataSettings />
