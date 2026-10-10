@@ -10,6 +10,8 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - run: npm exec -w @pramana/mobile -- expo install --check
+      - run: npm ls expo-font --all
       - run: npm run typecheck
       - run: npm test
       - run: npm run build:web
