@@ -6,6 +6,8 @@ Servers bind only to loopback. The backend now supports HOST and PRAMANA_DATA_DI
 
 The five Gita development fixtures support local test searches. All other collections remain pending source review. Live voice remains unconnected. This is a portable browser-based preview, not a native Windows installer.
 
-Validation: TypeScript and all 18 test groups pass. Packaged UI and packaged backend passed Chromium checks for profile creation/persistence, fixture search, and Rishi animation, with no browser errors. API register reports132targets; unsupported-source query abstains. Windows Node binary checksum matched official Node distribution metadata. The Windows launcher itself has not been exercised on a Windows machine.
+Validation: TypeScript and all 26 JavaScript tests and 10 Python pipeline tests pass. Packaged browser-to-API flow confirms ordinary greetings no longer enter scripture search, no-key fallback is explicit, scripture abstention remains enforced, and the settings token persists across reloads. Provider adapters and saved-key route were tested with mocked Gemini/OpenAI responses, not a real user key. Windows launcher has not been exercised on Windows.
 
-ZIP SHA-256: 1965c8ff361ed4f2d9ab9122933983f35e775f9e7e2cbad7e0740f139408e887
+Greetings/app help now use the configured provider’s text API. Live voice remains unconnected; saving a key does not approve scripture sources. Browser settings tokens persist across app sessions; keys remain encrypted in the local backend.
+
+ZIP SHA-256: 1b543b207d3e7a039adcb2a5e70e745edd205bca8f13a5bdcf0abf014f66a513

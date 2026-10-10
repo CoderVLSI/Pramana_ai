@@ -1,13 +1,27 @@
 import { upanishadRegister } from "../../../packages/corpus-schema/upanishads";
-import { gitaPressRegister, gitaPressEpicRegister, gitaPressVedaRegister } from "../../../packages/corpus-schema/register";
+import {
+  gitaPressRegister,
+  gitaPressEpicRegister,
+  gitaPressVedaRegister,
+} from "../../../packages/corpus-schema/register";
 import Fastify from "fastify";
 import cors from "@fastify/cors";
 import { mkdir, appendFile } from "node:fs/promises";
 import { randomUUID } from "node:crypto";
 import { fileURLToPath } from "node:url";
-const dataDirectory = process.env.PRAMANA_DATA_DIR || fileURLToPath(new URL("../data/", import.meta.url));
+const dataDirectory =
+  process.env.PRAMANA_DATA_DIR ||
+  fileURLToPath(new URL("../data/", import.meta.url));
 import { passages, works } from "./corpus";
 import { answerStrict, search } from "./engine";
+import {
+  loadApprovedCorpus,
+  approvedCorpusStatus,
+  approvedRecord,
+  approvedPassages,
+  approvedWorkSummaries,
+} from "./approved-rag";
+loadApprovedCorpus();
 import { registerSettingsRoutes } from "./settings-routes";
 import { VaultError } from "./settings-vault";
 const app = Fastify({
@@ -66,30 +80,102 @@ const questionSchema = {
 };
 app.get("/health", async () => ({
   status: "ok",
-  mode: "development-fixtures",
+  mode: approvedCorpusStatus().approved_passages
+    ? "reviewed-corpus-and-development-fixtures"
+    : "development-fixtures",
+  approved_passages: approvedCorpusStatus().approved_passages,
 }));
-app.get("/v1/works", async () => works);
-app.get("/v1/corpus/register", async () => ({
-  publisher: "Gita Press",
-  location: "Gorakhpur",
-  total_works: 132,
-  upanishad_count: 108,
-  veda_count: 4,
-  mahapurana_count: 18,
-  epic_count: 2,
-  indexed_passages: 0,
-  rights_status: "pending",
-  works: [...gitaPressRegister, ...gitaPressEpicRegister, ...gitaPressVedaRegister, ...upanishadRegister],
-}));
-app.get("/v1/passages", async () => passages);
+app.get("/v1/works", async () => {
+  const summaries = approvedWorkSummaries();
+  return works.map((w) =>
+    summaries[w.id]
+      ? {
+          ...w,
+          passage_count: summaries[w.id].passage_count,
+          status: "Reviewed passages indexed · see edition coverage",
+          subtitle:
+            "Gita Press reviewed excerpts · edition coverage shown separately",
+          editions: summaries[w.id].editions,
+        }
+      : w,
+  );
+});
+app.get("/v1/corpus/register", async () => {
+  const status = approvedCorpusStatus(),
+    summaries = approvedWorkSummaries();
+  return {
+    publisher: "Gita Press",
+    location: "Gorakhpur",
+    total_works: 132,
+    upanishad_count: 108,
+    veda_count: 4,
+    mahapurana_count: 18,
+    epic_count: 2,
+    indexed_passages: status.approved_passages,
+    rights_status: status.approved_passages
+      ? "approved_for_indexed_editions_only"
+      : "pending",
+    works: [
+      ...gitaPressRegister,
+      ...gitaPressEpicRegister,
+      ...gitaPressVedaRegister,
+      ...upanishadRegister,
+    ].map((w) => {
+      const summary = summaries[w.work_id];
+      return summary
+        ? {
+            ...w,
+            indexed_passages: summary.passage_count,
+            rights_status: "approved_for_indexed_editions_only",
+            review_status: "approved_for_indexed_editions_only",
+            completeness: "see_indexed_editions",
+            indexed_editions: summary.editions,
+          }
+        : w;
+    }),
+  };
+});
+app.get<{ Querystring: { offset?: number; limit?: number } }>(
+  "/v1/passages",
+  {
+    schema: {
+      querystring: {
+        type: "object",
+        additionalProperties: false,
+        properties: {
+          offset: { type: "integer", minimum: 0, maximum: 10000000 },
+          limit: { type: "integer", minimum: 1, maximum: 200 },
+        },
+      },
+    },
+  },
+  async (req) => {
+    const offset = req.query.offset ?? 0,
+      limit = req.query.limit ?? 200;
+    const fixturePage = passages.slice(offset, offset + limit);
+    return [
+      ...fixturePage,
+      ...approvedPassages(
+        Math.max(0, offset - passages.length),
+        limit - fixturePage.length,
+      ),
+    ];
+  },
+);
 app.get<{ Params: { id: string } }>("/v1/passages/:id", async (req, reply) => {
-  const p = passages.find((p) => p.id === req.params.id);
+  const p =
+    approvedRecord(req.params.id) ??
+    passages.find((p) => p.id === req.params.id);
   return p
     ? {
         ...p,
-        context: passages.filter(
-          (x) => x.chapter === p.chapter && Math.abs(x.verse - p.verse) <= 1,
-        ),
+        context:
+          p.review_status === "approved"
+            ? []
+            : passages.filter(
+                (x) =>
+                  x.chapter === p.chapter && Math.abs(x.verse - p.verse) <= 1,
+              ),
       }
     : reply.code(404).send({ error: "Passage not found" });
 });
@@ -119,7 +205,10 @@ app.post<{ Body: { passage_id: string; reason: string } }>(
     },
   },
   async (req, reply) => {
-    if (!passages.some((p) => p.id === req.body.passage_id))
+    if (
+      !approvedRecord(req.body.passage_id) &&
+      !passages.some((p) => p.id === req.body.passage_id)
+    )
       return reply.code(404).send({ error: "Unknown passage" });
     const report = {
       case_id: randomUUID(),
@@ -136,4 +225,7 @@ app.post<{ Body: { passage_id: string; reason: string } }>(
   },
 );
 await registerSettingsRoutes(app);
-await app.listen({ port: Number(process.env.PORT || 3001), host: process.env.HOST || "0.0.0.0" });
+await app.listen({
+  port: Number(process.env.PORT || 3001),
+  host: process.env.HOST || "0.0.0.0",
+});

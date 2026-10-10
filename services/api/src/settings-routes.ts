@@ -11,9 +11,16 @@ import {
 import { testProvider } from "./voice-providers";
 import { speakWithFallback } from "./voice-router";
 import { answerStrict, verify } from "./engine";
-export async function registerSettingsRoutes(app: FastifyInstance) {
+import { generateWelcome, ChatProviderError } from "./chat-provider";
+import { isAppConversation } from "../../../packages/citation-schema/conversation";
+export async function registerSettingsRoutes(
+  app: FastifyInstance,
+  options: { chatFetch?: typeof globalThis.fetch } = {},
+) {
   const vault = new SettingsVault(
-    process.env.PRAMANA_DATA_DIR ? join(process.env.PRAMANA_DATA_DIR, "settings") : fileURLToPath(new URL("../data/settings/", import.meta.url)),
+    process.env.PRAMANA_DATA_DIR
+      ? join(process.env.PRAMANA_DATA_DIR, "settings")
+      : fileURLToPath(new URL("../data/settings/", import.meta.url)),
     process.env.SETTINGS_MASTER_KEY,
   );
   await vault.init();
@@ -33,6 +40,78 @@ export async function registerSettingsRoutes(app: FastifyInstance) {
     transport(req);
     return req.headers.authorization?.replace(/^Bearer /, "") || "";
   }
+  app.post<{ Body: { query: string; preferred_name?: string } }>(
+    "/v1/chat",
+    {
+      schema: {
+        body: {
+          type: "object",
+          required: ["query"],
+          additionalProperties: false,
+          properties: {
+            query: {
+              type: "string",
+              minLength: 1,
+              maxLength: 500,
+              pattern: "\\S",
+            },
+            preferred_name: { type: "string", maxLength: 80 },
+          },
+        },
+      },
+    },
+    async (req, reply) => {
+      reply.header("Cache-Control", "no-store");
+      if (!isAppConversation(req.body.query))
+        return reply
+          .code(422)
+          .send({
+            error:
+              "Use the scripture-question endpoint for source-based questions.",
+          });
+      const profile = await vault.read(token(req));
+      const provider = profile.active_provider;
+      const key = profile[provider].api_key;
+      const local = {
+        kind: "app_conversation",
+        message:
+          "Hello! What would you like to study? You can ask a scripture question or explore the Library.",
+        provider,
+        model: null,
+      };
+      if (!key)
+        return {
+          ...local,
+          connection_status: "not_configured",
+          note: "This is a local greeting. Add your provider API key in Settings for connected text chat.",
+        };
+      try {
+        const result = await generateWelcome({
+          provider,
+          key,
+          name: req.body.preferred_name,
+          query: req.body.query,
+          fetch: options.chatFetch,
+        });
+        return {
+          kind: "app_conversation",
+          ...result,
+          provider,
+          connection_status: "connected",
+        };
+      } catch (error) {
+        return {
+          ...local,
+          connection_status: "failed",
+          note:
+            "This is a local greeting. " +
+            (error instanceof ChatProviderError
+              ? error.message
+              : "The provider could not be reached. Try again shortly."),
+        };
+      }
+    },
+  );
   app.get("/v1/voice/models", async () => ({
     models: providerModels,
     researched_on: modelResearchDate,

@@ -1,0 +1,226 @@
+{
+  "checked_on": "2026-10-10",
+  "status": "representative_repairs_complete_full_sources_pending",
+  "external_embeddings": false,
+  "page_limit_per_batch": 10,
+  "network_socket_timeout_seconds": 45,
+  "ocr_process_timeout_seconds_per_page": 90,
+  "sources": [
+    {
+      "identifier": "narada-puran-gita-press-gorakhpur",
+      "status": "representative_page_repair_complete",
+      "coverage": "abridged",
+      "source_language": "Hindi only",
+      "original_sanskrit_available_in_this_scan": false,
+      "cover_observation": {
+        "scan_page": 1,
+        "catalogue_code_visible": "1183",
+        "gita_press_gorakhpur_logo_visible": true,
+        "abridged_label_visible": true,
+        "hindi_only_label_visible": true
+      },
+      "source_page_count": 784,
+      "requested_scan_pages": [
+        1,
+        6,
+        20,
+        100,
+        250,
+        500
+      ],
+      "repaired_scan_pages": [
+        1,
+        6,
+        20,
+        100,
+        250,
+        500
+      ],
+      "publisher_verified": false,
+      "edition_verified": false,
+      "rights_verified": false,
+      "verse_mapping_verified": false,
+      "independently_reviewed": false,
+      "approved_passages": 0,
+      "remaining_scan_pages_without_repair": 778,
+      "resume_verified_without_network_or_ocr_rerun": true,
+      "page_metrics": [
+        {
+          "scan_page": 1,
+          "image_sha256": "e8adab4e34e92b2bba8aca05e166867c2c7e8d87e34b61462270f233e3724b79",
+          "text_sha256": "797f2f69eafc38cf17172a273441984d39d228e9cf6f4900948bd7c0d3e43915",
+          "characters": 243,
+          "devanagari_characters": 80,
+          "devanagari_fraction_of_letters": 1.0,
+          "script_smoke_pass": true
+        },
+        {
+          "scan_page": 6,
+          "image_sha256": "09e42b945a26c0d43592b74a33e9f8d875de9820d1a22c5b0a808b03cb44da7a",
+          "text_sha256": "e872bf620e08b82db22c6c683de2527061b9ab6e767bca3126a6c5f3ee6aa16d",
+          "characters": 1421,
+          "devanagari_characters": 1118,
+          "devanagari_fraction_of_letters": 1.0,
+          "script_smoke_pass": true
+        },
+        {
+          "scan_page": 20,
+          "image_sha256": "f04c6fbd62fcf63319ee5a6d232032bbc92b75890437bf86348cd89bcd3e9782",
+          "text_sha256": "e078e130a39603744b27c9edc7fa9fd86380836a12741a043f87902693f10b82",
+          "characters": 1892,
+          "devanagari_characters": 1560,
+          "devanagari_fraction_of_letters": 1.0,
+          "script_smoke_pass": true
+        },
+        {
+          "scan_page": 100,
+          "image_sha256": "d726735f5f1d14963331a98e8ac89ba34f758412eb4eb5b61314e374cacf04e4",
+          "text_sha256": "4c654574e986ccd824dd5e6243a15836f15e64340f73ca8bfd66e81c9802b569",
+          "characters": 2620,
+          "devanagari_characters": 2075,
+          "devanagari_fraction_of_letters": 1.0,
+          "script_smoke_pass": true
+        },
+        {
+          "scan_page": 250,
+          "image_sha256": "af184eaf0f75823a7c6fe80382976e323a08e2a9bb2abd6cd88192fa362fddac",
+          "text_sha256": "0d75a0b03e22b9e75a954b47b4907a7593f8dd4a603c9995a5d6d5c0c7779e89",
+          "characters": 3521,
+          "devanagari_characters": 2773,
+          "devanagari_fraction_of_letters": 1.0,
+          "script_smoke_pass": true
+        },
+        {
+          "scan_page": 500,
+          "image_sha256": "266c325c2bba4945e82b9ee6447ce25dd9742be44ec4cc30a452cba76ed91f1d",
+          "text_sha256": "961ae8a38af92e3bcc0ac8c91b9afbf2545ea255e4244f701679e83e26ec0cc5",
+          "characters": 2859,
+          "devanagari_characters": 2333,
+          "devanagari_fraction_of_letters": 1.0,
+          "script_smoke_pass": true
+        }
+      ],
+      "database_integrity": "ok",
+      "devanagari_search_verified": true,
+      "test_matching_scan_pages": [
+        20
+      ],
+      "previous_ocr_devanagari_characters_on_sample_pages": 0
+    },
+    {
+      "identifier": "garuda-puran-gita-press-gorakhpur",
+      "status": "representative_page_repair_complete",
+      "coverage": "abridged",
+      "source_language": "Hindi only",
+      "original_sanskrit_available_in_this_scan": false,
+      "cover_observation": {
+        "scan_page": 1,
+        "catalogue_code_visible": "1189",
+        "gita_press_gorakhpur_logo_visible": true,
+        "abridged_label_visible": true,
+        "hindi_only_label_visible": true
+      },
+      "source_page_count": 638,
+      "requested_scan_pages": [
+        1,
+        6,
+        20,
+        100,
+        250,
+        500
+      ],
+      "repaired_scan_pages": [
+        1,
+        6,
+        20,
+        100,
+        250,
+        500
+      ],
+      "publisher_verified": false,
+      "edition_verified": false,
+      "rights_verified": false,
+      "verse_mapping_verified": false,
+      "independently_reviewed": false,
+      "approved_passages": 0,
+      "remaining_scan_pages_without_repair": 632,
+      "resume_verified_without_network_or_ocr_rerun": true,
+      "page_metrics": [
+        {
+          "scan_page": 1,
+          "image_sha256": "07a8a6823aa9f89f6d956d6251984b2a48125808485944159d70ece2711530f9",
+          "text_sha256": "4ab5a41009e94346d51a1105bf73ec495291b6664b83afaee4667d7439ec60fc",
+          "characters": 94,
+          "devanagari_characters": 23,
+          "devanagari_fraction_of_letters": 1.0,
+          "script_smoke_pass": true
+        },
+        {
+          "scan_page": 6,
+          "image_sha256": "c6307dbf299536957836bece6c0649346e55d680fb212b9d289857458af9e155",
+          "text_sha256": "2abf1b9be2e0efd1fa784d865d36feb3ec65e81633fd988e5a0d0d09601eb95d",
+          "characters": 2530,
+          "devanagari_characters": 2051,
+          "devanagari_fraction_of_letters": 1.0,
+          "script_smoke_pass": true
+        },
+        {
+          "scan_page": 20,
+          "image_sha256": "b10a8f567c7cf745c8ee7f3ccf67267ddee5c1bfd6dc903f7d62089763270b4d",
+          "text_sha256": "becc6cff2c769e28b3e46230315010bfb816db3e63fdf8951a4a8f4dbc4c7b25",
+          "characters": 2815,
+          "devanagari_characters": 2203,
+          "devanagari_fraction_of_letters": 1.0,
+          "script_smoke_pass": true
+        },
+        {
+          "scan_page": 100,
+          "image_sha256": "43c1fa25095382c8420acb0e9e8a317faf15e11037c2f7b7518440a70698ec3a",
+          "text_sha256": "be1dea921a5e38fd045985abe21354ff47774d8a0b7625466912766bc0b86f6d",
+          "characters": 2754,
+          "devanagari_characters": 2189,
+          "devanagari_fraction_of_letters": 1.0,
+          "script_smoke_pass": true
+        },
+        {
+          "scan_page": 250,
+          "image_sha256": "f672b5eff2170bdd20ba0bd50ebfd3bcee826c0f18ad58aeea4517c1c58deeb1",
+          "text_sha256": "6927f56343eeee51ac6edf497f3dad665a5ec7ba9b2191409ffe9d9a3ef209ee",
+          "characters": 2846,
+          "devanagari_characters": 2282,
+          "devanagari_fraction_of_letters": 1.0,
+          "script_smoke_pass": true
+        },
+        {
+          "scan_page": 500,
+          "image_sha256": "bf172f99e6c97d66f573cecb786d27b389110bdb30805d252b22de96da7fa782",
+          "text_sha256": "3abd4f35eeff7ebe8f402a50436a8a02d082216472222ad109ec0b7887a1d326",
+          "characters": 2979,
+          "devanagari_characters": 2325,
+          "devanagari_fraction_of_letters": 1.0,
+          "script_smoke_pass": true
+        }
+      ],
+      "database_integrity": "ok",
+      "devanagari_search_verified": true,
+      "test_matching_scan_pages": [
+        20,
+        100,
+        250
+      ],
+      "previous_ocr_devanagari_characters_on_sample_pages": 0
+    }
+  ],
+  "pending": [
+    "OCR all remaining pages with resume and manual quality review",
+    "Identify complete matching editions where required; these are Hindi-only abridgements",
+    "Map chapters verses and printed pages",
+    "Independent edition and rights review"
+  ],
+  "traineddata_source": "https://github.com/tesseract-ocr/tessdata_fast",
+  "traineddata_sha256": {
+    "hin": "4c73ffc59d497c186b19d1e90f5d721d678ea6b2e277b719bee4e2af12271825",
+    "san": "a399958921c64e7d2319369ade1e74b4db2577744ac5bfeabd16663cf743b91c"
+  },
+  "verification_note": "Script and phrase search checks detect the wrong-script failure; they do not establish character accuracy, verse mapping, original Sanskrit availability, coverage or editorial approval."
+}

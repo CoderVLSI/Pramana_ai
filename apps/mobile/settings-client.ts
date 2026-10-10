@@ -29,33 +29,44 @@ async function raw(
   body?: unknown,
   token?: string,
 ) {
-  const r = await fetch(API + path, {
-    method,
-    headers: {
-      ...(body !== undefined ? { "Content-Type": "application/json" } : {}),
-      ...(token ? { Authorization: `Bearer ${token}` } : {}),
-    },
-    body: body ? JSON.stringify(body) : undefined,
-  });
-  const data = await r.json();
-  if (!r.ok) throw Error(data.error || "Settings request failed.");
-  return data;
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 12000);
+  try {
+    const r = await fetch(API + path, {
+      signal: controller.signal,
+      method,
+      headers: {
+        ...(body !== undefined ? { "Content-Type": "application/json" } : {}),
+        ...(token ? { Authorization: `Bearer ${token}` } : {}),
+      },
+      body: body ? JSON.stringify(body) : undefined,
+    });
+    const data = await r.json();
+    if (!r.ok) throw Error(data.error || "Settings request failed.");
+    return data;
+  } finally {
+    clearTimeout(timer);
+  }
 }
 async function readToken() {
   return Platform.OS === "web"
-    ? sessionStorage.getItem(TOKEN_KEY)
+    ? localStorage.getItem(TOKEN_KEY) || sessionStorage.getItem(TOKEN_KEY)
     : SecureStore.getItemAsync(TOKEN_KEY);
 }
 async function storeToken(token: string) {
-  if (Platform.OS === "web") sessionStorage.setItem(TOKEN_KEY, token);
-  else
+  if (Platform.OS === "web") {
+    localStorage.setItem(TOKEN_KEY, token);
+    sessionStorage.removeItem(TOKEN_KEY);
+  } else
     await SecureStore.setItemAsync(TOKEN_KEY, token, {
       keychainAccessible: SecureStore.WHEN_UNLOCKED_THIS_DEVICE_ONLY,
     });
 }
 async function removeToken() {
-  if (Platform.OS === "web") sessionStorage.removeItem(TOKEN_KEY);
-  else await SecureStore.deleteItemAsync(TOKEN_KEY);
+  if (Platform.OS === "web") {
+    localStorage.removeItem(TOKEN_KEY);
+    sessionStorage.removeItem(TOKEN_KEY);
+  } else await SecureStore.deleteItemAsync(TOKEN_KEY);
 }
 async function settingsToken() {
   if (!tokenPromise)
@@ -65,6 +76,7 @@ async function settingsToken() {
         token = (await raw("/v1/settings/session", "POST")).token;
         await storeToken(token!);
       }
+      if (Platform.OS === "web") await storeToken(token!);
       return token!;
     })().catch((e) => {
       tokenPromise = undefined;
@@ -97,3 +109,22 @@ export async function resetSettingsSession() {
   await removeToken();
   tokenPromise = undefined;
 }
+
+export interface AppConversation {
+  kind: "app_conversation";
+  message: string;
+  provider?: Provider;
+  model?: string;
+  connection_status: "connected" | "not_configured" | "failed";
+  note?: string;
+}
+export const requestAppConversation = async (
+  query: string,
+  preferredName?: string,
+): Promise<AppConversation> =>
+  raw(
+    "/v1/chat",
+    "POST",
+    { query, ...(preferredName ? { preferred_name: preferredName } : {}) },
+    await settingsToken(),
+  );

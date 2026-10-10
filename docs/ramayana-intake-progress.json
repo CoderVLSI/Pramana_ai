@@ -1,0 +1,117 @@
+{
+  "work_id": "valmiki-ramayana",
+  "status": "private_unreviewed_draft",
+  "selected_set": "Valmiki Ramayan Part 1/2 Gita Press archive candidates",
+  "approved_passages": 0,
+  "rights_verified": false,
+  "edition_verified": false,
+  "coverage_verified": false,
+  "kanda_coverage": "unknown",
+  "items": [
+    {
+      "identifier": "valmiki-ramayan-part-1-gita-press",
+      "volume": 1,
+      "target_catalogue_code": "75",
+      "catalogue_match_verified": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "exit_code": 0,
+          "error": null
+        }
+      ],
+      "assets": [
+        {
+          "asset_name": "Valmiki Ramayan Part 1 Gita press_djvu.xml",
+          "status": "private_unreviewed_draft",
+          "scan_pages": 944,
+          "ocr_sha256": "8348c14654d838004acce2f570371d9cce4a21c2a0554e0f3a513bec770e2cb6",
+          "query_test_hit_pages": [
+            162,
+            168,
+            73,
+            156,
+            149
+          ],
+          "script_statistics": {
+            "characters": 3018420,
+            "alphabetic_scripts": {
+              "LATIN": 6589,
+              "DEVANAGARI": 1454952
+            },
+            "devanagari_ratio_alphabetic": 0.9954917446722329
+          },
+          "initial_ocr_indications": {
+            "valmiki_title": true,
+            "gita_press_imprint": true,
+            "gorakhpur_imprint": true,
+            "contents": false,
+            "ramcharitmanas_mentioned": true,
+            "adhyatma_mentioned": true
+          },
+          "initial_ocr_indications_note": "Term presence across first 30 scan pages; mentions can occur in introductions or publisher advertisements and do not identify a replacement text."
+        }
+      ],
+      "limitations": [
+        "Archive metadata is a candidate identity only; print edition and publisher not approved",
+        "Seven-kanda completeness and Sanskrit/Hindi alignment unverified",
+        "Initial OCR marker presence cannot certify scan identity",
+        "No scripture quotations or external embeddings; no approved app corpus"
+      ],
+      "status": "private_unreviewed_draft"
+    },
+    {
+      "identifier": "valmiki-ramayan-part-2-gita-press",
+      "volume": 2,
+      "target_catalogue_code": "76",
+      "catalogue_match_verified": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "exit_code": 0,
+          "error": null
+        }
+      ],
+      "assets": [
+        {
+          "asset_name": "Valmiki Ramayan Part 2 Gita press_djvu.xml",
+          "status": "private_unreviewed_draft",
+          "scan_pages": 946,
+          "ocr_sha256": "0a98a9f716e752cb838b76478997a28f027503342c7e0ca689c9fb7569c022c2",
+          "query_test_hit_pages": [
+            698,
+            697,
+            691,
+            942,
+            701
+          ],
+          "script_statistics": {
+            "characters": 2982300,
+            "alphabetic_scripts": {
+              "LATIN": 4952,
+              "DEVANAGARI": 1441339,
+              "MODIFIER": 1
+            },
+            "devanagari_ratio_alphabetic": 0.9965753803519621
+          },
+          "initial_ocr_indications": {
+            "valmiki_title": true,
+            "gita_press_imprint": true,
+            "gorakhpur_imprint": true,
+            "contents": true,
+            "ramcharitmanas_mentioned": false,
+            "adhyatma_mentioned": false
+          },
+          "initial_ocr_indications_note": "Term presence across first 30 scan pages; mentions can occur in introductions or publisher advertisements and do not identify a replacement text."
+        }
+      ],
+      "limitations": [
+        "Archive metadata is a candidate identity only; print edition and publisher not approved",
+        "Seven-kanda completeness and Sanskrit/Hindi alignment unverified",
+        "Initial OCR marker presence cannot certify scan identity",
+        "No scripture quotations or external embeddings; no approved app corpus"
+      ],
+      "status": "private_unreviewed_draft"
+    }
+  ]
+}

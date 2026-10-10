@@ -1,0 +1,1514 @@
+{
+  "checked_on": "2026-10-10",
+  "scope": "muktika-upanishads",
+  "targets": 108,
+  "individual_targets_with_metadata_leads": 11,
+  "individual_targets_not_identified_in_this_search": 97,
+  "private_indexed_individual_targets": 2,
+  "approved_passages": 0,
+  "archive_search": {
+    "query": "(title:upanishad OR title:upanishads OR title:upanishat OR title:ishadi) AND (\"gita press\" OR gitapress)",
+    "matched_items": 142,
+    "returned_title_rows": 142,
+    "note": "Search matches are unverified uploader records, not a complete publisher bibliography. A title listing Hindi/Sanskrit does not prove exact edition or full text."
+  },
+  "compilation_leads": [
+    {
+      "identifier": "ishadi-nau-upanishad-gita-press-gorakhpur",
+      "source_url": "https://archive.org/details/ishadi-nau-upanishad-gita-press-gorakhpur",
+      "title": "Ishadi Nau Upanishad Gita Press Gorakhpur",
+      "language_claim": "san",
+      "publisher_claim": null,
+      "metadata_checked": true,
+      "publisher_verified": false,
+      "edition_verified": false,
+      "coverage_verified": false,
+      "rights_verified": false,
+      "ocr_assets": [
+        {
+          "name": "Ishadi Nau Upanishad - Gita Press Gorakhpur_djvu.xml",
+          "bytes": 12617734
+        }
+      ]
+    }
+  ],
+  "compilation_membership_verified": false,
+  "note": "Ishadi Nau compilation was not allocated to nine target works because contents were not independently inspected. Only individually named titles map to targets. No source is approved or connected to public app answers; no external embeddings. 97 not identified means discovery gap, not proof of nonexistence.",
+  "works": [
+    {
+      "work_id": "isha-upanishad",
+      "title": "Isha Upanishad",
+      "ordinal": 1,
+      "candidate_status": "individual_title_metadata_lead",
+      "metadata_candidates": [
+        {
+          "identifier": "ishavasya-upanishad-with-hindi-translation-gita-press-gorakhpur",
+          "source_url": "https://archive.org/details/ishavasya-upanishad-with-hindi-translation-gita-press-gorakhpur",
+          "title": "Ishavasya Upanishad With Hindi Translation Gita Press Gorakhpur",
+          "language_claim": "English",
+          "publisher_claim": null,
+          "metadata_checked": true,
+          "publisher_verified": false,
+          "edition_verified": false,
+          "coverage_verified": false,
+          "rights_verified": false,
+          "ocr_assets": [
+            {
+              "name": "Ishavasya Upanishad with Hindi Translation - Gita Press Gorakhpur_djvu.xml",
+              "bytes": 932200
+            }
+          ],
+          "draft": {
+            "status": "private_unreviewed_draft",
+            "publisher_verified": false,
+            "rights_verified": false,
+            "verse_mapping_verified": false,
+            "source_url": "https://archive.org/details/ishavasya-upanishad-with-hindi-translation-gita-press-gorakhpur",
+            "ocr_sha256": "3a477ea2fe2215f0f4e505c678076f2951bf999d9c044171f362387dc2711b35",
+            "scan_pages": 58,
+            "indexed_approved_passages": 0,
+            "note": "Scan page ordinal only; not printed page or verse citation. No external embeddings."
+          },
+          "intake_status": "private_unreviewed_index",
+          "smoke_query": "उपनिषद",
+          "matching_scan_pages": [],
+          "ocr_script_check": {
+            "total_characters": 41883,
+            "devanagari_characters": 0,
+            "latin_characters": 23212,
+            "not_independent_review": true
+          },
+          "query_checks": [
+            {
+              "query": "उपनिषद",
+              "matching_scan_pages": []
+            },
+            {
+              "query": "ब्रह्म",
+              "matching_scan_pages": []
+            },
+            {
+              "query": "ज्ञान",
+              "matching_scan_pages": []
+            },
+            {
+              "query": "केन",
+              "matching_scan_pages": []
+            }
+          ],
+          "ocr_quality_status": "Hindi_query_smoke_no_hits_needs_language_appropriate_reocr"
+        }
+      ],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false,
+      "private_draft_scan_pages": 58
+    },
+    {
+      "work_id": "kena-upanishad",
+      "title": "Kena Upanishad",
+      "ordinal": 2,
+      "candidate_status": "individual_title_metadata_lead",
+      "metadata_candidates": [
+        {
+          "identifier": "kena-upanishad-gita-press-gorakhpur",
+          "source_url": "https://archive.org/details/kena-upanishad-gita-press-gorakhpur",
+          "title": "Kena Upanishad Gita Press Gorakhpur",
+          "language_claim": "eng",
+          "publisher_claim": null,
+          "metadata_checked": true,
+          "publisher_verified": false,
+          "edition_verified": false,
+          "coverage_verified": false,
+          "rights_verified": false,
+          "ocr_assets": [
+            {
+              "name": "Kena Upanishad - Gita Press Gorakhpur_djvu.xml",
+              "bytes": 2505438
+            }
+          ],
+          "draft": {
+            "status": "private_unreviewed_draft",
+            "publisher_verified": false,
+            "rights_verified": false,
+            "verse_mapping_verified": false,
+            "source_url": "https://archive.org/details/kena-upanishad-gita-press-gorakhpur",
+            "ocr_sha256": "8b76063a8cd326a4fa3ce822a0542ce7c42d458cd4ceb287b6ae5effdfb0448a",
+            "scan_pages": 152,
+            "indexed_approved_passages": 0,
+            "note": "Scan page ordinal only; not printed page or verse citation. No external embeddings."
+          },
+          "intake_status": "private_unreviewed_index",
+          "ocr_script_check": {
+            "total_characters": 99115,
+            "devanagari_characters": 0,
+            "latin_characters": 48868,
+            "not_independent_review": true
+          },
+          "query_checks": [
+            {
+              "query": "उपनिषद",
+              "matching_scan_pages": []
+            },
+            {
+              "query": "ब्रह्म",
+              "matching_scan_pages": []
+            },
+            {
+              "query": "ज्ञान",
+              "matching_scan_pages": []
+            },
+            {
+              "query": "केन",
+              "matching_scan_pages": []
+            }
+          ],
+          "ocr_quality_status": "Hindi_query_smoke_no_hits_needs_language_appropriate_reocr"
+        }
+      ],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false,
+      "private_draft_scan_pages": 152
+    },
+    {
+      "work_id": "katha-upanishad",
+      "title": "Katha Upanishad",
+      "ordinal": 3,
+      "candidate_status": "individual_title_metadata_lead",
+      "metadata_candidates": [
+        {
+          "identifier": "katha-upanishad-gita-press-gorakhpur",
+          "source_url": "https://archive.org/details/katha-upanishad-gita-press-gorakhpur",
+          "title": "Katha Upanishad Gita Press Gorakhpur",
+          "language_claim": "eng",
+          "publisher_claim": null,
+          "metadata_checked": true,
+          "publisher_verified": false,
+          "edition_verified": false,
+          "coverage_verified": false,
+          "rights_verified": false,
+          "ocr_assets": [
+            {
+              "name": "Katha Upanishad  - Gita Press Gorakhpur_djvu.xml",
+              "bytes": 2832492
+            }
+          ]
+        }
+      ],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "prashna-upanishad",
+      "title": "Prashna Upanishad",
+      "ordinal": 4,
+      "candidate_status": "individual_title_metadata_lead",
+      "metadata_candidates": [
+        {
+          "identifier": "prashna-upanishad-gita-press-gorakhpur",
+          "source_url": "https://archive.org/details/prashna-upanishad-gita-press-gorakhpur",
+          "title": "Prashna Upanishad Gita Press Gorakhpur",
+          "language_claim": "eng",
+          "publisher_claim": null,
+          "metadata_checked": true,
+          "publisher_verified": false,
+          "edition_verified": false,
+          "coverage_verified": false,
+          "rights_verified": false,
+          "ocr_assets": [
+            {
+              "name": "Prashna Upanishad - Gita Press Gorakhpur_djvu.xml",
+              "bytes": 1994468
+            }
+          ]
+        }
+      ],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "mundaka-upanishad",
+      "title": "Mundaka Upanishad",
+      "ordinal": 5,
+      "candidate_status": "individual_title_metadata_lead",
+      "metadata_candidates": [
+        {
+          "identifier": "mundaka-upanishad-gita-press-gorakhpur",
+          "source_url": "https://archive.org/details/mundaka-upanishad-gita-press-gorakhpur",
+          "title": "Mundaka Upanishad Gita Press Gorakhpur",
+          "language_claim": "eng",
+          "publisher_claim": null,
+          "metadata_checked": true,
+          "publisher_verified": false,
+          "edition_verified": false,
+          "coverage_verified": false,
+          "rights_verified": false,
+          "ocr_assets": [
+            {
+              "name": "Mundaka Upanishad - Gita Press Gorakhpur_djvu.xml",
+              "bytes": 2255942
+            }
+          ]
+        }
+      ],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "mandukya-upanishad",
+      "title": "Mandukya Upanishad",
+      "ordinal": 6,
+      "candidate_status": "individual_title_metadata_lead",
+      "metadata_candidates": [
+        {
+          "identifier": "mandukya-upanishad-gita-press-gorakhpur",
+          "source_url": "https://archive.org/details/mandukya-upanishad-gita-press-gorakhpur",
+          "title": "Mandukya Upanishad Gita Press Gorakhpur",
+          "language_claim": "eng",
+          "publisher_claim": null,
+          "metadata_checked": true,
+          "publisher_verified": false,
+          "edition_verified": false,
+          "coverage_verified": false,
+          "rights_verified": false,
+          "ocr_assets": [
+            {
+              "name": "Mandukya Upanishad - Gita Press Gorakhpur_djvu.xml",
+              "bytes": 5577187
+            }
+          ]
+        }
+      ],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "taittiriya-upanishad",
+      "title": "Taittiriya Upanishad",
+      "ordinal": 7,
+      "candidate_status": "individual_title_metadata_lead",
+      "metadata_candidates": [
+        {
+          "identifier": "taittiriya-upanishad-gita-press-gorakhpur",
+          "source_url": "https://archive.org/details/taittiriya-upanishad-gita-press-gorakhpur",
+          "title": "Taittiriya Upanishad Gita Press Gorakhpur",
+          "language_claim": "hin",
+          "publisher_claim": null,
+          "metadata_checked": true,
+          "publisher_verified": false,
+          "edition_verified": false,
+          "coverage_verified": false,
+          "rights_verified": false,
+          "ocr_assets": [
+            {
+              "name": "Taittiriya Upanishad - Gita Press Gorakhpur-Reduced_djvu.xml",
+              "bytes": 5899406
+            }
+          ]
+        }
+      ],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "aitareya-upanishad",
+      "title": "Aitareya Upanishad",
+      "ordinal": 8,
+      "candidate_status": "individual_title_metadata_lead",
+      "metadata_candidates": [
+        {
+          "identifier": "aitareya-upanishad-gita-press-gorakhpur",
+          "source_url": "https://archive.org/details/aitareya-upanishad-gita-press-gorakhpur",
+          "title": "Aitareya Upanishad Gita Press Gorakhpur",
+          "language_claim": "eng",
+          "publisher_claim": null,
+          "metadata_checked": true,
+          "publisher_verified": false,
+          "edition_verified": false,
+          "coverage_verified": false,
+          "rights_verified": false,
+          "ocr_assets": [
+            {
+              "name": "Aitareya Upanishad - Gita Press Gorakhpur_djvu.xml",
+              "bytes": 1841280
+            }
+          ]
+        }
+      ],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "chandogya-upanishad",
+      "title": "Chandogya Upanishad",
+      "ordinal": 9,
+      "candidate_status": "individual_title_metadata_lead",
+      "metadata_candidates": [
+        {
+          "identifier": "phAO_chandogya-upanishad-gita-press-gorakhpur",
+          "source_url": "https://archive.org/details/phAO_chandogya-upanishad-gita-press-gorakhpur",
+          "title": "Chandogya Upanishad Gita Press Gorakhpur",
+          "language_claim": "san",
+          "publisher_claim": null,
+          "metadata_checked": true,
+          "publisher_verified": false,
+          "edition_verified": false,
+          "coverage_verified": false,
+          "rights_verified": false,
+          "ocr_assets": [
+            {
+              "name": "Chandogya Upanishad - Gita Press Gorakhpur_djvu.xml",
+              "bytes": 18609465
+            }
+          ]
+        }
+      ],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "brihadaranyaka-upanishad",
+      "title": "Brihadaranyaka Upanishad",
+      "ordinal": 10,
+      "candidate_status": "individual_title_metadata_lead",
+      "metadata_candidates": [
+        {
+          "identifier": "RUgF_brihadaranyaka-upanishad-577-gita-press-gorakhpur",
+          "source_url": "https://archive.org/details/RUgF_brihadaranyaka-upanishad-577-gita-press-gorakhpur",
+          "title": "Brihadaranyaka Upanishad 577 Gita Press Gorakhpur",
+          "language_claim": "san",
+          "publisher_claim": null,
+          "metadata_checked": true,
+          "publisher_verified": false,
+          "edition_verified": false,
+          "coverage_verified": false,
+          "rights_verified": false,
+          "ocr_assets": [
+            {
+              "name": "Brihadaranyaka Upanishad 577 - Gita Press Gorakhpur_djvu.xml",
+              "bytes": 31204269
+            }
+          ]
+        }
+      ],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "brahma-upanishad",
+      "title": "Brahma Upanishad",
+      "ordinal": 11,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "kaivalya-upanishad",
+      "title": "Kaivalya Upanishad",
+      "ordinal": 12,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "jabala-upanishad",
+      "title": "Jabala Upanishad",
+      "ordinal": 13,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "shvetashvatara-upanishad",
+      "title": "Shvetashvatara Upanishad",
+      "ordinal": 14,
+      "candidate_status": "individual_title_metadata_lead",
+      "metadata_candidates": [
+        {
+          "identifier": "shvetashvatara-upanishad-gita-press-gorakhpur",
+          "source_url": "https://archive.org/details/shvetashvatara-upanishad-gita-press-gorakhpur",
+          "title": "Shvetashvatara Upanishad Gita Press Gorakhpur",
+          "language_claim": "eng",
+          "publisher_claim": null,
+          "metadata_checked": true,
+          "publisher_verified": false,
+          "edition_verified": false,
+          "coverage_verified": false,
+          "rights_verified": false,
+          "ocr_assets": [
+            {
+              "name": "Shvetashvatara Upanishad - Gita Press Gorakhpur_djvu.xml",
+              "bytes": 4867708
+            }
+          ]
+        }
+      ],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "hamsa-upanishad",
+      "title": "Hamsa Upanishad",
+      "ordinal": 15,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "aruneya-upanishad",
+      "title": "Aruneya Upanishad",
+      "ordinal": 16,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "garbha-upanishad",
+      "title": "Garbha Upanishad",
+      "ordinal": 17,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "narayana-upanishad",
+      "title": "Narayana Upanishad",
+      "ordinal": 18,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "paramahamsa-upanishad",
+      "title": "Paramahamsa Upanishad",
+      "ordinal": 19,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "amritabindu-upanishad",
+      "title": "Amritabindu Upanishad",
+      "ordinal": 20,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "amritanada-upanishad",
+      "title": "Amritanada Upanishad",
+      "ordinal": 21,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "atharvashiras-upanishad",
+      "title": "Atharvashiras Upanishad",
+      "ordinal": 22,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "atharvashikha-upanishad",
+      "title": "Atharvashikha Upanishad",
+      "ordinal": 23,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "maitrayaniya-upanishad",
+      "title": "Maitrayaniya Upanishad",
+      "ordinal": 24,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "kaushitaki-upanishad",
+      "title": "Kaushitaki Upanishad",
+      "ordinal": 25,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "brihajjabala-upanishad",
+      "title": "Brihajjabala Upanishad",
+      "ordinal": 26,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "nrisimhatapaniya-upanishad",
+      "title": "Nrisimhatapaniya Upanishad",
+      "ordinal": 27,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "kalagnirudra-upanishad",
+      "title": "Kalagnirudra Upanishad",
+      "ordinal": 28,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "maitreya-upanishad",
+      "title": "Maitreya Upanishad",
+      "ordinal": 29,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "subala-upanishad",
+      "title": "Subala Upanishad",
+      "ordinal": 30,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "kshurika-upanishad",
+      "title": "Kshurika Upanishad",
+      "ordinal": 31,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "mantrika-upanishad",
+      "title": "Mantrika Upanishad",
+      "ordinal": 32,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "sarvasara-upanishad",
+      "title": "Sarvasara Upanishad",
+      "ordinal": 33,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "niralamba-upanishad",
+      "title": "Niralamba Upanishad",
+      "ordinal": 34,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "shukarahasya-upanishad",
+      "title": "Shukarahasya Upanishad",
+      "ordinal": 35,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "vajrasuchi-upanishad",
+      "title": "Vajrasuchi Upanishad",
+      "ordinal": 36,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "tejobindu-upanishad",
+      "title": "Tejobindu Upanishad",
+      "ordinal": 37,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "nadabindu-upanishad",
+      "title": "Nadabindu Upanishad",
+      "ordinal": 38,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "dhyanabindu-upanishad",
+      "title": "Dhyanabindu Upanishad",
+      "ordinal": 39,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "brahmavidya-upanishad",
+      "title": "Brahmavidya Upanishad",
+      "ordinal": 40,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "yogatattva-upanishad",
+      "title": "Yogatattva Upanishad",
+      "ordinal": 41,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "atmabodha-upanishad",
+      "title": "Atmabodha Upanishad",
+      "ordinal": 42,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "naradaparivrajaka-upanishad",
+      "title": "Naradaparivrajaka Upanishad",
+      "ordinal": 43,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "trishikhibrahmana-upanishad",
+      "title": "Trishikhibrahmana Upanishad",
+      "ordinal": 44,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "sita-upanishad",
+      "title": "Sita Upanishad",
+      "ordinal": 45,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "yogachudamani-upanishad",
+      "title": "Yogachudamani Upanishad",
+      "ordinal": 46,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "nirvana-upanishad",
+      "title": "Nirvana Upanishad",
+      "ordinal": 47,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "mandalabrahmana-upanishad",
+      "title": "Mandalabrahmana Upanishad",
+      "ordinal": 48,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "dakshinamurti-upanishad",
+      "title": "Dakshinamurti Upanishad",
+      "ordinal": 49,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "sharabha-upanishad",
+      "title": "Sharabha Upanishad",
+      "ordinal": 50,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "skanda-upanishad",
+      "title": "Skanda Upanishad",
+      "ordinal": 51,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "mahanarayana-upanishad",
+      "title": "Mahanarayana Upanishad",
+      "ordinal": 52,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "advayataraka-upanishad",
+      "title": "Advayataraka Upanishad",
+      "ordinal": 53,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "ramarahasya-upanishad",
+      "title": "Ramarahasya Upanishad",
+      "ordinal": 54,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "ramatapaniya-upanishad",
+      "title": "Ramatapaniya Upanishad",
+      "ordinal": 55,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "vasudeva-upanishad",
+      "title": "Vasudeva Upanishad",
+      "ordinal": 56,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "mudgala-upanishad",
+      "title": "Mudgala Upanishad",
+      "ordinal": 57,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "shandilya-upanishad",
+      "title": "Shandilya Upanishad",
+      "ordinal": 58,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "paingala-upanishad",
+      "title": "Paingala Upanishad",
+      "ordinal": 59,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "bhikshuka-upanishad",
+      "title": "Bhikshuka Upanishad",
+      "ordinal": 60,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "maha-upanishad",
+      "title": "Maha Upanishad",
+      "ordinal": 61,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "shariraka-upanishad",
+      "title": "Shariraka Upanishad",
+      "ordinal": 62,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "yogashikha-upanishad",
+      "title": "Yogashikha Upanishad",
+      "ordinal": 63,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "turiyatitavadhuta-upanishad",
+      "title": "Turiyatitavadhuta Upanishad",
+      "ordinal": 64,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "sannyasa-upanishad",
+      "title": "Sannyasa Upanishad",
+      "ordinal": 65,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "paramahamsaparivrajaka-upanishad",
+      "title": "Paramahamsaparivrajaka Upanishad",
+      "ordinal": 66,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "akshamalika-upanishad",
+      "title": "Akshamalika Upanishad",
+      "ordinal": 67,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "avyakta-upanishad",
+      "title": "Avyakta Upanishad",
+      "ordinal": 68,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "ekakshara-upanishad",
+      "title": "Ekakshara Upanishad",
+      "ordinal": 69,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "annapurna-upanishad",
+      "title": "Annapurna Upanishad",
+      "ordinal": 70,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "surya-upanishad",
+      "title": "Surya Upanishad",
+      "ordinal": 71,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "akshi-upanishad",
+      "title": "Akshi Upanishad",
+      "ordinal": 72,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "adhyatma-upanishad",
+      "title": "Adhyatma Upanishad",
+      "ordinal": 73,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "kundika-upanishad",
+      "title": "Kundika Upanishad",
+      "ordinal": 74,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "savitri-upanishad",
+      "title": "Savitri Upanishad",
+      "ordinal": 75,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "atma-upanishad",
+      "title": "Atma Upanishad",
+      "ordinal": 76,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "pashupatabrahma-upanishad",
+      "title": "Pashupatabrahma Upanishad",
+      "ordinal": 77,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "parabrahma-upanishad",
+      "title": "Parabrahma Upanishad",
+      "ordinal": 78,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "avadhuta-upanishad",
+      "title": "Avadhuta Upanishad",
+      "ordinal": 79,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "tripuratapini-upanishad",
+      "title": "Tripuratapini Upanishad",
+      "ordinal": 80,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "devi-upanishad",
+      "title": "Devi Upanishad",
+      "ordinal": 81,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "tripura-upanishad",
+      "title": "Tripura Upanishad",
+      "ordinal": 82,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "katharudra-upanishad",
+      "title": "Katharudra Upanishad",
+      "ordinal": 83,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "bhavana-upanishad",
+      "title": "Bhavana Upanishad",
+      "ordinal": 84,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "rudrahridaya-upanishad",
+      "title": "Rudrahridaya Upanishad",
+      "ordinal": 85,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "yogakundalini-upanishad",
+      "title": "Yogakundalini Upanishad",
+      "ordinal": 86,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "bhasmajabala-upanishad",
+      "title": "Bhasmajabala Upanishad",
+      "ordinal": 87,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "rudrakshajabala-upanishad",
+      "title": "Rudrakshajabala Upanishad",
+      "ordinal": 88,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "ganapati-upanishad",
+      "title": "Ganapati Upanishad",
+      "ordinal": 89,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "darshana-upanishad",
+      "title": "Darshana Upanishad",
+      "ordinal": 90,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "tarasara-upanishad",
+      "title": "Tarasara Upanishad",
+      "ordinal": 91,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "mahavakya-upanishad",
+      "title": "Mahavakya Upanishad",
+      "ordinal": 92,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "panchabrahma-upanishad",
+      "title": "Panchabrahma Upanishad",
+      "ordinal": 93,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "pranagnihotra-upanishad",
+      "title": "Pranagnihotra Upanishad",
+      "ordinal": 94,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "gopalatapaniya-upanishad",
+      "title": "Gopalatapaniya Upanishad",
+      "ordinal": 95,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "krishna-upanishad",
+      "title": "Krishna Upanishad",
+      "ordinal": 96,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "yajnavalkya-upanishad",
+      "title": "Yajnavalkya Upanishad",
+      "ordinal": 97,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "varaha-upanishad",
+      "title": "Varaha Upanishad",
+      "ordinal": 98,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "shatyayaniya-upanishad",
+      "title": "Shatyayaniya Upanishad",
+      "ordinal": 99,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "hayagriva-upanishad",
+      "title": "Hayagriva Upanishad",
+      "ordinal": 100,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "dattatreya-upanishad",
+      "title": "Dattatreya Upanishad",
+      "ordinal": 101,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "garuda-upanishad",
+      "title": "Garuda Upanishad",
+      "ordinal": 102,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "kalisantarana-upanishad",
+      "title": "Kalisantarana Upanishad",
+      "ordinal": 103,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "jabali-upanishad",
+      "title": "Jabali Upanishad",
+      "ordinal": 104,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "saubhagyalakshmi-upanishad",
+      "title": "Saubhagyalakshmi Upanishad",
+      "ordinal": 105,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "sarasvatirahasya-upanishad",
+      "title": "Sarasvatirahasya Upanishad",
+      "ordinal": 106,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "bahvricha-upanishad",
+      "title": "Bahvricha Upanishad",
+      "ordinal": 107,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    },
+    {
+      "work_id": "muktika-upanishad",
+      "title": "Muktika Upanishad",
+      "ordinal": 108,
+      "candidate_status": "no_individual_lead_identified_in_this_search",
+      "metadata_candidates": [],
+      "indexed_approved_passages": 0,
+      "review_status": "pending",
+      "coverage_verified": false,
+      "rights_verified": false
+    }
+  ]
+}

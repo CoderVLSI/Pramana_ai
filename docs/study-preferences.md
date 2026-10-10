@@ -7,3 +7,5 @@ The name appears in the Study greeting. It is not added to scripture quotations,
 Preferences use local AsyncStorage and are not encrypted or synchronized to the server. Ishta Devata may reveal religious preferences, so it is optional. Do not claim these fields are protected by the backend API-key encryption. No user account or identity verification is created.
 
 Browser validation covers save/name greeting, persistence after reload, deletion and persistent skip; TypeScript and Android bundle checked separately.
+
+Ordinary greetings/app help now send the preferred name and request to the configured provider. Other profile preferences stay on-device. Scripture quotations remain unchanged. Live voice personalization is pending.

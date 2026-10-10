@@ -1,5 +1,6 @@
 import { createHash } from "node:crypto";
-import { MAHAPURANA_TARGETS } from "./register";
+import { MAHAPURANA_TARGETS, EPIC_TARGETS, VEDA_TARGETS } from "./register";
+import { UPANISHAD_TARGETS } from "./upanishads";
 export type Operation = "index" | "quote" | "remote_embedding" | "audio";
 export interface LocatorLevel {
   name: string;
@@ -58,9 +59,9 @@ export function validateGitaPressBundle(value: unknown, allowAbridged = false) {
     m.publisher === "Gita Press" &&
     m.publisher_location ===
       "Gorakhpur", "Gita Press, Gorakhpur edition metadata is required.");
-  require(MAHAPURANA_TARGETS.some(
+  require([...MAHAPURANA_TARGETS, ...EPIC_TARGETS, ...VEDA_TARGETS, ...UPANISHAD_TARGETS].some(
     ([id]) => id === m.work_id,
-  ), "Unknown Mahapurana work ID.");
+  ), "Unknown scripture work ID.");
   require(m.edition_id &&
     m.catalogue_code &&
     Number.isInteger(m.print_year) &&

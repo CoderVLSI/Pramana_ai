@@ -15,6 +15,18 @@ export interface Passage {
   license_id: string;
   released_in: string;
   content_sha256: string;
+  exact_verse?: string;
+  hierarchy?: { name: string; value: string }[];
+  source_locator?: {
+    volume: string;
+    printed_page: number;
+    pdf_page: number;
+    asset_sha256: string;
+  };
+  completeness?: "complete" | "abridged" | "selected";
+  quote_source?: "original" | "translation";
+  translation_sha256?: string;
+  audio_allowed?: boolean;
 }
 export interface Claim {
   text: string;

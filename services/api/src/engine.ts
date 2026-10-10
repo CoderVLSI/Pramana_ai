@@ -1,6 +1,11 @@
 import { createHash, randomUUID } from "node:crypto";
 import { passages } from "./corpus";
 import {
+  approvedCorpusStatus,
+  approvedRecord,
+  approvedSearch,
+} from "./approved-rag";
+import {
   RELEASE,
   type Answer,
   type Passage,
@@ -10,6 +15,9 @@ export interface Selection {
   edition_ids?: string[];
 }
 export function search(query: string, selection: Selection = {}): Passage[] {
+  if (query.length > 2000) return [];
+  const approved = approvedSearch(query, selection);
+  if (approved.length) return approved;
   const pool = passages.filter(
     (p) =>
       (!selection.work_ids?.length || selection.work_ids.includes(p.work_id)) &&
@@ -45,8 +53,11 @@ export function verify(answer: Answer, packet: Passage[]): boolean {
       !answer.safe_to_speak
     );
   const ids = new Set(packet.map((p) => p.id));
+  const release = [...new Set(packet.map((p) => p.released_in))]
+    .sort()
+    .join("+");
   if (
-    answer.corpus_release !== RELEASE ||
+    answer.corpus_release !== release ||
     answer.citations.length !== answer.claims.length
   )
     return false;
@@ -54,7 +65,7 @@ export function verify(answer: Answer, packet: Passage[]): boolean {
     if (c.type !== "DIRECT" || c.evidence_ids.length !== 1) return false;
     const id = c.evidence_ids[0],
       p = packet.find((p) => p.id === id),
-      stored = passages.find((p) => p.id === id),
+      stored = approvedRecord(id) ?? passages.find((p) => p.id === id),
       citation = answer.citations.find((p) => p.id === id);
     if (
       !ids.has(id) ||
@@ -62,7 +73,7 @@ export function verify(answer: Answer, packet: Passage[]): boolean {
       !stored ||
       !citation ||
       JSON.stringify(citation) !== JSON.stringify(stored) ||
-      p.released_in !== RELEASE ||
+      JSON.stringify(p) !== JSON.stringify(stored) ||
       createHash("sha256").update(p.original).digest("hex") !== p.content_sha256
     )
       return false;
@@ -74,7 +85,10 @@ export function verify(answer: Answer, packet: Passage[]): boolean {
       return false;
   }
   return (
-    !answer.safe_to_speak || packet.every((p) => p.review_status === "approved")
+    !answer.safe_to_speak ||
+    packet.every(
+      (p) => p.review_status === "approved" && p.audio_allowed === true,
+    )
   );
 }
 export function answerStrict(query: string, selection: Selection = {}): Answer {
@@ -87,18 +101,26 @@ export function answerStrict(query: string, selection: Selection = {}): Answer {
     claims: [],
     citations: [],
     caveats: [
-      selection.work_ids?.some((id) => id !== "bhagavad-gita")
-        ? "No approved passages are indexed for the selected works. Gita Press editions and usage rights are pending. Absence from this index does not establish absence in scripture."
-        : "The pilot contains five development passages from the Bhagavad Gita. Absence here does not establish absence in scripture.",
+      approvedCorpusStatus().approved_works.some(
+        (id) => !selection.work_ids?.length || selection.work_ids.includes(id),
+      )
+        ? "No matching reviewed passage was retrieved. Absence from these results does not establish absence in scripture."
+        : selection.work_ids?.some((id) => id !== "bhagavad-gita")
+          ? "No approved passages are indexed for the selected works. Gita Press editions and usage rights are pending. Absence from this index does not establish absence in scripture."
+          : "The pilot contains five development passages from the Bhagavad Gita. Absence here does not establish absence in scripture.",
     ],
     corpus_release: RELEASE,
     safe_to_speak: false,
   };
   if (!hits.length) return empty;
+  const approved = hits.every((p) => p.review_status === "approved");
   const answer: Answer = {
     ...empty,
     answer:
       "The following passages match your question. Read their wording and context below.",
+    corpus_release: [...new Set(hits.map((p) => p.released_in))]
+      .sort()
+      .join("+"),
     support_state: "DIRECT",
     claims: hits.map((p) => ({
       text: p.translation,
@@ -107,12 +129,22 @@ export function answerStrict(query: string, selection: Selection = {}): Answer {
       quote_span: [0, p.translation.length],
     })),
     citations: structuredClone(hits),
-    caveats: [
-      "Development fixtures: edition provenance and scholarly review are pending.",
-      "English text is a development rendering, not a named publisher’s translation.",
-      "Keyword retrieval returns passage excerpts; it does not infer an answer to a doctrinal question.",
-    ],
-    safe_to_speak: false,
+    caveats: approved
+      ? [
+          "Extractive retrieval returns exact reviewed passages, not an inferred doctrinal conclusion.",
+          ...hits
+            .filter((p) => p.completeness !== "complete")
+            .map(
+              (p) =>
+                `Edition ${p.edition_id} is ${p.completeness}; this is not complete-work coverage.`,
+            ),
+        ]
+      : [
+          "Development fixtures: edition provenance and scholarly review are pending.",
+          "English text is a development rendering, not a named publisher’s translation.",
+          "Keyword retrieval returns passage excerpts; it does not infer an answer to a doctrinal question.",
+        ],
+    safe_to_speak: approved && hits.every((p) => p.audio_allowed === true),
   };
   return verify(answer, hits) ? answer : empty;
 }

@@ -1,0 +1,46 @@
+{
+  "checked_on": "2026-10-10",
+  "attempts": [
+    {
+      "identifier": "vaman-puran-gita-press",
+      "source_url": "https://archive.org/details/vaman-puran-gita-press",
+      "title": "श्रीवामनपुराण: (संस्कृत एवं हिन्दी अनुवाद) (Shri Vamana Purana)",
+      "language_claim": "hin",
+      "publisher_claim": null,
+      "metadata_checked": true,
+      "publisher_verified": false,
+      "edition_verified": false,
+      "coverage_verified": false,
+      "rights_verified": false,
+      "ocr_assets": [
+        {
+          "name": "Vaman Puran - Gita Press_djvu.xml",
+          "bytes": 18336822
+        }
+      ],
+      "draft": {
+        "status": "private_unreviewed_draft",
+        "publisher_verified": false,
+        "rights_verified": false,
+        "verse_mapping_verified": false,
+        "source_url": "https://archive.org/details/vaman-puran-gita-press",
+        "ocr_sha256": "f5a3bb2faab1f2d54c46a1447d9ca1f7ab81d246f8d34a7c88f882126a8832d0",
+        "scan_pages": 489,
+        "indexed_approved_passages": 0,
+        "note": "Scan page ordinal only; not printed page or verse citation. No external embeddings."
+      },
+      "intake_status": "private_unreviewed_index",
+      "smoke_query": "पुराण",
+      "matching_scan_pages": [
+        11,
+        29,
+        489,
+        30,
+        5
+      ]
+    }
+  ],
+  "approved_passages": 0,
+  "review_status": "pending",
+  "note": "Private OCR only; metadata is not independent publisher, edition or coverage verification."
+}

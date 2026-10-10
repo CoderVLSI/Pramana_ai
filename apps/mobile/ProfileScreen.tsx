@@ -15,7 +15,7 @@ export default function ProfileScreen({ initial, firstTime, onSave, onClose, onD
   const button = { minHeight: 48, padding: 12, marginTop: 12, borderRadius: 10, backgroundColor: "#e4e5db", justifyContent: "center" as const };
   return <ScrollView keyboardShouldPersistTaps="handled" contentContainerStyle={{ padding: 24, maxWidth: 640, width: "100%", alignSelf: "center" }}>
     <Text style={{ fontSize: 28, color: "#263d35", fontWeight: "700" }}>{firstTime ? "Welcome to Pramana" : "Your study preferences"}</Text>
-    <Text style={{ marginVertical: 14, color: "#526459" }}>Tell us how you’d like to be addressed. These preferences stay on this device; you can edit or delete them anytime.</Text>
+    <Text style={{ marginVertical: 14, color: "#526459" }}>Tell us how you’d like to be addressed. Your name is shared with the configured AI provider for greetings and app help. Other preferences stay on this device. You can edit or delete them anytime.</Text>
     {([['name','What should we call you?',80],['interests','Study interests (optional)',200],['ishtaDevata','Ishta Devata (optional)',80]] as const).map(([key,label,max]) => <View key={key} style={{ marginTop: 16 }}>
       <Text style={{ color: "#263d35", marginBottom: 8 }}>{label}</Text>
       <TextInput accessibilityLabel={label} value={profile[key]} maxLength={max} onChangeText={value => setProfile(p => ({...p,[key]:value}))} autoCapitalize="words" style={{ minHeight: 48, borderWidth: 1, borderColor: "#bdc6bc", borderRadius: 8, padding: 12, backgroundColor: "white" }} />

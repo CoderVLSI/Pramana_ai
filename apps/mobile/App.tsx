@@ -1,5 +1,17 @@
-import ProfileScreen, { EMPTY_PROFILE, PROFILE_KEY, type StudyProfile } from "./ProfileScreen";
-import { UPANISHAD_SCOPE, UPANISHAD_TARGETS } from "../../packages/corpus-schema/upanishads";
+import { isAppConversation } from "../../packages/citation-schema/conversation";
+import {
+  requestAppConversation,
+  type AppConversation,
+} from "./settings-client";
+import ProfileScreen, {
+  EMPTY_PROFILE,
+  PROFILE_KEY,
+  type StudyProfile,
+} from "./ProfileScreen";
+import {
+  UPANISHAD_SCOPE,
+  UPANISHAD_TARGETS,
+} from "../../packages/corpus-schema/upanishads";
 import {
   GITA_PRESS_SCOPE,
   MAHAPURANA_TARGETS,
@@ -51,7 +63,8 @@ async function request(path: string, body?: unknown) {
     if (!r.ok) throw Error(data.error || data.message || "Request failed");
     return data;
   } catch (error) {
-    if (controller.signal.aborted) throw Error("The connection timed out. Please try again.");
+    if (controller.signal.aborted)
+      throw Error("The connection timed out. Please try again.");
     throw error;
   } finally {
     clearTimeout(timer);
@@ -118,6 +131,7 @@ function StudyApp() {
   const [tab, setTab] = useState("Study"),
     [query, setQuery] = useState(""),
     [answer, setAnswer] = useState<Answer | null>(null),
+    [conversation, setConversation] = useState<AppConversation | null>(null),
     [busy, setBusy] = useState(false),
     [error, setError] = useState(""),
     [reader, setReader] = useState<(Passage & { context?: Passage[] }) | null>(
@@ -138,33 +152,61 @@ function StudyApp() {
   const [profileReady, setProfileReady] = useState(false);
   const [setup, setSetup] = useState(false);
   useEffect(() => {
-    AsyncStorage.getItem(PROFILE_KEY).then(raw => {
-      if (raw) {
-        const parsed = JSON.parse(raw);
-        if (parsed?.profile && typeof parsed.profile === "object") {
-          const value = parsed.profile;
-          setProfile({
-            name: typeof value.name === "string" ? value.name.slice(0,80) : "",
-            language: ["English","Hindi","Sanskrit"].includes(value.language) ? value.language : "English",
-            mode: ["Text","Voice + text"].includes(value.mode) ? value.mode : "Text",
-            interests: typeof value.interests === "string" ? value.interests.slice(0,200) : "",
-            ishtaDevata: typeof value.ishtaDevata === "string" ? value.ishtaDevata.slice(0,80) : "",
-          });
-        }
-      } else setSetup(true);
-    }).catch(() => setError("Study preferences could not be loaded.")).finally(() => setProfileReady(true));
+    AsyncStorage.getItem(PROFILE_KEY)
+      .then((raw) => {
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          if (parsed?.profile && typeof parsed.profile === "object") {
+            const value = parsed.profile;
+            setProfile({
+              name:
+                typeof value.name === "string" ? value.name.slice(0, 80) : "",
+              language: ["English", "Hindi", "Sanskrit"].includes(
+                value.language,
+              )
+                ? value.language
+                : "English",
+              mode: ["Text", "Voice + text"].includes(value.mode)
+                ? value.mode
+                : "Text",
+              interests:
+                typeof value.interests === "string"
+                  ? value.interests.slice(0, 200)
+                  : "",
+              ishtaDevata:
+                typeof value.ishtaDevata === "string"
+                  ? value.ishtaDevata.slice(0, 80)
+                  : "",
+            });
+          }
+        } else setSetup(true);
+      })
+      .catch(() => setError("Study preferences could not be loaded."))
+      .finally(() => setProfileReady(true));
   }, []);
   async function saveProfile(value: StudyProfile) {
-    await AsyncStorage.setItem(PROFILE_KEY, JSON.stringify({profile:value,completed:true}));
-    setProfile(value); setSetup(false); setTab("Study");
+    await AsyncStorage.setItem(
+      PROFILE_KEY,
+      JSON.stringify({ profile: value, completed: true }),
+    );
+    setProfile(value);
+    setSetup(false);
+    setTab("Study");
   }
   async function closeProfile() {
-    if (setup) await AsyncStorage.setItem(PROFILE_KEY, JSON.stringify({completed:true}));
-    setSetup(false); setTab("Study");
+    if (setup)
+      await AsyncStorage.setItem(
+        PROFILE_KEY,
+        JSON.stringify({ completed: true }),
+      );
+    setSetup(false);
+    setTab("Study");
   }
   async function deleteProfile() {
     await AsyncStorage.removeItem(PROFILE_KEY);
-    setProfile(EMPTY_PROFILE); setSetup(false); setTab("Study");
+    setProfile(EMPTY_PROFILE);
+    setSetup(false);
+    setTab("Study");
   }
   useEffect(() => {
     AsyncStorage.getItem("pramana-bookmarks")
@@ -193,10 +235,15 @@ function StudyApp() {
     setBusy(true);
     setError("");
     setAnswer(null);
+    setConversation(null);
     setReader(null);
     setTab("Study");
     setQuery(text);
     try {
+      if (isAppConversation(text)) {
+        setConversation(await requestAppConversation(text, profile.name));
+        return;
+      }
       setAnswer(
         await request("/v1/questions", {
           query: text,
@@ -205,7 +252,7 @@ function StudyApp() {
               ? MAHAPURANA_TARGETS.map(([id]) => id)
               : scope === UPANISHAD_SCOPE
                 ? UPANISHAD_TARGETS.map(([id]) => id)
-              : [scope],
+                : [scope],
         }),
       );
     } catch (e) {
@@ -248,8 +295,24 @@ function StudyApp() {
     ["About", "information-circle-outline"],
   ] as const;
 
-  if (!profileReady) return <SafeAreaView style={s.root}><ActivityIndicator accessibilityLabel="Loading study preferences" /></SafeAreaView>;
-  if (setup || tab === "Profile") return <SafeAreaView style={s.root}><ProfileScreen initial={profile} firstTime={setup} onSave={saveProfile} onClose={closeProfile} onDelete={deleteProfile} /></SafeAreaView>;
+  if (!profileReady)
+    return (
+      <SafeAreaView style={s.root}>
+        <ActivityIndicator accessibilityLabel="Loading study preferences" />
+      </SafeAreaView>
+    );
+  if (setup || tab === "Profile")
+    return (
+      <SafeAreaView style={s.root}>
+        <ProfileScreen
+          initial={profile}
+          firstTime={setup}
+          onSave={saveProfile}
+          onClose={closeProfile}
+          onDelete={deleteProfile}
+        />
+      </SafeAreaView>
+    );
 
   return (
     <SafeAreaView style={s.root} edges={["top", "right", "bottom", "left"]}>
@@ -393,7 +456,9 @@ function StudyApp() {
                   <Text style={s.kicker}>THE SCRIPTURE STUDY COMPANION</Text>
                   <Text style={s.small}>✦ Begin with a question</Text>
                 </View>
-                {profile.name ? <Text style={s.kicker}>Welcome, {profile.name}.</Text> : null}
+                {profile.name ? (
+                  <Text style={s.kicker}>Welcome, {profile.name}.</Text>
+                ) : null}
                 <Text style={[s.title, !wide && { fontSize: 36 }]}>
                   Let curiosity lead.{"\n"}Let the source speak.
                 </Text>
@@ -450,7 +515,11 @@ function StudyApp() {
                         <ActivityIndicator color="white" />
                       ) : (
                         <>
-                          <Text style={s.buttonText}>Find sources</Text>
+                          <Text style={s.buttonText}>
+                            {isAppConversation(query)
+                              ? "Send message"
+                              : "Find sources"}
+                          </Text>
                           <Icon name="arrow-forward" size={16} color="white" />
                         </>
                       )}
@@ -487,12 +556,14 @@ function StudyApp() {
                         : scope === "bhagavad-gita"
                           ? "Bhagavad Gita · fixtures"
                           : scope === UPANISHAD_SCOPE
-                          ? "108 Upanishads · Muktika list"
-                          : VEDA_TARGETS.some(([id]) => id === scope)
-                            ? (VEDA_TARGETS.find(([id]) => id === scope)?.[1] || "Veda")
-                          : scope === "valmiki-ramayana"
-                            ? "Valmiki Ramayana · Gita Press"
-                            : "Mahabharata · Gita Press"}{" "}
+                            ? "108 Upanishads · Muktika list"
+                            : VEDA_TARGETS.some(([id]) => id === scope)
+                              ? VEDA_TARGETS.find(
+                                  ([id]) => id === scope,
+                                )?.[1] || "Veda"
+                              : scope === "valmiki-ramayana"
+                                ? "Valmiki Ramayana · Gita Press"
+                                : "Mahabharata · Gita Press"}{" "}
                       ▾
                     </Text>
                   </Pressable>
@@ -504,11 +575,23 @@ function StudyApp() {
                         GITA_PRESS_SCOPE,
                         "All 18 Mahapuranas · Gita Press, Gorakhpur",
                       ],
-                      [UPANISHAD_SCOPE, "108 Upanishads · separate collection · editions pending"],
+                      [
+                        UPANISHAD_SCOPE,
+                        "108 Upanishads · separate collection · editions pending",
+                      ],
                       ["bhagavad-gita", "Bhagavad Gita · development fixtures"],
-                      ...VEDA_TARGETS.map(([id, title]) => [id, `${title} · planned · edition pending`]),
-                      ["valmiki-ramayana", "Valmiki Ramayana · Gita Press · awaiting corpus"],
-                      ["mahabharata", "Vyasa’s Mahabharata · Gita Press · awaiting corpus"],
+                      ...VEDA_TARGETS.map(([id, title]) => [
+                        id,
+                        `${title} · planned · edition pending`,
+                      ]),
+                      [
+                        "valmiki-ramayana",
+                        "Valmiki Ramayana · Gita Press · awaiting corpus",
+                      ],
+                      [
+                        "mahabharata",
+                        "Vyasa’s Mahabharata · Gita Press · awaiting corpus",
+                      ],
                     ].map(([id, label]) => (
                       <Pressable
                         key={id}
@@ -516,6 +599,7 @@ function StudyApp() {
                         style={s.secondary}
                         onPress={() => {
                           setScope(id);
+                          setConversation(null);
                           setShowSources(false);
                           setAnswer(null);
                         }}
@@ -527,16 +611,18 @@ function StudyApp() {
                     ))}
                   </View>
                 )}
-                {scope !== "bhagavad-gita" && !answer && (
+                {scope !== "bhagavad-gita" && !answer && !conversation && (
                   <View style={s.info}>
                     <Text style={s.body}>
                       Gita Press, Gorakhpur is the selected reference publisher
-                      for this collection; a full matching edition must be established.
+                      for this collection; a full matching edition must be
+                      established.
                     </Text>
                     <Text style={s.small}>
                       Edition selection, usage rights, and source review are
-                      pending. No approved passages are indexed for this collection; a full matching edition must be established. Select
-                      development fixtures to explore the working reader.
+                      pending. No approved passages are indexed for this
+                      collection; a full matching edition must be established.
+                      Select development fixtures to explore the working reader.
                     </Text>
                   </View>
                 )}
@@ -545,10 +631,34 @@ function StudyApp() {
                 )}
                 {busy && (
                   <Text style={[s.body, { marginTop: 24 }]}>
-                    Finding passages and checking citations…
+                    {isAppConversation(query)
+                      ? "Connecting to your provider…"
+                      : "Finding passages and checking citations…"}
                   </Text>
                 )}
-                {answer ? (
+                {conversation && (
+                  <View style={s.passage}>
+                    <View style={s.row}>
+                      <Text style={s.sectionTitle}>Pramana</Text>
+                      <Text style={s.badge}>
+                        {conversation.connection_status === "connected"
+                          ? `${conversation.provider?.toUpperCase()} CONNECTED`
+                          : "LOCAL GREETING"}
+                      </Text>
+                    </View>
+                    <Text style={s.body}>{conversation.message}</Text>
+                    {!!conversation.note && (
+                      <Text style={[s.small, { marginTop: 12 }]}>
+                        {conversation.note}
+                      </Text>
+                    )}
+                    <Text style={[s.small, { marginTop: 12 }]}>
+                      Scripture questions use verified passages. Live voice is
+                      still pending.
+                    </Text>
+                  </View>
+                )}
+                {conversation ? null : answer ? (
                   <View style={{ marginTop: 30 }}>
                     <View style={s.row}>
                       <Text style={s.sectionTitle}>Your source trail</Text>
@@ -588,7 +698,15 @@ function StudyApp() {
                 ) : scope !== "bhagavad-gita" ? (
                   <View style={s.passage}>
                     <Text style={s.sectionTitle}>
-                      {scope === GITA_PRESS_SCOPE ? "The 18-work reference collection" : scope === UPANISHAD_SCOPE ? "108 Upanishads · Muktika reference list" : scope === "valmiki-ramayana" ? "Valmiki Ramayana reference collection" : scope === "mahabharata" ? "Vyasa’s Mahabharata reference collection" : "Vedic source collection · recension pending"}
+                      {scope === GITA_PRESS_SCOPE
+                        ? "The 18-work reference collection"
+                        : scope === UPANISHAD_SCOPE
+                          ? "108 Upanishads · Muktika reference list"
+                          : scope === "valmiki-ramayana"
+                            ? "Valmiki Ramayana reference collection"
+                            : scope === "mahabharata"
+                              ? "Vyasa’s Mahabharata reference collection"
+                              : "Vedic source collection · recension pending"}
                     </Text>
                     <Text style={s.body}>
                       Keep original passages, translations, and edition details
@@ -755,7 +873,13 @@ function StudyApp() {
               </>
             ) : tab === "Settings" ? (
               <>
-                <Pressable accessibilityRole="button" onPress={() => setTab("Profile")} style={s.secondary}><Text style={s.body}>Name & study preferences</Text></Pressable>
+                <Pressable
+                  accessibilityRole="button"
+                  onPress={() => setTab("Profile")}
+                  style={s.secondary}
+                >
+                  <Text style={s.body}>Name & study preferences</Text>
+                </Pressable>
                 <SettingsScreen />
               </>
             ) : (
