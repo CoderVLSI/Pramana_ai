@@ -1,3 +1,4 @@
+import ProfileAvatar, { normalizeAvatar } from "./ProfileAvatar";
 import LiveConversation from "./LiveConversation";
 import VoiceMode from "./VoiceMode";
 import { isAppConversation } from "../../packages/citation-schema/conversation";
@@ -180,6 +181,7 @@ function StudyApp() {
           if (parsed?.profile && typeof parsed.profile === "object") {
             const value = parsed.profile;
             setProfile({
+              avatar: normalizeAvatar(value.avatar),
               name:
                 typeof value.name === "string" ? value.name.slice(0, 80) : "",
               language: ["English", "Hindi", "Sanskrit"].includes(
@@ -422,6 +424,9 @@ function StudyApp() {
                   ? "Live AI · sources separate"
                   : "Strict sources"}
               </Text>
+              <Pressable accessibilityRole="button" accessibilityLabel="Edit profile" onPress={() => setTab("Profile")} style={{ marginLeft: 8 }}>
+                <ProfileAvatar avatar={profile.avatar} size={36} />
+              </Pressable>
               <Pressable
                 accessibilityLabel="Settings"
                 onPress={() => {
@@ -1011,7 +1016,7 @@ function StudyApp() {
                   onPress={() => setTab("Profile")}
                   style={s.secondary}
                 >
-                  <Text style={s.body}>Name & study preferences</Text>
+                  <Text style={s.body}>Profile & study preferences</Text>
                 </Pressable>
                 <SettingsScreen />
               </>

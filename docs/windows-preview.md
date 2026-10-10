@@ -10,8 +10,10 @@ Validation: TypeScript and all 40 JavaScript tests and 10 Python pipeline tests 
 
 Greetings/app help now use the configured provider’s text API. Voice mode can speak greetings and source-status replies; scripture audio still requires reviewed audio-enabled passages. Saving a key does not approve scripture sources. Browser settings tokens persist across app sessions; keys remain encrypted in the local backend.
 
-ZIP SHA-256: b4ce1ed87cdfe37b6ae69d5a6e55caf0a6253c16319d5814575526abd392417a
+ZIP SHA-256: d4988de5580ab48d54fbf3d32d677962b7b0560c4fb5304914a42ce717ab32f3
 
 Voice validation: packaged browser checks passed editable dictation, provider WAV playback, device speech fallback, reply replay/stop and Rishi playback events. Recognition, device synthesis and provider responses were simulated; HTML audio playback was exercised with a test WAV. Physical microphone and live-key testing remain pending.
 
 Live validation: simulated browser capture, PCM playback, interruption, source cards and Rishi animation pass. The packaged browser-to-backend connection reports missing-provider failures safely. Real-key streaming and physical-device testing remain pending.
+
+Profiles include an editable preferred name and six bundled chibi avatars (Vishnu, Shiva, Durga, Ganesha, Surya, Skanda). Name and avatar save/reload and header edit were verified in the browser. Existing profiles default to Vishnu; avatar choice stays local and does not change Ishta Devata.
