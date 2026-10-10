@@ -1,3 +1,4 @@
+import { proxyTrust } from "./proxy-config";
 import { upanishadRegister } from "../../../packages/corpus-schema/upanishads";
 import {
   gitaPressRegister,
@@ -27,7 +28,7 @@ import { VaultError } from "./settings-vault";
 const app = Fastify({
   logger: { redact: ["req.headers.authorization", "req.body.api_key"] },
   bodyLimit: 16384,
-  trustProxy: process.env.TRUST_PROXY || false,
+  trustProxy: proxyTrust(process.env.TRUST_PROXY),
 });
 app.setErrorHandler((error, req, reply) => {
   if (error instanceof VaultError)
@@ -225,6 +226,16 @@ app.post<{ Body: { passage_id: string; reason: string } }>(
   },
 );
 await registerSettingsRoutes(app);
+let shuttingDown = false;
+for (const signal of ["SIGTERM", "SIGINT"] as const) {
+  process.once(signal, () => {
+    if (shuttingDown) return;
+    shuttingDown = true;
+    const deadline = setTimeout(() => process.exit(1), 10000);
+    deadline.unref();
+    app.close().then(() => { clearTimeout(deadline); process.exit(0); }, () => process.exit(1));
+  });
+}
 await app.listen({
   port: Number(process.env.PORT || 3001),
   host: process.env.HOST || "0.0.0.0",

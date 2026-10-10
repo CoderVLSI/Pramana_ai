@@ -1,0 +1,29 @@
+services:
+  - type: web
+    name: pramana-api
+    runtime: docker
+    dockerfilePath: ./services/api/Dockerfile
+    dockerContext: .
+    plan: starter
+    numInstances: 1
+    healthCheckPath: /health
+    autoDeployTrigger: off
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: HOST
+        value: 0.0.0.0
+      - key: PORT
+        value: '3001'
+      - key: PRAMANA_DATA_DIR
+        value: /data/pramana
+      - key: TRUST_PROXY
+        value: '1'
+      - key: CLIENT_ORIGIN
+        sync: false
+      - key: SETTINGS_MASTER_KEY
+        sync: false
+    disk:
+      name: pramana-data
+      mountPath: /data
+      sizeGB: 1
