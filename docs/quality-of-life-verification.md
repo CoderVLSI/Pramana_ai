@@ -13,3 +13,7 @@ Native build/launch evidence will be added after completing the new APK. No real
 ## Cloud backend preparation
 
 Supabase owner-only migration and explicit-whitelist sync client prepared; three additional tests pass. Free project provisioning, authentication UI and two-account deployed isolation checks remain pending. Android x86_64 and arm64 release builds passed; arm64 signature verified. Emulator installation is still running, so launch is not yet verified for this build.
+
+## Android permissions correction
+
+The shipped preview lacked RECORD_AUDIO: the image-picker plugin's microphonePermission=false generated a removal directive. Corrected Expo configuration, regenerated Android from a clean prebuild while preserving the preview signing key, and added explicit microphone/notification declarations. App launch now requests microphone and notification permissions once; Settings includes retry and Android-settings controls. Reminders remain off until enabled. The packaged APK must pass `scripts/android-permission-check.py` before distribution. Physical prompt and voice provider verification remain pending.

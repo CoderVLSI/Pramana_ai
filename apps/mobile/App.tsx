@@ -1,3 +1,4 @@
+import AppPermissions from "./AppPermissions";
 import Scratchpad from "./Scratchpad";
 import {
   memorySuggestion,
@@ -164,6 +165,7 @@ export default function App() {
   return (
     <SafeAreaProvider initialMetrics={initialWindowMetrics}>
       <DevicePreferencesProvider>
+        <AppPermissions launch />
         <StudyApp />
       </DevicePreferencesProvider>
     </SafeAreaProvider>

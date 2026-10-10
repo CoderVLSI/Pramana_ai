@@ -1,3 +1,4 @@
+import AppPermissions from "./AppPermissions";
 import CloudAccount from "./CloudAccount";
 import DeviceDataSettings from "./DeviceDataSettings";
 import ReadingSettings from "./ReadingSettings";
@@ -148,6 +149,7 @@ export default function SettingsScreen({
         profile={studyProfile}
         onRestoreProfile={onRestoreProfile}
       />
+      <AppPermissions />
       <ReadingSettings />
       <ReminderSettings />
       <DeviceDataSettings />
