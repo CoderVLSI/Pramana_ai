@@ -152,8 +152,8 @@
       },
       "needs_script_repair": true,
       "approved_passages": 0,
-      "repaired_scan_pages": 5,
-      "scan_pages_without_local_repair": 53
+      "repaired_scan_pages": 58,
+      "scan_pages_without_local_repair": 0
     },
     {
       "source_id": "kena-upanishad-gita-press-gorakhpur",
@@ -765,11 +765,84 @@
           "ocr_engine": "local_repair"
         }
       ]
+    },
+    {
+      "query": "ब्रह्म",
+      "scope": [
+        "ishavasya-upanishad-with-hindi-translation-gita-press-gorakhpur"
+      ],
+      "elapsed_ms": 202,
+      "hit_count": 6,
+      "error_count": 0,
+      "top_locators": [
+        {
+          "source_id": "ishavasya-upanishad-with-hindi-translation-gita-press-gorakhpur",
+          "scan_page": 48,
+          "ocr_engine": "local_repair"
+        },
+        {
+          "source_id": "ishavasya-upanishad-with-hindi-translation-gita-press-gorakhpur",
+          "scan_page": 41,
+          "ocr_engine": "local_repair"
+        },
+        {
+          "source_id": "ishavasya-upanishad-with-hindi-translation-gita-press-gorakhpur",
+          "scan_page": 5,
+          "ocr_engine": "local_repair"
+        }
+      ]
+    },
+    {
+      "query": "प्रथम",
+      "scope": [
+        "ishavasya-upanishad-with-hindi-translation-gita-press-gorakhpur"
+      ],
+      "elapsed_ms": 187,
+      "hit_count": 4,
+      "error_count": 0,
+      "top_locators": [
+        {
+          "source_id": "ishavasya-upanishad-with-hindi-translation-gita-press-gorakhpur",
+          "scan_page": 34,
+          "ocr_engine": "local_repair"
+        },
+        {
+          "source_id": "ishavasya-upanishad-with-hindi-translation-gita-press-gorakhpur",
+          "scan_page": 6,
+          "ocr_engine": "local_repair"
+        },
+        {
+          "source_id": "ishavasya-upanishad-with-hindi-translation-gita-press-gorakhpur",
+          "scan_page": 26,
+          "ocr_engine": "local_repair"
+        }
+      ]
+    },
+    {
+      "query": "ईश्वर",
+      "scope": [
+        "ishavasya-upanishad-with-hindi-translation-gita-press-gorakhpur"
+      ],
+      "elapsed_ms": 182,
+      "hit_count": 2,
+      "error_count": 0,
+      "top_locators": [
+        {
+          "source_id": "ishavasya-upanishad-with-hindi-translation-gita-press-gorakhpur",
+          "scan_page": 34,
+          "ocr_engine": "local_repair"
+        },
+        {
+          "source_id": "ishavasya-upanishad-with-hindi-translation-gita-press-gorakhpur",
+          "scan_page": 19,
+          "ocr_engine": "local_repair"
+        }
+      ]
     }
   ],
-  "new_repaired_pages_this_batch": 30,
-  "total_local_repaired_pages": 42,
-  "validation": "16 Python ingest tests pass. Benchmarks are local offline lexical searches, not end-to-end AI latency or OCR accuracy measurements.",
+  "new_repaired_pages_this_batch": 53,
+  "total_local_repaired_pages": 95,
+  "validation": "16 Python ingest tests pass. Benchmarks are local offline lexical searches, not end-to-end AI latency or OCR accuracy measurements. Isha repair database has all 58 scan ordinals, passes integrity check and every page text matches its manifest hash; this does not establish OCR accuracy or mantra coverage.",
   "pending": [
     "Complete remaining wrong-script OCR repairs",
     "Verify source editions, complete vs abridged coverage and all volume sets",

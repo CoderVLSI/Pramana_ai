@@ -1,0 +1,78 @@
+{
+  "checked_on": "2026-10-10",
+  "work_id": "isha-upanishad",
+  "identifier": "ishavasya-upanishad-with-hindi-translation-gita-press-gorakhpur",
+  "review_status": "source_observations_cross_checked_editorial_approval_pending",
+  "approved_passages": 0,
+  "observations": [
+    {
+      "kind": "cover",
+      "evidence": {
+        "scan_page": 1,
+        "image_sha256": "badb19fb00ba4cf5b21ab0f657db650ee34ac31e95546b7b8f8e7f3ce51c66e8",
+        "image_url": "https://archive.org/download/ishavasya-upanishad-with-hindi-translation-gita-press-gorakhpur/page/n0.jpg"
+      },
+      "title_observed": "ईशावास्योपनिषद्",
+      "publisher_observed": "गीताप्रेस, गोरखपुर"
+    },
+    {
+      "kind": "title_page",
+      "evidence": {
+        "scan_page": 3,
+        "image_sha256": "6beca172248968d68225a10d605ebc8b8e5c6cdf35c17789dd5d7268e6ace026",
+        "image_url": "https://archive.org/download/ishavasya-upanishad-with-hindi-translation-gita-press-gorakhpur/page/n2.jpg"
+      },
+      "commentary_statement_observed": "सानुवाद शाङ्करभाष्यसहित",
+      "commentary_attribution": "Shankara commentary with translation; translator not identified on this page",
+      "note": "Hanumanprasad Poddar is named as printer/publisher on the imprint, not as commentator."
+    },
+    {
+      "kind": "imprint",
+      "evidence": {
+        "scan_page": 4,
+        "image_sha256": "bcebc00e9551076a65a2f74711d38339910eb65dc3802285512989c73eecf7a0",
+        "image_url": "https://archive.org/download/ishavasya-upanishad-with-hindi-translation-gita-press-gorakhpur/page/n3.jpg"
+      },
+      "printer_publisher_person_observed": "हनुमानप्रसाद पोद्दार",
+      "publisher_observed": "गीताप्रेस, गोरखपुर",
+      "edition_statement_observed": "सं० २०१६ नवम संस्करण",
+      "calendar": "Vikram Samvat as printed; Gregorian print date not assigned"
+    },
+    {
+      "kind": "page_mapping",
+      "evidence": {
+        "scan_page": 20,
+        "image_sha256": "c1877d050adf3bd608a9ce5d8b0e835c8c5f6e17c34f2353bf1e2a4333c750f1",
+        "image_url": "https://archive.org/download/ishavasya-upanishad-with-hindi-translation-gita-press-gorakhpur/page/n19.jpg"
+      },
+      "printed_page_observed": 16,
+      "header_mantra_observed": 2,
+      "content_note": "Contains the end of preceding commentary and introduction to mantra 2; header is not proof that every line is mantra 2.",
+      "ocr_problem": "OCR first line misreads printed page as 4. Scan ordinal 20 and printed page 16 must remain distinct."
+    }
+  ],
+  "pending": [
+    "Translator identification and commentary/translation attribution review",
+    "Mantra-level boundaries and full coverage",
+    "OCR accuracy comparison and correction",
+    "Applicable usage evidence",
+    "Independent editorial review"
+  ],
+  "independent_visual_cross_check": {
+    "scan_pages": [
+      1,
+      3,
+      4,
+      20
+    ],
+    "result": "Second agent agrees with title, publisher, commentary description, edition and page-boundary observations. This is source evidence, not final editorial approval."
+  },
+  "ocr_validation": {
+    "repaired_scan_pages": 58,
+    "scan_ordinals_complete": true,
+    "database_integrity": "ok",
+    "all_text_checksums_match": true,
+    "ocr_accuracy_verified": false,
+    "mantra_coverage_verified": false
+  }
+}
