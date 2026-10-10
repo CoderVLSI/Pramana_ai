@@ -1,5 +1,14 @@
 import { Platform } from "react-native";
 import * as SecureStore from "expo-secure-store";
+import { deviceClient } from "./device-settings";
+import { isAppConversation } from "../../packages/citation-schema/conversation";
+import {
+  createDeviceLiveSocket,
+  type NativeSocket,
+} from "../../packages/provider-client/native-live";
+export const DEVICE_CONNECTIONS =
+  Platform.OS !== "web" &&
+  process.env.EXPO_PUBLIC_CONNECTION_MODE !== "backend";
 const API = process.env.EXPO_PUBLIC_API_URL || "http://localhost:3001";
 const TOKEN_KEY = "pramana.settings.session.v1";
 export type Provider = "openai" | "gemini";
@@ -85,9 +94,12 @@ async function settingsToken() {
     });
   return tokenPromise;
 }
-export const loadCatalog = (): Promise<Catalog> => raw("/v1/voice/models");
+export const loadCatalog = (): Promise<Catalog> =>
+  DEVICE_CONNECTIONS ? deviceClient.loadCatalog() : raw("/v1/voice/models");
 export const loadSettings = async (): Promise<PublicProfile> =>
-  raw("/v1/settings", "GET", undefined, await settingsToken());
+  DEVICE_CONNECTIONS
+    ? deviceClient.loadSettings()
+    : raw("/v1/settings", "GET", undefined, await settingsToken());
 export const saveSettings = async (body: {
   provider: Provider;
   model: string;
@@ -96,17 +108,26 @@ export const saveSettings = async (body: {
   fallback_models: string[];
   cross_provider_fallback: boolean;
 }): Promise<PublicProfile> =>
-  raw("/v1/settings", "PUT", body, await settingsToken());
+  DEVICE_CONNECTIONS
+    ? deviceClient.saveSettings(body)
+    : raw("/v1/settings", "PUT", body, await settingsToken());
 export const testSettings = async (
   provider: Provider,
 ): Promise<{ message: string }> =>
-  raw("/v1/settings/test", "POST", { provider }, await settingsToken());
+  DEVICE_CONNECTIONS
+    ? deviceClient.testSettings(provider)
+    : raw("/v1/settings/test", "POST", { provider }, await settingsToken());
 export async function disconnectSettings() {
+  if (DEVICE_CONNECTIONS) {
+    await deviceClient.disconnectSettings();
+    return;
+  }
   await raw("/v1/settings/session", "DELETE", undefined, await settingsToken());
   await removeToken();
   tokenPromise = undefined;
 }
 export async function resetSettingsSession() {
+  if (DEVICE_CONNECTIONS) return;
   await removeToken();
   tokenPromise = undefined;
 }
@@ -123,15 +144,21 @@ export const requestAppConversation = async (
   query: string,
   preferredName?: string,
 ): Promise<AppConversation> =>
-  raw(
-    "/v1/chat",
-    "POST",
-    { query, ...(preferredName ? { preferred_name: preferredName } : {}) },
-    await settingsToken(),
-  );
+  DEVICE_CONNECTIONS
+    ? deviceClient.conversation(query, preferredName)
+    : raw(
+        "/v1/chat",
+        "POST",
+        { query, ...(preferredName ? { preferred_name: preferredName } : {}) },
+        await settingsToken(),
+      );
 
 export interface VoiceTurn {
-  kind: "app_conversation" | "verified_scripture" | "source_status" | "external_web";
+  kind:
+    | "app_conversation"
+    | "verified_scripture"
+    | "source_status"
+    | "external_web";
   web?: WebFallback;
   text: string;
   answer?: import("../../packages/citation-schema").Answer;
@@ -151,7 +178,9 @@ export const requestVoiceTurn = async (body: {
   preferred_name?: string;
   work_ids: string[];
 }): Promise<VoiceTurn> =>
-  raw("/v1/voice/turn", "POST", body, await settingsToken(), 75000);
+  DEVICE_CONNECTIONS
+    ? deviceClient.voiceTurn(body, isAppConversation(body.query))
+    : raw("/v1/voice/turn", "POST", body, await settingsToken(), 75000);
 
 /** Credentials stay out of URLs and are sent only in the authenticated socket's first frame. */
 export async function liveSessionCredentials(): Promise<{
@@ -166,7 +195,84 @@ export async function liveSessionCredentials(): Promise<{
   return { url: endpoint.toString(), token: await settingsToken() };
 }
 
-export interface WebFallback { search_entry_point?: string; search_queries?: string[]; source_status: string; text?: string; evidence?: { url: string; title: string }[]; error?: string; note?: string; }
-export async function requestStudy(body: { query: string; work_ids: string[] }): Promise<{ answer: import("../../packages/citation-schema").Answer; web?: WebFallback }> {
+export interface WebFallback {
+  search_entry_point?: string;
+  search_queries?: string[];
+  source_status: string;
+  text?: string;
+  evidence?: { url: string; title: string }[];
+  error?: string;
+  note?: string;
+}
+export async function requestStudy(body: {
+  query: string;
+  work_ids: string[];
+}): Promise<{
+  answer: import("../../packages/citation-schema").Answer;
+  web?: WebFallback;
+}> {
+  if (DEVICE_CONNECTIONS) return deviceClient.study(body);
   return raw("/v1/study", "POST", body, await settingsToken(), 45000);
+}
+
+export async function createConversationSocket(options: {
+  preferredName?: string;
+  workIds: string[];
+  enableWebSearch: boolean;
+}): Promise<NativeSocket> {
+  if (!DEVICE_CONNECTIONS) {
+    const credentials = await liveSessionCredentials();
+    const ws = new WebSocket(credentials.url);
+    ws.onopen = () =>
+      ws.send(
+        JSON.stringify({
+          type: "auth",
+          token: credentials.token,
+          preferred_name: options.preferredName,
+          work_ids: options.workIds,
+          enable_web_search: options.enableWebSearch,
+        }),
+      );
+    return ws as unknown as NativeSocket;
+  }
+  const profile = await deviceClient.credentials();
+  const make = (url: string, headers: Record<string, string>): NativeSocket => {
+    const NativeWebSocket = WebSocket as unknown as new (
+      url: string,
+      protocols: undefined,
+      options: { headers: Record<string, string> },
+    ) => NativeSocket;
+    return new NativeWebSocket(url, undefined, { headers });
+  };
+  return createDeviceLiveSocket(
+    profile,
+    make,
+    async (name, args) => {
+      if (name === "corpus_status")
+        return {
+          source_status: "approved_index_counts",
+          approved_passages: 0,
+          installed_collections: 0,
+        };
+      if (name === "search_scripture" && !options.enableWebSearch)
+        return {
+          source_status: "not_verified",
+          evidence: [],
+          note: "No approved scripture collection is installed on this phone. Web search is disabled.",
+        };
+      if (name === "web_search" && !options.enableWebSearch)
+        return { error: "Web search is disabled." };
+      const result = await deviceClient.study({
+        query: String(args.query || ""),
+        work_ids: options.workIds,
+      });
+      return {
+        ...result.web,
+        local_source_status: "not_verified",
+        fallback_from:
+          name === "search_scripture" ? "local_scripture" : undefined,
+      };
+    },
+    options,
+  );
 }

@@ -11,7 +11,7 @@ import {
   Switch,
   View,
 } from "react-native";
-import { liveSessionCredentials } from "./settings-client";
+import { createConversationSocket } from "./settings-client";
 import type { AudioPlayer } from "expo-audio";
 import type { ExpoSpeechRecognitionModuleType } from "expo-speech-recognition/build/ExpoSpeechRecognitionModule.types";
 
@@ -88,7 +88,9 @@ function sourcesFrom(result: unknown, name: string): Source[] {
     data.results,
     data.evidence,
   ].find(Array.isArray) as unknown[] | undefined;
-  const isWeb = /web|internet/.test(name) || data.source_status === "external_web_unverified";
+  const isWeb =
+    /web|internet/.test(name) ||
+    data.source_status === "external_web_unverified";
   return (candidates || []).slice(0, 8).flatMap((entry) => {
     if (!entry || typeof entry !== "object") return [];
     const source = entry as Record<string, unknown>;
@@ -154,7 +156,9 @@ export default function LiveConversation({
   const [listening, setListening] = useState(false);
   const [microphoneEnabled, setMicrophoneEnabled] = useState(true);
   const captureEnabled = useRef(true);
-  const socket = useRef<WebSocket | null>(null);
+  const socket = useRef<
+    import("../../packages/provider-client/native-live").NativeSocket | null
+  >(null);
   const active = useRef(false),
     ready = useRef(false),
     generation = useRef(0),
@@ -559,9 +563,15 @@ export default function LiveConversation({
         }
         recognition.current = module;
       }
-      const credentials = await liveSessionCredentials();
-      if (!active.current || session !== generation.current) return;
-      const ws = new WebSocket(credentials.url);
+      const ws = await createConversationSocket({
+        preferredName,
+        workIds,
+        enableWebSearch: webSearchEnabled,
+      });
+      if (!active.current || session !== generation.current) {
+        ws.close();
+        return;
+      }
       socket.current = ws;
       connectTimer.current = setTimeout(() => {
         if (active.current && !ready.current)
@@ -569,18 +579,6 @@ export default function LiveConversation({
             "The live connection timed out. Check your provider settings and retry.",
           );
       }, 20000);
-      ws.onopen = () => {
-        if (active.current && session === generation.current)
-          ws.send(
-            JSON.stringify({
-              type: "auth",
-              token: credentials.token,
-              preferred_name: preferredName,
-              work_ids: workIds,
-              enable_web_search: webSearchEnabled,
-            }),
-          );
-      };
       ws.onclose = () => {
         if (active.current && session === generation.current)
           fail("The live connection ended. Tap Retry to start a new session.");

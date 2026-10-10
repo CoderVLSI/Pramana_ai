@@ -36,7 +36,7 @@ npm run build:web
 
 Answers contain verbatim development translation excerpts only. Text study needs no LLM calls or provider keys. Optional provider keys can be configured in Settings. The gate checks IDs, release, hashes, metadata, and excerpt spans; it does not establish scholarly accuracy. All fixture responses have `safe_to_speak: false`. Voice stays unavailable until approved sources and a provider are configured.
 
-Bookmarks remain on the device. Corrections are stored in the local API's ignored `services/api/data/reports.jsonl`. No accounts, analytics, or raw audio recording are connected. Voice keys are encrypted on your backend; only a settings-session token is saved on the device. This API is for local development, not public production exposure.
+Bookmarks remain on the device. Corrections are stored in the local API's ignored `services/api/data/reports.jsonl`. No accounts, analytics, or raw audio recording are connected. Android keys are held in SecureStore and sent directly to providers. The Windows/web option keeps keys encrypted on its backend and a browser session token. This API is for local development, not public production exposure.
 
 ## Corpus import
 
@@ -48,7 +48,7 @@ Manifest requires `edition_id`, `license_id`, `release`, `publisher`, `source_ur
 
 ## Android builds
 
-`apps/mobile/eas.json` includes internal APK and production AAB profiles. After configuring your Expo account/project and production API, run `npx eas-cli build --platform android --profile preview` from `apps/mobile`. No signed APK has been produced in this workspace.
+`apps/mobile/eas.json` includes internal APK and production AAB profiles. After configuring your Expo account/project, run `npx eas-cli build --platform android --profile preview` from `apps/mobile`. Preview APKs are test-signed; they are not Play Store releases.
 
 ## Before launch
 
@@ -58,7 +58,7 @@ Select precise editions, clear licenses, complete scholarly review, connect Post
 
 Use the header gear or About → API keys & voice settings. Add/replace/remove provider keys, select models, reorder fallback models, and test metadata access. Defaults are OpenAI Realtime 2.1 and Gemini 3.8 Live. Cross-provider backup is optional and off by default. See [research and setup details](docs/voice-provider-research.md).
 
-The backend encrypts keys with AES-256-GCM. Production requires `SETTINGS_MASTER_KEY`; local development creates an ignored owner-only encryption key. Android uses SecureStore for the session token, and web uses tab-scoped sessionStorage. Use HTTPS for remote credentials. Native LAN HTTP development requires the explicit non-production setting `ALLOW_INSECURE_LOCAL_SETTINGS=true`.
+The backend encrypts keys with AES-256-GCM. Production requires `SETTINGS_MASTER_KEY`; local development creates an ignored owner-only encryption key. Default Android builds instead store keys in SecureStore backed by Android Keystore, without a backend or session token. Web keeps a browser session token. Use HTTPS for remote credentials. Native LAN HTTP development requires the explicit non-production setting `ALLOW_INSECURE_LOCAL_SETTINGS=true`.
 
 Provider audio is buffered and checked before release. Fixtures still cannot pass the voice source gate. The adapters and fallback routing have mocked tests; live microphone streaming, in-app audio playback, and real-account provider audio validation remain pending.
 
@@ -71,3 +71,7 @@ All 18 Mahapuranas are listed in the library as planned; none is ingested into R
 The app now defaults to all 18 Mahapuranas with Gita Press, Gorakhpur as the chosen reference publisher. All 18 remain pending source intake, precise print-edition selection, usage rights, review, and indexing. Gita development fixtures remain separately selectable. `GET /v1/corpus/register` reports acquisition/coverage status without inventing edition records.
 
 `npm run ingest:gita-press -- input.json output.json` validates and normalizes supplied reviewed bundles with edition-specific hierarchy, immutable passage IDs, original-text hashes, exact page locators, independent translation permissions, and completeness checks. This prepares input packs; it does not yet connect a production lexical/vector index or full RAG generation. See [Gita Press intake workflow](docs/gita-press-intake.md).
+
+## Direct Android connections
+
+Android defaults to device mode: secure local keys, direct provider connection checks, greetings, grounded external web fallback, and live conversation with tools. Regular voice replies use device speech; Live streams provider audio. Android Live uses device transcription to send text turns. Web/Windows retain their local API. Set `EXPO_PUBLIC_CONNECTION_MODE=backend` only to explicitly select the previous native backend route. See [device setup and limits](docs/android-device-mode.md). No reviewed scripture pack is installed yet; private draft OCR is never promoted to an approved local citation.

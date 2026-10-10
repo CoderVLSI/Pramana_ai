@@ -12,13 +12,13 @@ Full description:
 
 > Pramana is an early scripture study preview with a text study screen, passage reader, bookmarks, and correction reports.
 >
-> The current test build includes five development Bhagavad Gita passages with Sanskrit text and development English renderings. These samples are not presented as an approved Gita Press edition. Source collections for Gita Press Mahapuranas, Valmiki Ramayana, Mahabharata, the Vedas and the Muktika list of 108 Upanishads are registered for preparation; their full texts are not currently available in the app.
+> The current Android test build has no installed approved scripture passages. Source collections for Gita Press Mahapuranas, Valmiki Ramayana, Mahabharata, the Vedas and the Muktika list of 108 Upanishads are registered for preparation; their full texts are not currently available in the app.
 >
-> Search the available samples, open their passage details, and save passages on your device. When the selected collection has no verified evidence, Pramana displays that limitation rather than inventing a scriptural answer.
+> Ask questions using your own Gemini or OpenAI key. Web answers and external source links are distinguished from verified local scripture. When the selected collection has no verified evidence, Pramana displays that limitation rather than inventing a scriptural answer.
 >
-> An animated AI Rishi provides a visual preview. Settings support optional OpenAI and Gemini provider credentials and model-access checks through the configured backend. Live microphone conversation and synchronized voice playback are not available in this build.
+> An animated AI Rishi provides a visual preview. Android Settings store optional OpenAI and Gemini keys securely on the phone. Direct provider connections support text, external web search and voice conversation. Live uses device transcription and provider audio; real-phone/provider-account validation remains pending.
 >
-> This is a limited development test, not a complete scripture library or an authoritative religious interpretation service. An internet connection and a working configured backend are required for study and settings requests.
+> This is a limited development test, not a complete scripture library or an authoritative religious interpretation service. Internet and a valid provider key/quota are required for AI requests; Android settings work locally without a Pramana backend.
 
 The quoted text above is original draft marketing copy, not scripture quotation. Suggested category: **Books & Reference**, subject to account owner's choice. Content rating and target audience must be completed from the actual release; no age rating is invented here.
 
@@ -33,10 +33,10 @@ The quoted text above is original draft marketing copy, not scripture quotation.
 
 ## Concrete release gates
 
-1. Deploy and verify a production HTTPS backend. The development localhost fallback is not a usable Play release service.
+1. Verify direct provider access on real Android devices. Default Android builds need no Pramana backend. Explicit backend builds require production HTTPS.
 2. Create a signed Android App Bundle, confirm package/version/target SDK against current Play Console requirements, and retain signing credentials securely. A successful Expo Android JavaScript export alone is not a signed app.
 3. Test installation and complete flows on real Android phones: system-bar insets, keyboard, bookmarks, backend errors, settings deletion and provider tests. Review the merged Android permissions and remove unnecessary permissions before release.
-4. Complete privacy-policy identity/contact/retention details, publish its public URL, and reconcile the Data safety form with the final backend host, SDKs and provider behavior. The current app must not claim no data collection.
+4. Complete privacy-policy identity/contact/retention details, publish its public URL, and reconcile the Data safety form with the selected connection mode, SDKs and provider behavior. The current app must not claim no data collection.
 5. Keep corpus availability labels honest. All publisher-approved indexed sources currently remain zero; private OCR review indexes are not the app's public corpus. A full scripture/voice listing requires those features to be implemented and verified first.
 6. Configure Play app access instructions, content rating, audience, declarations, reviewer access and applicable account verification. Optional provider settings must not leave core review flows inaccessible.
 7. Use internal testing first, then the applicable closed-test/production-access process. No external submission has been made.

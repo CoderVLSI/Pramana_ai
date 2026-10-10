@@ -1,82 +1,52 @@
 # Pramana privacy policy — unpublished draft
 
-**Do not publish this document until every required placeholder and unresolved retention/deployment item is completed and checked against the release.** This describes the current development implementation, not a deployed production service. Prepared 9 October 2026.
+Do not publish until the required identity, contact and release-specific items are completed. Updated 10 October 2026. This describes development device mode and the optional backend/web mode; it does not certify a production release.
 
 Operator/legal developer identity: **[REQUIRED — legal/operator name]**
-
 Privacy contact: **[REQUIRED — monitored email/address]**
-
 Public policy URL: **[REQUIRED — stable public URL]**
-
 Effective date: **[REQUIRED — actual publication date]**
 
-## What the current app processes
+## Default Android device mode
 
-Pramana is a scripture study preview. No name/email account registration is implemented. A random settings-session token identifies a provider-settings profile; it is not a named account, but it is a persistent identifier for that profile.
+No named account registration or Pramana backend is required. Optional setup asks for preferred name, language, study interests, interaction preference, avatar and Ishta Devata. Setup can be skipped; these preferences can be edited or deleted. Ishta Devata can reveal religious preferences and is optional.
 
-| Data | Purpose and current storage |
+| Data | Purpose and current handling |
 |---|---|
-| Study questions and selected source filters | Sent to the configured Pramana backend to retrieve sample passages. The application code does not persist question history in a database or file. Questions remain in the current UI state. Backend request/infrastructure logging must still be assessed; this is not a promise that no infrastructure ever logs requests. |
-| Saved passage identifiers | Stored locally on the device using app storage. The current bookmark feature does not synchronize them to the backend. |
-| Correction reports | When you submit a report, its passage identifier, entered reason, generated case identifier, received status and submission time are saved on the backend. Reports may contain personal information if you type it. Do not include provider keys or other secrets in reports. |
-| Provider API keys and preferences | If you choose to save a key, it is sent to the configured backend and stored with provider/model/fallback preferences in an AES-256-GCM encrypted profile. The running backend decrypts keys when necessary to call a provider; this is not end-to-end encryption that prevents the operator from accessing them. Saved keys are not returned to the app. |
-| Settings-session token | Stored in native Android secure storage; the web preview stores it persistently in browser localStorage. It authorizes access to that profile. Clearing this token alone can leave the server profile behind. |
-| Network/operational data | The backend receives connection IP addresses and uses them in an in-memory rate-limit map, with roughly minute-long counters. Its request logger can record request URL, connection information, response status and timings. Hosting/proxy logs and their retention depend on the final deployment. Authorization headers and the API-key field are configured for redaction in application logging. |
+| Provider API keys and model/fallback settings | Stored locally in Expo SecureStore, backed by Android Keystore. Keys are sent directly to the selected official provider using encrypted HTTPS/WebSocket connections and authenticated headers. Keys are not kept in AsyncStorage, URLs, public build variables or returned to the Settings form. The app reads keys locally to authenticate requests. |
+| Name and study preferences | Stored locally in AsyncStorage, which is not encrypted by the app. Preferred name can be sent with greetings and live requests. Other profile preferences remain local. Avatar choices use bundled images and do not request photo-library access. |
+| Questions and selected collections | Questions are sent directly to Gemini/OpenAI for greetings or external web search. Live tools use the app-selected collection scope, but no approved local scripture pack is installed. Current UI transcripts are not saved as a history database. Providers may retain authenticated requests under their own terms. |
+| Microphone input | Android's speech-recognition service transcribes speech and may process audio remotely. Regular voice input can be reviewed before sending. Live mode sends final transcription text turns to the selected AI provider; raw Android microphone audio is not streamed to that provider. |
+| Spoken replies | Regular replies use device speech synthesis, which may use a device/provider service. Live plays streamed AI audio and stores temporary WAV playback files in the app cache. Normal completion/stop cleans up files; interrupted app termination can leave cache files. Generated live speech and external answers remain unverified. |
+| Bookmarks and correction drafts | Bookmarks remain in device app storage. Corrections remain local and are not submitted to a reviewer; a bounded list keeps at most 50 drafts. Device app-data controls can remove them. |
+| Connection/operational information | Provider services receive authenticated request metadata, including network/account information. No Pramana backend receives default Android requests. The application does not intentionally log provider credentials. |
 
-The source code does not add advertising, analytics or payment SDKs. This must be rechecked against the final packaged SDK dependency inventory and hosting integrations before publication; do not infer that no third party can receive any data.
+Provider connection checks request model metadata, not a voice generation or scripture question. They do not prove billing quota or live voice availability. External web search sends the question to the selected provider, requires actual search evidence, and displays external sources separately. Opening HTTPS source links contacts their operators. Gemini search suggestions are rendered in a JavaScript-disabled native WebView and may load provider assets.
 
-## Providers and other recipients
+Live tools can search external references when the web-search switch is enabled. A search miss is not proof of absence from scripture. Live startup can try at most two configured models; another provider can receive context only when cross-provider fallback is explicitly enabled. Started conversations are not automatically replayed after a failure. Text and web calls use the selected provider. Live sessions stop on user action, app backgrounding, failure or the ten-minute limit.
 
-If you press a provider connection test, the backend authenticates to the selected OpenAI or Google Gemini service using your key to check model access. This check is not a live audio conversation and does not send your study question as part of the model-metadata test. Provider services receive the authenticated request and related network/account information according to their terms.
+## Optional backend mode and Windows/web
 
-Scripture questions use backend retrieval. Ordinary greetings and app help call the configured Gemini/OpenAI text API, including the preferred name if supplied. In voice mode, approved audio-enabled passages, greetings, or fixed source-status messages are sent to the configured provider for speech generation. Provider audio is checked against the script before delivery. If provider audio is unavailable, device/browser speech synthesis reads the same returned text.
+Web/Windows retain a configured Pramana backend. An explicitly selected Android backend build also uses it. These modes store provider keys and settings in AES-256-GCM encrypted backend profiles. The operator can decrypt keys to make provider calls; this is not end-to-end encryption against the operator. A settings-session bearer token is stored in browser localStorage or native SecureStore and authorizes the profile. Clearing that token alone does not delete the server profile.
 
-For tap-to-talk mode, microphone permission is requested only when the user taps to talk. Speech recognition is performed through Android's speech-recognition service or the browser Web Speech API; those services may send audio to their own provider. Pramana receives the transcript, which the user can edit before sending. Tap-to-talk does not upload microphone audio directly to Gemini/OpenAI or keep a recording. Generated reply WAV files are temporarily cached for playback and deleted on completion, stop, or normal component cleanup; interrupted app termination may leave temporary cache data.
+Backend retrieval serves reviewed scripture excerpts separately from development fixtures. Questions, greetings, preferred name, source scope, web requests and voice scripts pass through the backend as applicable. Browser Live streams microphone audio to the backend/provider; native backend Live uses device transcription. Scripted backend narration checks returned transcripts before releasing audio; live generated speech remains unverified. Corrections are stored on the backend. Application and hosting logs can retain connection/status/timing data, with credential fields configured for redaction.
 
-Optional cross-provider speech fallback permits another configured provider to receive the same script; it is disabled by default. Tap-to-talk is separate from live conversation mode. Recognition language follows the language preference; speech recognition language availability depends on the device/service. This does not translate cited scripture.
+Backend operator/host, locations and recipients: **[REQUIRED if releasing backend mode — actual host, service locations and recipients]**.
+Backend profiles, correction reports, logs and backup retention/deletion periods: **[REQUIRED if releasing backend mode — operator policy and functional deletion process]**. No automatic server profile/report expiry is currently implemented.
 
-The final backend/hosting operator and infrastructure recipients are **[REQUIRED — deployment provider, service locations and recipient details]**. This draft does not invent a host or processing country.
+## Deletion and choices
 
-## Retention and deletion
+Settings can remove individual keys or delete all device connection settings. Profile preferences and bookmarks have separate controls; deleting a study profile does not delete credentials or bookmarks. Android app-data controls remove app-local data; secure-storage and backup behavior must be verified on the actual release device. Previously saved backend keys are not migrated to the phone or removed automatically; delete the old backend profile through that build if desired.
 
-- Bookmarks can be removed with the bookmark control. Android app-data controls can clear app-local data; secure-storage behavior should be verified on the release device.
-- Settings let you remove a provider key or delete the current server profile and its locally stored session token. “Reconnect settings session” clears the local identifier and starts another session; it is not the same as deleting the previous server profile.
-- The current backend has no automatic profile-expiry policy. Encrypted profiles otherwise remain until deleted. **[REQUIRED — operator retention and backup-deletion periods]**.
-- Correction reports currently have no automatic expiry or in-app deletion endpoint. **[REQUIRED — report retention period and a functional contact-based deletion process, including how a case identifier is used to locate a report]**.
-- Backend and infrastructure log retention: **[REQUIRED — confirmed duration, controls and backup handling]**.
+Backend-mode Settings can delete the current encrypted server profile and session token. Reconnecting a session only clears its local identifier; it can leave the old profile on the server. Requests already sent to third-party providers cannot be recalled by deleting local keys; their retention and deletion policies apply.
 
-There is no implemented user-account system to delete. If named accounts are added later, their deletion process and applicable Play requirements must be implemented and disclosed.
+## Providers, security and release requirements
 
-## Security and your choices
+Recipients include Google Gemini or OpenAI when configured, the device/browser speech service when used, and external websites when opened. Provider usage is billed to the user's account. Encryption reduces stored-key exposure but does not guarantee absolute security. No advertising, analytics or payment SDK is intentionally added; the final signed dependency inventory and third-party processing must be checked before publication.
 
-Use a trusted backend over HTTPS. Production settings require an operator-supplied encryption master key; a local-development key is not an adequate production deployment plan. Encryption reduces exposure of stored credentials but cannot guarantee absolute security. Users can choose not to enter provider credentials, remove a saved key, delete the settings profile, remove bookmarks or avoid submitting a report.
+There is no full offline scripture corpus in this build. Private OCR indexes, registered collections and publisher source leads do not establish approved in-app scripture availability.
 
-Current development builds do not provide an offline full scripture corpus. Current corpus registrations and private OCR preparation do not imply that scripture text or voice features are publicly available.
+Target age group/children's handling: **[REQUIRED — actual product decision and Play declarations]**.
+User-rights/deletion request handling: **[REQUIRED — operator contact and applicable process]**.
 
-## Children, requests and policy changes
-
-Target age group and any children's-use handling: **[REQUIRED — owner decision aligned with the actual app and Play declarations]**. Do not publish an invented age cutoff or claim children are categorically excluded without an implemented/product decision.
-
-For privacy questions or deletion requests, contact **[REQUIRED — privacy contact]**. Applicable user-rights request handling and response process: **[REQUIRED — operator process appropriate to deployment/users]**.
-
-Future changes to data processing must be reflected in this policy and communicated as appropriate. Before release, the operator must verify these disclosures against the signed application, backend deployment and third-party SDKs, and provide a public policy accessible from both the app and store listing.
-
-## Study profile update
-
-The first-time flow optionally stores a preferred name, language, interaction preference, study interests and Ishta Devata on the device using AsyncStorage. These values are not encrypted by the app. For ordinary greetings and app help, the request and preferred name are sent to the backend and configured AI provider. Language, study interests, interaction preference, and Ishta Devata remain on the device. Ishta Devata may reveal religious preferences and can be left blank; the entire setup can be skipped. Settings → Name & study preferences allows editing or deleting this profile. Deleting the profile does not delete API credentials or bookmarks; those are separate controls. The preferred name is used in the local greeting, without changing source quotations.
-
-On the Windows/web preview, the settings-session bearer token persists in browser localStorage so saved provider settings survive closing and reopening the app. Existing tab session tokens are migrated. API keys themselves remain encrypted in the backend vault. Disconnecting settings removes the token and its server profile.
-
-## Live conversation and agent tools
-
-Starting live voice on Windows/web requests microphone permission and streams PCM audio through the Pramana backend to the configured Gemini/OpenAI live service. Text-only live mode does not request microphone access. On Android, live mode uses device speech recognition and sends final transcripts automatically to the AI provider; replies play after each turn. Raw Android microphone audio is not streamed to that AI service by this client. The device recognizer may process audio through its own provider.
-
-Live transcripts, tool results and streamed output are held in session memory; the application does not persist conversation history or microphone recordings. Temporary Android reply WAV files are removed during normal playback/stop cleanup; abnormal termination may leave temporary cache files. Provider services may retain inputs/outputs under their own terms. The preferred name is included if supplied; other study preferences remain local.
-
-Web-search tools are enabled by default and can be disabled before connecting. Gemini uses Google Search grounding; OpenAI uses its backend Responses web-search tool. Queries and necessary context are sent to the corresponding service. Search suggestions may load provider assets. Opening cited HTTPS links contacts their operators. Local scripture retrieval returns reviewed excerpts only; streamed AI explanations and web results are not certified Gita Press passages.
-
-Live sessions end when stopped, when the app backgrounds, or after ten minutes. Startup fallback may select another configured model for temporary failures; another provider is used only when cross-provider fallback was explicitly enabled. No API keys are sent to the frontend, and the session bearer token is sent in the first socket frame rather than the URL.
-
-## Automatic external search after a local miss
-
-Text and tap-to-talk scripture questions search the selected local collection first. If no passage is returned, the same question is sent to the selected configured provider for web search (Gemini Google Search or OpenAI Responses web search). Web results and links are labeled external/unverified and do not change approved scripture status. Voice responses announce that distinction. Live scripture tool calls also fall back to web search when the live web-search switch is enabled. Search can incur provider charges; missing keys or unavailable grounding return an explicit status. Google Search suggestions are displayed in a sandboxed iframe or JavaScript-disabled native WebView.
+Before publication, verify this policy against the signed build, providers, optional hosting and SDKs, complete the placeholders, host it publicly, and link it from the app and store. Future changes in processing must be reflected here.

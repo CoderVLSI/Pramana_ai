@@ -4,6 +4,7 @@ import LiveConversation from "./LiveConversation";
 import VoiceMode from "./VoiceMode";
 import { isAppConversation } from "../../packages/citation-schema/conversation";
 import {
+  DEVICE_CONNECTIONS,
   requestStudy,
   type WebFallback,
   requestAppConversation,
@@ -48,6 +49,7 @@ import {
 import { Ionicons } from "@expo/vector-icons";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import type { Answer, Passage } from "../../packages/citation-schema";
+import { deviceLibraryRequest } from "./device-library";
 const API = process.env.EXPO_PUBLIC_API_URL || "http://localhost:3001";
 const C = {
   ink: "#263d35",
@@ -58,6 +60,7 @@ const C = {
   accent: "#b27e42",
 };
 async function request(path: string, body?: unknown) {
+  if (DEVICE_CONNECTIONS) return deviceLibraryRequest(path, body);
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), 12000);
   try {
@@ -249,7 +252,11 @@ function StudyApp() {
     request("/v1/passages")
       .then(setAll)
       .catch(() =>
-        setError("Start the API to connect to the development corpus."),
+        setError(
+          DEVICE_CONNECTIONS
+            ? "The local library could not be loaded."
+            : "Start the API to connect to the development corpus.",
+        ),
       );
   }, []);
   useEffect(() => {
@@ -287,7 +294,11 @@ function StudyApp() {
             message: turn.text,
             provider: turn.audio?.provider || turn.provider,
             model: turn.audio?.model,
-            connection_status: turn.audio ? "connected" : "failed",
+            connection_status:
+              turn.audio ||
+              (DEVICE_CONNECTIONS && turn.kind !== "source_status")
+                ? "connected"
+                : "failed",
             note: turn.note,
           });
         setWebFallback(turn.web || null);
@@ -305,14 +316,14 @@ function StudyApp() {
         return;
       }
       const result = await requestStudy({
-          query: text,
-          work_ids:
-            scope === GITA_PRESS_SCOPE
-              ? MAHAPURANA_TARGETS.map(([id]) => id)
-              : scope === UPANISHAD_SCOPE
-                ? UPANISHAD_TARGETS.map(([id]) => id)
-                : [scope],
-        });
+        query: text,
+        work_ids:
+          scope === GITA_PRESS_SCOPE
+            ? MAHAPURANA_TARGETS.map(([id]) => id)
+            : scope === UPANISHAD_SCOPE
+              ? UPANISHAD_TARGETS.map(([id]) => id)
+              : [scope],
+      });
       setAnswer(result.answer);
       setWebFallback(result.web || null);
     } catch (e) {
@@ -341,7 +352,11 @@ function StudyApp() {
         passage_id: reader!.id,
         reason,
       });
-      setNotice("Report received · " + r.case_id.slice(0, 8));
+      setNotice(
+        DEVICE_CONNECTIONS
+          ? r.message
+          : "Report received · " + r.case_id.slice(0, 8),
+      );
       setReport(false);
       setReason("");
     } catch (e) {
@@ -431,7 +446,12 @@ function StudyApp() {
                   ? "Live AI · sources separate"
                   : "Strict sources"}
               </Text>
-              <Pressable accessibilityRole="button" accessibilityLabel="Edit profile" onPress={() => setTab("Profile")} style={{ marginLeft: 8 }}>
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel="Edit profile"
+                onPress={() => setTab("Profile")}
+                style={{ marginLeft: 8 }}
+              >
                 <ProfileAvatar avatar={profile.avatar} size={36} />
               </Pressable>
               <Pressable
@@ -679,7 +699,9 @@ function StudyApp() {
                       {scope === GITA_PRESS_SCOPE
                         ? "18 Mahapuranas · Gita Press"
                         : scope === "bhagavad-gita"
-                          ? "Bhagavad Gita · fixtures"
+                          ? DEVICE_CONNECTIONS
+                            ? "Bhagavad Gita"
+                            : "Bhagavad Gita · fixtures"
                           : scope === UPANISHAD_SCOPE
                             ? "108 Upanishads · Muktika list"
                             : VEDA_TARGETS.some(([id]) => id === scope)
@@ -704,7 +726,12 @@ function StudyApp() {
                         UPANISHAD_SCOPE,
                         "108 Upanishads · separate collection · editions pending",
                       ],
-                      ["bhagavad-gita", "Bhagavad Gita · development fixtures"],
+                      [
+                        "bhagavad-gita",
+                        DEVICE_CONNECTIONS
+                          ? "Bhagavad Gita"
+                          : "Bhagavad Gita · development fixtures",
+                      ],
                       ...VEDA_TARGETS.map(([id, title]) => [
                         id,
                         `${title} · planned · edition pending`,
@@ -765,7 +792,9 @@ function StudyApp() {
                       Edition selection, usage rights, and source review are
                       pending. No approved passages are indexed for this
                       collection; a full matching edition must be established.
-                      Select development fixtures to explore the working reader.
+                      {DEVICE_CONNECTIONS
+                        ? "Web results are shown separately while local collections are being prepared."
+                        : "Select development fixtures to explore the working reader."}
                     </Text>
                   </View>
                 )}
@@ -814,13 +843,61 @@ function StudyApp() {
                       </Text>
                     </View>
                     <Text style={s.body}>{answer.answer}</Text>
-                    {webFallback && <View style={{ marginTop: 16, padding: 18, borderRadius: 14, backgroundColor: "#edf0e5" }}>
-                      <Text style={s.sectionTitle}>Web search fallback</Text>
-                      <Text style={s.small}>No local passage matched. External web sources are not verified scripture.</Text>
-                      <Text style={[s.body, { marginTop: 12 }]}>{webFallback.text || webFallback.error || "Web search returned no cited result."}</Text>
-                      <WebSearchSuggestions html={webFallback.search_entry_point} />
-                      {(webFallback.evidence || []).map(source => <Pressable key={source.url} accessibilityRole="link" onPress={() => { try { const url = new URL(source.url); if (url.protocol === "https:" && !url.username && !url.password) void Linking.openURL(url.href).catch(() => setError("Could not open this source.")); } catch { setError("Invalid source link."); } }} style={s.secondary}><Text style={[s.body, { textDecorationLine: "underline" }]}>{source.title}</Text></Pressable>)}
-                    </View>}
+                    {webFallback && (
+                      <View
+                        style={{
+                          marginTop: 16,
+                          padding: 18,
+                          borderRadius: 14,
+                          backgroundColor: "#edf0e5",
+                        }}
+                      >
+                        <Text style={s.sectionTitle}>Web search fallback</Text>
+                        <Text style={s.small}>
+                          No local passage matched. External web sources are not
+                          verified scripture.
+                        </Text>
+                        <Text style={[s.body, { marginTop: 12 }]}>
+                          {webFallback.text ||
+                            webFallback.error ||
+                            "Web search returned no cited result."}
+                        </Text>
+                        <WebSearchSuggestions
+                          html={webFallback.search_entry_point}
+                        />
+                        {(webFallback.evidence || []).map((source) => (
+                          <Pressable
+                            key={source.url}
+                            accessibilityRole="link"
+                            onPress={() => {
+                              try {
+                                const url = new URL(source.url);
+                                if (
+                                  url.protocol === "https:" &&
+                                  !url.username &&
+                                  !url.password
+                                )
+                                  void Linking.openURL(url.href).catch(() =>
+                                    setError("Could not open this source."),
+                                  );
+                              } catch {
+                                setError("Invalid source link.");
+                              }
+                            }}
+                            style={s.secondary}
+                          >
+                            <Text
+                              style={[
+                                s.body,
+                                { textDecorationLine: "underline" },
+                              ]}
+                            >
+                              {source.title}
+                            </Text>
+                          </Pressable>
+                        ))}
+                      </View>
+                    )}
                     {answer.citations.map((p) => (
                       <PassageCard
                         saved={saved}
@@ -911,47 +988,60 @@ function StudyApp() {
                         </Pressable>
                       ))}
                     </View>
-                    <View style={s.sectionRow}>
-                      <Text style={s.sectionTitle}>A passage to sit with</Text>
-                      <Text style={s.small}>BHAGAVAD GITA · 2.47</Text>
-                    </View>
-                    <View style={s.feature}>
-                      <Text style={s.quoteMark}>“</Text>
-                      <Text style={s.featureQuote}>
-                        Your concern is with action alone,{"\n"}never with its
-                        fruits.
-                      </Text>
-                      <Text
-                        style={[s.small, { color: "#d8dfcb", marginTop: 16 }]}
-                      >
-                        DEVELOPMENT RENDERING · REVIEW PENDING
-                      </Text>
-                      <Pressable
-                        onPress={async () => {
-                          try {
-                            setReader(
-                              await request("/v1/passages/fixture_bg_2_47"),
-                            );
-                          } catch (e) {
-                            setError((e as Error).message);
-                          }
-                        }}
-                        style={[
-                          s.row,
-                          {
-                            justifyContent: "flex-start",
-                            gap: 10,
-                            marginTop: 22,
-                          },
-                        ]}
-                      >
-                        <Text style={{ color: "white", fontSize: 14 }}>
-                          Read the full passage
-                        </Text>
-                        <Icon name="arrow-forward" color="white" size={17} />
-                      </Pressable>
-                      <View style={s.featureCircle} />
-                    </View>
+                    {!DEVICE_CONNECTIONS && (
+                      <>
+                        <View style={s.sectionRow}>
+                          <Text style={s.sectionTitle}>
+                            A passage to sit with
+                          </Text>
+                          <Text style={s.small}>BHAGAVAD GITA · 2.47</Text>
+                        </View>
+                        <View style={s.feature}>
+                          <Text style={s.quoteMark}>“</Text>
+                          <Text style={s.featureQuote}>
+                            Your concern is with action alone,{"\n"}never with
+                            its fruits.
+                          </Text>
+                          <Text
+                            style={[
+                              s.small,
+                              { color: "#d8dfcb", marginTop: 16 },
+                            ]}
+                          >
+                            DEVELOPMENT RENDERING · REVIEW PENDING
+                          </Text>
+                          <Pressable
+                            onPress={async () => {
+                              try {
+                                setReader(
+                                  await request("/v1/passages/fixture_bg_2_47"),
+                                );
+                              } catch (e) {
+                                setError((e as Error).message);
+                              }
+                            }}
+                            style={[
+                              s.row,
+                              {
+                                justifyContent: "flex-start",
+                                gap: 10,
+                                marginTop: 22,
+                              },
+                            ]}
+                          >
+                            <Text style={{ color: "white", fontSize: 14 }}>
+                              Read the full passage
+                            </Text>
+                            <Icon
+                              name="arrow-forward"
+                              color="white"
+                              size={17}
+                            />
+                          </Pressable>
+                          <View style={s.featureCircle} />
+                        </View>
+                      </>
+                    )}
                   </>
                 )}
               </>
@@ -1060,11 +1150,9 @@ function StudyApp() {
                 <View style={s.info}>
                   <Text style={s.sectionTitle}>What this build includes</Text>
                   <Text style={s.body}>
-                    Five development Sanskrit fixtures, original English
-                    renderings, exact reference lookup, lexical passage
-                    matching, persistent bookmarks, and correction reports. The
-                    citation gate checks IDs, hashes, and excerpt spans. It does
-                    not certify scholarly accuracy.
+                    {DEVICE_CONNECTIONS
+                      ? "Direct Gemini and OpenAI connections, secure device API-key storage, external web search, voice conversation and local preferences. Approved scripture collections are not installed yet."
+                      : "Development scripture fixtures, lexical passage matching, persistent bookmarks and correction reports. The citation gate checks IDs, hashes and excerpt spans; it does not certify scholarly accuracy."}
                   </Text>
                 </View>
                 <View style={s.info}>
@@ -1077,9 +1165,9 @@ function StudyApp() {
                   </Text>
                 </View>
                 <Text style={s.small}>
-                  Bookmarks are stored on your device. Submitted corrections are
-                  stored by the local API. Live audio is processed during the
-                  session; microphone recordings are not saved by the app.
+                  {DEVICE_CONNECTIONS
+                    ? "Your keys and preferences stay in device storage. Questions are sent directly to your selected AI provider; speech recognition may use your phone’s speech service. No Pramana backend is needed. Corrections remain on this phone."
+                    : "Bookmarks are stored on your device. Submitted corrections are stored by the local API. Live audio is processed during the session; microphone recordings are not saved by the app."}
                 </Text>
               </>
             )}

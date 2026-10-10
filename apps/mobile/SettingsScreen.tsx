@@ -11,6 +11,7 @@ import {
   Linking,
 } from "react-native";
 import {
+  DEVICE_CONNECTIONS,
   loadCatalog,
   loadSettings,
   saveSettings,
@@ -85,7 +86,7 @@ export default function SettingsScreen() {
       setMessage(
         remove_key
           ? "Provider key removed."
-          : "Settings saved. Your API key is never returned to this screen.",
+          : "Settings saved. Your API key is cleared from this field.",
       );
     } catch (e) {
       setError((e as Error).message);
@@ -112,9 +113,7 @@ export default function SettingsScreen() {
       setProfile(null);
       setKey("");
       await load();
-      setMessage(
-        "All keys and settings from the previous session were deleted.",
-      );
+      setMessage("All keys and connection settings were deleted.");
     } catch (e) {
       setError((e as Error).message);
     } finally {
@@ -131,14 +130,14 @@ export default function SettingsScreen() {
       </Text>
       <View style={s.notice}>
         <Text style={s.body}>
-          Keys are encrypted on your backend. This device keeps only a private
-          settings-session token. Use your own trusted backend with HTTPS
-          outside local development.
+          {DEVICE_CONNECTIONS
+            ? "Keys are saved securely on this phone and sent directly to your selected AI provider over encrypted connections. No Pramana backend is required."
+            : "Keys are encrypted on your backend. This browser keeps only a private settings-session token. Use your own trusted backend with HTTPS outside local development."}
         </Text>
         <Text style={s.small}>
-          {Platform.OS === "web"
-            ? "Web settings are linked to this browser tab’s session."
-            : "Your settings-session token is kept in Android secure storage."}
+          {DEVICE_CONNECTIONS
+            ? "Android protects your keys using encrypted storage backed by Android Keystore. Existing backend keys must be entered again on this phone."
+            : "Backend settings use a private session token saved on this device or browser."}
         </Text>
       </View>
       {busy && !profile ? (
@@ -325,10 +324,9 @@ export default function SettingsScreen() {
               />
             </View>
             <Text style={s.small}>
-              Requires a saved key for both providers. When enabled, a verified
-              passage script may be sent to the other provider after the
-              selected provider’s models fail. Usage charges may differ. At most
-              four attempts are made; text remains available.
+              {DEVICE_CONNECTIONS
+                ? "Requires a saved key for both providers. Live startup can try the next configured model or provider after temporary failures, with at most two attempts. Started conversations are not replayed automatically. Text and web search use the selected provider; charges may differ."
+                : "Requires saved keys for both providers. When enabled, a verified speech script may be sent to the other provider after temporary failure. At most four speech attempts are made; text remains available."}
             </Text>
             <View
               style={[s.row, { justifyContent: "flex-start", marginTop: 22 }]}
@@ -372,10 +370,9 @@ export default function SettingsScreen() {
             <Text style={s.heading}>Source verification stays on</Text>
             <Text style={s.body}>{catalog.reason}</Text>
             <Text style={s.small}>
-              Provider speech is buffered and its output transcript checked
-              against the verified script before release. No unrestricted
-              realtime credentials are sent to the app. Microphone streaming is
-              a future step.
+              {DEVICE_CONNECTIONS
+                ? "Regular replies use this phone’s speech voice. Live replies stream directly from the provider and are labeled generated, not verified scripture. On Android, the device speech service transcribes your microphone before sending text turns."
+                : "Scripted provider speech is checked against its transcript before release. Live conversation streams generated, unverified replies and shows retrieved source evidence separately."}
             </Text>
             <Text style={s.small}>
               Model documentation checked: {catalog.researched_on}
@@ -412,7 +409,14 @@ export default function SettingsScreen() {
           <Pressable disabled={busy} onPress={load}>
             <Text style={s.link}>Retry</Text>
           </Pressable>
-          {!profile && (
+          {!profile && DEVICE_CONNECTIONS && (
+            <Pressable disabled={busy} onPress={disconnect}>
+              <Text style={s.link}>
+                Delete device connections and start again
+              </Text>
+            </Pressable>
+          )}
+          {!profile && !DEVICE_CONNECTIONS && (
             <Pressable
               disabled={busy}
               onPress={async () => {

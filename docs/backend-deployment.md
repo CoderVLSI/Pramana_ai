@@ -1,6 +1,6 @@
 # Backend deployment candidate
 
-The Windows portable app includes its own local API. Android needs a remotely reachable HTTPS API for provider credentials, local scripture retrieval, web-search tools and live sessions. The current vault stores encrypted profiles in files; deployment requires persistent writable storage. This configuration targets one always-on Docker instance with a persistent disk. It does not claim a stateless Vercel deployment is ready; a durable database-backed vault and distributed session/rate-limit coordination would be needed for that deployment shape.
+The Windows portable app includes its own local API. The default Android build now calls providers directly and stores keys securely on the phone; no Pramana backend is required for those features. An optional backend-mode Android build needs a remotely reachable HTTPS API for provider credentials, local scripture retrieval, web-search tools and live sessions. The current vault stores encrypted profiles in files; deployment requires persistent writable storage. This configuration targets one always-on Docker instance with a persistent disk. It does not claim a stateless Vercel deployment is ready; a durable database-backed vault and distributed session/rate-limit coordination would be needed for that deployment shape.
 
 ## Build and run
 
@@ -20,7 +20,7 @@ On Render, use the blueprint from the repository and keep auto-deployment disabl
 
 ## Mobile configuration
 
-Build the Expo app with `EXPO_PUBLIC_API_URL=https://<your-api-host>`. That value is public configuration, not a key. The current APK contains the localhost development URL; it will need a rebuild after the hosting URL is known. The app sends settings bearer tokens only in headers or the live socket's first message; provider keys remain encrypted server-side.
+For the optional backend mode, build Expo with `EXPO_PUBLIC_CONNECTION_MODE=backend` and `EXPO_PUBLIC_API_URL=https://<your-api-host>`. That value is public configuration, not a key. A backend-mode APK must be rebuilt with the hosting URL; default device-mode APKs do not use localhost for AI features. The app sends settings bearer tokens only in headers or the live socket's first message; provider keys remain encrypted server-side.
 
 Real Gemini key/voice testing requires saving a key through the app connected to that backend. No Gemini key is configured in this workspace. Do not paste keys into chat.
 
