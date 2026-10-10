@@ -5,7 +5,7 @@ import cors from "@fastify/cors";
 import { mkdir, appendFile } from "node:fs/promises";
 import { randomUUID } from "node:crypto";
 import { fileURLToPath } from "node:url";
-const dataDirectory = fileURLToPath(new URL("../data/", import.meta.url));
+const dataDirectory = process.env.PRAMANA_DATA_DIR || fileURLToPath(new URL("../data/", import.meta.url));
 import { passages, works } from "./corpus";
 import { answerStrict, search } from "./engine";
 import { registerSettingsRoutes } from "./settings-routes";
@@ -136,4 +136,4 @@ app.post<{ Body: { passage_id: string; reason: string } }>(
   },
 );
 await registerSettingsRoutes(app);
-await app.listen({ port: Number(process.env.PORT || 3001), host: "0.0.0.0" });
+await app.listen({ port: Number(process.env.PORT || 3001), host: process.env.HOST || "0.0.0.0" });

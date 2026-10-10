@@ -1,3 +1,4 @@
+import { join } from "node:path";
 import type { FastifyInstance, FastifyRequest } from "fastify";
 import { fileURLToPath } from "node:url";
 import { SettingsVault, VaultError } from "./settings-vault";
@@ -12,7 +13,7 @@ import { speakWithFallback } from "./voice-router";
 import { answerStrict, verify } from "./engine";
 export async function registerSettingsRoutes(app: FastifyInstance) {
   const vault = new SettingsVault(
-    fileURLToPath(new URL("../data/settings/", import.meta.url)),
+    process.env.PRAMANA_DATA_DIR ? join(process.env.PRAMANA_DATA_DIR, "settings") : fileURLToPath(new URL("../data/settings/", import.meta.url)),
     process.env.SETTINGS_MASTER_KEY,
   );
   await vault.init();
