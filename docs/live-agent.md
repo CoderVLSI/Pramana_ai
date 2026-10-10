@@ -22,3 +22,5 @@ Official references reviewed:
 - [OpenAI Realtime server events](https://developers.openai.com/api/reference/resources/realtime/server-events)
 
 OpenAI parallel function results are queued. The adapter waits for the original response to finish and all pending tools to resolve, then sends every function output followed by one continuation request. Duplicate call IDs do not dispatch again; interrupted tool rounds do not automatically resume.
+
+When enabled, a local scripture-tool miss automatically performs a grounded text web search using the selected provider. The result has `fallback_from: local_scripture`, `local_source_status: not_verified`, and external source status. The live web-search switch disables this automatic fallback. Text `/v1/study` and tap-to-talk use the same dispatcher after an empty local result; web evidence never enters approved local citations. Gemini REST grounding requires search queries and HTTPS grounding links; OpenAI requires an executed search call and HTTPS citations.

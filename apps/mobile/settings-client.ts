@@ -131,7 +131,8 @@ export const requestAppConversation = async (
   );
 
 export interface VoiceTurn {
-  kind: "app_conversation" | "verified_scripture" | "source_status";
+  kind: "app_conversation" | "verified_scripture" | "source_status" | "external_web";
+  web?: WebFallback;
   text: string;
   answer?: import("../../packages/citation-schema").Answer;
   provider: Provider;
@@ -163,4 +164,9 @@ export async function liveSessionCredentials(): Promise<{
   endpoint.hash = "";
   endpoint.protocol = endpoint.protocol === "https:" ? "wss:" : "ws:";
   return { url: endpoint.toString(), token: await settingsToken() };
+}
+
+export interface WebFallback { search_entry_point?: string; search_queries?: string[]; source_status: string; text?: string; evidence?: { url: string; title: string }[]; error?: string; note?: string; }
+export async function requestStudy(body: { query: string; work_ids: string[] }): Promise<{ answer: import("../../packages/citation-schema").Answer; web?: WebFallback }> {
+  return raw("/v1/study", "POST", body, await settingsToken(), 45000);
 }

@@ -88,7 +88,7 @@ function sourcesFrom(result: unknown, name: string): Source[] {
     data.results,
     data.evidence,
   ].find(Array.isArray) as unknown[] | undefined;
-  const isWeb = /web|internet/.test(name);
+  const isWeb = /web|internet/.test(name) || data.source_status === "external_web_unverified";
   return (candidates || []).slice(0, 8).flatMap((entry) => {
     if (!entry || typeof entry !== "object") return [];
     const source = entry as Record<string, unknown>;

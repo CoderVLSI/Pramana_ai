@@ -149,7 +149,7 @@ export function attachLiveSessions(
             return;
           }
           active.set(identity, ws);
-          const tools = new LiveToolDispatcher(profile);
+          const tools = new LiveToolDispatcher(profile, globalThis.fetch, event.enable_web_search === true);
           agent = createAgent({
             profile,
             preferredName: event.preferred_name,

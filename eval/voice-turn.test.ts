@@ -91,7 +91,8 @@ test("voice turns distinguish local, fixed status and approved scripts with exac
     assert.equal(r.json().kind, "source_status");
     assert.match(spoken.at(-1)!, /^I could not verify an answer/);
     assert.equal(r.json().answer.safe_to_speak, false);
-    assert.equal(chatCalls, 2);
+    assert.equal(chatCalls, 4); // Missing local evidence attempts grounded web fallback.
+    assert.equal(r.json().web.source_status, "tool_unavailable");
     passages[0].review_status = "approved";
     passages[0].audio_allowed = true;
     mode = "capacity";

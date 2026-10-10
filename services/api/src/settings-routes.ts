@@ -1,3 +1,4 @@
+import { LiveToolDispatcher } from "./live-tools";
 import { attachLiveSessions } from "./live-session";
 import { join } from "node:path";
 import type { FastifyInstance, FastifyRequest } from "fastify";
@@ -42,6 +43,20 @@ export async function registerSettingsRoutes(
     transport(req);
     return req.headers.authorization?.replace(/^Bearer /, "") || "";
   }
+  app.post<{ Body: { query: string; work_ids?: string[]; edition_ids?: string[] } }>("/v1/study", {
+    schema: { body: { type: "object", required: ["query"], additionalProperties: false, properties: {
+      query: { type: "string", minLength: 1, maxLength: 1000, pattern: "\\S" },
+      work_ids: { type: "array", maxItems: 160, items: { type: "string", maxLength: 120 } },
+      edition_ids: { type: "array", maxItems: 160, items: { type: "string", maxLength: 120 } }
+    } } }
+  }, async (req, reply) => {
+    reply.header("Cache-Control", "no-store");
+    const profile = await vault.read(token(req));
+    const answer = answerStrict(req.body.query, req.body);
+    if (answer.citations.length) return { answer };
+    const web = await new LiveToolDispatcher(profile, options.chatFetch).dispatch("web_search", { query: req.body.query });
+    return { answer, web, fallback_from: "local_scripture" };
+  });
   app.post<{ Body: { query: string; preferred_name?: string } }>(
     "/v1/chat",
     {
@@ -156,7 +171,8 @@ export async function registerSettingsRoutes(
       const key = profile[provider].api_key;
       let text: string;
       let answer: ReturnType<typeof answerStrict> | undefined;
-      let kind: "app_conversation" | "verified_scripture" | "source_status";
+      let kind: "app_conversation" | "verified_scripture" | "source_status" | "external_web";
+      let web: Record<string, unknown> | undefined;
       let note: string | undefined;
       if (isAppConversation(req.body.query)) {
         kind = "app_conversation";
@@ -198,11 +214,20 @@ export async function registerSettingsRoutes(
               .map((p) => p.reference + ". " + p.translation)
               .join(" ")
           : "I could not verify an answer in the selected scripture collection. Please check the source review status in Library.";
+        if (!answer.citations.length) {
+          web = await new LiveToolDispatcher(profile, options.chatFetch).dispatch("web_search", { query: req.body.query });
+          if (web.source_status === "external_web_unverified" && typeof web.text === "string") {
+            kind = "external_web";
+            text = "External web search result, not verified scripture. " + web.text;
+            note = "No local passage matched. This answer comes from external web search; check the linked sources.";
+          }
+        }
       }
       if (!key)
         return {
           text,
           answer,
+          web,
           kind,
           provider,
           audio: null,
@@ -219,6 +244,7 @@ export async function registerSettingsRoutes(
         return {
           text,
           answer,
+          web,
           kind,
           provider: audio.provider,
           audio,
@@ -228,6 +254,7 @@ export async function registerSettingsRoutes(
         return {
           text,
           answer,
+          web,
           kind,
           provider,
           audio: null,

@@ -68,6 +68,7 @@ export class LiveToolDispatcher {
   constructor(
     private profile: Profile,
     private request: typeof fetch = globalThis.fetch,
+    private autoWebFallback = false,
   ) {}
   beginTurn() {
     this.turnCalls = 0;
@@ -114,11 +115,12 @@ export class LiveToolDispatcher {
           !answer.citations.length ||
           answer.citations.some((p) => p.review_status !== "approved")
         )
-          return {
-            source_status: "not_verified",
-            evidence: [],
-            note: "No reviewed matching scripture evidence was retrieved. Development fixtures are excluded.",
-          };
+          return this.autoWebFallback
+            ? { ...(await this.dispatch("web_search", { query: args.query })), local_source_status: "not_verified", fallback_from: "local_scripture" }
+            : {
+                source_status: "not_verified", evidence: [],
+                note: "No reviewed matching scripture evidence was retrieved. Development fixtures are excluded.",
+              };
         return {
           source_status: "reviewed_excerpt",
           corpus_release: answer.corpus_release,
@@ -138,6 +140,25 @@ export class LiveToolDispatcher {
         };
       }
       if (name !== "web_search") throw Error("Unknown tool");
+      if (this.profile.active_provider === "gemini") {
+        const key = this.profile.gemini.api_key;
+        if (!key) return { source_status: "web_unavailable", error: "Add your Gemini API key in Settings to enable web search." };
+        const signal = AbortSignal.timeout(15000);
+        const headers = { "x-goog-api-key": key, "Content-Type": "application/json" };
+        const listing = await boundedJSON(await this.request("https://generativelanguage.googleapis.com/v1beta/models?pageSize=1000", { headers, signal }));
+        const model = (listing.models ?? []).filter((m: any) => typeof m.name === "string" && /^models\/gemini-[a-z0-9.-]+$/.test(m.name) && m.supportedGenerationMethods?.includes("generateContent") && /flash/.test(m.name) && !/live|audio|image|tts|embedding/.test(m.name)).sort((a: any, b: any) => b.name.localeCompare(a.name, undefined, { numeric: true }))[0]?.name;
+        if (!model) return { source_status: "web_unavailable", error: "No accessible Gemini web-search text model was found." };
+        const result = await boundedJSON(await this.request(`https://generativelanguage.googleapis.com/v1beta/${model}:generateContent`, { method: "POST", headers, signal, body: JSON.stringify({ contents: [{ role: "user", parts: [{ text: args.query }] }], tools: [{ google_search: {} }], generationConfig: { maxOutputTokens: 1200 }, systemInstruction: { parts: [{ text: "Search the web to answer. Distinguish scripture editions and interpretations. Do not invent verses or claim external results are verified Gita Press passages." }] } }) }));
+        const candidate = result.candidates?.[0], grounding = candidate?.groundingMetadata;
+        const evidence: { url: string; title: string }[] = [];
+        for (const chunk of grounding?.groundingChunks ?? []) {
+          try { const url = new URL(chunk.web?.uri); if (url.protocol === "https:" && !url.username && !url.password && url.href.length <= 2000 && evidence.length < 8 && !evidence.some(e => e.url === url.href)) evidence.push({ url: url.href, title: String(chunk.web?.title || "Web source").slice(0, 200) }); } catch { /* invalid grounding link */ }
+        }
+        if (!grounding?.webSearchQueries?.length || !evidence.length) throw Error("No executed grounded search evidence");
+        const text = (candidate.content?.parts ?? []).filter((p: any) => typeof p.text === "string").map((p: any) => p.text).join("\n").slice(0, 5000);
+        if (!text) throw Error("No web result text");
+        return { source_status: "external_web_unverified", text, evidence, search_entry_point: typeof grounding.searchEntryPoint?.renderedContent === "string" && grounding.searchEntryPoint.renderedContent.length <= 30000 ? grounding.searchEntryPoint.renderedContent : undefined, search_queries: grounding.webSearchQueries.slice(0, 5).map((q: unknown) => String(q).slice(0, 250)), note: "External web results are not approved scripture citations." };
+      }
       const key = this.profile.openai.api_key;
       if (!key)
         return {

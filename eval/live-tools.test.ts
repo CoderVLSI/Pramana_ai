@@ -212,3 +212,35 @@ test("live session authenticates, scopes tools, rejects malformed PCM, and close
     await app.close();
   }
 });
+
+test("local miss automatically searches selected Gemini provider and labels fallback externally", async () => {
+  const calls: { url: string; init?: RequestInit }[] = [];
+  const request: typeof fetch = async (input, init) => {
+    calls.push({ url: String(input), init });
+    return Response.json(calls.length === 1 ? { models: [{ name: "models/gemini-2.5-flash", supportedGenerationMethods: ["generateContent"] }] } : { candidates: [{ content: { parts: [{ text: "External explanation" }] }, groundingMetadata: { webSearchQueries: ["Vishnu"], groundingChunks: [{ web: { uri: "https://example.org/vishnu", title: "Source" } }] } }] });
+  };
+  const gemini: Profile = { ...profile, active_provider: "gemini", gemini: { ...profile.gemini, api_key: "gemini-private-key" } };
+  const result = await new LiveToolDispatcher(gemini, request, true).dispatch("search_scripture", { query: "Vishnu", work_ids: ["vishnu-purana"] });
+  assert.equal(result.fallback_from, "local_scripture");
+  assert.equal(result.source_status, "external_web_unverified");
+  assert.equal(result.local_source_status, "not_verified");
+  assert.equal(calls.length, 2);
+  assert.match(calls[1].url, /generateContent$/);
+  assert.deepEqual(JSON.parse(String(calls[1].init?.body)).tools, [{ google_search: {} }]);
+  assert.ok(!JSON.stringify(result).includes("gemini-private-key"));
+  const disabled = await new LiveToolDispatcher(gemini, request, false).dispatch("search_scripture", { query: "Vishnu" });
+  assert.equal(disabled.source_status, "not_verified");
+  assert.equal(calls.length, 2);
+});
+
+test("Gemini fallback rejects ungrounded output and unavailable keys", async () => {
+  const gemini: Profile = { ...profile, active_provider: "gemini", gemini: { ...profile.gemini, api_key: "private-key" } };
+  let count = 0;
+  const request: typeof fetch = async () => Response.json(++count === 1 ? { models: [{ name: "models/gemini-2.5-flash", supportedGenerationMethods: ["generateContent"] }] } : { candidates: [{ content: { parts: [{ text: "Invented result" }] } }] });
+  const result = await new LiveToolDispatcher(gemini, request, true).dispatch("search_scripture", { query: "missing" });
+  assert.equal(result.source_status, "tool_unavailable");
+  assert.equal(result.text, undefined);
+  const noKey = await new LiveToolDispatcher({ ...gemini, gemini: { ...gemini.gemini, api_key: undefined } }, request, true).dispatch("search_scripture", { query: "missing" });
+  assert.equal(noKey.source_status, "web_unavailable");
+  assert.equal(count, 2);
+});

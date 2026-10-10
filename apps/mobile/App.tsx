@@ -1,8 +1,11 @@
+import WebSearchSuggestions from "./WebSearchSuggestions";
 import ProfileAvatar, { normalizeAvatar } from "./ProfileAvatar";
 import LiveConversation from "./LiveConversation";
 import VoiceMode from "./VoiceMode";
 import { isAppConversation } from "../../packages/citation-schema/conversation";
 import {
+  requestStudy,
+  type WebFallback,
   requestAppConversation,
   requestVoiceTurn,
   type AppConversation,
@@ -25,6 +28,7 @@ import SettingsScreen from "./SettingsScreen";
 import RishiPreview from "./RishiAvatar";
 import React, { useEffect, useState } from "react";
 import {
+  Linking,
   ScrollView,
   View,
   Text,
@@ -161,6 +165,7 @@ function StudyApp() {
     [reason, setReason] = useState(""),
     [notice, setNotice] = useState(""),
     [ready, setReady] = useState(false);
+  const [webFallback, setWebFallback] = useState<WebFallback | null>(null);
   const [profile, setProfile] = useState<StudyProfile>(EMPTY_PROFILE);
   useEffect(() => {
     if (tab !== "Study") setLiveMode(false);
@@ -258,6 +263,7 @@ function StudyApp() {
     setBusy(true);
     setError("");
     setAnswer(null);
+    setWebFallback(null);
     setConversation(null);
     setReader(null);
     setTab("Study");
@@ -284,6 +290,7 @@ function StudyApp() {
             connection_status: turn.audio ? "connected" : "failed",
             note: turn.note,
           });
+        setWebFallback(turn.web || null);
         setNotice(turn.note || "");
         setVoiceResponse({
           id: Date.now(),
@@ -297,8 +304,7 @@ function StudyApp() {
         setConversation(await requestAppConversation(text, profile.name));
         return;
       }
-      setAnswer(
-        await request("/v1/questions", {
+      const result = await requestStudy({
           query: text,
           work_ids:
             scope === GITA_PRESS_SCOPE
@@ -306,8 +312,9 @@ function StudyApp() {
               : scope === UPANISHAD_SCOPE
                 ? UPANISHAD_TARGETS.map(([id]) => id)
                 : [scope],
-        }),
-      );
+        });
+      setAnswer(result.answer);
+      setWebFallback(result.web || null);
     } catch (e) {
       setError((e as Error).message);
     } finally {
@@ -807,6 +814,13 @@ function StudyApp() {
                       </Text>
                     </View>
                     <Text style={s.body}>{answer.answer}</Text>
+                    {webFallback && <View style={{ marginTop: 16, padding: 18, borderRadius: 14, backgroundColor: "#edf0e5" }}>
+                      <Text style={s.sectionTitle}>Web search fallback</Text>
+                      <Text style={s.small}>No local passage matched. External web sources are not verified scripture.</Text>
+                      <Text style={[s.body, { marginTop: 12 }]}>{webFallback.text || webFallback.error || "Web search returned no cited result."}</Text>
+                      <WebSearchSuggestions html={webFallback.search_entry_point} />
+                      {(webFallback.evidence || []).map(source => <Pressable key={source.url} accessibilityRole="link" onPress={() => { try { const url = new URL(source.url); if (url.protocol === "https:" && !url.username && !url.password) void Linking.openURL(url.href).catch(() => setError("Could not open this source.")); } catch { setError("Invalid source link."); } }} style={s.secondary}><Text style={[s.body, { textDecorationLine: "underline" }]}>{source.title}</Text></Pressable>)}
+                    </View>}
                     {answer.citations.map((p) => (
                       <PassageCard
                         saved={saved}
