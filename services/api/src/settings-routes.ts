@@ -9,13 +9,13 @@ import {
   type Provider,
 } from "./provider-models";
 import { testProvider } from "./voice-providers";
-import { speakWithFallback } from "./voice-router";
+import { speakWithFallback, type Speak } from "./voice-router";
 import { answerStrict, verify } from "./engine";
 import { generateWelcome, ChatProviderError } from "./chat-provider";
 import { isAppConversation } from "../../../packages/citation-schema/conversation";
 export async function registerSettingsRoutes(
   app: FastifyInstance,
-  options: { chatFetch?: typeof globalThis.fetch } = {},
+  options: { chatFetch?: typeof globalThis.fetch; voiceSpeak?: Speak } = {},
 ) {
   const vault = new SettingsVault(
     process.env.PRAMANA_DATA_DIR
@@ -63,12 +63,10 @@ export async function registerSettingsRoutes(
     async (req, reply) => {
       reply.header("Cache-Control", "no-store");
       if (!isAppConversation(req.body.query))
-        return reply
-          .code(422)
-          .send({
-            error:
-              "Use the scripture-question endpoint for source-based questions.",
-          });
+        return reply.code(422).send({
+          error:
+            "Use the scripture-question endpoint for source-based questions.",
+        });
       const profile = await vault.read(token(req));
       const provider = profile.active_provider;
       const key = profile[provider].api_key;
@@ -112,13 +110,143 @@ export async function registerSettingsRoutes(
       }
     },
   );
+  app.post<{
+    Body: {
+      query: string;
+      preferred_name?: string;
+      work_ids?: string[];
+      edition_ids?: string[];
+    };
+  }>(
+    "/v1/voice/turn",
+    {
+      schema: {
+        body: {
+          type: "object",
+          required: ["query"],
+          additionalProperties: false,
+          properties: {
+            query: {
+              type: "string",
+              minLength: 1,
+              maxLength: 2000,
+              pattern: "\\S",
+            },
+            preferred_name: { type: "string", maxLength: 80 },
+            work_ids: {
+              type: "array",
+              maxItems: 160,
+              items: { type: "string", maxLength: 200 },
+            },
+            edition_ids: {
+              type: "array",
+              maxItems: 160,
+              items: { type: "string", maxLength: 200 },
+            },
+          },
+        },
+      },
+    },
+    async (req, reply) => {
+      reply.header("Cache-Control", "no-store");
+      const profile = await vault.read(token(req));
+      const provider = profile.active_provider;
+      const key = profile[provider].api_key;
+      let text: string;
+      let answer: ReturnType<typeof answerStrict> | undefined;
+      let kind: "app_conversation" | "verified_scripture" | "source_status";
+      let note: string | undefined;
+      if (isAppConversation(req.body.query)) {
+        kind = "app_conversation";
+        text =
+          "Hello! What would you like to study? You can ask a scripture question or explore the Library.";
+        if (key) {
+          try {
+            text = (
+              await generateWelcome({
+                provider,
+                key,
+                query: req.body.query,
+                name: req.body.preferred_name,
+                fetch: options.chatFetch,
+              })
+            ).message;
+          } catch (error) {
+            note =
+              "This is a local greeting. " +
+              (error instanceof ChatProviderError
+                ? error.message
+                : "Text provider unavailable.");
+          }
+        } else
+          note =
+            "This is a local greeting. Add your provider API key in Settings to enable voice.";
+      } else {
+        answer = answerStrict(req.body.query, req.body);
+        const approved =
+          answer.safe_to_speak &&
+          answer.citations.length > 0 &&
+          answer.citations.every(
+            (p) => p.review_status === "approved" && p.audio_allowed === true,
+          ) &&
+          verify(answer, answer.citations);
+        kind = approved ? "verified_scripture" : "source_status";
+        text = approved
+          ? answer.citations
+              .map((p) => p.reference + ". " + p.translation)
+              .join(" ")
+          : "I could not verify an answer in the selected scripture collection. Please check the source review status in Library.";
+      }
+      if (!key)
+        return {
+          text,
+          answer,
+          kind,
+          provider,
+          audio: null,
+          note:
+            note ??
+            "Add your selected provider API key in Settings to enable voice.",
+        };
+      try {
+        const audio = await speakWithFallback(
+          profile,
+          text,
+          options.voiceSpeak,
+        );
+        return {
+          text,
+          answer,
+          kind,
+          provider: audio.provider,
+          audio,
+          ...(note ? { note } : {}),
+        };
+      } catch {
+        return {
+          text,
+          answer,
+          kind,
+          provider,
+          audio: null,
+          note: [
+            note,
+            "Voice could not be completed or its wording could not be verified. Your text response is still available. Check the API key, model access and quota in Settings.",
+          ]
+            .filter(Boolean)
+            .join(" "),
+        };
+      }
+    },
+  );
   app.get("/v1/voice/models", async () => ({
     models: providerModels,
     researched_on: modelResearchDate,
     mode: "strict_verified_script",
-    voice_ready: false,
+    voice_ready: true,
+    approved_source_audio_ready: false,
     reason:
-      "The development corpus has no approved sources. Live microphone input is not connected.",
+      "Voice turns support greetings and source-status messages. Scripture audio requires approved, audio-enabled sources; the current corpus remains unapproved.",
   }));
   app.post("/v1/settings/session", async (req, reply) => {
     transport(req);

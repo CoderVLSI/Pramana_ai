@@ -12,4 +12,4 @@ The default development backend is localhost; on a phone that refers to the phon
 
 ## Verified build result
 
-Local `assembleRelease` succeeded: 274 tasks, arm64-v8a, package org.pramana.study, version 0.1.0/code 1, minimum Android API 24 and target API 36. `apksigner verify --verbose` passed APK signature scheme v2. APK is approximately 29 MB, saved as `/workspace/Pramana-preview.apk`. SHA-256: `49baf615feb3dc0cc150a89caa369d23edc28f83f798425d003aca1edf9633f0`. Not tested on a physical phone; development backend limitations above remain.
+Local `assembleRelease` succeeded with voice recognition and playback modules: 335 tasks, arm64-v8a, package org.pramana.study, version 0.1.0/code 1, minimum API24 and target API36. APK signature verification passes with development signing; RECORD_AUDIO is declared. APK bytes: 33820698, saved as `/workspace/Pramana-preview.apk`. SHA-256: `77425bd6ff78fe95a6ff8684dd0ac04bbd9fdd7892632545d9ba86da65ba150d`. Not tested on a physical phone; the reachable-backend requirement above remains. This is a test build, not a Play Store release.

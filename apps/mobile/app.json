@@ -25,7 +25,14 @@
       "backgroundColor": "#143D29"
     },
     "plugins": [
-      "expo-secure-store"
+      "expo-secure-store",
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "Allow Pramana to transcribe questions you choose to speak.",
+          "speechRecognitionPermission": "Allow Pramana to turn your spoken questions into text."
+        }
+      ]
     ]
   }
 }

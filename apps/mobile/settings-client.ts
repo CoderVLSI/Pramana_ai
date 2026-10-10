@@ -28,9 +28,10 @@ async function raw(
   method = "GET",
   body?: unknown,
   token?: string,
+  timeoutMs = 12000,
 ) {
   const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), 12000);
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
   try {
     const r = await fetch(API + path, {
       signal: controller.signal,
@@ -128,3 +129,25 @@ export const requestAppConversation = async (
     { query, ...(preferredName ? { preferred_name: preferredName } : {}) },
     await settingsToken(),
   );
+
+export interface VoiceTurn {
+  kind: "app_conversation" | "verified_scripture" | "source_status";
+  text: string;
+  answer?: import("../../packages/citation-schema").Answer;
+  provider: Provider;
+  audio: null | {
+    audio_base64: string;
+    mime_type: "audio/wav";
+    transcript: string;
+    provider: Provider;
+    model: string;
+    fallback_used: boolean;
+  };
+  note?: string;
+}
+export const requestVoiceTurn = async (body: {
+  query: string;
+  preferred_name?: string;
+  work_ids: string[];
+}): Promise<VoiceTurn> =>
+  raw("/v1/voice/turn", "POST", body, await settingsToken(), 75000);

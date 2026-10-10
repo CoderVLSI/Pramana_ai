@@ -1,6 +1,8 @@
+import VoiceMode from "./VoiceMode";
 import { isAppConversation } from "../../packages/citation-schema/conversation";
 import {
   requestAppConversation,
+  requestVoiceTurn,
   type AppConversation,
 } from "./settings-client";
 import ProfileScreen, {
@@ -133,6 +135,14 @@ function StudyApp() {
     [answer, setAnswer] = useState<Answer | null>(null),
     [conversation, setConversation] = useState<AppConversation | null>(null),
     [busy, setBusy] = useState(false),
+    [voiceEnabled, setVoiceEnabled] = useState(false),
+    [speaking, setSpeaking] = useState(false),
+    [voiceResponse, setVoiceResponse] = useState<{
+      id: number;
+      text: string;
+      audio?: { audio_base64: string; mime_type: string } | null;
+      note?: string;
+    } | null>(null),
     [error, setError] = useState(""),
     [reader, setReader] = useState<(Passage & { context?: Passage[] }) | null>(
       null,
@@ -149,8 +159,14 @@ function StudyApp() {
     [notice, setNotice] = useState(""),
     [ready, setReady] = useState(false);
   const [profile, setProfile] = useState<StudyProfile>(EMPTY_PROFILE);
+  useEffect(() => {
+    if (tab !== "Study" && voiceResponse) setVoiceResponse(null);
+  }, [tab, voiceResponse]);
   const [profileReady, setProfileReady] = useState(false);
   const [setup, setSetup] = useState(false);
+  useEffect(() => {
+    setVoiceEnabled(profile.mode === "Voice + text");
+  }, [profile.mode]);
   useEffect(() => {
     AsyncStorage.getItem(PROFILE_KEY)
       .then((raw) => {
@@ -240,6 +256,36 @@ function StudyApp() {
     setTab("Study");
     setQuery(text);
     try {
+      if (voiceEnabled) {
+        const turn = await requestVoiceTurn({
+          query: text,
+          ...(profile.name ? { preferred_name: profile.name } : {}),
+          work_ids:
+            scope === GITA_PRESS_SCOPE
+              ? MAHAPURANA_TARGETS.map(([id]) => id)
+              : scope === UPANISHAD_SCOPE
+                ? UPANISHAD_TARGETS.map(([id]) => id)
+                : [scope],
+        });
+        if (turn.answer) setAnswer(turn.answer);
+        else
+          setConversation({
+            kind: "app_conversation",
+            message: turn.text,
+            provider: turn.audio?.provider || turn.provider,
+            model: turn.audio?.model,
+            connection_status: turn.audio ? "connected" : "failed",
+            note: turn.note,
+          });
+        setNotice(turn.note || "");
+        setVoiceResponse({
+          id: Date.now(),
+          text: turn.text,
+          audio: turn.audio,
+          note: turn.note,
+        });
+        return;
+      }
       if (isAppConversation(text)) {
         setConversation(await requestAppConversation(text, profile.name));
         return;
@@ -466,7 +512,7 @@ function StudyApp() {
                   Explore scripture with care. Ask a question, find the passage,
                   {"\n"}and make room for a deeper understanding.
                 </Text>
-                <RishiPreview />
+                <RishiPreview speaking={speaking} />
                 <View style={s.composer}>
                   <TextInput
                     accessibilityLabel="Ask a scripture question"
@@ -490,16 +536,24 @@ function StudyApp() {
                   >
                     <Pressable
                       style={s.row}
-                      onPress={() =>
-                        setNotice(
-                          "Voice is gated until the corpus is reviewed and a provider is configured.",
-                        )
-                      }
-                      accessibilityLabel="Voice availability"
+                      disabled={busy}
+                      accessibilityRole="switch"
+                      accessibilityState={{ checked: voiceEnabled }}
+                      accessibilityLabel="Voice mode"
+                      onPress={() => {
+                        setVoiceEnabled((value) => !value);
+                        setVoiceResponse(null);
+                        setSpeaking(false);
+                      }}
                     >
-                      <Icon name="mic-outline" size={20} />
+                      <Icon
+                        name={
+                          voiceEnabled ? "volume-high-outline" : "mic-outline"
+                        }
+                        size={20}
+                      />
                       <Text style={[s.small, { marginLeft: 8 }]}>
-                        Voice · coming after review
+                        Voice mode · {voiceEnabled ? "on" : "off"}
                       </Text>
                     </Pressable>
                     <Pressable
@@ -516,9 +570,11 @@ function StudyApp() {
                       ) : (
                         <>
                           <Text style={s.buttonText}>
-                            {isAppConversation(query)
-                              ? "Send message"
-                              : "Find sources"}
+                            {voiceEnabled
+                              ? "Ask aloud"
+                              : isAppConversation(query)
+                                ? "Send message"
+                                : "Find sources"}
                           </Text>
                           <Icon name="arrow-forward" size={16} color="white" />
                         </>
@@ -600,6 +656,7 @@ function StudyApp() {
                         onPress={() => {
                           setScope(id);
                           setConversation(null);
+                          setVoiceResponse(null);
                           setShowSources(false);
                           setAnswer(null);
                         }}
@@ -610,6 +667,22 @@ function StudyApp() {
                       </Pressable>
                     ))}
                   </View>
+                )}
+                {voiceEnabled && (
+                  <VoiceMode
+                    busy={busy}
+                    language={
+                      profile.language === "Hindi"
+                        ? "hi-IN"
+                        : profile.language === "Sanskrit"
+                          ? "sa-IN"
+                          : "en-IN"
+                    }
+                    onTranscript={setQuery}
+                    onSpeakingChange={setSpeaking}
+                    response={voiceResponse}
+                    onNotice={setNotice}
+                  />
                 )}
                 {scope !== "bhagavad-gita" && !answer && !conversation && (
                   <View style={s.info}>
@@ -631,9 +704,11 @@ function StudyApp() {
                 )}
                 {busy && (
                   <Text style={[s.body, { marginTop: 24 }]}>
-                    {isAppConversation(query)
-                      ? "Connecting to your provider…"
-                      : "Finding passages and checking citations…"}
+                    {voiceEnabled
+                      ? "Checking sources and preparing a spoken reply…"
+                      : isAppConversation(query)
+                        ? "Connecting to your provider…"
+                        : "Finding passages and checking citations…"}
                   </Text>
                 )}
                 {conversation && (
@@ -653,8 +728,8 @@ function StudyApp() {
                       </Text>
                     )}
                     <Text style={[s.small, { marginTop: 12 }]}>
-                      Scripture questions use verified passages. Live voice is
-                      still pending.
+                      Scripture questions use verified passages. Enable Voice
+                      mode for spoken replies.
                     </Text>
                   </View>
                 )}
@@ -920,8 +995,8 @@ function StudyApp() {
                   <Text style={s.body}>
                     Choose precise editions, clear usage rights, complete
                     independent review, and pass the edition-aware benchmark.
-                    Voice narration stays gated until reviewed sources and a
-                    provider are available.
+                    Scripture narration requires reviewed, audio-enabled sources
+                    and a provider are available.
                   </Text>
                 </View>
                 <Text style={s.small}>

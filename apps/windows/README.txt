@@ -9,7 +9,7 @@ Windows 10/11, 64-bit. This is a portable browser-based app with an included loc
 
 No Expo account or Node.js installation is required to run this preview.
 
-Included: preferred-name setup, local study preferences, source library, bookmarks, API-key settings and animated Rishi preview. The five Bhagavad Gita development fixtures can be searched locally. Mahapuranas, epics, Vedas and Upanishads are source targets awaiting verified text; this package does not contain their full scripture corpora. Live voice playback remains pending.
+Included: preferred-name setup, local study preferences, source library, bookmarks, API-key settings and animated Rishi preview. The five Bhagavad Gita development fixtures can be searched locally. Mahapuranas, epics, Vedas and Upanishads are source targets awaiting verified text; this package does not contain their full scripture corpora. Voice mode supports tap-to-talk, editable transcripts, spoken greetings/source-status replies and reviewed audio-enabled passages. Enable Voice mode, tap Speak your question, then press Ask aloud. Provider failures fall back to device speech with a visible explanation. This is not continuous duplex voice or web-grounded search.
 
 Reading preferences use the browser's local storage. API credentials and feedback use the local backend; provider keys are encrypted on disk under %LOCALAPPDATA%\Pramana\data. Keep this directory private. Provider connection checks require internet access. Backend and web server bind to the computer's loopback interface only, on ports 3001 and 8081. If another program uses these ports, close that program or stop another Pramana instance first.
 
