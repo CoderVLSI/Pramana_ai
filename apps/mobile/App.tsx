@@ -1,3 +1,4 @@
+import { selectionHaptic } from "./haptics";
 import WebSearchSuggestions from "./WebSearchSuggestions";
 import ProfileAvatar, { normalizeAvatar } from "./ProfileAvatar";
 import LiveConversation from "./LiveConversation";
@@ -351,6 +352,7 @@ function StudyApp() {
     }
   }
   function toggle(p: Passage) {
+    void selectionHaptic();
     setSaved((s) =>
       s.includes(p.id) ? s.filter((id) => id !== p.id) : [...s, p.id],
     );
@@ -1220,6 +1222,7 @@ function StudyApp() {
                   accessibilityLabel={name}
                   key={name}
                   onPress={() => {
+                    if (tab !== name) void selectionHaptic();
                     setTab(name);
                     setReader(null);
                   }}

@@ -1,3 +1,4 @@
+import { hapticsEnabled, setHapticsEnabled, selectionHaptic } from "./haptics";
 import React, { useEffect, useState } from "react";
 import ScripturePacks from "./ScripturePacks";
 import {
@@ -24,6 +25,16 @@ import {
   type PublicProfile,
 } from "./settings-client";
 export default function SettingsScreen() {
+  const [haptics, setHaptics] = useState(true);
+  useEffect(() => {
+    let active = true;
+    void hapticsEnabled().then((value) => {
+      if (active) setHaptics(value);
+    });
+    return () => {
+      active = false;
+    };
+  }, []);
   const [catalog, setCatalog] = useState<Catalog | null>(null),
     [profile, setProfile] = useState<PublicProfile | null>(null),
     [provider, setProvider] = useState<Provider>("openai"),
@@ -129,6 +140,26 @@ export default function SettingsScreen() {
       <Text style={s.intro}>
         Choose your provider, bring your own key, and set a backup plan.
       </Text>
+      {Platform.OS !== "web" && (
+        <View style={s.notice}>
+          <Text style={s.body}>Haptic feedback</Text>
+          <Text style={s.small}>
+            Subtle feedback when switching tabs or saving passages.
+          </Text>
+          <Switch
+            accessibilityLabel="Haptic feedback"
+            value={haptics}
+            onValueChange={(value) => {
+              setHaptics(value);
+              void setHapticsEnabled(value)
+                .then(() => {
+                  if (value) void selectionHaptic();
+                })
+                .catch(() => setError("Could not save the haptic preference."));
+            }}
+          />
+        </View>
+      )}
       {DEVICE_CONNECTIONS && <ScripturePacks />}
       <View style={s.notice}>
         <Text style={s.body}>
