@@ -33,3 +33,10 @@ Live notices and failure messages are now visible inside the Live card.
 77 tests, TypeScript and arm64 build pass. Final lifecycle guard confirmed in bundled APK.
 Phone/provider verification remains pending; not proven to resolve all connection failures.
 Latest SHA256: 31b8a93d88d82020c3fa29a43fc8a458333420abee3bbe74836b79d0fb639f72
+
+Android permissions update — 11 October 2026
+Source: 2da8ea7bd5979728b17eabe0e21d66820398553c
+Clean native rebuild restores RECORD_AUDIO; actual packaged APK permissions check passed.
+Launch requests microphone and notifications once, with retry/settings controls.
+Existing preview signing certificate preserved and verified. Phone prompts/provider flow remain untested.
+Current SHA256: 62334500f46794d46b52becef4e2a484fd31a4be332bb2754e91ea1d13301098
