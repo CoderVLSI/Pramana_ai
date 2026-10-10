@@ -25,3 +25,11 @@ Provider HTTP failures show sanitized categories; dark Live status contrast corr
 No real provider key used in workspace: phone/provider connection cause remains unconfirmed.
 Current APK size: 38445706 bytes
 Current SHA256: 8fa6063f05343eff80c058575bc40c3070eec7f83ab3864ed5615f758db9dd87
+
+Live permission lifecycle update — 11 October 2026
+Source: ea3ec59cb4307a77ef288db21005a342f839d5b4
+Protect startup from permission-dialog lifecycle events; preserve actual background stop.
+Live notices and failure messages are now visible inside the Live card.
+77 tests, TypeScript and arm64 build pass. Final lifecycle guard confirmed in bundled APK.
+Phone/provider verification remains pending; not proven to resolve all connection failures.
+Latest SHA256: 31b8a93d88d82020c3fa29a43fc8a458333420abee3bbe74836b79d0fb639f72
