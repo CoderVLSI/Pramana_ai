@@ -1,5 +1,5 @@
 Pramana Android device preview — 10 October 2026
-Source commit: 36768eb
+Source commit: 2b9441b
 No Pramana backend required for default Android AI connections.
 Settings: choose Gemini or OpenAI, enter your own key, Save, Test connection.
 Existing backend keys are not automatically copied; enter your key again on this phone.
@@ -7,5 +7,6 @@ API keys remain in Android secure storage. Provider requests use the internet an
 Regular replies use device speech. Live uses device-transcribed text and provider audio; real-phone/account validation is pending.
 No approved local scripture collections installed yet. Web results remain external and unverified.
 Test/debug signed, arm64, Android 7+. Not a Play Store release.
-Size: 37066803 bytes
-SHA256: 1ef4bd8eae1e8220877a4ebc8ee0b6cb324dedc81355026e8fdb27bf342a8ea7
+Startup fix: Expo Font aligned to SDK 54. Android 15 emulator fresh onboarding launch passed. Nord 4 retest pending.
+Size: 37066407 bytes
+SHA256: 80dae7e5e86db0080c7e24747f60603f3ad9058951460e6acf07583c5d2ec734
