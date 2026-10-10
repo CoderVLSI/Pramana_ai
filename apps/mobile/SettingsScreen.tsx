@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import ScripturePacks from "./ScripturePacks";
 import {
   View,
   Text,
@@ -128,6 +129,7 @@ export default function SettingsScreen() {
       <Text style={s.intro}>
         Choose your provider, bring your own key, and set a backup plan.
       </Text>
+      {DEVICE_CONNECTIONS && <ScripturePacks />}
       <View style={s.notice}>
         <Text style={s.body}>
           {DEVICE_CONNECTIONS

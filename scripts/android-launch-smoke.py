@@ -15,6 +15,7 @@ parser.add_argument('--boot-timeout', type=int, default=600)
 parser.add_argument('--launch-timeout', type=int, default=120)
 parser.add_argument('--install-timeout', type=int, default=600)
 parser.add_argument('--skip-install', action='store_true', help='Test an APK already installed by this workflow.')
+parser.add_argument('--install-filter', choices=['verify', 'speed-profile'], help='Optional Android 15 install compiler filter for software emulators.')
 args = parser.parse_args()
 if not args.serial.startswith('emulator-'):
     parser.error('This smoke test clears app data and only runs on an emulator serial.')
@@ -49,7 +50,8 @@ else:
 print('Emulator boot complete.', flush=True)
 if not args.skip_install:
     try:
-        result = command('install', '-r', str(args.apk.resolve()), timeout=args.install_timeout)
+        compiler = ['--dexopt-compiler-filter', args.install_filter] if args.install_filter else []
+        result = command('install', '-r', *compiler, str(args.apk.resolve()), timeout=args.install_timeout)
     except subprocess.TimeoutExpired:
         save_logs()
         raise SystemExit('FAIL: installation timed out; app startup has not been tested. See evidence directory.')

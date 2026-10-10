@@ -111,6 +111,7 @@ export class LiveToolDispatcher {
               };
         return {
           source_status: "reviewed_excerpt",
+          safe_to_speak: answer.safe_to_speak,
           corpus_release: answer.corpus_release,
           evidence: answer.citations.map((p) => ({
             id: p.id,

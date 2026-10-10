@@ -44,6 +44,7 @@ export class DeviceClient {
   constructor(
     private storage: SecretStorage,
     private request: typeof fetch = globalThis.fetch,
+    private retrieve?: (query: string, workIds: string[]) => Promise<Answer>,
   ) {}
   async credentials(): Promise<ProviderProfile> {
     await this.queue;
@@ -205,18 +206,25 @@ export class DeviceClient {
     };
   }
   async study(body: { query: string; work_ids: string[] }) {
-    const answer = missingLocalAnswer(body.query),
-      p = await this.credentials();
-    try {
-      return { answer, web: await searchWeb(p, body.query, this.request) };
-    } catch {
+    const answer = this.retrieve
+      ? await this.retrieve(body.query, body.work_ids)
+      : missingLocalAnswer(body.query);
+    if (answer.support_state === "DIRECT" && answer.citations.length)
       return {
         answer,
-        web: {
-          source_status: "web_unavailable",
-          error:
-            "Web search could not complete. Check your provider key, model access and quota in Settings.",
-        },
+        web: { source_status: "local_verified", text: undefined },
+      };
+    return { answer, web: await this.webSearch(body.query) };
+  }
+  async webSearch(query: string) {
+    const p = await this.credentials();
+    try {
+      return await searchWeb(p, query, this.request);
+    } catch {
+      return {
+        source_status: "web_unavailable",
+        error:
+          "Web search could not complete. Check your provider key, model access and quota in Settings.",
       };
     }
   }
@@ -236,6 +244,17 @@ export class DeviceClient {
       };
     }
     const result = await this.study(body);
+    if (result.answer.support_state === "DIRECT")
+      return {
+        kind: "verified_scripture" as const,
+        answer: result.answer,
+        text: result.answer.safe_to_speak
+          ? result.answer.claims.map((c) => c.text).join("\n\n")
+          : "Matching source passages are shown on screen. Audio permission is not recorded for these excerpts.",
+        provider,
+        audio: null,
+        note: "Retrieved from this phone’s installed scripture packs.",
+      };
     return {
       kind:
         result.web.source_status === "external_web_unverified"

@@ -380,8 +380,8 @@
       },
       "needs_script_repair": true,
       "approved_passages": 0,
-      "repaired_scan_pages": 16,
-      "scan_pages_without_local_repair": 768
+      "repaired_scan_pages": 25,
+      "scan_pages_without_local_repair": 759
     },
     {
       "source_id": "oriv-varaha-puran-illustrated-with-hindi-translations-g",
@@ -841,7 +841,7 @@
     }
   ],
   "new_repaired_pages_this_batch": 53,
-  "total_local_repaired_pages": 95,
+  "total_local_repaired_pages": 104,
   "validation": "16 Python ingest tests pass. Benchmarks are local offline lexical searches, not end-to-end AI latency or OCR accuracy measurements. Isha repair database has all 58 scan ordinals, passes integrity check and every page text matches its manifest hash; this does not establish OCR accuracy or mantra coverage.",
   "pending": [
     "Complete remaining wrong-script OCR repairs",
@@ -849,5 +849,17 @@
     "Map printed pages and verse/chapter hierarchy",
     "Compare OCR text against scans and record applicable usage evidence",
     "Load reviewed bundles into approved app retrieval"
-  ]
+  ],
+  "on_device_rag": {
+    "engine": "implemented",
+    "installed_approved_passages": 0,
+    "drafts_bundled": false,
+    "source_pack_release": "pending review"
+  },
+  "narada_latest_batch": {
+    "scan_range": "17-26",
+    "newly_repaired_pages": 9,
+    "repaired_scan_pages": 25,
+    "approved_passages": 0
+  }
 }

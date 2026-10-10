@@ -123,7 +123,11 @@ function PassageCard({
       <Text style={s.sanskrit}>{p.original}</Text>
       <Text style={s.body}>{p.translation}</Text>
       <View style={[s.row, { marginTop: 18 }]}>
-        <Text style={s.small}>Development rendering · Sanskrit fixture</Text>
+        <Text style={s.small}>
+          {p.review_status === "approved"
+            ? `${p.translator} · ${p.completeness ?? "coverage pending"} edition`
+            : "Development rendering · Sanskrit fixture"}
+        </Text>
         <Icon name="arrow-forward" size={18} />
       </View>
     </Pressable>
@@ -215,6 +219,23 @@ function StudyApp() {
       .catch(() => setError("Study preferences could not be loaded."))
       .finally(() => setProfileReady(true));
   }, []);
+  useEffect(() => {
+    if (tab !== "Library" && tab !== "Study") return;
+    let active = true;
+    void Promise.all([request("/v1/works"), request("/v1/passages")])
+      .then(([nextWorks, nextPassages]) => {
+        if (active) {
+          setWorks(nextWorks);
+          setAll(nextPassages);
+        }
+      })
+      .catch(() => {
+        if (active) setError("The source library could not be refreshed.");
+      });
+    return () => {
+      active = false;
+    };
+  }, [tab]);
   async function saveProfile(value: StudyProfile) {
     await AsyncStorage.setItem(
       PROFILE_KEY,
@@ -246,18 +267,6 @@ function StudyApp() {
       })
       .catch(() => setError("Saved passages could not be loaded."))
       .finally(() => setReady(true));
-    request("/v1/works")
-      .then(setWorks)
-      .catch(() => {});
-    request("/v1/passages")
-      .then(setAll)
-      .catch(() =>
-        setError(
-          DEVICE_CONNECTIONS
-            ? "The local library could not be loaded."
-            : "Start the API to connect to the development corpus.",
-        ),
-      );
   }, []);
   useEffect(() => {
     if (ready)
@@ -369,6 +378,15 @@ function StudyApp() {
     ["Saved", "bookmark-outline"],
     ["About", "information-circle-outline"],
   ] as const;
+  const selectedHasPassages = works.some(
+    (w) =>
+      w.passage_count > 0 &&
+      (scope === GITA_PRESS_SCOPE
+        ? MAHAPURANA_TARGETS.some(([id]) => id === w.id)
+        : scope === UPANISHAD_SCOPE
+          ? UPANISHAD_TARGETS.some(([id]) => id === w.id)
+          : w.id === scope),
+  );
 
   if (!profileReady)
     return (
@@ -487,9 +505,13 @@ function StudyApp() {
                 <View style={s.info}>
                   <Text style={s.sectionTitle}>Source & provenance</Text>
                   <Text style={s.body}>
-                    Edition: development Sanskrit fixture{"\n"}Translation:{" "}
-                    {reader.translator}
-                    {"\n"}Review: pending · Release: {reader.released_in}
+                    Edition: {reader.edition_id}
+                    {"\n"}Translation: {reader.translator}
+                    {"\n"}Review: {reader.review_status} · Release:{" "}
+                    {reader.released_in}
+                    {reader.source_locator
+                      ? `\nVolume ${reader.source_locator.volume} · printed page ${reader.source_locator.printed_page} · PDF page ${reader.source_locator.pdf_page}`
+                      : ""}
                   </Text>
                   <Text style={s.small}>Immutable ID: {reader.id}</Text>
                 </View>
@@ -781,23 +803,26 @@ function StudyApp() {
                     onNotice={setNotice}
                   />
                 )}
-                {scope !== "bhagavad-gita" && !answer && !conversation && (
-                  <View style={s.info}>
-                    <Text style={s.body}>
-                      Gita Press, Gorakhpur is the selected reference publisher
-                      for this collection; a full matching edition must be
-                      established.
-                    </Text>
-                    <Text style={s.small}>
-                      Edition selection, usage rights, and source review are
-                      pending. No approved passages are indexed for this
-                      collection; a full matching edition must be established.
-                      {DEVICE_CONNECTIONS
-                        ? "Web results are shown separately while local collections are being prepared."
-                        : "Select development fixtures to explore the working reader."}
-                    </Text>
-                  </View>
-                )}
+                {scope !== "bhagavad-gita" &&
+                  !answer &&
+                  !conversation &&
+                  !selectedHasPassages && (
+                    <View style={s.info}>
+                      <Text style={s.body}>
+                        Gita Press, Gorakhpur is the selected reference
+                        publisher for this collection; a full matching edition
+                        must be established.
+                      </Text>
+                      <Text style={s.small}>
+                        Edition selection, usage rights, and source review are
+                        pending. No approved passages are indexed for this
+                        collection; a full matching edition must be established.
+                        {DEVICE_CONNECTIONS
+                          ? "Web results are shown separately while local collections are being prepared."
+                          : "Select development fixtures to explore the working reader."}
+                      </Text>
+                    </View>
+                  )}
                 {!!notice && (
                   <Text style={[s.small, { marginTop: 12 }]}>{notice}</Text>
                 )}
@@ -1053,7 +1078,7 @@ function StudyApp() {
                   Each edition has its own voice. Each passage has its own
                   provenance.
                 </Text>
-                {works.map(({ id, title: name, status }) => {
+                {works.map(({ id, title: name, status, passage_count }) => {
                   const icon =
                     id === "bhagavad-gita" ? "book-outline" : "library-outline";
                   return (
@@ -1062,15 +1087,16 @@ function StudyApp() {
                         <Icon name={icon as any} color={C.accent} />
                         <Text style={s.sectionTitle}>{name}</Text>
                         <Text style={s.badge}>
-                          {name === "Bhagavad Gita" ? "PILOT" : "PLANNED"}
+                          {passage_count > 0 ? "INSTALLED" : "PENDING"}
                         </Text>
                       </View>
                       <Text style={[s.small, { marginTop: 12 }]}>{status}</Text>
+                      <Text style={s.small}>{passage_count} passages</Text>
                     </View>
                   );
                 })}
                 <Text style={[s.sectionTitle, { marginTop: 20 }]}>
-                  Explore the pilot passages
+                  Explore available passages
                 </Text>
                 {all.map((p) => (
                   <PassageCard
@@ -1151,7 +1177,7 @@ function StudyApp() {
                   <Text style={s.sectionTitle}>What this build includes</Text>
                   <Text style={s.body}>
                     {DEVICE_CONNECTIONS
-                      ? "Direct Gemini and OpenAI connections, secure device API-key storage, external web search, voice conversation and local preferences. Approved scripture collections are not installed yet."
+                      ? "Direct Gemini and OpenAI connections, secure device API-key storage, local scripture-pack installation and search, external web search, voice conversation and local preferences. This release includes no scripture texts; install reviewed packs in Settings when available."
                       : "Development scripture fixtures, lexical passage matching, persistent bookmarks and correction reports. The citation gate checks IDs, hashes and excerpt spans; it does not certify scholarly accuracy."}
                   </Text>
                 </View>

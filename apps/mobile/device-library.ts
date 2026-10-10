@@ -4,6 +4,7 @@ import {
   VEDA_TARGETS,
 } from "../../packages/corpus-schema/register";
 import { UPANISHAD_TARGETS } from "../../packages/corpus-schema/upanishads";
+import { localScripture } from "./device-corpus";
 const works = [
   ["bhagavad-gita", "Bhagavad Gita"],
   ["valmiki-ramayana", "Valmiki Ramayana"],
@@ -20,8 +21,24 @@ const works = [
   editions: [],
 }));
 export async function deviceLibraryRequest(path: string, body?: unknown) {
-  if (path === "/v1/works") return works;
-  if (path === "/v1/passages") return [];
+  const index = await localScripture();
+  if (path === "/v1/works") {
+    const status = index.status();
+    return works.map((w) =>
+      status.works[w.id]
+        ? {
+            ...w,
+            ...status.works[w.id],
+            status:
+              "Reviewed passages installed · edition coverage shown below",
+            subtitle: "On-device scripture collection",
+          }
+        : w,
+    );
+  }
+  if (path === "/v1/passages") return index.passages();
+  if (path.startsWith("/v1/passages/"))
+    return index.record(path.slice("/v1/passages/".length));
   if (path === "/v1/reports") {
     const key = "pramana.device.corrections.v1",
       previous = JSON.parse((await AsyncStorage.getItem(key)) || "[]");

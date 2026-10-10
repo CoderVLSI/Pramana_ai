@@ -1,6 +1,7 @@
 import { Platform } from "react-native";
 import * as SecureStore from "expo-secure-store";
 import { deviceClient } from "./device-settings";
+import { deviceCorpusStatus, localScripture } from "./device-corpus";
 import { isAppConversation } from "../../packages/citation-schema/conversation";
 import {
   createDeviceLiveSocket,
@@ -251,23 +252,33 @@ export async function createConversationSocket(options: {
       if (name === "corpus_status")
         return {
           source_status: "approved_index_counts",
-          approved_passages: 0,
-          installed_collections: 0,
+          ...(await deviceCorpusStatus()),
         };
-      if (name === "search_scripture" && !options.enableWebSearch)
-        return {
-          source_status: "not_verified",
-          evidence: [],
-          note: "No approved scripture collection is installed on this phone. Web search is disabled.",
-        };
+      if (name === "search_scripture") {
+        const answer = (await localScripture()).answer(
+          String(args.query || ""),
+          { work_ids: options.workIds },
+        );
+        if (answer.citations.length)
+          return {
+            source_status: "reviewed_local_passages",
+            evidence: answer.citations,
+            claims: answer.claims,
+            safe_to_speak: answer.safe_to_speak,
+            note: "Cite the returned exact IDs. Source audio permissions are shown; generated Live responses remain unverified.",
+          };
+        if (!options.enableWebSearch)
+          return {
+            source_status: "not_verified",
+            evidence: [],
+            note: answer.caveats.join(" ") + " Web search is disabled.",
+          };
+      }
       if (name === "web_search" && !options.enableWebSearch)
         return { error: "Web search is disabled." };
-      const result = await deviceClient.study({
-        query: String(args.query || ""),
-        work_ids: options.workIds,
-      });
+      const result = await deviceClient.webSearch(String(args.query || ""));
       return {
-        ...result.web,
+        ...result,
         local_source_status: "not_verified",
         fallback_from:
           name === "search_scripture" ? "local_scripture" : undefined,
