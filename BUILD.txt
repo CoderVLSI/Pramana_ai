@@ -1,12 +1,13 @@
 Pramana Android device preview — 10 October 2026
-Source commit: 2b9441b
-No Pramana backend required for default Android AI connections.
-Settings: choose Gemini or OpenAI, enter your own key, Save, Test connection.
-Existing backend keys are not automatically copied; enter your key again on this phone.
-API keys remain in Android secure storage. Provider requests use the internet and your account quota.
-Regular replies use device speech. Live uses device-transcribed text and provider audio; real-phone/account validation is pending.
-No approved local scripture collections installed yet. Web results remain external and unverified.
+Source commit: 3d0b231
+No backend required for default Android AI connections. Keys are stored in Android secure storage.
+Settings supports Gemini/OpenAI and reviewed scripture pack installation using HTTPS URL and publisher SHA256.
+Local-first Study and Live tools, source citations and library counts are connected.
+Zero actual scripture texts are included. Private OCR drafts are not approved packs.
+Web results remain external and unverified. Publisher review records require a trusted source.
+Pilot limit: 5 MB per pack, 30 packs, 25,000 passages. Full corpus requires a larger index.
+All 57 tests passed. Final fresh Android 15 emulator onboarding launch passed and remained alive.
+Nord 4 retest, real publisher pack installation and live provider audio validation are pending.
 Test/debug signed, arm64, Android 7+. Not a Play Store release.
-Startup fix: Expo Font aligned to SDK 54. Android 15 emulator fresh onboarding launch passed. Nord 4 retest pending.
-Size: 37066407 bytes
-SHA256: 80dae7e5e86db0080c7e24747f60603f3ad9058951460e6acf07583c5d2ec734
+Size: 37131527 bytes
+SHA256: 3e435b71346020a3f762f25aff2c682bdec439b14ac2fe3574274da51be2c600
