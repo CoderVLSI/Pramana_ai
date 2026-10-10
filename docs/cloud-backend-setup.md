@@ -19,3 +19,9 @@ The migration provides owner-only row-level policies for authenticated CRUD. Ano
 `packages/cloud-sync` prepares explicit, manual upload/download/delete operations. Its whitelist includes profile and reading preferences; approved memories require a separate opt-in to upload. It excludes API keys, scratchpad, pending memory suggestions, screenshots, and chat history. Download never silently replaces local data. Cloud storage consent and AI memory-sharing consent are separate decisions.
 
 Before connecting a public app, verify migration application, two-account isolation, email delivery, Google redirects if enabled, token refresh/sign-out, restore confirmation, deletion, privacy policy and free-tier limits. This preparation is not a deployed or tested cloud account system.
+
+## Connected project
+
+Public client configuration lives in `apps/mobile/cloud-config.ts` and can be overridden with the two Expo public environment variables in `.env.example`. Project: `https://fdntjeknihekiqldyrpn.supabase.co`.
+
+A read-only connectivity check on 11 October 2026 returned HTTP 200 from Auth settings with email enabled and Google disabled. The Data API returned PGRST205 for `user_settings`: the migration has not been applied or the table is not available in the schema cache. Public configuration does not grant database-administration access. Apply the SQL migration in the dashboard before testing authenticated sync. Sign-in UI remains pending; existing APKs do not acquire new configuration automatically.
