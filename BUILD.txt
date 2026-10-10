@@ -1,13 +1,18 @@
-Pramana Android device preview — 10 October 2026
-Source commit: 3d0b231
-No backend required for default Android AI connections. Keys are stored in Android secure storage.
-Settings supports Gemini/OpenAI and reviewed scripture pack installation using HTTPS URL and publisher SHA256.
-Local-first Study and Live tools, source citations and library counts are connected.
-Zero actual scripture texts are included. Private OCR drafts are not approved packs.
-Web results remain external and unverified. Publisher review records require a trusted source.
-Pilot limit: 5 MB per pack, 30 packs, 25,000 passages. Full corpus requires a larger index.
-All 57 tests passed. Final fresh Android 15 emulator onboarding launch passed and remained alive.
-Nord 4 retest, real publisher pack installation and live provider audio validation are pending.
-Test/debug signed, arm64, Android 7+. Not a Play Store release.
-Size: 37131527 bytes
-SHA256: 3e435b71346020a3f762f25aff2c682bdec439b14ac2fe3574274da51be2c600
+Pramana Android preview — 11 October 2026
+Source commit: a90bc9ba9524f743c649ac06ee8e4f8c48704303
+Version: 0.2.0, Android versionCode 2, package org.pramana.study
+Architecture: arm64-v8a; minimum Android 7/API24; target API36.
+Includes optional Supabase email/password accounts, manual profile/reading backups,
+restore confirmation, separate approved-memory upload consent, local sign-out.
+Includes haptics, reading/theme controls, local history, bookmarks/notes/resume,
+source filters, voice controls, optional reminders, screenshot/quote checking,
+private scratchpad and opt-in user-approved AI memories.
+API keys and private scratchpad excluded from cloud backups.
+75 tests passed; TypeScript and Android release build passed; APK signature verified.
+Previous quality-of-life x86 build reached Android15 onboarding without crash-buffer errors.
+This latest account build has not been launch-tested on emulator or OnePlus Nord4.
+Real sign-in/email, authenticated two-account isolation and live provider tests pending.
+Zero real reviewed scripture passages are bundled. Full corpus verification remains pending.
+Test/debug signed, same certificate as preceding previews. Not a Play Store release.
+Size: 38444170 bytes
+SHA256: 27f4a3a3f52965df58188f1d3b7139543d13e619e56640edfb483a85f2616187
