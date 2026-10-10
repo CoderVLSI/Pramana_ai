@@ -1,3 +1,4 @@
+import { ProviderRequestError } from "./provider-error";
 import { memoryInstruction } from "./memory";
 import type { ProviderProfile } from "./profile";
 function concat(chunks: Uint8Array[]) {
@@ -10,7 +11,7 @@ function concat(chunks: Uint8Array[]) {
   return result;
 }
 async function boundedJSON(response: Response) {
-  if (!response.ok) throw Error("Provider unavailable");
+  if (!response.ok) throw new ProviderRequestError(response.status);
   const reader = response.body?.getReader();
   if (!reader) {
     const text = await response.text();

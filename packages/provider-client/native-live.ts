@@ -123,11 +123,21 @@ export function geminiConnect(make: SocketFactory, sockets: Set<NativeSocket>) {
           close();
         } else options.callbacks.onerror(Error("Live network unavailable"));
       };
-      ws.onclose = () => {
+      ws.onclose = (event) => {
         sockets.delete(ws);
         clearTimeout(timer);
         if (intentionallyClosed) return;
-        if (!settled) reject(Error("Live connection closed"));
+        if (!settled)
+          reject(
+            Object.assign(Error("Live connection closed"), {
+              status:
+                event?.code === 1008
+                  ? 403
+                  : event?.code === 1011
+                    ? 503
+                    : undefined,
+            }),
+          );
         else options.callbacks.onclose();
       };
     });

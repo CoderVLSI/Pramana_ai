@@ -52,7 +52,15 @@ test("Gemini live streams audio and dispatches real validated tools without leak
   await a.start();
   assert.equal(events[0].type, "ready");
   assert.equal(events[0].generated_unverified, true);
-  assert.ok(config.config.tools.some((t: any) => t.googleSearch));
+  assert.equal(
+    config.config.tools.some((t: any) => t.googleSearch),
+    false,
+  );
+  assert.ok(
+    config.config.tools.some((t: any) =>
+      t.functionDeclarations?.some((f: any) => f.name === "web_search"),
+    ),
+  );
   assert.ok(
     config.config.systemInstruction.includes("search miss is not proof"),
   );

@@ -75,6 +75,7 @@ function styleFor(
       typeof result[key] === "string" ? result[key].toLowerCase() : "";
     if (color === "white" || color === "#ffffff" || color === "#fff")
       result[key] = key === "color" ? "#f7faf8" : "#202f26";
+    else if (color === "#143d29" && key === "color") result[key] = "#a0d6b7";
     else if (color === "#315444" && key === "backgroundColor")
       result[key] = "#376d4e";
     else if (darkColors[color]) result[key] = darkColors[color];

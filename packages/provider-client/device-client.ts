@@ -1,3 +1,4 @@
+import { ProviderRequestError } from "./provider-error";
 import { compareClaim } from "./fact-check";
 import { readScreenshot, type ScreenshotInput } from "./screenshot";
 import type { Answer } from "../citation-schema";
@@ -286,11 +287,13 @@ export class DeviceClient {
         this.request,
         this.readMemory ? await this.readMemory() : [],
       );
-    } catch {
+    } catch (e) {
       return {
         source_status: "web_unavailable",
         error:
-          "Web search could not complete. Check your provider key, model access and quota in Settings.",
+          e instanceof ProviderRequestError
+            ? e.message
+            : "Web search could not complete. Check your provider key, model access and quota in Settings.",
       };
     }
   }

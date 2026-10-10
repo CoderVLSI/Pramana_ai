@@ -1,3 +1,4 @@
+import { providerFailure } from "./provider-error";
 import { memoryInstruction } from "./memory";
 import type { ProviderProfile } from "./profile";
 import { fallbackChain } from "./profile";
@@ -112,7 +113,7 @@ export function createLiveAgent(options: LiveAgentOptions) {
     emit({ type: "error", message });
     close();
   }
-  async function retryStartup(retryable: boolean) {
+  async function retryStartup(retryable: boolean, failure?: string) {
     if (closed) return;
     if (
       !retryable ||
@@ -121,7 +122,7 @@ export function createLiveAgent(options: LiveAgentOptions) {
       toolsUsed ||
       targetIndex + 1 >= targets.length
     )
-      return error();
+      return error(failure);
     epoch++;
     clearTimeout(setupTimer);
     socket?.removeAllListeners();
@@ -419,7 +420,23 @@ export function createLiveAgent(options: LiveAgentOptions) {
         : "");
     try {
       if (provider === "gemini") {
-        const declarations = functions.map((f) => ({
+        const declarations = [
+          ...functions,
+          ...(options.enableWebSearch
+            ? [
+                {
+                  name: "web_search",
+                  description:
+                    "Search external web references, not verified scripture.",
+                  parameters: {
+                    type: "object",
+                    properties: { query: { type: "string" } },
+                    required: ["query"],
+                  },
+                },
+              ]
+            : []),
+        ].map((f) => ({
           ...f,
           parameters: {
             ...f.parameters,
@@ -453,7 +470,7 @@ export function createLiveAgent(options: LiveAgentOptions) {
             systemInstruction: instructions,
             tools: [
               { functionDeclarations: declarations },
-              ...(options.enableWebSearch ? [{ googleSearch: {} }] : []),
+              // Web search runs through the declared web_search function tool.
             ],
           },
           callbacks: {
@@ -561,6 +578,7 @@ export function createLiveAgent(options: LiveAgentOptions) {
         await retryStartup(
           [429, 500, 502, 503, 504].includes(Number(e?.status)) ||
             /network|fetch failed|timeout/i.test(String(e?.message)),
+          providerFailure(Number(e?.status) || undefined),
         );
     }
   }
