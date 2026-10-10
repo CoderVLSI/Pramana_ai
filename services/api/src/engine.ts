@@ -1,3 +1,4 @@
+import { normalizeSourceLanguage } from "../../../packages/device-preferences";
 import { createHash, randomUUID } from "node:crypto";
 import { passages } from "./corpus";
 import {
@@ -13,6 +14,7 @@ import {
 export interface Selection {
   work_ids?: string[];
   edition_ids?: string[];
+  translation_language?: string;
 }
 export function search(query: string, selection: Selection = {}): Passage[] {
   if (query.length > 2000) return [];
@@ -22,7 +24,10 @@ export function search(query: string, selection: Selection = {}): Passage[] {
     (p) =>
       (!selection.work_ids?.length || selection.work_ids.includes(p.work_id)) &&
       (!selection.edition_ids?.length ||
-        selection.edition_ids.includes(p.edition_id)),
+        selection.edition_ids.includes(p.edition_id)) &&
+      (!selection.translation_language ||
+        normalizeSourceLanguage(p.translation_language) ===
+          normalizeSourceLanguage(selection.translation_language)),
   );
   const ref = query.match(/(?:gita|गीता|bg)?\s*(\d+)\s*[.:]\s*(\d+)/i);
   if (ref)

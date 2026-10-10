@@ -139,6 +139,15 @@ export function attachLiveSessions(
               event.preferred_name.length > 80)
           )
             throw Error("Invalid name");
+          const userMemories = event.user_memories || [];
+          if (
+            !Array.isArray(userMemories) ||
+            userMemories.length > 20 ||
+            userMemories.some(
+              (m: unknown) => typeof m !== "string" || m.length > 300,
+            )
+          )
+            throw Error("Invalid user memories");
           const profile = await vault.read(event.token);
           if (closed) return;
           identity = createHash("sha256").update(event.token).digest("hex");
@@ -149,10 +158,16 @@ export function attachLiveSessions(
             return;
           }
           active.set(identity, ws);
-          const tools = new LiveToolDispatcher(profile, globalThis.fetch, event.enable_web_search === true);
+          const tools = new LiveToolDispatcher(
+            profile,
+            globalThis.fetch,
+            event.enable_web_search === true,
+            userMemories,
+          );
           agent = createAgent({
             profile,
             preferredName: event.preferred_name,
+            userMemories,
             enableWebSearch: event.enable_web_search === true,
             send: (value) => {
               if (value.type === "turn_end" || value.type === "interrupted")
@@ -169,7 +184,10 @@ export function attachLiveSessions(
             },
             runTool: (name, args) => {
               let scoped = args;
-              if (name === "search_scripture" && workIds.length) {
+              if (
+                (name === "search_scripture" || name === "fact_check_claim") &&
+                workIds.length
+              ) {
                 if (
                   args.work_ids !== undefined &&
                   (!Array.isArray(args.work_ids) ||

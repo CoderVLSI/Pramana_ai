@@ -18,6 +18,8 @@ type InstalledPack = {
   release: string;
   passage_count: number;
   completeness: string;
+  source_url?: string;
+  installed_at?: string;
 };
 let ready: Promise<LocalScriptureIndex> | undefined;
 let queue: Promise<unknown> = Promise.resolve();
@@ -39,10 +41,11 @@ async function inventory(): Promise<InstalledPack[]> {
     );
   return value;
 }
-async function bundles() {
+async function bundles(exclude: string[] = []) {
   const result: unknown[] = [];
   rejected = [];
   for (const pack of await inventory()) {
+    if (exclude.includes(pack.sha256)) continue;
     try {
       const raw = await FileSystem.readAsStringAsync(
         directory() + pack.sha256 + ".json",
@@ -75,7 +78,17 @@ export async function deviceCorpusStatus() {
   const index = await localScripture();
   return {
     ...index.status(),
-    packs: await inventory(),
+    packs: await Promise.all(
+      (await inventory()).map(async (pack) => {
+        const info = await FileSystem.getInfoAsync(
+          directory() + pack.sha256 + ".json",
+        );
+        return {
+          ...pack,
+          size_bytes: info.exists && !info.isDirectory ? info.size : 0,
+        };
+      }),
+    ),
     rejected: [...rejected],
   };
 }
@@ -87,7 +100,16 @@ function mutate<T>(action: () => Promise<T>) {
   );
   return result;
 }
-export function installScripturePack(address: string, expectedHash: string) {
+export interface PackProgress {
+  phase: "download" | "validate" | "install";
+  loaded: number;
+  total: number;
+}
+export function installScripturePack(
+  address: string,
+  expectedHash: string,
+  progress?: (value: PackProgress) => void,
+) {
   return mutate(async () => {
     const url = new URL(address.trim());
     if (url.protocol !== "https:" || url.username || url.password || url.hash)
@@ -97,20 +119,51 @@ export function installScripturePack(address: string, expectedHash: string) {
     const hash = expectedHash.trim().toLowerCase();
     if (!/^[a-f0-9]{64}$/.test(hash))
       throw Error("Enter the pack publisher's full SHA-256 checksum.");
-    const controller = new AbortController(),
-      timer = setTimeout(() => controller.abort(), 30000);
+    if (!FileSystem.cacheDirectory)
+      throw Error("Download cache is unavailable.");
+    const temporary =
+      FileSystem.cacheDirectory +
+      `pramana-pack-${Date.now()}-${hash.slice(0, 8)}.json`;
+    let timedOut = false,
+      oversized = false;
+    progress?.({ phase: "download", loaded: 0, total: 0 });
+    const task = FileSystem.createDownloadResumable(
+      url.toString(),
+      temporary,
+      {},
+      (event) => {
+        progress?.({
+          phase: "download",
+          loaded: event.totalBytesWritten,
+          total: Math.max(0, event.totalBytesExpectedToWrite),
+        });
+        if (
+          event.totalBytesWritten > MAX_PACK_BYTES ||
+          event.totalBytesExpectedToWrite > MAX_PACK_BYTES
+        ) {
+          oversized = true;
+          void task.cancelAsync().catch(() => {});
+        }
+      },
+    );
+    const timer = setTimeout(() => {
+      timedOut = true;
+      void task.cancelAsync().catch(() => {});
+    }, 60000);
     try {
-      const response = await fetch(url.toString(), {
-        signal: controller.signal,
-      });
-      if (!response.ok) throw Error("Scripture pack download failed.");
-      if (Number(response.headers.get("content-length")) > MAX_PACK_BYTES)
-        throw Error("Use scripture packs smaller than 5 MB for this pilot.");
-      const raw = await response.text();
-      if (
-        raw.length > MAX_PACK_BYTES ||
-        scriptureBytes(raw).length > MAX_PACK_BYTES
-      )
+      const response = await task.downloadAsync();
+      if (oversized)
+        throw Error("This scripture pack exceeds the 5 MB pilot limit.");
+      if (timedOut)
+        throw Error("Scripture pack download timed out. Try again.");
+      if (!response || response.status < 200 || response.status >= 300)
+        throw Error("Scripture pack download failed.");
+      const info = await FileSystem.getInfoAsync(temporary);
+      if (!info.exists || info.isDirectory || info.size > MAX_PACK_BYTES)
+        throw Error("This scripture pack exceeds the 5 MB pilot limit.");
+      progress?.({ phase: "validate", loaded: info.size, total: info.size });
+      const raw = await FileSystem.readAsStringAsync(temporary);
+      if (scriptureBytes(raw).length > MAX_PACK_BYTES)
         throw Error("This scripture pack exceeds the 5 MB pilot limit.");
       if (scriptureDigest(raw) !== hash)
         throw Error(
@@ -131,17 +184,34 @@ export function installScripturePack(address: string, expectedHash: string) {
           /* A missing or damaged saved file can be reinstalled. */
         }
       }
-      if (!existing && current.length >= 30)
+      const replacingEdition = current.some(
+        (p) =>
+          p.work_id === pack.manifest.work_id &&
+          p.edition_id === pack.manifest.edition_id,
+      );
+      if (!existing && !replacingEdition && current.length >= 30)
         throw Error(
           "The pilot supports up to 30 packs. Remove older packs first.",
         );
-      const next = new LocalScriptureIndex([...(await bundles()), value]);
+      const replaced = current.filter(
+        (p) =>
+          p.sha256 === hash ||
+          (p.work_id === pack.manifest.work_id &&
+            p.edition_id === pack.manifest.edition_id),
+      );
+      const next = new LocalScriptureIndex([
+        ...(await bundles(replaced.map((p) => p.sha256))),
+        value,
+      ]);
+      progress?.({ phase: "install", loaded: info.size, total: info.size });
       await FileSystem.makeDirectoryAsync(directory(), { intermediates: true });
       await FileSystem.writeAsStringAsync(directory() + hash + ".json", raw);
       await AsyncStorage.setItem(
         KEY,
         JSON.stringify([
-          ...current.filter((p) => p.sha256 !== hash),
+          ...current.filter(
+            (p) => !replaced.some((old) => old.sha256 === p.sha256),
+          ),
           {
             sha256: hash,
             work_id: pack.manifest.work_id,
@@ -149,17 +219,29 @@ export function installScripturePack(address: string, expectedHash: string) {
             release: pack.manifest.release,
             completeness: pack.manifest.completeness,
             passage_count: pack.passages.length,
+            source_url: url.toString(),
+            installed_at: new Date().toISOString(),
           },
         ]),
       );
       ready = Promise.resolve(next);
+      for (const old of replaced)
+        if (old.sha256 !== hash)
+          await FileSystem.deleteAsync(directory() + old.sha256 + ".json", {
+            idempotent: true,
+          }).catch(() => {});
       return `Installed ${pack.passages.length} reviewed passages. Search works without a Pramana backend.`;
     } catch (e) {
-      if (controller.signal.aborted)
+      if (timedOut)
         throw Error("Scripture pack download timed out. Try again.");
+      if (oversized)
+        throw Error("This scripture pack exceeds the 5 MB pilot limit.");
       throw e;
     } finally {
       clearTimeout(timer);
+      await FileSystem.deleteAsync(temporary, { idempotent: true }).catch(
+        () => {},
+      );
     }
   });
 }
@@ -169,5 +251,19 @@ export function removeScripturePacks() {
     ready = Promise.resolve(new LocalScriptureIndex());
     rejected = [];
     await FileSystem.deleteAsync(directory(), { idempotent: true });
+  });
+}
+
+export function removeScripturePack(hash: string) {
+  return mutate(async () => {
+    if (!/^[a-f0-9]{64}$/.test(hash))
+      throw Error("Invalid scripture pack identifier.");
+    const remaining = (await inventory()).filter((p) => p.sha256 !== hash);
+    const next = new LocalScriptureIndex(await bundles([hash]));
+    await AsyncStorage.setItem(KEY, JSON.stringify(remaining));
+    ready = Promise.resolve(next);
+    await FileSystem.deleteAsync(directory() + hash + ".json", {
+      idempotent: true,
+    });
   });
 }

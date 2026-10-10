@@ -1,11 +1,11 @@
+import DeviceDataSettings from "./DeviceDataSettings";
+import ReadingSettings from "./ReadingSettings";
+import ReminderSettings from "./ReminderSettings";
+import { View, Text, TextInput, Pressable } from "./ui";
 import { hapticsEnabled, setHapticsEnabled, selectionHaptic } from "./haptics";
 import React, { useEffect, useState } from "react";
 import ScripturePacks from "./ScripturePacks";
 import {
-  View,
-  Text,
-  TextInput,
-  Pressable,
   StyleSheet,
   Switch,
   ActivityIndicator,
@@ -135,6 +135,9 @@ export default function SettingsScreen() {
   const models = catalog?.models[provider] || [];
   return (
     <View>
+      <ReadingSettings />
+      <ReminderSettings />
+      <DeviceDataSettings />
       <Text style={s.kicker}>YOUR CONNECTIONS</Text>
       <Text style={s.title}>Voice & API settings</Text>
       <Text style={s.intro}>

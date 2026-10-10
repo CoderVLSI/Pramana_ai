@@ -10,6 +10,7 @@ export interface Passage {
   original: string;
   translation: string;
   translator: string;
+  translation_language?: string;
   keywords: string[];
   review_status: "fixture" | "approved";
   license_id: string;

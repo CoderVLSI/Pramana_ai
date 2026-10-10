@@ -1,3 +1,4 @@
+import { readApprovedMemory } from "./memory-context";
 import * as SecureStore from "expo-secure-store";
 import { DeviceClient } from "../../packages/provider-client/device-client";
 import { localScripture } from "./device-corpus";
@@ -12,6 +13,7 @@ export const deviceClient = new DeviceClient(
     remove: () => SecureStore.deleteItemAsync(DEVICE_KEY),
   },
   globalThis.fetch,
-  async (query, workIds) =>
-    (await localScripture()).answer(query, { work_ids: workIds }),
+  async (query, workIds, filters) =>
+    (await localScripture()).answer(query, { work_ids: workIds, ...filters }),
+  readApprovedMemory,
 );

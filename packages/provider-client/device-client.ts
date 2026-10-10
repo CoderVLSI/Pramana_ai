@@ -1,3 +1,5 @@
+import { compareClaim } from "./fact-check";
+import { readScreenshot, type ScreenshotInput } from "./screenshot";
 import type { Answer } from "../citation-schema";
 import { generateWelcome } from "./chat";
 import {
@@ -44,7 +46,12 @@ export class DeviceClient {
   constructor(
     private storage: SecretStorage,
     private request: typeof fetch = globalThis.fetch,
-    private retrieve?: (query: string, workIds: string[]) => Promise<Answer>,
+    private retrieve?: (
+      query: string,
+      workIds: string[],
+      filters?: { edition_ids?: string[]; translation_language?: string },
+    ) => Promise<Answer>,
+    private readMemory?: () => Promise<string[]>,
   ) {}
   async credentials(): Promise<ProviderProfile> {
     await this.queue;
@@ -205,21 +212,80 @@ export class DeviceClient {
       connection_status: "connected" as const,
     };
   }
-  async study(body: { query: string; work_ids: string[] }) {
+  async readScreenshot(image: ScreenshotInput) {
+    return readScreenshot(await this.credentials(), image, this.request);
+  }
+  async factCheck(body: {
+    query: string;
+    work_ids: string[];
+    reference?: string;
+    enable_web?: boolean;
+  }) {
+    if (
+      !body.query.trim() ||
+      body.query.length > 2000 ||
+      (body.reference?.length || 0) > 200
+    )
+      throw Error(
+        "Enter a quotation up to 2000 characters and an optional source reference up to 200 characters.",
+      );
+    const query = [body.reference, body.query]
+      .filter(Boolean)
+      .join(" ")
+      .slice(0, 2000);
     const answer = this.retrieve
-      ? await this.retrieve(body.query, body.work_ids)
-      : missingLocalAnswer(body.query);
+      ? await this.retrieve(query, body.work_ids)
+      : missingLocalAnswer(query);
+    const comparison = compareClaim(body.query, answer.citations);
+    const web =
+      comparison.verdict !== "local_text_match" && body.enable_web !== false
+        ? await this.webSearch(query)
+        : undefined;
+    return {
+      ...comparison,
+      source_status: "fact_check_evidence",
+      evidence: answer.citations.filter((p) => p.review_status === "approved"),
+      safe_to_speak: false,
+      web,
+      caveats: answer.caveats,
+    };
+  }
+  async study(body: {
+    query: string;
+    work_ids: string[];
+    edition_ids?: string[];
+    translation_language?: string;
+    evidence_mode?: "local" | "web" | "auto";
+  }) {
+    const answer =
+      this.retrieve && body.evidence_mode !== "web"
+        ? await this.retrieve(body.query, body.work_ids, body)
+        : missingLocalAnswer(body.query);
     if (answer.support_state === "DIRECT" && answer.citations.length)
       return {
         answer,
         web: { source_status: "local_verified", text: undefined },
       };
-    return { answer, web: await this.webSearch(body.query) };
+    return {
+      answer,
+      web:
+        body.evidence_mode === "local"
+          ? {
+              source_status: "local_only",
+              note: "Web search is disabled for this question.",
+            }
+          : await this.webSearch(body.query),
+    };
   }
   async webSearch(query: string) {
     const p = await this.credentials();
     try {
-      return await searchWeb(p, query, this.request);
+      return await searchWeb(
+        p,
+        query,
+        this.request,
+        this.readMemory ? await this.readMemory() : [],
+      );
     } catch {
       return {
         source_status: "web_unavailable",
@@ -229,7 +295,14 @@ export class DeviceClient {
     }
   }
   async voiceTurn(
-    body: { query: string; preferred_name?: string; work_ids: string[] },
+    body: {
+      query: string;
+      preferred_name?: string;
+      work_ids: string[];
+      edition_ids?: string[];
+      translation_language?: string;
+      evidence_mode?: "local" | "web" | "auto";
+    },
     greeting: boolean,
   ) {
     const provider = (await this.credentials()).active_provider;

@@ -16,7 +16,7 @@ Full description:
 >
 > Ask questions using your own Gemini or OpenAI key. Web answers and external source links are distinguished from verified local scripture. When the selected collection has no verified evidence, Pramana displays that limitation rather than inventing a scriptural answer.
 >
-> An animated AI Rishi provides a visual preview. Android Settings store optional OpenAI and Gemini keys securely on the phone. Direct provider connections support text, external web search and voice conversation. Live uses device transcription and provider audio; real-phone/provider-account validation remains pending.
+> An animated AI Rishi provides a visual preview. Device features include reading controls, themes, local history/notes/resume, optional haptics and local reminders. Users can review quote screenshots and compare wording with installed sources; this does not establish screenshot authenticity. A private scratchpad and opt-in approved memories support continuity without uploading the full history. Android Settings store optional OpenAI and Gemini keys securely on the phone. Direct provider connections support text, external web search and voice conversation. Live uses device transcription and provider audio; real-phone/provider-account validation remains pending.
 >
 > This is a limited development test, not a complete scripture library or an authoritative religious interpretation service. Internet and a valid provider key/quota are required for AI requests; Android settings work locally without a Pramana backend.
 

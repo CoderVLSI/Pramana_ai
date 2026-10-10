@@ -1,3 +1,6 @@
+import { readApprovedMemory } from "./memory-context";
+import type { SearchSelection } from "./SearchFilters";
+import type { ScreenshotInput } from "../../packages/provider-client/screenshot";
 import { Platform } from "react-native";
 import * as SecureStore from "expo-secure-store";
 import { deviceClient } from "./device-settings";
@@ -174,11 +177,13 @@ export interface VoiceTurn {
   };
   note?: string;
 }
-export const requestVoiceTurn = async (body: {
-  query: string;
-  preferred_name?: string;
-  work_ids: string[];
-}): Promise<VoiceTurn> =>
+export const requestVoiceTurn = async (
+  body: {
+    query: string;
+    preferred_name?: string;
+    work_ids: string[];
+  } & Partial<SearchSelection>,
+): Promise<VoiceTurn> =>
   DEVICE_CONNECTIONS
     ? deviceClient.voiceTurn(body, isAppConversation(body.query))
     : raw("/v1/voice/turn", "POST", body, await settingsToken(), 75000);
@@ -205,15 +210,23 @@ export interface WebFallback {
   error?: string;
   note?: string;
 }
-export async function requestStudy(body: {
-  query: string;
-  work_ids: string[];
-}): Promise<{
+export async function requestStudy(
+  body: {
+    query: string;
+    work_ids: string[];
+  } & Partial<SearchSelection>,
+): Promise<{
   answer: import("../../packages/citation-schema").Answer;
   web?: WebFallback;
 }> {
   if (DEVICE_CONNECTIONS) return deviceClient.study(body);
-  return raw("/v1/study", "POST", body, await settingsToken(), 45000);
+  return raw(
+    "/v1/study",
+    "POST",
+    { ...body, user_memories: await readApprovedMemory() },
+    await settingsToken(),
+    45000,
+  );
 }
 
 export async function createConversationSocket(options: {
@@ -221,6 +234,7 @@ export async function createConversationSocket(options: {
   workIds: string[];
   enableWebSearch: boolean;
 }): Promise<NativeSocket> {
+  const userMemories = await readApprovedMemory();
   if (!DEVICE_CONNECTIONS) {
     const credentials = await liveSessionCredentials();
     const ws = new WebSocket(credentials.url);
@@ -232,6 +246,7 @@ export async function createConversationSocket(options: {
           preferred_name: options.preferredName,
           work_ids: options.workIds,
           enable_web_search: options.enableWebSearch,
+          user_memories: userMemories,
         }),
       );
     return ws as unknown as NativeSocket;
@@ -254,6 +269,14 @@ export async function createConversationSocket(options: {
           source_status: "approved_index_counts",
           ...(await deviceCorpusStatus()),
         };
+      if (name === "fact_check_claim")
+        return deviceClient.factCheck({
+          query: String(args.query || ""),
+          reference:
+            typeof args.reference === "string" ? args.reference : undefined,
+          work_ids: options.workIds,
+          enable_web: options.enableWebSearch,
+        });
       if (name === "search_scripture") {
         const answer = (await localScripture()).answer(
           String(args.query || ""),
@@ -284,6 +307,32 @@ export async function createConversationSocket(options: {
           name === "search_scripture" ? "local_scripture" : undefined,
       };
     },
-    options,
+    { ...options, userMemories },
   );
+}
+
+export type FactCheckResult = Awaited<
+  ReturnType<typeof deviceClient.factCheck>
+>;
+export async function factCheckClaim(body: {
+  query: string;
+  work_ids: string[];
+  reference?: string;
+  enable_web?: boolean;
+}): Promise<FactCheckResult> {
+  if (DEVICE_CONNECTIONS) return deviceClient.factCheck(body);
+  return raw("/v1/fact-check", "POST", body, await settingsToken(), 45000);
+}
+export async function readClaimScreenshot(
+  image: ScreenshotInput,
+): Promise<string> {
+  if (DEVICE_CONNECTIONS) return deviceClient.readScreenshot(image);
+  const result = (await raw(
+    "/v1/fact-check/read-image",
+    "POST",
+    image,
+    await settingsToken(),
+    45000,
+  )) as { text: string };
+  return result.text;
 }

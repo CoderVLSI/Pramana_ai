@@ -2,16 +2,20 @@
   "expo": {
     "name": "Pramana",
     "slug": "pramana",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "orientation": "portrait",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "android": {
       "package": "org.pramana.study",
       "adaptiveIcon": {
         "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#143D29"
       },
-      "versionCode": 1
+      "versionCode": 2,
+      "blockedPermissions": [
+        "android.permission.SCHEDULE_EXACT_ALARM",
+        "android.permission.USE_EXACT_ALARM"
+      ]
     },
     "web": {
       "bundler": "metro",
@@ -31,6 +35,15 @@
         {
           "microphonePermission": "Allow Pramana to transcribe questions you choose to speak.",
           "speechRecognitionPermission": "Allow Pramana to turn your spoken questions into text."
+        }
+      ],
+      "expo-notifications",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Choose a screenshot to check a scripture quotation. Images are sent to your AI provider only when you tap Read screenshot.",
+          "cameraPermission": false,
+          "microphonePermission": false
         }
       ]
     ]

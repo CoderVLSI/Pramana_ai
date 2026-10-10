@@ -1,8 +1,11 @@
+import { FACT_CHECK_TOOL } from "../../../packages/provider-client/live-agent";
+import { compareClaim } from "../../../packages/provider-client/fact-check";
 import { searchWeb } from "../../../packages/provider-client/web-search";
 import { approvedCorpusStatus } from "./approved-rag";
 import { answerStrict, verify } from "./engine";
 import type { Profile } from "./settings-vault";
 export const LIVE_TOOL_DEFINITIONS = [
+  FACT_CHECK_TOOL,
   {
     name: "search_scripture",
     description:
@@ -52,6 +55,7 @@ export class LiveToolDispatcher {
     private profile: Profile,
     private request: typeof fetch = globalThis.fetch,
     private autoWebFallback = false,
+    private userMemories: string[] = [],
   ) {}
   beginTurn() {
     this.turnCalls = 0;
@@ -88,6 +92,40 @@ export class LiveToolDispatcher {
         args.query.length > 1000
       )
         throw Error("Invalid query");
+      if (name === "fact_check_claim") {
+        if (
+          args.reference !== undefined &&
+          (typeof args.reference !== "string" || args.reference.length > 200)
+        )
+          throw Error("Invalid reference");
+        const answer = answerStrict(
+          [args.reference, args.query].filter(Boolean).join(" ").slice(0, 2000),
+          { work_ids: selection(args.work_ids) },
+        );
+        const evidence = answer.citations.filter(
+          (p) => p.review_status === "approved",
+        );
+        const comparison = compareClaim(args.query, evidence);
+        const web =
+          comparison.verdict !== "local_text_match" &&
+          args.enable_web !== false &&
+          this.autoWebFallback
+            ? await searchWeb(
+                this.profile,
+                args.query,
+                this.request,
+                this.userMemories,
+              )
+            : undefined;
+        return {
+          ...comparison,
+          source_status: "fact_check_evidence",
+          evidence,
+          safe_to_speak: false,
+          web,
+          caveats: answer.caveats,
+        };
+      }
       if (name === "search_scripture") {
         const answer = answerStrict(args.query, {
           work_ids: selection(args.work_ids),
@@ -129,7 +167,14 @@ export class LiveToolDispatcher {
         };
       }
       if (name !== "web_search") throw Error("Unknown tool");
-      return { ...(await searchWeb(this.profile, args.query, this.request)) };
+      return {
+        ...(await searchWeb(
+          this.profile,
+          args.query,
+          this.request,
+          this.userMemories,
+        )),
+      };
     } catch {
       return {
         source_status: "tool_unavailable",

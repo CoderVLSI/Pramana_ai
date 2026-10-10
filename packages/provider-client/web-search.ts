@@ -1,3 +1,4 @@
+import { memoryInstruction } from "./memory";
 import type { ProviderProfile } from "./profile";
 function concat(chunks: Uint8Array[]) {
   const result = new Uint8Array(chunks.reduce((n, c) => n + c.length, 0));
@@ -44,6 +45,7 @@ export async function searchWeb(
   profile: ProviderProfile,
   query: string,
   request: typeof fetch = globalThis.fetch,
+  userMemories: string[] = [],
 ): Promise<WebResult> {
   const controller = new AbortController(),
     timer = setTimeout(() => controller.abort(), 15000);
@@ -99,7 +101,9 @@ export async function searchWeb(
               systemInstruction: {
                 parts: [
                   {
-                    text: "Search the web to answer. Distinguish scripture editions and interpretations. Do not invent verses or claim external results are verified Gita Press passages.",
+                    text:
+                      "Search the web to answer. Distinguish scripture editions and interpretations. Do not invent verses or claim external results are verified Gita Press passages." +
+                      memoryInstruction(userMemories),
                   },
                 ],
               },
@@ -193,6 +197,10 @@ export async function searchWeb(
         body: JSON.stringify({
           model,
           input: query,
+          instructions:
+            "External web results are not reviewed scripture proof. Preserve exact source attribution and quotations." +
+            memoryInstruction(userMemories),
+          store: false,
           tools: [{ type: "web_search" }],
           tool_choice: { type: "web_search" },
           max_output_tokens: 1200,

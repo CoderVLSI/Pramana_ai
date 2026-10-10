@@ -1,3 +1,27 @@
+import Scratchpad from "./Scratchpad";
+import {
+  memorySuggestion,
+  proposeMemory,
+  containsCredential,
+} from "../../packages/device-preferences";
+import SearchFilters, {
+  DEFAULT_SEARCH,
+  type SearchSelection,
+} from "./SearchFilters";
+import FactCheckScreen from "./FactCheckScreen";
+import { SafeAreaView, ReadingText, useThemeColor, useDarkMode } from "./ui";
+import { StatusBar } from "react-native";
+import {
+  DevicePreferencesProvider,
+  useDevicePreferences,
+} from "./DevicePreferences";
+import {
+  addHistory,
+  type HistoryEntry,
+} from "../../packages/device-preferences";
+import StudyHistory from "./StudyHistory";
+import BookmarkEditor from "./BookmarkEditor";
+import { ScrollView, View, Text, TextInput, Pressable } from "./ui";
 import { selectionHaptic } from "./haptics";
 import WebSearchSuggestions from "./WebSearchSuggestions";
 import ProfileAvatar, { normalizeAvatar } from "./ProfileAvatar";
@@ -31,12 +55,7 @@ import RishiPreview from "./RishiAvatar";
 import React, { useEffect, useState } from "react";
 import {
   Linking,
-  ScrollView,
-  View,
-  Text,
   Image,
-  TextInput,
-  Pressable,
   StyleSheet,
   useWindowDimensions,
   ActivityIndicator,
@@ -44,7 +63,6 @@ import {
 } from "react-native";
 import {
   SafeAreaProvider,
-  SafeAreaView,
   initialWindowMetrics,
 } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
@@ -92,7 +110,8 @@ function Icon({
   size?: number;
   color?: string;
 }) {
-  return <Ionicons name={name} size={size} color={color} />;
+  const themedColor = useThemeColor(color);
+  return <Ionicons name={name} size={size} color={themedColor} />;
 }
 function PassageCard({
   p,
@@ -105,6 +124,7 @@ function PassageCard({
   onOpen: (p: Passage) => void;
   onToggle: (p: Passage) => void;
 }) {
+  const { state } = useDevicePreferences();
   return (
     <Pressable onPress={() => onOpen(p)} style={s.passage}>
       <View style={s.row}>
@@ -121,8 +141,14 @@ function PassageCard({
           />
         </Pressable>
       </View>
-      <Text style={s.sanskrit}>{p.original}</Text>
-      <Text style={s.body}>{p.translation}</Text>
+      {(state.reading.display !== "translation" ||
+        p.quote_source === "original") && (
+        <ReadingText style={s.sanskrit}>{p.original}</ReadingText>
+      )}
+      {state.reading.display !== "original" &&
+        p.quote_source !== "original" && (
+          <ReadingText style={s.body}>{p.translation}</ReadingText>
+        )}
       <View style={[s.row, { marginTop: 18 }]}>
         <Text style={s.small}>
           {p.review_status === "approved"
@@ -137,11 +163,20 @@ function PassageCard({
 export default function App() {
   return (
     <SafeAreaProvider initialMetrics={initialWindowMetrics}>
-      <StudyApp />
+      <DevicePreferencesProvider>
+        <StudyApp />
+      </DevicePreferencesProvider>
     </SafeAreaProvider>
   );
 }
 function StudyApp() {
+  const preferences = useDevicePreferences();
+  const dark = useDarkMode();
+  const [searchSelection, setSearchSelection] =
+    useState<SearchSelection>(DEFAULT_SEARCH);
+  const [sourceSearch, setSourceSearch] = useState("");
+  const [librarySearch, setLibrarySearch] = useState("");
+  const [savedFolder, setSavedFolder] = useState<string | null>(null);
   const { width } = useWindowDimensions(),
     wide = width > 850;
   const [tab, setTab] = useState("Study"),
@@ -165,7 +200,13 @@ function StudyApp() {
     [saved, setSaved] = useState<string[]>([]),
     [all, setAll] = useState<Passage[]>([]),
     [works, setWorks] = useState<
-      { id: string; title: string; status: string; passage_count: number }[]
+      {
+        id: string;
+        title: string;
+        status: string;
+        passage_count: number;
+        editions?: { id: string }[];
+      }[]
     >([]),
     [scope, setScope] = useState(GITA_PRESS_SCOPE),
     [showSources, setShowSources] = useState(false),
@@ -264,7 +305,18 @@ function StudyApp() {
   useEffect(() => {
     AsyncStorage.getItem("pramana-bookmarks")
       .then((v) => {
-        if (v) setSaved(JSON.parse(v));
+        if (v) {
+          const ids = JSON.parse(v);
+          if (!Array.isArray(ids)) throw Error("Invalid bookmarks");
+          setSaved(
+            ids
+              .filter(
+                (id): id is string =>
+                  typeof id === "string" && id.length <= 200,
+              )
+              .slice(0, 500),
+          );
+        }
       })
       .catch(() => setError("Saved passages could not be loaded."))
       .finally(() => setReady(true));
@@ -275,8 +327,45 @@ function StudyApp() {
         () => setError("Could not save bookmarks on this device."),
       );
   }, [saved, ready]);
+  const selectedWorkIds =
+    scope === GITA_PRESS_SCOPE
+      ? MAHAPURANA_TARGETS.map(([id]) => id)
+      : scope === UPANISHAD_SCOPE
+        ? UPANISHAD_TARGETS.map(([id]) => id)
+        : [scope];
+  const selectedEditions = [
+    ...new Set(
+      works
+        .filter((w) => selectedWorkIds.includes(w.id))
+        .flatMap((w) => w.editions?.map((e) => e.id) || []),
+    ),
+  ];
   async function ask(text = query) {
-    if (!text.trim()) return;
+    if (!text.trim() || busy || !preferences.ready) return;
+    text = text.trim().slice(0, 2000);
+    const history = async (
+      reply: string,
+      evidence: HistoryEntry["evidence"],
+      refs: string[] = [],
+    ) => {
+      if (containsCredential(text)) return;
+      await preferences.update((s) =>
+        addHistory(
+          memorySuggestion(text)
+            ? proposeMemory(s, memorySuggestion(text)!)
+            : s,
+          {
+            id: `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+            at: new Date().toISOString(),
+            query: text,
+            scope,
+            text: reply,
+            evidence,
+            references: refs,
+          },
+        ),
+      );
+    };
     setBusy(true);
     setError("");
     setAnswer(null);
@@ -286,9 +375,23 @@ function StudyApp() {
     setTab("Study");
     setQuery(text);
     try {
+      const suggestion = memorySuggestion(text);
+      if (suggestion && /^(?:please )?remember\s+/i.test(text)) {
+        const message =
+          "I added this as a local memory suggestion. Open Saved → Scratchpad & personal memory to review and approve it. It will not be shared with AI until you enable approved memory sharing.";
+        setConversation({
+          kind: "app_conversation",
+          message,
+          connection_status: "failed",
+          note: "Saved locally; no provider request was made.",
+        });
+        await history(message, "conversation");
+        return;
+      }
       if (voiceEnabled) {
         const turn = await requestVoiceTurn({
           query: text,
+          ...searchSelection,
           ...(profile.name ? { preferred_name: profile.name } : {}),
           work_ids:
             scope === GITA_PRESS_SCOPE
@@ -313,6 +416,19 @@ function StudyApp() {
           });
         setWebFallback(turn.web || null);
         setNotice(turn.note || "");
+        await history(
+          turn.text,
+          turn.answer?.support_state === "DIRECT" &&
+            turn.answer.citations.length > 0 &&
+            turn.answer.citations.every((p) => p.review_status === "approved")
+            ? "local"
+            : turn.web?.source_status === "external_web_unverified"
+              ? "web"
+              : turn.kind === "app_conversation"
+                ? "conversation"
+                : "unverified",
+          turn.answer?.citations.map((p) => p.reference),
+        );
         setVoiceResponse({
           id: Date.now(),
           text: turn.text,
@@ -322,11 +438,14 @@ function StudyApp() {
         return;
       }
       if (isAppConversation(text)) {
-        setConversation(await requestAppConversation(text, profile.name));
+        const reply = await requestAppConversation(text, profile.name);
+        setConversation(reply);
+        await history(reply.message, "conversation");
         return;
       }
       const result = await requestStudy({
         query: text,
+        ...searchSelection,
         work_ids:
           scope === GITA_PRESS_SCOPE
             ? MAHAPURANA_TARGETS.map(([id]) => id)
@@ -336,6 +455,17 @@ function StudyApp() {
       });
       setAnswer(result.answer);
       setWebFallback(result.web || null);
+      await history(
+        result.web?.text || result.answer.answer,
+        result.answer.support_state === "DIRECT" &&
+          result.answer.citations.length > 0 &&
+          result.answer.citations.every((p) => p.review_status === "approved")
+          ? "local"
+          : result.web?.source_status === "external_web_unverified"
+            ? "web"
+            : "unverified",
+        result.answer.citations.map((p) => p.reference),
+      );
     } catch (e) {
       setError((e as Error).message);
     } finally {
@@ -346,7 +476,21 @@ function StudyApp() {
     setReport(false);
     setNotice("");
     try {
-      setReader(await request("/v1/passages/" + p.id));
+      const passage = (await request("/v1/passages/" + p.id)) as Passage & {
+        context?: Passage[];
+      };
+      setReader(passage);
+      await preferences.update((s) => ({
+        ...s,
+        positions: {
+          ...s.positions,
+          [passage.work_id]: {
+            id: passage.id,
+            reference: passage.reference,
+            at: new Date().toISOString(),
+          },
+        },
+      }));
     } catch (e) {
       setError((e as Error).message);
     }
@@ -390,7 +534,7 @@ function StudyApp() {
           : w.id === scope),
   );
 
-  if (!profileReady)
+  if (!profileReady || !preferences.ready)
     return (
       <SafeAreaView style={s.root}>
         <ActivityIndicator accessibilityLabel="Loading study preferences" />
@@ -411,6 +555,7 @@ function StudyApp() {
 
   return (
     <SafeAreaView style={s.root} edges={["top", "right", "bottom", "left"]}>
+      <StatusBar barStyle={dark ? "light-content" : "dark-content"} />
       <View style={[s.shell, !wide && { flexDirection: "column" }]}>
         {wide && (
           <View style={s.sidebar}>
@@ -452,7 +597,7 @@ function StudyApp() {
               </Text>
             </View>
             <Text style={[s.small, { marginTop: 24 }]}>
-              DEVELOPMENT BUILD · 0.1
+              DEVELOPMENT BUILD · 0.2
             </Text>
           </View>
         )}
@@ -517,6 +662,15 @@ function StudyApp() {
                   </Text>
                   <Text style={s.small}>Immutable ID: {reader.id}</Text>
                 </View>
+                <BookmarkEditor
+                  key={reader.id}
+                  id={reader.id}
+                  onSave={() =>
+                    setSaved((ids) =>
+                      ids.includes(reader.id) ? ids : [...ids, reader.id],
+                    )
+                  }
+                />
                 <Text style={s.sectionTitle}>Surrounding passages</Text>
                 {reader.context
                   ?.filter((p) => p.id !== reader.id)
@@ -577,6 +731,32 @@ function StudyApp() {
                   Explore scripture with care. Ask a question, find the passage,
                   {"\n"}and make room for a deeper understanding.
                 </Text>
+                {Object.entries(preferences.state.positions).length > 0 && (
+                  <View style={s.info}>
+                    <Text style={s.sectionTitle}>Continue reading</Text>
+                    {Object.entries(preferences.state.positions)
+                      .sort((a, b) => b[1].at.localeCompare(a[1].at))
+                      .slice(0, 3)
+                      .map(([work, position]) => (
+                        <Pressable
+                          key={work}
+                          accessibilityRole="button"
+                          style={s.secondary}
+                          onPress={() =>
+                            void request("/v1/passages/" + position.id)
+                              .then((p) => open(p))
+                              .catch(() =>
+                                setError(
+                                  "This reading position is unavailable. Reinstall its source pack.",
+                                ),
+                              )
+                          }
+                        >
+                          <Text style={s.body}>{position.reference}</Text>
+                        </Pressable>
+                      ))}
+                  </View>
+                )}
                 <RishiPreview speaking={speaking} />
                 <Pressable
                   accessibilityRole="switch"
@@ -620,6 +800,26 @@ function StudyApp() {
                   />
                 )}
 
+                {!liveMode && (
+                  <SearchFilters
+                    value={searchSelection}
+                    editions={selectedEditions}
+                    onChange={setSearchSelection}
+                  />
+                )}
+                <Pressable
+                  accessibilityLabel="Check a quote or screenshot"
+                  accessibilityRole="button"
+                  style={s.secondary}
+                  onPress={() => {
+                    setTab("Fact check");
+                    setReader(null);
+                    setLiveMode(false);
+                  }}
+                >
+                  <Icon name="scan-outline" size={20} />
+                  <Text style={s.body}>Check a quote or screenshot</Text>
+                </Pressable>
                 {!liveMode && (
                   <View style={s.composer}>
                     <TextInput
@@ -734,59 +934,55 @@ function StudyApp() {
                                 )?.[1] || "Veda"
                               : scope === "valmiki-ramayana"
                                 ? "Valmiki Ramayana · Gita Press"
-                                : "Mahabharata · Gita Press"}{" "}
+                                : works.find((w) => w.id === scope)?.title ||
+                                  scope}{" "}
                       ▾
                     </Text>
                   </Pressable>
                 </View>
                 {showSources && (
                   <View style={s.info}>
+                    <TextInput
+                      accessibilityLabel="Filter source collections"
+                      value={sourceSearch}
+                      onChangeText={setSourceSearch}
+                      placeholder="Find a scripture collection"
+                      style={s.reportInput}
+                    />
                     {[
-                      [
-                        GITA_PRESS_SCOPE,
-                        "All 18 Mahapuranas · Gita Press, Gorakhpur",
-                      ],
-                      [
-                        UPANISHAD_SCOPE,
-                        "108 Upanishads · separate collection · editions pending",
-                      ],
-                      [
-                        "bhagavad-gita",
-                        DEVICE_CONNECTIONS
-                          ? "Bhagavad Gita"
-                          : "Bhagavad Gita · development fixtures",
-                      ],
-                      ...VEDA_TARGETS.map(([id, title]) => [
-                        id,
-                        `${title} · planned · edition pending`,
+                      [GITA_PRESS_SCOPE, "All 18 Mahapuranas · Gita Press"],
+                      [UPANISHAD_SCOPE, "108 Upanishads · Muktika list"],
+                      ...works.map((w) => [
+                        w.id,
+                        `${w.title} · ${w.passage_count > 0 ? "installed" : "pending"}`,
                       ]),
-                      [
-                        "valmiki-ramayana",
-                        "Valmiki Ramayana · Gita Press · awaiting corpus",
-                      ],
-                      [
-                        "mahabharata",
-                        "Vyasa’s Mahabharata · Gita Press · awaiting corpus",
-                      ],
-                    ].map(([id, label]) => (
-                      <Pressable
-                        key={id}
-                        accessibilityLabel={label}
-                        style={s.secondary}
-                        onPress={() => {
-                          setScope(id);
-                          setLiveMode(false);
-                          setConversation(null);
-                          setVoiceResponse(null);
-                          setShowSources(false);
-                          setAnswer(null);
-                        }}
-                      >
-                        <Text style={s.body}>
-                          {scope === id ? "◉" : "○"} {label}
-                        </Text>
-                      </Pressable>
-                    ))}
+                    ]
+                      .filter(([, title]) =>
+                        title
+                          .toLowerCase()
+                          .includes(sourceSearch.toLowerCase()),
+                      )
+                      .slice(0, 20)
+                      .map(([id, label]) => (
+                        <Pressable
+                          key={id}
+                          accessibilityLabel={label}
+                          style={s.secondary}
+                          onPress={() => {
+                            setScope(id);
+                            setSearchSelection(DEFAULT_SEARCH);
+                            setLiveMode(false);
+                            setConversation(null);
+                            setVoiceResponse(null);
+                            setShowSources(false);
+                            setAnswer(null);
+                          }}
+                        >
+                          <Text style={s.body}>
+                            {scope === id ? "◉" : "○"} {label}
+                          </Text>
+                        </Pressable>
+                      ))}
                   </View>
                 )}
                 {voiceEnabled && !liveMode && (
@@ -847,7 +1043,9 @@ function StudyApp() {
                           : "LOCAL GREETING"}
                       </Text>
                     </View>
-                    <Text style={s.body}>{conversation.message}</Text>
+                    <ReadingText style={s.body}>
+                      {conversation.message}
+                    </ReadingText>
                     {!!conversation.note && (
                       <Text style={[s.small, { marginTop: 12 }]}>
                         {conversation.note}
@@ -869,7 +1067,7 @@ function StudyApp() {
                           : "NOT VERIFIED"}
                       </Text>
                     </View>
-                    <Text style={s.body}>{answer.answer}</Text>
+                    <ReadingText style={s.body}>{answer.answer}</ReadingText>
                     {webFallback && (
                       <View
                         style={{
@@ -884,11 +1082,11 @@ function StudyApp() {
                           No local passage matched. External web sources are not
                           verified scripture.
                         </Text>
-                        <Text style={[s.body, { marginTop: 12 }]}>
+                        <ReadingText style={[s.body, { marginTop: 12 }]}>
                           {webFallback.text ||
                             webFallback.error ||
                             "Web search returned no cited result."}
-                        </Text>
+                        </ReadingText>
                         <WebSearchSuggestions
                           html={webFallback.search_entry_point}
                         />
@@ -1080,23 +1278,63 @@ function StudyApp() {
                   Each edition has its own voice. Each passage has its own
                   provenance.
                 </Text>
-                {works.map(({ id, title: name, status, passage_count }) => {
-                  const icon =
-                    id === "bhagavad-gita" ? "book-outline" : "library-outline";
-                  return (
-                    <View key={name} style={s.passage}>
-                      <View style={s.row}>
-                        <Icon name={icon as any} color={C.accent} />
-                        <Text style={s.sectionTitle}>{name}</Text>
-                        <Text style={s.badge}>
-                          {passage_count > 0 ? "INSTALLED" : "PENDING"}
+                <TextInput
+                  accessibilityLabel="Search library collections"
+                  placeholder="Search works or editions"
+                  value={librarySearch}
+                  onChangeText={setLibrarySearch}
+                  style={s.reportInput}
+                />
+                {works
+                  .filter((w) =>
+                    `${w.title} ${w.editions?.map((e) => e.id).join(" ") || ""}`
+                      .toLowerCase()
+                      .includes(librarySearch.toLowerCase()),
+                  )
+                  .map(({ id, title: name, status, passage_count }) => {
+                    const icon =
+                      id === "bhagavad-gita"
+                        ? "book-outline"
+                        : "library-outline";
+                    return (
+                      <View key={name} style={s.passage}>
+                        <View style={s.row}>
+                          <Icon name={icon as any} color={C.accent} />
+                          <Text style={s.sectionTitle}>{name}</Text>
+                          <Text style={s.badge}>
+                            {passage_count > 0 ? "INSTALLED" : "PENDING"}
+                          </Text>
+                        </View>
+                        <Text style={[s.small, { marginTop: 12 }]}>
+                          {status}
                         </Text>
+                        <Text style={s.small}>{passage_count} passages</Text>
+                        {preferences.state.positions[id] && (
+                          <Pressable
+                            style={s.secondary}
+                            accessibilityRole="button"
+                            onPress={() =>
+                              void request(
+                                "/v1/passages/" +
+                                  preferences.state.positions[id].id,
+                              )
+                                .then((p) => open(p))
+                                .catch(() =>
+                                  setError(
+                                    "This reading position is unavailable. Reinstall its source pack.",
+                                  ),
+                                )
+                            }
+                          >
+                            <Text style={s.body}>
+                              Resume reading ·{" "}
+                              {preferences.state.positions[id].reference}
+                            </Text>
+                          </Pressable>
+                        )}
                       </View>
-                      <Text style={[s.small, { marginTop: 12 }]}>{status}</Text>
-                      <Text style={s.small}>{passage_count} passages</Text>
-                    </View>
-                  );
-                })}
+                    );
+                  })}
                 <Text style={[s.sectionTitle, { marginTop: 20 }]}>
                   Explore available passages
                 </Text>
@@ -1117,6 +1355,32 @@ function StudyApp() {
                 <Text style={s.intro}>
                   Passages saved on this device for your next study session.
                 </Text>
+                <View
+                  style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}
+                >
+                  {[
+                    null,
+                    "",
+                    ...new Set(
+                      saved
+                        .map((id) => preferences.state.notes[id]?.folder || "")
+                        .filter(Boolean),
+                    ),
+                  ].map((folder) => (
+                    <Pressable
+                      key={folder === null ? "all" : "folder-" + folder}
+                      style={s.secondary}
+                      accessibilityRole="radio"
+                      accessibilityState={{ checked: savedFolder === folder }}
+                      onPress={() => setSavedFolder(folder)}
+                    >
+                      <Text style={s.body}>
+                        {savedFolder === folder ? "● " : "○ "}
+                        {folder === null ? "All folders" : folder || "Unfiled"}
+                      </Text>
+                    </Pressable>
+                  ))}
+                </View>
                 {saved.length === 0 ? (
                   <View style={s.info}>
                     <Icon name="bookmark-outline" size={30} />
@@ -1125,21 +1389,73 @@ function StudyApp() {
                     </Text>
                   </View>
                 ) : (
-                  saved.map((id) => (
-                    <SavedPassage
-                      key={id}
-                      id={id}
-                      render={(p) => (
-                        <PassageCard
-                          saved={saved}
-                          onOpen={open}
-                          onToggle={toggle}
-                          p={p}
-                        />
-                      )}
-                    />
-                  ))
+                  saved
+                    .filter(
+                      (id) =>
+                        savedFolder === null ||
+                        (preferences.state.notes[id]?.folder || "") ===
+                          savedFolder,
+                    )
+                    .map((id) => (
+                      <SavedPassage
+                        key={id}
+                        id={id}
+                        render={(p) => (
+                          <View>
+                            <PassageCard
+                              saved={saved}
+                              onOpen={open}
+                              onToggle={toggle}
+                              p={p}
+                            />
+                            {!!preferences.state.notes[id]?.folder && (
+                              <Text style={s.small}>
+                                Folder: {preferences.state.notes[id].folder}
+                              </Text>
+                            )}
+                            {!!preferences.state.notes[id]?.note && (
+                              <ReadingText style={s.body}>
+                                Personal note:{" "}
+                                {preferences.state.notes[id].note}
+                              </ReadingText>
+                            )}
+                          </View>
+                        )}
+                      />
+                    ))
                 )}
+                <Scratchpad />
+                <StudyHistory
+                  onRecall={(entry) => {
+                    setQuery(entry.query);
+                    setScope(entry.scope || GITA_PRESS_SCOPE);
+                    setAnswer(null);
+                    setConversation(null);
+                    setWebFallback(null);
+                    setReader(null);
+                    setTab("Study");
+                  }}
+                />
+              </>
+            ) : tab === "Fact check" ? (
+              <>
+                <Pressable
+                  accessibilityRole="button"
+                  onPress={() => setTab("Study")}
+                  style={s.secondary}
+                >
+                  <Text style={s.body}>Back to study</Text>
+                </Pressable>
+                <Text style={s.small}>
+                  Selected collection:{" "}
+                  {scope === GITA_PRESS_SCOPE
+                    ? "18 Mahapuranas"
+                    : scope === UPANISHAD_SCOPE
+                      ? "108 Upanishads"
+                      : works.find((w) => w.id === scope)?.title || scope}
+                  . Change it in Study to check another work.
+                </Text>
+                <FactCheckScreen workIds={selectedWorkIds} onOpen={open} />
               </>
             ) : tab === "Settings" ? (
               <>

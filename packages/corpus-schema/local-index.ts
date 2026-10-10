@@ -1,3 +1,4 @@
+import { normalizeSourceLanguage } from "../device-preferences";
 import { scriptureDigest, validateGitaPressBundle } from "./gita-press";
 import type { Answer, Passage } from "../citation-schema";
 
@@ -35,6 +36,7 @@ export class LocalScriptureIndex {
           original: p.original,
           translation: quotation,
           translator: p.translation?.author ?? "Original source text",
+          translation_language: p.translation?.language,
           keywords: [],
           review_status: "approved",
           license_id: p.license_id,
@@ -116,7 +118,11 @@ export class LocalScriptureIndex {
   }
   answer(
     query: string,
-    selection: { work_ids?: string[]; edition_ids?: string[] } = {},
+    selection: {
+      work_ids?: string[];
+      edition_ids?: string[];
+      translation_language?: string;
+    } = {},
   ): Answer {
     const empty: Answer = {
       id: "local-" + scriptureDigest(query).slice(0, 20),
@@ -137,7 +143,10 @@ export class LocalScriptureIndex {
     const allowed = (p: Passage) =>
       (!selection.work_ids?.length || selection.work_ids.includes(p.work_id)) &&
       (!selection.edition_ids?.length ||
-        selection.edition_ids.includes(p.edition_id));
+        selection.edition_ids.includes(p.edition_id)) &&
+      (!selection.translation_language ||
+        normalizeSourceLanguage(p.translation_language) ===
+          normalizeSourceLanguage(selection.translation_language));
     const ref = query.match(/(?<!\d)(\d+(?:[.:]\d+)+(?:-\d+)?)(?!\d)/);
     let hits: Passage[];
     if (ref) {

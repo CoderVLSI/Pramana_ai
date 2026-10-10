@@ -1,16 +1,6 @@
+import { Pressable, ScrollView, Text, TextInput, View } from "./ui";
 import React, { useEffect, useRef, useState } from "react";
-import {
-  AppState,
-  Linking,
-  Platform,
-  Pressable,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TextInput,
-  Switch,
-  View,
-} from "react-native";
+import { AppState, Linking, Platform, StyleSheet, Switch } from "react-native";
 import { createConversationSocket } from "./settings-client";
 import type { AudioPlayer } from "expo-audio";
 import type { ExpoSpeechRecognitionModuleType } from "expo-speech-recognition/build/ExpoSpeechRecognitionModule.types";

@@ -45,3 +45,35 @@ test("authenticated study and voice routes search Gemini after local miss withou
     await rm(directory, { recursive: true, force: true });
   }
 });
+
+test("fact-check routes require authorization, exclude fixtures and respect local-only search", async () => {
+  const directory = await mkdtemp(join(tmpdir(), "pramana-fact-check-"));
+  const oldDir = process.env.PRAMANA_DATA_DIR, oldMaster = process.env.SETTINGS_MASTER_KEY;
+  process.env.PRAMANA_DATA_DIR = directory;
+  process.env.SETTINGS_MASTER_KEY = "bb".repeat(32);
+  const app = Fastify();
+  let requests = 0;
+  try {
+    await registerSettingsRoutes(app, { chatFetch: async () => { requests++; throw Error("Network must not be used"); } });
+    const session = await app.inject({ method: "POST", url: "/v1/settings/session" });
+    const headers = { authorization: `Bearer ${session.json().token}` };
+    const body = { query: "An alleged scripture quotation", work_ids: ["bhagavad-gita"], enable_web: false };
+    assert.equal((await app.inject({ method: "POST", url: "/v1/fact-check", payload: body })).statusCode, 401);
+    const check = await app.inject({ method: "POST", url: "/v1/fact-check", headers, payload: body });
+    assert.equal(check.statusCode, 200);
+    assert.equal(check.json().verdict, "not_verified");
+    assert.deepEqual(check.json().evidence, []);
+    assert.equal(requests, 0);
+    const study = await app.inject({ method: "POST", url: "/v1/study", headers, payload: { query: "A missing quote", work_ids: ["vishnu-purana"], evidence_mode: "local", translation_language: "hi" } });
+    assert.equal(study.statusCode, 200);
+    assert.equal(study.json().web.source_status, "local_only");
+    const image = await app.inject({ method: "POST", url: "/v1/fact-check/read-image", headers, payload: { mime: "image/png", base64: "bm90LWFuLWltYWdl" } });
+    assert.equal(image.statusCode, 422);
+    assert.equal(requests, 0);
+  } finally {
+    await app.close();
+    if (oldDir === undefined) delete process.env.PRAMANA_DATA_DIR; else process.env.PRAMANA_DATA_DIR = oldDir;
+    if (oldMaster === undefined) delete process.env.SETTINGS_MASTER_KEY; else process.env.SETTINGS_MASTER_KEY = oldMaster;
+    await rm(directory, { recursive: true, force: true });
+  }
+});

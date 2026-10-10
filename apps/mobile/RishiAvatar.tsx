@@ -1,5 +1,6 @@
+import { Pressable, Text, View } from "./ui";
 import React, { useEffect, useState } from "react";
-import { AccessibilityInfo, Image, Pressable, Text, View } from "react-native";
+import { AccessibilityInfo, Image } from "react-native";
 
 /** Eight-frame atlas. Speaking is controlled by actual audio playback, not network activity. */
 export function RishiAvatar({

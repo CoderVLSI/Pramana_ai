@@ -1,5 +1,7 @@
+import { useDevicePreferences } from "./DevicePreferences";
+import { Pressable, Text, View } from "./ui";
 import React, { useEffect, useRef, useState } from "react";
-import { Platform, Pressable, StyleSheet, Text, View } from "react-native";
+import { Platform, StyleSheet } from "react-native";
 import * as Speech from "expo-speech";
 import * as FileSystem from "expo-file-system/legacy";
 import { createAudioPlayer, type AudioPlayer } from "expo-audio";
@@ -26,6 +28,14 @@ export interface VoiceModeProps {
   onNotice: (message: string) => void;
 }
 export default function VoiceMode(props: VoiceModeProps) {
+  const { state, update } = useDevicePreferences();
+  const rate = useRef(state.reading.voiceRate);
+  rate.current = state.reading.voiceRate;
+  const changeRate = (value: number) =>
+    void update((s) => ({
+      ...s,
+      reading: { ...s.reading, voiceRate: value },
+    })).catch(() => props.onNotice("Could not save playback speed."));
   const current = useRef(props);
   current.current = props;
   const [listening, setListening] = useState(false);
@@ -188,6 +198,7 @@ export default function VoiceMode(props: VoiceModeProps) {
       if (!isCurrent()) return;
       Speech.speak(response.text.slice(0, 6000), {
         language: current.current.language || "en-IN",
+        rate: rate.current,
         onStart: () => {
           if (isCurrent()) updateSpeaking(true);
         },
@@ -254,6 +265,7 @@ export default function VoiceMode(props: VoiceModeProps) {
         if (Platform.OS === "web") {
           const element = new Audio(uri);
           webAudio.current = element;
+          element.playbackRate = rate.current;
           element.onplaying = () => {
             if (isCurrent()) updateSpeaking(true);
           };
@@ -290,6 +302,7 @@ export default function VoiceMode(props: VoiceModeProps) {
             if (status.didJustFinish) stopPlayback();
           },
         );
+        audioPlayer.setPlaybackRate(rate.current);
         audioPlayer.play();
       } catch {
         if (uri && cached.current !== uri) {
@@ -332,6 +345,44 @@ export default function VoiceMode(props: VoiceModeProps) {
   }, [props.response?.id, props.busy]);
   return (
     <View style={styles.box}>
+      <Text accessibilityLiveRegion="polite" style={styles.hint}>
+        {listening
+          ? "Listening"
+          : speaking
+            ? "Speaking"
+            : props.busy
+              ? "Preparing reply"
+              : "Ready"}
+      </Text>
+      <View
+        style={{
+          flexDirection: "row",
+          flexWrap: "wrap",
+          gap: 8,
+          marginBottom: 12,
+        }}
+      >
+        {[0.75, 1, 1.25, 1.5].map((value) => (
+          <Pressable
+            key={value}
+            accessibilityRole="radio"
+            accessibilityLabel={`Playback speed ${value}`}
+            accessibilityState={{ checked: state.reading.voiceRate === value }}
+            disabled={speaking || props.busy}
+            onPress={() => changeRate(value)}
+            style={styles.stop}
+          >
+            <Text>
+              {state.reading.voiceRate === value ? "● " : ""}
+              {value}×
+            </Text>
+          </Pressable>
+        ))}
+      </View>
+      <Text style={styles.hint}>
+        Playback speed applies to the next reply or replay. Live streaming uses
+        its provider’s pace.
+      </Text>
       <View style={styles.controls}>
         <Pressable
           accessibilityRole="button"

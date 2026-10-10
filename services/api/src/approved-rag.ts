@@ -1,3 +1,4 @@
+import { normalizeSourceLanguage } from "../../../packages/device-preferences";
 import { createHash } from "node:crypto";
 import { readdirSync, readFileSync, realpathSync } from "node:fs";
 import { resolve } from "node:path";
@@ -54,6 +55,7 @@ export function loadApprovedCorpus(
             source_locator: p.source_locator,
             original: p.original,
             translation: quotation,
+            translation_language: p.translation?.language,
             translator: p.translation?.author ?? "Original source text",
             keywords: [],
             review_status: "approved",
@@ -134,13 +136,20 @@ export function approvedRecord(id: string) {
 }
 export function approvedSearch(
   query: string,
-  selection: { work_ids?: string[]; edition_ids?: string[] } = {},
+  selection: {
+    work_ids?: string[];
+    edition_ids?: string[];
+    translation_language?: string;
+  } = {},
 ) {
   if (!query.trim() || query.length > 2000) return [];
   const allowed = (p: Passage) =>
     (!selection.work_ids?.length || selection.work_ids.includes(p.work_id)) &&
     (!selection.edition_ids?.length ||
-      selection.edition_ids.includes(p.edition_id));
+      selection.edition_ids.includes(p.edition_id)) &&
+    (!selection.translation_language ||
+      normalizeSourceLanguage(p.translation_language) ===
+        normalizeSourceLanguage(selection.translation_language));
   // Numeric locators match every hierarchy component: 1.2.3 means section 1, chapter 2, verse 3.
   const ref = query.match(/(?<!\d)(\d+(?:[.:]\d+)+)(?!\d)/);
   if (ref) {

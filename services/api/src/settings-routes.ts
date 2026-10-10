@@ -1,3 +1,4 @@
+import { readScreenshot } from "../../../packages/provider-client/screenshot";
 import { LiveToolDispatcher } from "./live-tools";
 import { attachLiveSessions } from "./live-session";
 import { join } from "node:path";
@@ -43,20 +44,152 @@ export async function registerSettingsRoutes(
     transport(req);
     return req.headers.authorization?.replace(/^Bearer /, "") || "";
   }
-  app.post<{ Body: { query: string; work_ids?: string[]; edition_ids?: string[] } }>("/v1/study", {
-    schema: { body: { type: "object", required: ["query"], additionalProperties: false, properties: {
-      query: { type: "string", minLength: 1, maxLength: 1000, pattern: "\\S" },
-      work_ids: { type: "array", maxItems: 160, items: { type: "string", maxLength: 120 } },
-      edition_ids: { type: "array", maxItems: 160, items: { type: "string", maxLength: 120 } }
-    } } }
-  }, async (req, reply) => {
-    reply.header("Cache-Control", "no-store");
-    const profile = await vault.read(token(req));
-    const answer = answerStrict(req.body.query, req.body);
-    if (answer.citations.length) return { answer };
-    const web = await new LiveToolDispatcher(profile, options.chatFetch).dispatch("web_search", { query: req.body.query });
-    return { answer, web, fallback_from: "local_scripture" };
-  });
+  app.post<{
+    Body: {
+      query: string;
+      work_ids?: string[];
+      edition_ids?: string[];
+      translation_language?: string;
+      evidence_mode?: "auto" | "local" | "web";
+      user_memories?: string[];
+    };
+  }>(
+    "/v1/study",
+    {
+      schema: {
+        body: {
+          type: "object",
+          required: ["query"],
+          additionalProperties: false,
+          properties: {
+            query: {
+              type: "string",
+              minLength: 1,
+              maxLength: 1000,
+              pattern: "\\S",
+            },
+            work_ids: {
+              type: "array",
+              maxItems: 160,
+              items: { type: "string", maxLength: 120 },
+            },
+            edition_ids: {
+              type: "array",
+              maxItems: 160,
+              items: { type: "string", maxLength: 120 },
+            },
+            translation_language: { type: "string", enum: ["en", "hi", "sa"] },
+            user_memories: {
+              type: "array",
+              maxItems: 20,
+              items: { type: "string", maxLength: 300 },
+            },
+            evidence_mode: { type: "string", enum: ["auto", "local", "web"] },
+          },
+        },
+      },
+    },
+    async (req, reply) => {
+      reply.header("Cache-Control", "no-store");
+      const profile = await vault.read(token(req));
+      const answer = answerStrict(
+        req.body.query,
+        req.body.evidence_mode === "web"
+          ? { work_ids: ["web-only-no-local"] }
+          : req.body,
+      );
+      if (req.body.evidence_mode === "local")
+        return {
+          answer,
+          web: {
+            source_status: "local_only",
+            note: "Web search is disabled for this question.",
+          },
+        };
+      if (answer.citations.length) return { answer };
+      const web = await new LiveToolDispatcher(
+        profile,
+        options.chatFetch,
+        false,
+        req.body.user_memories || [],
+      ).dispatch("web_search", { query: req.body.query });
+      return { answer, web, fallback_from: "local_scripture" };
+    },
+  );
+  app.post<{
+    Body: {
+      query: string;
+      work_ids?: string[];
+      reference?: string;
+      enable_web?: boolean;
+    };
+  }>(
+    "/v1/fact-check",
+    {
+      schema: {
+        body: {
+          type: "object",
+          required: ["query"],
+          additionalProperties: false,
+          properties: {
+            query: {
+              type: "string",
+              minLength: 1,
+              maxLength: 1000,
+              pattern: "\\S",
+            },
+            reference: { type: "string", maxLength: 200 },
+            work_ids: {
+              type: "array",
+              maxItems: 160,
+              items: { type: "string", maxLength: 120 },
+            },
+            enable_web: { type: "boolean" },
+          },
+        },
+      },
+    },
+    async (req, reply) => {
+      reply.header("Cache-Control", "no-store");
+      const profile = await vault.read(token(req));
+      return new LiveToolDispatcher(
+        profile,
+        options.chatFetch,
+        req.body.enable_web !== false,
+      ).dispatch("fact_check_claim", req.body);
+    },
+  );
+  app.post<{ Body: { mime: "image/jpeg" | "image/png"; base64: string } }>(
+    "/v1/fact-check/read-image",
+    {
+      bodyLimit: 6 * 1024 * 1024,
+      schema: {
+        body: {
+          type: "object",
+          required: ["mime", "base64"],
+          additionalProperties: false,
+          properties: {
+            mime: { type: "string", enum: ["image/jpeg", "image/png"] },
+            base64: { type: "string", maxLength: 5600000 },
+          },
+        },
+      },
+    },
+    async (req, reply) => {
+      reply.header("Cache-Control", "no-store");
+      const profile = await vault.read(token(req));
+      try {
+        return {
+          text: await readScreenshot(profile, req.body, options.chatFetch),
+        };
+      } catch {
+        return reply.code(422).send({
+          error:
+            "The screenshot could not be read. Check the image, provider key and model access, or type the quotation.",
+        });
+      }
+    },
+  );
   app.post<{ Body: { query: string; preferred_name?: string } }>(
     "/v1/chat",
     {
@@ -133,6 +266,8 @@ export async function registerSettingsRoutes(
       preferred_name?: string;
       work_ids?: string[];
       edition_ids?: string[];
+      translation_language?: string;
+      evidence_mode?: "auto" | "local" | "web";
     };
   }>(
     "/v1/voice/turn",
@@ -149,6 +284,8 @@ export async function registerSettingsRoutes(
               maxLength: 2000,
               pattern: "\\S",
             },
+            translation_language: { type: "string", enum: ["en", "hi", "sa"] },
+            evidence_mode: { type: "string", enum: ["auto", "local", "web"] },
             preferred_name: { type: "string", maxLength: 80 },
             work_ids: {
               type: "array",
@@ -171,7 +308,11 @@ export async function registerSettingsRoutes(
       const key = profile[provider].api_key;
       let text: string;
       let answer: ReturnType<typeof answerStrict> | undefined;
-      let kind: "app_conversation" | "verified_scripture" | "source_status" | "external_web";
+      let kind:
+        | "app_conversation"
+        | "verified_scripture"
+        | "source_status"
+        | "external_web";
       let web: Record<string, unknown> | undefined;
       let note: string | undefined;
       if (isAppConversation(req.body.query)) {
@@ -200,7 +341,12 @@ export async function registerSettingsRoutes(
           note =
             "This is a local greeting. Add your provider API key in Settings to enable voice.";
       } else {
-        answer = answerStrict(req.body.query, req.body);
+        answer = answerStrict(
+          req.body.query,
+          req.body.evidence_mode === "web"
+            ? { work_ids: ["web-only-no-local"] }
+            : req.body,
+        );
         const approved =
           answer.safe_to_speak &&
           answer.citations.length > 0 &&
@@ -214,12 +360,20 @@ export async function registerSettingsRoutes(
               .map((p) => p.reference + ". " + p.translation)
               .join(" ")
           : "I could not verify an answer in the selected scripture collection. Please check the source review status in Library.";
-        if (!answer.citations.length) {
-          web = await new LiveToolDispatcher(profile, options.chatFetch).dispatch("web_search", { query: req.body.query });
-          if (web.source_status === "external_web_unverified" && typeof web.text === "string") {
+        if (!answer.citations.length && req.body.evidence_mode !== "local") {
+          web = await new LiveToolDispatcher(
+            profile,
+            options.chatFetch,
+          ).dispatch("web_search", { query: req.body.query });
+          if (
+            web.source_status === "external_web_unverified" &&
+            typeof web.text === "string"
+          ) {
             kind = "external_web";
-            text = "External web search result, not verified scripture. " + web.text;
-            note = "No local passage matched. This answer comes from external web search; check the linked sources.";
+            text =
+              "External web search result, not verified scripture. " + web.text;
+            note =
+              "No local passage matched. This answer comes from external web search; check the linked sources.";
           }
         }
       }

@@ -151,3 +151,21 @@ test("device study uses installed evidence without an API key or network, and re
   assert.equal(voice.kind, "verified_scripture");
   assert.equal(voice.text, "TEST ONLY truth duty 1");
 });
+
+test("edition and translation-language filters apply before local ranking", () => {
+  const index = new LocalScriptureIndex([bundle()]);
+  assert.ok(
+    index.answer("truth", {
+      translation_language: "English",
+      edition_ids: ["TEST-ONLY"],
+    }).citations.length,
+  );
+  assert.equal(
+    index.answer("truth", { translation_language: "hi" }).citations.length,
+    0,
+  );
+  assert.equal(
+    index.answer("truth", { edition_ids: ["not-installed"] }).citations.length,
+    0,
+  );
+});

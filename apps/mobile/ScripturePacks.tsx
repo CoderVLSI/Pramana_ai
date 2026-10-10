@@ -1,20 +1,19 @@
+import { Pressable, Text, TextInput, View } from "./ui";
 import React, { useEffect, useState } from "react";
-import {
-  ActivityIndicator,
-  Pressable,
-  Text,
-  TextInput,
-  View,
-} from "react-native";
+import { ActivityIndicator } from "react-native";
 import {
   deviceCorpusStatus,
   installScripturePack,
   removeScripturePacks,
+  removeScripturePack,
+  type PackProgress,
 } from "./device-corpus";
 
 export default function ScripturePacks() {
   const [status, setStatus] =
     useState<Awaited<ReturnType<typeof deviceCorpusStatus>>>();
+  const [progress, setProgress] = useState<PackProgress | null>(null);
+  const [removeConfirm, setRemoveConfirm] = useState<string | null>(null);
   const [url, setUrl] = useState(""),
     [hash, setHash] = useState(""),
     [busy, setBusy] = useState(false),
@@ -27,17 +26,19 @@ export default function ScripturePacks() {
       setNotice("Installed scripture packs could not be loaded."),
     );
   }, []);
-  async function action(remove = false) {
+  async function action(remove: boolean | string = false) {
     setBusy(true);
     setNotice("");
     try {
       if (remove) {
-        await removeScripturePacks();
+        if (typeof remove === "string") await removeScripturePack(remove);
+        else await removeScripturePacks();
+        setRemoveConfirm(null);
         setNotice(
           "Scripture packs removed from this phone. Saved bookmarks remain.",
         );
       } else {
-        setNotice(await installScripturePack(url, hash));
+        setNotice(await installScripturePack(url, hash, setProgress));
         setUrl("");
         setHash("");
       }
@@ -48,6 +49,7 @@ export default function ScripturePacks() {
       );
     } finally {
       setBusy(false);
+      setProgress(null);
     }
   }
   return (
@@ -75,11 +77,46 @@ export default function ScripturePacks() {
         source pack when available. Local search works offline; online AI
         replies and web search use your provider.
       </Text>
+      <Text style={{ color: "#778179" }}>
+        Storage:{" "}
+        {(
+          (status?.packs.reduce((n, p) => n + p.size_bytes, 0) || 0) /
+          1024 /
+          1024
+        ).toFixed(2)}{" "}
+        MB · {status?.packs.length || 0}/30 packs
+      </Text>
       {status?.packs.map((pack) => (
-        <Text key={pack.sha256} style={{ color: "#263d35" }}>
-          {pack.work_id} · {pack.edition_id} · {pack.passage_count} passages ·{" "}
-          {pack.completeness}
-        </Text>
+        <View
+          key={pack.sha256}
+          style={{
+            gap: 8,
+            paddingVertical: 10,
+            borderTopWidth: 1,
+            borderColor: "#e4e5db",
+          }}
+        >
+          <Text>
+            {pack.work_id} · {pack.edition_id} · {pack.passage_count} passages ·{" "}
+            {pack.completeness}
+          </Text>
+          <Text style={{ color: "#778179", fontSize: 12 }}>
+            Release: {pack.release} ·{" "}
+            {(pack.size_bytes / 1024 / 1024).toFixed(2)} MB
+          </Text>
+          <Text style={{ color: "#778179", fontSize: 12 }}>
+            Update status: not checked. Enter a trusted new release URL and
+            checksum to replace this edition.
+          </Text>
+          <Pressable
+            accessibilityRole="button"
+            disabled={busy}
+            onPress={() => setRemoveConfirm(pack.sha256)}
+            style={{ minHeight: 44, padding: 12 }}
+          >
+            <Text>Remove this pack</Text>
+          </Pressable>
+        </View>
       ))}
       {status?.rejected.map((note) => (
         <Text key={note} style={{ color: "#914626" }}>
@@ -133,13 +170,49 @@ export default function ScripturePacks() {
         <Pressable
           accessibilityRole="button"
           disabled={busy}
-          onPress={() => void action(true)}
+          onPress={() => setRemoveConfirm("all")}
           style={{ padding: 14 }}
         >
           <Text style={{ color: "#914626" }}>
             Remove installed scripture packs
           </Text>
         </Pressable>
+      )}
+      {removeConfirm && (
+        <View style={{ gap: 8 }}>
+          <Text>
+            Remove{" "}
+            {removeConfirm === "all"
+              ? "all scripture packs"
+              : "this scripture pack"}{" "}
+            from this phone? Bookmarks and notes remain.
+          </Text>
+          <Pressable
+            disabled={busy}
+            onPress={() =>
+              void action(removeConfirm === "all" ? true : removeConfirm)
+            }
+            style={{ padding: 14 }}
+          >
+            <Text>Confirm removal</Text>
+          </Pressable>
+          <Pressable
+            disabled={busy}
+            onPress={() => setRemoveConfirm(null)}
+            style={{ padding: 14 }}
+          >
+            <Text>Cancel</Text>
+          </Pressable>
+        </View>
+      )}
+      {progress && (
+        <Text accessibilityLiveRegion="polite">
+          {progress.phase === "download"
+            ? `Downloading · ${(progress.loaded / 1024).toFixed(0)} KB${progress.total > 0 ? ` / ${(progress.total / 1024).toFixed(0)} KB · ${Math.min(100, Math.round((progress.loaded / progress.total) * 100))}%` : ""}`
+            : progress.phase === "validate"
+              ? "Checking checksum and editorial records…"
+              : "Installing reviewed passages…"}
+        </Text>
       )}
       {busy && (
         <ActivityIndicator
