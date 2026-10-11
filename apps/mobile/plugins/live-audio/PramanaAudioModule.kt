@@ -63,31 +63,24 @@ class PramanaAudioModule(private val context: ReactApplicationContext) :
       if (capture && context.checkSelfPermission(Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED)
         throw SecurityException("Microphone permission is required.")
       oldSpeaker = manager.isSpeakerphoneOn
-      if (manager.requestAudioFocus(focus, AudioManager.STREAM_VOICE_CALL, AudioManager.AUDIOFOCUS_GAIN_TRANSIENT) != AudioManager.AUDIOFOCUS_REQUEST_GRANTED)
+      if (manager.requestAudioFocus(focus, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN_TRANSIENT) != AudioManager.AUDIOFOCUS_REQUEST_GRANTED)
         throw IllegalStateException("Another app is using audio. Close it and retry.")
       focused = true
-      manager.mode = AudioManager.MODE_IN_COMMUNICATION
-      // Respect wired/Bluetooth headsets; otherwise use the loudspeaker.
-      val headset = manager.getDevices(AudioManager.GET_DEVICES_OUTPUTS).any {
-        it.type == AudioDeviceInfo.TYPE_WIRED_HEADSET || it.type == AudioDeviceInfo.TYPE_WIRED_HEADPHONES ||
-        it.type == AudioDeviceInfo.TYPE_BLUETOOTH_SCO || it.type == AudioDeviceInfo.TYPE_BLE_HEADSET ||
-        it.type == AudioDeviceInfo.TYPE_USB_HEADSET
-      }
-      if (Build.VERSION.SDK_INT >= 31) {
-        if (!headset) manager.availableCommunicationDevices.firstOrNull {
-          it.type == AudioDeviceInfo.TYPE_BUILTIN_SPEAKER
-        }?.let { manager.setCommunicationDevice(it) }
-      } else manager.isSpeakerphoneOn = !headset
+      manager.mode = AudioManager.MODE_NORMAL
+      // Media output follows the user's speaker/headset route and media volume.
+      // Communication mode can send replies to a quiet call/earpiece route on OEM phones.
       val outMin = AudioTrack.getMinBufferSize(24000, AudioFormat.CHANNEL_OUT_MONO, AudioFormat.ENCODING_PCM_16BIT)
       require(outMin > 0)
       track = AudioTrack.Builder()
-        .setAudioAttributes(AudioAttributes.Builder().setUsage(AudioAttributes.USAGE_VOICE_COMMUNICATION)
+        .setAudioAttributes(AudioAttributes.Builder().setUsage(AudioAttributes.USAGE_MEDIA)
           .setContentType(AudioAttributes.CONTENT_TYPE_SPEECH).build())
         .setAudioFormat(AudioFormat.Builder().setSampleRate(24000).setChannelMask(AudioFormat.CHANNEL_OUT_MONO)
           .setEncoding(AudioFormat.ENCODING_PCM_16BIT).build())
         .setBufferSizeInBytes(maxOf(outMin * 2, 4800))
         .setTransferMode(AudioTrack.MODE_STREAM).build()
       require(track?.state == AudioTrack.STATE_INITIALIZED)
+      track?.setVolume(1.0f)
+      if (Build.VERSION.SDK_INT >= 31) track?.setStartThresholdInFrames(1)
       lastError = ""
       capturedFrames.set(0)
       writtenFrames.set(0)
@@ -95,7 +88,7 @@ class PramanaAudioModule(private val context: ReactApplicationContext) :
       if (capture) {
         val inMin = AudioRecord.getMinBufferSize(16000, AudioFormat.CHANNEL_IN_MONO, AudioFormat.ENCODING_PCM_16BIT)
         require(inMin > 0)
-        val recorder = AudioRecord(MediaRecorder.AudioSource.VOICE_COMMUNICATION, 16000,
+        val recorder = AudioRecord(MediaRecorder.AudioSource.VOICE_RECOGNITION, 16000,
           AudioFormat.CHANNEL_IN_MONO, AudioFormat.ENCODING_PCM_16BIT, maxOf(inMin * 2, 5120))
         record = recorder
         require(recorder.state == AudioRecord.STATE_INITIALIZED)
@@ -165,13 +158,17 @@ class PramanaAudioModule(private val context: ReactApplicationContext) :
         speaker.play()
         emit("playing")
         var offset = 0
+        var lastProgress = SystemClock.elapsedRealtime()
         while (offset < bytes.size && running && epoch == playbackEpoch && track === speaker) {
           val written = synchronized(speaker) {
             if (!running || epoch != playbackEpoch) 0
             else speaker.write(bytes, offset, bytes.size - offset, AudioTrack.WRITE_NON_BLOCKING)
           }
           if (written < 0) throw IllegalStateException("Speaker write failed.")
-          if (written == 0) SystemClock.sleep(5) else { offset += written; writtenFrames.addAndGet((written / 2).toLong()) }
+          if (written == 0) {
+            if (SystemClock.elapsedRealtime() - lastProgress > 3000) throw IllegalStateException("Speaker stalled.")
+            SystemClock.sleep(5)
+          } else { lastProgress = SystemClock.elapsedRealtime(); offset += written; writtenFrames.addAndGet((written / 2).toLong()) }
         }
       } catch (_: Exception) {
         if (running && epoch == playbackEpoch) emit("error", "Speaker audio could not play. Check audio output and reconnect.")
@@ -188,7 +185,11 @@ class PramanaAudioModule(private val context: ReactApplicationContext) :
       val end = SystemClock.elapsedRealtime() + 2000
       while (running && epoch == playbackEpoch && SystemClock.elapsedRealtime() < end &&
         (speaker.playbackHeadPosition.toLong() and 0xffffffffL) < target) SystemClock.sleep(10)
-      if (running && epoch == playbackEpoch) emit("ended")
+      if (running && epoch == playbackEpoch) {
+        if (target > 0 && speaker.playbackHeadPosition == 0)
+          emit("error", "Reply audio arrived but Android did not play it. Try Replay reply or reconnect.")
+        else emit("ended")
+      }
     }
   }
   @ReactMethod fun interrupt() {

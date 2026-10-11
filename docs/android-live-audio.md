@@ -9,3 +9,10 @@ Verification sources: eval/device-client.test.ts checks bidirectional Gemini PCM
 Runtime safeguards use Android's communication-device routing on API31+, release this app's mode ownership on stop, and treat unavailable echo/noise effects as optional. A five-second missing-frame timeout and API29+ silenced-recording detection surface microphone problems rather than leaving a silent connected session.
 
 Verification on 11 October 2026: 79 tests, TypeScript, web export, mocked browser chat/image flow, arm64 APK build, signature and actual packaged permission checks passed. The first Android instrumentation run found the registered module and started native audio, but failed the microphone-frame assertion in an audio-disabled emulator. Further runtime attempts were blocked by emulator graphics failures and audio-driver initialization failures. Native capture/playback, audible sound and a complete live provider round trip on OnePlus Nord 4 remain unverified. The shared provider test credential was not used in this update.
+
+
+## Reply playback and image messages update
+
+Phone evidence showed 14 provider reply packets and an audible native speaker-test tone. This establishes transport and tone playback, but does not establish why provider speech was inaudible. Playback now uses Android media routing/volume, a one-frame start threshold on API 31+, a bounded stalled-write check, and a playback-head check. Received reply chunks are retained in memory (bounded to 4 MB) for Replay reply. If a provider errors after delivering audio, the received reply is replayed after disconnecting rather than silently discarded with the live track. Replay pauses the live microphone and tells the user to reconnect.
+
+Send now includes PNG/JPEG pixels and the question in the provider message, with an image bubble. Choosing an image alone does not upload it. The optional Read image OCR action remains separate. Image interpretation is generated output, not verified scripture. Live provider credentials were not available for this update; provider image schemas are covered with protocol fixtures, not a live API test. Nord 4 speech playback still needs confirmation.

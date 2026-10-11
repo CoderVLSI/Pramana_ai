@@ -440,3 +440,32 @@ test("Gemini external source packets enforce bounded HTTPS provenance and HTML l
   assert.ok(!JSON.stringify(e).includes("unbounded-secret-metadata"));
   a.close();
 });
+
+test("Gemini receives image pixels with the question, not OCR substituted text", async () => {
+  const requests: any[] = [];
+  const events: LiveEvent[] = [];
+  const a = createLiveAgent({
+    profile,
+    runTool: async () => ({}),
+    send: (e) => events.push(e),
+    connectGemini: async () => ({
+      sendClientContent: (r: any) => requests.push(r),
+      sendRealtimeInput() {},
+      sendToolResponse() {},
+      close() {},
+    }),
+  });
+  await a.start();
+  a.inputText("What is in this image?", {
+    mime: "image/png",
+    base64: "iVBORw0KGgo=",
+  });
+  assert.deepEqual(requests[0].turns[0].parts, [
+    { text: "What is in this image?" },
+    { inlineData: { mimeType: "image/png", data: "iVBORw0KGgo=" } },
+  ]);
+  a.inputText("bad image", { mime: "text/html", base64: "AAAA" });
+  assert.equal(requests.length, 1);
+  assert.equal(events.at(-1)?.type, "error");
+  a.close();
+});

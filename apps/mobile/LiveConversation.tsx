@@ -38,7 +38,7 @@ type Props = {
   onSpeakingChange: (speaking: boolean) => void;
   onNotice: (notice: string) => void;
 };
-type Line = { role: string; text: string };
+type Line = { role: string; text: string; imageUri?: string };
 type Source = { title: string; url?: string; label: string };
 type Grounding = { html?: string; queries: string[] };
 type State = "stopped" | "connecting" | "live" | "failed";
@@ -158,6 +158,9 @@ export default function LiveConversation({
   onNotice,
 }: Props) {
   const duplex = useRef<ReturnType<typeof androidLiveAudio> | null>(null);
+  const lastReplyAudio = useRef<string[]>([]);
+  const lastReplyBytes = useRef(0);
+  const [canReplay, setCanReplay] = useState(false);
   const audioCounts = useRef({ sent: 0, received: 0 });
   const [audioStatus, setAudioStatus] = useState({ sent: 0, received: 0 });
   const messageScroll = useRef<import("react-native").ScrollView>(null);
@@ -171,6 +174,7 @@ export default function LiveConversation({
   } | null>(null);
   const [readingImage, setReadingImage] = useState(false);
   const pendingText = useRef("");
+  const pendingImage = useRef<typeof image>(null);
   const replyTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [sessionNotice, setSessionNotice] = useState("");
   const requestingPermission = useRef(false);
@@ -487,6 +491,11 @@ export default function LiveConversation({
       return;
     }
     if (Platform.OS === "android" && duplex.current) {
+      if (lastReplyBytes.current + data.length <= 4000000) {
+        lastReplyAudio.current.push(data);
+        lastReplyBytes.current += data.length;
+        setCanReplay(true);
+      }
       audioCounts.current.received++;
       setAudioStatus({ ...audioCounts.current });
       duplex.current.play(data);
@@ -827,8 +836,14 @@ export default function LiveConversation({
             waiting.current = false;
             clearPlayback();
             scheduleRecognition();
-          } else if (message.type === "error")
-            fail(liveFailureMessage(message.message));
+          } else if (message.type === "error") {
+            const problem = liveFailureMessage(message.message);
+            fail(problem);
+            // A provider can fail after delivering its answer. stop() flushes the
+            // live track; preserve and play the received answer independently.
+            if (Platform.OS === "android" && lastReplyAudio.current.length)
+              void replayReply(problem);
+          }
         } catch {
           fail(
             "The live session returned an invalid response. Restart or use text.",
@@ -940,9 +955,27 @@ export default function LiveConversation({
     scheduleRecognition();
   }
   function submitText(text: string) {
-    if (!send({ type: "text", text })) return false;
+    lastReplyAudio.current = [];
+    lastReplyBytes.current = 0;
+    setCanReplay(false);
+    const attachment = pendingImage.current;
+    if (
+      !send({
+        type: "text",
+        text,
+        ...(attachment
+          ? { image: { mime: attachment.mime, base64: attachment.base64 } }
+          : {}),
+      })
+    )
+      return false;
+    pendingImage.current = null;
+    if (attachment) setImage(null);
     setHeard("");
-    addLine("user", text);
+    setLines((previous) => [
+      ...previous.slice(-19),
+      { role: "user", text, imageUri: attachment?.uri },
+    ]);
     waiting.current = true;
     setListening(false);
     if (replyTimer.current) clearTimeout(replyTimer.current);
@@ -955,17 +988,23 @@ export default function LiveConversation({
     return true;
   }
   async function sendText() {
-    const text = draft.trim().slice(0, 2000);
+    const text =
+      draft.trim().slice(0, 2000) ||
+      (image
+        ? "Please describe this image and help me check any scripture claims in it."
+        : "");
     if (!text || waiting.current) return;
     setDraft("");
     if (!ready.current) {
       await start(false);
+      pendingImage.current = image;
       if (ready.current) submitText(text);
       else if (active.current) pendingText.current = text;
       else setDraft(text);
       return;
     }
     clearPlayback();
+    pendingImage.current = image;
     if (
       submitText(text) &&
       Platform.OS !== "web" &&
@@ -1044,6 +1083,35 @@ export default function LiveConversation({
     };
   }, []);
 
+  async function replayReply(problem = "") {
+    const chunks = [...lastReplyAudio.current];
+    if (!chunks.length) return;
+    stop();
+    try {
+      const bridge = androidLiveAudio((event) => {
+        if (event.type === "playing") callbacks.current.onSpeakingChange(true);
+        if (event.type === "ended") {
+          callbacks.current.onSpeakingChange(false);
+          bridge.dispose();
+          duplex.current = null;
+        }
+        if (event.type === "error") {
+          notice(event.data);
+          bridge.dispose();
+          duplex.current = null;
+        }
+      });
+      duplex.current = bridge;
+      await bridge.start(false);
+      for (const chunk of chunks) bridge.play(chunk);
+      bridge.endTurn();
+      notice(
+        `${problem ? problem + " " : ""}Replaying received reply audio. Live microphone is stopped; tap the microphone to resume.`,
+      );
+    } catch {
+      notice("Reply playback failed. Check your audio output and retry.");
+    }
+  }
   async function testSpeaker() {
     stop();
     try {
@@ -1215,6 +1283,16 @@ export default function LiveConversation({
               </Text>
             </View>
           )}
+          {Platform.OS === "android" && canReplay && (
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel="Replay reply"
+              onPress={() => void replayReply()}
+              style={styles.button}
+            >
+              <Text style={styles.detail}>Replay reply</Text>
+            </Pressable>
+          )}
           {lines.map((line, i) => (
             <View
               key={i}
@@ -1236,6 +1314,18 @@ export default function LiveConversation({
               <Text style={styles.role}>
                 {line.role === "user" || line.role === "You" ? "You" : "Rishi"}
               </Text>
+              {!!line.imageUri && (
+                <Image
+                  source={{ uri: line.imageUri }}
+                  style={{
+                    width: 200,
+                    height: 180,
+                    borderRadius: 10,
+                    marginBottom: 8,
+                  }}
+                  accessibilityLabel="Sent image"
+                />
+              )}
               <Text selectable>{line.text}</Text>
             </View>
           ))}
@@ -1352,8 +1442,7 @@ export default function LiveConversation({
               />
               <View style={{ flex: 1 }}>
                 <Text style={styles.detail}>
-                  Read image sends it to your provider. Review text before
-                  sending.
+                  Send uploads this image with your message to your AI provider.
                 </Text>
                 <Pressable
                   accessibilityRole="button"
@@ -1433,7 +1522,7 @@ export default function LiveConversation({
               editable={state !== "connecting" && !readingImage}
               onSubmitEditing={sendText}
             />
-            {draft.trim() ? (
+            {draft.trim() || image ? (
               <Pressable
                 accessibilityRole="button"
                 accessibilityLabel="Send"

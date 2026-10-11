@@ -11,7 +11,7 @@ export function attachLiveSessions(
 ) {
   const wss = new (
     WebSocket as unknown as { Server: typeof import("ws").WebSocketServer }
-  ).Server({ noServer: true, maxPayload: 65536 });
+  ).Server({ noServer: true, maxPayload: 5700000 });
   const active = new Map<string, WebSocket>();
   const connections = new Set<WebSocket>();
   const createAgent = options.createAgent ?? createLiveAgent;
@@ -211,9 +211,9 @@ export function attachLiveSessions(
             tools.beginTurn();
             originalEnd();
           };
-          agent.inputText = (text) => {
+          agent.inputText = (text, image) => {
             tools.beginTurn();
-            originalText(text);
+            originalText(text, image);
           };
           await agent.start();
           return;
@@ -261,7 +261,7 @@ export function attachLiveSessions(
               ++textMessages > 20
             )
               throw Error("Invalid text or request limit");
-            agent.inputText(event.text);
+            agent.inputText(event.text, event.image);
             break;
           case "end_input":
             agent.endInput();

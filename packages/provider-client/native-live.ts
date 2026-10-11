@@ -188,7 +188,7 @@ export function createDeviceLiveSocket(
     send(data) {
       if (closed) return;
       const event = JSON.parse(data);
-      if (event.type === "text") agent.inputText(event.text);
+      if (event.type === "text") agent.inputText(event.text, event.image);
       else if (event.type === "interrupt") agent.interrupt();
       else if (event.type === "audio_end") agent.endInput();
       else if (event.type === "audio") agent.inputAudio(event.data);

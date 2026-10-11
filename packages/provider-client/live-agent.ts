@@ -608,14 +608,31 @@ export function createLiveAgent(options: LiveAgentOptions) {
       error("Microphone audio could not be sent. Reconnect to continue.");
     }
   }
-  function inputText(text: string) {
+  function inputText(text: string, image?: { mime: string; base64: string }) {
     if (!ready || closed) return;
+    if (
+      image &&
+      (!/^image\/(png|jpeg)$/.test(image.mime) ||
+        !/^[A-Za-z0-9+/]+={0,2}$/.test(image.base64) ||
+        image.base64.length > 5600000)
+    )
+      return error("Invalid or oversized image.");
     if (!text.trim() || text.length > 2000 || ++turns > 100)
       return error("Conversation input limit reached.");
     if (provider === "gemini") {
       geminiOutputMuted = false;
       session.sendClientContent({
-        turns: [{ role: "user", parts: [{ text }] }],
+        turns: [
+          {
+            role: "user",
+            parts: [
+              { text },
+              ...(image
+                ? [{ inlineData: { mimeType: image.mime, data: image.base64 } }]
+                : []),
+            ],
+          },
+        ],
         turnComplete: true,
       });
     } else {
@@ -624,7 +641,17 @@ export function createLiveAgent(options: LiveAgentOptions) {
         item: {
           type: "message",
           role: "user",
-          content: [{ type: "input_text", text }],
+          content: [
+            { type: "input_text", text },
+            ...(image
+              ? [
+                  {
+                    type: "input_image",
+                    image_url: `data:${image.mime};base64,${image.base64}`,
+                  },
+                ]
+              : []),
+          ],
         },
       });
       write({ type: "response.create" });
