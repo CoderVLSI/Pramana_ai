@@ -42,10 +42,10 @@ public class PramanaAudioSmokeTest extends InstrumentationTestCase {
       audio.start(true, new PromiseImpl((Callback) args -> resolved[0] = true, (Callback) args -> failure[0] = args));
       assertNull("Native start rejected", failure[0]);
       assertTrue("Native start unresolved", resolved[0]);
-      Thread.sleep(500);
       AtomicLong captured = (AtomicLong) field(audio, "capturedFrames");
       AtomicLong written = (AtomicLong) field(audio, "writtenFrames");
-      assertTrue("Microphone produced no PCM frames", captured.get() > 0);
+      for (int i = 0; i < 100 && captured.get() == 0; i++) Thread.sleep(50);
+      assertTrue("Microphone produced no PCM frames: " + field(audio, "lastError") + "; running=" + field(audio, "running"), captured.get() > 0);
       AudioRecord recorder = (AudioRecord) field(audio, "record");
       assertEquals(AudioRecord.RECORDSTATE_RECORDING, recorder.getRecordingState());
       long before = captured.get();

@@ -1117,11 +1117,19 @@ export default function LiveConversation({
               {state === "connecting"
                 ? "Connecting…"
                 : state === "live"
-                  ? listening
-                    ? "Listening…"
-                    : waiting.current
-                      ? "Preparing reply…"
-                      : "Connected · ready"
+                  ? rishiSpeaking
+                    ? microphoneEnabled
+                      ? "Rishi speaking · mic active"
+                      : "Rishi speaking…"
+                    : listening
+                      ? "Listening…"
+                      : waiting.current
+                        ? "Preparing reply…"
+                        : Platform.OS === "android" &&
+                            microphoneEnabled &&
+                            audioStatus.sent === 0
+                          ? "Starting microphone…"
+                          : "Connected · ready"
                   : "Type a message or start voice"}
             </Text>
           </View>

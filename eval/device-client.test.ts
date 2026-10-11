@@ -326,15 +326,15 @@ test("native Gemini duplex forwards microphone PCM and clears speaker on provide
   transport.open();
   transport.receive({ setupComplete: {} });
   await tick();
-  client.send(JSON.stringify({ type: "audio", data: "AAAA" }));
+  client.send(JSON.stringify({ type: "audio", data: "AAAAAA==" }));
   assert.deepEqual(transport.sent.at(-1).realtimeInput.mediaChunks, [
-    { data: "AAAA", mimeType: "audio/pcm;rate=16000" },
+    { data: "AAAAAA==", mimeType: "audio/pcm;rate=16000" },
   ]);
   transport.receive({
     serverContent: {
       modelTurn: {
         parts: [
-          { inlineData: { data: "AAAA", mimeType: "audio/pcm;rate=24000" } },
+          { inlineData: { data: "AAAAAA==", mimeType: "audio/pcm;rate=24000" } },
         ],
       },
     },

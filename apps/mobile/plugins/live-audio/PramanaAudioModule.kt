@@ -6,6 +6,9 @@ import android.media.*
 import android.media.audiofx.AcousticEchoCanceler
 import android.media.audiofx.NoiseSuppressor
 import android.os.SystemClock
+import android.os.Build
+import android.os.Handler
+import android.os.Looper
 import android.util.Base64
 import com.facebook.react.bridge.*
 import com.facebook.react.module.annotations.ReactModule
@@ -25,13 +28,13 @@ class PramanaAudioModule(private val context: ReactApplicationContext) :
   private val capturedFrames = AtomicLong(0)
   private val writtenFrames = AtomicLong(0)
   @Volatile private var running = false
+  @Volatile private var lastError = ""
   @Volatile private var playbackEpoch = 0
   @Volatile private var track: AudioTrack? = null
   private var record: AudioRecord? = null
   private var captureThread: Thread? = null
   private var echo: AcousticEchoCanceler? = null
   private var noise: NoiseSuppressor? = null
-  private var oldMode = AudioManager.MODE_NORMAL
   private var oldSpeaker = false
   private var focused = false
   private val focus = AudioManager.OnAudioFocusChangeListener { change ->
@@ -45,6 +48,7 @@ class PramanaAudioModule(private val context: ReactApplicationContext) :
   @ReactMethod fun addListener(name: String) {}
   @ReactMethod fun removeListeners(count: Int) {}
   private fun emit(type: String, data: String = "") {
+    if (type == "error") lastError = data
     if (!context.hasActiveReactInstance()) return
     val value = Arguments.createMap()
     value.putString("type", type)
@@ -58,7 +62,6 @@ class PramanaAudioModule(private val context: ReactApplicationContext) :
     try {
       if (capture && context.checkSelfPermission(Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED)
         throw SecurityException("Microphone permission is required.")
-      oldMode = manager.mode
       oldSpeaker = manager.isSpeakerphoneOn
       if (manager.requestAudioFocus(focus, AudioManager.STREAM_VOICE_CALL, AudioManager.AUDIOFOCUS_GAIN_TRANSIENT) != AudioManager.AUDIOFOCUS_REQUEST_GRANTED)
         throw IllegalStateException("Another app is using audio. Close it and retry.")
@@ -70,7 +73,11 @@ class PramanaAudioModule(private val context: ReactApplicationContext) :
         it.type == AudioDeviceInfo.TYPE_BLUETOOTH_SCO || it.type == AudioDeviceInfo.TYPE_BLE_HEADSET ||
         it.type == AudioDeviceInfo.TYPE_USB_HEADSET
       }
-      manager.isSpeakerphoneOn = !headset
+      if (Build.VERSION.SDK_INT >= 31) {
+        if (!headset) manager.availableCommunicationDevices.firstOrNull {
+          it.type == AudioDeviceInfo.TYPE_BUILTIN_SPEAKER
+        }?.let { manager.setCommunicationDevice(it) }
+      } else manager.isSpeakerphoneOn = !headset
       val outMin = AudioTrack.getMinBufferSize(24000, AudioFormat.CHANNEL_OUT_MONO, AudioFormat.ENCODING_PCM_16BIT)
       require(outMin > 0)
       track = AudioTrack.Builder()
@@ -81,6 +88,7 @@ class PramanaAudioModule(private val context: ReactApplicationContext) :
         .setBufferSizeInBytes(maxOf(outMin * 2, 4800))
         .setTransferMode(AudioTrack.MODE_STREAM).build()
       require(track?.state == AudioTrack.STATE_INITIALIZED)
+      lastError = ""
       capturedFrames.set(0)
       writtenFrames.set(0)
       running = true
@@ -91,18 +99,30 @@ class PramanaAudioModule(private val context: ReactApplicationContext) :
           AudioFormat.CHANNEL_IN_MONO, AudioFormat.ENCODING_PCM_16BIT, maxOf(inMin * 2, 5120))
         record = recorder
         require(recorder.state == AudioRecord.STATE_INITIALIZED)
-        if (AcousticEchoCanceler.isAvailable()) echo = AcousticEchoCanceler.create(recorder.audioSessionId)?.apply { enabled = true }
-        if (NoiseSuppressor.isAvailable()) noise = NoiseSuppressor.create(recorder.audioSessionId)?.apply { enabled = true }
+        try {
+          if (AcousticEchoCanceler.isAvailable()) { echo = AcousticEchoCanceler.create(recorder.audioSessionId); echo?.enabled = true }
+        } catch (_: Exception) { echo?.release(); echo = null }
+        try {
+          if (NoiseSuppressor.isAvailable()) { noise = NoiseSuppressor.create(recorder.audioSessionId); noise?.enabled = true }
+        } catch (_: Exception) { noise?.release(); noise = null }
         recorder.startRecording()
         require(recorder.recordingState == AudioRecord.RECORDSTATE_RECORDING)
         captureThread = Thread({
-          android.os.Process.setThreadPriority(android.os.Process.THREAD_PRIORITY_AUDIO)
+          try { android.os.Process.setThreadPriority(android.os.Process.THREAD_PRIORITY_AUDIO) } catch (_: Exception) {}
           val buffer = ByteArray(1280)
+          var packets = 0
           try {
             while (running && record === recorder) {
               val count = recorder.read(buffer, 0, buffer.size)
               if (count < 0) throw IllegalStateException("Microphone capture failed.")
               if (count > 0 && running && record === recorder) {
+                packets++
+                if (Build.VERSION.SDK_INT >= 29 && packets % 25 == 0 &&
+                    recorder.activeRecordingConfiguration?.isClientSilenced == true) {
+                  emit("error", "Android silenced the microphone. Close other voice calls or enable microphone access, then retry.")
+                  shutdown()
+                  break
+                }
                 capturedFrames.addAndGet((count / 2).toLong())
                 emit("audio", Base64.encodeToString(buffer, 0, count, Base64.NO_WRAP))
               }
@@ -114,6 +134,12 @@ class PramanaAudioModule(private val context: ReactApplicationContext) :
             }
           }
         }, "PramanaMicrophone").apply { start() }
+        Handler(Looper.getMainLooper()).postDelayed({
+          if (running && record === recorder && capturedFrames.get() == 0L) {
+            emit("error", "The microphone started but produced no audio. Close other voice apps, check microphone access, and retry.")
+            shutdown()
+          }
+        }, 5000)
       }
       promise.resolve(true)
     } catch (error: Exception) {
@@ -123,7 +149,8 @@ class PramanaAudioModule(private val context: ReactApplicationContext) :
   }
   @ReactMethod fun play(data: String) {
     if (!running) return
-    val bytes = try { Base64.decode(data, Base64.NO_WRAP) } catch (_: Exception) { return }
+    val bytes = try { Base64.decode(data, Base64.NO_WRAP) } catch (_: Exception) { emit("error", "The provider sent invalid audio."); return }
+    if (bytes.isEmpty()) return
     if (bytes.size > 150000 || bytes.size % 2 != 0) { emit("error", "Unsupported speaker audio."); return }
     if (pendingBytes.addAndGet(bytes.size) > 960000) {
       pendingBytes.addAndGet(-bytes.size)
@@ -188,8 +215,11 @@ class PramanaAudioModule(private val context: ReactApplicationContext) :
     try { speaker?.pause(); speaker?.flush(); speaker?.release() } catch (_: Exception) {}
     if (focused) {
       manager.abandonAudioFocus(focus)
-      manager.isSpeakerphoneOn = oldSpeaker
-      manager.mode = oldMode
+      if (Build.VERSION.SDK_INT >= 31) manager.clearCommunicationDevice()
+      else manager.isSpeakerphoneOn = oldSpeaker
+      // MODE_NORMAL removes this app's communication-mode owner; another
+      // active call retains its own mode rather than leaving ours pinned.
+      manager.mode = AudioManager.MODE_NORMAL
       focused = false
     }
   }
