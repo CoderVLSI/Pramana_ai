@@ -40,3 +40,12 @@ Clean native rebuild restores RECORD_AUDIO; actual packaged APK permissions chec
 Launch requests microphone and notifications once, with retry/settings controls.
 Existing preview signing certificate preserved and verified. Phone prompts/provider flow remain untested.
 Current SHA256: 62334500f46794d46b52becef4e2a484fd31a4be332bb2754e91ea1d13301098
+
+Gemini handshake diagnostic update — 11 October 2026
+Source: da2c9338bc054bf4724a031f7aaff8dd0f33f767
+Gemini WSS authentication now matches GoogleGenAI SDK key query format. Never log socket URL.
+Live preserves whitelisted connection failures instead of replacing them with a generic error.
+78 tests pass; TypeScript, release build, permissions and signature checks pass.
+Forced JS rebundle; updated authentication confirmed in actual packaged bundle.
+No real key tested; user phone connection remains pending.
+Latest SHA256: f25b0b4cbdc2ad40dfc3d200ba4efd116e6efa85f406c84a1da1ab99ab571c3f
