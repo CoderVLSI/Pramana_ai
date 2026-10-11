@@ -64,3 +64,13 @@ Gemini socket requests arraybuffer and decodes bounded UTF-8 binary frames.
 Binary setup-frame regression, 78 tests, TypeScript, release build, signature and permissions pass.
 Phone confirmation pending; shared test credential was not reused.
 Current SHA256: 5768e3686e8a06f718428f3ef984de03481f39752f1382de3ffcc3fac128a1ac
+
+Compact Rishi chat update — 11 October 2026
+Source: 68f55fc88ca39f206e2e5d02e1c355239c72844e
+Study defaults to chat: small Rishi, user/reply bubbles, text composer, image attachment, voice controls.
+Image read is explicit transcription consent; review extracted text before sending.
+Speech uses single utterances with Finish speaking/send; typed messages auto-connect.
+Retains bounded session messages on reconnect; 45-second reply timeout. Actual backgrounding still stops capture.
+78 tests, TypeScript, fixture browser flow, release build, permissions/signature checks passed.
+Chat/time-out changes confirmed in packaged bundle. Physical microphone/playback confirmation pending.
+Current SHA256: 418bfd91acaf1c0ad7d2cae2df4a8ba482adb175d92aeb35d9c87a9a03dc757e
