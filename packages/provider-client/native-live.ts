@@ -2,6 +2,7 @@ import { createLiveAgent, type LiveAgentOptions } from "./live-agent";
 import type { ProviderProfile } from "./profile";
 
 export interface NativeSocket {
+  binaryType?: string;
   readyState: number;
   bufferedAmount: number;
   onopen: ((event?: any) => void) | null;
@@ -49,6 +50,7 @@ export function geminiConnect(make: SocketFactory, sockets: Set<NativeSocket>) {
         `wss://generativelanguage.googleapis.com/ws/google.ai.generativelanguage.v1beta.GenerativeService.BidiGenerateContent?key=${encodeURIComponent(options.apiKey)}`,
         {},
       );
+      ws.binaryType = "arraybuffer";
       sockets.add(ws);
       let settled = false,
         intentionallyClosed = false;
@@ -90,8 +92,26 @@ export function geminiConnect(make: SocketFactory, sockets: Set<NativeSocket>) {
       };
       ws.onmessage = (event) => {
         void (async () => {
-          const raw =
-            typeof event.data === "string"
+          const binary =
+            event.data instanceof ArrayBuffer
+              ? new Uint8Array(event.data)
+              : ArrayBuffer.isView(event.data)
+                ? new Uint8Array(
+                    event.data.buffer,
+                    event.data.byteOffset,
+                    event.data.byteLength,
+                  )
+                : null;
+          if (binary && binary.byteLength > 1024 * 1024)
+            throw Error("Live response too large");
+          const raw = binary
+            ? decodeURIComponent(
+                Array.from(
+                  binary,
+                  (byte) => "%" + byte.toString(16).padStart(2, "0"),
+                ).join(""),
+              )
+            : typeof event.data === "string"
               ? event.data
               : event.data && typeof (event.data as any).text === "function"
                 ? await (event.data as any).text()

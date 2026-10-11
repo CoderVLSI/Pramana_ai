@@ -25,3 +25,7 @@ Compared native adapter authentication to the installed GoogleGenAI SDK: the SDK
 ## Real Gemini Live schema validation
 
 With the user's explicitly authorized test credential, the model-list endpoint returned HTTP 200 and a minimal Gemini Live setup succeeded. The full app setup initially closed with code 1007: Gemini rejected `additionalProperties` in a function declaration's parameters. Gemini's schema conversion now emits supported properties/required/type fields without that JSON Schema keyword. A regression assertion checks every emitted Gemini tool schema. After correction the native adapter reached ready on gemini-3.8-live; a subsequent text turn completed with 21 PCM audio chunks and a normal close. One earlier text-turn attempt failed transiently; this is not a guarantee against network or capacity failures. No credential is stored in source/tests/docs. Android microphone capture and playback on the user's phone remain to be validated.
+
+## Native binary Live frames
+
+Gemini's native adapter previously parsed only string data or blobs exposing `.text()`. React Native can deliver binary frames as ArrayBuffer, which fell through to empty-string JSON parsing and a generic connection failure. The adapter now requests arraybuffer frames and decodes bounded UTF-8 bytes without relying on a browser TextDecoder. The native transport regression test completes setup with an ArrayBuffer frame; all 78 tests and TypeScript pass. Phone transport/playback confirmation remains pending; the previously shared credential is not reused for this update.

@@ -216,7 +216,11 @@ test("direct Gemini Live uses SDK-compatible handshake authentication and valida
     providerSocket.sent[0].setup.model,
     `models/${profile.gemini.model}`,
   );
-  providerSocket.receive({ setupComplete: {} });
+  assert.equal((providerSocket as any).binaryType, "arraybuffer");
+  providerSocket.onmessage?.({
+    data: new TextEncoder().encode(JSON.stringify({ setupComplete: {} }))
+      .buffer,
+  });
   await tick();
   assert.equal(client.readyState, 1);
   client.send(JSON.stringify({ type: "text", text: "What does Isha say?" }));
