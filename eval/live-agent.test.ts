@@ -52,6 +52,11 @@ test("Gemini live streams audio and dispatches real validated tools without leak
   await a.start();
   assert.equal(events[0].type, "ready");
   assert.equal(events[0].generated_unverified, true);
+  for (const tool of config.config.tools) {
+    for (const fn of tool.functionDeclarations ?? []) {
+      assert.equal("additionalProperties" in fn.parameters, false);
+    }
+  }
   assert.equal(
     config.config.tools.some((t: any) => t.googleSearch),
     false,
