@@ -29,3 +29,11 @@ With the user's explicitly authorized test credential, the model-list endpoint r
 ## Native binary Live frames
 
 Gemini's native adapter previously parsed only string data or blobs exposing `.text()`. React Native can deliver binary frames as ArrayBuffer, which fell through to empty-string JSON parsing and a generic connection failure. The adapter now requests arraybuffer frames and decodes bounded UTF-8 bytes without relying on a browser TextDecoder. The native transport regression test completes setup with an ArrayBuffer frame; all 78 tests and TypeScript pass. Phone transport/playback confirmation remains pending; the previously shared credential is not reused for this update.
+
+## Chat screen and completed speech turns
+
+Study now defaults to a compact Rishi chat with a small animated avatar, message bubbles, editable composer, image attachment and voice start/stop. Source-search mode remains available through the chat/source toggle. Voice/privacy details collapse; source setup text and search filters no longer crowd chat. Messages remain during reconnects, bounded to twenty displayed lines. Explicit image reading sends the selected image to the configured provider for transcription only; extracted text is reviewed and sent separately. Images are not uploaded automatically or saved to history.
+
+Android recognition now captures one utterance at a time, with an explicit Finish speaking/send control to request final transcription. Submitted typed and recognized turns display their user message, and requests without a reply time out after 45 seconds rather than silently waiting indefinitely. Typed messages can connect the text-only session automatically. Transient inactive state no longer stops a session; actual backgrounding still stops microphone capture. Phone recognition and playback validation remain pending.
+
+TypeScript and 78 tests pass. Browser flow with a test-only WebSocket fixture verified first-message auto-connect, exactly one submission, user/assistant bubbles, image chooser, no upload before explicit read, and editable extracted text. Inspected compact mobile screenshot. This browser fixture does not establish provider speech success.

@@ -2,8 +2,18 @@ import { liveFailureMessage } from "../../packages/provider-client/provider-erro
 import { shouldStopLive } from "../../packages/provider-client/live-lifecycle";
 import { Pressable, ScrollView, Text, TextInput, View } from "./ui";
 import React, { useEffect, useRef, useState } from "react";
-import { AppState, Linking, Platform, StyleSheet, Switch } from "react-native";
-import { createConversationSocket } from "./settings-client";
+import {
+  AppState,
+  Linking,
+  Platform,
+  StyleSheet,
+  Switch,
+  Image,
+} from "react-native";
+import {
+  createConversationSocket,
+  readClaimScreenshot,
+} from "./settings-client";
 import type { AudioPlayer } from "expo-audio";
 import type { ExpoSpeechRecognitionModuleType } from "expo-speech-recognition/build/ExpoSpeechRecognitionModule.types";
 
@@ -138,6 +148,15 @@ export default function LiveConversation({
   onNotice,
 }: Props) {
   const [state, setState] = useState<State>("stopped");
+  const [details, setDetails] = useState(false);
+  const [image, setImage] = useState<{
+    uri: string;
+    base64: string;
+    mime: "image/png" | "image/jpeg";
+  } | null>(null);
+  const [readingImage, setReadingImage] = useState(false);
+  const pendingText = useRef("");
+  const replyTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [sessionNotice, setSessionNotice] = useState("");
   const requestingPermission = useRef(false);
   const [connectedModel, setConnectedModel] = useState("");
@@ -255,6 +274,8 @@ export default function LiveConversation({
         .catch(() => undefined);
   }
   function stop(updateState = true) {
+    if (replyTimer.current) clearTimeout(replyTimer.current);
+    pendingText.current = "";
     active.current = false;
     ready.current = false;
     generation.current++;
@@ -344,7 +365,7 @@ export default function LiveConversation({
         recognition.current?.start({
           lang: language,
           interimResults: true,
-          continuous: true,
+          continuous: false,
           addsPunctuation: true,
         });
         setListening(true);
@@ -517,7 +538,7 @@ export default function LiveConversation({
     setConnectedModel("");
     setSources([]);
     setTools([]);
-    setLines([]);
+    // Keep bounded chat messages when reconnecting.
     setGrounding(null);
     try {
       if (Platform.OS === "web") {
@@ -622,7 +643,13 @@ export default function LiveConversation({
             setConnectedModel(`${provider} · ${model}`);
             ready.current = true;
             if (connectTimer.current) clearTimeout(connectTimer.current);
+            setSessionNotice("");
             setState("live");
+            if (pendingText.current) {
+              const queued = pendingText.current;
+              pendingText.current = "";
+              submitText(queued);
+            }
             sessionTimer.current = setTimeout(() => {
               stop();
               notice(
@@ -705,6 +732,7 @@ export default function LiveConversation({
                 : {}),
             });
           } else if (message.type === "turn_end") {
+            if (replyTimer.current) clearTimeout(replyTimer.current);
             waiting.current = false;
             if (Platform.OS !== "web") void flushNativeAudio();
           } else if (message.type === "interrupted") {
@@ -784,8 +812,7 @@ export default function LiveConversation({
           return;
         const text = event.results[0]?.transcript?.trim().slice(0, 2000);
         if (!text) return;
-        if (send({ type: "text", text })) {
-          waiting.current = true;
+        if (submitText(text)) {
           setListening(false);
           try {
             module.abort();
@@ -811,25 +838,87 @@ export default function LiveConversation({
     ];
     scheduleRecognition();
   }
-  function sendText() {
+  function submitText(text: string) {
+    if (!send({ type: "text", text })) return false;
+    addLine("user", text);
+    waiting.current = true;
+    setListening(false);
+    if (replyTimer.current) clearTimeout(replyTimer.current);
+    replyTimer.current = setTimeout(() => {
+      if (active.current && waiting.current)
+        fail(
+          "No reply arrived within 45 seconds. Retry or check provider quota in Settings.",
+        );
+    }, 45000);
+    return true;
+  }
+  async function sendText() {
     const text = draft.trim().slice(0, 2000);
     if (!text || waiting.current) return;
-    interrupt();
-    if (send({ type: "text", text })) {
-      waiting.current = true;
-      setDraft("");
-      if (Platform.OS !== "web") {
-        try {
-          recognition.current?.abort();
-        } catch {
-          /* no recognition */
-        }
-      }
+    setDraft("");
+    if (!ready.current) {
+      await start(false);
+      if (ready.current) submitText(text);
+      else if (active.current) pendingText.current = text;
+      else setDraft(text);
+      return;
+    }
+    clearPlayback();
+    if (submitText(text) && Platform.OS !== "web") {
+      try {
+        recognition.current?.abort();
+      } catch {}
     }
   }
+  async function attachImage() {
+    try {
+      const picker = await import("expo-image-picker");
+      const result = await picker.launchImageLibraryAsync({
+        mediaTypes: ["images"],
+        base64: true,
+        quality: 0.8,
+      });
+      if (result.canceled) return;
+      const asset = result.assets[0];
+      if (!asset.base64 || asset.base64.length > 5600000)
+        throw Error("Choose a JPEG or PNG image smaller than 4 MB.");
+      const mime = asset.base64.startsWith("iVBORw0KGgo")
+        ? "image/png"
+        : asset.base64.startsWith("/9j/")
+          ? "image/jpeg"
+          : null;
+      if (!mime) throw Error("Choose a JPEG or PNG image.");
+      setImage({ uri: asset.uri, base64: asset.base64, mime });
+    } catch (e) {
+      notice((e as Error).message);
+    }
+  }
+  async function readImage() {
+    if (!image || readingImage) return;
+    setReadingImage(true);
+    try {
+      setDraft(
+        (
+          await readClaimScreenshot({ base64: image.base64, mime: image.mime })
+        ).slice(0, 2000),
+      );
+      notice(
+        "Image text extracted. Review it before sending; it is not verified scripture.",
+      );
+      setImage(null);
+    } catch (e) {
+      notice((e as Error).message);
+    } finally {
+      setReadingImage(false);
+    }
+  }
+
   useEffect(() => {
     const subscription = AppState.addEventListener("change", (value) => {
-      if (shouldStopLive(value, active.current, requestingPermission.current)) {
+      if (
+        value === "background" &&
+        shouldStopLive(value, active.current, requestingPermission.current)
+      ) {
         stop();
         notice(
           "Live paused because Pramana moved to the background. Tap Retry to reconnect.",
@@ -851,38 +940,49 @@ export default function LiveConversation({
 
   return (
     <View style={styles.card}>
-      <Text style={styles.title}>Live conversation</Text>
+      <Text style={styles.title}>Chat with Rishi</Text>
       {!!sessionNotice && (
         <Text accessibilityLiveRegion="assertive" style={styles.detail}>
           {sessionNotice}
         </Text>
       )}
       <Text style={styles.disclosure}>
-        Live AI generated · citations checked separately
+        AI replies · sources checked separately
       </Text>
-      <Text style={styles.detail}>
-        {Platform.OS === "web"
-          ? "Continuous microphone audio streams to your selected AI provider."
-          : "Device transcription sends final text to the live AI provider. Your phone’s speech service may process audio remotely. AI audio plays after each turn; raw microphone audio is not streamed to the AI."}
-      </Text>
-      <View style={styles.row}>
-        <Switch
-          accessibilityLabel="Enable web search tools"
-          value={webSearchEnabled}
-          onValueChange={setWebSearchEnabled}
-          disabled={state === "live" || state === "connecting"}
-        />
+      <Pressable onPress={() => setDetails((v) => !v)}>
         <Text style={styles.detail}>
-          Web search tools · provider charges may apply
+          {details ? "Hide voice details" : "Voice & privacy details"}
         </Text>
-      </View>
+      </Pressable>
+      {details && (
+        <>
+          <Text style={styles.detail}>
+            {Platform.OS === "web"
+              ? "Continuous microphone audio streams to your selected AI provider."
+              : "Device transcription sends final text to the live AI provider. Your phone’s speech service may process audio remotely. AI audio plays after each turn; raw microphone audio is not streamed to the AI."}
+          </Text>
+          <View style={styles.row}>
+            <Switch
+              accessibilityLabel="Enable web search tools"
+              value={webSearchEnabled}
+              onValueChange={setWebSearchEnabled}
+              disabled={state === "live" || state === "connecting"}
+            />
+            <Text style={styles.detail}>
+              Web search tools · provider charges may apply
+            </Text>
+          </View>
+        </>
+      )}
       <Text accessibilityLiveRegion="polite" style={styles.status}>
         {state === "live"
           ? !microphoneEnabled
             ? "Connected · microphone off"
             : listening
               ? "Connected · listening"
-              : "Connected · responding"
+              : waiting.current
+                ? "Connected · preparing reply"
+                : "Connected · ready"
           : state === "connecting"
             ? "Connecting…"
             : state === "failed"
@@ -890,7 +990,7 @@ export default function LiveConversation({
               : "Microphone off"}{" "}
         · 10-minute maximum
       </Text>
-      {state === "live" && !!connectedModel && (
+      {details && state === "live" && !!connectedModel && (
         <Text style={styles.detail}>{connectedModel}</Text>
       )}
       <View style={styles.row}>
@@ -929,36 +1029,78 @@ export default function LiveConversation({
           <Text>Connect with text · microphone off</Text>
         </Pressable>
       )}
+      {!!lines.length && (
+        <ScrollView style={styles.transcripts} nestedScrollEnabled>
+          {lines.map((line, i) => (
+            <View key={i} style={[styles.line, { alignSelf: line.role === "user" ? "flex-end" : "flex-start", maxWidth: "94%" }]}>
+              <Text style={styles.role}>{line.role === "user" ? "You" : "Rishi"}</Text>
+              <Text selectable>{line.text}</Text>
+            </View>
+          ))}
+        </ScrollView>
+      )}
+      {!lines.length && (
+        <Text style={styles.detail}>
+          Ask Rishi a question, type a message or start voice.
+        </Text>
+      )}
+      {!!image && (
+        <View style={styles.source}>
+          <Image
+            source={{ uri: image.uri }}
+            style={{ height: 120, width: 120, borderRadius: 12 }}
+          />
+          <Text style={styles.detail}>
+            Read image sends it to your AI provider for transcription. Review
+            extracted text before sending.
+          </Text>
+          <Pressable
+            disabled={readingImage}
+            onPress={() => void readImage()}
+            style={styles.outline}
+          >
+            <Text>{readingImage ? "Reading…" : "Read image"}</Text>
+          </Pressable>
+          <Pressable onPress={() => setImage(null)}>
+            <Text>Remove image</Text>
+          </Pressable>
+        </View>
+      )}
+      <Pressable
+        accessibilityLabel="Attach an image"
+        onPress={() => void attachImage()}
+        style={styles.outline}
+      >
+        <Text>＋ Attach image</Text>
+      </Pressable>
+      {listening && Platform.OS !== "web" && (
+        <Pressable
+          onPress={() => recognition.current?.stop()}
+          style={styles.outline}
+        >
+          <Text>Finish speaking · send</Text>
+        </Pressable>
+      )}
       <View style={styles.row}>
         <TextInput
           accessibilityLabel="Message for live conversation"
-          placeholder="Or type a message"
+          placeholder="Message Rishi…"
           value={draft}
           onChangeText={setDraft}
           maxLength={2000}
           style={styles.input}
-          editable={state === "live"}
+          editable={state !== "connecting" && !readingImage}
           onSubmitEditing={sendText}
         />
         <Pressable
           accessibilityRole="button"
-          disabled={state !== "live" || !draft.trim()}
+          disabled={state === "connecting" || !draft.trim() || readingImage}
           onPress={sendText}
           style={styles.outline}
         >
           <Text>Send</Text>
         </Pressable>
       </View>
-      {!!lines.length && (
-        <ScrollView style={styles.transcripts} nestedScrollEnabled>
-          {lines.map((line, i) => (
-            <View key={i} style={styles.line}>
-              <Text style={styles.role}>{line.role}</Text>
-              <Text selectable>{line.text}</Text>
-            </View>
-          ))}
-        </ScrollView>
-      )}
       {grounding && (
         <View style={styles.source}>
           <Text style={styles.role}>
@@ -1084,8 +1226,14 @@ const styles = StyleSheet.create({
     padding: 10,
     backgroundColor: "white",
   },
-  transcripts: { maxHeight: 240 },
-  line: { marginBottom: 10, gap: 4 },
+  transcripts: { minHeight: 120, maxHeight: 360 },
+  line: {
+    marginBottom: 12,
+    gap: 4,
+    padding: 12,
+    borderRadius: 14,
+    backgroundColor: "#e4e5db",
+  },
   role: { fontSize: 12, fontWeight: "700", color: "#52634F" },
   source: { borderTopWidth: 1, borderColor: "#D4D8CB", paddingTop: 8, gap: 4 },
   link: {
