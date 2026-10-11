@@ -187,7 +187,7 @@ class FakeSocket implements NativeSocket {
   }
 }
 const tick = () => new Promise((resolve) => setTimeout(resolve, 5));
-test("direct Gemini live setup, text, tools and audio work through native header transport", async () => {
+test("direct Gemini Live uses SDK-compatible handshake authentication and validated tools", async () => {
   const profile = emptyProfile();
   profile.gemini.api_key = "test-live-key";
   let providerSocket!: FakeSocket;
@@ -196,8 +196,10 @@ test("direct Gemini live setup, text, tools and audio work through native header
   const client = createDeviceLiveSocket(
     profile,
     (url, headers) => {
-      assert.equal(new URL(url).search, "");
-      assert.equal(headers["x-goog-api-key"], "test-live-key");
+      assert.equal(new URL(url).searchParams.get("key"), "test-live-key");
+      assert.equal(new URL(url).protocol, "wss:");
+      assert.equal(new URL(url).hostname, "generativelanguage.googleapis.com");
+      assert.equal(headers["x-goog-api-key"], undefined);
       providerSocket = new FakeSocket();
       return providerSocket;
     },

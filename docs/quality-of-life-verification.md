@@ -17,3 +17,7 @@ Supabase owner-only migration and explicit-whitelist sync client prepared; three
 ## Android permissions correction
 
 The shipped preview lacked RECORD_AUDIO: the image-picker plugin's microphonePermission=false generated a removal directive. Corrected Expo configuration, regenerated Android from a clean prebuild while preserving the preview signing key, and added explicit microphone/notification declarations. App launch now requests microphone and notification permissions once; Settings includes retry and Android-settings controls. Reminders remain off until enabled. The packaged APK must pass `scripts/android-permission-check.py` before distribution. Physical prompt and voice provider verification remain pending.
+
+## Gemini native handshake and Live error display
+
+Compared native adapter authentication to the installed GoogleGenAI SDK: the SDK uses a `key` query parameter in its encrypted WSS handshake, while our adapter had supplied only an HTTP header. The adapter now follows the SDK format on the fixed Google endpoint; socket URLs and raw transport errors are not displayed by the app. OpenAI continues using header authentication. The Live UI now preserves a whitelist of sanitized connection-layer error messages instead of replacing all errors with a generic notice. Mock transport tests cover the updated handshake, tools and audio. These checks do not prove a real provider session works; real-key phone validation remains pending.

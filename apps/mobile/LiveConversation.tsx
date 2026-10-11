@@ -1,3 +1,4 @@
+import { liveFailureMessage } from "../../packages/provider-client/provider-error";
 import { shouldStopLive } from "../../packages/provider-client/live-lifecycle";
 import { Pressable, ScrollView, Text, TextInput, View } from "./ui";
 import React, { useEffect, useRef, useState } from "react";
@@ -711,9 +712,7 @@ export default function LiveConversation({
             clearPlayback();
             scheduleRecognition();
           } else if (message.type === "error")
-            fail(
-              "The live session failed. Check provider settings and retry; source verification is separate from generated speech.",
-            );
+            fail(liveFailureMessage(message.message));
         } catch {
           fail(
             "The live session returned an invalid response. Restart or use text.",

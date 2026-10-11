@@ -16,7 +16,7 @@ export type SocketFactory = (
   headers: Record<string, string>,
 ) => NativeSocket;
 
-/** Adapter for React Native's authenticated WebSocket; keys never appear in URLs. */
+/** OpenAI authenticates its native WebSocket through headers. */
 function openAISocket(url: string, options: any, make: SocketFactory) {
   const ws = make(url, options.headers);
   const listeners = new Map<string, ((...args: any[]) => void)[]>();
@@ -44,8 +44,10 @@ export function geminiConnect(make: SocketFactory, sockets: Set<NativeSocket>) {
   return (options: any): Promise<any> =>
     new Promise((resolve, reject) => {
       const ws = make(
-        "wss://generativelanguage.googleapis.com/ws/google.ai.generativelanguage.v1beta.GenerativeService.BidiGenerateContent",
-        { "x-goog-api-key": options.apiKey },
+        // Match GoogleGenAI Live: Gemini authenticates during the WSS handshake.
+        // Never log this URL or forward raw socket error text to the UI.
+        `wss://generativelanguage.googleapis.com/ws/google.ai.generativelanguage.v1beta.GenerativeService.BidiGenerateContent?key=${encodeURIComponent(options.apiKey)}`,
+        {},
       );
       sockets.add(ws);
       let settled = false,
