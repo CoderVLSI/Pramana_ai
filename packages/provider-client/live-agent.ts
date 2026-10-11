@@ -439,7 +439,10 @@ export function createLiveAgent(options: LiveAgentOptions) {
         ].map((f) => ({
           ...f,
           parameters: {
-            ...f.parameters,
+            // Gemini Schema rejects JSON Schema's additionalProperties keyword.
+            ...(f.parameters.required
+              ? { required: f.parameters.required }
+              : {}),
             type: "OBJECT",
             properties: Object.fromEntries(
               Object.entries(f.parameters.properties).map(
