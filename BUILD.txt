@@ -49,3 +49,11 @@ Live preserves whitelisted connection failures instead of replacing them with a 
 Forced JS rebundle; updated authentication confirmed in actual packaged bundle.
 No real key tested; user phone connection remains pending.
 Latest SHA256: f25b0b4cbdc2ad40dfc3d200ba4efd116e6efa85f406c84a1da1ab99ab571c3f
+
+Confirmed Gemini Live schema fix — 11 October 2026
+Source: 1a52409755d85ebd570b7a267c17770bbbc33bf3
+Removed unsupported additionalProperties from Gemini function declaration parameters.
+Real authorized provider test: setup ready; subsequent text turn completed with 21 PCM chunks.
+78 tests pass; additional schema assertion passed in targeted Live tests; typecheck/build/signature/permissions pass.
+Credential never saved in repository; user must revoke shared test key. Phone mic/playback remains untested.
+Current SHA256: 72bb0f9db2ea98aa7eaac6a090b58cc76d65a4478b2993196d0e20129a64be3d
