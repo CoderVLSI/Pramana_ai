@@ -1,80 +1,19 @@
 Pramana Android preview — 11 October 2026
-Source commit: a90bc9ba9524f743c649ac06ee8e4f8c48704303
-Version: 0.2.0, Android versionCode 2, package org.pramana.study
+Source commit: 9ed7c595e7b943c942fadf87bba0936ddc7e5f20
+Version: 0.2.0 / code 2, package org.pramana.study
 Architecture: arm64-v8a; minimum Android 7/API24; target API36.
-Includes optional Supabase email/password accounts, manual profile/reading backups,
-restore confirmation, separate approved-memory upload consent, local sign-out.
-Includes haptics, reading/theme controls, local history, bookmarks/notes/resume,
-source filters, voice controls, optional reminders, screenshot/quote checking,
-private scratchpad and opt-in user-approved AI memories.
-API keys and private scratchpad excluded from cloud backups.
-75 tests passed; TypeScript and Android release build passed; APK signature verified.
-Previous quality-of-life x86 build reached Android15 onboarding without crash-buffer errors.
-This latest account build has not been launch-tested on emulator or OnePlus Nord4.
-Real sign-in/email, authenticated two-account isolation and live provider tests pending.
-Zero real reviewed scripture passages are bundled. Full corpus verification remains pending.
-Test/debug signed, same certificate as preceding previews. Not a Play Store release.
-Size: 38444170 bytes
-SHA256: 27f4a3a3f52965df58188f1d3b7139543d13e619e56640edfb483a85f2616187
-
-Voice diagnostic update — 11 October 2026
-Source commit: 66928006fd22fb43915deefc6a5f3bd3d684ca66
-Gemini Live uses the web_search function instead of requesting an additional built-in search tool.
-Provider HTTP failures show sanitized categories; dark Live status contrast corrected.
-76 tests passed, TypeScript and arm64 release build passed; signature verified.
-No real provider key used in workspace: phone/provider connection cause remains unconfirmed.
-Current APK size: 38445706 bytes
-Current SHA256: 8fa6063f05343eff80c058575bc40c3070eec7f83ab3864ed5615f758db9dd87
-
-Live permission lifecycle update — 11 October 2026
-Source: ea3ec59cb4307a77ef288db21005a342f839d5b4
-Protect startup from permission-dialog lifecycle events; preserve actual background stop.
-Live notices and failure messages are now visible inside the Live card.
-77 tests, TypeScript and arm64 build pass. Final lifecycle guard confirmed in bundled APK.
-Phone/provider verification remains pending; not proven to resolve all connection failures.
-Latest SHA256: 31b8a93d88d82020c3fa29a43fc8a458333420abee3bbe74836b79d0fb639f72
-
-Android permissions update — 11 October 2026
-Source: 2da8ea7bd5979728b17eabe0e21d66820398553c
-Clean native rebuild restores RECORD_AUDIO; actual packaged APK permissions check passed.
-Launch requests microphone and notifications once, with retry/settings controls.
-Existing preview signing certificate preserved and verified. Phone prompts/provider flow remain untested.
-Current SHA256: 62334500f46794d46b52becef4e2a484fd31a4be332bb2754e91ea1d13301098
-
-Gemini handshake diagnostic update — 11 October 2026
-Source: da2c9338bc054bf4724a031f7aaff8dd0f33f767
-Gemini WSS authentication now matches GoogleGenAI SDK key query format. Never log socket URL.
-Live preserves whitelisted connection failures instead of replacing them with a generic error.
-78 tests pass; TypeScript, release build, permissions and signature checks pass.
-Forced JS rebundle; updated authentication confirmed in actual packaged bundle.
-No real key tested; user phone connection remains pending.
-Latest SHA256: f25b0b4cbdc2ad40dfc3d200ba4efd116e6efa85f406c84a1da1ab99ab571c3f
-
-Confirmed Gemini Live schema fix — 11 October 2026
-Source: 1a52409755d85ebd570b7a267c17770bbbc33bf3
-Removed unsupported additionalProperties from Gemini function declaration parameters.
-Real authorized provider test: setup ready; subsequent text turn completed with 21 PCM chunks.
-78 tests pass; additional schema assertion passed in targeted Live tests; typecheck/build/signature/permissions pass.
-Credential never saved in repository; user must revoke shared test key. Phone mic/playback remains untested.
-Current SHA256: 72bb0f9db2ea98aa7eaac6a090b58cc76d65a4478b2993196d0e20129a64be3d
-
-Native binary frame update — 11 October 2026
-Source: 466bebd4304bced6db6883dcfaee24b874364b7c
-Gemini socket requests arraybuffer and decodes bounded UTF-8 binary frames.
-Binary setup-frame regression, 78 tests, TypeScript, release build, signature and permissions pass.
-Phone confirmation pending; shared test credential was not reused.
-Current SHA256: 5768e3686e8a06f718428f3ef984de03481f39752f1382de3ffcc3fac128a1ac
-
-Compact Rishi chat update — 11 October 2026
-Source: 68f55fc88ca39f206e2e5d02e1c355239c72844e
-Study defaults to chat: small Rishi, user/reply bubbles, text composer, image attachment, voice controls.
-Image read is explicit transcription consent; review extracted text before sending.
-Speech uses single utterances with Finish speaking/send; typed messages auto-connect.
-Retains bounded session messages on reconnect; 45-second reply timeout. Actual backgrounding still stops capture.
-78 tests, TypeScript, fixture browser flow, release build, permissions/signature checks passed.
-Chat/time-out changes confirmed in packaged bundle. Physical microphone/playback confirmation pending.
-Current SHA256: 418bfd91acaf1c0ad7d2cae2df4a8ba482adb175d92aeb35d9c87a9a03dc757e
-
-Full-height chat update: source a5da821. Fixed bottom composer, chat bubbles, image attachments, compact Rishi, speaker test, recoverable no-speech/timeouts, explicit Android speech errors and media speaker routing.
-78 tests, TypeScript, web export and mocked browser chat/image flow passed. Actual APK permissions and signature verified. Phone speech/audio playback remains unverified.
-SHA256: 66152156930ec13da12a5ffee524f442c8d31131c686418291176aa7b5064e91
+Native two-way voice: foreground AudioRecord PCM16 microphone streaming at 16 kHz;
+AudioTrack streamed speaker replies at 24 kHz with capture kept active.
+Includes interruption, audio-focus/background cleanup, modern communication routing,
+optional echo/noise processing, missing-frame/silenced-microphone errors,
+audio packet diagnostics and a same-route local speaker-tone test.
+Chat has fixed bottom composer, message bubbles, image reading and compact Rishi.
+Provider keys remain in device encrypted storage. No provider test credential reused.
+Checks: 79 automated tests, TypeScript, web export and mocked chat/image browser flow;
+arm64 APK compilation, actual packaged permissions and signature checks passed.
+Native emulator test found the registered module but failed capture in an
+audio-disabled emulator; subsequent runtime verification was blocked by emulator
+graphics/audio-driver failures. No passing capture/playback test is claimed.
+A complete live provider round trip and audible phone output remain unverified.
+Zero reviewed scripture passages are bundled; approved scripture packs remain pending.
+SHA256: 688d116dc0a5f6cf26132292f4b3fa1caa1925a15b9036075c4e203bb8f55cca
