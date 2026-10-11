@@ -309,3 +309,52 @@ test("missing local credentials emit a visible live error after handlers attach"
   assert.equal(events[0].type, "error");
   assert.equal(client.readyState, 3);
 });
+
+test("native Gemini duplex forwards microphone PCM and clears speaker on provider interruption", async () => {
+  const profile = emptyProfile();
+  profile.gemini.api_key = "test-only-duplex";
+  let transport!: FakeSocket;
+  const events: any[] = [];
+  const client = createDeviceLiveSocket(
+    profile,
+    () => (transport = new FakeSocket()),
+    async () => ({}),
+    { enableWebSearch: false },
+  );
+  client.onmessage = (event) => events.push(JSON.parse(String(event.data)));
+  await tick();
+  transport.open();
+  transport.receive({ setupComplete: {} });
+  await tick();
+  client.send(JSON.stringify({ type: "audio", data: "AAAA" }));
+  assert.deepEqual(transport.sent.at(-1).realtimeInput.mediaChunks, [
+    { data: "AAAA", mimeType: "audio/pcm;rate=16000" },
+  ]);
+  transport.receive({
+    serverContent: {
+      modelTurn: {
+        parts: [
+          { inlineData: { data: "AAAA", mimeType: "audio/pcm;rate=24000" } },
+        ],
+      },
+    },
+  });
+  await tick();
+  assert.equal(events.at(-1).type, "audio");
+  assert.equal(events.at(-1).rate, 24000);
+  // Continued microphone input is allowed while reply audio is arriving.
+  client.send(JSON.stringify({ type: "audio", data: "AgACAA==" }));
+  assert.equal(
+    transport.sent.at(-1).realtimeInput.mediaChunks[0].data,
+    "AgACAA==",
+  );
+  transport.receive({ serverContent: { interrupted: true } });
+  await tick();
+  assert.equal(events.at(-1).type, "interrupted");
+  client.send(JSON.stringify({ type: "audio_end" }));
+  assert.equal(transport.sent.at(-1).realtimeInput.audioStreamEnd, true);
+  transport.receive({ serverContent: { turnComplete: true } });
+  await tick();
+  assert.equal(events.at(-1).type, "turn_end");
+  client.close();
+});

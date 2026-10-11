@@ -4,7 +4,7 @@ Download package: Pramana-Windows-preview.zip. Extract completely and open Start
 
 Servers bind only to loopback. The backend now supports HOST and PRAMANA_DATA_DIR overrides; defaults for existing development remain unchanged. The Windows launcher stores backend settings and feedback under LOCALAPPDATA/Pramana/data. No credentials or private scripture OCR are included in the ZIP.
 
-The five Gita development fixtures support local test searches. All other collections remain pending source review. Tap-to-talk voice and spoken replies are available; browser live conversation supports microphone/audio streaming and source tools; native Android uses device-transcription turns. This is a portable browser-based preview, not a native Windows installer.
+The five Gita development fixtures support local test searches. All other collections remain pending source review. Tap-to-talk voice and spoken replies are available; browser live conversation supports microphone/audio streaming and source tools; current Android builds use native microphone/reply audio streaming. This is a portable browser-based preview, not a native Windows installer.
 
 Validation: TypeScript and all 43 JavaScript tests and 10 Python pipeline tests pass. Packaged browser-to-API flow confirms ordinary greetings no longer enter scripture search, no-key fallback is explicit, scripture abstention remains enforced, and the settings token persists across reloads. Provider adapters and saved-key route were tested with mocked Gemini/OpenAI responses, not a real user key. Windows launcher has not been exercised on Windows.
 

@@ -10,6 +10,7 @@ import {
   Switch,
   Image,
   KeyboardAvoidingView,
+  PermissionsAndroid,
 } from "react-native";
 import {
   createConversationSocket,
@@ -18,6 +19,7 @@ import {
 import type { AudioPlayer } from "expo-audio";
 import type { ExpoSpeechRecognitionModuleType } from "expo-speech-recognition/build/ExpoSpeechRecognitionModule.types";
 
+import { androidLiveAudio } from "./live-audio";
 import { RishiAvatar } from "./RishiAvatar";
 import { Ionicons } from "@expo/vector-icons";
 
@@ -155,6 +157,9 @@ export default function LiveConversation({
   onSpeakingChange,
   onNotice,
 }: Props) {
+  const duplex = useRef<ReturnType<typeof androidLiveAudio> | null>(null);
+  const audioCounts = useRef({ sent: 0, received: 0 });
+  const [audioStatus, setAudioStatus] = useState({ sent: 0, received: 0 });
   const messageScroll = useRef<import("react-native").ScrollView>(null);
   const [heard, setHeard] = useState("");
   const [state, setState] = useState<State>("stopped");
@@ -240,6 +245,7 @@ export default function LiveConversation({
     return true;
   };
   function clearPlayback() {
+    duplex.current?.interrupt();
     playEpoch.current++;
     for (const timer of webTimers.current) clearTimeout(timer);
     webTimers.current.clear();
@@ -287,6 +293,8 @@ export default function LiveConversation({
     if (replyTimer.current) clearTimeout(replyTimer.current);
     pendingText.current = "";
     active.current = false;
+    duplex.current?.dispose();
+    duplex.current = null;
     ready.current = false;
     generation.current++;
     waiting.current = false;
@@ -343,11 +351,13 @@ export default function LiveConversation({
     send({ type: "interrupt" });
     waiting.current = false;
     clearPlayback();
-    if (Platform.OS !== "web") scheduleRecognition();
+    if (Platform.OS !== "web" && Platform.OS !== "android")
+      scheduleRecognition();
   }
   function scheduleRecognition() {
     if (
       Platform.OS === "web" ||
+      Platform.OS === "android" ||
       !captureEnabled.current ||
       !active.current ||
       !ready.current ||
@@ -476,6 +486,12 @@ export default function LiveConversation({
       fail("The provider returned unsupported audio. Restart or use text.");
       return;
     }
+    if (Platform.OS === "android" && duplex.current) {
+      audioCounts.current.received++;
+      setAudioStatus({ ...audioCounts.current });
+      duplex.current.play(data);
+      return;
+    }
     const bytes = fromBase64(data);
     if (bytes.length % 2) throw new Error("Invalid PCM");
     if (Platform.OS !== "web") {
@@ -552,11 +568,63 @@ export default function LiveConversation({
     setTools([]);
     // Keep bounded chat messages when reconnecting.
     setGrounding(null);
+    let startingNativeAudio = false;
     try {
       if (Platform.OS === "web") {
         context.current = new AudioContext();
         await context.current.resume();
         if (!active.current || session !== generation.current) return;
+      }
+      if (Platform.OS === "android") {
+        startingNativeAudio = true;
+        if (captureMic) {
+          requestingPermission.current = true;
+          let permission;
+          try {
+            permission = await PermissionsAndroid.request(
+              PermissionsAndroid.PERMISSIONS.RECORD_AUDIO,
+            );
+          } finally {
+            requestingPermission.current = false;
+          }
+          if (!active.current || session !== generation.current) return;
+          if (permission !== PermissionsAndroid.RESULTS.GRANTED) {
+            fail(
+              "Allow microphone permission to start live voice. Typed messages still work.",
+            );
+            return;
+          }
+        }
+        audioCounts.current = { sent: 0, received: 0 };
+        setAudioStatus({ ...audioCounts.current });
+        const bridge = androidLiveAudio((event) => {
+          if (!active.current || session !== generation.current) return;
+          if (event.type === "audio" && ready.current) {
+            if (send({ type: "audio", data: event.data })) {
+              audioCounts.current.sent++;
+              if (
+                audioCounts.current.sent === 1 ||
+                audioCounts.current.sent % 25 === 0
+              )
+                setAudioStatus({ ...audioCounts.current });
+              setListening(true);
+            }
+          } else if (event.type === "playing")
+            callbacks.current.onSpeakingChange(true);
+          else if (event.type === "ended")
+            callbacks.current.onSpeakingChange(false);
+          else if (event.type === "error") fail(event.data);
+          else if (event.type === "paused")
+            fail(
+              "Live audio paused when the app left the foreground. Tap the microphone to reconnect.",
+            );
+        });
+        duplex.current = bridge;
+        await bridge.start(captureMic);
+        if (!active.current || session !== generation.current) {
+          bridge.dispose();
+          return;
+        }
       }
       if (Platform.OS === "web" && captureMic) {
         if (!navigator.mediaDevices?.getUserMedia)
@@ -580,7 +648,7 @@ export default function LiveConversation({
           };
         });
         microphone.current = stream;
-      } else if (captureMic) {
+      } else if (captureMic && Platform.OS !== "android") {
         const module = (await import("expo-speech-recognition"))
           .ExpoSpeechRecognitionModule;
         if (!active.current || session !== generation.current) return;
@@ -612,6 +680,7 @@ export default function LiveConversation({
         }
         recognition.current = module;
       }
+      startingNativeAudio = false;
       const ws = await createConversationSocket({
         preferredName,
         workIds,
@@ -676,7 +745,7 @@ export default function LiveConversation({
             }, SESSION_MS);
             if (captureEnabled.current) {
               if (Platform.OS === "web") beginBrowserCapture();
-              else beginNativeCapture();
+              else if (Platform.OS !== "android") beginNativeCapture();
             }
           } else if (message.type === "audio")
             receiveAudio(message.data, message.rate ?? message.sample_rate);
@@ -752,7 +821,8 @@ export default function LiveConversation({
           } else if (message.type === "turn_end") {
             if (replyTimer.current) clearTimeout(replyTimer.current);
             waiting.current = false;
-            if (Platform.OS !== "web") void flushNativeAudio();
+            if (Platform.OS === "android") duplex.current?.endTurn();
+            else if (Platform.OS !== "web") void flushNativeAudio();
           } else if (message.type === "interrupted") {
             waiting.current = false;
             clearPlayback();
@@ -765,10 +835,12 @@ export default function LiveConversation({
           );
         }
       };
-    } catch {
+    } catch (error) {
       if (active.current && session === generation.current)
         fail(
-          "Live voice could not start. Check microphone permission, provider settings and network, then retry.",
+          startingNativeAudio && error instanceof Error
+            ? error.message.slice(0, 240)
+            : "Live voice could not start. Check microphone permission, provider settings and network, then retry.",
         );
     }
   }
@@ -894,7 +966,11 @@ export default function LiveConversation({
       return;
     }
     clearPlayback();
-    if (submitText(text) && Platform.OS !== "web") {
+    if (
+      submitText(text) &&
+      Platform.OS !== "web" &&
+      Platform.OS !== "android"
+    ) {
       try {
         recognition.current?.abort();
       } catch {}
@@ -969,7 +1045,41 @@ export default function LiveConversation({
   }, []);
 
   async function testSpeaker() {
+    stop();
     try {
+      if (Platform.OS === "android") {
+        const bridge = androidLiveAudio((event) => {
+          if (event.type === "playing")
+            callbacks.current.onSpeakingChange(true);
+          else if (event.type === "ended") {
+            callbacks.current.onSpeakingChange(false);
+            bridge.dispose();
+            if (duplex.current === bridge) duplex.current = null;
+          } else if (event.type === "error") {
+            notice(event.data);
+            bridge.dispose();
+            if (duplex.current === bridge) duplex.current = null;
+          }
+        });
+        duplex.current = bridge;
+        await bridge.start(false);
+        const bytes = new Uint8Array(24000),
+          view = new DataView(bytes.buffer);
+        for (let i = 0; i < 12000; i++) {
+          const fade = Math.min(1, i / 480, (12000 - i) / 480);
+          view.setInt16(
+            i * 2,
+            Math.sin((i * 2 * Math.PI * 440) / 24000) * 2400 * fade,
+            true,
+          );
+        }
+        bridge.play(toBase64(bytes));
+        bridge.endTurn();
+        notice(
+          "You should hear a short tone through the live voice output. Press volume up while it plays. This test uses no API.",
+        );
+        return;
+      }
       const speech = await import("expo-speech");
       await speech.stop();
       speech.speak("Pramana voice is ready.", {
@@ -1057,10 +1167,18 @@ export default function LiveConversation({
               <Text style={styles.detail}>
                 {Platform.OS === "web"
                   ? "Microphone audio streams to your selected AI provider."
-                  : "Android speech recognition transcribes your voice; final text goes to your AI provider. Replies play after each turn."}{" "}
+                  : Platform.OS === "android"
+                    ? "Microphone audio streams directly to your selected AI provider. Reply audio streams to the speaker while the microphone remains active. No microphone recordings are saved."
+                    : "Device speech recognition transcribes your voice; final text goes to your AI provider."}{" "}
                 Sessions last up to 10 minutes.
               </Text>
               <Text style={styles.detail}>{connectedModel}</Text>
+              {Platform.OS === "android" && (
+                <Text style={styles.detail}>
+                  Audio packets · microphone {audioStatus.sent} · reply{" "}
+                  {audioStatus.received}
+                </Text>
+              )}
               <View style={styles.row}>
                 <Switch
                   accessibilityLabel="Enable web search tools"
@@ -1213,6 +1331,11 @@ export default function LiveConversation({
             borderColor: "#ABB7A8",
           }}
         >
+          {Platform.OS === "android" && (
+            <Text style={styles.detail}>
+              Live voice streams microphone audio to your AI provider.
+            </Text>
+          )}
           {!!image && (
             <View style={styles.row}>
               <Image
@@ -1261,15 +1384,26 @@ export default function LiveConversation({
               >
                 <Text>Interrupt</Text>
               </Pressable>
-              {listening && Platform.OS !== "web" && (
+              {Platform.OS === "android" && microphoneEnabled && (
                 <Pressable
                   accessibilityRole="button"
-                  onPress={() => recognition.current?.stop()}
+                  onPress={() => send({ type: "audio_end" })}
                   style={styles.outline}
                 >
-                  <Text>Send speech</Text>
+                  <Text>Finish turn</Text>
                 </Pressable>
               )}
+              {listening &&
+                Platform.OS !== "web" &&
+                Platform.OS !== "android" && (
+                  <Pressable
+                    accessibilityRole="button"
+                    onPress={() => recognition.current?.stop()}
+                    style={styles.outline}
+                  >
+                    <Text>Send speech</Text>
+                  </Pressable>
+                )}
             </View>
           )}
           <View style={styles.row}>

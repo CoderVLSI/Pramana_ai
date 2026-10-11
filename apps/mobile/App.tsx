@@ -1594,7 +1594,7 @@ function StudyApp() {
                   </View>
                   <Text style={s.small}>
                     {DEVICE_CONNECTIONS
-                      ? "Your keys and preferences stay in device storage. Questions are sent directly to your selected AI provider; speech recognition may use your phone’s speech service. No Pramana backend is needed. Corrections remain on this phone."
+                      ? "Your keys and preferences stay in device storage. Questions and live microphone audio are sent directly to your selected AI provider. No Pramana backend is needed. Corrections remain on this phone."
                       : "Bookmarks are stored on your device. Submitted corrections are stored by the local API. Live audio is processed during the session; microphone recordings are not saved by the app."}
                   </Text>
                 </>

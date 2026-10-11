@@ -37,7 +37,7 @@
       [
         "expo-speech-recognition",
         {
-          "microphonePermission": "Allow Pramana to transcribe questions you choose to speak.",
+          "microphonePermission": "Allow Pramana to send live voice to your selected AI provider when you start voice.",
           "speechRecognitionPermission": "Allow Pramana to turn your spoken questions into text."
         }
       ],
@@ -47,9 +47,10 @@
         {
           "photosPermission": "Choose a screenshot to check a scripture quotation. Images are sent to your AI provider only when you tap Read screenshot.",
           "cameraPermission": false,
-          "microphonePermission": "Allow Pramana to transcribe questions you choose to speak."
+          "microphonePermission": "Allow Pramana to send live voice to your selected AI provider when you start voice."
         }
-      ]
+      ],
+      "./plugins/with-live-audio"
     ]
   }
 }
