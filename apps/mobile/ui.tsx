@@ -3,6 +3,7 @@ import * as Native from "react-native";
 import { SafeAreaView as NativeSafeAreaView } from "react-native-safe-area-context";
 import { useDevicePreferences } from "./DevicePreferences";
 const darkColors: Record<string, string> = {
+  "#cce7d1": "#315b43",
   "#263d35": "#e5eee7",
   "#778179": "#b3c0b7",
   "#526459": "#b3c0b7",

@@ -9,6 +9,7 @@ import {
   StyleSheet,
   Switch,
   Image,
+  KeyboardAvoidingView,
 } from "react-native";
 import {
   createConversationSocket,
@@ -17,6 +18,9 @@ import {
 import type { AudioPlayer } from "expo-audio";
 import type { ExpoSpeechRecognitionModuleType } from "expo-speech-recognition/build/ExpoSpeechRecognitionModule.types";
 
+import { RishiAvatar } from "./RishiAvatar";
+import { Ionicons } from "@expo/vector-icons";
+
 const NativeWebView = React.lazy(() =>
   import("react-native-webview").then((module) => ({
     default: module.WebView,
@@ -24,6 +28,8 @@ const NativeWebView = React.lazy(() =>
 );
 
 type Props = {
+  onSourceSearch?: () => void;
+  rishiSpeaking?: boolean;
   language: string;
   preferredName?: string;
   workIds: string[];
@@ -141,12 +147,16 @@ function sourcesFrom(result: unknown, name: string): Source[] {
 }
 
 export default function LiveConversation({
+  onSourceSearch,
+  rishiSpeaking,
   language,
   preferredName,
   workIds,
   onSpeakingChange,
   onNotice,
 }: Props) {
+  const messageScroll = useRef<import("react-native").ScrollView>(null);
+  const [heard, setHeard] = useState("");
   const [state, setState] = useState<State>("stopped");
   const [details, setDetails] = useState(false);
   const [image, setImage] = useState<{
@@ -392,6 +402,8 @@ export default function LiveConversation({
       await audio.setAudioModeAsync({
         playsInSilentMode: true,
         shouldPlayInBackground: false,
+        allowsRecording: false,
+        shouldRouteThroughEarpiece: false,
       });
       if (!active.current || epoch !== playEpoch.current) return;
       const player = audio.createAudioPlayer(uri, { updateInterval: 100 });
@@ -589,6 +601,12 @@ export default function LiveConversation({
         if (!permission.granted) {
           fail(
             "Microphone permission is required for device transcription. You can use the regular text chat.",
+          );
+          return;
+        }
+        if (!module.isRecognitionAvailable()) {
+          fail(
+            "No Android speech service is available. Enable Google speech recognition, or send a typed message.",
           );
           return;
         }
@@ -803,6 +821,8 @@ export default function LiveConversation({
     if (!module) return;
     subscriptions.current = [
       module.addListener("result", (event) => {
+        if (active.current)
+          setHeard(event.results[0]?.transcript?.slice(0, 2000) || "");
         if (
           !active.current ||
           !event.isFinal ||
@@ -830,9 +850,18 @@ export default function LiveConversation({
         recognitionRunning.current = false;
         setListening(false);
         if (!active.current || event.error === "aborted") return;
+        if (event.error === "no-speech" || event.error === "speech-timeout") {
+          recognitionBlocked.current = false;
+          scheduleRecognition();
+          return;
+        }
         recognitionBlocked.current = true;
         notice(
-          "Device transcription paused. Send a typed message or restart to try the microphone again.",
+          event.error === "network"
+            ? "Android speech recognition could not reach its service. Check your connection, then tap the microphone to restart."
+            : "Microphone transcription stopped (" +
+                event.error +
+                "). Tap the microphone to restart, or send a typed message.",
         );
       }),
     ];
@@ -840,6 +869,7 @@ export default function LiveConversation({
   }
   function submitText(text: string) {
     if (!send({ type: "text", text })) return false;
+    setHeard("");
     addLine("user", text);
     waiting.current = true;
     setListening(false);
@@ -938,263 +968,361 @@ export default function LiveConversation({
     };
   }, []);
 
+  async function testSpeaker() {
+    try {
+      const speech = await import("expo-speech");
+      await speech.stop();
+      speech.speak("Pramana voice is ready.", {
+        language,
+        onStart: () => callbacks.current.onSpeakingChange(true),
+        onDone: () => callbacks.current.onSpeakingChange(false),
+        onStopped: () => callbacks.current.onSpeakingChange(false),
+        onError: () => {
+          callbacks.current.onSpeakingChange(false);
+          notice(
+            "The phone speech voice could not play. Check media volume and installed speech voices.",
+          );
+        },
+      });
+      notice(
+        "Speaker test uses your phone's voice. Turn up media volume; this does not test the AI provider.",
+      );
+    } catch {
+      notice(
+        "Speaker test could not start. Check your phone's speech settings.",
+      );
+    }
+  }
   return (
-    <View style={styles.card}>
-      <Text style={styles.title}>Chat with Rishi</Text>
-      {!!sessionNotice && (
-        <Text accessibilityLiveRegion="assertive" style={styles.detail}>
-          {sessionNotice}
-        </Text>
-      )}
-      <Text style={styles.disclosure}>
-        AI replies · sources checked separately
-      </Text>
-      <Pressable onPress={() => setDetails((v) => !v)}>
-        <Text style={styles.detail}>
-          {details ? "Hide voice details" : "Voice & privacy details"}
-        </Text>
-      </Pressable>
-      {details && (
-        <>
-          <Text style={styles.detail}>
-            {Platform.OS === "web"
-              ? "Continuous microphone audio streams to your selected AI provider."
-              : "Device transcription sends final text to the live AI provider. Your phone’s speech service may process audio remotely. AI audio plays after each turn; raw microphone audio is not streamed to the AI."}
-          </Text>
-          <View style={styles.row}>
-            <Switch
-              accessibilityLabel="Enable web search tools"
-              value={webSearchEnabled}
-              onValueChange={setWebSearchEnabled}
-              disabled={state === "live" || state === "connecting"}
-            />
-            <Text style={styles.detail}>
-              Web search tools · provider charges may apply
+    <KeyboardAvoidingView
+      style={{ flex: 1 }}
+      behavior={Platform.OS === "ios" ? "padding" : undefined}
+    >
+      <View style={styles.card}>
+        <View style={[styles.row, { padding: 12 }]}>
+          <RishiAvatar size={44} speaking={rishiSpeaking} />
+          <View style={{ flex: 1 }}>
+            <Text style={styles.title}>Chat with Rishi</Text>
+            <Text accessibilityLiveRegion="polite" style={styles.status}>
+              {state === "connecting"
+                ? "Connecting…"
+                : state === "live"
+                  ? listening
+                    ? "Listening…"
+                    : waiting.current
+                      ? "Preparing reply…"
+                      : "Connected · ready"
+                  : "Type a message or start voice"}
             </Text>
           </View>
-        </>
-      )}
-      <Text accessibilityLiveRegion="polite" style={styles.status}>
-        {state === "live"
-          ? !microphoneEnabled
-            ? "Connected · microphone off"
-            : listening
-              ? "Connected · listening"
-              : waiting.current
-                ? "Connected · preparing reply"
-                : "Connected · ready"
-          : state === "connecting"
-            ? "Connecting…"
-            : state === "failed"
-              ? "Connection stopped · retry available"
-              : "Microphone off"}{" "}
-        · 10-minute maximum
-      </Text>
-      {details && state === "live" && !!connectedModel && (
-        <Text style={styles.detail}>{connectedModel}</Text>
-      )}
-      <View style={styles.row}>
-        <Pressable
-          accessibilityRole="button"
-          style={styles.button}
-          onPress={
-            state === "live" || state === "connecting"
-              ? () => stop()
-              : () => void start()
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel="Source search"
+            onPress={onSourceSearch}
+            style={styles.outline}
+          >
+            <Ionicons name="search" size={20} color="#67977d" />
+          </Pressable>
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel="Voice details"
+            onPress={() => setDetails((v) => !v)}
+            style={styles.outline}
+          >
+            <Ionicons name="ellipsis-vertical" size={20} color="#67977d" />
+          </Pressable>
+        </View>
+        {!!sessionNotice && (
+          <Text
+            accessibilityLiveRegion="assertive"
+            style={[styles.detail, { paddingHorizontal: 12 }]}
+          >
+            {sessionNotice}
+          </Text>
+        )}
+        <ScrollView
+          ref={messageScroll}
+          style={{ flex: 1 }}
+          contentContainerStyle={{ padding: 12, gap: 8 }}
+          keyboardShouldPersistTaps="handled"
+          onContentSizeChange={() =>
+            messageScroll.current?.scrollToEnd({ animated: true })
           }
         >
-          <Text style={styles.buttonText}>
-            {state === "live" || state === "connecting"
-              ? "Stop"
-              : state === "failed"
-                ? "Retry"
-                : "Start live voice"}
+          <Text style={[styles.detail, { textAlign: "center" }]}>
+            AI replies · sources checked separately
           </Text>
-        </Pressable>
-        <Pressable
-          accessibilityRole="button"
-          disabled={state !== "live"}
-          onPress={interrupt}
-          style={[styles.outline, state !== "live" && styles.disabled]}
-        >
-          <Text>Interrupt</Text>
-        </Pressable>
-      </View>
-      {(state === "stopped" || state === "failed") && (
-        <Pressable
-          accessibilityRole="button"
-          style={styles.outline}
-          onPress={() => void start(false)}
-        >
-          <Text>Connect with text · microphone off</Text>
-        </Pressable>
-      )}
-      {!!lines.length && (
-        <ScrollView style={styles.transcripts} nestedScrollEnabled>
+          {details && (
+            <View style={styles.source}>
+              <Text style={styles.detail}>
+                {Platform.OS === "web"
+                  ? "Microphone audio streams to your selected AI provider."
+                  : "Android speech recognition transcribes your voice; final text goes to your AI provider. Replies play after each turn."}{" "}
+                Sessions last up to 10 minutes.
+              </Text>
+              <Text style={styles.detail}>{connectedModel}</Text>
+              <View style={styles.row}>
+                <Switch
+                  accessibilityLabel="Enable web search tools"
+                  value={webSearchEnabled}
+                  onValueChange={setWebSearchEnabled}
+                  disabled={state === "live" || state === "connecting"}
+                />
+                <Text style={styles.detail}>
+                  Web search · provider charges may apply
+                </Text>
+              </View>
+              <Pressable
+                accessibilityRole="button"
+                onPress={() => void testSpeaker()}
+                style={styles.outline}
+              >
+                <Text>Test phone speaker</Text>
+              </Pressable>
+            </View>
+          )}
+          {!lines.length && (
+            <View style={{ alignItems: "center", paddingTop: 32, gap: 12 }}>
+              <RishiAvatar size={96} speaking={rishiSpeaking} />
+              <Text style={styles.detail}>
+                Ask a question about scripture, or attach a quote to check.
+              </Text>
+            </View>
+          )}
           {lines.map((line, i) => (
-            <View key={i} style={[styles.line, { alignSelf: line.role === "user" ? "flex-end" : "flex-start", maxWidth: "94%" }]}>
-              <Text style={styles.role}>{line.role === "user" ? "You" : "Rishi"}</Text>
+            <View
+              key={i}
+              style={[
+                styles.line,
+                {
+                  alignSelf:
+                    line.role === "user" || line.role === "You"
+                      ? "flex-end"
+                      : "flex-start",
+                  maxWidth: "88%",
+                  backgroundColor:
+                    line.role === "user" || line.role === "You"
+                      ? "#cce7d1"
+                      : "#e4e5db",
+                },
+              ]}
+            >
+              <Text style={styles.role}>
+                {line.role === "user" || line.role === "You" ? "You" : "Rishi"}
+              </Text>
               <Text selectable>{line.text}</Text>
             </View>
           ))}
+          {grounding && (
+            <View style={styles.source}>
+              <Text style={styles.role}>
+                Google Search suggestions · external web
+              </Text>
+              {Platform.OS === "web" && grounding.html ? (
+                React.createElement("iframe", {
+                  title: "Google Search suggestions",
+                  srcDoc: grounding.html,
+                  sandbox: "",
+                  referrerPolicy: "no-referrer",
+                  style: { border: 0, width: "100%", height: 160 },
+                })
+              ) : grounding.html ? (
+                <React.Suspense
+                  fallback={
+                    <Text style={styles.detail}>
+                      Loading search suggestions…
+                    </Text>
+                  }
+                >
+                  <NativeWebView
+                    source={{
+                      html: grounding.html,
+                      baseUrl: "https://www.google.com",
+                    }}
+                    javaScriptEnabled={false}
+                    domStorageEnabled={false}
+                    allowFileAccess={false}
+                    allowFileAccessFromFileURLs={false}
+                    allowUniversalAccessFromFileURLs={false}
+                    mixedContentMode="never"
+                    setSupportMultipleWindows={false}
+                    originWhitelist={["https://*", "about:blank"]}
+                    onShouldStartLoadWithRequest={(request) => {
+                      if (
+                        request.url === "about:blank" ||
+                        request.url === "https://www.google.com" ||
+                        request.url === "https://www.google.com/"
+                      )
+                        return true;
+                      const url = publicUrl(request.url);
+                      if (url)
+                        void Linking.openURL(url).catch(() =>
+                          notice("The search link could not open."),
+                        );
+                      return false;
+                    }}
+                    style={{ height: 160, backgroundColor: "transparent" }}
+                  />
+                </React.Suspense>
+              ) : (
+                grounding.queries.map((query, i) => (
+                  <Pressable
+                    key={i}
+                    accessibilityRole="link"
+                    onPress={() =>
+                      void Linking.openURL(
+                        `https://www.google.com/search?q=${encodeURIComponent(query)}`,
+                      ).catch(() => notice("The search link could not open."))
+                    }
+                  >
+                    <Text style={styles.link}>{query}</Text>
+                  </Pressable>
+                ))
+              )}
+            </View>
+          )}
+          {tools.map((tool, i) => (
+            <Text key={i} style={styles.detail}>
+              {tool}
+            </Text>
+          ))}
+          {sources.map((source, i) => (
+            <View key={i} style={styles.source}>
+              <Text style={styles.role}>{source.label}</Text>
+              <Text>{source.title}</Text>
+              {source.url && (
+                <Pressable
+                  accessibilityRole="link"
+                  onPress={() =>
+                    void Linking.openURL(source.url!).catch(() =>
+                      notice("This source link could not open."),
+                    )
+                  }
+                >
+                  <Text style={styles.link}>Open source</Text>
+                </Pressable>
+              )}
+            </View>
+          ))}
         </ScrollView>
-      )}
-      {!lines.length && (
-        <Text style={styles.detail}>
-          Ask Rishi a question, type a message or start voice.
-        </Text>
-      )}
-      {!!image && (
-        <View style={styles.source}>
-          <Image
-            source={{ uri: image.uri }}
-            style={{ height: 120, width: 120, borderRadius: 12 }}
-          />
-          <Text style={styles.detail}>
-            Read image sends it to your AI provider for transcription. Review
-            extracted text before sending.
-          </Text>
-          <Pressable
-            disabled={readingImage}
-            onPress={() => void readImage()}
-            style={styles.outline}
-          >
-            <Text>{readingImage ? "Reading…" : "Read image"}</Text>
-          </Pressable>
-          <Pressable onPress={() => setImage(null)}>
-            <Text>Remove image</Text>
-          </Pressable>
-        </View>
-      )}
-      <Pressable
-        accessibilityLabel="Attach an image"
-        onPress={() => void attachImage()}
-        style={styles.outline}
-      >
-        <Text>＋ Attach image</Text>
-      </Pressable>
-      {listening && Platform.OS !== "web" && (
-        <Pressable
-          onPress={() => recognition.current?.stop()}
-          style={styles.outline}
+        <View
+          style={{
+            padding: 10,
+            gap: 8,
+            borderTopWidth: 1,
+            borderColor: "#ABB7A8",
+          }}
         >
-          <Text>Finish speaking · send</Text>
-        </Pressable>
-      )}
-      <View style={styles.row}>
-        <TextInput
-          accessibilityLabel="Message for live conversation"
-          placeholder="Message Rishi…"
-          value={draft}
-          onChangeText={setDraft}
-          maxLength={2000}
-          style={styles.input}
-          editable={state !== "connecting" && !readingImage}
-          onSubmitEditing={sendText}
-        />
-        <Pressable
-          accessibilityRole="button"
-          disabled={state === "connecting" || !draft.trim() || readingImage}
-          onPress={sendText}
-          style={styles.outline}
-        >
-          <Text>Send</Text>
-        </Pressable>
-      </View>
-      {grounding && (
-        <View style={styles.source}>
-          <Text style={styles.role}>
-            Google Search suggestions · external web
-          </Text>
-          {Platform.OS === "web" && grounding.html ? (
-            React.createElement("iframe", {
-              title: "Google Search suggestions",
-              srcDoc: grounding.html,
-              sandbox: "",
-              referrerPolicy: "no-referrer",
-              style: { border: 0, width: "100%", height: 160 },
-            })
-          ) : grounding.html ? (
-            <React.Suspense
-              fallback={
-                <Text style={styles.detail}>Loading search suggestions…</Text>
-              }
-            >
-              <NativeWebView
-                source={{
-                  html: grounding.html,
-                  baseUrl: "https://www.google.com",
-                }}
-                javaScriptEnabled={false}
-                domStorageEnabled={false}
-                allowFileAccess={false}
-                allowFileAccessFromFileURLs={false}
-                allowUniversalAccessFromFileURLs={false}
-                mixedContentMode="never"
-                setSupportMultipleWindows={false}
-                originWhitelist={["https://*", "about:blank"]}
-                onShouldStartLoadWithRequest={(request) => {
-                  if (
-                    request.url === "about:blank" ||
-                    request.url === "https://www.google.com" ||
-                    request.url === "https://www.google.com/"
-                  )
-                    return true;
-                  const url = publicUrl(request.url);
-                  if (url)
-                    void Linking.openURL(url).catch(() =>
-                      notice("The search link could not open."),
-                    );
-                  return false;
-                }}
-                style={{ height: 160, backgroundColor: "transparent" }}
+          {!!image && (
+            <View style={styles.row}>
+              <Image
+                source={{ uri: image.uri }}
+                style={{ height: 60, width: 60, borderRadius: 8 }}
               />
-            </React.Suspense>
-          ) : (
-            grounding.queries.map((query, i) => (
+              <View style={{ flex: 1 }}>
+                <Text style={styles.detail}>
+                  Read image sends it to your provider. Review text before
+                  sending.
+                </Text>
+                <Pressable
+                  accessibilityRole="button"
+                  disabled={readingImage}
+                  onPress={() => void readImage()}
+                >
+                  <Text>{readingImage ? "Reading…" : "Read image"}</Text>
+                </Pressable>
+              </View>
               <Pressable
-                key={i}
-                accessibilityRole="link"
-                onPress={() =>
-                  void Linking.openURL(
-                    `https://www.google.com/search?q=${encodeURIComponent(query)}`,
-                  ).catch(() => notice("The search link could not open."))
-                }
+                accessibilityLabel="Remove image"
+                onPress={() => setImage(null)}
               >
-                <Text style={styles.link}>{query}</Text>
+                <Text>✕</Text>
               </Pressable>
-            ))
+            </View>
           )}
-        </View>
-      )}
-      {tools.map((tool, i) => (
-        <Text key={i} style={styles.detail}>
-          {tool}
-        </Text>
-      ))}
-      {sources.map((source, i) => (
-        <View key={i} style={styles.source}>
-          <Text style={styles.role}>{source.label}</Text>
-          <Text>{source.title}</Text>
-          {source.url && (
+          {!!heard && listening && (
+            <Text numberOfLines={2} style={styles.detail}>
+              {heard}
+            </Text>
+          )}
+          {state === "live" && (
+            <View style={styles.row}>
+              <Pressable
+                accessibilityRole="button"
+                onPress={() => stop()}
+                style={styles.outline}
+              >
+                <Text>Stop</Text>
+              </Pressable>
+              <Pressable
+                accessibilityRole="button"
+                onPress={interrupt}
+                style={styles.outline}
+              >
+                <Text>Interrupt</Text>
+              </Pressable>
+              {listening && Platform.OS !== "web" && (
+                <Pressable
+                  accessibilityRole="button"
+                  onPress={() => recognition.current?.stop()}
+                  style={styles.outline}
+                >
+                  <Text>Send speech</Text>
+                </Pressable>
+              )}
+            </View>
+          )}
+          <View style={styles.row}>
             <Pressable
-              accessibilityRole="link"
-              onPress={() =>
-                void Linking.openURL(source.url!).catch(() =>
-                  notice("This source link could not open."),
-                )
-              }
+              accessibilityRole="button"
+              accessibilityLabel="Attach an image"
+              onPress={() => void attachImage()}
+              style={styles.outline}
             >
-              <Text style={styles.link}>Open source</Text>
+              <Ionicons name="attach" size={23} color="#67977d" />
             </Pressable>
-          )}
+            <TextInput
+              accessibilityLabel="Message for live conversation"
+              placeholder="Message Rishi…"
+              value={draft}
+              onChangeText={setDraft}
+              maxLength={2000}
+              style={styles.input}
+              editable={state !== "connecting" && !readingImage}
+              onSubmitEditing={sendText}
+            />
+            {draft.trim() ? (
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel="Send"
+                disabled={state === "connecting" || readingImage}
+                onPress={sendText}
+                style={styles.button}
+              >
+                <Ionicons name="send" size={20} color="white" />
+              </Pressable>
+            ) : (
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel="Start live voice"
+                disabled={state === "connecting"}
+                onPress={() => {
+                  stop();
+                  void start(true);
+                }}
+                style={styles.button}
+              >
+                <Ionicons name="mic" size={22} color="white" />
+              </Pressable>
+            )}
+          </View>
         </View>
-      ))}
-    </View>
+      </View>
+    </KeyboardAvoidingView>
   );
 }
 const styles = StyleSheet.create({
-  card: { padding: 16, borderRadius: 18, backgroundColor: "#F3F0E6", gap: 10 },
+  card: { flex: 1, backgroundColor: "#F3F0E6", overflow: "hidden" },
   title: { fontSize: 20, fontWeight: "700", color: "#143D29" },
   disclosure: { fontWeight: "600", color: "#755019" },
   detail: { fontSize: 12, color: "#4A5B51", lineHeight: 18 },

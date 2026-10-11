@@ -633,124 +633,762 @@ function StudyApp() {
               </Pressable>
             </View>
           </View>
-          <ScrollView
-            contentContainerStyle={[s.content, !wide && { padding: 20 }]}
-            keyboardShouldPersistTaps="handled"
-          >
-            {reader ? (
-              <>
-                <Pressable onPress={() => setReader(null)} style={s.row}>
-                  <Icon name="arrow-back" size={18} />
-                  <Text style={s.body}> Back to study</Text>
-                </Pressable>
-                <Text style={s.kicker}>EXACT PASSAGE</Text>
-                <Text style={s.title}>{reader.reference}</Text>
-                <PassageCard
-                  saved={saved}
-                  onOpen={open}
-                  onToggle={toggle}
-                  p={reader}
-                />
-                <View style={s.info}>
-                  <Text style={s.sectionTitle}>Source & provenance</Text>
-                  <Text style={s.body}>
-                    Edition: {reader.edition_id}
-                    {"\n"}Translation: {reader.translator}
-                    {"\n"}Review: {reader.review_status} · Release:{" "}
-                    {reader.released_in}
-                    {reader.source_locator
-                      ? `\nVolume ${reader.source_locator.volume} · printed page ${reader.source_locator.printed_page} · PDF page ${reader.source_locator.pdf_page}`
-                      : ""}
-                  </Text>
-                  <Text style={s.small}>Immutable ID: {reader.id}</Text>
-                </View>
-                <BookmarkEditor
-                  key={reader.id}
-                  id={reader.id}
-                  onSave={() =>
-                    setSaved((ids) =>
-                      ids.includes(reader.id) ? ids : [...ids, reader.id],
-                    )
-                  }
-                />
-                <Text style={s.sectionTitle}>Surrounding passages</Text>
-                {reader.context
-                  ?.filter((p) => p.id !== reader.id)
-                  .map((p) => (
-                    <PassageCard
-                      saved={saved}
-                      onOpen={open}
-                      onToggle={toggle}
-                      key={p.id}
-                      p={p}
-                    />
-                  ))}
-                {reader.context?.length === 1 && (
-                  <Text style={s.body}>
-                    Adjacent verses are not available in this pilot.
-                  </Text>
-                )}
-                <Pressable
-                  onPress={() => setReport(!report)}
-                  style={s.secondary}
-                >
-                  <Icon name="flag-outline" size={17} />
-                  <Text style={s.body}>Report a source problem</Text>
-                </Pressable>
-                {report && (
+          {tab === "Study" && liveMode && !reader ? (
+            <LiveConversation
+              language={
+                profile.language === "Hindi"
+                  ? "hi-IN"
+                  : profile.language === "Sanskrit"
+                    ? "sa-IN"
+                    : "en-IN"
+              }
+              preferredName={profile.name}
+              workIds={selectedWorkIds}
+              onSpeakingChange={setSpeaking}
+              onNotice={setNotice}
+              onSourceSearch={() => setLiveMode(false)}
+              rishiSpeaking={speaking}
+            />
+          ) : (
+            <ScrollView
+              contentContainerStyle={[s.content, !wide && { padding: 20 }]}
+              keyboardShouldPersistTaps="handled"
+            >
+              {reader ? (
+                <>
+                  <Pressable onPress={() => setReader(null)} style={s.row}>
+                    <Icon name="arrow-back" size={18} />
+                    <Text style={s.body}> Back to study</Text>
+                  </Pressable>
+                  <Text style={s.kicker}>EXACT PASSAGE</Text>
+                  <Text style={s.title}>{reader.reference}</Text>
+                  <PassageCard
+                    saved={saved}
+                    onOpen={open}
+                    onToggle={toggle}
+                    p={reader}
+                  />
                   <View style={s.info}>
-                    <TextInput
-                      value={reason}
-                      onChangeText={setReason}
-                      placeholder="Describe the citation or wording issue"
-                      multiline
-                      style={s.reportInput}
-                    />
-                    <Pressable
-                      disabled={reason.trim().length < 5}
-                      onPress={sendReport}
-                      style={s.button}
-                    >
-                      <Text style={s.buttonText}>Submit report</Text>
-                    </Pressable>
+                    <Text style={s.sectionTitle}>Source & provenance</Text>
+                    <Text style={s.body}>
+                      Edition: {reader.edition_id}
+                      {"\n"}Translation: {reader.translator}
+                      {"\n"}Review: {reader.review_status} · Release:{" "}
+                      {reader.released_in}
+                      {reader.source_locator
+                        ? `\nVolume ${reader.source_locator.volume} · printed page ${reader.source_locator.printed_page} · PDF page ${reader.source_locator.pdf_page}`
+                        : ""}
+                    </Text>
+                    <Text style={s.small}>Immutable ID: {reader.id}</Text>
                   </View>
-                )}
-                {!!notice && <Text style={s.body}>{notice}</Text>}
-              </>
-            ) : tab === "Study" ? (
-              <>
-                {!liveMode && (
-                  <>
-                    <View style={s.row}>
-                      <Text style={s.kicker}>
-                        THE SCRIPTURE STUDY COMPANION
-                      </Text>
-                      <Text style={s.small}>✦ Begin with a question</Text>
+                  <BookmarkEditor
+                    key={reader.id}
+                    id={reader.id}
+                    onSave={() =>
+                      setSaved((ids) =>
+                        ids.includes(reader.id) ? ids : [...ids, reader.id],
+                      )
+                    }
+                  />
+                  <Text style={s.sectionTitle}>Surrounding passages</Text>
+                  {reader.context
+                    ?.filter((p) => p.id !== reader.id)
+                    .map((p) => (
+                      <PassageCard
+                        saved={saved}
+                        onOpen={open}
+                        onToggle={toggle}
+                        key={p.id}
+                        p={p}
+                      />
+                    ))}
+                  {reader.context?.length === 1 && (
+                    <Text style={s.body}>
+                      Adjacent verses are not available in this pilot.
+                    </Text>
+                  )}
+                  <Pressable
+                    onPress={() => setReport(!report)}
+                    style={s.secondary}
+                  >
+                    <Icon name="flag-outline" size={17} />
+                    <Text style={s.body}>Report a source problem</Text>
+                  </Pressable>
+                  {report && (
+                    <View style={s.info}>
+                      <TextInput
+                        value={reason}
+                        onChangeText={setReason}
+                        placeholder="Describe the citation or wording issue"
+                        multiline
+                        style={s.reportInput}
+                      />
+                      <Pressable
+                        disabled={reason.trim().length < 5}
+                        onPress={sendReport}
+                        style={s.button}
+                      >
+                        <Text style={s.buttonText}>Submit report</Text>
+                      </Pressable>
                     </View>
-                    {profile.name ? (
-                      <Text style={s.kicker}>Welcome, {profile.name}.</Text>
-                    ) : null}
-                    <Text style={[s.title, !wide && { fontSize: 36 }]}>
-                      Let curiosity lead.{"\n"}Let the source speak.
+                  )}
+                  {!!notice && <Text style={s.body}>{notice}</Text>}
+                </>
+              ) : tab === "Study" ? (
+                <>
+                  {!liveMode && (
+                    <>
+                      <View style={s.row}>
+                        <Text style={s.kicker}>
+                          THE SCRIPTURE STUDY COMPANION
+                        </Text>
+                        <Text style={s.small}>✦ Begin with a question</Text>
+                      </View>
+                      {profile.name ? (
+                        <Text style={s.kicker}>Welcome, {profile.name}.</Text>
+                      ) : null}
+                      <Text style={[s.title, !wide && { fontSize: 36 }]}>
+                        Let curiosity lead.{"\n"}Let the source speak.
+                      </Text>
+                      <Text style={s.intro}>
+                        Explore scripture with care. Ask a question, find the
+                        passage,
+                        {"\n"}and make room for a deeper understanding.
+                      </Text>
+                      {Object.entries(preferences.state.positions).length >
+                        0 && (
+                        <View style={s.info}>
+                          <Text style={s.sectionTitle}>Continue reading</Text>
+                          {Object.entries(preferences.state.positions)
+                            .sort((a, b) => b[1].at.localeCompare(a[1].at))
+                            .slice(0, 3)
+                            .map(([work, position]) => (
+                              <Pressable
+                                key={work}
+                                accessibilityRole="button"
+                                style={s.secondary}
+                                onPress={() =>
+                                  void request("/v1/passages/" + position.id)
+                                    .then((p) => open(p))
+                                    .catch(() =>
+                                      setError(
+                                        "This reading position is unavailable. Reinstall its source pack.",
+                                      ),
+                                    )
+                                }
+                              >
+                                <Text style={s.body}>{position.reference}</Text>
+                              </Pressable>
+                            ))}
+                        </View>
+                      )}
+                    </>
+                  )}
+                  <View style={{ alignItems: "center", marginBottom: 12 }}>
+                    <RishiAvatar speaking={speaking} size={104} />
+                  </View>
+
+                  <Pressable
+                    accessibilityRole="switch"
+                    accessibilityLabel="Live conversation mode"
+                    accessibilityState={{ checked: liveMode }}
+                    disabled={busy}
+                    style={s.secondary}
+                    onPress={() => {
+                      setLiveMode((value) => !value);
+                      setVoiceResponse(null);
+                      setAnswer(null);
+                      setConversation(null);
+                      setNotice("");
+                      setSpeaking(false);
+                    }}
+                  >
+                    <Icon name="radio-outline" size={20} />
+                    <Text style={s.body}>
+                      {liveMode
+                        ? "Chat with Rishi · switch to source search"
+                        : "Source search · switch to chat"}
                     </Text>
-                    <Text style={s.intro}>
-                      Explore scripture with care. Ask a question, find the
-                      passage,
-                      {"\n"}and make room for a deeper understanding.
-                    </Text>
-                    {Object.entries(preferences.state.positions).length > 0 && (
-                      <View style={s.info}>
-                        <Text style={s.sectionTitle}>Continue reading</Text>
-                        {Object.entries(preferences.state.positions)
-                          .sort((a, b) => b[1].at.localeCompare(a[1].at))
-                          .slice(0, 3)
-                          .map(([work, position]) => (
+                  </Pressable>
+                  {liveMode && (
+                    <LiveConversation
+                      language={
+                        profile.language === "Hindi"
+                          ? "hi-IN"
+                          : profile.language === "Sanskrit"
+                            ? "sa-IN"
+                            : "en-IN"
+                      }
+                      preferredName={profile.name}
+                      workIds={
+                        scope === GITA_PRESS_SCOPE
+                          ? MAHAPURANA_TARGETS.map(([id]) => id)
+                          : scope === UPANISHAD_SCOPE
+                            ? UPANISHAD_TARGETS.map(([id]) => id)
+                            : [scope]
+                      }
+                      onSpeakingChange={setSpeaking}
+                      onNotice={setNotice}
+                    />
+                  )}
+
+                  {!liveMode && (
+                    <>
+                      {!liveMode && (
+                        <SearchFilters
+                          value={searchSelection}
+                          editions={selectedEditions}
+                          onChange={setSearchSelection}
+                        />
+                      )}
+                      <Pressable
+                        accessibilityLabel="Check a quote or screenshot"
+                        accessibilityRole="button"
+                        style={s.secondary}
+                        onPress={() => {
+                          setTab("Fact check");
+                          setReader(null);
+                          setLiveMode(false);
+                        }}
+                      >
+                        <Icon name="scan-outline" size={20} />
+                        <Text style={s.body}>Check a quote or screenshot</Text>
+                      </Pressable>
+                      {!liveMode && (
+                        <View style={s.composer}>
+                          <TextInput
+                            accessibilityLabel="Ask a scripture question"
+                            value={query}
+                            onChangeText={setQuery}
+                            onSubmitEditing={() => ask()}
+                            placeholder="What does the Gita say about attachment?"
+                            placeholderTextColor="#959c92"
+                            multiline
+                            style={s.input}
+                          />
+                          <View
+                            style={[
+                              s.row,
+                              {
+                                borderTopWidth: 1,
+                                borderColor: C.line,
+                                paddingTop: 16,
+                              },
+                            ]}
+                          >
                             <Pressable
-                              key={work}
-                              accessibilityRole="button"
+                              style={s.row}
+                              disabled={busy}
+                              accessibilityRole="switch"
+                              accessibilityState={{ checked: voiceEnabled }}
+                              accessibilityLabel="Voice mode"
+                              onPress={() => {
+                                setVoiceEnabled((value) => !value);
+                                setVoiceResponse(null);
+                                setSpeaking(false);
+                              }}
+                            >
+                              <Icon
+                                name={
+                                  voiceEnabled
+                                    ? "volume-high-outline"
+                                    : "mic-outline"
+                                }
+                                size={20}
+                              />
+                              <Text style={[s.small, { marginLeft: 8 }]}>
+                                Voice mode · {voiceEnabled ? "on" : "off"}
+                              </Text>
+                            </Pressable>
+                            <Pressable
+                              accessibilityLabel="Ask question"
+                              disabled={busy || !query.trim()}
+                              onPress={() => ask()}
+                              style={[
+                                s.button,
+                                (!query.trim() || busy) && { opacity: 0.5 },
+                              ]}
+                            >
+                              {busy ? (
+                                <ActivityIndicator color="white" />
+                              ) : (
+                                <>
+                                  <Text style={s.buttonText}>
+                                    {voiceEnabled
+                                      ? "Ask aloud"
+                                      : isAppConversation(query)
+                                        ? "Send message"
+                                        : "Find sources"}
+                                  </Text>
+                                  <Icon
+                                    name="arrow-forward"
+                                    size={16}
+                                    color="white"
+                                  />
+                                </>
+                              )}
+                            </Pressable>
+                          </View>
+                        </View>
+                      )}
+                      <View
+                        style={[
+                          s.row,
+                          {
+                            justifyContent: "flex-start",
+                            gap: 8,
+                            flexWrap: "wrap",
+                            marginTop: 16,
+                          },
+                        ]}
+                      >
+                        <Icon
+                          name="shield-checkmark-outline"
+                          size={16}
+                          color={C.green}
+                        />
+                        <Text style={s.small}>
+                          Sources first. No unsupported claims.
+                        </Text>
+                        <Text style={s.small}>·</Text>
+                        <Pressable
+                          accessibilityLabel="Choose source collection"
+                          onPress={() => setShowSources(!showSources)}
+                        >
+                          <Text style={[s.small, { color: C.green }]}>
+                            {scope === GITA_PRESS_SCOPE
+                              ? "18 Mahapuranas · Gita Press"
+                              : scope === "bhagavad-gita"
+                                ? DEVICE_CONNECTIONS
+                                  ? "Bhagavad Gita"
+                                  : "Bhagavad Gita · fixtures"
+                                : scope === UPANISHAD_SCOPE
+                                  ? "108 Upanishads · Muktika list"
+                                  : VEDA_TARGETS.some(([id]) => id === scope)
+                                    ? VEDA_TARGETS.find(
+                                        ([id]) => id === scope,
+                                      )?.[1] || "Veda"
+                                    : scope === "valmiki-ramayana"
+                                      ? "Valmiki Ramayana · Gita Press"
+                                      : works.find((w) => w.id === scope)
+                                          ?.title || scope}{" "}
+                            ▾
+                          </Text>
+                        </Pressable>
+                      </View>
+                      {showSources && (
+                        <View style={s.info}>
+                          <TextInput
+                            accessibilityLabel="Filter source collections"
+                            value={sourceSearch}
+                            onChangeText={setSourceSearch}
+                            placeholder="Find a scripture collection"
+                            style={s.reportInput}
+                          />
+                          {[
+                            [
+                              GITA_PRESS_SCOPE,
+                              "All 18 Mahapuranas · Gita Press",
+                            ],
+                            [UPANISHAD_SCOPE, "108 Upanishads · Muktika list"],
+                            ...works.map((w) => [
+                              w.id,
+                              `${w.title} · ${w.passage_count > 0 ? "installed" : "pending"}`,
+                            ]),
+                          ]
+                            .filter(([, title]) =>
+                              title
+                                .toLowerCase()
+                                .includes(sourceSearch.toLowerCase()),
+                            )
+                            .slice(0, 20)
+                            .map(([id, label]) => (
+                              <Pressable
+                                key={id}
+                                accessibilityLabel={label}
+                                style={s.secondary}
+                                onPress={() => {
+                                  setScope(id);
+                                  setSearchSelection(DEFAULT_SEARCH);
+                                  setLiveMode(false);
+                                  setConversation(null);
+                                  setVoiceResponse(null);
+                                  setShowSources(false);
+                                  setAnswer(null);
+                                }}
+                              >
+                                <Text style={s.body}>
+                                  {scope === id ? "◉" : "○"} {label}
+                                </Text>
+                              </Pressable>
+                            ))}
+                        </View>
+                      )}
+                      {voiceEnabled && !liveMode && (
+                        <VoiceMode
+                          busy={busy}
+                          language={
+                            profile.language === "Hindi"
+                              ? "hi-IN"
+                              : profile.language === "Sanskrit"
+                                ? "sa-IN"
+                                : "en-IN"
+                          }
+                          onTranscript={setQuery}
+                          onSpeakingChange={setSpeaking}
+                          response={voiceResponse}
+                          onNotice={setNotice}
+                        />
+                      )}
+                      {scope !== "bhagavad-gita" &&
+                        !answer &&
+                        !conversation &&
+                        !selectedHasPassages && (
+                          <View style={s.info}>
+                            <Text style={s.body}>
+                              Gita Press, Gorakhpur is the selected reference
+                              publisher for this collection; a full matching
+                              edition must be established.
+                            </Text>
+                            <Text style={s.small}>
+                              Edition selection, usage rights, and source review
+                              are pending. No approved passages are indexed for
+                              this collection; a full matching edition must be
+                              established.
+                              {DEVICE_CONNECTIONS
+                                ? "Web results are shown separately while local collections are being prepared."
+                                : "Select development fixtures to explore the working reader."}
+                            </Text>
+                          </View>
+                        )}
+                      {!!notice && (
+                        <Text style={[s.small, { marginTop: 12 }]}>
+                          {notice}
+                        </Text>
+                      )}
+                      {busy && (
+                        <Text style={[s.body, { marginTop: 24 }]}>
+                          {voiceEnabled
+                            ? "Checking sources and preparing a spoken reply…"
+                            : isAppConversation(query)
+                              ? "Connecting to your provider…"
+                              : "Finding passages and checking citations…"}
+                        </Text>
+                      )}
+                      {conversation && (
+                        <View style={s.passage}>
+                          <View style={s.row}>
+                            <Text style={s.sectionTitle}>Pramana</Text>
+                            <Text style={s.badge}>
+                              {conversation.connection_status === "connected"
+                                ? `${conversation.provider?.toUpperCase()} CONNECTED`
+                                : "LOCAL GREETING"}
+                            </Text>
+                          </View>
+                          <ReadingText style={s.body}>
+                            {conversation.message}
+                          </ReadingText>
+                          {!!conversation.note && (
+                            <Text style={[s.small, { marginTop: 12 }]}>
+                              {conversation.note}
+                            </Text>
+                          )}
+                          <Text style={[s.small, { marginTop: 12 }]}>
+                            Scripture questions use verified passages. Enable
+                            Voice mode for spoken replies.
+                          </Text>
+                        </View>
+                      )}
+                      {conversation ? null : answer ? (
+                        <View style={{ marginTop: 30 }}>
+                          <View style={s.row}>
+                            <Text style={s.sectionTitle}>
+                              Your source trail
+                            </Text>
+                            <Text style={s.badge}>
+                              {answer.support_state === "DIRECT"
+                                ? "PASSAGE MATCH"
+                                : "NOT VERIFIED"}
+                            </Text>
+                          </View>
+                          <ReadingText style={s.body}>
+                            {answer.answer}
+                          </ReadingText>
+                          {webFallback && (
+                            <View
+                              style={{
+                                marginTop: 16,
+                                padding: 18,
+                                borderRadius: 14,
+                                backgroundColor: "#edf0e5",
+                              }}
+                            >
+                              <Text style={s.sectionTitle}>
+                                Web search fallback
+                              </Text>
+                              <Text style={s.small}>
+                                No local passage matched. External web sources
+                                are not verified scripture.
+                              </Text>
+                              <ReadingText style={[s.body, { marginTop: 12 }]}>
+                                {webFallback.text ||
+                                  webFallback.error ||
+                                  "Web search returned no cited result."}
+                              </ReadingText>
+                              <WebSearchSuggestions
+                                html={webFallback.search_entry_point}
+                              />
+                              {(webFallback.evidence || []).map((source) => (
+                                <Pressable
+                                  key={source.url}
+                                  accessibilityRole="link"
+                                  onPress={() => {
+                                    try {
+                                      const url = new URL(source.url);
+                                      if (
+                                        url.protocol === "https:" &&
+                                        !url.username &&
+                                        !url.password
+                                      )
+                                        void Linking.openURL(url.href).catch(
+                                          () =>
+                                            setError(
+                                              "Could not open this source.",
+                                            ),
+                                        );
+                                    } catch {
+                                      setError("Invalid source link.");
+                                    }
+                                  }}
+                                  style={s.secondary}
+                                >
+                                  <Text
+                                    style={[
+                                      s.body,
+                                      { textDecorationLine: "underline" },
+                                    ]}
+                                  >
+                                    {source.title}
+                                  </Text>
+                                </Pressable>
+                              ))}
+                            </View>
+                          )}
+                          {answer.citations.map((p) => (
+                            <PassageCard
+                              saved={saved}
+                              onOpen={open}
+                              onToggle={toggle}
+                              key={p.id}
+                              p={p}
+                            />
+                          ))}
+                          <View style={s.info}>
+                            {answer.caveats.map((c) => (
+                              <Text
+                                key={c}
+                                style={[s.small, { marginBottom: 6 }]}
+                              >
+                                {c}
+                              </Text>
+                            ))}
+                          </View>
+                          <Pressable
+                            onPress={() => {
+                              setAnswer(null);
+                              setQuery("");
+                            }}
+                            style={s.secondary}
+                          >
+                            <Text style={s.body}>Start a new question</Text>
+                          </Pressable>
+                        </View>
+                      ) : scope !== "bhagavad-gita" ? (
+                        <View style={s.passage}>
+                          <Text style={s.sectionTitle}>
+                            {scope === GITA_PRESS_SCOPE
+                              ? "The 18-work reference collection"
+                              : scope === UPANISHAD_SCOPE
+                                ? "108 Upanishads · Muktika reference list"
+                                : scope === "valmiki-ramayana"
+                                  ? "Valmiki Ramayana reference collection"
+                                  : scope === "mahabharata"
+                                    ? "Vyasa’s Mahabharata reference collection"
+                                    : "Vedic source collection · recension pending"}
+                          </Text>
+                          <Text style={s.body}>
+                            Keep original passages, translations, and edition
+                            details together. Each source needs a mapped volume
+                            and verse locator before it can support an answer.
+                          </Text>
+                          <Pressable
+                            onPress={() => setTab("Library")}
+                            style={s.secondary}
+                          >
+                            <Text style={s.body}>View the source library</Text>
+                            <Icon name="arrow-forward" size={18} />
+                          </Pressable>
+                        </View>
+                      ) : (
+                        <>
+                          <View style={s.sectionRow}>
+                            <Text style={s.sectionTitle}>
+                              A few places to begin
+                            </Text>
+                            <Text style={s.small}>FOLLOW YOUR CURIOSITY</Text>
+                          </View>
+                          <View
+                            style={[
+                              s.cards,
+                              !wide && { flexDirection: "column" },
+                            ]}
+                          >
+                            {[
+                              [
+                                "The art of action",
+                                "What does the Gita say about action?",
+                                "leaf-outline",
+                              ],
+                              [
+                                "A quieter mind",
+                                "How can I focus a restless mind?",
+                                "water-outline",
+                              ],
+                              [
+                                "The path of devotion",
+                                "What does the Gita say about devotion?",
+                                "flower-outline",
+                              ],
+                            ].map(([title, q, icon]) => (
+                              <Pressable
+                                key={title}
+                                onPress={() => ask(q)}
+                                style={s.topic}
+                              >
+                                <Icon
+                                  name={icon as any}
+                                  size={25}
+                                  color={C.accent}
+                                />
+                                <Text style={s.topicTitle}>{title}</Text>
+                                <Text style={s.small}>{q}</Text>
+                                <Icon name="arrow-forward" size={17} />
+                              </Pressable>
+                            ))}
+                          </View>
+                          {!DEVICE_CONNECTIONS && (
+                            <>
+                              <View style={s.sectionRow}>
+                                <Text style={s.sectionTitle}>
+                                  A passage to sit with
+                                </Text>
+                                <Text style={s.small}>
+                                  BHAGAVAD GITA · 2.47
+                                </Text>
+                              </View>
+                              <View style={s.feature}>
+                                <Text style={s.quoteMark}>“</Text>
+                                <Text style={s.featureQuote}>
+                                  Your concern is with action alone,{"\n"}never
+                                  with its fruits.
+                                </Text>
+                                <Text
+                                  style={[
+                                    s.small,
+                                    { color: "#d8dfcb", marginTop: 16 },
+                                  ]}
+                                >
+                                  DEVELOPMENT RENDERING · REVIEW PENDING
+                                </Text>
+                                <Pressable
+                                  onPress={async () => {
+                                    try {
+                                      setReader(
+                                        await request(
+                                          "/v1/passages/fixture_bg_2_47",
+                                        ),
+                                      );
+                                    } catch (e) {
+                                      setError((e as Error).message);
+                                    }
+                                  }}
+                                  style={[
+                                    s.row,
+                                    {
+                                      justifyContent: "flex-start",
+                                      gap: 10,
+                                      marginTop: 22,
+                                    },
+                                  ]}
+                                >
+                                  <Text
+                                    style={{ color: "white", fontSize: 14 }}
+                                  >
+                                    Read the full passage
+                                  </Text>
+                                  <Icon
+                                    name="arrow-forward"
+                                    color="white"
+                                    size={17}
+                                  />
+                                </Pressable>
+                                <View style={s.featureCircle} />
+                              </View>
+                            </>
+                          )}
+                        </>
+                      )}
+                    </>
+                  )}
+                </>
+              ) : tab === "Library" ? (
+                <>
+                  <Text style={s.kicker}>THE SOURCE COLLECTION</Text>
+                  <Text style={s.title}>A library, thoughtfully built.</Text>
+                  <Text style={s.intro}>
+                    Each edition has its own voice. Each passage has its own
+                    provenance.
+                  </Text>
+                  <TextInput
+                    accessibilityLabel="Search library collections"
+                    placeholder="Search works or editions"
+                    value={librarySearch}
+                    onChangeText={setLibrarySearch}
+                    style={s.reportInput}
+                  />
+                  {works
+                    .filter((w) =>
+                      `${w.title} ${w.editions?.map((e) => e.id).join(" ") || ""}`
+                        .toLowerCase()
+                        .includes(librarySearch.toLowerCase()),
+                    )
+                    .map(({ id, title: name, status, passage_count }) => {
+                      const icon =
+                        id === "bhagavad-gita"
+                          ? "book-outline"
+                          : "library-outline";
+                      return (
+                        <View key={name} style={s.passage}>
+                          <View style={s.row}>
+                            <Icon name={icon as any} color={C.accent} />
+                            <Text style={s.sectionTitle}>{name}</Text>
+                            <Text style={s.badge}>
+                              {passage_count > 0 ? "INSTALLED" : "PENDING"}
+                            </Text>
+                          </View>
+                          <Text style={[s.small, { marginTop: 12 }]}>
+                            {status}
+                          </Text>
+                          <Text style={s.small}>{passage_count} passages</Text>
+                          {preferences.state.positions[id] && (
+                            <Pressable
                               style={s.secondary}
+                              accessibilityRole="button"
                               onPress={() =>
-                                void request("/v1/passages/" + position.id)
+                                void request(
+                                  "/v1/passages/" +
+                                    preferences.state.positions[id].id,
+                                )
                                   .then((p) => open(p))
                                   .catch(() =>
                                     setError(
@@ -759,826 +1397,225 @@ function StudyApp() {
                                   )
                               }
                             >
-                              <Text style={s.body}>{position.reference}</Text>
+                              <Text style={s.body}>
+                                Resume reading ·{" "}
+                                {preferences.state.positions[id].reference}
+                              </Text>
                             </Pressable>
-                          ))}
-                      </View>
-                    )}
-                  </>
-                )}
-                <View style={{ alignItems: "center", marginBottom: 12 }}>
-                  <RishiAvatar speaking={speaking} size={104} />
-                </View>
-
-                <Pressable
-                  accessibilityRole="switch"
-                  accessibilityLabel="Live conversation mode"
-                  accessibilityState={{ checked: liveMode }}
-                  disabled={busy}
-                  style={s.secondary}
-                  onPress={() => {
-                    setLiveMode((value) => !value);
-                    setVoiceResponse(null);
-                    setAnswer(null);
-                    setConversation(null);
-                    setNotice("");
-                    setSpeaking(false);
-                  }}
-                >
-                  <Icon name="radio-outline" size={20} />
-                  <Text style={s.body}>
-                    {liveMode
-                      ? "Chat with Rishi · switch to source search"
-                      : "Source search · switch to chat"}
-                  </Text>
-                </Pressable>
-                {liveMode && (
-                  <LiveConversation
-                    language={
-                      profile.language === "Hindi"
-                        ? "hi-IN"
-                        : profile.language === "Sanskrit"
-                          ? "sa-IN"
-                          : "en-IN"
-                    }
-                    preferredName={profile.name}
-                    workIds={
-                      scope === GITA_PRESS_SCOPE
-                        ? MAHAPURANA_TARGETS.map(([id]) => id)
-                        : scope === UPANISHAD_SCOPE
-                          ? UPANISHAD_TARGETS.map(([id]) => id)
-                          : [scope]
-                    }
-                    onSpeakingChange={setSpeaking}
-                    onNotice={setNotice}
-                  />
-                )}
-
-                {!liveMode && (
-                  <>
-                    {!liveMode && (
-                      <SearchFilters
-                        value={searchSelection}
-                        editions={selectedEditions}
-                        onChange={setSearchSelection}
-                      />
-                    )}
-                    <Pressable
-                      accessibilityLabel="Check a quote or screenshot"
-                      accessibilityRole="button"
-                      style={s.secondary}
-                      onPress={() => {
-                        setTab("Fact check");
-                        setReader(null);
-                        setLiveMode(false);
-                      }}
-                    >
-                      <Icon name="scan-outline" size={20} />
-                      <Text style={s.body}>Check a quote or screenshot</Text>
-                    </Pressable>
-                    {!liveMode && (
-                      <View style={s.composer}>
-                        <TextInput
-                          accessibilityLabel="Ask a scripture question"
-                          value={query}
-                          onChangeText={setQuery}
-                          onSubmitEditing={() => ask()}
-                          placeholder="What does the Gita say about attachment?"
-                          placeholderTextColor="#959c92"
-                          multiline
-                          style={s.input}
-                        />
-                        <View
-                          style={[
-                            s.row,
-                            {
-                              borderTopWidth: 1,
-                              borderColor: C.line,
-                              paddingTop: 16,
-                            },
-                          ]}
-                        >
-                          <Pressable
-                            style={s.row}
-                            disabled={busy}
-                            accessibilityRole="switch"
-                            accessibilityState={{ checked: voiceEnabled }}
-                            accessibilityLabel="Voice mode"
-                            onPress={() => {
-                              setVoiceEnabled((value) => !value);
-                              setVoiceResponse(null);
-                              setSpeaking(false);
-                            }}
-                          >
-                            <Icon
-                              name={
-                                voiceEnabled
-                                  ? "volume-high-outline"
-                                  : "mic-outline"
-                              }
-                              size={20}
-                            />
-                            <Text style={[s.small, { marginLeft: 8 }]}>
-                              Voice mode · {voiceEnabled ? "on" : "off"}
-                            </Text>
-                          </Pressable>
-                          <Pressable
-                            accessibilityLabel="Ask question"
-                            disabled={busy || !query.trim()}
-                            onPress={() => ask()}
-                            style={[
-                              s.button,
-                              (!query.trim() || busy) && { opacity: 0.5 },
-                            ]}
-                          >
-                            {busy ? (
-                              <ActivityIndicator color="white" />
-                            ) : (
-                              <>
-                                <Text style={s.buttonText}>
-                                  {voiceEnabled
-                                    ? "Ask aloud"
-                                    : isAppConversation(query)
-                                      ? "Send message"
-                                      : "Find sources"}
-                                </Text>
-                                <Icon
-                                  name="arrow-forward"
-                                  size={16}
-                                  color="white"
-                                />
-                              </>
-                            )}
-                          </Pressable>
+                          )}
                         </View>
-                      </View>
-                    )}
-                    <View
-                      style={[
-                        s.row,
-                        {
-                          justifyContent: "flex-start",
-                          gap: 8,
-                          flexWrap: "wrap",
-                          marginTop: 16,
-                        },
-                      ]}
-                    >
-                      <Icon
-                        name="shield-checkmark-outline"
-                        size={16}
-                        color={C.green}
-                      />
-                      <Text style={s.small}>
-                        Sources first. No unsupported claims.
-                      </Text>
-                      <Text style={s.small}>·</Text>
+                      );
+                    })}
+                  <Text style={[s.sectionTitle, { marginTop: 20 }]}>
+                    Explore available passages
+                  </Text>
+                  {all.map((p) => (
+                    <PassageCard
+                      saved={saved}
+                      onOpen={open}
+                      onToggle={toggle}
+                      key={p.id}
+                      p={p}
+                    />
+                  ))}
+                </>
+              ) : tab === "Saved" ? (
+                <>
+                  <Text style={s.kicker}>YOUR PERSONAL COLLECTION</Text>
+                  <Text style={s.title}>Return to what resonates.</Text>
+                  <Text style={s.intro}>
+                    Passages saved on this device for your next study session.
+                  </Text>
+                  <View
+                    style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}
+                  >
+                    {[
+                      null,
+                      "",
+                      ...new Set(
+                        saved
+                          .map(
+                            (id) => preferences.state.notes[id]?.folder || "",
+                          )
+                          .filter(Boolean),
+                      ),
+                    ].map((folder) => (
                       <Pressable
-                        accessibilityLabel="Choose source collection"
-                        onPress={() => setShowSources(!showSources)}
+                        key={folder === null ? "all" : "folder-" + folder}
+                        style={s.secondary}
+                        accessibilityRole="radio"
+                        accessibilityState={{ checked: savedFolder === folder }}
+                        onPress={() => setSavedFolder(folder)}
                       >
-                        <Text style={[s.small, { color: C.green }]}>
-                          {scope === GITA_PRESS_SCOPE
-                            ? "18 Mahapuranas · Gita Press"
-                            : scope === "bhagavad-gita"
-                              ? DEVICE_CONNECTIONS
-                                ? "Bhagavad Gita"
-                                : "Bhagavad Gita · fixtures"
-                              : scope === UPANISHAD_SCOPE
-                                ? "108 Upanishads · Muktika list"
-                                : VEDA_TARGETS.some(([id]) => id === scope)
-                                  ? VEDA_TARGETS.find(
-                                      ([id]) => id === scope,
-                                    )?.[1] || "Veda"
-                                  : scope === "valmiki-ramayana"
-                                    ? "Valmiki Ramayana · Gita Press"
-                                    : works.find((w) => w.id === scope)
-                                        ?.title || scope}{" "}
-                          ▾
+                        <Text style={s.body}>
+                          {savedFolder === folder ? "● " : "○ "}
+                          {folder === null
+                            ? "All folders"
+                            : folder || "Unfiled"}
                         </Text>
                       </Pressable>
-                    </View>
-                    {showSources && (
-                      <View style={s.info}>
-                        <TextInput
-                          accessibilityLabel="Filter source collections"
-                          value={sourceSearch}
-                          onChangeText={setSourceSearch}
-                          placeholder="Find a scripture collection"
-                          style={s.reportInput}
-                        />
-                        {[
-                          [GITA_PRESS_SCOPE, "All 18 Mahapuranas · Gita Press"],
-                          [UPANISHAD_SCOPE, "108 Upanishads · Muktika list"],
-                          ...works.map((w) => [
-                            w.id,
-                            `${w.title} · ${w.passage_count > 0 ? "installed" : "pending"}`,
-                          ]),
-                        ]
-                          .filter(([, title]) =>
-                            title
-                              .toLowerCase()
-                              .includes(sourceSearch.toLowerCase()),
-                          )
-                          .slice(0, 20)
-                          .map(([id, label]) => (
-                            <Pressable
-                              key={id}
-                              accessibilityLabel={label}
-                              style={s.secondary}
-                              onPress={() => {
-                                setScope(id);
-                                setSearchSelection(DEFAULT_SEARCH);
-                                setLiveMode(false);
-                                setConversation(null);
-                                setVoiceResponse(null);
-                                setShowSources(false);
-                                setAnswer(null);
-                              }}
-                            >
-                              <Text style={s.body}>
-                                {scope === id ? "◉" : "○"} {label}
-                              </Text>
-                            </Pressable>
-                          ))}
-                      </View>
-                    )}
-                    {voiceEnabled && !liveMode && (
-                      <VoiceMode
-                        busy={busy}
-                        language={
-                          profile.language === "Hindi"
-                            ? "hi-IN"
-                            : profile.language === "Sanskrit"
-                              ? "sa-IN"
-                              : "en-IN"
-                        }
-                        onTranscript={setQuery}
-                        onSpeakingChange={setSpeaking}
-                        response={voiceResponse}
-                        onNotice={setNotice}
-                      />
-                    )}
-                    {scope !== "bhagavad-gita" &&
-                      !answer &&
-                      !conversation &&
-                      !selectedHasPassages && (
-                        <View style={s.info}>
-                          <Text style={s.body}>
-                            Gita Press, Gorakhpur is the selected reference
-                            publisher for this collection; a full matching
-                            edition must be established.
-                          </Text>
-                          <Text style={s.small}>
-                            Edition selection, usage rights, and source review
-                            are pending. No approved passages are indexed for
-                            this collection; a full matching edition must be
-                            established.
-                            {DEVICE_CONNECTIONS
-                              ? "Web results are shown separately while local collections are being prepared."
-                              : "Select development fixtures to explore the working reader."}
-                          </Text>
-                        </View>
-                      )}
-                    {!!notice && (
-                      <Text style={[s.small, { marginTop: 12 }]}>{notice}</Text>
-                    )}
-                    {busy && (
-                      <Text style={[s.body, { marginTop: 24 }]}>
-                        {voiceEnabled
-                          ? "Checking sources and preparing a spoken reply…"
-                          : isAppConversation(query)
-                            ? "Connecting to your provider…"
-                            : "Finding passages and checking citations…"}
-                      </Text>
-                    )}
-                    {conversation && (
-                      <View style={s.passage}>
-                        <View style={s.row}>
-                          <Text style={s.sectionTitle}>Pramana</Text>
-                          <Text style={s.badge}>
-                            {conversation.connection_status === "connected"
-                              ? `${conversation.provider?.toUpperCase()} CONNECTED`
-                              : "LOCAL GREETING"}
-                          </Text>
-                        </View>
-                        <ReadingText style={s.body}>
-                          {conversation.message}
-                        </ReadingText>
-                        {!!conversation.note && (
-                          <Text style={[s.small, { marginTop: 12 }]}>
-                            {conversation.note}
-                          </Text>
-                        )}
-                        <Text style={[s.small, { marginTop: 12 }]}>
-                          Scripture questions use verified passages. Enable
-                          Voice mode for spoken replies.
-                        </Text>
-                      </View>
-                    )}
-                    {conversation ? null : answer ? (
-                      <View style={{ marginTop: 30 }}>
-                        <View style={s.row}>
-                          <Text style={s.sectionTitle}>Your source trail</Text>
-                          <Text style={s.badge}>
-                            {answer.support_state === "DIRECT"
-                              ? "PASSAGE MATCH"
-                              : "NOT VERIFIED"}
-                          </Text>
-                        </View>
-                        <ReadingText style={s.body}>
-                          {answer.answer}
-                        </ReadingText>
-                        {webFallback && (
-                          <View
-                            style={{
-                              marginTop: 16,
-                              padding: 18,
-                              borderRadius: 14,
-                              backgroundColor: "#edf0e5",
-                            }}
-                          >
-                            <Text style={s.sectionTitle}>
-                              Web search fallback
-                            </Text>
-                            <Text style={s.small}>
-                              No local passage matched. External web sources are
-                              not verified scripture.
-                            </Text>
-                            <ReadingText style={[s.body, { marginTop: 12 }]}>
-                              {webFallback.text ||
-                                webFallback.error ||
-                                "Web search returned no cited result."}
-                            </ReadingText>
-                            <WebSearchSuggestions
-                              html={webFallback.search_entry_point}
-                            />
-                            {(webFallback.evidence || []).map((source) => (
-                              <Pressable
-                                key={source.url}
-                                accessibilityRole="link"
-                                onPress={() => {
-                                  try {
-                                    const url = new URL(source.url);
-                                    if (
-                                      url.protocol === "https:" &&
-                                      !url.username &&
-                                      !url.password
-                                    )
-                                      void Linking.openURL(url.href).catch(() =>
-                                        setError("Could not open this source."),
-                                      );
-                                  } catch {
-                                    setError("Invalid source link.");
-                                  }
-                                }}
-                                style={s.secondary}
-                              >
-                                <Text
-                                  style={[
-                                    s.body,
-                                    { textDecorationLine: "underline" },
-                                  ]}
-                                >
-                                  {source.title}
-                                </Text>
-                              </Pressable>
-                            ))}
-                          </View>
-                        )}
-                        {answer.citations.map((p) => (
-                          <PassageCard
-                            saved={saved}
-                            onOpen={open}
-                            onToggle={toggle}
-                            key={p.id}
-                            p={p}
-                          />
-                        ))}
-                        <View style={s.info}>
-                          {answer.caveats.map((c) => (
-                            <Text
-                              key={c}
-                              style={[s.small, { marginBottom: 6 }]}
-                            >
-                              {c}
-                            </Text>
-                          ))}
-                        </View>
-                        <Pressable
-                          onPress={() => {
-                            setAnswer(null);
-                            setQuery("");
-                          }}
-                          style={s.secondary}
-                        >
-                          <Text style={s.body}>Start a new question</Text>
-                        </Pressable>
-                      </View>
-                    ) : scope !== "bhagavad-gita" ? (
-                      <View style={s.passage}>
-                        <Text style={s.sectionTitle}>
-                          {scope === GITA_PRESS_SCOPE
-                            ? "The 18-work reference collection"
-                            : scope === UPANISHAD_SCOPE
-                              ? "108 Upanishads · Muktika reference list"
-                              : scope === "valmiki-ramayana"
-                                ? "Valmiki Ramayana reference collection"
-                                : scope === "mahabharata"
-                                  ? "Vyasa’s Mahabharata reference collection"
-                                  : "Vedic source collection · recension pending"}
-                        </Text>
-                        <Text style={s.body}>
-                          Keep original passages, translations, and edition
-                          details together. Each source needs a mapped volume
-                          and verse locator before it can support an answer.
-                        </Text>
-                        <Pressable
-                          onPress={() => setTab("Library")}
-                          style={s.secondary}
-                        >
-                          <Text style={s.body}>View the source library</Text>
-                          <Icon name="arrow-forward" size={18} />
-                        </Pressable>
-                      </View>
-                    ) : (
-                      <>
-                        <View style={s.sectionRow}>
-                          <Text style={s.sectionTitle}>
-                            A few places to begin
-                          </Text>
-                          <Text style={s.small}>FOLLOW YOUR CURIOSITY</Text>
-                        </View>
-                        <View
-                          style={[
-                            s.cards,
-                            !wide && { flexDirection: "column" },
-                          ]}
-                        >
-                          {[
-                            [
-                              "The art of action",
-                              "What does the Gita say about action?",
-                              "leaf-outline",
-                            ],
-                            [
-                              "A quieter mind",
-                              "How can I focus a restless mind?",
-                              "water-outline",
-                            ],
-                            [
-                              "The path of devotion",
-                              "What does the Gita say about devotion?",
-                              "flower-outline",
-                            ],
-                          ].map(([title, q, icon]) => (
-                            <Pressable
-                              key={title}
-                              onPress={() => ask(q)}
-                              style={s.topic}
-                            >
-                              <Icon
-                                name={icon as any}
-                                size={25}
-                                color={C.accent}
-                              />
-                              <Text style={s.topicTitle}>{title}</Text>
-                              <Text style={s.small}>{q}</Text>
-                              <Icon name="arrow-forward" size={17} />
-                            </Pressable>
-                          ))}
-                        </View>
-                        {!DEVICE_CONNECTIONS && (
-                          <>
-                            <View style={s.sectionRow}>
-                              <Text style={s.sectionTitle}>
-                                A passage to sit with
-                              </Text>
-                              <Text style={s.small}>BHAGAVAD GITA · 2.47</Text>
-                            </View>
-                            <View style={s.feature}>
-                              <Text style={s.quoteMark}>“</Text>
-                              <Text style={s.featureQuote}>
-                                Your concern is with action alone,{"\n"}never
-                                with its fruits.
-                              </Text>
-                              <Text
-                                style={[
-                                  s.small,
-                                  { color: "#d8dfcb", marginTop: 16 },
-                                ]}
-                              >
-                                DEVELOPMENT RENDERING · REVIEW PENDING
-                              </Text>
-                              <Pressable
-                                onPress={async () => {
-                                  try {
-                                    setReader(
-                                      await request(
-                                        "/v1/passages/fixture_bg_2_47",
-                                      ),
-                                    );
-                                  } catch (e) {
-                                    setError((e as Error).message);
-                                  }
-                                }}
-                                style={[
-                                  s.row,
-                                  {
-                                    justifyContent: "flex-start",
-                                    gap: 10,
-                                    marginTop: 22,
-                                  },
-                                ]}
-                              >
-                                <Text style={{ color: "white", fontSize: 14 }}>
-                                  Read the full passage
-                                </Text>
-                                <Icon
-                                  name="arrow-forward"
-                                  color="white"
-                                  size={17}
-                                />
-                              </Pressable>
-                              <View style={s.featureCircle} />
-                            </View>
-                          </>
-                        )}
-                      </>
-                    )}
-                  </>
-                )}
-              </>
-            ) : tab === "Library" ? (
-              <>
-                <Text style={s.kicker}>THE SOURCE COLLECTION</Text>
-                <Text style={s.title}>A library, thoughtfully built.</Text>
-                <Text style={s.intro}>
-                  Each edition has its own voice. Each passage has its own
-                  provenance.
-                </Text>
-                <TextInput
-                  accessibilityLabel="Search library collections"
-                  placeholder="Search works or editions"
-                  value={librarySearch}
-                  onChangeText={setLibrarySearch}
-                  style={s.reportInput}
-                />
-                {works
-                  .filter((w) =>
-                    `${w.title} ${w.editions?.map((e) => e.id).join(" ") || ""}`
-                      .toLowerCase()
-                      .includes(librarySearch.toLowerCase()),
-                  )
-                  .map(({ id, title: name, status, passage_count }) => {
-                    const icon =
-                      id === "bhagavad-gita"
-                        ? "book-outline"
-                        : "library-outline";
-                    return (
-                      <View key={name} style={s.passage}>
-                        <View style={s.row}>
-                          <Icon name={icon as any} color={C.accent} />
-                          <Text style={s.sectionTitle}>{name}</Text>
-                          <Text style={s.badge}>
-                            {passage_count > 0 ? "INSTALLED" : "PENDING"}
-                          </Text>
-                        </View>
-                        <Text style={[s.small, { marginTop: 12 }]}>
-                          {status}
-                        </Text>
-                        <Text style={s.small}>{passage_count} passages</Text>
-                        {preferences.state.positions[id] && (
-                          <Pressable
-                            style={s.secondary}
-                            accessibilityRole="button"
-                            onPress={() =>
-                              void request(
-                                "/v1/passages/" +
-                                  preferences.state.positions[id].id,
-                              )
-                                .then((p) => open(p))
-                                .catch(() =>
-                                  setError(
-                                    "This reading position is unavailable. Reinstall its source pack.",
-                                  ),
-                                )
-                            }
-                          >
-                            <Text style={s.body}>
-                              Resume reading ·{" "}
-                              {preferences.state.positions[id].reference}
-                            </Text>
-                          </Pressable>
-                        )}
-                      </View>
-                    );
-                  })}
-                <Text style={[s.sectionTitle, { marginTop: 20 }]}>
-                  Explore available passages
-                </Text>
-                {all.map((p) => (
-                  <PassageCard
-                    saved={saved}
-                    onOpen={open}
-                    onToggle={toggle}
-                    key={p.id}
-                    p={p}
-                  />
-                ))}
-              </>
-            ) : tab === "Saved" ? (
-              <>
-                <Text style={s.kicker}>YOUR PERSONAL COLLECTION</Text>
-                <Text style={s.title}>Return to what resonates.</Text>
-                <Text style={s.intro}>
-                  Passages saved on this device for your next study session.
-                </Text>
-                <View
-                  style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}
-                >
-                  {[
-                    null,
-                    "",
-                    ...new Set(
-                      saved
-                        .map((id) => preferences.state.notes[id]?.folder || "")
-                        .filter(Boolean),
-                    ),
-                  ].map((folder) => (
-                    <Pressable
-                      key={folder === null ? "all" : "folder-" + folder}
-                      style={s.secondary}
-                      accessibilityRole="radio"
-                      accessibilityState={{ checked: savedFolder === folder }}
-                      onPress={() => setSavedFolder(folder)}
-                    >
+                    ))}
+                  </View>
+                  {saved.length === 0 ? (
+                    <View style={s.info}>
+                      <Icon name="bookmark-outline" size={30} />
                       <Text style={s.body}>
-                        {savedFolder === folder ? "● " : "○ "}
-                        {folder === null ? "All folders" : folder || "Unfiled"}
+                        Open a passage and tap the bookmark to save it here.
                       </Text>
-                    </Pressable>
-                  ))}
-                </View>
-                {saved.length === 0 ? (
+                    </View>
+                  ) : (
+                    saved
+                      .filter(
+                        (id) =>
+                          savedFolder === null ||
+                          (preferences.state.notes[id]?.folder || "") ===
+                            savedFolder,
+                      )
+                      .map((id) => (
+                        <SavedPassage
+                          key={id}
+                          id={id}
+                          render={(p) => (
+                            <View>
+                              <PassageCard
+                                saved={saved}
+                                onOpen={open}
+                                onToggle={toggle}
+                                p={p}
+                              />
+                              {!!preferences.state.notes[id]?.folder && (
+                                <Text style={s.small}>
+                                  Folder: {preferences.state.notes[id].folder}
+                                </Text>
+                              )}
+                              {!!preferences.state.notes[id]?.note && (
+                                <ReadingText style={s.body}>
+                                  Personal note:{" "}
+                                  {preferences.state.notes[id].note}
+                                </ReadingText>
+                              )}
+                            </View>
+                          )}
+                        />
+                      ))
+                  )}
+                  <Scratchpad />
+                  <StudyHistory
+                    onRecall={(entry) => {
+                      setQuery(entry.query);
+                      setScope(entry.scope || GITA_PRESS_SCOPE);
+                      setAnswer(null);
+                      setConversation(null);
+                      setWebFallback(null);
+                      setReader(null);
+                      setTab("Study");
+                    }}
+                  />
+                </>
+              ) : tab === "Fact check" ? (
+                <>
+                  <Pressable
+                    accessibilityRole="button"
+                    onPress={() => setTab("Study")}
+                    style={s.secondary}
+                  >
+                    <Text style={s.body}>Back to study</Text>
+                  </Pressable>
+                  <Text style={s.small}>
+                    Selected collection:{" "}
+                    {scope === GITA_PRESS_SCOPE
+                      ? "18 Mahapuranas"
+                      : scope === UPANISHAD_SCOPE
+                        ? "108 Upanishads"
+                        : works.find((w) => w.id === scope)?.title || scope}
+                    . Change it in Study to check another work.
+                  </Text>
+                  <FactCheckScreen workIds={selectedWorkIds} onOpen={open} />
+                </>
+              ) : tab === "Settings" ? (
+                <>
+                  <Pressable
+                    accessibilityRole="button"
+                    onPress={() => setTab("Profile")}
+                    style={s.secondary}
+                  >
+                    <Text style={s.body}>Profile & study preferences</Text>
+                  </Pressable>
+                  <SettingsScreen
+                    studyProfile={profile}
+                    onRestoreProfile={async (value) => {
+                      await AsyncStorage.setItem(
+                        PROFILE_KEY,
+                        JSON.stringify({ profile: value, completed: true }),
+                      );
+                      setProfile(value);
+                    }}
+                  />
+                </>
+              ) : (
+                <>
+                  <Pressable
+                    accessibilityLabel="Open API settings"
+                    onPress={() => {
+                      setTab("Settings");
+                      setReader(null);
+                    }}
+                    style={s.secondary}
+                  >
+                    <Icon name="settings-outline" />
+                    <Text style={s.body}>API keys & voice settings</Text>
+                  </Pressable>
+                  <Text style={s.kicker}>OUR APPROACH</Text>
+                  <Text style={s.title}>Trust begins with the source.</Text>
                   <View style={s.info}>
-                    <Icon name="bookmark-outline" size={30} />
+                    <Text style={s.sectionTitle}>A research companion</Text>
                     <Text style={s.body}>
-                      Open a passage and tap the bookmark to save it here.
+                      Pramana helps you inspect passages and distinguish textual
+                      wording from interpretation. It does not claim universal
+                      authority across traditions.
                     </Text>
                   </View>
-                ) : (
-                  saved
-                    .filter(
-                      (id) =>
-                        savedFolder === null ||
-                        (preferences.state.notes[id]?.folder || "") ===
-                          savedFolder,
-                    )
-                    .map((id) => (
-                      <SavedPassage
-                        key={id}
-                        id={id}
-                        render={(p) => (
-                          <View>
-                            <PassageCard
-                              saved={saved}
-                              onOpen={open}
-                              onToggle={toggle}
-                              p={p}
-                            />
-                            {!!preferences.state.notes[id]?.folder && (
-                              <Text style={s.small}>
-                                Folder: {preferences.state.notes[id].folder}
-                              </Text>
-                            )}
-                            {!!preferences.state.notes[id]?.note && (
-                              <ReadingText style={s.body}>
-                                Personal note:{" "}
-                                {preferences.state.notes[id].note}
-                              </ReadingText>
-                            )}
-                          </View>
-                        )}
-                      />
-                    ))
-                )}
-                <Scratchpad />
-                <StudyHistory
-                  onRecall={(entry) => {
-                    setQuery(entry.query);
-                    setScope(entry.scope || GITA_PRESS_SCOPE);
-                    setAnswer(null);
-                    setConversation(null);
-                    setWebFallback(null);
-                    setReader(null);
-                    setTab("Study");
-                  }}
-                />
-              </>
-            ) : tab === "Fact check" ? (
-              <>
-                <Pressable
-                  accessibilityRole="button"
-                  onPress={() => setTab("Study")}
-                  style={s.secondary}
-                >
-                  <Text style={s.body}>Back to study</Text>
-                </Pressable>
-                <Text style={s.small}>
-                  Selected collection:{" "}
-                  {scope === GITA_PRESS_SCOPE
-                    ? "18 Mahapuranas"
-                    : scope === UPANISHAD_SCOPE
-                      ? "108 Upanishads"
-                      : works.find((w) => w.id === scope)?.title || scope}
-                  . Change it in Study to check another work.
-                </Text>
-                <FactCheckScreen workIds={selectedWorkIds} onOpen={open} />
-              </>
-            ) : tab === "Settings" ? (
-              <>
-                <Pressable
-                  accessibilityRole="button"
-                  onPress={() => setTab("Profile")}
-                  style={s.secondary}
-                >
-                  <Text style={s.body}>Profile & study preferences</Text>
-                </Pressable>
-                <SettingsScreen
-                  studyProfile={profile}
-                  onRestoreProfile={async (value) => {
-                    await AsyncStorage.setItem(
-                      PROFILE_KEY,
-                      JSON.stringify({ profile: value, completed: true }),
-                    );
-                    setProfile(value);
-                  }}
-                />
-              </>
-            ) : (
-              <>
-                <Pressable
-                  accessibilityLabel="Open API settings"
-                  onPress={() => {
-                    setTab("Settings");
-                    setReader(null);
-                  }}
-                  style={s.secondary}
-                >
-                  <Icon name="settings-outline" />
-                  <Text style={s.body}>API keys & voice settings</Text>
-                </Pressable>
-                <Text style={s.kicker}>OUR APPROACH</Text>
-                <Text style={s.title}>Trust begins with the source.</Text>
-                <View style={s.info}>
-                  <Text style={s.sectionTitle}>A research companion</Text>
-                  <Text style={s.body}>
-                    Pramana helps you inspect passages and distinguish textual
-                    wording from interpretation. It does not claim universal
-                    authority across traditions.
-                  </Text>
-                </View>
-                <View style={s.info}>
-                  <Text style={s.sectionTitle}>What this build includes</Text>
-                  <Text style={s.body}>
+                  <View style={s.info}>
+                    <Text style={s.sectionTitle}>What this build includes</Text>
+                    <Text style={s.body}>
+                      {DEVICE_CONNECTIONS
+                        ? "Direct Gemini and OpenAI connections, secure device API-key storage, local scripture-pack installation and search, external web search, voice conversation and local preferences. This release includes no scripture texts; install reviewed packs in Settings when available."
+                        : "Development scripture fixtures, lexical passage matching, persistent bookmarks and correction reports. The citation gate checks IDs, hashes and excerpt spans; it does not certify scholarly accuracy."}
+                    </Text>
+                  </View>
+                  <View style={s.info}>
+                    <Text style={s.sectionTitle}>Before a public release</Text>
+                    <Text style={s.body}>
+                      Choose precise editions, clear usage rights, complete
+                      independent review, and pass the edition-aware benchmark.
+                      Scripture narration requires reviewed, audio-enabled
+                      sources and a provider are available.
+                    </Text>
+                  </View>
+                  <Text style={s.small}>
                     {DEVICE_CONNECTIONS
-                      ? "Direct Gemini and OpenAI connections, secure device API-key storage, local scripture-pack installation and search, external web search, voice conversation and local preferences. This release includes no scripture texts; install reviewed packs in Settings when available."
-                      : "Development scripture fixtures, lexical passage matching, persistent bookmarks and correction reports. The citation gate checks IDs, hashes and excerpt spans; it does not certify scholarly accuracy."}
+                      ? "Your keys and preferences stay in device storage. Questions are sent directly to your selected AI provider; speech recognition may use your phone’s speech service. No Pramana backend is needed. Corrections remain on this phone."
+                      : "Bookmarks are stored on your device. Submitted corrections are stored by the local API. Live audio is processed during the session; microphone recordings are not saved by the app."}
                   </Text>
+                </>
+              )}
+              {!!error && (
+                <View
+                  accessibilityRole="alert"
+                  style={[s.info, { backgroundColor: "#f7e9de" }]}
+                >
+                  <Text style={s.body}>{error}</Text>
                 </View>
-                <View style={s.info}>
-                  <Text style={s.sectionTitle}>Before a public release</Text>
-                  <Text style={s.body}>
-                    Choose precise editions, clear usage rights, complete
-                    independent review, and pass the edition-aware benchmark.
-                    Scripture narration requires reviewed, audio-enabled sources
-                    and a provider are available.
-                  </Text>
-                </View>
+              )}
+              <View style={s.footer}>
+                <Icon name="leaf-outline" size={14} color={C.muted} />
                 <Text style={s.small}>
-                  {DEVICE_CONNECTIONS
-                    ? "Your keys and preferences stay in device storage. Questions are sent directly to your selected AI provider; speech recognition may use your phone’s speech service. No Pramana backend is needed. Corrections remain on this phone."
-                    : "Bookmarks are stored on your device. Submitted corrections are stored by the local API. Live audio is processed during the session; microphone recordings are not saved by the app."}
+                  {" "}
+                  A little more understanding, one passage at a time.
                 </Text>
-              </>
-            )}
-            {!!error && (
-              <View
-                accessibilityRole="alert"
-                style={[s.info, { backgroundColor: "#f7e9de" }]}
-              >
-                <Text style={s.body}>{error}</Text>
               </View>
-            )}
-            <View style={s.footer}>
-              <Icon name="leaf-outline" size={14} color={C.muted} />
-              <Text style={s.small}>
-                {" "}
-                A little more understanding, one passage at a time.
-              </Text>
-            </View>
-          </ScrollView>
+            </ScrollView>
+          )}
           {!wide && (
             <View style={s.bottomNav}>
               {nav.map(([name, icon]) => (
