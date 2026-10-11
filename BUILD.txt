@@ -74,3 +74,7 @@ Retains bounded session messages on reconnect; 45-second reply timeout. Actual b
 78 tests, TypeScript, fixture browser flow, release build, permissions/signature checks passed.
 Chat/time-out changes confirmed in packaged bundle. Physical microphone/playback confirmation pending.
 Current SHA256: 418bfd91acaf1c0ad7d2cae2df4a8ba482adb175d92aeb35d9c87a9a03dc757e
+
+Full-height chat update: source a5da821. Fixed bottom composer, chat bubbles, image attachments, compact Rishi, speaker test, recoverable no-speech/timeouts, explicit Android speech errors and media speaker routing.
+78 tests, TypeScript, web export and mocked browser chat/image flow passed. Actual APK permissions and signature verified. Phone speech/audio playback remains unverified.
+SHA256: 66152156930ec13da12a5ffee524f442c8d31131c686418291176aa7b5064e91
