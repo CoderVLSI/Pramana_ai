@@ -57,3 +57,10 @@ Real authorized provider test: setup ready; subsequent text turn completed with 
 78 tests pass; additional schema assertion passed in targeted Live tests; typecheck/build/signature/permissions pass.
 Credential never saved in repository; user must revoke shared test key. Phone mic/playback remains untested.
 Current SHA256: 72bb0f9db2ea98aa7eaac6a090b58cc76d65a4478b2993196d0e20129a64be3d
+
+Native binary frame update — 11 October 2026
+Source: 466bebd4304bced6db6883dcfaee24b874364b7c
+Gemini socket requests arraybuffer and decodes bounded UTF-8 binary frames.
+Binary setup-frame regression, 78 tests, TypeScript, release build, signature and permissions pass.
+Phone confirmation pending; shared test credential was not reused.
+Current SHA256: 5768e3686e8a06f718428f3ef984de03481f39752f1382de3ffcc3fac128a1ac
