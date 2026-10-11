@@ -1,19 +1,14 @@
 Pramana Android preview — 11 October 2026
-Source commit: 9ed7c595e7b943c942fadf87bba0936ddc7e5f20
-Version: 0.2.0 / code 2, package org.pramana.study
-Architecture: arm64-v8a; minimum Android 7/API24; target API36.
-Native two-way voice: foreground AudioRecord PCM16 microphone streaming at 16 kHz;
-AudioTrack streamed speaker replies at 24 kHz with capture kept active.
-Includes interruption, audio-focus/background cleanup, modern communication routing,
-optional echo/noise processing, missing-frame/silenced-microphone errors,
-audio packet diagnostics and a same-route local speaker-tone test.
-Chat has fixed bottom composer, message bubbles, image reading and compact Rishi.
-Provider keys remain in device encrypted storage. No provider test credential reused.
-Checks: 79 automated tests, TypeScript, web export and mocked chat/image browser flow;
-arm64 APK compilation, actual packaged permissions and signature checks passed.
-Native emulator test found the registered module but failed capture in an
-audio-disabled emulator; subsequent runtime verification was blocked by emulator
-graphics/audio-driver failures. No passing capture/playback test is claimed.
-A complete live provider round trip and audible phone output remain unverified.
-Zero reviewed scripture passages are bundled; approved scripture packs remain pending.
-SHA256: 688d116dc0a5f6cf26132292f4b3fa1caa1925a15b9036075c4e203bb8f55cca
+Source commit: c77f25a83ea863441f8623e9849e7fdf3d9262b1
+Version: 0.2.0 / code 2; org.pramana.study; arm64-v8a; Android 7+; target API36.
+Image messages: explicit Send uploads image pixels plus question; sent image bubble.
+Android reply audio: media route/volume, low startup threshold, stalled output checks.
+Received audio retained in memory for Replay reply and replay following provider errors.
+Replay disconnects live microphone; microphone button resumes live voice.
+Checks passed: TypeScript, 80 tests, web export, mocked browser image-send flow,
+arm64 APK compilation, packaged permissions and same signing certificate.
+User reports native speaker-test tone audible and 14 provider reply packets received,
+but provider speech inaudible on the previous APK. This update has not yet been
+verified for audible provider speech on Nord 4. No fresh provider API tests run.
+Provider credentials not reused or embedded. Reviewed scripture corpus remains empty.
+SHA256: b28e62d7dc34d8e3747236a00b1f63c47a7e12dca9b6d2e38deb85a163ce115d
