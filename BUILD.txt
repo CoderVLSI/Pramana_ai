@@ -1,14 +1,13 @@
-Pramana Android preview — 11 October 2026
-Source commit: c77f25a83ea863441f8623e9849e7fdf3d9262b1
-Version: 0.2.0 / code 2; org.pramana.study; arm64-v8a; Android 7+; target API36.
-Image messages: explicit Send uploads image pixels plus question; sent image bubble.
-Android reply audio: media route/volume, low startup threshold, stalled output checks.
-Received audio retained in memory for Replay reply and replay following provider errors.
-Replay disconnects live microphone; microphone button resumes live voice.
-Checks passed: TypeScript, 80 tests, web export, mocked browser image-send flow,
-arm64 APK compilation, packaged permissions and same signing certificate.
-User reports native speaker-test tone audible and 14 provider reply packets received,
-but provider speech inaudible on the previous APK. This update has not yet been
-verified for audible provider speech on Nord 4. No fresh provider API tests run.
-Provider credentials not reused or embedded. Reviewed scripture corpus remains empty.
-SHA256: b28e62d7dc34d8e3747236a00b1f63c47a7e12dca9b6d2e38deb85a163ce115d
+Pramana Android preview — 12 October 2026
+Source: 7b9d528abfec9ec0e14f40462820461e206d644d
+org.pramana.study; version 0.2.0/code 2; arm64-v8a; Android 7+; target API36.
+Gemini audio uses realtimeInput.audio, with automatic activity detection config
+and input/output transcription enabled. Finish turn pauses outgoing audio until
+turn completion or a 20-second timeout. Native PCM signal-level meter added.
+Previous image-message and media-route/replay updates retained.
+Checks: TypeScript, 80 tests including native Gemini protocol transcription/audio,
+web export, mocked browser image-message flow, APK build, packaged permissions,
+and signature verification passed. Same preview signing certificate retained.
+No fresh live provider round trip or Nord 4 audible reply/transcription verified.
+No provider secrets embedded/reused. Reviewed scripture corpus remains empty.
+SHA256: defb5e59687803a6d3fc1f5b4089200280c13048b631253964ce32351d923eb7
