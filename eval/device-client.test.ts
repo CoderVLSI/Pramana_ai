@@ -327,14 +327,28 @@ test("native Gemini duplex forwards microphone PCM and clears speaker on provide
   transport.receive({ setupComplete: {} });
   await tick();
   client.send(JSON.stringify({ type: "audio", data: "AAAAAA==" }));
-  assert.deepEqual(transport.sent.at(-1).realtimeInput.mediaChunks, [
-    { data: "AAAAAA==", mimeType: "audio/pcm;rate=16000" },
-  ]);
+  assert.deepEqual(transport.sent.at(-1).realtimeInput, {
+    audio: { data: "AAAAAA==", mimeType: "audio/pcm;rate=16000" },
+  });
+  assert.equal(
+    transport.sent[0].setup.realtimeInputConfig.automaticActivityDetection
+      .disabled,
+    false,
+  );
+  assert.deepEqual(transport.sent[0].setup.inputAudioTranscription, {});
+  transport.receive({
+    serverContent: { inputTranscription: { text: "Hello Rishi" } },
+  });
+  await tick();
+  assert.equal(events.at(-1).role, "user");
+  assert.equal(events.at(-1).text, "Hello Rishi");
   transport.receive({
     serverContent: {
       modelTurn: {
         parts: [
-          { inlineData: { data: "AAAAAA==", mimeType: "audio/pcm;rate=24000" } },
+          {
+            inlineData: { data: "AAAAAA==", mimeType: "audio/pcm;rate=24000" },
+          },
         ],
       },
     },
@@ -344,10 +358,7 @@ test("native Gemini duplex forwards microphone PCM and clears speaker on provide
   assert.equal(events.at(-1).rate, 24000);
   // Continued microphone input is allowed while reply audio is arriving.
   client.send(JSON.stringify({ type: "audio", data: "AgACAA==" }));
-  assert.equal(
-    transport.sent.at(-1).realtimeInput.mediaChunks[0].data,
-    "AgACAA==",
-  );
+  assert.equal(transport.sent.at(-1).realtimeInput.audio.data, "AgACAA==");
   transport.receive({ serverContent: { interrupted: true } });
   await tick();
   assert.equal(events.at(-1).type, "interrupted");

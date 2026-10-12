@@ -74,7 +74,7 @@ export function geminiConnect(make: SocketFactory, sockets: Set<NativeSocket>) {
         sendToolResponse: (value: unknown) => write({ toolResponse: value }),
         sendRealtimeInput: (value: any) =>
           write({
-            realtimeInput: value.audio ? { mediaChunks: [value.audio] } : value,
+            realtimeInput: value,
           }),
       };
       ws.onopen = () => {
@@ -85,6 +85,7 @@ export function geminiConnect(make: SocketFactory, sockets: Set<NativeSocket>) {
             generationConfig: { responseModalities: c.responseModalities },
             systemInstruction: { parts: [{ text: c.systemInstruction }] },
             tools: c.tools,
+            realtimeInputConfig: c.realtimeInputConfig,
             inputAudioTranscription: c.inputAudioTranscription,
             outputAudioTranscription: c.outputAudioTranscription,
           },

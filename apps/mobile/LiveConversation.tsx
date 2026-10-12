@@ -158,6 +158,8 @@ export default function LiveConversation({
   onNotice,
 }: Props) {
   const duplex = useRef<ReturnType<typeof androidLiveAudio> | null>(null);
+  const inputPaused = useRef(false);
+  const [micLevel, setMicLevel] = useState(0);
   const lastReplyAudio = useRef<string[]>([]);
   const lastReplyBytes = useRef(0);
   const [canReplay, setCanReplay] = useState(false);
@@ -297,6 +299,7 @@ export default function LiveConversation({
     if (replyTimer.current) clearTimeout(replyTimer.current);
     pendingText.current = "";
     active.current = false;
+    inputPaused.current = false;
     duplex.current?.dispose();
     duplex.current = null;
     ready.current = false;
@@ -608,7 +611,7 @@ export default function LiveConversation({
         setAudioStatus({ ...audioCounts.current });
         const bridge = androidLiveAudio((event) => {
           if (!active.current || session !== generation.current) return;
-          if (event.type === "audio" && ready.current) {
+          if (event.type === "audio" && ready.current && !inputPaused.current) {
             if (send({ type: "audio", data: event.data })) {
               audioCounts.current.sent++;
               if (
@@ -618,7 +621,9 @@ export default function LiveConversation({
                 setAudioStatus({ ...audioCounts.current });
               setListening(true);
             }
-          } else if (event.type === "playing")
+          } else if (event.type === "level")
+            setMicLevel(Math.min(100, Math.max(0, Number(event.data) || 0)));
+          else if (event.type === "playing")
             callbacks.current.onSpeakingChange(true);
           else if (event.type === "ended")
             callbacks.current.onSpeakingChange(false);
@@ -830,6 +835,7 @@ export default function LiveConversation({
           } else if (message.type === "turn_end") {
             if (replyTimer.current) clearTimeout(replyTimer.current);
             waiting.current = false;
+            inputPaused.current = false;
             if (Platform.OS === "android") duplex.current?.endTurn();
             else if (Platform.OS !== "web") void flushNativeAudio();
           } else if (message.type === "interrupted") {
@@ -1238,6 +1244,15 @@ export default function LiveConversation({
           <Text style={[styles.detail, { textAlign: "center" }]}>
             AI replies · sources checked separately
           </Text>
+          {state === "live" &&
+            microphoneEnabled &&
+            Platform.OS === "android" && (
+              <Text accessibilityLiveRegion="polite" style={styles.detail}>
+                Microphone level: {micLevel}% ·{" "}
+                {micLevel > 0 ? "Sound detected" : "No sound detected"}. Pause
+                after speaking, or tap Finish turn.
+              </Text>
+            )}
           {details && (
             <View style={styles.source}>
               <Text style={styles.detail}>
@@ -1484,7 +1499,23 @@ export default function LiveConversation({
               {Platform.OS === "android" && microphoneEnabled && (
                 <Pressable
                   accessibilityRole="button"
-                  onPress={() => send({ type: "audio_end" })}
+                  onPress={() => {
+                    if (!send({ type: "audio_end" })) return;
+                    inputPaused.current = true;
+                    setListening(false);
+                    waiting.current = true;
+                    notice(
+                      "Turn sent. Waiting for your transcript and Rishi’s reply…",
+                    );
+                    if (replyTimer.current) clearTimeout(replyTimer.current);
+                    replyTimer.current = setTimeout(() => {
+                      inputPaused.current = false;
+                      waiting.current = false;
+                      notice(
+                        "No transcript or reply arrived. Check microphone level and packet counts in ⋮, then retry.",
+                      );
+                    }, 20000);
+                  }}
                   style={styles.outline}
                 >
                   <Text>Finish turn</Text>

@@ -110,6 +110,15 @@ class PramanaAudioModule(private val context: ReactApplicationContext) :
               if (count < 0) throw IllegalStateException("Microphone capture failed.")
               if (count > 0 && running && record === recorder) {
                 packets++
+                if (packets % 5 == 0) {
+                  var energy = 0.0
+                  for (i in 0 until count - 1 step 2) {
+                    val sample = ((buffer[i].toInt() and 255) or (buffer[i + 1].toInt() shl 8)).toShort().toDouble()
+                    energy += sample * sample
+                  }
+                  val rms = kotlin.math.sqrt(energy / maxOf(1, count / 2))
+                  emit("level", (rms / 32768.0 * 1000.0).coerceIn(0.0, 100.0).toInt().toString())
+                }
                 if (Build.VERSION.SDK_INT >= 29 && packets % 25 == 0 &&
                     recorder.activeRecordingConfiguration?.isClientSilenced == true) {
                   emit("error", "Android silenced the microphone. Close other voice calls or enable microphone access, then retry.")

@@ -468,6 +468,13 @@ export function createLiveAgent(options: LiveAgentOptions) {
           apiKey: settings.api_key,
           config: {
             responseModalities: ["AUDIO"],
+            realtimeInputConfig: {
+              automaticActivityDetection: {
+                disabled: false,
+                prefixPaddingMs: 200,
+                silenceDurationMs: 700,
+              },
+            },
             inputAudioTranscription: {},
             outputAudioTranscription: {},
             systemInstruction: instructions,
