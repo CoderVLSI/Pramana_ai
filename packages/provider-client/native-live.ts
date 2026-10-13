@@ -175,6 +175,7 @@ export function createDeviceLiveSocket(
     preferredName?: string;
     enableWebSearch: boolean;
     userMemories?: string[];
+    history?: LiveAgentOptions["history"];
   },
 ): NativeSocket {
   const geminiSockets = new Set<NativeSocket>();
@@ -207,6 +208,7 @@ export function createDeviceLiveSocket(
     profile,
     preferredName: options.preferredName,
     userMemories: options.userMemories,
+    history: options.history,
     enableWebSearch: options.enableWebSearch,
     connectGemini: geminiConnect(make, geminiSockets),
     createSocket: (url, config) => openAISocket(url, config, make),

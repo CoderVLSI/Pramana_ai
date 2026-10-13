@@ -182,6 +182,8 @@ export default function LiveConversation({
   const requestingPermission = useRef(false);
   const [connectedModel, setConnectedModel] = useState("");
   const [lines, setLines] = useState<Line[]>([]);
+  const linesRef = useRef<Line[]>([]);
+  linesRef.current = lines;
   const [sources, setSources] = useState<Source[]>([]);
   const [tools, setTools] = useState<string[]>([]);
   const [grounding, setGrounding] = useState<Grounding | null>(null);
@@ -699,6 +701,10 @@ export default function LiveConversation({
         preferredName,
         workIds,
         enableWebSearch: webSearchEnabled,
+        history: linesRef.current.map((l) => ({
+          role: l.role === "You" ? ("user" as const) : ("assistant" as const),
+          text: l.text,
+        })),
       });
       if (!active.current || session !== generation.current) {
         ws.close();
