@@ -864,8 +864,13 @@ export default function LiveConversation({
             setSources((previous) => [...previous, ...found].slice(-12));
             if (!found.length) {
               const r = (message.result ?? {}) as Record<string, unknown>;
-              const why = [r.error, r.detail]
-                .filter((v): v is string => typeof v === "string" && !!v)
+              const why = [
+                ...new Set(
+                  [r.error, r.detail].filter(
+                    (v): v is string => typeof v === "string" && !!v,
+                  ),
+                ),
+              ]
                 .join(" · ")
                 .slice(0, 220);
               setTools((previous) => [
@@ -1538,33 +1543,43 @@ export default function LiveConversation({
               )}
             </View>
           )}
-          {tools.map((tool, i) => {
-            const chip = toolChip(tool);
-            return (
-              <View
-                key={i}
-                style={[
-                  styles.toolChip,
-                  chip.state === "problem" && styles.toolChipProblem,
-                ]}
-              >
-                {chip.state === "running" ? (
-                  <ActivityIndicator size="small" color={accent} />
-                ) : (
-                  <Glyph
-                    name={
-                      chip.state === "done"
-                        ? "checkmark-circle"
-                        : "alert-circle"
-                    }
-                    size={16}
-                    color={chip.state === "done" ? "#315444" : "#914626"}
-                  />
-                )}
-                <Text style={styles.toolChipText}>{chip.label}</Text>
-              </View>
-            );
-          })}
+          {tools
+            .filter((tool, i) => {
+              const m = /^(\w+) · running$/.exec(tool);
+              return (
+                !m ||
+                !tools
+                  .slice(i + 1)
+                  .some((later) => later.startsWith(m[1] + " · "))
+              );
+            })
+            .map((tool, i) => {
+              const chip = toolChip(tool);
+              return (
+                <View
+                  key={i}
+                  style={[
+                    styles.toolChip,
+                    chip.state === "problem" && styles.toolChipProblem,
+                  ]}
+                >
+                  {chip.state === "running" ? (
+                    <ActivityIndicator size="small" color={accent} />
+                  ) : (
+                    <Glyph
+                      name={
+                        chip.state === "done"
+                          ? "checkmark-circle"
+                          : "alert-circle"
+                      }
+                      size={16}
+                      color={chip.state === "done" ? "#315444" : "#914626"}
+                    />
+                  )}
+                  <Text style={styles.toolChipText}>{chip.label}</Text>
+                </View>
+              );
+            })}
           {sources.map((source, i) => (
             <View key={i} style={styles.sourceCard}>
               <Text style={styles.sourceLabel}>{source.label}</Text>
@@ -1871,16 +1886,22 @@ const styles = StyleSheet.create({
   sentImage: { width: 200, height: 180, borderRadius: 14 },
   toolChip: {
     alignSelf: "flex-start",
+    maxWidth: "100%",
     flexDirection: "row",
     alignItems: "center",
     gap: 8,
     paddingHorizontal: 12,
     paddingVertical: 8,
-    borderRadius: 999,
+    borderRadius: 18,
     backgroundColor: "#f0f1e9",
   },
   toolChipProblem: { backgroundColor: "#f7e9de" },
-  toolChipText: { fontSize: 13, color: "#526459" },
+  toolChipText: {
+    flexShrink: 1,
+    fontSize: 13,
+    lineHeight: 18,
+    color: "#526459",
+  },
   sourceCard: {
     padding: 14,
     borderRadius: 16,
