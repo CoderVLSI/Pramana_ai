@@ -1,4 +1,4 @@
-import { ProviderRequestError } from "./provider-error";
+import { ProviderRequestError, providerReason } from "./provider-error";
 import { memoryInstruction } from "./memory";
 import type { ProviderProfile } from "./profile";
 function concat(chunks: Uint8Array[]) {
@@ -11,7 +11,11 @@ function concat(chunks: Uint8Array[]) {
   return result;
 }
 async function boundedJSON(response: Response) {
-  if (!response.ok) throw new ProviderRequestError(response.status);
+  if (!response.ok)
+    throw new ProviderRequestError(
+      response.status,
+      providerReason((await response.text().catch(() => "")).slice(0, 8000)),
+    );
   const reader = response.body?.getReader();
   if (!reader) {
     const text = await response.text();
@@ -33,6 +37,16 @@ async function boundedJSON(response: Response) {
   return JSON.parse(new TextDecoder().decode(concat(chunks)));
 }
 
+/** Stable, full-size flash models first (their search-grounding quota is the most
+ * predictable); "-latest" aliases, previews and lite variants after, newest first. */
+export function rankModels(a: string, b: string) {
+  const weight = (name: string) =>
+    (/latest/.test(name) ? 3 : /preview|exp|beta/.test(name) ? 2 : 0) +
+    (/lite/.test(name) ? 1 : 0);
+  return (
+    weight(a) - weight(b) || b.localeCompare(a, undefined, { numeric: true })
+  );
+}
 export interface WebResult {
   source_status: string;
   text?: string;
@@ -85,11 +99,9 @@ export async function searchWeb(
                 m.name,
               ),
           )
-          .sort((a: any, b: any) =>
-            b.name.localeCompare(a.name, undefined, { numeric: true }),
-          )
-          .slice(0, 3)
-          .map((m: any) => m.name as string);
+          .map((m: any) => m.name as string)
+          .sort(rankModels)
+          .slice(0, 4);
       }
       if (!models.length)
         return {

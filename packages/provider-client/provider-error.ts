@@ -10,8 +10,25 @@ export function providerFailure(status?: number): string {
   return "The provider connection failed or timed out. Check your network and provider settings, then retry.";
 }
 export class ProviderRequestError extends Error {
-  constructor(public status?: number) {
+  constructor(
+    public status?: number,
+    public detail?: string,
+  ) {
     super(providerFailure(status));
+  }
+}
+/** Provider-written reason, trimmed and stripped of credentials, for diagnostics only. */
+export function providerReason(body: string): string | undefined {
+  try {
+    const message = JSON.parse(body)?.error?.message;
+    if (typeof message !== "string") return;
+    return message
+      .replace(/AIza[\w-]{10,}|sk-[\w-]{10,}/g, "[key]")
+      .replace(/\s+/g, " ")
+      .trim()
+      .slice(0, 200);
+  } catch {
+    return;
   }
 }
 

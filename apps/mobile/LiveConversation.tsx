@@ -1294,7 +1294,7 @@ export default function LiveConversation({
   const orb = useRef(new Animated.Value(1)).current;
   useEffect(() => {
     Animated.timing(orb, {
-      toValue: 1 + Math.min(100, micLevel) / 120,
+      toValue: 1 + Math.min(100, micLevel) / 330,
       duration: 140,
       useNativeDriver: true,
     }).start();

@@ -295,9 +295,11 @@ export class DeviceClient {
             ? e.message
             : "Web search could not complete. Check your provider key, model access and quota in Settings.",
         detail:
-          e instanceof Error
-            ? e.message.replace(/AIza\S+|sk-\S+/g, "").slice(0, 160)
-            : undefined,
+          e instanceof ProviderRequestError
+            ? e.detail
+            : e instanceof Error
+              ? e.message.replace(/AIza\S+|sk-\S+/g, "").slice(0, 160)
+              : undefined,
       };
     }
   }

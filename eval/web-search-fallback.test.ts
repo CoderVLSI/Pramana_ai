@@ -62,3 +62,39 @@ test("web search does not retry on authentication errors", async () => {
   await assert.rejects(() => searchWeb(profile, "q", request));
   assert.equal(generate, 1);
 });
+
+test("provider's own error text is kept (without keys) and stable models rank first", async () => {
+  const body = JSON.stringify({
+    error: {
+      message:
+        "Quota exceeded for metric generate_content_free_tier_requests, limit: 0, model: gemini-x. key AIzaSyDUMMYDUMMYDUMMY1234",
+    },
+  });
+  const request: typeof fetch = async (url) =>
+    String(url).includes("/models?")
+      ? Response.json({ models })
+      : new Response(body, { status: 429 });
+  try {
+    await searchWeb(profile, "q", request);
+    assert.fail("should reject");
+  } catch (e: any) {
+    assert.equal(e.status, 429);
+    assert.match(e.detail, /limit: 0/);
+    assert.doesNotMatch(e.detail, /AIza/);
+  }
+  const { rankModels } = await import("../packages/provider-client/web-search");
+  assert.deepEqual(
+    [
+      "models/gemini-flash-latest",
+      "models/gemini-2.5-flash-lite",
+      "models/gemini-2.5-flash",
+      "models/gemini-3-flash-preview",
+    ].sort(rankModels),
+    [
+      "models/gemini-2.5-flash",
+      "models/gemini-2.5-flash-lite",
+      "models/gemini-3-flash-preview",
+      "models/gemini-flash-latest",
+    ],
+  );
+});
