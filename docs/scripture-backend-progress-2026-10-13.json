@@ -56,5 +56,17 @@
   "public_reviewed_passages": 0,
   "cloud_deployment": "migration_prepared_not_applied",
   "app_integration": "reviewed_backend_feature_flag_off_until_deployment",
-  "source_scope": "31 source assets are candidates; counts do not establish full-work or publisher coverage"
+  "source_scope": "31 source assets are candidates; counts do not establish full-work or publisher coverage",
+  "validation": {
+    "javascript_tests_passed": 94,
+    "python_tests_passed": 20,
+    "postgresql_17_integration": "passed",
+    "typescript": "passed",
+    "expo_web_export": "passed",
+    "expo_android_export": "passed",
+    "actual_supabase_rpc": "not_available_before_migration",
+    "phone_retrieval": "not_verified"
+  },
+  "integration_pr": "https://github.com/CoderVLSI/Pramana_ai/pull/1",
+  "claude_base_commit": "81a806b"
 }

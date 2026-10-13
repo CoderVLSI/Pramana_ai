@@ -1,6 +1,6 @@
 # Scripture backend — integration with Claude's app branch
 
-This branch starts from `548e9a0` on `ccr-7ce880be-h31dra`. It changes retrieval adapters and Library data access; it does not replace the voice implementation or app UI. Merge through a PR rather than overwriting either branch. No new npm dependencies are required.
+This branch started from `548e9a0` and was rebased onto `81a806b` on `ccr-7ce880be-h31dra` to preserve Claude's latest changes. It changes retrieval adapters and Library data access; it does not replace the voice implementation or app UI. Merge through a PR rather than overwriting either branch. No new npm dependencies are required.
 
 ## What actually exists
 
@@ -51,7 +51,9 @@ Review search is private preparation, not a public answer endpoint. The app rece
 
 ## Checks and their limits
 
-Real PostgreSQL 17 tests exercise the migration, anonymous write/publish denial, unpublished-source isolation, publication counts, Hindi FTS, work/language scopes and hierarchical references. JavaScript tests cover returned text hashes, scopes, audio restrictions, staging failure and unavailable-versus-empty responses. Python tests cover combining characters, repaired-page precedence, source scoping, exclusions and preservation of the old index after a failed rebuild.
+Validation completed: 94 JavaScript tests, 20 Python tests, TypeScript, Expo web/Android exports, and real PostgreSQL 17 integration checks.
+
+The PostgreSQL checks exercise the migration, anonymous write/publish denial, unpublished-source isolation, publication counts, Hindi FTS, work/language scopes and hierarchical references. JavaScript tests cover returned text hashes, scopes, audio restrictions, staging failure and unavailable-versus-empty responses. Python tests cover combining characters, repaired-page precedence, source scoping, exclusions and preservation of the old index after a failed rebuild.
 
 Seven real private-index queries were measured five times each: median retrieval 5.19–12.84 ms, worst 42.32 ms on this workspace. This measures lexical retrieval from the local 33,635-page index, not phone/network latency or AI generation.
 
