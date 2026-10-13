@@ -152,10 +152,12 @@ class PramanaAudioModule(private val context: ReactApplicationContext) :
                   val v = Math.abs(((buffer[i].toInt() and 255) or (buffer[i + 1].toInt() shl 8)).toShort().toInt())
                   if (v > peak) peak = v
                 }
-                if (peak > 200) {
-                  val wanted = (9000.0 / peak).coerceIn(1.0, 8.0)
+                // Only lift clear speech (never background noise, which would keep
+                // the provider from hearing the silence that ends a turn).
+                if (peak > 1500) {
+                  val wanted = (9000.0 / peak).coerceIn(1.0, 3.0)
                   gain += (wanted - gain) * (if (wanted < gain) 0.5 else 0.05)
-                }
+                } else gain += (1.0 - gain) * 0.1
                 if (gain > 1.01) {
                   for (i in 0 until count - 1 step 2) {
                     val v = ((buffer[i].toInt() and 255) or (buffer[i + 1].toInt() shl 8)).toShort().toInt()
