@@ -1,6 +1,14 @@
 import { liveFailureMessage } from "../../packages/provider-client/provider-error";
 import { shouldStopLive } from "../../packages/provider-client/live-lifecycle";
-import { Pressable, ScrollView, Text, TextInput, View } from "./ui";
+import {
+  Pressable,
+  ScrollView,
+  Text,
+  TextInput,
+  View,
+  useDarkMode,
+  useThemeColor,
+} from "./ui";
 import React, { useEffect, useRef, useState } from "react";
 import {
   AppState,
@@ -8,6 +16,8 @@ import {
   Platform,
   StyleSheet,
   Switch,
+  Animated,
+  ActivityIndicator,
   Image,
   KeyboardAvoidingView,
   PermissionsAndroid,
@@ -147,6 +157,49 @@ function sourcesFrom(result: unknown, name: string): Source[] {
     ];
   });
 }
+
+function Glyph({
+  name,
+  size = 20,
+  color = "#315444",
+}: {
+  name: React.ComponentProps<typeof Ionicons>["name"];
+  size?: number;
+  color?: string;
+}) {
+  return <Ionicons name={name} size={size} color={useThemeColor(color)} />;
+}
+const TOOL_LABELS: Record<string, string> = {
+  search_scripture: "Searching scripture",
+  web_search: "Searching the web",
+  fact_check_claim: "Checking the quote",
+  corpus_status: "Checking the library",
+};
+function toolChip(text: string): {
+  label: string;
+  state: "running" | "done" | "problem";
+} {
+  const match = /^(\w+) · (running|completed|failed|updated)$/.exec(text);
+  if (match) {
+    const label = TOOL_LABELS[match[1]] || "Checking sources";
+    return match[2] === "running"
+      ? { label: label + "…", state: "running" }
+      : match[2] === "failed"
+        ? { label: label + " failed", state: "problem" }
+        : { label, state: "done" };
+  }
+  if (/^Source check failed/.test(text))
+    return {
+      label: text.replace("Source check failed: ", "Couldn’t check sources: "),
+      state: "problem",
+    };
+  return { label: "No matching sources found", state: "problem" };
+}
+const SUGGESTIONS = [
+  "What is the Vishnu Purana?",
+  "Explain karma yoga simply",
+  "Is this verse authentic?",
+];
 
 export default function LiveConversation({
   onSourceSearch,
@@ -1191,125 +1244,194 @@ export default function LiveConversation({
       );
     }
   }
+  const dark = useDarkMode();
+  const accent = useThemeColor("#315444");
+  const haloColor = useThemeColor("#cce7d1");
+  const speakingNow = !!rishiSpeaking;
+  const statusText =
+    state === "connecting"
+      ? "Connecting…"
+      : state === "live"
+        ? speakingNow
+          ? "Speaking"
+          : listening
+            ? "Listening"
+            : waiting.current
+              ? "Thinking…"
+              : Platform.OS === "android" &&
+                  microphoneEnabled &&
+                  audioStatus.sent === 0
+                ? "Starting microphone…"
+                : "Ready"
+        : state === "failed"
+          ? "Disconnected"
+          : "Tap the mic to talk";
+  const tone: "live" | "busy" | "idle" =
+    state === "live"
+      ? speakingNow || listening
+        ? "live"
+        : "busy"
+      : state === "connecting"
+        ? "busy"
+        : "idle";
+  const dotColor =
+    tone === "live" ? "#15803d" : tone === "busy" ? "#d97706" : "#9a9389";
+  const orb = useRef(new Animated.Value(1)).current;
+  useEffect(() => {
+    Animated.timing(orb, {
+      toValue: 1 + Math.min(100, micLevel) / 120,
+      duration: 140,
+      useNativeDriver: true,
+    }).start();
+  }, [micLevel]);
+  function finishTurn() {
+    if (!send({ type: "audio_end" })) return;
+    inputPaused.current = true;
+    setListening(false);
+    waiting.current = true;
+    notice("Turn sent. Waiting for your transcript and Rishi’s reply…");
+    if (replyTimer.current) clearTimeout(replyTimer.current);
+    replyTimer.current = setTimeout(() => {
+      inputPaused.current = false;
+      waiting.current = false;
+      notice(
+        "No transcript or reply arrived. Check microphone level and packet counts in ⋮, then retry.",
+      );
+    }, 20000);
+  }
+  const nativeDock =
+    state === "live" && Platform.OS === "android" && microphoneEnabled;
   return (
     <KeyboardAvoidingView
       style={{ flex: 1 }}
       behavior={Platform.OS === "ios" ? "padding" : undefined}
     >
       <View style={styles.card}>
-        <View style={[styles.row, { padding: 12 }]}>
-          <RishiAvatar size={44} speaking={rishiSpeaking} />
+        <View style={styles.header}>
+          <View style={styles.avatarRing}>
+            <RishiAvatar size={46} speaking={speakingNow} />
+          </View>
           <View style={{ flex: 1 }}>
-            <Text style={styles.title}>Chat with Rishi</Text>
-            <Text accessibilityLiveRegion="polite" style={styles.status}>
-              {state === "connecting"
-                ? "Connecting…"
-                : state === "live"
-                  ? rishiSpeaking
-                    ? microphoneEnabled
-                      ? "Rishi speaking · mic active"
-                      : "Rishi speaking…"
-                    : listening
-                      ? "Listening…"
-                      : waiting.current
-                        ? "Preparing reply…"
-                        : Platform.OS === "android" &&
-                            microphoneEnabled &&
-                            audioStatus.sent === 0
-                          ? "Starting microphone…"
-                          : "Connected · ready"
-                  : "Type a message or start voice"}
-            </Text>
+            <Text style={styles.title}>Rishi</Text>
+            <View style={styles.statusRow}>
+              <View style={[styles.statusDot, { backgroundColor: dotColor }]} />
+              <Text accessibilityLiveRegion="polite" style={styles.status}>
+                {statusText}
+              </Text>
+            </View>
           </View>
           <Pressable
             accessibilityRole="button"
             accessibilityLabel="Source search"
             onPress={onSourceSearch}
-            style={styles.outline}
+            style={styles.iconButton}
           >
-            <Ionicons name="search" size={20} color="#67977d" />
+            <Glyph name="search" />
           </Pressable>
           <Pressable
             accessibilityRole="button"
             accessibilityLabel="Voice details"
             onPress={() => setDetails((v) => !v)}
-            style={styles.outline}
+            style={[styles.iconButton, details && styles.iconButtonOn]}
           >
-            <Ionicons name="ellipsis-vertical" size={20} color="#67977d" />
+            <Glyph name="ellipsis-horizontal" />
           </Pressable>
         </View>
         {!!sessionNotice && (
-          <Text
-            accessibilityLiveRegion="assertive"
-            style={[styles.detail, { paddingHorizontal: 12 }]}
-          >
-            {sessionNotice}
-          </Text>
+          <View accessibilityLiveRegion="assertive" style={styles.notice}>
+            <Glyph name="information-circle" size={18} color="#755019" />
+            <Text style={styles.noticeText}>{sessionNotice}</Text>
+          </View>
         )}
         <ScrollView
           ref={messageScroll}
           style={{ flex: 1 }}
-          contentContainerStyle={{ padding: 12, gap: 8 }}
+          contentContainerStyle={styles.list}
           keyboardShouldPersistTaps="handled"
-          onContentSizeChange={() =>
-            messageScroll.current?.scrollToEnd({ animated: true })
-          }
+          onContentSizeChange={() => {
+            if (lines.length || tools.length)
+              messageScroll.current?.scrollToEnd({ animated: true });
+          }}
         >
-          <Text style={[styles.detail, { textAlign: "center" }]}>
-            AI replies · sources checked separately
-          </Text>
-          {state === "live" &&
-            microphoneEnabled &&
-            Platform.OS === "android" && (
-              <Text accessibilityLiveRegion="polite" style={styles.detail}>
-                Microphone level: {micLevel}% ·{" "}
-                {micLevel > 0 ? "Sound detected" : "No sound detected"}. Pause
-                after speaking, or tap Finish turn.
-              </Text>
-            )}
           {details && (
-            <View style={styles.source}>
+            <View style={styles.panel}>
+              <Text style={styles.panelTitle}>Voice details</Text>
               <Text style={styles.detail}>
                 {Platform.OS === "web"
                   ? "Microphone audio streams to your selected AI provider."
                   : Platform.OS === "android"
-                    ? "Microphone audio streams directly to your selected AI provider. Reply audio streams to the speaker while the microphone remains active. No microphone recordings are saved."
+                    ? "Microphone audio streams directly to your selected AI provider. Reply audio plays through the speaker. No microphone recordings are saved."
                     : "Device speech recognition transcribes your voice; final text goes to your AI provider."}{" "}
                 Sessions last up to 10 minutes.
               </Text>
-              <Text style={styles.detail}>{connectedModel}</Text>
-              {Platform.OS === "android" && (
-                <Text style={styles.detail}>
-                  Audio packets · microphone {audioStatus.sent} · reply{" "}
-                  {audioStatus.received}
-                </Text>
+              {!!connectedModel && (
+                <View style={styles.kv}>
+                  <Text style={styles.detail}>Model</Text>
+                  <Text style={styles.kvValue}>{connectedModel}</Text>
+                </View>
               )}
-              <View style={styles.row}>
+              {Platform.OS === "android" && (
+                <>
+                  <View style={styles.kv}>
+                    <Text style={styles.detail}>Microphone level</Text>
+                    <Text style={styles.kvValue}>
+                      {micLevel}% · {micLevel > 0 ? "sound detected" : "silent"}
+                    </Text>
+                  </View>
+                  <View style={styles.kv}>
+                    <Text style={styles.detail}>Audio packets</Text>
+                    <Text style={styles.kvValue}>
+                      {audioStatus.sent} sent · {audioStatus.received} received
+                    </Text>
+                  </View>
+                </>
+              )}
+              <View style={styles.kv}>
+                <Text style={[styles.detail, { flex: 1 }]}>
+                  Web search (provider charges may apply)
+                </Text>
                 <Switch
                   accessibilityLabel="Enable web search tools"
                   value={webSearchEnabled}
                   onValueChange={setWebSearchEnabled}
+                  trackColor={{
+                    false: dark ? "#2D2C38" : "#E8E3DA",
+                    true: dark ? "#6D64E8" : "#4338CA",
+                  }}
+                  thumbColor="#FFFFFF"
                   disabled={state === "live" || state === "connecting"}
                 />
-                <Text style={styles.detail}>
-                  Web search · provider charges may apply
-                </Text>
               </View>
               <Pressable
                 accessibilityRole="button"
                 onPress={() => void testSpeaker()}
-                style={styles.outline}
+                style={styles.ghost}
               >
-                <Text>Test phone speaker</Text>
+                <Glyph name="volume-high" size={18} />
+                <Text style={styles.ghostText}>Test phone speaker</Text>
               </Pressable>
             </View>
           )}
           {!lines.length && (
-            <View style={{ alignItems: "center", paddingTop: 32, gap: 12 }}>
-              <RishiAvatar size={96} speaking={rishiSpeaking} />
-              <Text style={styles.detail}>
-                Ask a question about scripture, or attach a quote to check.
+            <View style={styles.empty}>
+              <RishiAvatar size={112} speaking={speakingNow} />
+              <Text style={styles.hello}>Namaste</Text>
+              <Text style={styles.helloSub}>
+                Ask about the Gita, Upanishads or Puranas, or share a quote to
+                verify.
               </Text>
+              <View style={styles.chips}>
+                {SUGGESTIONS.map((text) => (
+                  <Pressable
+                    key={text}
+                    accessibilityRole="button"
+                    onPress={() => setDraft(text)}
+                    style={styles.chip}
+                  >
+                    <Text style={styles.chipText}>{text}</Text>
+                  </Pressable>
+                ))}
+              </View>
             </View>
           )}
           {Platform.OS === "android" && canReplay && (
@@ -1317,50 +1439,40 @@ export default function LiveConversation({
               accessibilityRole="button"
               accessibilityLabel="Replay reply"
               onPress={() => void replayReply()}
-              style={styles.button}
+              style={styles.ghost}
             >
-              <Text style={styles.detail}>Replay reply</Text>
+              <Glyph name="play-circle" size={18} />
+              <Text style={styles.ghostText}>Replay reply</Text>
             </Pressable>
           )}
-          {lines.map((line, i) => (
-            <View
-              key={i}
-              style={[
-                styles.line,
-                {
-                  alignSelf:
-                    line.role === "user" || line.role === "You"
-                      ? "flex-end"
-                      : "flex-start",
-                  maxWidth: "88%",
-                  backgroundColor:
-                    line.role === "user" || line.role === "You"
-                      ? "#cce7d1"
-                      : "#e4e5db",
-                },
-              ]}
-            >
-              <Text style={styles.role}>
-                {line.role === "user" || line.role === "You" ? "You" : "Rishi"}
-              </Text>
-              {!!line.imageUri && (
-                <Image
-                  source={{ uri: line.imageUri }}
-                  style={{
-                    width: 200,
-                    height: 180,
-                    borderRadius: 10,
-                    marginBottom: 8,
-                  }}
-                  accessibilityLabel="Sent image"
-                />
-              )}
-              <Text selectable>{line.text}</Text>
-            </View>
-          ))}
+          {lines.map((line, i) => {
+            const mine = line.role === "user" || line.role === "You";
+            return (
+              <View
+                key={i}
+                accessible
+                accessibilityLabel={`${mine ? "You" : "Rishi"}: ${line.text}`}
+                style={[styles.bubble, mine ? styles.mine : styles.theirs]}
+              >
+                {!!line.imageUri && (
+                  <Image
+                    source={{ uri: line.imageUri }}
+                    style={styles.sentImage}
+                    accessibilityLabel="Sent image"
+                  />
+                )}
+                <Text
+                  selectable
+                  style={mine ? styles.mineText : styles.theirsText}
+                >
+                  {line.text}
+                </Text>
+              </View>
+            );
+          })}
           {grounding && (
-            <View style={styles.source}>
-              <Text style={styles.role}>
+            <View style={styles.sourceCard}>
+              <Text style={styles.sourceLabel}>
                 Google Search suggestions · external web
               </Text>
               {Platform.OS === "web" && grounding.html ? (
@@ -1426,15 +1538,37 @@ export default function LiveConversation({
               )}
             </View>
           )}
-          {tools.map((tool, i) => (
-            <Text key={i} style={styles.detail}>
-              {tool}
-            </Text>
-          ))}
+          {tools.map((tool, i) => {
+            const chip = toolChip(tool);
+            return (
+              <View
+                key={i}
+                style={[
+                  styles.toolChip,
+                  chip.state === "problem" && styles.toolChipProblem,
+                ]}
+              >
+                {chip.state === "running" ? (
+                  <ActivityIndicator size="small" color={accent} />
+                ) : (
+                  <Glyph
+                    name={
+                      chip.state === "done"
+                        ? "checkmark-circle"
+                        : "alert-circle"
+                    }
+                    size={16}
+                    color={chip.state === "done" ? "#315444" : "#914626"}
+                  />
+                )}
+                <Text style={styles.toolChipText}>{chip.label}</Text>
+              </View>
+            );
+          })}
           {sources.map((source, i) => (
-            <View key={i} style={styles.source}>
-              <Text style={styles.role}>{source.label}</Text>
-              <Text>{source.title}</Text>
+            <View key={i} style={styles.sourceCard}>
+              <Text style={styles.sourceLabel}>{source.label}</Text>
+              <Text style={styles.sourceTitle}>{source.title}</Text>
               {source.url && (
                 <Pressable
                   accessibilityRole="link"
@@ -1443,49 +1577,40 @@ export default function LiveConversation({
                       notice("This source link could not open."),
                     )
                   }
+                  style={styles.sourceLink}
                 >
                   <Text style={styles.link}>Open source</Text>
+                  <Glyph name="arrow-forward" size={14} />
                 </Pressable>
               )}
             </View>
           ))}
         </ScrollView>
-        <View
-          style={{
-            padding: 10,
-            gap: 8,
-            borderTopWidth: 1,
-            borderColor: "#ABB7A8",
-          }}
-        >
-          {Platform.OS === "android" && (
-            <Text style={styles.detail}>
-              Live voice streams microphone audio to your AI provider.
-            </Text>
-          )}
+        <View style={styles.dock}>
           {!!image && (
-            <View style={styles.row}>
-              <Image
-                source={{ uri: image.uri }}
-                style={{ height: 60, width: 60, borderRadius: 8 }}
-              />
-              <View style={{ flex: 1 }}>
+            <View style={styles.attachment}>
+              <Image source={{ uri: image.uri }} style={styles.thumb} />
+              <View style={{ flex: 1, gap: 2 }}>
                 <Text style={styles.detail}>
-                  Send uploads this image with your message to your AI provider.
+                  Sending uploads this image with your message to your AI
+                  provider.
                 </Text>
                 <Pressable
                   accessibilityRole="button"
                   disabled={readingImage}
                   onPress={() => void readImage()}
                 >
-                  <Text>{readingImage ? "Reading…" : "Read image"}</Text>
+                  <Text style={styles.link}>
+                    {readingImage ? "Reading…" : "Read text from image"}
+                  </Text>
                 </Pressable>
               </View>
               <Pressable
                 accessibilityLabel="Remove image"
                 onPress={() => setImage(null)}
+                style={styles.iconButton}
               >
-                <Text>✕</Text>
+                <Glyph name="close" size={18} />
               </Pressable>
             </View>
           )}
@@ -1494,68 +1619,99 @@ export default function LiveConversation({
               {heard}
             </Text>
           )}
-          {state === "live" && (
-            <View style={styles.row}>
+          {nativeDock && (
+            <View style={styles.voiceBar}>
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel="Stop"
+                onPress={() => stop()}
+                style={styles.sideAction}
+              >
+                <View style={[styles.sideCircle, styles.stopCircle]}>
+                  <Glyph name="stop" size={20} color="#a02f2f" />
+                </View>
+                <Text style={styles.sideLabel}>End</Text>
+              </Pressable>
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel="Finish turn"
+                onPress={finishTurn}
+                style={styles.orbWrap}
+              >
+                <Animated.View
+                  style={[
+                    styles.orbHalo,
+                    { backgroundColor: haloColor, transform: [{ scale: orb }] },
+                  ]}
+                />
+                <View style={styles.orb}>
+                  <Glyph
+                    name={speakingNow ? "volume-high" : "mic"}
+                    size={30}
+                    color="white"
+                  />
+                </View>
+              </Pressable>
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel="Interrupt"
+                onPress={interrupt}
+                style={styles.sideAction}
+              >
+                <View style={styles.sideCircle}>
+                  <Glyph name="hand-left" size={20} />
+                </View>
+                <Text style={styles.sideLabel}>Interrupt</Text>
+              </Pressable>
+            </View>
+          )}
+          {nativeDock && (
+            <Text style={styles.voiceHint}>
+              {speakingNow
+                ? "Rishi is speaking · tap Interrupt to cut in"
+                : "Speak naturally · tap the mic to send now"}
+            </Text>
+          )}
+          {state === "live" && !nativeDock && (
+            <View style={styles.pillRow}>
               <Pressable
                 accessibilityRole="button"
                 onPress={() => stop()}
-                style={styles.outline}
+                style={styles.ghost}
               >
-                <Text>Stop</Text>
+                <Glyph name="stop-circle" size={18} color="#a02f2f" />
+                <Text style={styles.ghostText}>End</Text>
               </Pressable>
               <Pressable
                 accessibilityRole="button"
                 onPress={interrupt}
-                style={styles.outline}
+                style={styles.ghost}
               >
-                <Text>Interrupt</Text>
+                <Glyph name="hand-left" size={18} />
+                <Text style={styles.ghostText}>Interrupt</Text>
               </Pressable>
-              {Platform.OS === "android" && microphoneEnabled && (
-                <Pressable
-                  accessibilityRole="button"
-                  onPress={() => {
-                    if (!send({ type: "audio_end" })) return;
-                    inputPaused.current = true;
-                    setListening(false);
-                    waiting.current = true;
-                    notice(
-                      "Turn sent. Waiting for your transcript and Rishi’s reply…",
-                    );
-                    if (replyTimer.current) clearTimeout(replyTimer.current);
-                    replyTimer.current = setTimeout(() => {
-                      inputPaused.current = false;
-                      waiting.current = false;
-                      notice(
-                        "No transcript or reply arrived. Check microphone level and packet counts in ⋮, then retry.",
-                      );
-                    }, 20000);
-                  }}
-                  style={styles.outline}
-                >
-                  <Text>Finish turn</Text>
-                </Pressable>
-              )}
               {listening &&
                 Platform.OS !== "web" &&
                 Platform.OS !== "android" && (
                   <Pressable
                     accessibilityRole="button"
                     onPress={() => recognition.current?.stop()}
-                    style={styles.outline}
+                    style={styles.ghost}
                   >
-                    <Text>Send speech</Text>
+                    <Glyph name="send" size={16} />
+                    <Text style={styles.ghostText}>Send speech</Text>
                   </Pressable>
                 )}
             </View>
           )}
-          <View style={styles.row}>
+          <View style={styles.composer}>
             <Pressable
               accessibilityRole="button"
               accessibilityLabel="Attach an image"
               onPress={() => void attachImage()}
-              style={styles.outline}
+              style={styles.iconButton}
             >
-              <Ionicons name="attach" size={23} color="#67977d" />
+              <Glyph name="image-outline" size={22} />
             </Pressable>
             <TextInput
               accessibilityLabel="Message for live conversation"
@@ -1566,6 +1722,8 @@ export default function LiveConversation({
               style={styles.input}
               editable={state !== "connecting" && !readingImage}
               onSubmitEditing={sendText}
+              multiline
+              numberOfLines={1}
             />
             {draft.trim() || image ? (
               <Pressable
@@ -1573,9 +1731,9 @@ export default function LiveConversation({
                 accessibilityLabel="Send"
                 disabled={state === "connecting" || readingImage}
                 onPress={sendText}
-                style={styles.button}
+                style={styles.sendButton}
               >
-                <Ionicons name="send" size={20} color="white" />
+                <Glyph name="arrow-up" size={22} color="white" />
               </Pressable>
             ) : (
               <Pressable
@@ -1586,63 +1744,287 @@ export default function LiveConversation({
                   stop();
                   void start(true);
                 }}
-                style={styles.button}
+                style={[
+                  styles.sendButton,
+                  state === "live" && styles.sendButtonOn,
+                ]}
               >
-                <Ionicons name="mic" size={22} color="white" />
+                {state === "connecting" ? (
+                  <ActivityIndicator size="small" color="#ffffff" />
+                ) : (
+                  <Glyph name="mic" size={22} color="white" />
+                )}
               </Pressable>
             )}
           </View>
+          <Text style={styles.footnote}>
+            AI-generated · scripture sources are checked separately
+          </Text>
         </View>
       </View>
     </KeyboardAvoidingView>
   );
 }
 const styles = StyleSheet.create({
-  card: { flex: 1, backgroundColor: "#F3F0E6", overflow: "hidden" },
-  title: { fontSize: 20, fontWeight: "700", color: "#143D29" },
-  disclosure: { fontWeight: "600", color: "#755019" },
-  detail: { fontSize: 12, color: "#4A5B51", lineHeight: 18 },
-  status: { fontSize: 13, color: "#143D29" },
-  row: { flexDirection: "row", gap: 10, alignItems: "center" },
-  button: {
-    backgroundColor: "#143D29",
-    borderRadius: 10,
+  card: { flex: 1, backgroundColor: "#F6F4EE", overflow: "hidden" },
+  header: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 10,
     paddingHorizontal: 16,
-    minHeight: 44,
+    paddingVertical: 12,
+  },
+  avatarRing: {
+    width: 52,
+    height: 52,
+    borderRadius: 26,
+    overflow: "hidden",
+    alignItems: "center",
     justifyContent: "center",
+    backgroundColor: "#e0e6d8",
   },
-  buttonText: { color: "white", fontWeight: "600" },
-  outline: {
-    borderWidth: 1,
-    borderColor: "#ABB7A8",
-    borderRadius: 10,
-    paddingHorizontal: 12,
-    minHeight: 44,
+  title: {
+    fontSize: 22,
+    fontFamily: Platform.OS === "web" ? "Georgia" : "serif",
+    color: "#263d35",
+  },
+  statusRow: { flexDirection: "row", alignItems: "center", gap: 6 },
+  statusDot: { width: 8, height: 8, borderRadius: 4 },
+  status: { fontSize: 13, color: "#778179" },
+  iconButton: {
+    width: 42,
+    height: 42,
+    borderRadius: 21,
+    alignItems: "center",
     justifyContent: "center",
+    backgroundColor: "#f0f1e9",
   },
-  disabled: { opacity: 0.4 },
-  input: {
-    flex: 1,
-    minHeight: 44,
-    borderWidth: 1,
-    borderColor: "#ABB7A8",
-    borderRadius: 10,
-    padding: 10,
-    backgroundColor: "white",
-  },
-  transcripts: { minHeight: 120, maxHeight: 360 },
-  line: {
-    marginBottom: 12,
-    gap: 4,
+  iconButtonOn: { backgroundColor: "#e0e6d8" },
+  notice: {
+    flexDirection: "row",
+    gap: 8,
+    alignItems: "flex-start",
+    marginHorizontal: 16,
+    marginBottom: 4,
     padding: 12,
     borderRadius: 14,
-    backgroundColor: "#e4e5db",
+    backgroundColor: "#f7e9de",
   },
-  role: { fontSize: 12, fontWeight: "700", color: "#52634F" },
-  source: { borderTopWidth: 1, borderColor: "#D4D8CB", paddingTop: 8, gap: 4 },
-  link: {
-    color: "#185837",
-    textDecorationLine: "underline",
+  noticeText: { flex: 1, fontSize: 13, lineHeight: 19, color: "#755019" },
+  list: { paddingHorizontal: 16, paddingTop: 8, paddingBottom: 16, gap: 10 },
+  empty: {
+    alignItems: "center",
+    paddingTop: 28,
+    paddingHorizontal: 12,
+    gap: 8,
+  },
+  hello: {
+    fontSize: 30,
+    fontFamily: Platform.OS === "web" ? "Georgia" : "serif",
+    color: "#263d35",
+    marginTop: 8,
+  },
+  helloSub: {
+    fontSize: 15,
+    lineHeight: 22,
+    color: "#778179",
+    textAlign: "center",
+    maxWidth: 320,
+  },
+  chips: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    gap: 8,
+    marginTop: 12,
+  },
+  chip: {
+    paddingHorizontal: 14,
+    paddingVertical: 10,
+    borderRadius: 999,
+    borderWidth: 1,
+    borderColor: "#e4e5db",
+    backgroundColor: "#ffffff",
+  },
+  chipText: { fontSize: 14, color: "#315444" },
+  bubble: {
+    maxWidth: "86%",
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+    borderRadius: 22,
+    gap: 8,
+  },
+  mine: {
+    alignSelf: "flex-end",
+    backgroundColor: "#315444",
+    borderBottomRightRadius: 6,
+  },
+  theirs: {
+    alignSelf: "flex-start",
+    backgroundColor: "#ffffff",
+    borderWidth: 1,
+    borderColor: "#e4e5db",
+    borderBottomLeftRadius: 6,
+  },
+  mineText: { fontSize: 16, lineHeight: 23, color: "white" },
+  theirsText: { fontSize: 16, lineHeight: 24, color: "#263d35" },
+  sentImage: { width: 200, height: 180, borderRadius: 14 },
+  toolChip: {
+    alignSelf: "flex-start",
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 8,
+    paddingHorizontal: 12,
     paddingVertical: 8,
+    borderRadius: 999,
+    backgroundColor: "#f0f1e9",
+  },
+  toolChipProblem: { backgroundColor: "#f7e9de" },
+  toolChipText: { fontSize: 13, color: "#526459" },
+  sourceCard: {
+    padding: 14,
+    borderRadius: 16,
+    borderWidth: 1,
+    borderColor: "#e4e5db",
+    backgroundColor: "#ffffff",
+    gap: 6,
+  },
+  sourceLabel: {
+    fontSize: 11,
+    letterSpacing: 0.6,
+    fontWeight: "700",
+    color: "#755019",
+  },
+  sourceTitle: { fontSize: 15, lineHeight: 21, color: "#263d35" },
+  sourceLink: { flexDirection: "row", alignItems: "center", gap: 6 },
+  link: { color: "#315444", fontWeight: "600", paddingVertical: 4 },
+  panel: {
+    padding: 16,
+    borderRadius: 18,
+    borderWidth: 1,
+    borderColor: "#e4e5db",
+    backgroundColor: "#ffffff",
+    gap: 10,
+  },
+  panelTitle: { fontSize: 16, fontWeight: "700", color: "#263d35" },
+  detail: { fontSize: 13, color: "#526459", lineHeight: 19 },
+  kv: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    gap: 12,
+  },
+  kvValue: { fontSize: 13, fontWeight: "600", color: "#263d35" },
+  ghost: {
+    alignSelf: "flex-start",
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 8,
+    paddingHorizontal: 14,
+    minHeight: 40,
+    borderRadius: 999,
+    backgroundColor: "#f0f1e9",
+  },
+  ghostText: { fontSize: 14, color: "#263d35", fontWeight: "600" },
+  dock: {
+    paddingHorizontal: 12,
+    paddingTop: 10,
+    paddingBottom: 8,
+    gap: 10,
+    backgroundColor: "#F6F4EE",
+    borderTopWidth: StyleSheet.hairlineWidth,
+    borderColor: "#e4e5db",
+  },
+  attachment: {
+    flexDirection: "row",
+    gap: 10,
+    alignItems: "center",
+    padding: 10,
+    borderRadius: 16,
+    backgroundColor: "#ffffff",
+    borderWidth: 1,
+    borderColor: "#e4e5db",
+  },
+  thumb: { height: 56, width: 56, borderRadius: 12 },
+  voiceBar: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-around",
+    paddingTop: 4,
+  },
+  sideAction: { alignItems: "center", gap: 4, minWidth: 72 },
+  sideCircle: {
+    width: 52,
+    height: 52,
+    borderRadius: 26,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#f0f1e9",
+  },
+  stopCircle: { backgroundColor: "#f7e9de" },
+  sideLabel: { fontSize: 12, color: "#778179" },
+  orbWrap: {
+    width: 96,
+    height: 96,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  orbHalo: {
+    position: "absolute",
+    width: 76,
+    height: 76,
+    borderRadius: 38,
+    backgroundColor: "#cce7d1",
+    opacity: 0.7,
+  },
+  orb: {
+    width: 68,
+    height: 68,
+    borderRadius: 34,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#315444",
+  },
+  voiceHint: {
+    textAlign: "center",
+    fontSize: 13,
+    color: "#778179",
+    marginTop: -4,
+  },
+  pillRow: { flexDirection: "row", gap: 8, flexWrap: "wrap" },
+  composer: {
+    flexDirection: "row",
+    alignItems: "flex-end",
+    gap: 6,
+    padding: 6,
+    borderRadius: 28,
+    backgroundColor: "#ffffff",
+    borderWidth: 1,
+    borderColor: "#e4e5db",
+  },
+  input: {
+    flex: 1,
+    minHeight: 42,
+    maxHeight: 120,
+    fontSize: 16,
+    paddingHorizontal: 6,
+    paddingTop: 10,
+    paddingBottom: 10,
+    color: "#263d35",
+    ...(Platform.OS === "web" ? { outlineStyle: "none" as any } : {}),
+  },
+  sendButton: {
+    width: 44,
+    height: 44,
+    borderRadius: 22,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#315444",
+  },
+  sendButtonOn: { opacity: 0.85 },
+  footnote: {
+    textAlign: "center",
+    fontSize: 11,
+    color: "#778179",
   },
 });

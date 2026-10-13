@@ -2,50 +2,7 @@ import React from "react";
 import * as Native from "react-native";
 import { SafeAreaView as NativeSafeAreaView } from "react-native-safe-area-context";
 import { useDevicePreferences } from "./DevicePreferences";
-const darkColors: Record<string, string> = {
-  "#cce7d1": "#315b43",
-  "#263d35": "#e5eee7",
-  "#778179": "#b3c0b7",
-  "#526459": "#b3c0b7",
-  "#959c92": "#aab8ae",
-  "#315444": "#89c9a5",
-  "#f6f4ee": "#151e1a",
-  "#e4e5db": "#34483d",
-  "#b27e42": "#e1b875",
-  "#f0f1e9": "#1a2821",
-  "#fffefa": "#202f26",
-  "#ffffff": "#202f26",
-  white: "#f7faf8",
-  "#faf9f4": "#202f26",
-  "#e0e6d8": "#314f3d",
-  "#e3e8dc": "#314f3d",
-  "#edf0e5": "#243b2d",
-  "#e5eddf": "#314f3d",
-  "#d8ddd2": "#52675a",
-  "#bdc6bc": "#52675a",
-  "#dcded2": "#52675a",
-  "#dce2d5": "#52675a",
-  "#914626": "#f4bc91",
-  "#a02f2f": "#ffb6a8",
-  "#eeefe6": "#243b2d",
-  "#e4ebdd": "#314f3d",
-  "#f7e9de": "#473023",
-  "#fffdf1": "#202f26",
-  "#f5f1e7": "#202f26",
-  "#174c3c": "#a0d6b7",
-  "#185837": "#a0d6b7",
-  "#4a5b51": "#b3c0b7",
-  "#52634f": "#b3c0b7",
-  "#52645b": "#b3c0b7",
-  "#67816c": "#b3c0b7",
-  "#755019": "#e1b875",
-  "#838b80": "#b3c0b7",
-  "#f3f0e6": "#202f26",
-  "#d4d8cb": "#52675a",
-  "#143d29": "#253f30",
-  "#fff": "#202f26",
-  "#000": "#e5eee7",
-};
+import { colors, themeColor } from "./theme";
 export function useDarkMode() {
   const { state } = useDevicePreferences();
   const system = Native.useColorScheme();
@@ -55,33 +12,28 @@ export function useDarkMode() {
   );
 }
 export function useThemeColor(color: string) {
-  return useDarkMode() ? darkColors[color.toLowerCase()] || color : color;
+  return themeColor(color, "text", useDarkMode()) || color;
 }
+const slots: Record<string, "text" | "fill" | "line"> = {
+  color: "text",
+  backgroundColor: "fill",
+  borderColor: "line",
+  borderTopColor: "line",
+  borderBottomColor: "line",
+  borderLeftColor: "line",
+  borderRightColor: "line",
+};
 function styleFor(
   style: any,
   dark: boolean,
   kind: "surface" | "text" = "surface",
 ) {
-  if (!dark) return style;
   const flat = Native.StyleSheet.flatten(style) || {};
-  const result = { ...flat };
-  for (const key of [
-    "color",
-    "backgroundColor",
-    "borderColor",
-    "borderTopColor",
-    "borderBottomColor",
-  ]) {
-    const color =
-      typeof result[key] === "string" ? result[key].toLowerCase() : "";
-    if (color === "white" || color === "#ffffff" || color === "#fff")
-      result[key] = key === "color" ? "#f7faf8" : "#202f26";
-    else if (color === "#143d29" && key === "color") result[key] = "#a0d6b7";
-    else if (color === "#315444" && key === "backgroundColor")
-      result[key] = "#376d4e";
-    else if (darkColors[color]) result[key] = darkColors[color];
-  }
-  if (kind === "text" && !result.color) result.color = "#e5eee7";
+  const result: any = { ...flat };
+  for (const key of Object.keys(slots))
+    if (typeof result[key] === "string")
+      result[key] = themeColor(result[key], slots[key], dark);
+  if (kind === "text" && !result.color) result.color = colors(dark).ink;
   return result;
 }
 export const Text = React.forwardRef<Native.Text, Native.TextProps>(
@@ -144,9 +96,7 @@ export const TextInput = React.forwardRef<
     <Native.TextInput
       {...props}
       ref={ref}
-      placeholderTextColor={
-        dark ? "#aab8ae" : props.placeholderTextColor || "#778179"
-      }
+      placeholderTextColor={colors(dark).placeholder}
       style={styleFor(props.style, dark, "text")}
     />
   );

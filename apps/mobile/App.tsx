@@ -607,12 +607,12 @@ function StudyApp() {
           <View style={s.header}>
             <Text style={s.headerTitle}>{wide ? tab : "pramāṇa"}</Text>
             <View style={s.row}>
-              <View style={s.dot} />
-              <Text style={s.small}>
-                {liveMode && tab === "Study"
-                  ? "Live AI · sources separate"
-                  : "Strict sources"}
-              </Text>
+              <View style={s.pill}>
+                <View style={s.dot} />
+                <Text style={s.small}>
+                  {liveMode && tab === "Study" ? "Live AI" : "Strict sources"}
+                </Text>
+              </View>
               <Pressable
                 accessibilityRole="button"
                 accessibilityLabel="Edit profile"
@@ -1629,8 +1629,25 @@ function StudyApp() {
                   }}
                   style={s.tabItem}
                 >
-                  <Icon name={icon} color={tab === name ? C.green : C.muted} />
-                  <Text style={s.small}>{name}</Text>
+                  <View
+                    style={[
+                      s.tabIcon,
+                      tab === name && { backgroundColor: "#e0e6d8" },
+                    ]}
+                  >
+                    <Icon
+                      name={icon}
+                      color={tab === name ? C.green : C.muted}
+                    />
+                  </View>
+                  <Text
+                    style={[
+                      s.small,
+                      tab === name && { color: C.green, fontWeight: "700" },
+                    ]}
+                  >
+                    {name}
+                  </Text>
                 </Pressable>
               ))}
             </View>
@@ -1708,35 +1725,48 @@ const s = StyleSheet.create({
   count: { marginLeft: "auto", fontSize: 12, color: C.muted },
   sidebarNote: { borderTopWidth: 1, borderColor: C.line, paddingTop: 25 },
   header: {
-    height: 80,
-    borderBottomWidth: 1,
+    height: 68,
+    borderBottomWidth: StyleSheet.hairlineWidth,
     borderColor: C.line,
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
-    paddingHorizontal: 36,
+    paddingHorizontal: 20,
   },
-  headerTitle: { fontSize: 15, color: C.ink },
+  headerTitle: {
+    fontFamily: Platform.OS === "web" ? "Georgia" : "serif",
+    fontSize: 24,
+    letterSpacing: 0.2,
+    color: C.ink,
+  },
+  pill: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#f0f1e9",
+    borderRadius: 999,
+    paddingHorizontal: 10,
+    paddingVertical: 5,
+  },
   row: {
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
   },
   dot: {
-    width: 6,
-    height: 6,
-    borderRadius: 3,
-    backgroundColor: C.green,
-    marginRight: 8,
+    width: 7,
+    height: 7,
+    borderRadius: 4,
+    backgroundColor: "#15803d",
+    marginRight: 6,
   },
   avatar: {
-    width: 32,
-    height: 32,
-    borderRadius: 16,
-    backgroundColor: "#e3e8dc",
+    width: 38,
+    height: 38,
+    borderRadius: 19,
+    backgroundColor: "#f0f1e9",
     alignItems: "center",
     justifyContent: "center",
-    marginLeft: 25,
+    marginLeft: 8,
   },
   content: { padding: 48, width: "100%", maxWidth: 1080, alignSelf: "center" },
   kicker: {
@@ -1758,11 +1788,13 @@ const s = StyleSheet.create({
     backgroundColor: "#fffefa",
     borderWidth: 1,
     borderColor: "#dcded2",
-    borderRadius: 14,
+    borderRadius: 20,
     padding: 22,
-    shadowColor: "#273c2c",
-    shadowOpacity: 0.04,
-    shadowRadius: 16,
+    shadowColor: "#000000",
+    shadowOpacity: 0.05,
+    shadowRadius: 18,
+    shadowOffset: { width: 0, height: 6 },
+    elevation: 2,
   },
   input: {
     minHeight: 78,
@@ -1774,9 +1806,9 @@ const s = StyleSheet.create({
   },
   button: {
     backgroundColor: C.green,
-    paddingHorizontal: 18,
-    paddingVertical: 13,
-    borderRadius: 8,
+    paddingHorizontal: 20,
+    paddingVertical: 14,
+    borderRadius: 14,
     flexDirection: "row",
     alignItems: "center",
     gap: 10,
@@ -1804,7 +1836,7 @@ const s = StyleSheet.create({
     flex: 1,
     borderWidth: 1,
     borderColor: C.line,
-    borderRadius: 10,
+    borderRadius: 18,
     padding: 20,
     gap: 12,
     backgroundColor: "#faf9f4",
@@ -1816,7 +1848,7 @@ const s = StyleSheet.create({
   },
   feature: {
     backgroundColor: C.green,
-    borderRadius: 12,
+    borderRadius: 24,
     padding: 32,
     overflow: "hidden",
   },
@@ -1846,7 +1878,7 @@ const s = StyleSheet.create({
   },
   passage: {
     padding: 24,
-    borderRadius: 12,
+    borderRadius: 18,
     borderWidth: 1,
     borderColor: C.line,
     backgroundColor: "#fffefa",
@@ -1857,7 +1889,7 @@ const s = StyleSheet.create({
   info: {
     backgroundColor: "#eeefe6",
     padding: 22,
-    borderRadius: 10,
+    borderRadius: 16,
     marginTop: 20,
     gap: 8,
   },
@@ -1892,6 +1924,11 @@ const s = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
+  tabIcon: {
+    paddingHorizontal: 20,
+    paddingVertical: 4,
+    borderRadius: 16,
+  },
   tabItem: {
     flex: 1,
     minHeight: 44,
@@ -1903,9 +1940,10 @@ const s = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-around",
     paddingHorizontal: 8,
-    paddingVertical: 6,
-    minHeight: 56,
-    borderTopWidth: 1,
+    paddingTop: 8,
+    paddingBottom: 6,
+    minHeight: 64,
+    borderTopWidth: StyleSheet.hairlineWidth,
     borderColor: C.line,
     backgroundColor: C.paper,
   },
