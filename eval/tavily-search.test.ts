@@ -85,3 +85,39 @@ test("Tavily key is stored on device, hidden from the public profile, testable a
   const profile2: any = await client.saveSearchKey({ remove: true });
   assert.equal(profile2.search.tavily_configured, false);
 });
+
+test("keyless mode falls back to Wikipedia only when requested", async () => {
+  const wiki = {
+    query: {
+      pages: [
+        {
+          index: 1,
+          title: "Vishnu Purana",
+          fullurl: "https://en.wikipedia.org/wiki/Vishnu_Purana",
+          extract: "The Vishnu Purana is one of the Puranas.",
+        },
+      ],
+    },
+  };
+  let calls = 0;
+  const request: typeof fetch = async (url) => {
+    calls++;
+    return String(url).includes("wikipedia.org")
+      ? Response.json(wiki)
+      : new Response("{}", { status: 429 });
+  };
+  const noKeys: any = profile({ search: undefined });
+  // Without the option nothing changes: no network, honest "unavailable".
+  const plain = await searchWeb(noKeys, "vishnu purana", request);
+  assert.equal(plain.source_status, "web_unavailable");
+  assert.equal(calls, 0);
+  const result = await searchWeb(noKeys, "vishnu purana", request, [], {
+    keyless: true,
+  });
+  assert.equal(result.source_status, "external_web_unverified");
+  assert.equal(
+    result.evidence?.[0].url,
+    "https://en.wikipedia.org/wiki/Vishnu_Purana",
+  );
+  assert.match(String(result.note), /not approved scripture/);
+});

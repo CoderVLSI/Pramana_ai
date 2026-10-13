@@ -1,5 +1,6 @@
 import { ProviderRequestError, providerReason } from "./provider-error";
 import { searchTavily } from "./tavily-search";
+import { searchWikipedia } from "./wikipedia-search";
 import { memoryInstruction } from "./memory";
 import type { ProviderProfile } from "./profile";
 function concat(chunks: Uint8Array[]) {
@@ -58,7 +59,7 @@ export interface WebResult {
   detail?: string;
   note?: string;
 }
-export async function searchWeb(
+async function searchProviderWeb(
   profile: ProviderProfile,
   query: string,
   request: typeof fetch = globalThis.fetch,
@@ -312,5 +313,42 @@ export async function searchWeb(
     };
   } finally {
     clearTimeout(timer);
+  }
+}
+
+/** With `keyless`, Wikipedia is tried when no configured search works, so web lookups need no extra key. */
+export async function searchWeb(
+  profile: ProviderProfile,
+  query: string,
+  request: typeof fetch = globalThis.fetch,
+  userMemories: string[] = [],
+  options: { keyless?: boolean } = {},
+): Promise<WebResult> {
+  const keyless = async (): Promise<WebResult | undefined> => {
+    const controller = new AbortController(),
+      timer = setTimeout(() => controller.abort(), 10000);
+    try {
+      return await searchWikipedia(query, request, controller.signal);
+    } catch {
+      return undefined;
+    } finally {
+      clearTimeout(timer);
+    }
+  };
+  try {
+    const result = await searchProviderWeb(
+      profile,
+      query,
+      request,
+      userMemories,
+    );
+    if (result.source_status === "external_web_unverified" || !options.keyless)
+      return result;
+    return (await keyless()) ?? result;
+  } catch (e) {
+    if (!options.keyless) throw e;
+    const result = await keyless();
+    if (result) return result;
+    throw e;
   }
 }

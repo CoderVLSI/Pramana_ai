@@ -171,7 +171,9 @@ export class DeviceClient {
       timer = setTimeout(() => controller.abort(), 15000);
     try {
       await searchTavily(key, "Bhagavad Gita", this.request, controller.signal);
-      return { message: "Tavily search works. This test used 1 search credit." };
+      return {
+        message: "Tavily search works. This test used 1 search credit.",
+      };
     } catch (e) {
       if (controller.signal.aborted)
         throw Error("Tavily connection timed out. Try again.");
@@ -336,6 +338,7 @@ export class DeviceClient {
         query,
         this.request,
         this.readMemory ? await this.readMemory() : [],
+        { keyless: true },
       );
     } catch (e) {
       return {

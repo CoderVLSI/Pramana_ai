@@ -50,7 +50,7 @@ export default function SettingsScreen({
   }, []);
   const [catalog, setCatalog] = useState<Catalog | null>(null),
     [profile, setProfile] = useState<PublicProfile | null>(null),
-    [provider, setProvider] = useState<Provider>("openai"),
+    [provider, setProvider] = useState<Provider>("gemini"),
     [model, setModel] = useState(""),
     [fallbacks, setFallbacks] = useState<string[]>([]),
     [cross, setCross] = useState(false),
@@ -195,6 +195,25 @@ export default function SettingsScreen({
       <Text style={s.intro}>
         Choose your provider, bring your own key, and set a backup plan.
       </Text>
+      {DEVICE_CONNECTIONS && (
+        <View style={s.info}>
+          <Text style={s.heading}>Quick start: just one free key</Text>
+          <Text style={s.body}>
+            A single Google Gemini key gives you live voice and web search. It
+            takes about a minute and needs only a Google account, no card.
+            OpenAI and Tavily are optional extras. Without any search key, Rishi
+            falls back to Wikipedia summaries.
+          </Text>
+          <Pressable
+            accessibilityRole="link"
+            onPress={() =>
+              void Linking.openURL(providerLinks.gemini.getKey).catch(() => {})
+            }
+          >
+            <Text style={s.link}>Get your free Gemini key ↗</Text>
+          </Pressable>
+        </View>
+      )}
       {Platform.OS !== "web" && (
         <View style={s.notice}>
           <Text style={s.body}>Haptic feedback</Text>
@@ -484,7 +503,9 @@ export default function SettingsScreen({
           <View style={s.notice}>
             {DEVICE_CONNECTIONS && (
               <>
-                <Text style={s.heading}>Web search key (optional)</Text>
+                <Text style={s.heading}>
+                  Optional extra: more reliable web search
+                </Text>
                 <Text style={s.small}>
                   Tavily gives Rishi a separate, reliable web search with a free
                   monthly allowance, so search keeps working when your voice
@@ -612,6 +633,13 @@ export default function SettingsScreen({
   );
 }
 const s = StyleSheet.create({
+  info: {
+    backgroundColor: "#e0e6d8",
+    padding: 18,
+    borderRadius: 18,
+    gap: 8,
+    marginBottom: 16,
+  },
   kicker: {
     fontSize: 10,
     letterSpacing: 2,
