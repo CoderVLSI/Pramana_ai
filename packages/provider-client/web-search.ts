@@ -66,7 +66,7 @@ export async function searchWeb(
         "x-goog-api-key": key,
         "Content-Type": "application/json",
       };
-      let model: string | undefined;
+      let models: string[] = [];
       {
         const listing = await boundedJSON(
           await request(
@@ -74,7 +74,7 @@ export async function searchWeb(
             { headers, signal },
           ),
         );
-        model = (listing.models ?? [])
+        models = (listing.models ?? [])
           .filter(
             (m: any) =>
               typeof m.name === "string" &&
@@ -87,46 +87,64 @@ export async function searchWeb(
           )
           .sort((a: any, b: any) =>
             b.name.localeCompare(a.name, undefined, { numeric: true }),
-          )[0]?.name;
+          )
+          .slice(0, 3)
+          .map((m: any) => m.name as string);
       }
-      if (!model)
+      if (!models.length)
         return {
           source_status: "web_unavailable",
           error: "No accessible Gemini web-search text model was found.",
         };
-      const result = await boundedJSON(
-        await request(
-          `https://generativelanguage.googleapis.com/v1beta/${model}:generateContent`,
-          {
-            method: "POST",
-            headers,
-            signal,
-            body: JSON.stringify({
-              contents: [
-                {
-                  role: "user",
-                  parts: [
+      // A newest-named model can have no quota on this key; try the next ones
+      // before reporting the provider as unavailable.
+      let result: any, lastError: unknown;
+      for (const model of models) {
+        try {
+          result = await boundedJSON(
+            await request(
+              `https://generativelanguage.googleapis.com/v1beta/${model}:generateContent`,
+              {
+                method: "POST",
+                headers,
+                signal,
+                body: JSON.stringify({
+                  contents: [
                     {
-                      text: `Use Google Search now and answer from the search results: ${query}`,
+                      role: "user",
+                      parts: [
+                        {
+                          text: `Use Google Search now and answer from the search results: ${query}`,
+                        },
+                      ],
                     },
                   ],
-                },
-              ],
-              tools: [{ google_search: {} }],
-              generationConfig: { maxOutputTokens: 4096 },
-              systemInstruction: {
-                parts: [
-                  {
-                    text:
-                      "You must run Google Search for every request and answer only from the results. Distinguish scripture editions and interpretations. Do not invent verses or claim external results are verified Gita Press passages." +
-                      memoryInstruction(userMemories),
+                  tools: [{ google_search: {} }],
+                  generationConfig: { maxOutputTokens: 4096 },
+                  systemInstruction: {
+                    parts: [
+                      {
+                        text:
+                          "You must run Google Search for every request and answer only from the results. Distinguish scripture editions and interpretations. Do not invent verses or claim external results are verified Gita Press passages." +
+                          memoryInstruction(userMemories),
+                      },
+                    ],
                   },
-                ],
+                }),
               },
-            }),
-          },
-        ),
-      );
+            ),
+          );
+          break;
+        } catch (e) {
+          lastError = e;
+          if (
+            !(e instanceof ProviderRequestError) ||
+            ![400, 404, 429, 500, 502, 503, 504].includes(e.status ?? 0)
+          )
+            throw e;
+        }
+      }
+      if (!result) throw lastError;
       const candidate = result.candidates?.[0],
         grounding = candidate?.groundingMetadata;
       const evidence: { url: string; title: string }[] = [];
