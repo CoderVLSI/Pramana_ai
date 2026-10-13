@@ -1,0 +1,33 @@
+name: Android test APK
+on:
+  workflow_dispatch:
+  push:
+    branches: [ccr-7ce880be-h31dra]
+    paths: ["apps/mobile/**", "packages/**", ".github/workflows/android-apk.yml"]
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+      - uses: android-actions/setup-android@v3
+      - run: npm ci
+      - name: Generate native project
+        working-directory: apps/mobile
+        run: CI=1 npx expo prebuild --platform android --no-install
+      - name: Build release APK (Expo development signing, arm64)
+        working-directory: apps/mobile/android
+        run: ./gradlew --no-daemon --max-workers=2 :app:assembleRelease -PreactNativeArchitectures=arm64-v8a
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Pramana-preview-apk
+          path: apps/mobile/android/app/build/outputs/apk/release/*.apk
+          if-no-files-found: error

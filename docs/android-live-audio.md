@@ -21,3 +21,8 @@ Send now includes PNG/JPEG pixels and the question in the provider message, with
 ## Stuck-listening follow-up
 
 After ending the other voice session, the Nord 4 no longer reported Android microphone silencing, but no spoken transcript or reply appeared. The raw Gemini adapter now sends `realtimeInput.audio` instead of the deprecated `mediaChunks` field and forwards explicit automatic activity detection settings. Input and output transcription remain enabled. Finish turn pauses outgoing chunks until the reply completes (or a bounded 20-second wait expires), so new capture cannot immediately restart the ended audio stream. A native PCM signal-level indicator distinguishes silence from detected sound; it is a scaled level meter, not a provider transcription acknowledgement. Protocol tests verify setup, audio input, input transcript forwarding, output audio and turn completion. Live cloud speech/phone playback remain unverified.
+
+
+## Two-way voice reliability update
+
+On the loudspeaker the native module now withholds microphone chunks while queued reply audio (plus a 400 ms tail) is still audible, so the provider no longer hears its own reply and interrupts itself. With a wired, USB or Bluetooth headset, capture stays open for full-duplex barge-in. Tap Interrupt to cut a reply on the loudspeaker. Capture also applies a slow, bounded automatic gain (up to 8×, only above the noise floor) because some phones deliver a very quiet voice-recognition signal that never trips the provider's speech detector. `.github/workflows/android-apk.yml` builds the APK on GitHub Actions. Not verified on a physical phone or against a live provider; the Kotlin changes were not compiled in the cloud workspace because the Android SDK host is blocked there.

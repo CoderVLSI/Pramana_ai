@@ -1,6 +1,6 @@
 import { NativeEventEmitter, NativeModules, Platform } from "react-native";
 type AudioEvent = {
-  type: "audio" | "playing" | "ended" | "error" | "paused";
+  type: "audio" | "level" | "playing" | "ended" | "error" | "paused";
   data: string;
 };
 type Module = {

@@ -30,6 +30,11 @@ class PramanaAudioModule(private val context: ReactApplicationContext) :
   @Volatile private var running = false
   @Volatile private var lastError = ""
   @Volatile private var playbackEpoch = 0
+  // Wall-clock time until which queued reply audio is still audible. Without
+  // hardware echo cancellation the microphone would hear the reply and the
+  // provider would interrupt itself, so capture is withheld on the loudspeaker.
+  @Volatile private var replyAudibleUntil = 0L
+  @Volatile private var headsetRoute = false
   @Volatile private var track: AudioTrack? = null
   private var record: AudioRecord? = null
   private var captureThread: Thread? = null
@@ -56,6 +61,16 @@ class PramanaAudioModule(private val context: ReactApplicationContext) :
     context.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter::class.java)
       .emit("PramanaLiveAudio", value)
   }
+  private fun detectHeadset(): Boolean = try {
+    manager.getDevices(AudioManager.GET_DEVICES_OUTPUTS).any {
+      when (it.type) {
+        AudioDeviceInfo.TYPE_WIRED_HEADSET, AudioDeviceInfo.TYPE_WIRED_HEADPHONES,
+        AudioDeviceInfo.TYPE_BLUETOOTH_A2DP, AudioDeviceInfo.TYPE_BLUETOOTH_SCO,
+        AudioDeviceInfo.TYPE_USB_HEADSET -> true
+        else -> Build.VERSION.SDK_INT >= 31 && it.type == AudioDeviceInfo.TYPE_BLE_HEADSET
+      }
+    }
+  } catch (_: Exception) { false }
   @Synchronized @ReactMethod
   fun start(capture: Boolean, promise: Promise) {
     shutdown()
@@ -82,6 +97,8 @@ class PramanaAudioModule(private val context: ReactApplicationContext) :
       track?.setVolume(1.0f)
       if (Build.VERSION.SDK_INT >= 31) track?.setStartThresholdInFrames(1)
       lastError = ""
+      replyAudibleUntil = 0L
+      headsetRoute = detectHeadset()
       capturedFrames.set(0)
       writtenFrames.set(0)
       running = true
@@ -104,6 +121,7 @@ class PramanaAudioModule(private val context: ReactApplicationContext) :
           try { android.os.Process.setThreadPriority(android.os.Process.THREAD_PRIORITY_AUDIO) } catch (_: Exception) {}
           val buffer = ByteArray(1280)
           var packets = 0
+          var gain = 1.0
           try {
             while (running && record === recorder) {
               val count = recorder.read(buffer, 0, buffer.size)
@@ -125,8 +143,31 @@ class PramanaAudioModule(private val context: ReactApplicationContext) :
                   shutdown()
                   break
                 }
+                if (packets % 50 == 0) headsetRoute = detectHeadset()
+                // Some phones deliver a very quiet voice-recognition signal that
+                // never trips the provider's speech detector. Apply a slow, bounded
+                // automatic gain (only above the noise floor) before sending.
+                var peak = 0
+                for (i in 0 until count - 1 step 2) {
+                  val v = Math.abs(((buffer[i].toInt() and 255) or (buffer[i + 1].toInt() shl 8)).toShort().toInt())
+                  if (v > peak) peak = v
+                }
+                if (peak > 200) {
+                  val wanted = (9000.0 / peak).coerceIn(1.0, 8.0)
+                  gain += (wanted - gain) * (if (wanted < gain) 0.5 else 0.05)
+                }
+                if (gain > 1.01) {
+                  for (i in 0 until count - 1 step 2) {
+                    val v = ((buffer[i].toInt() and 255) or (buffer[i + 1].toInt() shl 8)).toShort().toInt()
+                    val g = (v * gain).toInt().coerceIn(-32768, 32767)
+                    buffer[i] = (g and 255).toByte()
+                    buffer[i + 1] = ((g shr 8) and 255).toByte()
+                  }
+                }
                 capturedFrames.addAndGet((count / 2).toLong())
-                emit("audio", Base64.encodeToString(buffer, 0, count, Base64.NO_WRAP))
+                // Half-duplex on the loudspeaker; full duplex (barge-in) on headsets.
+                if (headsetRoute || SystemClock.elapsedRealtime() >= replyAudibleUntil)
+                  emit("audio", Base64.encodeToString(buffer, 0, count, Base64.NO_WRAP))
               }
             }
           } catch (_: Exception) {
@@ -161,6 +202,9 @@ class PramanaAudioModule(private val context: ReactApplicationContext) :
     }
     val epoch = playbackEpoch
     val speaker = track
+    // 24 kHz mono PCM16 = 48 bytes/ms; keep a 400 ms tail for room echo.
+    val now = SystemClock.elapsedRealtime()
+    replyAudibleUntil = maxOf(replyAudibleUntil, now) + bytes.size / 48 + (if (replyAudibleUntil < now) 400 else 0)
     output.execute {
       try {
         if (!running || epoch != playbackEpoch || speaker == null || track !== speaker) return@execute
@@ -203,6 +247,7 @@ class PramanaAudioModule(private val context: ReactApplicationContext) :
   }
   @ReactMethod fun interrupt() {
     playbackEpoch++
+    replyAudibleUntil = 0L
     try { track?.let { speaker -> synchronized(speaker) {
       speaker.pause(); speaker.flush(); writtenFrames.set(0)
     } } } catch (_: Exception) {}
