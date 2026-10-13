@@ -229,6 +229,15 @@ export async function requestStudy(
   );
 }
 
+/** Provider the next live session will use, for provider-specific help links. */
+export async function activeProvider(): Promise<"openai" | "gemini" | null> {
+  if (!DEVICE_CONNECTIONS) return null;
+  try {
+    return (await deviceClient.credentials()).active_provider;
+  } catch {
+    return null;
+  }
+}
 export async function createConversationSocket(options: {
   preferredName?: string;
   workIds: string[];

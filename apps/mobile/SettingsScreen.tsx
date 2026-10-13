@@ -4,6 +4,7 @@ import DeviceDataSettings from "./DeviceDataSettings";
 import ReadingSettings from "./ReadingSettings";
 import ReminderSettings from "./ReminderSettings";
 import { View, Text, TextInput, Pressable } from "./ui";
+import { providerLinks } from "./provider-links";
 import { hapticsEnabled, setHapticsEnabled, selectionHaptic } from "./haptics";
 import React, { useEffect, useState } from "react";
 import ScripturePacks from "./ScripturePacks";
@@ -253,6 +254,33 @@ export default function SettingsScreen({
               Keys are cleared from this field after saving. Provider usage is
               billed to your account.
             </Text>
+            <View style={{ gap: 6 }}>
+              {(
+                [
+                  [
+                    "Get a free or paid API key ↗",
+                    providerLinks[provider].getKey,
+                  ],
+                  ["Add credits or billing ↗", providerLinks[provider].billing],
+                  [
+                    "Check usage and remaining quota ↗",
+                    providerLinks[provider].usage,
+                  ],
+                ] as const
+              ).map(([label, url]) => (
+                <Pressable
+                  key={label}
+                  accessibilityRole="link"
+                  onPress={() => void Linking.openURL(url).catch(() => {})}
+                >
+                  <Text style={s.link}>{label}</Text>
+                </Pressable>
+              ))}
+              <Text style={s.small}>
+                {providerLinks[provider].name} does not let apps read your
+                credit balance with a normal API key, so check it on their site.
+              </Text>
+            </View>
             <Text style={s.heading}>Main voice model</Text>
             {models.map((m) => {
               const expired =

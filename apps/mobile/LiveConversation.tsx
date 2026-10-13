@@ -23,9 +23,15 @@ import {
   PermissionsAndroid,
 } from "react-native";
 import {
+  activeProvider,
   createConversationSocket,
   readClaimScreenshot,
 } from "./settings-client";
+import {
+  needsProviderAccount,
+  providerLinks,
+  type LinkedProvider,
+} from "./provider-links";
 import type { AudioPlayer } from "expo-audio";
 import type { ExpoSpeechRecognitionModuleType } from "expo-speech-recognition/build/ExpoSpeechRecognitionModule.types";
 
@@ -234,6 +240,7 @@ export default function LiveConversation({
   const [sessionNotice, setSessionNotice] = useState("");
   const requestingPermission = useRef(false);
   const [connectedModel, setConnectedModel] = useState("");
+  const [provider, setProvider] = useState<LinkedProvider | null>(null);
   const [lines, setLines] = useState<Line[]>([]);
   const linesRef = useRef<Line[]>([]);
   linesRef.current = lines;
@@ -750,6 +757,9 @@ export default function LiveConversation({
         recognition.current = module;
       }
       startingNativeAudio = false;
+      void activeProvider().then((p) => {
+        if (session === generation.current) setProvider(p);
+      });
       const ws = await createConversationSocket({
         preferredName,
         workIds,
@@ -1345,7 +1355,32 @@ export default function LiveConversation({
         {!!sessionNotice && (
           <View accessibilityLiveRegion="assertive" style={styles.notice}>
             <Glyph name="information-circle" size={18} color="#755019" />
-            <Text style={styles.noticeText}>{sessionNotice}</Text>
+            <View style={{ flex: 1, gap: 8 }}>
+              <Text style={styles.noticeText}>{sessionNotice}</Text>
+              {!!provider && needsProviderAccount(sessionNotice) && (
+                <View style={styles.noticeActions}>
+                  {(
+                    [
+                      ["Add credits", providerLinks[provider].billing],
+                      ["Get API key", providerLinks[provider].getKey],
+                    ] as const
+                  ).map(([label, url]) => (
+                    <Pressable
+                      key={label}
+                      accessibilityRole="link"
+                      onPress={() =>
+                        void Linking.openURL(url).catch(() =>
+                          notice("The link could not open."),
+                        )
+                      }
+                      style={styles.noticeAction}
+                    >
+                      <Text style={styles.noticeActionText}>{label} ↗</Text>
+                    </Pressable>
+                  ))}
+                </View>
+              )}
+            </View>
           </View>
         )}
         <ScrollView
@@ -1577,6 +1612,22 @@ export default function LiveConversation({
                     />
                   )}
                   <Text style={styles.toolChipText}>{chip.label}</Text>
+                  {chip.state === "problem" &&
+                    !!provider &&
+                    needsProviderAccount(tool) && (
+                      <Pressable
+                        accessibilityRole="link"
+                        onPress={() =>
+                          void Linking.openURL(
+                            providerLinks[provider].billing,
+                          ).catch(() => notice("The link could not open."))
+                        }
+                      >
+                        <Text style={styles.noticeActionText}>
+                          Add credits ↗
+                        </Text>
+                      </Pressable>
+                    )}
                 </View>
               );
             })}
@@ -1825,7 +1876,15 @@ const styles = StyleSheet.create({
     borderRadius: 14,
     backgroundColor: "#f7e9de",
   },
-  noticeText: { flex: 1, fontSize: 13, lineHeight: 19, color: "#755019" },
+  noticeText: { fontSize: 13, lineHeight: 19, color: "#755019" },
+  noticeActions: { flexDirection: "row", flexWrap: "wrap", gap: 8 },
+  noticeAction: {
+    paddingHorizontal: 12,
+    paddingVertical: 7,
+    borderRadius: 999,
+    backgroundColor: "#ffffff",
+  },
+  noticeActionText: { fontSize: 13, fontWeight: "600", color: "#315444" },
   list: { paddingHorizontal: 16, paddingTop: 8, paddingBottom: 16, gap: 10 },
   empty: {
     alignItems: "center",
