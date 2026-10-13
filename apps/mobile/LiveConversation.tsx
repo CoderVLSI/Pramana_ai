@@ -803,11 +803,19 @@ export default function LiveConversation({
               });
             }
             setSources((previous) => [...previous, ...found].slice(-12));
-            if (!found.length)
+            if (!found.length) {
+              const r = (message.result ?? {}) as Record<string, unknown>;
+              const why = [r.error, r.detail]
+                .filter((v): v is string => typeof v === "string" && !!v)
+                .join(" · ")
+                .slice(0, 220);
               setTools((previous) => [
                 ...previous.slice(-7),
-                "Source check returned no displayable references",
+                why
+                  ? `Source check failed: ${why}`
+                  : "Source check returned no displayable references",
               ]);
+            }
           } else if (
             message.type === "grounding" ||
             message.type === "groundingMetadata"

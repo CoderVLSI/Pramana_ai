@@ -201,7 +201,7 @@ export function createLiveAgent(options: LiveAgentOptions) {
       const result = await Promise.race([
         runTool(name as LiveTool, values),
         new Promise((_, reject) => {
-          timeout = setTimeout(() => reject(new Error("Tool timeout")), 15000);
+          timeout = setTimeout(() => reject(new Error("Tool timeout")), 30000);
         }),
       ]);
       const serialized = JSON.stringify(result);

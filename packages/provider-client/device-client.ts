@@ -11,7 +11,7 @@ import {
   type Provider,
 } from "./models";
 import { emptyProfile, publicProfile, type ProviderProfile } from "./profile";
-import { searchWeb } from "./web-search";
+import { searchWeb, type WebResult } from "./web-search";
 
 export interface SecretStorage {
   get(): Promise<string | null>;
@@ -278,7 +278,7 @@ export class DeviceClient {
           : await this.webSearch(body.query),
     };
   }
-  async webSearch(query: string) {
+  async webSearch(query: string): Promise<WebResult> {
     const p = await this.credentials();
     try {
       return await searchWeb(
@@ -294,6 +294,10 @@ export class DeviceClient {
           e instanceof ProviderRequestError
             ? e.message
             : "Web search could not complete. Check your provider key, model access and quota in Settings.",
+        detail:
+          e instanceof Error
+            ? e.message.replace(/AIza\S+|sk-\S+/g, "").slice(0, 160)
+            : undefined,
       };
     }
   }

@@ -40,6 +40,7 @@ export interface WebResult {
   search_entry_point?: string;
   search_queries?: string[];
   error?: string;
+  detail?: string;
   note?: string;
 }
 export async function searchWeb(
@@ -49,7 +50,7 @@ export async function searchWeb(
   userMemories: string[] = [],
 ): Promise<WebResult> {
   const controller = new AbortController(),
-    timer = setTimeout(() => controller.abort(), 15000);
+    timer = setTimeout(() => controller.abort(), 25000);
   try {
     if (!query.trim() || query.length > 2000)
       throw Error("Invalid search query");
@@ -65,24 +66,29 @@ export async function searchWeb(
         "x-goog-api-key": key,
         "Content-Type": "application/json",
       };
-      const listing = await boundedJSON(
-        await request(
-          "https://generativelanguage.googleapis.com/v1beta/models?pageSize=1000",
-          { headers, signal },
-        ),
-      );
-      const model = (listing.models ?? [])
-        .filter(
-          (m: any) =>
-            typeof m.name === "string" &&
-            /^models\/gemini-[a-z0-9.-]+$/.test(m.name) &&
-            m.supportedGenerationMethods?.includes("generateContent") &&
-            /flash/.test(m.name) &&
-            !/live|audio|image|tts|embedding/.test(m.name),
-        )
-        .sort((a: any, b: any) =>
-          b.name.localeCompare(a.name, undefined, { numeric: true }),
-        )[0]?.name;
+      let model: string | undefined;
+      {
+        const listing = await boundedJSON(
+          await request(
+            "https://generativelanguage.googleapis.com/v1beta/models?pageSize=1000",
+            { headers, signal },
+          ),
+        );
+        model = (listing.models ?? [])
+          .filter(
+            (m: any) =>
+              typeof m.name === "string" &&
+              /^models\/gemini-[a-z0-9.-]+$/.test(m.name) &&
+              m.supportedGenerationMethods?.includes("generateContent") &&
+              /flash/.test(m.name) &&
+              !/live|audio|image|tts|embedding|computer|robotics|exp|learnlm|thinking/.test(
+                m.name,
+              ),
+          )
+          .sort((a: any, b: any) =>
+            b.name.localeCompare(a.name, undefined, { numeric: true }),
+          )[0]?.name;
+      }
       if (!model)
         return {
           source_status: "web_unavailable",
@@ -96,14 +102,23 @@ export async function searchWeb(
             headers,
             signal,
             body: JSON.stringify({
-              contents: [{ role: "user", parts: [{ text: query }] }],
+              contents: [
+                {
+                  role: "user",
+                  parts: [
+                    {
+                      text: `Use Google Search now and answer from the search results: ${query}`,
+                    },
+                  ],
+                },
+              ],
               tools: [{ google_search: {} }],
-              generationConfig: { maxOutputTokens: 1200 },
+              generationConfig: { maxOutputTokens: 4096 },
               systemInstruction: {
                 parts: [
                   {
                     text:
-                      "Search the web to answer. Distinguish scripture editions and interpretations. Do not invent verses or claim external results are verified Gita Press passages." +
+                      "You must run Google Search for every request and answer only from the results. Distinguish scripture editions and interpretations. Do not invent verses or claim external results are verified Gita Press passages." +
                       memoryInstruction(userMemories),
                   },
                 ],
