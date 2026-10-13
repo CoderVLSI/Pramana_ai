@@ -25,3 +25,8 @@ export function needsProviderAccount(message: string): boolean {
     message,
   );
 }
+/** Optional independent web-search provider. */
+export const tavilyLinks = {
+  getKey: "https://app.tavily.com",
+  usage: "https://app.tavily.com",
+};

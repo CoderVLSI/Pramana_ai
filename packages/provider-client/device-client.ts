@@ -12,6 +12,7 @@ import {
 } from "./models";
 import { emptyProfile, publicProfile, type ProviderProfile } from "./profile";
 import { searchWeb, type WebResult } from "./web-search";
+import { searchTavily } from "./tavily-search";
 
 export interface SecretStorage {
   get(): Promise<string | null>;
@@ -63,6 +64,13 @@ export class DeviceClient {
       if (
         !["gemini", "openai"].includes(p.active_provider) ||
         typeof p.cross_provider_fallback !== "boolean"
+      )
+        throw Error();
+      if (
+        p.search !== undefined &&
+        (typeof p.search !== "object" ||
+          (p.search?.tavily_api_key !== undefined &&
+            typeof p.search.tavily_api_key !== "string"))
       )
         throw Error();
       for (const provider of ["gemini", "openai"] as const) {
@@ -137,6 +145,48 @@ export class DeviceClient {
       await this.storage.set(JSON.stringify(p));
       return publicProfile(p);
     });
+  }
+  /** Stores or removes the optional Tavily web-search key. */
+  saveSearchKey(body: { api_key?: string; remove?: boolean }) {
+    return this.mutate(async () => {
+      if (
+        body.api_key !== undefined &&
+        (!body.api_key.trim() ||
+          body.api_key.length > 1024 ||
+          /[\s\u0000-\u001f]/.test(body.api_key))
+      )
+        throw Error("Enter a valid search key without spaces.");
+      const raw = await this.storage.get(),
+        p: ProviderProfile = raw ? JSON.parse(raw) : emptyProfile();
+      if (body.remove) delete p.search;
+      else if (body.api_key) p.search = { tavily_api_key: body.api_key.trim() };
+      await this.storage.set(JSON.stringify(p));
+      return publicProfile(p);
+    });
+  }
+  async testSearchKey() {
+    const key = (await this.credentials()).search?.tavily_api_key;
+    if (!key) throw Error("Save your Tavily key first.");
+    const controller = new AbortController(),
+      timer = setTimeout(() => controller.abort(), 15000);
+    try {
+      await searchTavily(key, "Bhagavad Gita", this.request, controller.signal);
+      return { message: "Tavily search works. This test used 1 search credit." };
+    } catch (e) {
+      if (controller.signal.aborted)
+        throw Error("Tavily connection timed out. Try again.");
+      if (e instanceof ProviderRequestError)
+        throw Error(
+          (e.status === 401 || e.status === 403
+            ? "Tavily rejected this key."
+            : e.status === 429 || e.status === 432 || e.status === 433
+              ? "Tavily credit or rate limit reached."
+              : "Tavily check failed.") + (e.detail ? ` ${e.detail}` : ""),
+        );
+      throw Error("Could not reach Tavily. Check your internet connection.");
+    } finally {
+      clearTimeout(timer);
+    }
   }
   disconnectSettings() {
     return this.mutate(() => this.storage.remove());

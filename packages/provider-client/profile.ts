@@ -9,6 +9,8 @@ export interface ProviderProfile {
   cross_provider_fallback: boolean;
   openai: { api_key?: string; model: string; fallback_models: string[] };
   gemini: { api_key?: string; model: string; fallback_models: string[] };
+  /** Optional independent web-search provider; used before provider-native search. */
+  search?: { tavily_api_key?: string };
 }
 export function emptyProfile(): ProviderProfile {
   return {
@@ -38,6 +40,7 @@ export function publicProfile(p: ProviderProfile) {
       fallback_models: [...p.gemini.fallback_models],
       configured: !!p.gemini.api_key,
     },
+    search: { tavily_configured: !!p.search?.tavily_api_key },
   };
 }
 export function fallbackChain(profile: ProviderProfile) {

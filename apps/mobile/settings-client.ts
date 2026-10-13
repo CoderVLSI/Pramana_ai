@@ -21,6 +21,7 @@ export interface PublicProfile {
   cross_provider_fallback: boolean;
   openai: { model: string; configured: boolean; fallback_models: string[] };
   gemini: { model: string; configured: boolean; fallback_models: string[] };
+  search?: { tavily_configured: boolean };
 }
 export interface Model {
   id: string;
@@ -115,6 +116,20 @@ export const saveSettings = async (body: {
   DEVICE_CONNECTIONS
     ? deviceClient.saveSettings(body)
     : raw("/v1/settings", "PUT", body, await settingsToken());
+/** Optional Tavily web-search key; stored on this phone only. */
+export const saveSearchKey = async (body: {
+  api_key?: string;
+  remove?: boolean;
+}): Promise<PublicProfile> => {
+  if (!DEVICE_CONNECTIONS)
+    throw Error("Search keys are stored on the phone app only.");
+  return deviceClient.saveSearchKey(body);
+};
+export const testSearchKey = async (): Promise<{ message: string }> => {
+  if (!DEVICE_CONNECTIONS)
+    throw Error("Search keys are stored on the phone app only.");
+  return deviceClient.testSearchKey();
+};
 export const testSettings = async (
   provider: Provider,
 ): Promise<{ message: string }> =>

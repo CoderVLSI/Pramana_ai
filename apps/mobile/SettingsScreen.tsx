@@ -4,7 +4,7 @@ import DeviceDataSettings from "./DeviceDataSettings";
 import ReadingSettings from "./ReadingSettings";
 import ReminderSettings from "./ReminderSettings";
 import { View, Text, TextInput, Pressable } from "./ui";
-import { providerLinks } from "./provider-links";
+import { providerLinks, tavilyLinks } from "./provider-links";
 import { hapticsEnabled, setHapticsEnabled, selectionHaptic } from "./haptics";
 import React, { useEffect, useState } from "react";
 import ScripturePacks from "./ScripturePacks";
@@ -20,6 +20,8 @@ import {
   loadCatalog,
   loadSettings,
   saveSettings,
+  saveSearchKey,
+  testSearchKey,
   testSettings,
   disconnectSettings,
   resetSettingsSession,
@@ -53,6 +55,7 @@ export default function SettingsScreen({
     [fallbacks, setFallbacks] = useState<string[]>([]),
     [cross, setCross] = useState(false),
     [key, setKey] = useState(""),
+    [searchKey, setSearchKey] = useState(""),
     [busy, setBusy] = useState(true),
     [message, setMessage] = useState(""),
     [error, setError] = useState("");
@@ -123,6 +126,39 @@ export default function SettingsScreen({
     setMessage("");
     try {
       setMessage((await testSettings(provider)).message);
+    } catch (e) {
+      setError((e as Error).message);
+    } finally {
+      setBusy(false);
+    }
+  }
+  async function saveSearch(remove = false) {
+    setBusy(true);
+    setError("");
+    setMessage("");
+    try {
+      const p = await saveSearchKey(
+        remove ? { remove: true } : { api_key: searchKey.trim() },
+      );
+      setProfile(p);
+      setSearchKey("");
+      setMessage(
+        remove
+          ? "Tavily search key removed."
+          : "Tavily key saved on this phone. Web search will use it first.",
+      );
+    } catch (e) {
+      setError((e as Error).message);
+    } finally {
+      setBusy(false);
+    }
+  }
+  async function testSearch() {
+    setBusy(true);
+    setError("");
+    setMessage("");
+    try {
+      setMessage((await testSearchKey()).message);
     } catch (e) {
       setError((e as Error).message);
     } finally {
@@ -446,6 +482,70 @@ export default function SettingsScreen({
             </Text>
           </View>
           <View style={s.notice}>
+            {DEVICE_CONNECTIONS && (
+              <>
+                <Text style={s.heading}>Web search key (optional)</Text>
+                <Text style={s.small}>
+                  Tavily gives Rishi a separate, reliable web search with a free
+                  monthly allowance, so search keeps working when your voice
+                  provider's own search is out of quota.{" "}
+                  {profile?.search?.tavily_configured
+                    ? "A Tavily key is saved."
+                    : "No Tavily key saved."}
+                </Text>
+                <TextInput
+                  accessibilityLabel="Tavily API key"
+                  value={searchKey}
+                  onChangeText={setSearchKey}
+                  editable={!busy}
+                  secureTextEntry
+                  autoCapitalize="none"
+                  autoCorrect={false}
+                  textContentType="none"
+                  autoComplete="off"
+                  placeholder="Paste your Tavily key (tvly-…)"
+                  placeholderTextColor="#838b80"
+                  style={s.field}
+                />
+                <View
+                  style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}
+                >
+                  <Pressable
+                    disabled={busy || !searchKey.trim()}
+                    onPress={() => void saveSearch(false)}
+                    style={[s.button, !searchKey.trim() && { opacity: 0.5 }]}
+                  >
+                    <Text style={s.buttonText}>Save search key</Text>
+                  </Pressable>
+                  {profile?.search?.tavily_configured && (
+                    <>
+                      <Pressable
+                        disabled={busy}
+                        onPress={() => void testSearch()}
+                        style={s.outline}
+                      >
+                        <Text style={s.body}>Test search</Text>
+                      </Pressable>
+                      <Pressable
+                        disabled={busy}
+                        onPress={() => void saveSearch(true)}
+                        style={s.outline}
+                      >
+                        <Text style={s.body}>Remove key</Text>
+                      </Pressable>
+                    </>
+                  )}
+                </View>
+                <Pressable
+                  accessibilityRole="link"
+                  onPress={() =>
+                    void Linking.openURL(tavilyLinks.getKey).catch(() => {})
+                  }
+                >
+                  <Text style={s.link}>Get a free Tavily key ↗</Text>
+                </Pressable>
+              </>
+            )}
             <Text style={s.heading}>Source verification stays on</Text>
             <Text style={s.body}>{catalog.reason}</Text>
             <Text style={s.small}>

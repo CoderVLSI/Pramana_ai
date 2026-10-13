@@ -1,4 +1,5 @@
 import { ProviderRequestError, providerReason } from "./provider-error";
+import { searchTavily } from "./tavily-search";
 import { memoryInstruction } from "./memory";
 import type { ProviderProfile } from "./profile";
 function concat(chunks: Uint8Array[]) {
@@ -68,6 +69,15 @@ export async function searchWeb(
   try {
     if (!query.trim() || query.length > 2000)
       throw Error("Invalid search query");
+    const tavilyKey = profile.search?.tavily_api_key;
+    if (tavilyKey) {
+      try {
+        return await searchTavily(tavilyKey, query, request, controller.signal);
+      } catch (e) {
+        // Fall back to the provider's own search when its key exists; otherwise report Tavily's failure.
+        if (!profile[profile.active_provider].api_key) throw e;
+      }
+    }
     if (profile.active_provider === "gemini") {
       const key = profile.gemini.api_key;
       if (!key)

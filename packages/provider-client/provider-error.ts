@@ -20,7 +20,14 @@ export class ProviderRequestError extends Error {
 /** Provider-written reason, trimmed and stripped of credentials, for diagnostics only. */
 export function providerReason(body: string): string | undefined {
   try {
-    const message = JSON.parse(body)?.error?.message;
+    const data = JSON.parse(body);
+    const message = [
+      data?.error?.message,
+      data?.detail?.error,
+      data?.detail,
+      data?.message,
+      data?.error,
+    ].find((v) => typeof v === "string");
     if (typeof message !== "string") return;
     return message
       .replace(/AIza[\w-]{10,}|sk-[\w-]{10,}/g, "[key]")
