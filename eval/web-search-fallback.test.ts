@@ -86,13 +86,13 @@ test("provider's own error text is kept (without keys) and stable models rank fi
   assert.deepEqual(
     [
       "models/gemini-flash-latest",
-      "models/gemini-2.5-flash-lite",
-      "models/gemini-2.5-flash",
+      "models/gemini-3.5-flash-lite",
+      "models/gemini-3.8-flash",
       "models/gemini-3-flash-preview",
     ].sort(rankModels),
     [
-      "models/gemini-2.5-flash",
-      "models/gemini-2.5-flash-lite",
+      "models/gemini-3.8-flash",
+      "models/gemini-3.5-flash-lite",
       "models/gemini-3-flash-preview",
       "models/gemini-flash-latest",
     ],
