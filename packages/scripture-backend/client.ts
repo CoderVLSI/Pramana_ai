@@ -58,7 +58,7 @@ export function validateRemotePassages(
     if (
       !p ||
       typeof p.id !== "string" ||
-      !/^gp_[a-f0-9]{28}$/.test(p.id) ||
+      !/^(?:gp|pd)_[a-f0-9]{28}$/.test(p.id) ||
       ids.has(p.id) ||
       p.review_status !== "approved" ||
       typeof p.original !== "string" ||

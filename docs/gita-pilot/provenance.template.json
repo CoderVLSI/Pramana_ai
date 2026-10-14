@@ -1,0 +1,50 @@
+{
+  "_comment": "FILL EVERY FIELD FROM THE REAL SOURCE FILES. Nothing here is real data. Remove this line before use.",
+  "manifest": {
+    "work_id": "bhagavad-gita",
+    "edition_id": "FILL_IN: short id for this Sanskrit text + translation pairing",
+    "release": "FILL_IN: e.g. gita-open-1",
+    "completeness": "complete",
+    "publisher": "FILL_IN: site or collection the files came from",
+    "publisher_location": "n/a",
+    "license_id": "public-domain",
+    "public_domain_basis": "FILL_IN: why each source is free to use, e.g. translator died in YEAR, first published YEAR",
+    "permission_proof": "FILL_IN: where a reviewer recorded the rights check",
+    "permissions": ["index", "quote"],
+    "rights_approved": false,
+    "source_url": "https://FILL_IN",
+    "sources": [
+      {
+        "role": "original",
+        "title": "FILL_IN",
+        "author": "FILL_IN",
+        "publication_year": 0,
+        "url": "https://FILL_IN",
+        "sha256": "FILL_IN: sha256sum of the exact downloaded file",
+        "retrieved_at": "FILL_IN: 2026-MM-DD"
+      },
+      {
+        "role": "translation",
+        "title": "FILL_IN",
+        "author": "FILL_IN",
+        "publication_year": 0,
+        "url": "https://FILL_IN",
+        "sha256": "FILL_IN",
+        "retrieved_at": "FILL_IN"
+      }
+    ],
+    "hierarchy_levels": [],
+    "reviewers": ["FILL_IN: reviewer 1", "FILL_IN: reviewer 2"],
+    "reviewed_at": "FILL_IN: 2026-MM-DD",
+    "complete_coverage_confirmed": false
+  },
+  "expected_verses_per_chapter": {
+    "_comment": "FILL_IN all 18 chapters using THIS edition's verse counts (editions differ, 700 vs 701), then delete this line"
+  },
+  "translation": {
+    "language": "en",
+    "author": "FILL_IN",
+    "license_id": "public-domain",
+    "permission_proof": "FILL_IN"
+  }
+}

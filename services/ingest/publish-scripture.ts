@@ -1,25 +1,28 @@
 /** Validate first; stage bounded batches; publish only after a complete count check. */
 import { readFile } from "node:fs/promises";
 import { isDeepStrictEqual } from "node:util";
-import {
-  validateGitaPressBundle,
-  scriptureDigest,
-} from "../../packages/corpus-schema/gita-press";
+import { scriptureDigest } from "../../packages/corpus-schema/gita-press";
+import { validateScriptureBundle } from "../../packages/corpus-schema/public-domain";
 import { normalizeSourceLanguage } from "../../packages/device-preferences";
 export function prepareRelease(raw: unknown) {
-  const { manifest, passages } = validateGitaPressBundle(raw, true);
+  const { manifest, passages } = validateScriptureBundle(raw, true);
   const id =
     "release_" +
     scriptureDigest(
       JSON.stringify([manifest.work_id, manifest.edition_id, manifest.release]),
     ).slice(0, 32);
-  const rows = passages.map((p) => {
+  const rows = passages.map((p: any) => {
     const quotation = p.translation?.text ?? p.original;
     const passage = {
       id: p.id,
       work_id: p.work_id,
       edition_id: p.edition_id,
-      reference: `${p.work_id}, ${p.hierarchy.map((l) => `${l.name} ${l.value}`).join(", ")}, chapter ${p.chapter}, verse ${p.verse} (volume ${p.source_locator.volume}, printed page ${p.source_locator.printed_page}; scan ${p.source_locator.pdf_page})`,
+      reference: [
+        p.work_id,
+        ...p.hierarchy.map((l: any) => `${l.name} ${l.value}`),
+        `chapter ${p.chapter}`,
+        `verse ${p.verse} (volume ${p.source_locator.volume}, printed page ${p.source_locator.printed_page}; scan ${p.source_locator.pdf_page})`,
+      ].join(", "),
       chapter: p.chapter,
       verse: /^\d+$/.test(p.verse) ? Number(p.verse) : 0,
       exact_verse: p.verse,
@@ -50,9 +53,11 @@ export function prepareRelease(raw: unknown) {
       edition_id: p.edition_id,
       chapter: p.chapter,
       exact_verse: p.verse,
-      locator: [...p.hierarchy.map((l) => l.value), p.chapter, p.verse].join(
-        ".",
-      ),
+      locator: [
+        ...p.hierarchy.map((l: any) => l.value),
+        p.chapter,
+        p.verse,
+      ].join("."),
       translation_language: passage.translation_language,
       passage,
     };
