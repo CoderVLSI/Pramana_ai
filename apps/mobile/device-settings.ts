@@ -1,7 +1,7 @@
 import { readApprovedMemory } from "./memory-context";
 import * as SecureStore from "expo-secure-store";
 import { DeviceClient } from "../../packages/provider-client/device-client";
-import { localScripture } from "./device-corpus";
+import { retrieveScripture } from "./scripture-retrieval";
 const DEVICE_KEY = "pramana.device.connections.v1";
 export const deviceClient = new DeviceClient(
   {
@@ -14,6 +14,6 @@ export const deviceClient = new DeviceClient(
   },
   globalThis.fetch,
   async (query, workIds, filters) =>
-    (await localScripture()).answer(query, { work_ids: workIds, ...filters }),
+    retrieveScripture(query, { work_ids: workIds, ...filters }),
   readApprovedMemory,
 );

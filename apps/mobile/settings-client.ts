@@ -4,7 +4,12 @@ import type { ScreenshotInput } from "../../packages/provider-client/screenshot"
 import { Platform } from "react-native";
 import * as SecureStore from "expo-secure-store";
 import { deviceClient } from "./device-settings";
-import { deviceCorpusStatus, localScripture } from "./device-corpus";
+import { deviceCorpusStatus } from "./device-corpus";
+import {
+  retrieveScripture,
+  scriptureBackend,
+  SCRIPTURE_BACKEND_ENABLED,
+} from "./scripture-retrieval";
 import { isAppConversation } from "../../packages/citation-schema/conversation";
 import {
   createDeviceLiveSocket,
@@ -289,11 +294,26 @@ export async function createConversationSocket(options: {
     profile,
     make,
     async (name, args) => {
-      if (name === "corpus_status")
-        return {
-          source_status: "approved_index_counts",
-          ...(await deviceCorpusStatus()),
-        };
+      if (name === "corpus_status") {
+        const local = await deviceCorpusStatus();
+        if (!SCRIPTURE_BACKEND_ENABLED)
+          return { source_status: "approved_index_counts", ...local };
+        try {
+          return {
+            source_status: "approved_index_counts",
+            installed: local,
+            cloud: await scriptureBackend.catalog(),
+            note: "Installed and cloud counts are separate and may overlap.",
+          };
+        } catch {
+          return {
+            source_status: "approved_index_counts",
+            installed: local,
+            cloud_status: "unavailable",
+            note: "Cloud coverage was not checked; do not infer absence.",
+          };
+        }
+      }
       if (name === "fact_check_claim")
         return deviceClient.factCheck({
           query: String(args.query || ""),
@@ -303,13 +323,12 @@ export async function createConversationSocket(options: {
           enable_web: options.enableWebSearch,
         });
       if (name === "search_scripture") {
-        const answer = (await localScripture()).answer(
-          String(args.query || ""),
-          { work_ids: options.workIds },
-        );
+        const answer = await retrieveScripture(String(args.query || ""), {
+          work_ids: options.workIds,
+        });
         if (answer.citations.length)
           return {
-            source_status: "reviewed_local_passages",
+            source_status: "reviewed_scripture_passages",
             evidence: answer.citations,
             claims: answer.claims,
             safe_to_speak: answer.safe_to_speak,

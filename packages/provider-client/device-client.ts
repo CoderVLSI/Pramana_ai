@@ -388,7 +388,7 @@ export class DeviceClient {
           : "Matching source passages are shown on screen. Audio permission is not recorded for these excerpts.",
         provider,
         audio: null,
-        note: "Retrieved from this phone’s installed scripture packs.",
+        note: "Retrieved from the reviewed scripture collection.",
       };
     return {
       kind:

@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "status": "private_unreviewed_index",
+  "source_assets": 31,
+  "scan_pages": 35445,
+  "searchable_pages": 33635,
+  "excluded_pages": 1810,
+  "approved_passages": 0,
+  "build_ms": 20194,
+  "measured_on": "2026-10-13",
+  "index_size_bytes": 276660224,
+  "queries": [
+    {
+      "query": "धर्म",
+      "hits": 5,
+      "median_ms": 12.84,
+      "max_ms": 40.5
+    },
+    {
+      "query": "भक्ति",
+      "hits": 5,
+      "median_ms": 8.04,
+      "max_ms": 20.74
+    },
+    {
+      "query": "राम",
+      "hits": 5,
+      "median_ms": 7.94,
+      "max_ms": 8.7
+    },
+    {
+      "query": "शिव",
+      "hits": 5,
+      "median_ms": 10.24,
+      "max_ms": 42.32
+    },
+    {
+      "query": "moksha",
+      "hits": 5,
+      "median_ms": 5.19,
+      "max_ms": 6.27
+    },
+    {
+      "query": "karma",
+      "hits": 5,
+      "median_ms": 8.75,
+      "max_ms": 27.32
+    },
+    {
+      "query": "विष्णु",
+      "hits": 5,
+      "median_ms": 11.1,
+      "max_ms": 13.0
+    }
+  ],
+  "public_reviewed_passages": 0,
+  "cloud_deployment": "scripture_retrieval_migration_applied_2026-10-14",
+  "app_integration": "reviewed_backend_feature_flag_off_until_deployment",
+  "source_scope": "31 source assets are candidates; counts do not establish full-work or publisher coverage",
+  "validation": {
+    "javascript_tests_passed": 94,
+    "python_tests_passed": 20,
+    "postgresql_17_integration": "passed",
+    "typescript": "passed",
+    "expo_web_export": "passed",
+    "expo_android_export": "passed",
+    "actual_supabase_rpc": "passed_public_catalog_read_2026-10-14",
+    "phone_retrieval": "not_verified"
+  },
+  "integration_pr": "https://github.com/CoderVLSI/Pramana_ai/pull/1",
+  "claude_base_commit": "81a806b",
+  "live_database_security": {
+    "scripture_releases_rls": true,
+    "scripture_passages_rls": true,
+    "anonymous_insert": false,
+    "anonymous_publish": false
+  }
+}
