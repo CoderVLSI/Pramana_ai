@@ -58,3 +58,8 @@ The PostgreSQL checks exercise the migration, anonymous write/publish denial, un
 Seven real private-index queries were measured five times each: median retrieval 5.19–12.84 ms, worst 42.32 ms on this workspace. This measures lexical retrieval from the local 33,635-page index, not phone/network latency or AI generation.
 
 Live Supabase deployment, actual reviewed-source publication and phone retrieval still need verification. Tests use labeled synthetic fixtures only; they are not corpus content.
+
+
+## Live deployment — 14 October 2026
+
+Supabase MCP access became available in the existing session. The `scripture_retrieval` migration was applied successfully to `fdntjeknihekiqldyrpn` (Pramana, PostgreSQL 17). Both scripture tables have RLS enabled. Anonymous passage insertion and release publication are denied. The actual public Data API `scripture_catalog` request passed and returned an empty released corpus with zero approved passages. No source content or test fixtures were published. Source review/publication and phone retrieval are still pending; the app feature flag remains off. The security advisor also reported pre-existing public-execution grants on the platform-created `public.rls_auto_enable()` event-trigger function; that function was inspected but not changed during this deployment.

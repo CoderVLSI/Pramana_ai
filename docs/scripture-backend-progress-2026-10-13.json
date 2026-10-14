@@ -54,7 +54,7 @@
     }
   ],
   "public_reviewed_passages": 0,
-  "cloud_deployment": "migration_prepared_not_applied",
+  "cloud_deployment": "scripture_retrieval_migration_applied_2026-10-14",
   "app_integration": "reviewed_backend_feature_flag_off_until_deployment",
   "source_scope": "31 source assets are candidates; counts do not establish full-work or publisher coverage",
   "validation": {
@@ -64,9 +64,15 @@
     "typescript": "passed",
     "expo_web_export": "passed",
     "expo_android_export": "passed",
-    "actual_supabase_rpc": "not_available_before_migration",
+    "actual_supabase_rpc": "passed_public_catalog_read_2026-10-14",
     "phone_retrieval": "not_verified"
   },
   "integration_pr": "https://github.com/CoderVLSI/Pramana_ai/pull/1",
-  "claude_base_commit": "81a806b"
+  "claude_base_commit": "81a806b",
+  "live_database_security": {
+    "scripture_releases_rls": true,
+    "scripture_passages_rls": true,
+    "anonymous_insert": false,
+    "anonymous_publish": false
+  }
 }
