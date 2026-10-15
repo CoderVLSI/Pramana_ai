@@ -210,7 +210,7 @@ function StudyApp() {
         editions?: { id: string }[];
       }[]
     >([]),
-    [scope, setScope] = useState(GITA_PRESS_SCOPE),
+    [scope, setScope] = useState("bhagavad-gita"),
     [showSources, setShowSources] = useState(false),
     [report, setReport] = useState(false),
     [reason, setReason] = useState(""),
