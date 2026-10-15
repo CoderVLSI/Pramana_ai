@@ -55,7 +55,7 @@ type Props = {
   onNotice: (notice: string) => void;
 };
 type Line = { role: string; text: string; imageUri?: string };
-type Source = { title: string; url?: string; label: string };
+type Source = { title: string; url?: string; label: string; excerpt?: string };
 type Grounding = { html?: string; queries: string[] };
 type State = "stopped" | "connecting" | "live" | "failed";
 const MAX_AUDIO_BYTES = 1_500_000;
@@ -136,6 +136,11 @@ function sourcesFrom(result: unknown, name: string): Source[] {
           : ""
       : "";
     const aiOnly = source.human_verse_review === false;
+    const excerptText = !isWeb
+      ? String(source.original || source.translation || "")
+          .trim()
+          .slice(0, 700)
+      : "";
     const reviewed =
       !isWeb &&
       (data.source_status === "reviewed_excerpt" ||
@@ -159,6 +164,7 @@ function sourcesFrom(result: unknown, name: string): Source[] {
             source.source_locator ||
             citation.source_url,
         ),
+        excerpt: excerptText || undefined,
         label: isWeb
           ? "Web reference · check source"
           : reviewed && aiOnly
@@ -1324,10 +1330,7 @@ export default function LiveConversation({
   const nativeDock =
     state === "live" && Platform.OS === "android" && microphoneEnabled;
   return (
-    <KeyboardAvoidingView
-      style={{ flex: 1 }}
-      behavior={Platform.OS === "ios" ? "padding" : undefined}
-    >
+    <KeyboardAvoidingView style={{ flex: 1 }} behavior="padding">
       <View style={styles.card}>
         <View style={styles.header}>
           <View style={styles.avatarRing}>
@@ -1641,6 +1644,11 @@ export default function LiveConversation({
           {sources.map((source, i) => (
             <View key={i} style={styles.sourceCard}>
               <Text style={styles.sourceLabel}>{source.label}</Text>
+              {!!source.excerpt && (
+                <Text selectable style={styles.sourceExcerpt}>
+                  {source.excerpt}
+                </Text>
+              )}
               <Text style={styles.sourceTitle}>{source.title}</Text>
               {source.url && (
                 <Pressable
@@ -1982,6 +1990,7 @@ const styles = StyleSheet.create({
     fontWeight: "700",
     color: "#755019",
   },
+  sourceExcerpt: { fontSize: 20, lineHeight: 32, color: "#1d2f29" },
   sourceTitle: { fontSize: 15, lineHeight: 21, color: "#263d35" },
   sourceLink: { flexDirection: "row", alignItems: "center", gap: 6 },
   link: { color: "#315444", fontWeight: "600", paddingVertical: 4 },

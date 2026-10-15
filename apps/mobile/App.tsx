@@ -61,6 +61,7 @@ import {
   useWindowDimensions,
   ActivityIndicator,
   Platform,
+  Keyboard,
 } from "react-native";
 import {
   SafeAreaProvider,
@@ -329,6 +330,20 @@ function StudyApp() {
         () => setError("Could not save bookmarks on this device."),
       );
   }, [saved, ready]);
+  // Hide the bottom tabs while typing so the message box sits right above the keyboard.
+  const [keyboardOpen, setKeyboardOpen] = useState(false);
+  useEffect(() => {
+    const show = Keyboard.addListener("keyboardDidShow", () =>
+      setKeyboardOpen(true),
+    );
+    const hide = Keyboard.addListener("keyboardDidHide", () =>
+      setKeyboardOpen(false),
+    );
+    return () => {
+      show.remove();
+      hide.remove();
+    };
+  }, []);
   const selectedWorkIds =
     scope === GITA_PRESS_SCOPE
       ? MAHAPURANA_TARGETS.map(([id]) => id)
@@ -1616,7 +1631,7 @@ function StudyApp() {
               </View>
             </ScrollView>
           )}
-          {!wide && (
+          {!wide && !keyboardOpen && (
             <View style={s.bottomNav}>
               {nav.map(([name, icon]) => (
                 <Pressable

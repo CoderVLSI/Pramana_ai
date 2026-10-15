@@ -99,6 +99,13 @@ export function validateRemotePassages(
   }
   return value;
 }
+// A public-domain edition places no audio restriction on its own Sanskrit text; every other
+// source still needs an explicit audio permission in its manifest.
+const canSpeak = (p: Passage) =>
+  p.audio_allowed ||
+  (p.id.startsWith("pd_") &&
+    p.license_id === "public-domain" &&
+    p.quote_source === "original");
 export function remoteAnswer(query: string, passages: Passage[]): Answer {
   return {
     id:
@@ -118,8 +125,7 @@ export function remoteAnswer(query: string, passages: Passage[]): Answer {
       quote_span: [0, p.translation.length],
     })),
     citations: passages,
-    safe_to_speak:
-      passages.length > 0 && passages.every((p) => p.audio_allowed),
+    safe_to_speak: passages.length > 0 && passages.every(canSpeak),
     corpus_release:
       [...new Set(passages.map((p) => p.released_in))].sort().join("+") ||
       "cloud-reviewed-corpus-empty",
