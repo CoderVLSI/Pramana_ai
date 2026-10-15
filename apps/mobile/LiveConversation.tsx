@@ -9,6 +9,7 @@ import {
   useDarkMode,
   useThemeColor,
 } from "./ui";
+import VerseCard, { type VerseInfo } from "./VerseCard";
 import React, { useEffect, useRef, useState } from "react";
 import {
   AppState,
@@ -55,7 +56,13 @@ type Props = {
   onNotice: (notice: string) => void;
 };
 type Line = { role: string; text: string; imageUri?: string };
-type Source = { title: string; url?: string; label: string; excerpt?: string };
+type Source = {
+  title: string;
+  url?: string;
+  label: string;
+  excerpt?: string;
+  verse?: VerseInfo;
+};
 type Grounding = { html?: string; queries: string[] };
 type State = "stopped" | "connecting" | "live" | "failed";
 const MAX_AUDIO_BYTES = 1_500_000;
@@ -141,6 +148,43 @@ function sourcesFrom(result: unknown, name: string): Source[] {
           .trim()
           .slice(0, 700)
       : "";
+    const titleCase = (slug: string) =>
+      slug
+        .split("-")
+        .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+        .join(" ");
+    const hierarchyValues = Array.isArray(source.hierarchy)
+      ? (source.hierarchy as { value?: unknown }[]).map((l) =>
+          String(l?.value ?? ""),
+        )
+      : [];
+    const verse: VerseInfo | undefined =
+      !isWeb &&
+      excerptText &&
+      typeof source.work_id === "string" &&
+      source.chapter
+        ? {
+            work: titleCase(source.work_id),
+            ref: [
+              ...hierarchyValues,
+              String(source.chapter),
+              String(source.exact_verse ?? source.verse ?? ""),
+            ]
+              .filter(Boolean)
+              .join("."),
+            edition: [
+              source.print_year ? `${String(source.print_year)} edition` : "",
+              locator?.pdf_page ? `scan page ${String(locator.pdf_page)}` : "",
+            ]
+              .filter(Boolean)
+              .join(" · "),
+            aiOnly: source.human_verse_review === false,
+          }
+        : undefined;
+    const scanUrl =
+      locator && typeof locator.source_url === "string"
+        ? publicUrl(locator.source_url)
+        : undefined;
     const reviewed =
       !isWeb &&
       (data.source_status === "reviewed_excerpt" ||
@@ -158,13 +202,16 @@ function sourcesFrom(result: unknown, name: string): Source[] {
               source.work_id ||
               "Source reference",
           ).slice(0, 180) + location,
-        url: publicUrl(
-          source.url ||
-            source.source_url ||
-            source.source_locator ||
-            citation.source_url,
-        ),
+        url:
+          scanUrl ||
+          publicUrl(
+            source.url ||
+              source.source_url ||
+              source.source_locator ||
+              citation.source_url,
+          ),
         excerpt: excerptText || undefined,
+        verse,
         label: isWeb
           ? "Web reference · check source"
           : reviewed && aiOnly
@@ -1644,31 +1691,44 @@ export default function LiveConversation({
                 </View>
               );
             })}
-          {sources.map((source, i) => (
-            <View key={i} style={styles.sourceCard}>
-              <Text style={styles.sourceLabel}>{source.label}</Text>
-              {!!source.excerpt && (
-                <Text selectable style={styles.sourceExcerpt}>
-                  {source.excerpt}
-                </Text>
-              )}
-              <Text style={styles.sourceTitle}>{source.title}</Text>
-              {source.url && (
-                <Pressable
-                  accessibilityRole="link"
-                  onPress={() =>
-                    void Linking.openURL(source.url!).catch(() =>
-                      notice("This source link could not open."),
-                    )
-                  }
-                  style={styles.sourceLink}
-                >
-                  <Text style={styles.link}>Open source</Text>
-                  <Glyph name="arrow-forward" size={14} />
-                </Pressable>
-              )}
-            </View>
-          ))}
+          {sources.map((source, i) =>
+            source.verse ? (
+              <VerseCard
+                key={i}
+                source={source}
+                dark={dark}
+                onOpen={(url) =>
+                  void Linking.openURL(url).catch(() =>
+                    notice("This source link could not open."),
+                  )
+                }
+              />
+            ) : (
+              <View key={i} style={styles.sourceCard}>
+                <Text style={styles.sourceLabel}>{source.label}</Text>
+                {!!source.excerpt && (
+                  <Text selectable style={styles.sourceExcerpt}>
+                    {source.excerpt}
+                  </Text>
+                )}
+                <Text style={styles.sourceTitle}>{source.title}</Text>
+                {source.url && (
+                  <Pressable
+                    accessibilityRole="link"
+                    onPress={() =>
+                      void Linking.openURL(source.url!).catch(() =>
+                        notice("This source link could not open."),
+                      )
+                    }
+                    style={styles.sourceLink}
+                  >
+                    <Text style={styles.link}>Open source</Text>
+                    <Glyph name="arrow-forward" size={14} />
+                  </Pressable>
+                )}
+              </View>
+            ),
+          )}
         </ScrollView>
         <View style={styles.dock}>
           {!!image && (
