@@ -13,5 +13,8 @@ the public-domain 1909 Anandashram edition (archive.org item `ksu.g48.srimadbhag
 - **Status:** NO human reviewer yet. `rights_approved` and the two named reviewers required by
   `validatePublicDomainBundle` must come from people. A local pipeline test (700 passages built and validated,
   nothing uploaded) used clearly labelled TEST attestations that are not in this repo.
-- **Still to verify by a human:** editor Hari Narayan Apte's death year, that the archive.org copy is complete,
-  and a sample of verses against the pages.
+- **Editor's death year:** Hari Narayan Apte, born 8 Mar 1864, died 3 Mar 1919 in Pune (Google/Wikipedia panel, checked by
+  the project owner on 2026-10-15). A 1909 edition is public domain in both India and the US on that basis. Not yet
+  confirmed: that this is the same Apte named for the Anandashram series on the scan's title page (the scan's first
+  pages are the table of contents; the title page was not found), and that no other living editor is credited.
+- **Still to verify by a human:** that the archive.org copy is complete, and a sample of verses against the pages.
