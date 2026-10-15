@@ -17,4 +17,6 @@
 
 **Why quality stops here:** archive.org's automatic OCR has no page breaks and cannot tell the large verse type from the small commentary type. Two things would improve it a lot: (1) re-reading the page images with a stronger OCR engine or the layout (hOCR) data, which needs this sandbox to reach archive.org's file servers (\*.us.archive.org) in addition to archive.org itself; (2) page-image links for reviewers.
 
-**Next:** (1) unblock the file servers and re-OCR with layout data; (2) finish the 4 missing verses by hand; (3) two named reviewers compare every verse to the page; (4) then fill \`provenance.template.json\` with this book as the original source and build the bundle.
+**Page links (done):** `services/ingest/scan_layout_extract.py` reads archive.org's `_djvu.xml` and attaches a page number to each drafted verse (639 of 696 placed, page order never goes backwards; the other 57 get a `page_hint` of the pages to look between). Reviewers open `https://archive.org/details/<item>/page/n<page_index>/mode/1up`. Verse text is not changed by this step.
+
+**Next:** (1) improve text quality (stronger OCR of page images); (2) finish the 4 missing verses by hand; (3) two named reviewers compare every verse to the page; (4) then fill \`provenance.template.json\` with this book as the original source and build the bundle.
