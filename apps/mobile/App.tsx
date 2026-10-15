@@ -330,14 +330,16 @@ function StudyApp() {
         () => setError("Could not save bookmarks on this device."),
       );
   }, [saved, ready]);
-  // Hide the bottom tabs while typing so the message box sits right above the keyboard.
-  const [keyboardOpen, setKeyboardOpen] = useState(false);
+  // Android draws edge-to-edge, so the window no longer resizes for the keyboard. Track its height and
+  // pad the whole screen by it (replacing the bottom inset) so the message box sits right above it.
+  const [keyboardHeight, setKeyboardHeight] = useState(0);
+  const keyboardOpen = keyboardHeight > 0;
   useEffect(() => {
-    const show = Keyboard.addListener("keyboardDidShow", () =>
-      setKeyboardOpen(true),
+    const show = Keyboard.addListener("keyboardDidShow", (e) =>
+      setKeyboardHeight(Math.round(e.endCoordinates?.height ?? 0)),
     );
     const hide = Keyboard.addListener("keyboardDidHide", () =>
-      setKeyboardOpen(false),
+      setKeyboardHeight(0),
     );
     return () => {
       show.remove();
@@ -571,7 +573,14 @@ function StudyApp() {
     );
 
   return (
-    <SafeAreaView style={s.root} edges={["top", "right", "bottom", "left"]}>
+    <SafeAreaView
+      style={[s.root, keyboardOpen ? { paddingBottom: keyboardHeight } : null]}
+      edges={
+        keyboardOpen
+          ? ["top", "right", "left"]
+          : ["top", "right", "bottom", "left"]
+      }
+    >
       <StatusBar barStyle={dark ? "light-content" : "dark-content"} />
       <View style={[s.shell, !wide && { flexDirection: "column" }]}>
         {wide && (

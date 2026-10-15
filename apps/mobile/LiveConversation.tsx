@@ -1330,7 +1330,10 @@ export default function LiveConversation({
   const nativeDock =
     state === "live" && Platform.OS === "android" && microphoneEnabled;
   return (
-    <KeyboardAvoidingView style={{ flex: 1 }} behavior="padding">
+    <KeyboardAvoidingView
+      style={{ flex: 1 }}
+      behavior={Platform.OS === "ios" ? "padding" : undefined}
+    >
       <View style={styles.card}>
         <View style={styles.header}>
           <View style={styles.avatarRing}>
@@ -1840,6 +1843,9 @@ export default function LiveConversation({
           </View>
           <Text style={styles.footnote}>
             AI-generated · scripture sources are checked separately
+            {process.env.EXPO_PUBLIC_BUILD_NUMBER
+              ? ` · build ${process.env.EXPO_PUBLIC_BUILD_NUMBER}`
+              : ""}
           </Text>
         </View>
       </View>
