@@ -47,6 +47,9 @@ export interface PublicDomainBundle {
     expected_passage_count: number;
     complete_coverage_confirmed: boolean;
     attribution?: string;
+    review_method?: string;
+    human_verse_review?: boolean;
+    review_notice?: string;
   };
   passages: SourcePassage[];
 }
@@ -161,8 +164,11 @@ export function validatePublicDomainBundle(
     require(p.source_locator &&
       typeof p.source_locator.volume === "string" &&
       p.source_locator.volume.trim() &&
-      Number.isInteger(p.source_locator.printed_page) &&
-      p.source_locator.printed_page > 0 &&
+      ((p.source_locator.printed_page === null &&
+        p.source_locator.locator_kind === "scan") ||
+        (typeof p.source_locator.printed_page === "number" &&
+          Number.isInteger(p.source_locator.printed_page) &&
+          p.source_locator.printed_page > 0)) &&
       Number.isInteger(p.source_locator.pdf_page) &&
       p.source_locator.pdf_page > 0 &&
       isSha(

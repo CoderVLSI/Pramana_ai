@@ -1,3 +1,5 @@
+> Historical OCR-extraction notes: the 696-verse draft below is not the 700-verse AI page-image transcription selected for `gita-open-1`. The owner authorized that separate transcription for release on 2026-10-15 without human verse-by-verse review; see `transcription/README.md` and the release provenance.
+
 # Gita pilot: our own text from a public-domain printed edition (draft, 2026-10-15)
 
 **Why:** every typed copy found so far has terms attached (see `source-notices.md`). A new transcription of a clearly out-of-copyright printed edition has no such terms and a clean provenance.

@@ -1,0 +1,3565 @@
+{
+  "manifest": {
+    "work_id": "bhagavad-gita",
+    "edition_id": "apte-anandashram-34-1909-shankara-700",
+    "release": "gita-open-1",
+    "completeness": "complete",
+    "publisher": "Anandashram Sanskrit Series no. 34 (archive.org scan)",
+    "publisher_location": "Pune",
+    "license_id": "public-domain",
+    "public_domain_basis": "Own transcription of a printed edition published in 1909 (Anandashram Sanskrit Series no. 34, Pune); editor Hari Narayan Apte died 3 March 1919, so the edition is public domain in India and the US. The verse text is read from page images; no modern edition's text, selection or translation is used.",
+    "permission_proof": "Rights basis accepted by the Pramana project owner on 2026-10-15 after checking the editor's death date (1919). Method: docs/gita-pilot/scan-extraction.md and docs/gita-pilot/transcription/README.md. Title-page contributors other than Apte not yet confirmed.",
+    "permissions": [
+      "index",
+      "quote"
+    ],
+    "rights_approved": true,
+    "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34",
+    "sources": [
+      {
+        "role": "original",
+        "title": "Srimad Bhagavadgita with Shankara bhashya and Anandagiri tika",
+        "author": "Hari Narayan Apte (ed.)",
+        "publication_year": 1909,
+        "url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34",
+        "sha256": "9fea0499eea11026a9f38464e1c4ff6f3ba5c8b3622ee8168ff1e53d133ab2d2",
+        "retrieved_at": "2026-10-15"
+      }
+    ],
+    "hierarchy_levels": [],
+    "reviewers": [
+      "Pramana project owner (approved release without verse-by-verse review)",
+      "Claude AI transcription and cross-check (page images, second copy, spot checks)"
+    ],
+    "reviewed_at": "2026-10-15",
+    "complete_coverage_confirmed": true,
+    "review_method": "ai_only_owner_accepted",
+    "human_verse_review": false,
+    "review_notice": "AI transcription and AI cross-check only. The project owner approved release without human verse-by-verse review; transcription errors may remain."
+  },
+  "expected_verses_per_chapter": {
+    "1": 47,
+    "2": 72,
+    "3": 43,
+    "4": 42,
+    "5": 29,
+    "6": 47,
+    "7": 30,
+    "8": 28,
+    "9": 34,
+    "10": 42,
+    "11": 55,
+    "12": 20,
+    "13": 34,
+    "14": 27,
+    "15": 20,
+    "16": 24,
+    "17": 28,
+    "18": 78
+  },
+  "source_locators": {
+    "1.1": {
+      "scan_page_index": 24,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n24/mode/1up"
+    },
+    "1.2": {
+      "scan_page_index": 24,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n24/mode/1up"
+    },
+    "1.3": {
+      "scan_page_index": 25,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n25/mode/1up"
+    },
+    "1.4": {
+      "scan_page_index": 25,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n25/mode/1up"
+    },
+    "1.5": {
+      "scan_page_index": 25,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n25/mode/1up"
+    },
+    "1.6": {
+      "scan_page_index": 25,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n25/mode/1up"
+    },
+    "1.7": {
+      "scan_page_index": 26,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n26/mode/1up"
+    },
+    "1.8": {
+      "scan_page_index": 26,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n26/mode/1up"
+    },
+    "1.9": {
+      "scan_page_index": 26,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n26/mode/1up"
+    },
+    "1.10": {
+      "scan_page_index": 26,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n26/mode/1up"
+    },
+    "1.11": {
+      "scan_page_index": 27,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n27/mode/1up"
+    },
+    "1.12": {
+      "scan_page_index": 27,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n27/mode/1up"
+    },
+    "1.13": {
+      "scan_page_index": 28,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n28/mode/1up"
+    },
+    "1.14": {
+      "scan_page_index": 28,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n28/mode/1up"
+    },
+    "1.15": {
+      "scan_page_index": 28,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n28/mode/1up"
+    },
+    "1.16": {
+      "scan_page_index": 28,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n28/mode/1up"
+    },
+    "1.17": {
+      "scan_page_index": 28,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n28/mode/1up"
+    },
+    "1.18": {
+      "scan_page_index": 28,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n28/mode/1up"
+    },
+    "1.19": {
+      "scan_page_index": 29,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n29/mode/1up"
+    },
+    "1.20": {
+      "scan_page_index": 29,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n29/mode/1up"
+    },
+    "1.21": {
+      "scan_page_index": 29,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n29/mode/1up"
+    },
+    "1.22": {
+      "scan_page_index": 29,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n29/mode/1up"
+    },
+    "1.23": {
+      "scan_page_index": 30,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n30/mode/1up"
+    },
+    "1.24": {
+      "scan_page_index": 30,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n30/mode/1up"
+    },
+    "1.25": {
+      "scan_page_index": 30,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n30/mode/1up"
+    },
+    "1.26": {
+      "scan_page_index": 31,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n31/mode/1up"
+    },
+    "1.27": {
+      "scan_page_index": 31,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n31/mode/1up"
+    },
+    "1.28": {
+      "scan_page_index": 31,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n31/mode/1up"
+    },
+    "1.29": {
+      "scan_page_index": 31,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n31/mode/1up"
+    },
+    "1.30": {
+      "scan_page_index": 31,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n31/mode/1up"
+    },
+    "1.31": {
+      "scan_page_index": 32,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n32/mode/1up"
+    },
+    "1.32": {
+      "scan_page_index": 32,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n32/mode/1up"
+    },
+    "1.33": {
+      "scan_page_index": 32,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n32/mode/1up"
+    },
+    "1.34": {
+      "scan_page_index": 32,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n32/mode/1up"
+    },
+    "1.35": {
+      "scan_page_index": 32,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n32/mode/1up"
+    },
+    "1.36": {
+      "scan_page_index": 33,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n33/mode/1up"
+    },
+    "1.37": {
+      "scan_page_index": 33,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n33/mode/1up"
+    },
+    "1.38": {
+      "scan_page_index": 33,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n33/mode/1up"
+    },
+    "1.39": {
+      "scan_page_index": 33,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n33/mode/1up"
+    },
+    "1.40": {
+      "scan_page_index": 34,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n34/mode/1up"
+    },
+    "1.41": {
+      "scan_page_index": 34,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n34/mode/1up"
+    },
+    "1.42": {
+      "scan_page_index": 34,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n34/mode/1up"
+    },
+    "1.43": {
+      "scan_page_index": 34,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n34/mode/1up"
+    },
+    "1.44": {
+      "scan_page_index": 35,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n35/mode/1up"
+    },
+    "1.45": {
+      "scan_page_index": 35,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n35/mode/1up"
+    },
+    "1.46": {
+      "scan_page_index": 35,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n35/mode/1up"
+    },
+    "1.47": {
+      "scan_page_index": 35,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n35/mode/1up"
+    },
+    "2.1": {
+      "scan_page_index": 36,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n36/mode/1up"
+    },
+    "2.2": {
+      "scan_page_index": 36,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n36/mode/1up"
+    },
+    "2.3": {
+      "scan_page_index": 37,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n37/mode/1up"
+    },
+    "2.4": {
+      "scan_page_index": 37,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n37/mode/1up"
+    },
+    "2.5": {
+      "scan_page_index": 37,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n37/mode/1up"
+    },
+    "2.6": {
+      "scan_page_index": 38,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n38/mode/1up"
+    },
+    "2.7": {
+      "scan_page_index": 38,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n38/mode/1up"
+    },
+    "2.8": {
+      "scan_page_index": 39,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n39/mode/1up"
+    },
+    "2.9": {
+      "scan_page_index": 39,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n39/mode/1up"
+    },
+    "2.10": {
+      "scan_page_index": 39,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n39/mode/1up"
+    },
+    "2.11": {
+      "scan_page_index": 50,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n50/mode/1up"
+    },
+    "2.12": {
+      "scan_page_index": 51,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n51/mode/1up"
+    },
+    "2.13": {
+      "scan_page_index": 52,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n52/mode/1up"
+    },
+    "2.14": {
+      "scan_page_index": 53,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n53/mode/1up"
+    },
+    "2.15": {
+      "scan_page_index": 54,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n54/mode/1up"
+    },
+    "2.16": {
+      "scan_page_index": 55,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n55/mode/1up"
+    },
+    "2.17": {
+      "scan_page_index": 59,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n59/mode/1up"
+    },
+    "2.18": {
+      "scan_page_index": 60,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n60/mode/1up"
+    },
+    "2.19": {
+      "scan_page_index": 63,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n63/mode/1up"
+    },
+    "2.20": {
+      "scan_page_index": 64,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n64/mode/1up"
+    },
+    "2.21": {
+      "scan_page_index": 66,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n66/mode/1up"
+    },
+    "2.22": {
+      "scan_page_index": 73,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n73/mode/1up"
+    },
+    "2.23": {
+      "scan_page_index": 73,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n73/mode/1up"
+    },
+    "2.24": {
+      "scan_page_index": 74,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n74/mode/1up"
+    },
+    "2.25": {
+      "scan_page_index": 75,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n75/mode/1up"
+    },
+    "2.26": {
+      "scan_page_index": 76,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n76/mode/1up"
+    },
+    "2.27": {
+      "scan_page_index": 76,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n76/mode/1up"
+    },
+    "2.28": {
+      "scan_page_index": 76,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n76/mode/1up"
+    },
+    "2.29": {
+      "scan_page_index": 77,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n77/mode/1up"
+    },
+    "2.30": {
+      "scan_page_index": 78,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n78/mode/1up"
+    },
+    "2.31": {
+      "scan_page_index": 79,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n79/mode/1up"
+    },
+    "2.32": {
+      "scan_page_index": 79,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n79/mode/1up"
+    },
+    "2.33": {
+      "scan_page_index": 80,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n80/mode/1up"
+    },
+    "2.34": {
+      "scan_page_index": 80,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n80/mode/1up"
+    },
+    "2.35": {
+      "scan_page_index": 81,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n81/mode/1up"
+    },
+    "2.36": {
+      "scan_page_index": 81,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n81/mode/1up"
+    },
+    "2.37": {
+      "scan_page_index": 83,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n83/mode/1up"
+    },
+    "2.38": {
+      "scan_page_index": 84,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n84/mode/1up"
+    },
+    "2.39": {
+      "scan_page_index": 84,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n84/mode/1up"
+    },
+    "2.40": {
+      "scan_page_index": 86,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n86/mode/1up"
+    },
+    "2.41": {
+      "scan_page_index": 86,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n86/mode/1up"
+    },
+    "2.42": {
+      "scan_page_index": 88,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n88/mode/1up"
+    },
+    "2.43": {
+      "scan_page_index": 88,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n88/mode/1up"
+    },
+    "2.44": {
+      "scan_page_index": 89,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n89/mode/1up"
+    },
+    "2.45": {
+      "scan_page_index": 90,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n90/mode/1up"
+    },
+    "2.46": {
+      "scan_page_index": 91,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n91/mode/1up"
+    },
+    "2.47": {
+      "scan_page_index": 92,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n92/mode/1up"
+    },
+    "2.48": {
+      "scan_page_index": 93,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n93/mode/1up"
+    },
+    "2.49": {
+      "scan_page_index": 93,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n93/mode/1up"
+    },
+    "2.50": {
+      "scan_page_index": 94,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n94/mode/1up"
+    },
+    "2.51": {
+      "scan_page_index": 95,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n95/mode/1up"
+    },
+    "2.52": {
+      "scan_page_index": 96,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n96/mode/1up"
+    },
+    "2.53": {
+      "scan_page_index": 97,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n97/mode/1up"
+    },
+    "2.54": {
+      "scan_page_index": 97,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n97/mode/1up"
+    },
+    "2.55": {
+      "scan_page_index": 98,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n98/mode/1up"
+    },
+    "2.56": {
+      "scan_page_index": 99,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n99/mode/1up"
+    },
+    "2.57": {
+      "scan_page_index": 100,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n100/mode/1up"
+    },
+    "2.58": {
+      "scan_page_index": 101,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n101/mode/1up"
+    },
+    "2.59": {
+      "scan_page_index": 101,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n101/mode/1up"
+    },
+    "2.60": {
+      "scan_page_index": 102,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n102/mode/1up"
+    },
+    "2.61": {
+      "scan_page_index": 103,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n103/mode/1up"
+    },
+    "2.62": {
+      "scan_page_index": 103,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n103/mode/1up"
+    },
+    "2.63": {
+      "scan_page_index": 104,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n104/mode/1up"
+    },
+    "2.64": {
+      "scan_page_index": 104,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n104/mode/1up"
+    },
+    "2.65": {
+      "scan_page_index": 105,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n105/mode/1up"
+    },
+    "2.66": {
+      "scan_page_index": 106,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n106/mode/1up"
+    },
+    "2.67": {
+      "scan_page_index": 106,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n106/mode/1up"
+    },
+    "2.68": {
+      "scan_page_index": 107,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n107/mode/1up"
+    },
+    "2.69": {
+      "scan_page_index": 107,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n107/mode/1up"
+    },
+    "2.70": {
+      "scan_page_index": 110,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n110/mode/1up"
+    },
+    "2.71": {
+      "scan_page_index": 111,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n111/mode/1up"
+    },
+    "2.72": {
+      "scan_page_index": 112,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n112/mode/1up"
+    },
+    "3.1": {
+      "scan_page_index": 121,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n121/mode/1up"
+    },
+    "3.2": {
+      "scan_page_index": 122,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n122/mode/1up"
+    },
+    "3.3": {
+      "scan_page_index": 123,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n123/mode/1up"
+    },
+    "3.4": {
+      "scan_page_index": 125,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n125/mode/1up"
+    },
+    "3.5": {
+      "scan_page_index": 127,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n127/mode/1up"
+    },
+    "3.6": {
+      "scan_page_index": 128,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n128/mode/1up"
+    },
+    "3.7": {
+      "scan_page_index": 128,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n128/mode/1up"
+    },
+    "3.8": {
+      "scan_page_index": 129,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n129/mode/1up"
+    },
+    "3.9": {
+      "scan_page_index": 129,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n129/mode/1up"
+    },
+    "3.10": {
+      "scan_page_index": 130,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n130/mode/1up"
+    },
+    "3.11": {
+      "scan_page_index": 130,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n130/mode/1up"
+    },
+    "3.12": {
+      "scan_page_index": 130,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n130/mode/1up"
+    },
+    "3.13": {
+      "scan_page_index": 131,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n131/mode/1up"
+    },
+    "3.14": {
+      "scan_page_index": 132,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n132/mode/1up"
+    },
+    "3.15": {
+      "scan_page_index": 133,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n133/mode/1up"
+    },
+    "3.16": {
+      "scan_page_index": 133,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n133/mode/1up"
+    },
+    "3.17": {
+      "scan_page_index": 134,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n134/mode/1up"
+    },
+    "3.18": {
+      "scan_page_index": 135,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n135/mode/1up"
+    },
+    "3.19": {
+      "scan_page_index": 136,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n136/mode/1up"
+    },
+    "3.20": {
+      "scan_page_index": 137,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n137/mode/1up"
+    },
+    "3.21": {
+      "scan_page_index": 137,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n137/mode/1up"
+    },
+    "3.22": {
+      "scan_page_index": 138,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n138/mode/1up"
+    },
+    "3.23": {
+      "scan_page_index": 138,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n138/mode/1up"
+    },
+    "3.24": {
+      "scan_page_index": 139,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n139/mode/1up"
+    },
+    "3.25": {
+      "scan_page_index": 139,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n139/mode/1up"
+    },
+    "3.26": {
+      "scan_page_index": 140,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n140/mode/1up"
+    },
+    "3.27": {
+      "scan_page_index": 140,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n140/mode/1up"
+    },
+    "3.28": {
+      "scan_page_index": 141,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n141/mode/1up"
+    },
+    "3.29": {
+      "scan_page_index": 141,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n141/mode/1up"
+    },
+    "3.30": {
+      "scan_page_index": 142,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n142/mode/1up"
+    },
+    "3.31": {
+      "scan_page_index": 142,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n142/mode/1up"
+    },
+    "3.32": {
+      "scan_page_index": 142,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n142/mode/1up"
+    },
+    "3.33": {
+      "scan_page_index": 143,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n143/mode/1up"
+    },
+    "3.34": {
+      "scan_page_index": 144,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n144/mode/1up"
+    },
+    "3.35": {
+      "scan_page_index": 145,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n145/mode/1up"
+    },
+    "3.36": {
+      "scan_page_index": 145,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n145/mode/1up"
+    },
+    "3.37": {
+      "scan_page_index": 146,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n146/mode/1up"
+    },
+    "3.38": {
+      "scan_page_index": 147,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n147/mode/1up"
+    },
+    "3.39": {
+      "scan_page_index": 148,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n148/mode/1up"
+    },
+    "3.40": {
+      "scan_page_index": 148,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n148/mode/1up"
+    },
+    "3.41": {
+      "scan_page_index": 149,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n149/mode/1up"
+    },
+    "3.42": {
+      "scan_page_index": 149,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n149/mode/1up"
+    },
+    "3.43": {
+      "scan_page_index": 150,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n150/mode/1up"
+    },
+    "4.1": {
+      "scan_page_index": 151,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n151/mode/1up"
+    },
+    "4.2": {
+      "scan_page_index": 152,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n152/mode/1up"
+    },
+    "4.3": {
+      "scan_page_index": 153,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n153/mode/1up"
+    },
+    "4.4": {
+      "scan_page_index": 153,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n153/mode/1up"
+    },
+    "4.5": {
+      "scan_page_index": 154,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n154/mode/1up"
+    },
+    "4.6": {
+      "scan_page_index": 154,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n154/mode/1up"
+    },
+    "4.7": {
+      "scan_page_index": 155,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n155/mode/1up"
+    },
+    "4.8": {
+      "scan_page_index": 156,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n156/mode/1up"
+    },
+    "4.9": {
+      "scan_page_index": 156,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n156/mode/1up"
+    },
+    "4.10": {
+      "scan_page_index": 156,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n156/mode/1up"
+    },
+    "4.11": {
+      "scan_page_index": 157,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n157/mode/1up"
+    },
+    "4.12": {
+      "scan_page_index": 158,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n158/mode/1up"
+    },
+    "4.13": {
+      "scan_page_index": 159,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n159/mode/1up"
+    },
+    "4.14": {
+      "scan_page_index": 161,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n161/mode/1up"
+    },
+    "4.15": {
+      "scan_page_index": 161,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n161/mode/1up"
+    },
+    "4.16": {
+      "scan_page_index": 162,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n162/mode/1up"
+    },
+    "4.17": {
+      "scan_page_index": 162,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n162/mode/1up"
+    },
+    "4.18": {
+      "scan_page_index": 163,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n163/mode/1up"
+    },
+    "4.19": {
+      "scan_page_index": 171,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n171/mode/1up"
+    },
+    "4.20": {
+      "scan_page_index": 172,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n172/mode/1up"
+    },
+    "4.21": {
+      "scan_page_index": 173,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n173/mode/1up"
+    },
+    "4.22": {
+      "scan_page_index": 175,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n175/mode/1up"
+    },
+    "4.23": {
+      "scan_page_index": 176,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n176/mode/1up"
+    },
+    "4.24": {
+      "scan_page_index": 177,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n177/mode/1up"
+    },
+    "4.25": {
+      "scan_page_index": 181,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n181/mode/1up"
+    },
+    "4.26": {
+      "scan_page_index": 182,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n182/mode/1up"
+    },
+    "4.27": {
+      "scan_page_index": 185,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n185/mode/1up"
+    },
+    "4.28": {
+      "scan_page_index": 185,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n185/mode/1up"
+    },
+    "4.29": {
+      "scan_page_index": 186,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n186/mode/1up"
+    },
+    "4.30": {
+      "scan_page_index": 186,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n186/mode/1up"
+    },
+    "4.31": {
+      "scan_page_index": 187,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n187/mode/1up"
+    },
+    "4.32": {
+      "scan_page_index": 187,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n187/mode/1up"
+    },
+    "4.33": {
+      "scan_page_index": 188,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n188/mode/1up"
+    },
+    "4.34": {
+      "scan_page_index": 189,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n189/mode/1up"
+    },
+    "4.35": {
+      "scan_page_index": 190,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n190/mode/1up"
+    },
+    "4.36": {
+      "scan_page_index": 190,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n190/mode/1up"
+    },
+    "4.37": {
+      "scan_page_index": 191,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n191/mode/1up"
+    },
+    "4.38": {
+      "scan_page_index": 192,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n192/mode/1up"
+    },
+    "4.39": {
+      "scan_page_index": 192,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n192/mode/1up"
+    },
+    "4.40": {
+      "scan_page_index": 193,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n193/mode/1up"
+    },
+    "4.41": {
+      "scan_page_index": 194,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n194/mode/1up"
+    },
+    "4.42": {
+      "scan_page_index": 195,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n195/mode/1up"
+    },
+    "5.1": {
+      "scan_page_index": 203,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n203/mode/1up"
+    },
+    "5.2": {
+      "scan_page_index": 204,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n204/mode/1up"
+    },
+    "5.3": {
+      "scan_page_index": 205,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n205/mode/1up"
+    },
+    "5.4": {
+      "scan_page_index": 205,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n205/mode/1up"
+    },
+    "5.5": {
+      "scan_page_index": 206,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n206/mode/1up"
+    },
+    "5.6": {
+      "scan_page_index": 207,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n207/mode/1up"
+    },
+    "5.7": {
+      "scan_page_index": 208,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n208/mode/1up"
+    },
+    "5.8": {
+      "scan_page_index": 209,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n209/mode/1up"
+    },
+    "5.9": {
+      "scan_page_index": 209,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n209/mode/1up"
+    },
+    "5.10": {
+      "scan_page_index": 210,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n210/mode/1up"
+    },
+    "5.11": {
+      "scan_page_index": 210,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n210/mode/1up"
+    },
+    "5.12": {
+      "scan_page_index": 210,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n210/mode/1up"
+    },
+    "5.13": {
+      "scan_page_index": 211,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n211/mode/1up"
+    },
+    "5.14": {
+      "scan_page_index": 213,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n213/mode/1up"
+    },
+    "5.15": {
+      "scan_page_index": 214,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n214/mode/1up"
+    },
+    "5.16": {
+      "scan_page_index": 214,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n214/mode/1up"
+    },
+    "5.17": {
+      "scan_page_index": 215,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n215/mode/1up"
+    },
+    "5.18": {
+      "scan_page_index": 216,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n216/mode/1up"
+    },
+    "5.19": {
+      "scan_page_index": 216,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n216/mode/1up"
+    },
+    "5.20": {
+      "scan_page_index": 218,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n218/mode/1up"
+    },
+    "5.21": {
+      "scan_page_index": 219,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n219/mode/1up"
+    },
+    "5.22": {
+      "scan_page_index": 220,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n220/mode/1up"
+    },
+    "5.23": {
+      "scan_page_index": 221,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n221/mode/1up"
+    },
+    "5.24": {
+      "scan_page_index": 222,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n222/mode/1up"
+    },
+    "5.25": {
+      "scan_page_index": 222,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n222/mode/1up"
+    },
+    "5.26": {
+      "scan_page_index": 223,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n223/mode/1up"
+    },
+    "5.27": {
+      "scan_page_index": 223,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n223/mode/1up"
+    },
+    "5.28": {
+      "scan_page_index": 224,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n224/mode/1up"
+    },
+    "5.29": {
+      "scan_page_index": 224,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n224/mode/1up"
+    },
+    "6.1": {
+      "scan_page_index": 229,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n229/mode/1up"
+    },
+    "6.2": {
+      "scan_page_index": 230,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n230/mode/1up"
+    },
+    "6.3": {
+      "scan_page_index": 232,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n232/mode/1up"
+    },
+    "6.4": {
+      "scan_page_index": 233,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n233/mode/1up"
+    },
+    "6.5": {
+      "scan_page_index": 234,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n234/mode/1up"
+    },
+    "6.6": {
+      "scan_page_index": 235,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n235/mode/1up"
+    },
+    "6.7": {
+      "scan_page_index": 235,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n235/mode/1up"
+    },
+    "6.8": {
+      "scan_page_index": 236,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n236/mode/1up"
+    },
+    "6.9": {
+      "scan_page_index": 236,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n236/mode/1up"
+    },
+    "6.10": {
+      "scan_page_index": 237,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n237/mode/1up"
+    },
+    "6.11": {
+      "scan_page_index": 237,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n237/mode/1up"
+    },
+    "6.12": {
+      "scan_page_index": 238,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n238/mode/1up"
+    },
+    "6.13": {
+      "scan_page_index": 239,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n239/mode/1up"
+    },
+    "6.14": {
+      "scan_page_index": 240,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n240/mode/1up"
+    },
+    "6.15": {
+      "scan_page_index": 240,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n240/mode/1up"
+    },
+    "6.16": {
+      "scan_page_index": 241,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n241/mode/1up"
+    },
+    "6.17": {
+      "scan_page_index": 242,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n242/mode/1up"
+    },
+    "6.18": {
+      "scan_page_index": 242,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n242/mode/1up"
+    },
+    "6.19": {
+      "scan_page_index": 243,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n243/mode/1up"
+    },
+    "6.20": {
+      "scan_page_index": 243,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n243/mode/1up"
+    },
+    "6.21": {
+      "scan_page_index": 244,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n244/mode/1up"
+    },
+    "6.22": {
+      "scan_page_index": 244,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n244/mode/1up"
+    },
+    "6.23": {
+      "scan_page_index": 245,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n245/mode/1up"
+    },
+    "6.24": {
+      "scan_page_index": 245,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n245/mode/1up"
+    },
+    "6.25": {
+      "scan_page_index": 246,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n246/mode/1up"
+    },
+    "6.26": {
+      "scan_page_index": 246,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n246/mode/1up"
+    },
+    "6.27": {
+      "scan_page_index": 247,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n247/mode/1up"
+    },
+    "6.28": {
+      "scan_page_index": 247,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n247/mode/1up"
+    },
+    "6.29": {
+      "scan_page_index": 248,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n248/mode/1up"
+    },
+    "6.30": {
+      "scan_page_index": 248,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n248/mode/1up"
+    },
+    "6.31": {
+      "scan_page_index": 249,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n249/mode/1up"
+    },
+    "6.32": {
+      "scan_page_index": 249,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n249/mode/1up"
+    },
+    "6.33": {
+      "scan_page_index": 250,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n250/mode/1up"
+    },
+    "6.34": {
+      "scan_page_index": 250,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n250/mode/1up"
+    },
+    "6.35": {
+      "scan_page_index": 251,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n251/mode/1up"
+    },
+    "6.36": {
+      "scan_page_index": 251,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n251/mode/1up"
+    },
+    "6.37": {
+      "scan_page_index": 252,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n252/mode/1up"
+    },
+    "6.38": {
+      "scan_page_index": 253,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n253/mode/1up"
+    },
+    "6.39": {
+      "scan_page_index": 253,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n253/mode/1up"
+    },
+    "6.40": {
+      "scan_page_index": 253,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n253/mode/1up"
+    },
+    "6.41": {
+      "scan_page_index": 254,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n254/mode/1up"
+    },
+    "6.42": {
+      "scan_page_index": 254,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n254/mode/1up"
+    },
+    "6.43": {
+      "scan_page_index": 255,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n255/mode/1up"
+    },
+    "6.44": {
+      "scan_page_index": 255,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n255/mode/1up"
+    },
+    "6.45": {
+      "scan_page_index": 256,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n256/mode/1up"
+    },
+    "6.46": {
+      "scan_page_index": 257,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n257/mode/1up"
+    },
+    "6.47": {
+      "scan_page_index": 257,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n257/mode/1up"
+    },
+    "7.1": {
+      "scan_page_index": 258,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n258/mode/1up"
+    },
+    "7.2": {
+      "scan_page_index": 259,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n259/mode/1up"
+    },
+    "7.3": {
+      "scan_page_index": 260,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n260/mode/1up"
+    },
+    "7.4": {
+      "scan_page_index": 260,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n260/mode/1up"
+    },
+    "7.5": {
+      "scan_page_index": 261,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n261/mode/1up"
+    },
+    "7.6": {
+      "scan_page_index": 262,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n262/mode/1up"
+    },
+    "7.7": {
+      "scan_page_index": 262,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n262/mode/1up"
+    },
+    "7.8": {
+      "scan_page_index": 263,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n263/mode/1up"
+    },
+    "7.9": {
+      "scan_page_index": 263,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n263/mode/1up"
+    },
+    "7.10": {
+      "scan_page_index": 264,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n264/mode/1up"
+    },
+    "7.11": {
+      "scan_page_index": 264,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n264/mode/1up"
+    },
+    "7.12": {
+      "scan_page_index": 265,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n265/mode/1up"
+    },
+    "7.13": {
+      "scan_page_index": 266,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n266/mode/1up"
+    },
+    "7.14": {
+      "scan_page_index": 266,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n266/mode/1up"
+    },
+    "7.15": {
+      "scan_page_index": 267,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n267/mode/1up"
+    },
+    "7.16": {
+      "scan_page_index": 267,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n267/mode/1up"
+    },
+    "7.17": {
+      "scan_page_index": 267,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n267/mode/1up"
+    },
+    "7.18": {
+      "scan_page_index": 268,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n268/mode/1up"
+    },
+    "7.19": {
+      "scan_page_index": 269,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n269/mode/1up"
+    },
+    "7.20": {
+      "scan_page_index": 269,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n269/mode/1up"
+    },
+    "7.21": {
+      "scan_page_index": 270,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n270/mode/1up"
+    },
+    "7.22": {
+      "scan_page_index": 270,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n270/mode/1up"
+    },
+    "7.23": {
+      "scan_page_index": 271,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n271/mode/1up"
+    },
+    "7.24": {
+      "scan_page_index": 271,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n271/mode/1up"
+    },
+    "7.25": {
+      "scan_page_index": 272,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n272/mode/1up"
+    },
+    "7.26": {
+      "scan_page_index": 272,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n272/mode/1up"
+    },
+    "7.27": {
+      "scan_page_index": 273,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n273/mode/1up"
+    },
+    "7.28": {
+      "scan_page_index": 274,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n274/mode/1up"
+    },
+    "7.29": {
+      "scan_page_index": 274,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n274/mode/1up"
+    },
+    "7.30": {
+      "scan_page_index": 275,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n275/mode/1up"
+    },
+    "8.1": {
+      "scan_page_index": 276,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n276/mode/1up"
+    },
+    "8.2": {
+      "scan_page_index": 276,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n276/mode/1up"
+    },
+    "8.3": {
+      "scan_page_index": 277,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n277/mode/1up"
+    },
+    "8.4": {
+      "scan_page_index": 278,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n278/mode/1up"
+    },
+    "8.5": {
+      "scan_page_index": 279,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n279/mode/1up"
+    },
+    "8.6": {
+      "scan_page_index": 280,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n280/mode/1up"
+    },
+    "8.7": {
+      "scan_page_index": 280,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n280/mode/1up"
+    },
+    "8.8": {
+      "scan_page_index": 281,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n281/mode/1up"
+    },
+    "8.9": {
+      "scan_page_index": 282,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n282/mode/1up"
+    },
+    "8.10": {
+      "scan_page_index": 282,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n282/mode/1up"
+    },
+    "8.11": {
+      "scan_page_index": 284,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n284/mode/1up"
+    },
+    "8.12": {
+      "scan_page_index": 285,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n285/mode/1up"
+    },
+    "8.13": {
+      "scan_page_index": 286,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n286/mode/1up"
+    },
+    "8.14": {
+      "scan_page_index": 287,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n287/mode/1up"
+    },
+    "8.15": {
+      "scan_page_index": 287,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n287/mode/1up"
+    },
+    "8.16": {
+      "scan_page_index": 288,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n288/mode/1up"
+    },
+    "8.17": {
+      "scan_page_index": 288,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n288/mode/1up"
+    },
+    "8.18": {
+      "scan_page_index": 289,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n289/mode/1up"
+    },
+    "8.19": {
+      "scan_page_index": 289,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n289/mode/1up"
+    },
+    "8.20": {
+      "scan_page_index": 290,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n290/mode/1up"
+    },
+    "8.21": {
+      "scan_page_index": 291,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n291/mode/1up"
+    },
+    "8.22": {
+      "scan_page_index": 291,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n291/mode/1up"
+    },
+    "8.23": {
+      "scan_page_index": 292,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n292/mode/1up"
+    },
+    "8.24": {
+      "scan_page_index": 293,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n293/mode/1up"
+    },
+    "8.25": {
+      "scan_page_index": 294,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n294/mode/1up"
+    },
+    "8.26": {
+      "scan_page_index": 294,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n294/mode/1up"
+    },
+    "8.27": {
+      "scan_page_index": 295,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n295/mode/1up"
+    },
+    "8.28": {
+      "scan_page_index": 295,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n295/mode/1up"
+    },
+    "9.1": {
+      "scan_page_index": 296,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n296/mode/1up"
+    },
+    "9.2": {
+      "scan_page_index": 297,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n297/mode/1up"
+    },
+    "9.3": {
+      "scan_page_index": 298,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n298/mode/1up"
+    },
+    "9.4": {
+      "scan_page_index": 299,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n299/mode/1up"
+    },
+    "9.5": {
+      "scan_page_index": 299,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n299/mode/1up"
+    },
+    "9.6": {
+      "scan_page_index": 300,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n300/mode/1up"
+    },
+    "9.7": {
+      "scan_page_index": 301,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n301/mode/1up"
+    },
+    "9.8": {
+      "scan_page_index": 301,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n301/mode/1up"
+    },
+    "9.9": {
+      "scan_page_index": 302,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n302/mode/1up"
+    },
+    "9.10": {
+      "scan_page_index": 302,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n302/mode/1up"
+    },
+    "9.11": {
+      "scan_page_index": 304,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n304/mode/1up"
+    },
+    "9.12": {
+      "scan_page_index": 304,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n304/mode/1up"
+    },
+    "9.13": {
+      "scan_page_index": 305,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n305/mode/1up"
+    },
+    "9.14": {
+      "scan_page_index": 306,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n306/mode/1up"
+    },
+    "9.15": {
+      "scan_page_index": 306,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n306/mode/1up"
+    },
+    "9.16": {
+      "scan_page_index": 307,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n307/mode/1up"
+    },
+    "9.17": {
+      "scan_page_index": 307,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n307/mode/1up"
+    },
+    "9.18": {
+      "scan_page_index": 307,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n307/mode/1up"
+    },
+    "9.19": {
+      "scan_page_index": 308,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n308/mode/1up"
+    },
+    "9.20": {
+      "scan_page_index": 309,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n309/mode/1up"
+    },
+    "9.21": {
+      "scan_page_index": 309,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n309/mode/1up"
+    },
+    "9.22": {
+      "scan_page_index": 310,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n310/mode/1up"
+    },
+    "9.23": {
+      "scan_page_index": 311,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n311/mode/1up"
+    },
+    "9.24": {
+      "scan_page_index": 311,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n311/mode/1up"
+    },
+    "9.25": {
+      "scan_page_index": 312,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n312/mode/1up"
+    },
+    "9.26": {
+      "scan_page_index": 312,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n312/mode/1up"
+    },
+    "9.27": {
+      "scan_page_index": 313,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n313/mode/1up"
+    },
+    "9.28": {
+      "scan_page_index": 313,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n313/mode/1up"
+    },
+    "9.29": {
+      "scan_page_index": 314,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n314/mode/1up"
+    },
+    "9.30": {
+      "scan_page_index": 314,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n314/mode/1up"
+    },
+    "9.31": {
+      "scan_page_index": 314,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n314/mode/1up"
+    },
+    "9.32": {
+      "scan_page_index": 315,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n315/mode/1up"
+    },
+    "9.33": {
+      "scan_page_index": 315,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n315/mode/1up"
+    },
+    "9.34": {
+      "scan_page_index": 316,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n316/mode/1up"
+    },
+    "10.1": {
+      "scan_page_index": 317,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n317/mode/1up"
+    },
+    "10.2": {
+      "scan_page_index": 317,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n317/mode/1up"
+    },
+    "10.3": {
+      "scan_page_index": 318,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n318/mode/1up"
+    },
+    "10.4": {
+      "scan_page_index": 318,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n318/mode/1up"
+    },
+    "10.5": {
+      "scan_page_index": 319,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n319/mode/1up"
+    },
+    "10.6": {
+      "scan_page_index": 319,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n319/mode/1up"
+    },
+    "10.7": {
+      "scan_page_index": 320,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n320/mode/1up"
+    },
+    "10.8": {
+      "scan_page_index": 320,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n320/mode/1up"
+    },
+    "10.9": {
+      "scan_page_index": 321,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n321/mode/1up"
+    },
+    "10.10": {
+      "scan_page_index": 321,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n321/mode/1up"
+    },
+    "10.11": {
+      "scan_page_index": 322,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n322/mode/1up"
+    },
+    "10.12": {
+      "scan_page_index": 323,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n323/mode/1up"
+    },
+    "10.13": {
+      "scan_page_index": 323,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n323/mode/1up"
+    },
+    "10.14": {
+      "scan_page_index": 324,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n324/mode/1up"
+    },
+    "10.15": {
+      "scan_page_index": 324,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n324/mode/1up"
+    },
+    "10.16": {
+      "scan_page_index": 325,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n325/mode/1up"
+    },
+    "10.17": {
+      "scan_page_index": 325,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n325/mode/1up"
+    },
+    "10.18": {
+      "scan_page_index": 325,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n325/mode/1up"
+    },
+    "10.19": {
+      "scan_page_index": 326,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n326/mode/1up"
+    },
+    "10.20": {
+      "scan_page_index": 326,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n326/mode/1up"
+    },
+    "10.21": {
+      "scan_page_index": 327,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n327/mode/1up"
+    },
+    "10.22": {
+      "scan_page_index": 327,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n327/mode/1up"
+    },
+    "10.23": {
+      "scan_page_index": 327,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n327/mode/1up"
+    },
+    "10.24": {
+      "scan_page_index": 328,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n328/mode/1up"
+    },
+    "10.25": {
+      "scan_page_index": 328,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n328/mode/1up"
+    },
+    "10.26": {
+      "scan_page_index": 328,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n328/mode/1up"
+    },
+    "10.27": {
+      "scan_page_index": 328,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n328/mode/1up"
+    },
+    "10.28": {
+      "scan_page_index": 329,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n329/mode/1up"
+    },
+    "10.29": {
+      "scan_page_index": 329,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n329/mode/1up"
+    },
+    "10.30": {
+      "scan_page_index": 329,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n329/mode/1up"
+    },
+    "10.31": {
+      "scan_page_index": 329,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n329/mode/1up"
+    },
+    "10.32": {
+      "scan_page_index": 330,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n330/mode/1up"
+    },
+    "10.33": {
+      "scan_page_index": 330,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n330/mode/1up"
+    },
+    "10.34": {
+      "scan_page_index": 330,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n330/mode/1up"
+    },
+    "10.35": {
+      "scan_page_index": 331,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n331/mode/1up"
+    },
+    "10.36": {
+      "scan_page_index": 331,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n331/mode/1up"
+    },
+    "10.37": {
+      "scan_page_index": 332,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n332/mode/1up"
+    },
+    "10.38": {
+      "scan_page_index": 332,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n332/mode/1up"
+    },
+    "10.39": {
+      "scan_page_index": 332,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n332/mode/1up"
+    },
+    "10.40": {
+      "scan_page_index": 332,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n332/mode/1up"
+    },
+    "10.41": {
+      "scan_page_index": 333,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n333/mode/1up"
+    },
+    "10.42": {
+      "scan_page_index": 333,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n333/mode/1up"
+    },
+    "11.1": {
+      "scan_page_index": 334,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n334/mode/1up"
+    },
+    "11.2": {
+      "scan_page_index": 335,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n335/mode/1up"
+    },
+    "11.3": {
+      "scan_page_index": 335,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n335/mode/1up"
+    },
+    "11.4": {
+      "scan_page_index": 335,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n335/mode/1up"
+    },
+    "11.5": {
+      "scan_page_index": 336,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n336/mode/1up"
+    },
+    "11.6": {
+      "scan_page_index": 336,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n336/mode/1up"
+    },
+    "11.7": {
+      "scan_page_index": 336,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n336/mode/1up"
+    },
+    "11.8": {
+      "scan_page_index": 337,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n337/mode/1up"
+    },
+    "11.9": {
+      "scan_page_index": 337,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n337/mode/1up"
+    },
+    "11.10": {
+      "scan_page_index": 338,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n338/mode/1up"
+    },
+    "11.11": {
+      "scan_page_index": 338,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n338/mode/1up"
+    },
+    "11.12": {
+      "scan_page_index": 338,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n338/mode/1up"
+    },
+    "11.13": {
+      "scan_page_index": 339,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n339/mode/1up"
+    },
+    "11.14": {
+      "scan_page_index": 339,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n339/mode/1up"
+    },
+    "11.15": {
+      "scan_page_index": 339,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n339/mode/1up"
+    },
+    "11.16": {
+      "scan_page_index": 340,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n340/mode/1up"
+    },
+    "11.17": {
+      "scan_page_index": 340,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n340/mode/1up"
+    },
+    "11.18": {
+      "scan_page_index": 341,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n341/mode/1up"
+    },
+    "11.19": {
+      "scan_page_index": 342,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n342/mode/1up"
+    },
+    "11.20": {
+      "scan_page_index": 342,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n342/mode/1up"
+    },
+    "11.21": {
+      "scan_page_index": 343,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n343/mode/1up"
+    },
+    "11.22": {
+      "scan_page_index": 343,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n343/mode/1up"
+    },
+    "11.23": {
+      "scan_page_index": 344,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n344/mode/1up"
+    },
+    "11.24": {
+      "scan_page_index": 344,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n344/mode/1up"
+    },
+    "11.25": {
+      "scan_page_index": 345,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n345/mode/1up"
+    },
+    "11.26": {
+      "scan_page_index": 345,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n345/mode/1up"
+    },
+    "11.27": {
+      "scan_page_index": 346,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n346/mode/1up"
+    },
+    "11.28": {
+      "scan_page_index": 346,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n346/mode/1up"
+    },
+    "11.29": {
+      "scan_page_index": 347,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n347/mode/1up"
+    },
+    "11.30": {
+      "scan_page_index": 347,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n347/mode/1up"
+    },
+    "11.31": {
+      "scan_page_index": 347,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n347/mode/1up"
+    },
+    "11.32": {
+      "scan_page_index": 348,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n348/mode/1up"
+    },
+    "11.33": {
+      "scan_page_index": 348,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n348/mode/1up"
+    },
+    "11.34": {
+      "scan_page_index": 349,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n349/mode/1up"
+    },
+    "11.35": {
+      "scan_page_index": 350,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n350/mode/1up"
+    },
+    "11.36": {
+      "scan_page_index": 351,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n351/mode/1up"
+    },
+    "11.37": {
+      "scan_page_index": 351,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n351/mode/1up"
+    },
+    "11.38": {
+      "scan_page_index": 352,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n352/mode/1up"
+    },
+    "11.39": {
+      "scan_page_index": 353,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n353/mode/1up"
+    },
+    "11.40": {
+      "scan_page_index": 353,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n353/mode/1up"
+    },
+    "11.41": {
+      "scan_page_index": 354,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n354/mode/1up"
+    },
+    "11.42": {
+      "scan_page_index": 355,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n355/mode/1up"
+    },
+    "11.43": {
+      "scan_page_index": 355,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n355/mode/1up"
+    },
+    "11.44": {
+      "scan_page_index": 356,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n356/mode/1up"
+    },
+    "11.45": {
+      "scan_page_index": 356,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n356/mode/1up"
+    },
+    "11.46": {
+      "scan_page_index": 357,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n357/mode/1up"
+    },
+    "11.47": {
+      "scan_page_index": 357,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n357/mode/1up"
+    },
+    "11.48": {
+      "scan_page_index": 358,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n358/mode/1up"
+    },
+    "11.49": {
+      "scan_page_index": 358,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n358/mode/1up"
+    },
+    "11.50": {
+      "scan_page_index": 359,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n359/mode/1up"
+    },
+    "11.51": {
+      "scan_page_index": 359,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n359/mode/1up"
+    },
+    "11.52": {
+      "scan_page_index": 359,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n359/mode/1up"
+    },
+    "11.53": {
+      "scan_page_index": 360,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n360/mode/1up"
+    },
+    "11.54": {
+      "scan_page_index": 360,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n360/mode/1up"
+    },
+    "11.55": {
+      "scan_page_index": 361,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n361/mode/1up"
+    },
+    "12.1": {
+      "scan_page_index": 362,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n362/mode/1up"
+    },
+    "12.2": {
+      "scan_page_index": 363,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n363/mode/1up"
+    },
+    "12.3": {
+      "scan_page_index": 363,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n363/mode/1up"
+    },
+    "12.4": {
+      "scan_page_index": 364,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n364/mode/1up"
+    },
+    "12.5": {
+      "scan_page_index": 365,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n365/mode/1up"
+    },
+    "12.6": {
+      "scan_page_index": 365,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n365/mode/1up"
+    },
+    "12.7": {
+      "scan_page_index": 366,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n366/mode/1up"
+    },
+    "12.8": {
+      "scan_page_index": 366,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n366/mode/1up"
+    },
+    "12.9": {
+      "scan_page_index": 367,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n367/mode/1up"
+    },
+    "12.10": {
+      "scan_page_index": 367,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n367/mode/1up"
+    },
+    "12.11": {
+      "scan_page_index": 367,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n367/mode/1up"
+    },
+    "12.12": {
+      "scan_page_index": 368,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n368/mode/1up"
+    },
+    "12.13": {
+      "scan_page_index": 369,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n369/mode/1up"
+    },
+    "12.14": {
+      "scan_page_index": 370,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n370/mode/1up"
+    },
+    "12.15": {
+      "scan_page_index": 371,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n371/mode/1up"
+    },
+    "12.16": {
+      "scan_page_index": 371,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n371/mode/1up"
+    },
+    "12.17": {
+      "scan_page_index": 372,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n372/mode/1up"
+    },
+    "12.18": {
+      "scan_page_index": 372,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n372/mode/1up"
+    },
+    "12.19": {
+      "scan_page_index": 372,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n372/mode/1up"
+    },
+    "12.20": {
+      "scan_page_index": 373,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n373/mode/1up"
+    },
+    "13.1": {
+      "scan_page_index": 375,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n375/mode/1up"
+    },
+    "13.2": {
+      "scan_page_index": 376,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n376/mode/1up"
+    },
+    "13.3": {
+      "scan_page_index": 393,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n393/mode/1up"
+    },
+    "13.4": {
+      "scan_page_index": 394,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n394/mode/1up"
+    },
+    "13.5": {
+      "scan_page_index": 395,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n395/mode/1up"
+    },
+    "13.6": {
+      "scan_page_index": 396,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n396/mode/1up"
+    },
+    "13.7": {
+      "scan_page_index": 397,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n397/mode/1up"
+    },
+    "13.8": {
+      "scan_page_index": 398,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n398/mode/1up"
+    },
+    "13.9": {
+      "scan_page_index": 399,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n399/mode/1up"
+    },
+    "13.10": {
+      "scan_page_index": 400,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n400/mode/1up"
+    },
+    "13.11": {
+      "scan_page_index": 401,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n401/mode/1up"
+    },
+    "13.12": {
+      "scan_page_index": 401,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n401/mode/1up"
+    },
+    "13.13": {
+      "scan_page_index": 405,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n405/mode/1up"
+    },
+    "13.14": {
+      "scan_page_index": 406,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n406/mode/1up"
+    },
+    "13.15": {
+      "scan_page_index": 407,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n407/mode/1up"
+    },
+    "13.16": {
+      "scan_page_index": 408,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n408/mode/1up"
+    },
+    "13.17": {
+      "scan_page_index": 409,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n409/mode/1up"
+    },
+    "13.18": {
+      "scan_page_index": 410,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n410/mode/1up"
+    },
+    "13.19": {
+      "scan_page_index": 410,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n410/mode/1up"
+    },
+    "13.20": {
+      "scan_page_index": 412,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n412/mode/1up"
+    },
+    "13.21": {
+      "scan_page_index": 413,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n413/mode/1up"
+    },
+    "13.22": {
+      "scan_page_index": 414,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n414/mode/1up"
+    },
+    "13.23": {
+      "scan_page_index": 416,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n416/mode/1up"
+    },
+    "13.24": {
+      "scan_page_index": 419,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n419/mode/1up"
+    },
+    "13.25": {
+      "scan_page_index": 420,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n420/mode/1up"
+    },
+    "13.26": {
+      "scan_page_index": 420,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n420/mode/1up"
+    },
+    "13.27": {
+      "scan_page_index": 422,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n422/mode/1up"
+    },
+    "13.28": {
+      "scan_page_index": 423,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n423/mode/1up"
+    },
+    "13.29": {
+      "scan_page_index": 424,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n424/mode/1up"
+    },
+    "13.30": {
+      "scan_page_index": 425,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n425/mode/1up"
+    },
+    "13.31": {
+      "scan_page_index": 426,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n426/mode/1up"
+    },
+    "13.32": {
+      "scan_page_index": 427,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n427/mode/1up"
+    },
+    "13.33": {
+      "scan_page_index": 427,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n427/mode/1up"
+    },
+    "13.34": {
+      "scan_page_index": 428,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n428/mode/1up"
+    },
+    "14.1": {
+      "scan_page_index": 429,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n429/mode/1up"
+    },
+    "14.2": {
+      "scan_page_index": 430,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n430/mode/1up"
+    },
+    "14.3": {
+      "scan_page_index": 430,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n430/mode/1up"
+    },
+    "14.4": {
+      "scan_page_index": 431,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n431/mode/1up"
+    },
+    "14.5": {
+      "scan_page_index": 431,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n431/mode/1up"
+    },
+    "14.6": {
+      "scan_page_index": 432,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n432/mode/1up"
+    },
+    "14.7": {
+      "scan_page_index": 433,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n433/mode/1up"
+    },
+    "14.8": {
+      "scan_page_index": 434,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n434/mode/1up"
+    },
+    "14.9": {
+      "scan_page_index": 434,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n434/mode/1up"
+    },
+    "14.10": {
+      "scan_page_index": 435,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n435/mode/1up"
+    },
+    "14.11": {
+      "scan_page_index": 435,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n435/mode/1up"
+    },
+    "14.12": {
+      "scan_page_index": 435,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n435/mode/1up"
+    },
+    "14.13": {
+      "scan_page_index": 436,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n436/mode/1up"
+    },
+    "14.14": {
+      "scan_page_index": 436,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n436/mode/1up"
+    },
+    "14.15": {
+      "scan_page_index": 436,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n436/mode/1up"
+    },
+    "14.16": {
+      "scan_page_index": 437,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n437/mode/1up"
+    },
+    "14.17": {
+      "scan_page_index": 437,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n437/mode/1up"
+    },
+    "14.18": {
+      "scan_page_index": 438,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n438/mode/1up"
+    },
+    "14.19": {
+      "scan_page_index": 438,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n438/mode/1up"
+    },
+    "14.20": {
+      "scan_page_index": 439,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n439/mode/1up"
+    },
+    "14.21": {
+      "scan_page_index": 439,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n439/mode/1up"
+    },
+    "14.22": {
+      "scan_page_index": 440,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n440/mode/1up"
+    },
+    "14.23": {
+      "scan_page_index": 440,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n440/mode/1up"
+    },
+    "14.24": {
+      "scan_page_index": 441,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n441/mode/1up"
+    },
+    "14.25": {
+      "scan_page_index": 442,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n442/mode/1up"
+    },
+    "14.26": {
+      "scan_page_index": 442,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n442/mode/1up"
+    },
+    "14.27": {
+      "scan_page_index": 443,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n443/mode/1up"
+    },
+    "15.1": {
+      "scan_page_index": 444,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n444/mode/1up"
+    },
+    "15.2": {
+      "scan_page_index": 447,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n447/mode/1up"
+    },
+    "15.3": {
+      "scan_page_index": 448,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n448/mode/1up"
+    },
+    "15.4": {
+      "scan_page_index": 448,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n448/mode/1up"
+    },
+    "15.5": {
+      "scan_page_index": 449,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n449/mode/1up"
+    },
+    "15.6": {
+      "scan_page_index": 450,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n450/mode/1up"
+    },
+    "15.7": {
+      "scan_page_index": 450,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n450/mode/1up"
+    },
+    "15.8": {
+      "scan_page_index": 451,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n451/mode/1up"
+    },
+    "15.9": {
+      "scan_page_index": 451,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n451/mode/1up"
+    },
+    "15.10": {
+      "scan_page_index": 452,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n452/mode/1up"
+    },
+    "15.11": {
+      "scan_page_index": 452,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n452/mode/1up"
+    },
+    "15.12": {
+      "scan_page_index": 453,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n453/mode/1up"
+    },
+    "15.13": {
+      "scan_page_index": 453,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n453/mode/1up"
+    },
+    "15.14": {
+      "scan_page_index": 454,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n454/mode/1up"
+    },
+    "15.15": {
+      "scan_page_index": 455,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n455/mode/1up"
+    },
+    "15.16": {
+      "scan_page_index": 456,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n456/mode/1up"
+    },
+    "15.17": {
+      "scan_page_index": 456,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n456/mode/1up"
+    },
+    "15.18": {
+      "scan_page_index": 457,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n457/mode/1up"
+    },
+    "15.19": {
+      "scan_page_index": 458,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n458/mode/1up"
+    },
+    "15.20": {
+      "scan_page_index": 458,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n458/mode/1up"
+    },
+    "16.1": {
+      "scan_page_index": 460,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n460/mode/1up"
+    },
+    "16.2": {
+      "scan_page_index": 461,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n461/mode/1up"
+    },
+    "16.3": {
+      "scan_page_index": 461,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n461/mode/1up"
+    },
+    "16.4": {
+      "scan_page_index": 462,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n462/mode/1up"
+    },
+    "16.5": {
+      "scan_page_index": 462,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n462/mode/1up"
+    },
+    "16.6": {
+      "scan_page_index": 463,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n463/mode/1up"
+    },
+    "16.7": {
+      "scan_page_index": 463,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n463/mode/1up"
+    },
+    "16.8": {
+      "scan_page_index": 464,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n464/mode/1up"
+    },
+    "16.9": {
+      "scan_page_index": 464,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n464/mode/1up"
+    },
+    "16.10": {
+      "scan_page_index": 464,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n464/mode/1up"
+    },
+    "16.11": {
+      "scan_page_index": 465,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n465/mode/1up"
+    },
+    "16.12": {
+      "scan_page_index": 465,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n465/mode/1up"
+    },
+    "16.13": {
+      "scan_page_index": 465,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n465/mode/1up"
+    },
+    "16.14": {
+      "scan_page_index": 466,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n466/mode/1up"
+    },
+    "16.15": {
+      "scan_page_index": 466,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n466/mode/1up"
+    },
+    "16.16": {
+      "scan_page_index": 466,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n466/mode/1up"
+    },
+    "16.17": {
+      "scan_page_index": 467,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n467/mode/1up"
+    },
+    "16.18": {
+      "scan_page_index": 467,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n467/mode/1up"
+    },
+    "16.19": {
+      "scan_page_index": 468,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n468/mode/1up"
+    },
+    "16.20": {
+      "scan_page_index": 468,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n468/mode/1up"
+    },
+    "16.21": {
+      "scan_page_index": 469,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n469/mode/1up"
+    },
+    "16.22": {
+      "scan_page_index": 469,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n469/mode/1up"
+    },
+    "16.23": {
+      "scan_page_index": 469,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n469/mode/1up"
+    },
+    "16.24": {
+      "scan_page_index": 470,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n470/mode/1up"
+    },
+    "17.1": {
+      "scan_page_index": 471,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n471/mode/1up"
+    },
+    "17.2": {
+      "scan_page_index": 472,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n472/mode/1up"
+    },
+    "17.3": {
+      "scan_page_index": 472,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n472/mode/1up"
+    },
+    "17.4": {
+      "scan_page_index": 473,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n473/mode/1up"
+    },
+    "17.5": {
+      "scan_page_index": 473,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n473/mode/1up"
+    },
+    "17.6": {
+      "scan_page_index": 474,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n474/mode/1up"
+    },
+    "17.7": {
+      "scan_page_index": 474,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n474/mode/1up"
+    },
+    "17.8": {
+      "scan_page_index": 475,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n475/mode/1up"
+    },
+    "17.9": {
+      "scan_page_index": 475,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n475/mode/1up"
+    },
+    "17.10": {
+      "scan_page_index": 475,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n475/mode/1up"
+    },
+    "17.11": {
+      "scan_page_index": 476,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n476/mode/1up"
+    },
+    "17.12": {
+      "scan_page_index": 476,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n476/mode/1up"
+    },
+    "17.13": {
+      "scan_page_index": 476,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n476/mode/1up"
+    },
+    "17.14": {
+      "scan_page_index": 476,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n476/mode/1up"
+    },
+    "17.15": {
+      "scan_page_index": 477,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n477/mode/1up"
+    },
+    "17.16": {
+      "scan_page_index": 478,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n478/mode/1up"
+    },
+    "17.17": {
+      "scan_page_index": 478,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n478/mode/1up"
+    },
+    "17.18": {
+      "scan_page_index": 479,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n479/mode/1up"
+    },
+    "17.19": {
+      "scan_page_index": 479,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n479/mode/1up"
+    },
+    "17.20": {
+      "scan_page_index": 479,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n479/mode/1up"
+    },
+    "17.21": {
+      "scan_page_index": 480,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n480/mode/1up"
+    },
+    "17.22": {
+      "scan_page_index": 480,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n480/mode/1up"
+    },
+    "17.23": {
+      "scan_page_index": 480,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n480/mode/1up"
+    },
+    "17.24": {
+      "scan_page_index": 481,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n481/mode/1up"
+    },
+    "17.25": {
+      "scan_page_index": 481,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n481/mode/1up"
+    },
+    "17.26": {
+      "scan_page_index": 481,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n481/mode/1up"
+    },
+    "17.27": {
+      "scan_page_index": 481,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n481/mode/1up"
+    },
+    "17.28": {
+      "scan_page_index": 482,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n482/mode/1up"
+    },
+    "18.1": {
+      "scan_page_index": 483,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n483/mode/1up"
+    },
+    "18.2": {
+      "scan_page_index": 483,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n483/mode/1up"
+    },
+    "18.3": {
+      "scan_page_index": 484,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n484/mode/1up"
+    },
+    "18.4": {
+      "scan_page_index": 487,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n487/mode/1up"
+    },
+    "18.5": {
+      "scan_page_index": 487,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n487/mode/1up"
+    },
+    "18.6": {
+      "scan_page_index": 488,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n488/mode/1up"
+    },
+    "18.7": {
+      "scan_page_index": 489,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n489/mode/1up"
+    },
+    "18.8": {
+      "scan_page_index": 489,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n489/mode/1up"
+    },
+    "18.9": {
+      "scan_page_index": 490,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n490/mode/1up"
+    },
+    "18.10": {
+      "scan_page_index": 491,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n491/mode/1up"
+    },
+    "18.11": {
+      "scan_page_index": 492,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n492/mode/1up"
+    },
+    "18.12": {
+      "scan_page_index": 493,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n493/mode/1up"
+    },
+    "18.13": {
+      "scan_page_index": 494,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n494/mode/1up"
+    },
+    "18.14": {
+      "scan_page_index": 495,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n495/mode/1up"
+    },
+    "18.15": {
+      "scan_page_index": 496,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n496/mode/1up"
+    },
+    "18.16": {
+      "scan_page_index": 496,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n496/mode/1up"
+    },
+    "18.17": {
+      "scan_page_index": 497,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n497/mode/1up"
+    },
+    "18.18": {
+      "scan_page_index": 500,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n500/mode/1up"
+    },
+    "18.19": {
+      "scan_page_index": 501,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n501/mode/1up"
+    },
+    "18.20": {
+      "scan_page_index": 502,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n502/mode/1up"
+    },
+    "18.21": {
+      "scan_page_index": 503,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n503/mode/1up"
+    },
+    "18.22": {
+      "scan_page_index": 503,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n503/mode/1up"
+    },
+    "18.23": {
+      "scan_page_index": 504,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n504/mode/1up"
+    },
+    "18.24": {
+      "scan_page_index": 504,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n504/mode/1up"
+    },
+    "18.25": {
+      "scan_page_index": 505,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n505/mode/1up"
+    },
+    "18.26": {
+      "scan_page_index": 505,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n505/mode/1up"
+    },
+    "18.27": {
+      "scan_page_index": 505,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n505/mode/1up"
+    },
+    "18.28": {
+      "scan_page_index": 506,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n506/mode/1up"
+    },
+    "18.29": {
+      "scan_page_index": 506,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n506/mode/1up"
+    },
+    "18.30": {
+      "scan_page_index": 507,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n507/mode/1up"
+    },
+    "18.31": {
+      "scan_page_index": 507,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n507/mode/1up"
+    },
+    "18.32": {
+      "scan_page_index": 508,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n508/mode/1up"
+    },
+    "18.33": {
+      "scan_page_index": 508,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n508/mode/1up"
+    },
+    "18.34": {
+      "scan_page_index": 508,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n508/mode/1up"
+    },
+    "18.35": {
+      "scan_page_index": 509,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n509/mode/1up"
+    },
+    "18.36": {
+      "scan_page_index": 509,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n509/mode/1up"
+    },
+    "18.37": {
+      "scan_page_index": 509,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n509/mode/1up"
+    },
+    "18.38": {
+      "scan_page_index": 510,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n510/mode/1up"
+    },
+    "18.39": {
+      "scan_page_index": 510,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n510/mode/1up"
+    },
+    "18.40": {
+      "scan_page_index": 511,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n511/mode/1up"
+    },
+    "18.41": {
+      "scan_page_index": 511,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n511/mode/1up"
+    },
+    "18.42": {
+      "scan_page_index": 513,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n513/mode/1up"
+    },
+    "18.43": {
+      "scan_page_index": 513,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n513/mode/1up"
+    },
+    "18.44": {
+      "scan_page_index": 514,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n514/mode/1up"
+    },
+    "18.45": {
+      "scan_page_index": 514,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n514/mode/1up"
+    },
+    "18.46": {
+      "scan_page_index": 515,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n515/mode/1up"
+    },
+    "18.47": {
+      "scan_page_index": 516,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n516/mode/1up"
+    },
+    "18.48": {
+      "scan_page_index": 516,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n516/mode/1up"
+    },
+    "18.49": {
+      "scan_page_index": 522,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n522/mode/1up"
+    },
+    "18.50": {
+      "scan_page_index": 523,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n523/mode/1up"
+    },
+    "18.51": {
+      "scan_page_index": 529,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n529/mode/1up"
+    },
+    "18.52": {
+      "scan_page_index": 529,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n529/mode/1up"
+    },
+    "18.53": {
+      "scan_page_index": 530,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n530/mode/1up"
+    },
+    "18.54": {
+      "scan_page_index": 531,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n531/mode/1up"
+    },
+    "18.55": {
+      "scan_page_index": 532,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n532/mode/1up"
+    },
+    "18.56": {
+      "scan_page_index": 534,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n534/mode/1up"
+    },
+    "18.57": {
+      "scan_page_index": 535,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n535/mode/1up"
+    },
+    "18.58": {
+      "scan_page_index": 535,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n535/mode/1up"
+    },
+    "18.59": {
+      "scan_page_index": 536,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n536/mode/1up"
+    },
+    "18.60": {
+      "scan_page_index": 536,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n536/mode/1up"
+    },
+    "18.61": {
+      "scan_page_index": 536,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n536/mode/1up"
+    },
+    "18.62": {
+      "scan_page_index": 537,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n537/mode/1up"
+    },
+    "18.63": {
+      "scan_page_index": 537,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n537/mode/1up"
+    },
+    "18.64": {
+      "scan_page_index": 537,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n537/mode/1up"
+    },
+    "18.65": {
+      "scan_page_index": 538,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n538/mode/1up"
+    },
+    "18.66": {
+      "scan_page_index": 538,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n538/mode/1up"
+    },
+    "18.67": {
+      "scan_page_index": 557,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n557/mode/1up"
+    },
+    "18.68": {
+      "scan_page_index": 558,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n558/mode/1up"
+    },
+    "18.69": {
+      "scan_page_index": 559,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n559/mode/1up"
+    },
+    "18.70": {
+      "scan_page_index": 559,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n559/mode/1up"
+    },
+    "18.71": {
+      "scan_page_index": 560,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n560/mode/1up"
+    },
+    "18.72": {
+      "scan_page_index": 560,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n560/mode/1up"
+    },
+    "18.73": {
+      "scan_page_index": 561,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n561/mode/1up"
+    },
+    "18.74": {
+      "scan_page_index": 561,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n561/mode/1up"
+    },
+    "18.75": {
+      "scan_page_index": 562,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n562/mode/1up"
+    },
+    "18.76": {
+      "scan_page_index": 562,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n562/mode/1up"
+    },
+    "18.77": {
+      "scan_page_index": 562,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n562/mode/1up"
+    },
+    "18.78": {
+      "scan_page_index": 563,
+      "printed_page": null,
+      "source_url": "https://archive.org/details/ksu.g48.srimadbhagavadgi0000hari_v34/page/n563/mode/1up"
+    }
+  },
+  "transcription_file": "docs/gita-pilot/transcription/gita-1909-apte-ai-transcription.json",
+  "transcription_file_sha256": "c28806e95fd1a87c7817bbff3b77ae5195d60b81665e09770cb7df0a21d555fd",
+  "downloaded_source_xml_url": "https://archive.org/download/ksu.g48.srimadbhagavadgi0000hari_v34/ksu.g48.srimadbhagavadgi0000hari_v34_djvu.xml"
+}

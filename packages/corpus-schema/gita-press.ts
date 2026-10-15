@@ -40,7 +40,10 @@ export interface SourcePassage {
   original: string;
   source_locator: {
     volume: string;
-    printed_page: number;
+    printed_page: number | null;
+    locator_kind?: "scan" | "etext";
+    source_url?: string;
+    running_position?: number;
     pdf_page: number;
     asset_sha256: string;
   };
@@ -161,6 +164,7 @@ export function validateGitaPressBundle(value: unknown, allowAbridged = false) {
       typeof p.source_locator.volume === "string" &&
       p.source_locator.volume.trim() &&
       Number.isInteger(p.source_locator.printed_page) &&
+      typeof p.source_locator.printed_page === "number" &&
       p.source_locator.printed_page > 0 &&
       Number.isInteger(p.source_locator.pdf_page) &&
       p.source_locator.pdf_page > 0 &&

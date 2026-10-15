@@ -13,3 +13,6 @@ services/ingest/private/
 
 __pycache__/
 *.pyc
+
+# Supabase CLI local cache (not release data)
+supabase/.temp/

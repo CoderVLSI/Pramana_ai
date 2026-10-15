@@ -21,7 +21,7 @@ export function prepareRelease(raw: unknown) {
         p.work_id,
         ...p.hierarchy.map((l: any) => `${l.name} ${l.value}`),
         `chapter ${p.chapter}`,
-        `verse ${p.verse} (volume ${p.source_locator.volume}, printed page ${p.source_locator.printed_page}; scan ${p.source_locator.pdf_page})`,
+        `verse ${p.verse} (volume ${p.source_locator.volume}; ${p.source_locator.locator_kind === "etext" ? `e-text position ${p.source_locator.running_position ?? p.source_locator.printed_page}` : `scan page ${p.source_locator.pdf_page}; printed page ${p.source_locator.printed_page ?? "not mapped"}`})`,
       ].join(", "),
       chapter: p.chapter,
       verse: /^\d+$/.test(p.verse) ? Number(p.verse) : 0,
@@ -36,6 +36,13 @@ export function prepareRelease(raw: unknown) {
         : "sa",
       keywords: [],
       review_status: "approved",
+      ...(manifest.review_method
+        ? {
+            review_method: manifest.review_method,
+            human_verse_review: manifest.human_verse_review,
+            review_notice: manifest.review_notice,
+          }
+        : {}),
       license_id: p.license_id,
       released_in: p.released_in,
       content_sha256: p.content_sha256,

@@ -72,8 +72,13 @@ export function validateRemotePassages(
       !p.source_locator ||
       !Number.isInteger(p.source_locator.pdf_page) ||
       p.source_locator.pdf_page < 1 ||
-      !Number.isInteger(p.source_locator.printed_page) ||
-      p.source_locator.printed_page < 1 ||
+      !(
+        (p.id.startsWith("pd_") &&
+          p.source_locator.locator_kind === "scan" &&
+          p.source_locator.printed_page === null) ||
+        (Number.isInteger(p.source_locator.printed_page) &&
+          p.source_locator.printed_page > 0)
+      ) ||
       !/^[a-f0-9]{64}$/.test(p.source_locator.asset_sha256) ||
       !["complete", "abridged", "selected"].includes(p.completeness) ||
       typeof p.audio_allowed !== "boolean" ||
@@ -100,9 +105,11 @@ export function remoteAnswer(query: string, passages: Passage[]): Answer {
       "cloud_" +
       scriptureDigest(query + passages.map((p) => p.id).join()).slice(0, 24),
     query,
-    answer: passages.length
-      ? "Matching source excerpts from the reviewed scripture backend."
-      : "No reviewed passage matched this search.",
+    answer: passages.some((p) => p.human_verse_review === false)
+      ? "Matching Sanskrit excerpts from an AI transcription accepted for release by the project owner."
+      : passages.length
+        ? "Matching source excerpts from the reviewed scripture backend."
+        : "No reviewed passage matched this search.",
     support_state: passages.length ? "DIRECT" : "NOT_VERIFIED",
     claims: passages.map((p) => ({
       text: p.translation,
@@ -117,6 +124,11 @@ export function remoteAnswer(query: string, passages: Passage[]): Answer {
       [...new Set(passages.map((p) => p.released_in))].sort().join("+") ||
       "cloud-reviewed-corpus-empty",
     caveats: [
+      ...new Set(
+        passages
+          .map((p) => p.review_notice)
+          .filter((notice): notice is string => !!notice),
+      ),
       "Exact source excerpts; lexical matches do not establish an inferred doctrinal conclusion.",
       ...passages
         .filter((p) => p.completeness !== "complete")

@@ -1,3 +1,5 @@
+> **Release decision, 2026-10-15:** The Pramana project owner explicitly accepted the recorded rights basis and authorized `gita-open-1` without human verse-by-verse review. The two release attestations identify the owner approval and Claude AI transcription/cross-check truthfully. No human textual review is claimed. The earlier preparation requirements below are historical; this owner decision supersedes them for this release only. See `services/ingest/releases/gita-open-1.provenance.json`.
+
 # Gita transcription (UNREVIEWED, not for release)
 
 `gita-1909-apte-ai-transcription.json` holds all 700 verses (Shankara numbering) read from the page images of

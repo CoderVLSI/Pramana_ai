@@ -20,7 +20,10 @@ export interface Passage {
   hierarchy?: { name: string; value: string }[];
   source_locator?: {
     volume: string;
-    printed_page: number;
+    printed_page: number | null;
+    locator_kind?: "scan" | "etext";
+    source_url?: string;
+    running_position?: number;
     pdf_page: number;
     asset_sha256: string;
   };
@@ -28,6 +31,9 @@ export interface Passage {
   quote_source?: "original" | "translation";
   translation_sha256?: string;
   audio_allowed?: boolean;
+  review_method?: string;
+  human_verse_review?: boolean;
+  review_notice?: string;
 }
 export interface Claim {
   text: string;

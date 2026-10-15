@@ -20,6 +20,10 @@ export interface Provenance {
   >;
   /** Chapter number -> number of verses in THIS edition's numbering. Reviewers confirm it. */
   expected_verses_per_chapter: Record<string, number>;
+  source_locators?: Record<
+    string,
+    { scan_page_index: number; printed_page: number | null; source_url: string }
+  >;
   translation?: {
     language: string;
     author: string;
@@ -71,16 +75,47 @@ export function buildPublicDomainBundle(
       if (!seen.get(chapter)!.has(n))
         throw Error(`Missing verse ${chapter}.${n}.`);
   }
-  const volume = `e-text:${original.sha256.slice(0, 12)}`;
+  if (provenance.source_locators) {
+    for (const row of verses) {
+      const locator = provenance.source_locators[`${row.chapter}.${row.verse}`];
+      if (
+        !locator ||
+        !Number.isInteger(locator.scan_page_index) ||
+        locator.scan_page_index < 0 ||
+        !/^https:\/\//.test(locator.source_url) ||
+        (locator.printed_page !== null &&
+          (!Number.isInteger(locator.printed_page) || locator.printed_page < 1))
+      )
+        throw Error(
+          `Missing or invalid source locator for ${row.chapter}.${row.verse}.`,
+        );
+    }
+  }
+  const volume = provenance.source_locators
+    ? `scan:${original.sha256.slice(0, 12)}`
+    : `e-text:${original.sha256.slice(0, 12)}`;
   const passages = verses.map((row, index) => ({
     hierarchy: [],
     chapter: row.chapter,
     verse: String(row.verse),
-    original: clean(row.original),
+    original: row.original,
     source_locator: {
       volume,
-      printed_page: index + 1,
-      pdf_page: index + 1,
+      printed_page:
+        provenance.source_locators?.[`${row.chapter}.${row.verse}`]
+          ?.printed_page ?? (provenance.source_locators ? null : index + 1),
+      pdf_page: provenance.source_locators
+        ? provenance.source_locators[`${row.chapter}.${row.verse}`]
+            .scan_page_index + 1
+        : index + 1,
+      ...(provenance.source_locators
+        ? {
+            locator_kind: "scan" as const,
+            source_url:
+              provenance.source_locators[`${row.chapter}.${row.verse}`]
+                .source_url,
+          }
+        : { locator_kind: "etext" as const, running_position: index + 1 }),
       asset_sha256: original.sha256,
     },
     ...(row.translation && provenance.translation

@@ -168,3 +168,41 @@ test("router still sends Gita Press bundles to the original strict validator", (
     /Gita Press, Gorakhpur/,
   );
 });
+
+test("scan transcriptions retain exact text, real scan pages and explicitly unknown printed pages", () => {
+  const p = provenance();
+  p.manifest.human_verse_review = false;
+  p.manifest.review_method = "ai_only_owner_accepted";
+  p.manifest.review_notice =
+    "AI-only transcription; no human verse-by-verse review.";
+  p.source_locators = Object.fromEntries(
+    verses().map((row) => [
+      `${row.chapter}.${row.verse}`,
+      {
+        scan_page_index: 92,
+        printed_page: null,
+        source_url: "https://example.org/page/n92",
+      },
+    ]),
+  );
+  const rows = verses();
+  rows[0].original = "  " + rows[0].original + "  ";
+  const bundle = buildPublicDomainBundle(rows, p);
+  assert.equal(bundle.passages[0].original, rows[0].original);
+  assert.equal(bundle.passages[0].source_locator.pdf_page, 93);
+  assert.equal(bundle.passages[0].source_locator.printed_page, null);
+  const prepared = prepareRelease(bundle);
+  assert.equal(prepared.rows[0].passage.human_verse_review, false);
+  assert.ok(
+    prepared.rows[0].passage.reference.includes("printed page not mapped"),
+  );
+  assert.equal(validateRemotePassages([prepared.rows[0].passage]).length, 1);
+  const damaged = JSON.parse(JSON.stringify(prepared.rows[0].passage));
+  damaged.original += "tampered";
+  assert.throws(() => validateRemotePassages([damaged]));
+  delete p.source_locators["1.1"];
+  assert.throws(
+    () => buildPublicDomainBundle(rows, p),
+    /Missing or invalid source locator/,
+  );
+});
