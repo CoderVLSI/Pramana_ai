@@ -178,3 +178,16 @@ test("an interrupted unpublished import resumes, while published releases cannot
     /immutable/,
   );
 });
+
+test("record accepts open-source (pd_) and Gita Press (gp_) ids but not others", async () => {
+  const backend = new ScriptureBackend(
+    "https://example.supabase.co",
+    "sb_publishable_test",
+    async () => new Response("null", { status: 200 }),
+  );
+  const pd = "pd_" + "a".repeat(28);
+  const gp = "gp_" + "b".repeat(28);
+  for (const id of [pd, gp])
+    await assert.rejects(backend.record(id), /not available/);
+  await assert.rejects(backend.record("xx_" + "a".repeat(28)), /Invalid scripture passage identifier/);
+});

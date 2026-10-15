@@ -221,7 +221,7 @@ export class ScriptureBackend {
     );
   }
   async record(id: string) {
-    if (!/^gp_[a-f0-9]{28}$/.test(id))
+    if (!/^(?:gp|pd)_[a-f0-9]{28}$/.test(id))
       throw Error("Invalid scripture passage identifier.");
     const value = await this.rpc("scripture_record", { passage_id: id });
     if (!value)

@@ -44,8 +44,12 @@ export async function deviceLibraryRequest(path: string, body?: unknown) {
             passage_count: releases
               .filter((r) => r.work_id === w.id)
               .reduce((n, r) => n + r.passage_count, 0),
-            status: "Reviewed cloud passages · internet required",
-            subtitle: "Gita Press scripture backend",
+            status: "Cloud passages · internet required",
+            subtitle: releases.some(
+              (r) => r.work_id === w.id && /^gita-open/.test(r.released_in),
+            )
+              ? "Sanskrit text from a public-domain 1909 edition · AI-checked, not yet human-reviewed"
+              : "Gita Press scripture backend",
             editions: releases
               .filter((r) => r.work_id === w.id)
               .map((r) => ({
