@@ -7,6 +7,9 @@ import {
 } from "../../packages/corpus-schema/public-domain";
 
 export interface VerseRow {
+  /** Outer sections, outermost first, e.g. [{name:"adhyaya",value:"1"}]. Must match manifest.hierarchy_levels. */
+  hierarchy?: { name: string; value: string }[];
+  /** The innermost numbered section (a chapter, valli, khanda...); see manifest.chapter_label. */
   chapter: number;
   /** "7" or a range such as "4-5". */
   verse: string;
@@ -18,7 +21,8 @@ export interface Provenance {
     PublicDomainBundle["manifest"],
     "expected_passage_count" | "rights_class"
   >;
-  /** Chapter number -> number of verses in THIS edition's numbering. Reviewers confirm it. */
+  /** Section key -> number of verses in THIS edition's numbering. The key is the chapter number, or for
+   * editions with outer levels the dotted path "outer1.outer2.chapter" (e.g. "1.2" = adhyaya 1, valli 2). */
   expected_verses_per_chapter: Record<string, number>;
   source_locators?: Record<
     string,
@@ -45,39 +49,52 @@ export function buildPublicDomainBundle(
     throw Error("Some verses have a translation and some do not.");
   if (withTranslation && !provenance.translation)
     throw Error("Translated verses need translation provenance.");
-  // Numbering must be exactly 1..n in every chapter, matching the declared edition counts.
-  const seen = new Map<number, Set<number>>();
+  // Numbering must be exactly 1..n in every section, matching the declared edition counts.
+  const sectionKey = (row: VerseRow) =>
+    [...(row.hierarchy ?? []).map((l) => l.value), row.chapter].join(".");
+  const seen = new Map<string, Set<number>>();
   for (const row of verses) {
     const [a, b = a] = String(row.verse).split("-").map(Number);
     if (!Number.isInteger(row.chapter) || !Number.isInteger(a) || b < a)
-      throw Error(`Bad verse number ${row.chapter}.${row.verse}.`);
-    const set = seen.get(row.chapter) ?? new Set<number>();
+      throw Error(`Bad verse number ${sectionKey(row)}.${row.verse}.`);
+    const key = sectionKey(row);
+    const set = seen.get(key) ?? new Set<number>();
     for (let n = a; n <= b; n++) {
-      if (set.has(n)) throw Error(`Duplicate verse ${row.chapter}.${n}.`);
+      if (set.has(n)) throw Error(`Duplicate verse ${key}.${n}.`);
       set.add(n);
     }
-    seen.set(row.chapter, set);
+    seen.set(key, set);
   }
   const declared = provenance.expected_verses_per_chapter;
-  const chapters = [
-    ...new Set([...seen.keys(), ...Object.keys(declared).map(Number)]),
-  ].sort((x, y) => x - y);
-  for (const chapter of chapters) {
-    const have = seen.get(chapter)?.size ?? 0;
-    const want = declared[String(chapter)];
+  const naturalOrder = (x: string, y: string) => {
+    const [p, q] = [x, y].map((k) => k.split(".").map(Number));
+    for (let i = 0; i < Math.max(p.length, q.length); i++)
+      if ((p[i] ?? -1) !== (q[i] ?? -1)) return (p[i] ?? -1) - (q[i] ?? -1);
+    return 0;
+  };
+  const label = (key: string) => (key.includes(".") ? "Section" : "Chapter");
+  const sections = [
+    ...new Set([...seen.keys(), ...Object.keys(declared)]),
+  ].sort(naturalOrder);
+  for (const section of sections) {
+    const have = seen.get(section)?.size ?? 0;
+    const want = declared[section];
     if (want === undefined)
-      throw Error(`Chapter ${chapter} is not in the declared counts.`);
+      throw Error(
+        `${label(section)} ${section} is not in the declared counts.`,
+      );
     if (have !== want)
       throw Error(
-        `Chapter ${chapter} has ${have} verses; the edition declares ${want}.`,
+        `${label(section)} ${section} has ${have} verses; the edition declares ${want}.`,
       );
     for (let n = 1; n <= want; n++)
-      if (!seen.get(chapter)!.has(n))
-        throw Error(`Missing verse ${chapter}.${n}.`);
+      if (!seen.get(section)!.has(n))
+        throw Error(`Missing verse ${section}.${n}.`);
   }
   if (provenance.source_locators) {
     for (const row of verses) {
-      const locator = provenance.source_locators[`${row.chapter}.${row.verse}`];
+      const locator =
+        provenance.source_locators[`${sectionKey(row)}.${row.verse}`];
       if (
         !locator ||
         !Number.isInteger(locator.scan_page_index) ||
@@ -87,7 +104,7 @@ export function buildPublicDomainBundle(
           (!Number.isInteger(locator.printed_page) || locator.printed_page < 1))
       )
         throw Error(
-          `Missing or invalid source locator for ${row.chapter}.${row.verse}.`,
+          `Missing or invalid source locator for ${sectionKey(row)}.${row.verse}.`,
         );
     }
   }
@@ -95,24 +112,24 @@ export function buildPublicDomainBundle(
     ? `scan:${original.sha256.slice(0, 12)}`
     : `e-text:${original.sha256.slice(0, 12)}`;
   const passages = verses.map((row, index) => ({
-    hierarchy: [],
+    hierarchy: row.hierarchy ?? [],
     chapter: row.chapter,
     verse: String(row.verse),
     original: row.original,
     source_locator: {
       volume,
       printed_page:
-        provenance.source_locators?.[`${row.chapter}.${row.verse}`]
+        provenance.source_locators?.[`${sectionKey(row)}.${row.verse}`]
           ?.printed_page ?? (provenance.source_locators ? null : index + 1),
       pdf_page: provenance.source_locators
-        ? provenance.source_locators[`${row.chapter}.${row.verse}`]
+        ? provenance.source_locators[`${sectionKey(row)}.${row.verse}`]
             .scan_page_index + 1
         : index + 1,
       ...(provenance.source_locators
         ? {
             locator_kind: "scan" as const,
             source_url:
-              provenance.source_locators[`${row.chapter}.${row.verse}`]
+              provenance.source_locators[`${sectionKey(row)}.${row.verse}`]
                 .source_url,
           }
         : { locator_kind: "etext" as const, running_position: index + 1 }),

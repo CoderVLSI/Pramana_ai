@@ -20,7 +20,7 @@ export function prepareRelease(raw: unknown) {
       reference: [
         p.work_id,
         ...p.hierarchy.map((l: any) => `${l.name} ${l.value}`),
-        `chapter ${p.chapter}`,
+        `${manifest.chapter_label ?? "chapter"} ${p.chapter}`,
         `verse ${p.verse} (volume ${p.source_locator.volume}; ${p.source_locator.locator_kind === "etext" ? `e-text position ${p.source_locator.running_position ?? p.source_locator.printed_page}` : `scan page ${p.source_locator.pdf_page}; printed page ${p.source_locator.printed_page ?? "not mapped"}`})`,
       ].join(", "),
       chapter: p.chapter,

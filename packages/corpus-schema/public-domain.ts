@@ -42,6 +42,8 @@ export interface PublicDomainBundle {
     source_url: string;
     sources: SourceFile[];
     hierarchy_levels: string[];
+    /** What the numeric `chapter` field is called in this edition (default "chapter"), e.g. "valli" or "khanda". */
+    chapter_label?: string;
     reviewers: string[];
     reviewed_at: string;
     expected_passage_count: number;
@@ -129,6 +131,11 @@ export function validatePublicDomainBundle(
     new Set(m.hierarchy_levels).size ===
       m.hierarchy_levels
         .length, "Edition hierarchy levels are required (an empty list is allowed).");
+  require(m.chapter_label === undefined ||
+    (typeof m.chapter_label === "string" &&
+      /^[a-z][a-z -]{0,29}$/.test(
+        m.chapter_label,
+      )), 'chapter_label must be a short lowercase word such as "valli" or "khanda".');
   require(Array.isArray(bundle.passages) &&
     bundle.passages.length > 0, "No passages supplied.");
   require(Number.isInteger(m.expected_passage_count) &&
