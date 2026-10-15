@@ -11,6 +11,10 @@
 2. Keep the scan's own OCR text from that start up to the scan's printed verse-number marker, and require the number to equal the expected verse number.
 3. Compare with the expected per-chapter counts for this edition's numbering (Shankara tradition: 47, 72, 43, 42, 29, 47, 30, 28, 34, 42, 55, 20, 34, 27, 20, 24, 28, 78 = 700; chapter 13 has 34).
 
-**First-pass result:** 592 of 700 verses located with the matching printed verse number; 88 not located and 20 with a marker mismatch (listed in the draft). Located verses still contain OCR errors (example: "मा फरेष" for "मा फलेषु"), so **nothing here is publishable**. Every verse needs a human to compare it to the scan page. The map copy (Sanskrit Wikisource, CC BY-SA) was used only to find positions and none of its text is kept.
+**Result after the second pass (2026-10-15):** 696 of 700 verses located (4 still missing: 6.23, 6.35, 18.67, 18.78). Closeness of the scan's OCR to the map copy, by verse: 158 at 95% or better, 246 at 85-94%, 168 at 60-84%, 124 below 60%. 35 verses were found by their words because the printed verse number was unreadable. A reader should treat only the 95%+ group as "probably right" and still check it against the page image. The low groups are mostly lines the OCR split, cut or merged with commentary (for example 11.32 and 11.33).
 
-**Next:** (1) a second pass for the 108 unmatched verses; (2) an OCR-error pass using the scan page images; (3) two named reviewers compare every verse to the page; (4) then fill `provenance.template.json` with this book as the original source and build the bundle.
+**Nothing here is publishable.** The map copy (Sanskrit Wikisource, CC BY-SA) was used only to find positions and to score closeness; none of its text is kept. The draft text itself is not committed.
+
+**Why quality stops here:** archive.org's automatic OCR has no page breaks and cannot tell the large verse type from the small commentary type. Two things would improve it a lot: (1) re-reading the page images with a stronger OCR engine or the layout (hOCR) data, which needs this sandbox to reach archive.org's file servers (\*.us.archive.org) in addition to archive.org itself; (2) page-image links for reviewers.
+
+**Next:** (1) unblock the file servers and re-OCR with layout data; (2) finish the 4 missing verses by hand; (3) two named reviewers compare every verse to the page; (4) then fill \`provenance.template.json\` with this book as the original source and build the bundle.
