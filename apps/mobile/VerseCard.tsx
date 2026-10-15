@@ -23,7 +23,7 @@ export default function VerseCard({
   const v = source.verse!;
   const lines = String(source.excerpt || "")
     .split("\n")
-    .map((l) => l.trim())
+    .map((l) => l.trim().replace(/\s+(॥|।)/g, "\u00A0$1"))
     .filter(Boolean);
   return (
     <View
@@ -80,7 +80,7 @@ export default function VerseCard({
           <Text
             style={{ fontSize: 14, fontWeight: "700", color: P.accentText }}
           >
-            {v.ref}
+            {v.ref.includes(".") ? v.ref : `Verse ${v.ref}`}
           </Text>
         </View>
       </View>
@@ -99,8 +99,8 @@ export default function VerseCard({
             key={i}
             selectable
             style={{
-              fontSize: 22,
-              lineHeight: 36,
+              fontSize: 21,
+              lineHeight: 34,
               textAlign: "center",
               color: P.ink,
               letterSpacing: 0.2,

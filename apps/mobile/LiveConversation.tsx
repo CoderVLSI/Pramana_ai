@@ -2056,7 +2056,7 @@ const styles = StyleSheet.create({
     fontWeight: "700",
     color: "#755019",
   },
-  sourceExcerpt: { fontSize: 20, lineHeight: 32, color: "#1d2f29" },
+  sourceExcerpt: { fontSize: 20, lineHeight: 32, color: "#263d35" },
   sourceTitle: { fontSize: 15, lineHeight: 21, color: "#263d35" },
   sourceLink: { flexDirection: "row", alignItems: "center", gap: 6 },
   link: { color: "#315444", fontWeight: "600", paddingVertical: 4 },
