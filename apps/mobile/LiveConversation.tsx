@@ -129,8 +129,13 @@ function sourcesFrom(result: unknown, name: string): Source[] {
         ? (source.source_locator as Record<string, unknown>)
         : null;
     const location = locator
-      ? ` · volume ${String(locator.volume || "?").slice(0, 30)}, printed page ${String(locator.printed_page || "?").slice(0, 10)}`
+      ? locator.printed_page
+        ? ` · volume ${String(locator.volume || "?").slice(0, 30)}, printed page ${String(locator.printed_page).slice(0, 10)}`
+        : locator.pdf_page
+          ? ` · scan page ${String(locator.pdf_page).slice(0, 10)}`
+          : ""
       : "";
+    const aiOnly = source.human_verse_review === false;
     const reviewed =
       !isWeb &&
       (data.source_status === "reviewed_excerpt" ||
@@ -156,9 +161,11 @@ function sourcesFrom(result: unknown, name: string): Source[] {
         ),
         label: isWeb
           ? "Web reference · check source"
-          : reviewed
-            ? "Reviewed scripture excerpt · check citation"
-            : "Scripture reference · review pending",
+          : reviewed && aiOnly
+            ? "Scripture excerpt · AI-transcribed, not human-reviewed"
+            : reviewed
+              ? "Reviewed scripture excerpt · check citation"
+              : "Scripture reference · review pending",
       },
     ];
   });

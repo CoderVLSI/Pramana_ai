@@ -676,7 +676,7 @@ function StudyApp() {
                       {"\n"}Review: {reader.review_status} · Release:{" "}
                       {reader.released_in}
                       {reader.source_locator
-                        ? `\nVolume ${reader.source_locator.volume} · printed page ${reader.source_locator.printed_page} · PDF page ${reader.source_locator.pdf_page}`
+                        ? `\nVolume ${reader.source_locator.volume} · ${reader.source_locator.printed_page ? `printed page ${reader.source_locator.printed_page} · ` : ""}scan page ${reader.source_locator.pdf_page}`
                         : ""}
                     </Text>
                     <Text style={s.small}>Immutable ID: {reader.id}</Text>
