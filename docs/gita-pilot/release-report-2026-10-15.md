@@ -12,7 +12,7 @@ The app flag remains OFF. No PR was opened. This is Sanskrit only, AI transcript
 4. Ran `python3 scripts/gita-pilot-local-test.py --state /workspace/scratch/gita-pilot-test`. Applied baseline and open-source migrations, repeated the latter for idempotency, then ran the publisher with `--publish` using ephemeral TEST credentials. Preserved an unrelated CHECK constraint; malformed and JSON-null manifests were rejected; anonymous writes/publication were denied.
 5. Only after TEST passed, applied the same open-source migration through authenticated Supabase MCP to LIVE. Prepared the exact bundle using `scripts/prepare-gita-pilot-mcp-publish.ts`, staged 14 batches of 50, and called the same publication RPC. No LIVE service-role key was retrieved, printed, committed or placed in app code.
 6. Ran `scripts/verify-gita-pilot-release.ts` against both public HTTP APIs. Machine results: [release-verification-2026-10-15.json](release-verification-2026-10-15.json).
-7. `npm test`: 100 passed, 0 failed. `npm run typecheck`: passed.
+7. `npm test`: 101 passed, 0 failed after incorporating Claude’s concurrent reader regression and library-label commit. `npm run typecheck`: passed.
 
 | Check | TEST | LIVE |
 | --- | --- | --- |
@@ -35,7 +35,7 @@ The existing LIVE security advisors also flag the unrelated, pre-existing `publi
 
 ## Recovered failures and method changes
 
-The full local Supabase CLI stack failed to extract because of disk space. With owner authorization for local TEST, used an isolated PostgreSQL 17 plus official Supabase PostgREST 16.4 core stack and a locally trusted HTTPS gateway. This tested the database, actual Data API, RLS, publication and TypeScript client; it did not test hosted infrastructure or Supabase Auth/Storage. No paid TEST project was created. Ephemeral TEST service-role credentials stayed outside Git.
+The full local Supabase CLI stack failed to extract because of disk space. With owner authorization for local TEST, used an isolated PostgreSQL 17 plus official Supabase PostgREST 16.4 core stack and a locally trusted HTTPS gateway. This tested the database, actual Data API, RLS, publication and TypeScript client; it did not test hosted infrastructure or Supabase Auth/Storage. No paid TEST project was created. Ephemeral TEST service-role credentials stayed outside Git. After verification, the TEST containers and gateway were stopped and removed, and the generated credential files and private TLS key were deleted; verification evidence remains committed.
 
 The first TEST run exposed a real reader bug: `record()` allowed only gp_ IDs although public-domain passages use pd_. Fixed the identifier validation and added a regression test; reran TEST successfully before LIVE. Source locators now honestly support scan-only records, and the bundle builder preserves input text exactly. Owner-approved AI-only review metadata is propagated into API records and answer caveats.
 
