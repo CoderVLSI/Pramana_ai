@@ -20,3 +20,4 @@ the public-domain 1909 Anandashram edition (archive.org item `ksu.g48.srimadbhag
   confirmed: that this is the same Apte named for the Anandashram series on the scan's title page (the scan's first
   pages are the table of contents; the title page was not found), and that no other living editor is credited.
 - **Still to verify by a human:** that the archive.org copy is complete, and a sample of verses against the pages.
+- **Editor identity note (2026-10-15):** a library record (BnF) lists a "Hari Narayan Apte, 1890-1936" tied to the Anandashram series, which differs from the novelist (1864-1919) the owner checked. Either way the edition is public domain: published 1909 (US public domain), and both death years are more than 60 years ago (India). The exact person is still unconfirmed.
