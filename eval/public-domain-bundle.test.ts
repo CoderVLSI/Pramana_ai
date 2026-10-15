@@ -206,3 +206,20 @@ test("scan transcriptions retain exact text, real scan pages and explicitly unkn
     /Missing or invalid source locator/,
   );
 });
+
+test("cloud reader accepts validated public-domain passage IDs", async () => {
+  const { ScriptureBackend } =
+    await import("../packages/scripture-backend/client");
+  const row = prepareRelease(buildPublicDomainBundle(verses(), provenance()))
+    .rows[0].passage;
+  const client = new ScriptureBackend(
+    "https://example.org",
+    "sb_publishable_test",
+    async () => Response.json({ ...row, context: [row] }),
+  );
+  assert.equal((await client.record(row.id)).id, row.id);
+  await assert.rejects(
+    () => client.record("invalid"),
+    /Invalid scripture passage identifier/,
+  );
+});

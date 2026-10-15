@@ -1,0 +1,74 @@
+{
+  "test": {
+    "status": "all_checks_passed",
+    "endpoint": "https://localhost:54443",
+    "release_id": "release_0f6413e8f45e2dbb6bc17add00b8f797",
+    "catalog_total": 700,
+    "pilot_passages": 700,
+    "word_search": {
+      "query": "कर्मण्येवाधिकारस्ते",
+      "hits": 1,
+      "includes_2_47": true
+    },
+    "reference_search": {
+      "query": "2.47",
+      "hits": 1,
+      "passage_id": "pd_9b807fa534f78bcfc5c909bccca6"
+    },
+    "scripture_page": {
+      "verified_records": 700,
+      "page_size": 50
+    },
+    "scripture_record": {
+      "id": "pd_9b807fa534f78bcfc5c909bccca6",
+      "scan_page": 93,
+      "printed_page": null,
+      "context_count": 5
+    },
+    "client_hash_checks": {
+      "originals": 700,
+      "quotations": 700,
+      "tamper_rejected": true
+    },
+    "source_locators_verified": 700,
+    "human_verse_review": false,
+    "safe_to_speak": false,
+    "translation": "Sanskrit quotation only; no translation source"
+  },
+  "live": {
+    "status": "all_checks_passed",
+    "endpoint": "https://fdntjeknihekiqldyrpn.supabase.co",
+    "release_id": "release_0f6413e8f45e2dbb6bc17add00b8f797",
+    "catalog_total": 700,
+    "pilot_passages": 700,
+    "word_search": {
+      "query": "कर्मण्येवाधिकारस्ते",
+      "hits": 1,
+      "includes_2_47": true
+    },
+    "reference_search": {
+      "query": "2.47",
+      "hits": 1,
+      "passage_id": "pd_9b807fa534f78bcfc5c909bccca6"
+    },
+    "scripture_page": {
+      "verified_records": 700,
+      "page_size": 50
+    },
+    "scripture_record": {
+      "id": "pd_9b807fa534f78bcfc5c909bccca6",
+      "scan_page": 93,
+      "printed_page": null,
+      "context_count": 5
+    },
+    "client_hash_checks": {
+      "originals": 700,
+      "quotations": 700,
+      "tamper_rejected": true
+    },
+    "source_locators_verified": 700,
+    "human_verse_review": false,
+    "safe_to_speak": false,
+    "translation": "Sanskrit quotation only; no translation source"
+  }
+}
