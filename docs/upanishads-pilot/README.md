@@ -29,3 +29,7 @@ Nirnaya Sagar Press, Bombay, 1906, ed. Vasudeva Laxmana Shastri Pansikar. archiv
 The project owner accepted the rights basis for the 1906 Nirnaya Sagar edition, including the reported 1863–1931 editor dates supported by one Google AI overview and still awaiting a second authority source. The owner authorized publication of the AI transcription without human verse-by-verse review. The release attestations name the owner approval role and Claude AI transcription/merge-check role truthfully. This decision supersedes the earlier “not for release” preparation label for these eleven pilot releases only.
 
 The requested releases include all 1,572 **numbered units**. Thirty unnumbered entries (including peace invocations) are excluded by the supplied preparation tool. Taittiriya has 16 sections mapped to sequential unit numbers; numbering is edition-specific. Text fields are preserved unchanged. The source XML was re-downloaded on 2026-10-16; its SHA-256 matches `f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95`.
+
+## Publication result
+
+All eleven releases passed isolated local TEST and LIVE verification on 2026-10-16. See [publication report](release-report-2026-10-16.md), [TEST results](test-verification-2026-10-16.json) and [LIVE results](live-verification-2026-10-16.json). App flag unchanged.
