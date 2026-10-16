@@ -24,6 +24,7 @@ export function prepareRelease(raw: unknown) {
         `verse ${p.verse} (volume ${p.source_locator.volume}; ${p.source_locator.locator_kind === "etext" ? `e-text position ${p.source_locator.running_position ?? p.source_locator.printed_page}` : `scan page ${p.source_locator.pdf_page}; printed page ${p.source_locator.printed_page ?? "not mapped"}`})`,
       ].join(", "),
       chapter: p.chapter,
+      ...(Number.isInteger(p.print_year) ? { print_year: p.print_year } : {}),
       verse: /^\d+$/.test(p.verse) ? Number(p.verse) : 0,
       exact_verse: p.verse,
       hierarchy: p.hierarchy,

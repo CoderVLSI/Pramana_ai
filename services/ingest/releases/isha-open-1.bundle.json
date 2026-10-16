@@ -1,0 +1,296 @@
+{
+ "manifest": {
+  "work_id": "isha-upanishad",
+  "edition_id": "nirnaya-sagar-1906-ashtavimshati-upanishads",
+  "release": "isha-open-1",
+  "completeness": "complete",
+  "publisher": "Nirnaya Sagar Press, Bombay (1906), via archive.org",
+  "publisher_location": "n/a",
+  "license_id": "public-domain",
+  "public_domain_basis": "Own AI transcription of page images from Isadi-ashtavimshatyupanishadah, Nirnaya Sagar Press, Bombay, published 1906. The Pramana project owner accepts the public-domain basis for this edition: publication in 1906 establishes US public domain; editor Vasudeva Laxmana Shastri Pansikar is reported as 1863-1931 in one Google AI overview supplied by the owner, which would put the edition outside India's life-plus-60 term. The editor dates remain singly sourced; a second authority source is still wanted, and other contributors have not been confirmed. No modern edition's text or translation is used.",
+  "permission_proof": "Approval recorded by the Pramana project owner in the publication task on 2026-10-16: the owner accepts the rights basis for the 1906 Nirnaya Sagar Isadi-ashtavimshatyupanishadah (archive.org item twentyeightupan00upangoog), including the reported editor dates 1863-1931 from one Google AI overview with second-source confirmation still wanted, and approves release of the AI transcription without human verse-by-verse review. See docs/upanishads-pilot/README.md and release-report-2026-10-16.md.",
+  "permissions": [
+   "index",
+   "quote"
+  ],
+  "rights_approved": true,
+  "source_url": "https://archive.org/details/twentyeightupan00upangoog",
+  "sources": [
+   {
+    "role": "original",
+    "title": "Isadi-ashtavimshatyupanishadah (The Twenty-eight Upanishads)",
+    "author": "Vasudeva Laxmana Shastri Pansikar (ed.)",
+    "publication_year": 1906,
+    "url": "https://archive.org/details/twentyeightupan00upangoog",
+    "sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95",
+    "retrieved_at": "2026-10-16"
+   }
+  ],
+  "hierarchy_levels": [],
+  "reviewers": [
+   "Pramana project owner (approved release without verse-by-verse review)",
+   "Claude AI transcription and cross-check (page images, merge check)"
+  ],
+  "reviewed_at": "2026-10-16",
+  "complete_coverage_confirmed": true,
+  "review_method": "AI transcription from page images with an AI merge check; no human verse-by-verse review",
+  "human_verse_review": false,
+  "review_notice": "AI-transcribed Sanskrit text of a 1906 edition; not yet human-reviewed. Numbering is this edition's own.",
+  "rights_class": "public_domain",
+  "expected_passage_count": 18
+ },
+ "passages": [
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "1",
+   "original": "ॐ ईशावास्यमिदꣳ सर्वं यत्किञ्च जगत्यां जगत् ॥ तेन त्यक्तेन भुञ्जीथा मा गृधः कस्य स्विद्धनम्",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 1,
+    "pdf_page": 16,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n15/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "2",
+   "original": "कुर्वन्नेवेह कर्माणि जिजीविषेच्छतꣳ समाः ॥ एवं त्वयि नान्यथेतोऽस्ति न कर्म लिप्यते नरे",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 1,
+    "pdf_page": 16,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n15/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "3",
+   "original": "असुर्या नाम ते लोका अन्धेन तमसावृताः ॥ ताꣳस्ते प्रेत्याभिगच्छन्ति ये के चात्महनो जनाः",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 1,
+    "pdf_page": 16,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n15/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "4",
+   "original": "अनेजदेकं मनसो जवीयो नैनद्देवा आमुवन्पूर्वमर्शत् ॥ तद्धावतोऽन्यानत्येति तिष्ठत्तस्मिन्नपो मातरिश्वा दधाति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 1,
+    "pdf_page": 16,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n15/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "5",
+   "original": "तदेजति तन्नैजति तद्दूरे तद्वन्तिके ॥ तदन्तरस्य सर्वस्य तदु सर्वस्यास्य बाह्यतः",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 1,
+    "pdf_page": 16,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n15/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "6",
+   "original": "यस्तु सर्वाणि भूतान्यात्मन्येवानुपश्यति ॥ सर्वभूतेषु चात्मानं ततो न विजुगुप्सते",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 2,
+    "pdf_page": 17,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n16/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "7",
+   "original": "यस्मिन्सर्वाणि भूतान्यात्मैवाभूद्विजानतः । तत्र को मोहः कः शोक एकत्वमनुपश्यतः",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 2,
+    "pdf_page": 17,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n16/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "8",
+   "original": "स पर्यगाच्छुक्रमकायमव्रणमस्नाविरꣳ शुद्धमपापविद्धम् ॥ कविर्मनीषी परिभूः स्वयंभूर्याथातथ्यतोऽर्थान्व्यदधाच्छाश्वतीभ्यः समाभ्यः",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 2,
+    "pdf_page": 17,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n16/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "9",
+   "original": "अन्धं तमः प्रविशन्ति येऽविद्यामुपासते ॥ ततो भूय इव ते तमो य उ विद्यायाꣳ रताः",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 2,
+    "pdf_page": 17,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n16/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "10",
+   "original": "अन्यदेवाहुर्विद्ययान्यदाहुरविद्यया ॥ इति शुश्रुम धीराणां ये नस्तद्विचचक्षिरे",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 2,
+    "pdf_page": 17,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n16/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "11",
+   "original": "विद्यां चाविद्यां च यस्तद्वेदोभयꣳ सह । अविद्यया मृत्युं तीर्त्वा विद्ययामृतमश्नुते",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 2,
+    "pdf_page": 17,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n16/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "12",
+   "original": "अन्धं तमः प्रविशन्ति येऽसंभूतिमुपासते ॥ ततो भूय इव ते तमो य उ संभूत्याꣳ रताः",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 2,
+    "pdf_page": 17,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n16/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "13",
+   "original": "अन्यदेवाहुः संभवादन्यदाहुरसंभवात् ॥ इति शुश्रुम धीराणां ये नस्तद्विचचक्षिरे",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 2,
+    "pdf_page": 17,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n16/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "14",
+   "original": "संभूतिं च विनाशं च यस्तद्वेदोभयꣳ सह ॥ विनाशेन मृत्युं तीर्त्वा संभूत्यामृतमश्नुते",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 2,
+    "pdf_page": 17,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n16/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "15",
+   "original": "हिरण्मयेन पात्रेण सत्यस्यापिहितं मुखम् ॥ तत्त्वं पूषन्नपावृणु सत्यधर्माय दृष्टये",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 2,
+    "pdf_page": 17,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n16/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "16",
+   "original": "पूषन्नेकर्षे यम सूर्य प्राजापत्य व्यूह रश्मीन्समूह ॥ तेजो यत्ते रूपं कल्याणतमं तत्ते पश्यामि योऽसावसौ पुरुषः सोऽहमस्मि",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 2,
+    "pdf_page": 17,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n16/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "17",
+   "original": "वायुरनिलममृतमथेदं भस्मान्तꣳ शरीरम् ॥ ॐ क्रतो स्मर कृतꣳ स्मर क्रतो स्मर कृतꣳ स्मर",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 2,
+    "pdf_page": 17,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n16/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "18",
+   "original": "अग्ने नय सुपथा राये अस्मान्विश्वानि देव वयुनानि विद्वान् ॥ युयोध्यस्मज्जुहुराणमेनो भूयिष्ठां ते नमउक्तिं विधेम",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 3,
+    "pdf_page": 18,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n17/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  }
+ ]
+}

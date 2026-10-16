@@ -4,6 +4,8 @@ export interface Passage {
   id: string;
   work_id: string;
   edition_id: string;
+  /** Publication year of the source edition, when supplied by ingestion. */
+  print_year?: number;
   reference: string;
   chapter: number;
   verse: number;

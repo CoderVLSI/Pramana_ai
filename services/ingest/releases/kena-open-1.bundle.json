@@ -1,0 +1,521 @@
+{
+ "manifest": {
+  "work_id": "kena-upanishad",
+  "edition_id": "nirnaya-sagar-1906-ashtavimshati-upanishads",
+  "release": "kena-open-1",
+  "completeness": "complete",
+  "publisher": "Nirnaya Sagar Press, Bombay (1906), via archive.org",
+  "publisher_location": "n/a",
+  "license_id": "public-domain",
+  "public_domain_basis": "Own AI transcription of page images from Isadi-ashtavimshatyupanishadah, Nirnaya Sagar Press, Bombay, published 1906. The Pramana project owner accepts the public-domain basis for this edition: publication in 1906 establishes US public domain; editor Vasudeva Laxmana Shastri Pansikar is reported as 1863-1931 in one Google AI overview supplied by the owner, which would put the edition outside India's life-plus-60 term. The editor dates remain singly sourced; a second authority source is still wanted, and other contributors have not been confirmed. No modern edition's text or translation is used.",
+  "permission_proof": "Approval recorded by the Pramana project owner in the publication task on 2026-10-16: the owner accepts the rights basis for the 1906 Nirnaya Sagar Isadi-ashtavimshatyupanishadah (archive.org item twentyeightupan00upangoog), including the reported editor dates 1863-1931 from one Google AI overview with second-source confirmation still wanted, and approves release of the AI transcription without human verse-by-verse review. See docs/upanishads-pilot/README.md and release-report-2026-10-16.md.",
+  "permissions": [
+   "index",
+   "quote"
+  ],
+  "rights_approved": true,
+  "source_url": "https://archive.org/details/twentyeightupan00upangoog",
+  "sources": [
+   {
+    "role": "original",
+    "title": "Isadi-ashtavimshatyupanishadah (The Twenty-eight Upanishads)",
+    "author": "Vasudeva Laxmana Shastri Pansikar (ed.)",
+    "publication_year": 1906,
+    "url": "https://archive.org/details/twentyeightupan00upangoog",
+    "sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95",
+    "retrieved_at": "2026-10-16"
+   }
+  ],
+  "hierarchy_levels": [],
+  "chapter_label": "khanda",
+  "reviewers": [
+   "Pramana project owner (approved release without verse-by-verse review)",
+   "Claude AI transcription and cross-check (page images, merge check)"
+  ],
+  "reviewed_at": "2026-10-16",
+  "complete_coverage_confirmed": true,
+  "review_method": "AI transcription from page images with an AI merge check; no human verse-by-verse review",
+  "human_verse_review": false,
+  "review_notice": "AI-transcribed Sanskrit text of a 1906 edition; not yet human-reviewed. Numbering is this edition's own.",
+  "rights_class": "public_domain",
+  "expected_passage_count": 34
+ },
+ "passages": [
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "1",
+   "original": "ॐ केनेषितं पतति प्रेषितं मनः केन प्राणः प्रथमः प्रैति युक्तः ॥ केनेषितां वाचमिमां वदन्ति चक्षुः श्रोत्रं क उ देवो युनक्ति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 3,
+    "pdf_page": 18,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n17/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "2",
+   "original": "श्रोत्रस्य श्रोत्रं मनसो मनो यद्वाचो ह वाचꣳ स उ प्राणस्य प्राणश्चक्षुषश्चक्षुरतिमुच्य धीराः प्रेत्यास्माल्लोकादमृता भवन्ति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 3,
+    "pdf_page": 18,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n17/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "3",
+   "original": "न तत्र चक्षुर्गच्छति न वाग्गच्छति नो मनो न विद्मो न विजानीमो यथैतदनुशिष्यादन्यदेव तद्विदितादथो अविदितादधि ॥ इति शुश्रुम पूर्वेषां ये नस्तद्व्याचचक्षिरे",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 3,
+    "pdf_page": 18,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n17/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "4",
+   "original": "यद्वाचानभ्युदितं येन वागभ्युद्यते ॥ तदेव ब्रह्म त्वं विद्धि नेदं यदिदमुपासते",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 4,
+    "pdf_page": 19,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n18/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "5",
+   "original": "यन्मनसा न मनुते येनाहुर्मनो मतम् ॥ तदेव ब्रह्म त्वं विद्धि नेदं यदिदमुपासते",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 4,
+    "pdf_page": 19,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n18/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "6",
+   "original": "यच्चक्षुषा न पश्यति येन चक्षूꣳषि पश्यति । तदेव ब्रह्म त्वं विद्धि नेदं यदिदमुपासते",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 4,
+    "pdf_page": 19,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n18/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "7",
+   "original": "यच्छ्रोत्रेण न शृणोति येन श्रोत्रमिदꣳ श्रुतम् ॥ तदेव ब्रह्म त्वं विद्धि नेदं यदिदमुपासते",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 4,
+    "pdf_page": 19,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n18/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "8",
+   "original": "यत्प्राणेन न प्राणिति येन प्राणः प्राणीयते ॥ तदेव ब्रह्म त्वं विद्धि नेदं यदिदमुपासते",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 4,
+    "pdf_page": 19,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n18/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 2,
+   "verse": "1",
+   "original": "यदि मन्यसे सुवेदेति दभ्रमेवापि नूनं त्वं वेत्थ ब्रह्मणो रूपं यदस्य त्वं यदस्य च देवेष्वथ नु मीमांस्यमेव ते मन्ये विदितम्",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 4,
+    "pdf_page": 19,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n18/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 2,
+   "verse": "2",
+   "original": "नाहं मन्ये सुवेदेति नो न वेदेति वेद च । यो नस्तद्वेद तद्वेद नो न वेदेति वेद च",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 4,
+    "pdf_page": 19,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n18/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 2,
+   "verse": "3",
+   "original": "यस्यामतं तस्य मतं मतं यस्य न वेद सः ॥ अविज्ञातं विजानतां विज्ञातमविजानताम्",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 4,
+    "pdf_page": 19,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n18/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 2,
+   "verse": "4",
+   "original": "प्रतिबोधविदितं मतममृतत्वं हि विन्दते ॥ आत्मना विन्दते वीर्यं विद्यया विन्दतेऽमृतम्",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 4,
+    "pdf_page": 19,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n18/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 2,
+   "verse": "5",
+   "original": "इह चेदवेदीदथ सत्यमस्ति न चेदिहावेदीन्महती विनष्टिः ॥ भूतेषु भूतेषु विचित्य धीराः प्रेत्यास्माल्लोकादमृता भवन्ति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 4,
+    "pdf_page": 19,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n18/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 3,
+   "verse": "1",
+   "original": "ब्रह्म ह देवेभ्यो विजिग्ये तस्य ह ब्रह्मणो विजये देवा अमहीयन्त त ऐक्षन्तास्माकमेवायं विजयोऽस्माकमेवायं महिमेति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 4,
+    "pdf_page": 19,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n18/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 3,
+   "verse": "2",
+   "original": "तद्धैषां विजज्ञौ तेभ्यो ह प्रादुर्बभूव तन्न व्यजानन्त किमिदं यक्षमिति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 5,
+    "pdf_page": 20,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n19/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 3,
+   "verse": "3",
+   "original": "तेऽग्निमब्रुवञ्जातवेद एतद्विजानीहि किमेतद्यक्षमिति तथेति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 5,
+    "pdf_page": 20,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n19/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 3,
+   "verse": "4",
+   "original": "तदभ्यद्रवत्तमभ्यवदत्कोऽसीत्यग्निर्वा अहमस्मीत्यब्रवीज्जातवेदा वा अहमस्मीति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 5,
+    "pdf_page": 20,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n19/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 3,
+   "verse": "5",
+   "original": "तस्मिꣳस्त्वयि किं वीर्यमित्यपीदꣳ सर्वं दहेयं यदिदं पृथिव्यामिति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 5,
+    "pdf_page": 20,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n19/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 3,
+   "verse": "6",
+   "original": "तस्मै तृणं निदधावेतद्दहेति तदुपप्रेयाय सर्वजवेन तन्न शशाक दग्धुं स तत एव निववृते नैतदशकं विज्ञातुं यदेतद्यक्षमिति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 5,
+    "pdf_page": 20,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n19/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 3,
+   "verse": "7",
+   "original": "अथ वायुमब्रुवन्वायवेतद्विजानीहि किमेतद्यक्षमिति तथेति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 5,
+    "pdf_page": 20,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n19/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 3,
+   "verse": "8",
+   "original": "तदभ्यद्रवत्तमभ्यवदत्कोऽसीति वायुर्वा अहमस्मीत्यब्रवीन्मातरिश्वा वा अहमस्मीति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 5,
+    "pdf_page": 20,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n19/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 3,
+   "verse": "9",
+   "original": "तस्मिꣳस्त्वयि किं वीर्यमित्यपीदꣳ सर्वमाददीय यदिदं पृथिव्यामिति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 5,
+    "pdf_page": 20,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n19/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 3,
+   "verse": "10",
+   "original": "तस्मै तृणं निदधावेतदादत्स्वेति तदुपप्रेयाय सर्वजवेन तन्न शशाकादातुं स तत एव निववृते नैतदशकं विज्ञातुं यदेतद्यक्षमिति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 5,
+    "pdf_page": 20,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n19/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 3,
+   "verse": "11",
+   "original": "अथेन्द्रमब्रुवन्मघवन्नेतद्विजानीहि किमेतद्यक्षमिति । तथेति तदभ्यद्रवत्तस्मात्तिरोदधे",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 5,
+    "pdf_page": 20,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n19/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 3,
+   "verse": "12",
+   "original": "स तस्मिन्नेवाकाशे स्त्रियमाजगाम बहुशोभमानामुमां हैमवतीं तꣳ होवाच किमेतद्यक्षमिति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 5,
+    "pdf_page": 20,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n19/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 4,
+   "verse": "1",
+   "original": "सा ब्रह्मेति होवाच ब्रह्मणो वा एतद्विजये महीयध्वमिति ततो हैव विदांचकार ब्रह्मेति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 6,
+    "pdf_page": 21,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n20/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 4,
+   "verse": "2",
+   "original": "तस्माद्वा एते देवा अतितरामिवान्यान्देवान्यदग्निर्वायुरिन्द्रस्ते ह्येनं नेदिष्ठं पस्पर्शुस्ते ह्येनत्प्रथमो विदांचकार ब्रह्मेति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 6,
+    "pdf_page": 21,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n20/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 4,
+   "verse": "3",
+   "original": "तस्माद्वा इन्द्रोऽतितरामिवान्यान्देवान्स ह्येनन्नेदिष्ठं पस्पर्श स ह्येनत्प्रथमो विदांचकार ब्रह्मेति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 6,
+    "pdf_page": 21,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n20/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 4,
+   "verse": "4",
+   "original": "तस्यैष आदेशो यदेतद्विद्युतो व्यद्युतदा३ इतीति न्यमीमिषदा३ इत्यधिदैवतम्",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 6,
+    "pdf_page": 21,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n20/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 4,
+   "verse": "5",
+   "original": "अथाध्यात्मं यदेतद्गच्छतीव च मनोऽनेन चैतदुपस्मरत्यभीक्ष्णं संकल्पः",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 6,
+    "pdf_page": 21,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n20/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 4,
+   "verse": "6",
+   "original": "तद्ध तद्वनं नाम तद्वनमित्युपासितव्यं स य एतदेवं वेदाभि हैनꣳ सर्वाणि भूतानि संवाञ्छन्ति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 6,
+    "pdf_page": 21,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n20/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 4,
+   "verse": "7",
+   "original": "उपनिषदं भो ब्रूहीत्युक्ता त उपनिषद्ब्राह्मीं वाव त उपनिषदमब्रूमेति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 6,
+    "pdf_page": 21,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n20/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 4,
+   "verse": "8",
+   "original": "तस्यै तपो दमः कर्मेति प्रतिष्ठा वेदाः सर्वाङ्गानि सत्यमायतनम्",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 6,
+    "pdf_page": 21,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n20/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 4,
+   "verse": "9",
+   "original": "यो वा एतामेवं वेदापहत्य पाप्मानमन्ते स्वर्गे लोके ज्येये प्रतितिष्ठति प्रतितिष्ठति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 6,
+    "pdf_page": 21,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n20/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  }
+ ]
+}

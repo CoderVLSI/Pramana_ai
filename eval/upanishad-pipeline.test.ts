@@ -57,6 +57,11 @@ test("all eleven principal Upanishads build, validate and get unique ids", () =>
     assert.equal(bundle.passages.length, prepared.verses.length, work);
     const { rows } = prepareRelease(bundle);
     assert.equal(new Set(rows.map((r) => r.id)).size, rows.length, work);
+    assert.equal(
+      rows.every((r) => r.passage.print_year === 1906),
+      true,
+      work,
+    );
     // human-review flag and notice travel with every record
     assert.equal(
       rows.every((r) => r.passage.human_verse_review === false),
@@ -100,4 +105,21 @@ test("peace invocations and unnumbered paragraphs stay out of the bundles", () =
   const prepared = prepareUpanishadWork(entries, "isha-upanishad");
   assert.equal(prepared.verses.length, 18);
   assert.equal(prepared.excluded, 2);
+});
+
+// Text integrity is independent of whether a fixture is NFC or has outer whitespace.
+test("Upanishad preparation preserves source text verbatim", () => {
+  const input: UpanishadEntry[] = [
+    {
+      work: "isha-upanishad",
+      hierarchy: [],
+      verse: "1",
+      text: "  e\u0301 source\n",
+      page_index: 15,
+    },
+  ];
+  assert.equal(
+    prepareUpanishadWork(input, "isha-upanishad").verses[0].original,
+    input[0].text,
+  );
 });

@@ -71,7 +71,7 @@ export function prepareUpanishadWork(
         hierarchy: outer,
         chapter,
         verse,
-        original: e.text.normalize("NFC").trim(),
+        original: e.text,
       });
       const printed = e.page_index - PRINTED_PAGE_OFFSET;
       locators[`${key}.${verse}`] = {

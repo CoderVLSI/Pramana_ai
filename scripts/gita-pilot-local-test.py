@@ -18,6 +18,8 @@ import time
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser()
 parser.add_argument('--state', required=True)
+parser.add_argument('--bundle-list', help='External JSON list of bundles, defaults to the Gita pilot')
+parser.add_argument('--verify-script', default='scripts/verify-gita-pilot-release.ts')
 args = parser.parse_args()
 state = pathlib.Path(args.state).resolve()
 assert not state.is_relative_to(ROOT), 'Test credentials must stay outside the repository'
@@ -43,7 +45,7 @@ def run(*cmd, **kwargs):
             if secret: detail = detail.replace(secret, '[REDACTED]')
         raise RuntimeError(detail[-2000:]) from None
 def sql(value):
-    return run('docker', 'exec', '-i', DB, 'psql', '-U', 'postgres', '-v', 'ON_ERROR_STOP=1', input=value)
+    return run('docker', 'exec', '-i', DB, 'psql', '-h', '127.0.0.1', '-U', 'postgres', '-v', 'ON_ERROR_STOP=1', input=value)
 def save(name, value):
     path = state / name
     path.write_text(value)
@@ -116,11 +118,13 @@ for attempt in range(60):
     if result.returncode == 0: break
     if attempt == 59: raise RuntimeError('Local TEST Data API did not become ready')
     time.sleep(0.5)
-output = run('npx','tsx','services/ingest/publish-scripture.ts','services/ingest/releases/gita-open-1.bundle.json','--publish',cwd=ROOT,env=environment)
-print(output.strip())
-print(run('npx','tsx','scripts/verify-gita-pilot-release.ts','--url','https://localhost:54443','--out',str(state/'verification.json'),cwd=ROOT,env=environment))
+bundles = json.loads(pathlib.Path(args.bundle_list).read_text()) if args.bundle_list else ['services/ingest/releases/gita-open-1.bundle.json']
+for bundle in bundles:
+    output = run('npx','tsx','services/ingest/publish-scripture.ts',bundle,'--publish',cwd=ROOT,env=environment)
+    print(output.strip(), flush=True)
+print(run('npx','tsx',args.verify_script,'--url','https://localhost:54443','--out',str(state/'verification.json'),cwd=ROOT,env=environment))
 sql("""set role anon; do $$ begin
   begin insert into scripture_releases(id,work_id,edition_id,manifest) values('forbidden','x','x','{}'); raise exception 'Anonymous write accepted'; exception when insufficient_privilege then null; end;
   begin perform publish_scripture_release('forbidden'); raise exception 'Anonymous publication accepted'; exception when insufficient_privilege then null; end;
 end $$;""")
-print('PASS: local TEST migrations, preserved constraint, malformed/NULL manifest denial, anonymous write/publication denial; all 700 originals and quotation hashes verified.')
+print('PASS: local TEST migrations, preserved constraint, malformed/NULL manifest denial, anonymous write/publication denial; selected release originals, quotation hashes, records and pagination verified.')

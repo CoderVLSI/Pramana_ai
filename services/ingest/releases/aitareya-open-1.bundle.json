@@ -1,0 +1,674 @@
+{
+ "manifest": {
+  "work_id": "aitareya-upanishad",
+  "edition_id": "nirnaya-sagar-1906-ashtavimshati-upanishads",
+  "release": "aitareya-open-1",
+  "completeness": "complete",
+  "publisher": "Nirnaya Sagar Press, Bombay (1906), via archive.org",
+  "publisher_location": "n/a",
+  "license_id": "public-domain",
+  "public_domain_basis": "Own AI transcription of page images from Isadi-ashtavimshatyupanishadah, Nirnaya Sagar Press, Bombay, published 1906. The Pramana project owner accepts the public-domain basis for this edition: publication in 1906 establishes US public domain; editor Vasudeva Laxmana Shastri Pansikar is reported as 1863-1931 in one Google AI overview supplied by the owner, which would put the edition outside India's life-plus-60 term. The editor dates remain singly sourced; a second authority source is still wanted, and other contributors have not been confirmed. No modern edition's text or translation is used.",
+  "permission_proof": "Approval recorded by the Pramana project owner in the publication task on 2026-10-16: the owner accepts the rights basis for the 1906 Nirnaya Sagar Isadi-ashtavimshatyupanishadah (archive.org item twentyeightupan00upangoog), including the reported editor dates 1863-1931 from one Google AI overview with second-source confirmation still wanted, and approves release of the AI transcription without human verse-by-verse review. See docs/upanishads-pilot/README.md and release-report-2026-10-16.md.",
+  "permissions": [
+   "index",
+   "quote"
+  ],
+  "rights_approved": true,
+  "source_url": "https://archive.org/details/twentyeightupan00upangoog",
+  "sources": [
+   {
+    "role": "original",
+    "title": "Isadi-ashtavimshatyupanishadah (The Twenty-eight Upanishads)",
+    "author": "Vasudeva Laxmana Shastri Pansikar (ed.)",
+    "publication_year": 1906,
+    "url": "https://archive.org/details/twentyeightupan00upangoog",
+    "sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95",
+    "retrieved_at": "2026-10-16"
+   }
+  ],
+  "hierarchy_levels": [
+   "adhyaya"
+  ],
+  "chapter_label": "khanda",
+  "reviewers": [
+   "Pramana project owner (approved release without verse-by-verse review)",
+   "Claude AI transcription and cross-check (page images, merge check)"
+  ],
+  "reviewed_at": "2026-10-16",
+  "complete_coverage_confirmed": true,
+  "review_method": "AI transcription from page images with an AI merge check; no human verse-by-verse review",
+  "human_verse_review": false,
+  "review_notice": "AI-transcribed Sanskrit text of a 1906 edition; not yet human-reviewed. Numbering is this edition's own.",
+  "rights_class": "public_domain",
+  "expected_passage_count": 33
+ },
+ "passages": [
+  {
+   "hierarchy": [
+    {
+     "name": "adhyaya",
+     "value": "1"
+    }
+   ],
+   "chapter": 1,
+   "verse": "1",
+   "original": "आत्मा वा इदमेक एवाग्र आसीन्नान्यत्किञ्चन मिषत् ॥ स ईक्षत लोकान्नु सृजा इति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 56,
+    "pdf_page": 71,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n70/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "adhyaya",
+     "value": "1"
+    }
+   ],
+   "chapter": 1,
+   "verse": "2",
+   "original": "स इमाँल्लोकानसृजत अम्भो मरीचीर्मरमापोऽदोऽम्भः परेण दिवं द्यौः प्रतिष्ठान्तरिक्षं मरीचयः ॥ पृथिवी मरो या अधस्तात्ता आपः",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 56,
+    "pdf_page": 71,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n70/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "adhyaya",
+     "value": "1"
+    }
+   ],
+   "chapter": 1,
+   "verse": "3",
+   "original": "स ईक्षतेमे नु लोका लोकपालान्नु सृजा इति ॥ सोऽद्भ्य एव पुरुषं समुद्धृत्यामूर्च्छयत्",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 56,
+    "pdf_page": 71,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n70/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "adhyaya",
+     "value": "1"
+    }
+   ],
+   "chapter": 1,
+   "verse": "4",
+   "original": "तमभ्यतपत्तस्याभितप्तस्य मुखं निरभिद्यत यथाण्डं मुखाद्वाग्वाचोऽग्निर्नासिके निरभिद्येतां नासिकाभ्यां प्राणः ॥ प्राणाद्वायुरक्षिणी निरभिद्येतामक्षीभ्यां चक्षुश्चक्षुष आदित्यः कर्णौ निरभिद्येतां कर्णाभ्यां श्रोत्रं श्रोत्राद्दिशस्त्वङ्निरभिद्यत त्वचो लोमानि लोमभ्य ओषधिवनस्पतयो हृदयं निरभिद्यत हृदयान्मनो मनसश्चन्द्रमा नाभिर्निरभिद्यत नाभ्या अपानोऽपानान्मृत्युः शिश्नं निरभिद्यत शिश्नाद्रेतो रेतस आपः",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 56,
+    "pdf_page": 71,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n70/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "adhyaya",
+     "value": "1"
+    }
+   ],
+   "chapter": 2,
+   "verse": "1",
+   "original": "ता एता देवताः सृष्टा अस्मिन् महत्यर्णवे प्रापतंस्तमशनायापिपासाभ्यामन्ववार्जत् ॥ ता एनमब्रुवन्नायतनं नः प्रजानीहि यस्मिन् प्रतिष्ठिता अन्नमदामेति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 57,
+    "pdf_page": 72,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n71/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "adhyaya",
+     "value": "1"
+    }
+   ],
+   "chapter": 2,
+   "verse": "2",
+   "original": "ताभ्यो गामानयत्ता अब्रुवन्न वै नोऽयमलमिति ॥ ताभ्योऽश्वमानयत्ता अब्रुवन्न वै नोऽयमलमिति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 57,
+    "pdf_page": 72,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n71/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "adhyaya",
+     "value": "1"
+    }
+   ],
+   "chapter": 2,
+   "verse": "3",
+   "original": "ताभ्यः पुरुषमानयत्ता अब्रुवन् सुकृतं बतेति पुरुषो वाव सुकृतम् ॥ ता अब्रवीद्यथाऽऽयतनं प्रविशतेति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 57,
+    "pdf_page": 72,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n71/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "adhyaya",
+     "value": "1"
+    }
+   ],
+   "chapter": 2,
+   "verse": "4",
+   "original": "अग्निर्वाग्भूत्वा मुखं प्राविशद्वायुः प्राणो भूत्वा नासिके प्राविशदादित्यश्चक्षुर्भूत्वाऽक्षिणी प्राविशद्दिशः श्रोत्रं भूत्वा कर्णौ प्राविशन्नोषधिवनस्पतयो लोमानि भूत्वा त्वचं प्राविशंश्चन्द्रमा मनो भूत्वा हृदयं प्राविशन्मृत्युरपानो भूत्वा नाभिं प्राविशदापो रेतो भूत्वा शिश्नं प्राविशन्",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 57,
+    "pdf_page": 72,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n71/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "adhyaya",
+     "value": "1"
+    }
+   ],
+   "chapter": 2,
+   "verse": "5",
+   "original": "तमशनायापिपासे अब्रूतामावाभ्यामभिप्रजानीहीति ॥ ते अब्रवीदेतास्वेव वां देवतास्वाभजाम्येतासु भागिन्यौ करोमीति ॥ तस्माद्यस्यै कस्यै च देवतायै हविर्गृह्यते भागिन्यावेवास्यामशनायापिपासे भवतः",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 57,
+    "pdf_page": 72,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n71/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "adhyaya",
+     "value": "1"
+    }
+   ],
+   "chapter": 3,
+   "verse": "1",
+   "original": "स ईक्षतेमे नु लोकाश्च लोकपालाश्चान्नमेभ्यः सृजा इति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 57,
+    "pdf_page": 72,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n71/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "adhyaya",
+     "value": "1"
+    }
+   ],
+   "chapter": 3,
+   "verse": "2",
+   "original": "सोऽपोऽभ्यतपत् ताभ्योऽभितप्ताभ्यो मूर्तिरजायत ॥ या वै सा मूर्तिरजायताऽन्नं वै तत्",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 57,
+    "pdf_page": 72,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n71/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "adhyaya",
+     "value": "1"
+    }
+   ],
+   "chapter": 3,
+   "verse": "3",
+   "original": "तदेतदभिसृष्टं पराङत्यजिघांसत् तद्वाचा जिघृक्षत्तन्नाशक्नोद्वाचा ग्रहीतुम् ॥ स यद्धैनद्वाचाऽग्रहैष्यदभिव्याहृत्य हैवान्नमत्रप्स्यत्",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 57,
+    "pdf_page": 72,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n71/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "adhyaya",
+     "value": "1"
+    }
+   ],
+   "chapter": 3,
+   "verse": "4",
+   "original": "तत्प्राणेनाजिघृक्षत् तन्नाशक्नोत्प्राणेन ग्रहीतुम् ॥ स यद्धैनत्प्राणेनाग्रहैष्यदभिप्राण्य हैवान्नमत्रप्स्यत्",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 58,
+    "pdf_page": 73,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n72/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "adhyaya",
+     "value": "1"
+    }
+   ],
+   "chapter": 3,
+   "verse": "5",
+   "original": "तच्चक्षुषाऽजिघृक्षत् तन्नाशक्नोच्चक्षुषा ग्रहीतुम् ॥ स यद्धैनच्चक्षुषाऽग्रहैष्यद्दृष्ट्वा हैवान्नमत्रप्स्यत्",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 58,
+    "pdf_page": 73,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n72/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "adhyaya",
+     "value": "1"
+    }
+   ],
+   "chapter": 3,
+   "verse": "6",
+   "original": "तच्छ्रोत्रेणाजिघृक्षत् ॥ तन्नाशक्नोच्छ्रोत्रेण ग्रहीतुम् ॥ स यद्धैनच्छ्रोत्रेणाग्रहैष्यच्छ्रुत्वा हैवान्नमत्रप्स्यत्",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 58,
+    "pdf_page": 73,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n72/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "adhyaya",
+     "value": "1"
+    }
+   ],
+   "chapter": 3,
+   "verse": "7",
+   "original": "तत्त्वचाऽजिघृक्षत् तन्नाशक्नोत्त्वचा ग्रहीतुम् ॥ स यद्धैनत्त्वचाऽग्रहैष्यत्स्पृष्ट्वा हैवान्नमत्रप्स्यत्",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 58,
+    "pdf_page": 73,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n72/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "adhyaya",
+     "value": "1"
+    }
+   ],
+   "chapter": 3,
+   "verse": "8",
+   "original": "तन्मनसाऽजिघृक्षत् तन्नाशक्नोन्मनसा ग्रहीतुम् ॥ स यद्धैनन्मनसाऽग्रहैष्यद्ध्यात्वा हैवान्नमत्रप्स्यत्",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 58,
+    "pdf_page": 73,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n72/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "adhyaya",
+     "value": "1"
+    }
+   ],
+   "chapter": 3,
+   "verse": "9",
+   "original": "तच्छिश्नेनाजिघृक्षत्तन्नाशक्नोच्छिश्नेन ग्रहीतुम् ॥ स यद्धैनच्छिश्नेनाग्रहैष्यद्विसृज्य हैवान्नमत्रप्स्यत्",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 58,
+    "pdf_page": 73,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n72/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "adhyaya",
+     "value": "1"
+    }
+   ],
+   "chapter": 3,
+   "verse": "10",
+   "original": "तदपानेनाजिघृक्षत् तदावयत् । सैषोऽन्नस्य ग्रहो यद्वायुरन्नायुर्वा एष यद्वायुः",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 58,
+    "pdf_page": 73,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n72/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "adhyaya",
+     "value": "1"
+    }
+   ],
+   "chapter": 3,
+   "verse": "11",
+   "original": "स ईक्षत कथं न्विदं मदृते स्यादिति स ईक्षत कतरेण प्रपद्या इति ॥ स ईक्षत यदि वाचाऽभिव्याहृतं यदि प्राणेनाभिप्राणितं यदि चक्षुषा दृष्टं यदि श्रोत्रेण श्रुतं यदि त्वचा स्पृष्टं यदि मनसा ध्यातं यद्यपानेनाभ्यपानितं यदि शिश्नेन विसृष्टमथ कोऽहमिति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 58,
+    "pdf_page": 73,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n72/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "adhyaya",
+     "value": "1"
+    }
+   ],
+   "chapter": 3,
+   "verse": "12",
+   "original": "स एतमेव सीमानं विदार्यैतया द्वारा प्रापद्यत ॥ सैषा विदृतिर्नाम द्वास्तदेतन्नान्दनम् तस्य त्रय आवसथास्त्रयः स्वप्ना अयमावसथोऽयमावसथोऽयमावसथ इति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 58,
+    "pdf_page": 73,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n72/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "adhyaya",
+     "value": "1"
+    }
+   ],
+   "chapter": 3,
+   "verse": "13",
+   "original": "स जातो भूतान्यभिव्यैख्यत् किमिहान्यं वावदिषदिति ॥ स एतमेव पुरुषं ब्रह्म ततममपश्यदिदमदर्शमितीꣳ",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 58,
+    "pdf_page": 73,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n72/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "adhyaya",
+     "value": "1"
+    }
+   ],
+   "chapter": 3,
+   "verse": "14",
+   "original": "तस्मादिदन्द्रो नामेदन्द्रो ह वै नाम तमिदन्द्रं सन्तमिन्द्र इत्याचक्षते परोक्षेण परोक्षप्रिया इव हि देवाः परोक्षप्रिया इव हि देवाः",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 59,
+    "pdf_page": 74,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n73/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "adhyaya",
+     "value": "2"
+    }
+   ],
+   "chapter": 4,
+   "verse": "1",
+   "original": "पुरुषे ह वा अयमादितो गर्भो भवति । यदेतद्रेतस्तदेतत्सर्वेभ्योऽङ्गेभ्यस्तेजः संभूतमात्मन्येवात्मानं बिभर्ति तद्यदा स्त्रियां सिञ्चत्यथैनजनयति तदस्य प्रथमं जन्म",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 59,
+    "pdf_page": 74,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n73/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "adhyaya",
+     "value": "2"
+    }
+   ],
+   "chapter": 4,
+   "verse": "2",
+   "original": "तत् स्त्रिया आत्मभूयं गच्छति यथा स्वमङ्गं तथा तस्मादेनां न हिनस्ति साऽस्यैतमात्मानमत्र गतं भावयति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 59,
+    "pdf_page": 74,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n73/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "adhyaya",
+     "value": "2"
+    }
+   ],
+   "chapter": 4,
+   "verse": "3",
+   "original": "सा भावयित्री भावयितव्या भवति तं स्त्री गर्भं बिभर्ति सोऽग्र एव कुमारं जन्मनोऽग्रेऽधिभावयति स यत्कुमारं जन्मनोऽग्रेऽधिभावयत्यात्मानमेव तद्भावयत्येषां लोकानां सन्तत्या एवं सन्तता हीमे लोकास्तदस्य द्वितीयं जन्म",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 59,
+    "pdf_page": 74,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n73/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "adhyaya",
+     "value": "2"
+    }
+   ],
+   "chapter": 4,
+   "verse": "4",
+   "original": "सोऽस्यायमात्मा पुण्येभ्यः कर्मभ्यः प्रतिधीयतेऽथास्यायमितर आत्मा कृतकृत्यो वयोगतः प्रैति स इतः प्रयन्नेव पुनर्जायते तदस्य तृतीयं जन्म",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 59,
+    "pdf_page": 74,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n73/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "adhyaya",
+     "value": "2"
+    }
+   ],
+   "chapter": 4,
+   "verse": "5",
+   "original": "तदुक्तमृषिणा गर्भे नु सन्नन्वेषामवेदमहं देवानां जनिमानि विश्वा ॥ शतं मा पुर आयसीररक्षन्नधः श्येनो जवसा निरदीयमिति गर्भ एवैतच्छयानो वामदेव एवमुवाच",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 59,
+    "pdf_page": 74,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n73/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "adhyaya",
+     "value": "2"
+    }
+   ],
+   "chapter": 4,
+   "verse": "6",
+   "original": "स एवं विद्वानस्माच्छरीरभेदादूर्ध्व उत्क्रम्यामुष्मिन् स्वर्गे लोके सर्वान् कामानाप्त्वाऽमृतः समभवत् समभवत्",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 59,
+    "pdf_page": 74,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n73/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "adhyaya",
+     "value": "3"
+    }
+   ],
+   "chapter": 5,
+   "verse": "1",
+   "original": "कोऽयमात्मेति वयमुपास्महे कतरः स आत्मा येन वा (रूपं) पश्यति येन वा (शब्दं) शृणोति येन वा गन्धानाजिघ्रति येन वा वाचं व्याकरोति येन वा स्वादु चास्वादु च विजानाति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 60,
+    "pdf_page": 75,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n74/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "adhyaya",
+     "value": "3"
+    }
+   ],
+   "chapter": 5,
+   "verse": "2",
+   "original": "यदेतत् हृदयं मनश्चैतत् ॥ संज्ञानमाज्ञानं विज्ञानं प्रज्ञानं मेधा दृष्टिर्धृतिर्मतिर्मनीषा जूतिः स्मृतिः संकल्पः क्रतुरसुः कामो वश इति ॥ सर्वाण्येवैतानि प्रज्ञानस्य नामधेयानि भवन्ति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 60,
+    "pdf_page": 75,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n74/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "adhyaya",
+     "value": "3"
+    }
+   ],
+   "chapter": 5,
+   "verse": "3",
+   "original": "एष ब्रह्मैष इन्द्र एष प्रजापतिरेते सर्वे देवा इमानि च पञ्च महाभूतानि पृथिवी वायुराकाश आपो ज्योतींषीत्येतानीमानि च क्षुद्रमिश्राणीव ॥ बीजानीतराणि चेतराणि चाण्डजानि च जारुजानि च स्वेदजानि चोद्भिज्जानि चाश्वा गावः पुरुषा हस्तिनो यत्किञ्चेदं प्राणि जङ्गमं च पतत्रि च यच्च स्थावरम् ॥ सर्वं तत्प्रज्ञानेत्रं प्रज्ञाने प्रतिष्ठितं प्रज्ञानेत्रो लोकः प्रज्ञा प्रतिष्ठा प्रज्ञानं ब्रह्म",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 60,
+    "pdf_page": 75,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n74/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "adhyaya",
+     "value": "3"
+    }
+   ],
+   "chapter": 5,
+   "verse": "4",
+   "original": "स एतेन प्रज्ञेनात्मनास्माल्लोकादुत्क्रम्यामुष्मिन् स्वर्गे लोके सर्वान्कामानाप्त्वाऽमृतः समभवत् समभवत् ॥ इत्योम्",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 60,
+    "pdf_page": 75,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n74/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  }
+ ]
+}

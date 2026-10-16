@@ -1,0 +1,3362 @@
+{
+ "manifest": {
+  "work_id": "chandogya-upanishad",
+  "edition_id": "nirnaya-sagar-1906-ashtavimshati-upanishads",
+  "release": "chandogya-open-1",
+  "completeness": "complete",
+  "publisher": "Nirnaya Sagar Press, Bombay (1906), via archive.org",
+  "publisher_location": "n/a",
+  "license_id": "public-domain",
+  "public_domain_basis": "Own AI transcription of page images from Isadi-ashtavimshatyupanishadah, Nirnaya Sagar Press, Bombay, published 1906. The Pramana project owner accepts the public-domain basis for this edition: publication in 1906 establishes US public domain; editor Vasudeva Laxmana Shastri Pansikar is reported as 1863-1931 in one Google AI overview supplied by the owner, which would put the edition outside India's life-plus-60 term. The editor dates remain singly sourced; a second authority source is still wanted, and other contributors have not been confirmed. No modern edition's text or translation is used.",
+  "permission_proof": "Approval recorded by the Pramana project owner in the publication task on 2026-10-16: the owner accepts the rights basis for the 1906 Nirnaya Sagar Isadi-ashtavimshatyupanishadah (archive.org item twentyeightupan00upangoog), including the reported editor dates 1863-1931 from one Google AI overview with second-source confirmation still wanted, and approves release of the AI transcription without human verse-by-verse review. See docs/upanishads-pilot/README.md and release-report-2026-10-16.md.",
+  "permissions": [
+   "index",
+   "quote"
+  ],
+  "rights_approved": true,
+  "source_url": "https://archive.org/details/twentyeightupan00upangoog",
+  "sources": [
+   {
+    "role": "original",
+    "title": "Isadi-ashtavimshatyupanishadah (The Twenty-eight Upanishads)",
+    "author": "Vasudeva Laxmana Shastri Pansikar (ed.)",
+    "publication_year": 1906,
+    "url": "https://archive.org/details/twentyeightupan00upangoog",
+    "sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95",
+    "retrieved_at": "2026-10-16"
+   }
+  ],
+  "hierarchy_levels": [
+   "prapathaka"
+  ],
+  "chapter_label": "khanda",
+  "reviewers": [
+   "Pramana project owner (approved release without verse-by-verse review)",
+   "Claude AI transcription and cross-check (page images, merge check)"
+  ],
+  "reviewed_at": "2026-10-16",
+  "complete_coverage_confirmed": true,
+  "review_method": "AI transcription from page images with an AI merge check; no human verse-by-verse review",
+  "human_verse_review": false,
+  "review_notice": "AI-transcribed Sanskrit text of a 1906 edition; not yet human-reviewed. Numbering is this edition's own."
+ },
+ "expected_verses_per_chapter": {
+  "1.1": 10,
+  "1.2": 14,
+  "1.3": 12,
+  "1.4": 5,
+  "1.5": 5,
+  "1.6": 8,
+  "1.7": 9,
+  "1.8": 8,
+  "1.9": 4,
+  "1.10": 11,
+  "1.11": 9,
+  "1.12": 5,
+  "1.13": 4,
+  "2.1": 4,
+  "2.2": 3,
+  "2.3": 2,
+  "2.4": 2,
+  "2.5": 2,
+  "2.6": 2,
+  "2.7": 2,
+  "2.8": 3,
+  "2.9": 8,
+  "2.10": 6,
+  "2.11": 2,
+  "2.12": 2,
+  "2.13": 2,
+  "2.14": 2,
+  "2.15": 2,
+  "2.16": 2,
+  "2.17": 2,
+  "2.18": 2,
+  "2.19": 2,
+  "2.20": 2,
+  "2.21": 4,
+  "2.22": 5,
+  "2.23": 3,
+  "2.24": 16,
+  "3.1": 4,
+  "3.2": 3,
+  "3.3": 3,
+  "3.4": 3,
+  "3.5": 4,
+  "3.6": 4,
+  "3.7": 4,
+  "3.8": 4,
+  "3.9": 4,
+  "3.10": 4,
+  "3.11": 6,
+  "3.12": 9,
+  "3.13": 8,
+  "3.14": 4,
+  "3.15": 7,
+  "3.16": 7,
+  "3.17": 7,
+  "3.18": 6,
+  "3.19": 4,
+  "4.1": 8,
+  "4.2": 5,
+  "4.3": 8,
+  "4.4": 5,
+  "4.5": 3,
+  "4.6": 4,
+  "4.7": 4,
+  "4.8": 4,
+  "4.9": 3,
+  "4.10": 5,
+  "4.11": 2,
+  "4.12": 2,
+  "4.13": 2,
+  "4.14": 3,
+  "4.15": 6,
+  "4.16": 5,
+  "4.17": 10,
+  "5.1": 15,
+  "5.2": 9,
+  "5.3": 7,
+  "5.4": 2,
+  "5.5": 2,
+  "5.6": 2,
+  "5.7": 2,
+  "5.8": 2,
+  "5.9": 2,
+  "5.10": 10,
+  "5.11": 7,
+  "5.12": 2,
+  "5.13": 2,
+  "5.14": 2,
+  "5.15": 2,
+  "5.16": 2,
+  "5.17": 2,
+  "5.18": 2,
+  "5.19": 2,
+  "5.20": 2,
+  "5.21": 2,
+  "5.22": 2,
+  "5.23": 2,
+  "5.24": 5,
+  "6.1": 7,
+  "6.2": 4,
+  "6.3": 4,
+  "6.4": 7,
+  "6.5": 4,
+  "6.6": 5,
+  "6.7": 6,
+  "6.8": 7,
+  "6.9": 4,
+  "6.10": 3,
+  "6.11": 3,
+  "6.12": 3,
+  "6.13": 3,
+  "6.14": 3,
+  "6.15": 3,
+  "6.16": 3,
+  "7.1": 5,
+  "7.2": 2,
+  "7.3": 2,
+  "7.4": 3,
+  "7.5": 3,
+  "7.6": 2,
+  "7.7": 2,
+  "7.8": 2,
+  "7.9": 2,
+  "7.10": 2,
+  "7.11": 2,
+  "7.12": 2,
+  "7.13": 2,
+  "7.14": 2,
+  "7.15": 4,
+  "7.16": 1,
+  "7.17": 1,
+  "7.18": 1,
+  "7.19": 1,
+  "7.20": 1,
+  "7.21": 1,
+  "7.22": 1,
+  "7.23": 1,
+  "7.24": 2,
+  "7.25": 2,
+  "7.26": 2,
+  "8.1": 6,
+  "8.2": 10,
+  "8.3": 5,
+  "8.4": 3,
+  "8.5": 4,
+  "8.6": 6,
+  "8.7": 4,
+  "8.8": 5,
+  "8.9": 3,
+  "8.10": 4,
+  "8.11": 3,
+  "8.12": 6,
+  "8.13": 1,
+  "8.14": 1,
+  "8.15": 1
+ },
+ "source_locators": {
+  "1.1.1": {
+   "scan_page_index": 75,
+   "printed_page": 61,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n75/mode/1up"
+  },
+  "1.1.2": {
+   "scan_page_index": 75,
+   "printed_page": 61,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n75/mode/1up"
+  },
+  "1.1.3": {
+   "scan_page_index": 75,
+   "printed_page": 61,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n75/mode/1up"
+  },
+  "1.1.4": {
+   "scan_page_index": 75,
+   "printed_page": 61,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n75/mode/1up"
+  },
+  "1.1.5": {
+   "scan_page_index": 75,
+   "printed_page": 61,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n75/mode/1up"
+  },
+  "1.1.6": {
+   "scan_page_index": 76,
+   "printed_page": 62,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n76/mode/1up"
+  },
+  "1.1.7": {
+   "scan_page_index": 76,
+   "printed_page": 62,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n76/mode/1up"
+  },
+  "1.1.8": {
+   "scan_page_index": 76,
+   "printed_page": 62,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n76/mode/1up"
+  },
+  "1.1.9": {
+   "scan_page_index": 76,
+   "printed_page": 62,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n76/mode/1up"
+  },
+  "1.1.10": {
+   "scan_page_index": 76,
+   "printed_page": 62,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n76/mode/1up"
+  },
+  "1.2.1": {
+   "scan_page_index": 76,
+   "printed_page": 62,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n76/mode/1up"
+  },
+  "1.2.2": {
+   "scan_page_index": 76,
+   "printed_page": 62,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n76/mode/1up"
+  },
+  "1.2.3": {
+   "scan_page_index": 76,
+   "printed_page": 62,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n76/mode/1up"
+  },
+  "1.2.4": {
+   "scan_page_index": 76,
+   "printed_page": 62,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n76/mode/1up"
+  },
+  "1.2.5": {
+   "scan_page_index": 77,
+   "printed_page": 63,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n77/mode/1up"
+  },
+  "1.2.6": {
+   "scan_page_index": 77,
+   "printed_page": 63,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n77/mode/1up"
+  },
+  "1.2.7": {
+   "scan_page_index": 77,
+   "printed_page": 63,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n77/mode/1up"
+  },
+  "1.2.8": {
+   "scan_page_index": 77,
+   "printed_page": 63,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n77/mode/1up"
+  },
+  "1.2.9": {
+   "scan_page_index": 77,
+   "printed_page": 63,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n77/mode/1up"
+  },
+  "1.2.10": {
+   "scan_page_index": 77,
+   "printed_page": 63,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n77/mode/1up"
+  },
+  "1.2.11": {
+   "scan_page_index": 77,
+   "printed_page": 63,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n77/mode/1up"
+  },
+  "1.2.12": {
+   "scan_page_index": 77,
+   "printed_page": 63,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n77/mode/1up"
+  },
+  "1.2.13": {
+   "scan_page_index": 77,
+   "printed_page": 63,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n77/mode/1up"
+  },
+  "1.2.14": {
+   "scan_page_index": 77,
+   "printed_page": 63,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n77/mode/1up"
+  },
+  "1.3.1": {
+   "scan_page_index": 78,
+   "printed_page": 64,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n78/mode/1up"
+  },
+  "1.3.2": {
+   "scan_page_index": 78,
+   "printed_page": 64,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n78/mode/1up"
+  },
+  "1.3.3": {
+   "scan_page_index": 78,
+   "printed_page": 64,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n78/mode/1up"
+  },
+  "1.3.4": {
+   "scan_page_index": 78,
+   "printed_page": 64,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n78/mode/1up"
+  },
+  "1.3.5": {
+   "scan_page_index": 78,
+   "printed_page": 64,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n78/mode/1up"
+  },
+  "1.3.6": {
+   "scan_page_index": 78,
+   "printed_page": 64,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n78/mode/1up"
+  },
+  "1.3.7": {
+   "scan_page_index": 78,
+   "printed_page": 64,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n78/mode/1up"
+  },
+  "1.3.8": {
+   "scan_page_index": 79,
+   "printed_page": 65,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n79/mode/1up"
+  },
+  "1.3.9": {
+   "scan_page_index": 79,
+   "printed_page": 65,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n79/mode/1up"
+  },
+  "1.3.10": {
+   "scan_page_index": 79,
+   "printed_page": 65,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n79/mode/1up"
+  },
+  "1.3.11": {
+   "scan_page_index": 79,
+   "printed_page": 65,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n79/mode/1up"
+  },
+  "1.3.12": {
+   "scan_page_index": 79,
+   "printed_page": 65,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n79/mode/1up"
+  },
+  "1.4.1": {
+   "scan_page_index": 79,
+   "printed_page": 65,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n79/mode/1up"
+  },
+  "1.4.2": {
+   "scan_page_index": 79,
+   "printed_page": 65,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n79/mode/1up"
+  },
+  "1.4.3": {
+   "scan_page_index": 79,
+   "printed_page": 65,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n79/mode/1up"
+  },
+  "1.4.4": {
+   "scan_page_index": 79,
+   "printed_page": 65,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n79/mode/1up"
+  },
+  "1.4.5": {
+   "scan_page_index": 79,
+   "printed_page": 65,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n79/mode/1up"
+  },
+  "1.5.1": {
+   "scan_page_index": 80,
+   "printed_page": 66,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n80/mode/1up"
+  },
+  "1.5.2": {
+   "scan_page_index": 80,
+   "printed_page": 66,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n80/mode/1up"
+  },
+  "1.5.3": {
+   "scan_page_index": 80,
+   "printed_page": 66,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n80/mode/1up"
+  },
+  "1.5.4": {
+   "scan_page_index": 80,
+   "printed_page": 66,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n80/mode/1up"
+  },
+  "1.5.5": {
+   "scan_page_index": 80,
+   "printed_page": 66,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n80/mode/1up"
+  },
+  "1.6.1": {
+   "scan_page_index": 80,
+   "printed_page": 66,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n80/mode/1up"
+  },
+  "1.6.2": {
+   "scan_page_index": 80,
+   "printed_page": 66,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n80/mode/1up"
+  },
+  "1.6.3": {
+   "scan_page_index": 80,
+   "printed_page": 66,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n80/mode/1up"
+  },
+  "1.6.4": {
+   "scan_page_index": 80,
+   "printed_page": 66,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n80/mode/1up"
+  },
+  "1.6.5": {
+   "scan_page_index": 80,
+   "printed_page": 66,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n80/mode/1up"
+  },
+  "1.6.6": {
+   "scan_page_index": 81,
+   "printed_page": 67,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n81/mode/1up"
+  },
+  "1.6.7": {
+   "scan_page_index": 81,
+   "printed_page": 67,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n81/mode/1up"
+  },
+  "1.6.8": {
+   "scan_page_index": 81,
+   "printed_page": 67,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n81/mode/1up"
+  },
+  "1.7.1": {
+   "scan_page_index": 81,
+   "printed_page": 67,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n81/mode/1up"
+  },
+  "1.7.2": {
+   "scan_page_index": 81,
+   "printed_page": 67,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n81/mode/1up"
+  },
+  "1.7.3": {
+   "scan_page_index": 81,
+   "printed_page": 67,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n81/mode/1up"
+  },
+  "1.7.4": {
+   "scan_page_index": 81,
+   "printed_page": 67,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n81/mode/1up"
+  },
+  "1.7.5": {
+   "scan_page_index": 81,
+   "printed_page": 67,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n81/mode/1up"
+  },
+  "1.7.6": {
+   "scan_page_index": 82,
+   "printed_page": 68,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n82/mode/1up"
+  },
+  "1.7.7": {
+   "scan_page_index": 82,
+   "printed_page": 68,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n82/mode/1up"
+  },
+  "1.7.8": {
+   "scan_page_index": 82,
+   "printed_page": 68,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n82/mode/1up"
+  },
+  "1.7.9": {
+   "scan_page_index": 82,
+   "printed_page": 68,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n82/mode/1up"
+  },
+  "1.8.1": {
+   "scan_page_index": 82,
+   "printed_page": 68,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n82/mode/1up"
+  },
+  "1.8.2": {
+   "scan_page_index": 82,
+   "printed_page": 68,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n82/mode/1up"
+  },
+  "1.8.3": {
+   "scan_page_index": 82,
+   "printed_page": 68,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n82/mode/1up"
+  },
+  "1.8.4": {
+   "scan_page_index": 82,
+   "printed_page": 68,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n82/mode/1up"
+  },
+  "1.8.5": {
+   "scan_page_index": 82,
+   "printed_page": 68,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n82/mode/1up"
+  },
+  "1.8.6": {
+   "scan_page_index": 83,
+   "printed_page": 69,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n83/mode/1up"
+  },
+  "1.8.7": {
+   "scan_page_index": 83,
+   "printed_page": 69,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n83/mode/1up"
+  },
+  "1.8.8": {
+   "scan_page_index": 83,
+   "printed_page": 69,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n83/mode/1up"
+  },
+  "1.9.1": {
+   "scan_page_index": 83,
+   "printed_page": 69,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n83/mode/1up"
+  },
+  "1.9.2": {
+   "scan_page_index": 83,
+   "printed_page": 69,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n83/mode/1up"
+  },
+  "1.9.3": {
+   "scan_page_index": 83,
+   "printed_page": 69,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n83/mode/1up"
+  },
+  "1.9.4": {
+   "scan_page_index": 84,
+   "printed_page": 70,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n84/mode/1up"
+  },
+  "1.10.1": {
+   "scan_page_index": 84,
+   "printed_page": 70,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n84/mode/1up"
+  },
+  "1.10.2": {
+   "scan_page_index": 84,
+   "printed_page": 70,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n84/mode/1up"
+  },
+  "1.10.3": {
+   "scan_page_index": 84,
+   "printed_page": 70,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n84/mode/1up"
+  },
+  "1.10.4": {
+   "scan_page_index": 84,
+   "printed_page": 70,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n84/mode/1up"
+  },
+  "1.10.5": {
+   "scan_page_index": 84,
+   "printed_page": 70,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n84/mode/1up"
+  },
+  "1.10.6": {
+   "scan_page_index": 84,
+   "printed_page": 70,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n84/mode/1up"
+  },
+  "1.10.7": {
+   "scan_page_index": 84,
+   "printed_page": 70,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n84/mode/1up"
+  },
+  "1.10.8": {
+   "scan_page_index": 84,
+   "printed_page": 70,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n84/mode/1up"
+  },
+  "1.10.9": {
+   "scan_page_index": 84,
+   "printed_page": 70,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n84/mode/1up"
+  },
+  "1.10.10": {
+   "scan_page_index": 84,
+   "printed_page": 70,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n84/mode/1up"
+  },
+  "1.10.11": {
+   "scan_page_index": 84,
+   "printed_page": 70,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n84/mode/1up"
+  },
+  "1.11.1": {
+   "scan_page_index": 85,
+   "printed_page": 71,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n85/mode/1up"
+  },
+  "1.11.2": {
+   "scan_page_index": 85,
+   "printed_page": 71,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n85/mode/1up"
+  },
+  "1.11.3": {
+   "scan_page_index": 85,
+   "printed_page": 71,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n85/mode/1up"
+  },
+  "1.11.4": {
+   "scan_page_index": 85,
+   "printed_page": 71,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n85/mode/1up"
+  },
+  "1.11.5": {
+   "scan_page_index": 85,
+   "printed_page": 71,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n85/mode/1up"
+  },
+  "1.11.6": {
+   "scan_page_index": 85,
+   "printed_page": 71,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n85/mode/1up"
+  },
+  "1.11.7": {
+   "scan_page_index": 85,
+   "printed_page": 71,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n85/mode/1up"
+  },
+  "1.11.8": {
+   "scan_page_index": 85,
+   "printed_page": 71,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n85/mode/1up"
+  },
+  "1.11.9": {
+   "scan_page_index": 86,
+   "printed_page": 72,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n86/mode/1up"
+  },
+  "1.12.1": {
+   "scan_page_index": 86,
+   "printed_page": 72,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n86/mode/1up"
+  },
+  "1.12.2": {
+   "scan_page_index": 86,
+   "printed_page": 72,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n86/mode/1up"
+  },
+  "1.12.3": {
+   "scan_page_index": 86,
+   "printed_page": 72,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n86/mode/1up"
+  },
+  "1.12.4": {
+   "scan_page_index": 86,
+   "printed_page": 72,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n86/mode/1up"
+  },
+  "1.12.5": {
+   "scan_page_index": 86,
+   "printed_page": 72,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n86/mode/1up"
+  },
+  "1.13.1": {
+   "scan_page_index": 86,
+   "printed_page": 72,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n86/mode/1up"
+  },
+  "1.13.2": {
+   "scan_page_index": 86,
+   "printed_page": 72,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n86/mode/1up"
+  },
+  "1.13.3": {
+   "scan_page_index": 86,
+   "printed_page": 72,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n86/mode/1up"
+  },
+  "1.13.4": {
+   "scan_page_index": 86,
+   "printed_page": 72,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n86/mode/1up"
+  },
+  "2.1.1": {
+   "scan_page_index": 87,
+   "printed_page": 73,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n87/mode/1up"
+  },
+  "2.1.2": {
+   "scan_page_index": 87,
+   "printed_page": 73,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n87/mode/1up"
+  },
+  "2.1.3": {
+   "scan_page_index": 87,
+   "printed_page": 73,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n87/mode/1up"
+  },
+  "2.1.4": {
+   "scan_page_index": 87,
+   "printed_page": 73,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n87/mode/1up"
+  },
+  "2.2.1": {
+   "scan_page_index": 87,
+   "printed_page": 73,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n87/mode/1up"
+  },
+  "2.2.2": {
+   "scan_page_index": 87,
+   "printed_page": 73,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n87/mode/1up"
+  },
+  "2.2.3": {
+   "scan_page_index": 87,
+   "printed_page": 73,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n87/mode/1up"
+  },
+  "2.3.1": {
+   "scan_page_index": 87,
+   "printed_page": 73,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n87/mode/1up"
+  },
+  "2.3.2": {
+   "scan_page_index": 88,
+   "printed_page": 74,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n88/mode/1up"
+  },
+  "2.4.1": {
+   "scan_page_index": 88,
+   "printed_page": 74,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n88/mode/1up"
+  },
+  "2.4.2": {
+   "scan_page_index": 88,
+   "printed_page": 74,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n88/mode/1up"
+  },
+  "2.5.1": {
+   "scan_page_index": 88,
+   "printed_page": 74,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n88/mode/1up"
+  },
+  "2.5.2": {
+   "scan_page_index": 88,
+   "printed_page": 74,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n88/mode/1up"
+  },
+  "2.6.1": {
+   "scan_page_index": 88,
+   "printed_page": 74,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n88/mode/1up"
+  },
+  "2.6.2": {
+   "scan_page_index": 88,
+   "printed_page": 74,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n88/mode/1up"
+  },
+  "2.7.1": {
+   "scan_page_index": 88,
+   "printed_page": 74,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n88/mode/1up"
+  },
+  "2.7.2": {
+   "scan_page_index": 88,
+   "printed_page": 74,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n88/mode/1up"
+  },
+  "2.8.1": {
+   "scan_page_index": 89,
+   "printed_page": 75,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n89/mode/1up"
+  },
+  "2.8.2": {
+   "scan_page_index": 89,
+   "printed_page": 75,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n89/mode/1up"
+  },
+  "2.8.3": {
+   "scan_page_index": 89,
+   "printed_page": 75,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n89/mode/1up"
+  },
+  "2.9.1": {
+   "scan_page_index": 89,
+   "printed_page": 75,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n89/mode/1up"
+  },
+  "2.9.2": {
+   "scan_page_index": 89,
+   "printed_page": 75,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n89/mode/1up"
+  },
+  "2.9.3": {
+   "scan_page_index": 89,
+   "printed_page": 75,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n89/mode/1up"
+  },
+  "2.9.4": {
+   "scan_page_index": 89,
+   "printed_page": 75,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n89/mode/1up"
+  },
+  "2.9.5": {
+   "scan_page_index": 89,
+   "printed_page": 75,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n89/mode/1up"
+  },
+  "2.9.6": {
+   "scan_page_index": 90,
+   "printed_page": 76,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n90/mode/1up"
+  },
+  "2.9.7": {
+   "scan_page_index": 90,
+   "printed_page": 76,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n90/mode/1up"
+  },
+  "2.9.8": {
+   "scan_page_index": 90,
+   "printed_page": 76,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n90/mode/1up"
+  },
+  "2.10.1": {
+   "scan_page_index": 90,
+   "printed_page": 76,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n90/mode/1up"
+  },
+  "2.10.2": {
+   "scan_page_index": 90,
+   "printed_page": 76,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n90/mode/1up"
+  },
+  "2.10.3": {
+   "scan_page_index": 90,
+   "printed_page": 76,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n90/mode/1up"
+  },
+  "2.10.4": {
+   "scan_page_index": 90,
+   "printed_page": 76,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n90/mode/1up"
+  },
+  "2.10.5": {
+   "scan_page_index": 90,
+   "printed_page": 76,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n90/mode/1up"
+  },
+  "2.10.6": {
+   "scan_page_index": 90,
+   "printed_page": 76,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n90/mode/1up"
+  },
+  "2.11.1": {
+   "scan_page_index": 90,
+   "printed_page": 76,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n90/mode/1up"
+  },
+  "2.11.2": {
+   "scan_page_index": 91,
+   "printed_page": 77,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n91/mode/1up"
+  },
+  "2.12.1": {
+   "scan_page_index": 91,
+   "printed_page": 77,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n91/mode/1up"
+  },
+  "2.12.2": {
+   "scan_page_index": 91,
+   "printed_page": 77,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n91/mode/1up"
+  },
+  "2.13.1": {
+   "scan_page_index": 91,
+   "printed_page": 77,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n91/mode/1up"
+  },
+  "2.13.2": {
+   "scan_page_index": 91,
+   "printed_page": 77,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n91/mode/1up"
+  },
+  "2.14.1": {
+   "scan_page_index": 91,
+   "printed_page": 77,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n91/mode/1up"
+  },
+  "2.14.2": {
+   "scan_page_index": 91,
+   "printed_page": 77,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n91/mode/1up"
+  },
+  "2.15.1": {
+   "scan_page_index": 92,
+   "printed_page": 78,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n92/mode/1up"
+  },
+  "2.15.2": {
+   "scan_page_index": 92,
+   "printed_page": 78,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n92/mode/1up"
+  },
+  "2.16.1": {
+   "scan_page_index": 92,
+   "printed_page": 78,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n92/mode/1up"
+  },
+  "2.16.2": {
+   "scan_page_index": 92,
+   "printed_page": 78,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n92/mode/1up"
+  },
+  "2.17.1": {
+   "scan_page_index": 92,
+   "printed_page": 78,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n92/mode/1up"
+  },
+  "2.17.2": {
+   "scan_page_index": 92,
+   "printed_page": 78,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n92/mode/1up"
+  },
+  "2.18.1": {
+   "scan_page_index": 93,
+   "printed_page": 79,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n93/mode/1up"
+  },
+  "2.18.2": {
+   "scan_page_index": 93,
+   "printed_page": 79,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n93/mode/1up"
+  },
+  "2.19.1": {
+   "scan_page_index": 93,
+   "printed_page": 79,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n93/mode/1up"
+  },
+  "2.19.2": {
+   "scan_page_index": 93,
+   "printed_page": 79,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n93/mode/1up"
+  },
+  "2.20.1": {
+   "scan_page_index": 93,
+   "printed_page": 79,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n93/mode/1up"
+  },
+  "2.20.2": {
+   "scan_page_index": 93,
+   "printed_page": 79,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n93/mode/1up"
+  },
+  "2.21.1": {
+   "scan_page_index": 93,
+   "printed_page": 79,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n93/mode/1up"
+  },
+  "2.21.2": {
+   "scan_page_index": 94,
+   "printed_page": 80,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n94/mode/1up"
+  },
+  "2.21.3": {
+   "scan_page_index": 94,
+   "printed_page": 80,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n94/mode/1up"
+  },
+  "2.21.4": {
+   "scan_page_index": 94,
+   "printed_page": 80,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n94/mode/1up"
+  },
+  "2.22.1": {
+   "scan_page_index": 94,
+   "printed_page": 80,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n94/mode/1up"
+  },
+  "2.22.2": {
+   "scan_page_index": 94,
+   "printed_page": 80,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n94/mode/1up"
+  },
+  "2.22.3": {
+   "scan_page_index": 94,
+   "printed_page": 80,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n94/mode/1up"
+  },
+  "2.22.4": {
+   "scan_page_index": 94,
+   "printed_page": 80,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n94/mode/1up"
+  },
+  "2.22.5": {
+   "scan_page_index": 94,
+   "printed_page": 80,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n94/mode/1up"
+  },
+  "2.23.1": {
+   "scan_page_index": 95,
+   "printed_page": 81,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n95/mode/1up"
+  },
+  "2.23.2": {
+   "scan_page_index": 95,
+   "printed_page": 81,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n95/mode/1up"
+  },
+  "2.23.3": {
+   "scan_page_index": 95,
+   "printed_page": 81,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n95/mode/1up"
+  },
+  "2.24.1": {
+   "scan_page_index": 95,
+   "printed_page": 81,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n95/mode/1up"
+  },
+  "2.24.2": {
+   "scan_page_index": 95,
+   "printed_page": 81,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n95/mode/1up"
+  },
+  "2.24.3": {
+   "scan_page_index": 95,
+   "printed_page": 81,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n95/mode/1up"
+  },
+  "2.24.4": {
+   "scan_page_index": 95,
+   "printed_page": 81,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n95/mode/1up"
+  },
+  "2.24.5": {
+   "scan_page_index": 95,
+   "printed_page": 81,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n95/mode/1up"
+  },
+  "2.24.6": {
+   "scan_page_index": 95,
+   "printed_page": 81,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n95/mode/1up"
+  },
+  "2.24.7": {
+   "scan_page_index": 96,
+   "printed_page": 82,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n96/mode/1up"
+  },
+  "2.24.8": {
+   "scan_page_index": 96,
+   "printed_page": 82,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n96/mode/1up"
+  },
+  "2.24.9": {
+   "scan_page_index": 96,
+   "printed_page": 82,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n96/mode/1up"
+  },
+  "2.24.10": {
+   "scan_page_index": 96,
+   "printed_page": 82,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n96/mode/1up"
+  },
+  "2.24.11": {
+   "scan_page_index": 96,
+   "printed_page": 82,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n96/mode/1up"
+  },
+  "2.24.12": {
+   "scan_page_index": 96,
+   "printed_page": 82,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n96/mode/1up"
+  },
+  "2.24.13": {
+   "scan_page_index": 96,
+   "printed_page": 82,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n96/mode/1up"
+  },
+  "2.24.14": {
+   "scan_page_index": 96,
+   "printed_page": 82,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n96/mode/1up"
+  },
+  "2.24.15": {
+   "scan_page_index": 96,
+   "printed_page": 82,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n96/mode/1up"
+  },
+  "2.24.16": {
+   "scan_page_index": 96,
+   "printed_page": 82,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n96/mode/1up"
+  },
+  "3.1.1": {
+   "scan_page_index": 97,
+   "printed_page": 83,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n97/mode/1up"
+  },
+  "3.1.2": {
+   "scan_page_index": 97,
+   "printed_page": 83,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n97/mode/1up"
+  },
+  "3.1.3": {
+   "scan_page_index": 97,
+   "printed_page": 83,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n97/mode/1up"
+  },
+  "3.1.4": {
+   "scan_page_index": 97,
+   "printed_page": 83,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n97/mode/1up"
+  },
+  "3.2.1": {
+   "scan_page_index": 97,
+   "printed_page": 83,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n97/mode/1up"
+  },
+  "3.2.2": {
+   "scan_page_index": 97,
+   "printed_page": 83,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n97/mode/1up"
+  },
+  "3.2.3": {
+   "scan_page_index": 97,
+   "printed_page": 83,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n97/mode/1up"
+  },
+  "3.3.1": {
+   "scan_page_index": 97,
+   "printed_page": 83,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n97/mode/1up"
+  },
+  "3.3.2": {
+   "scan_page_index": 97,
+   "printed_page": 83,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n97/mode/1up"
+  },
+  "3.3.3": {
+   "scan_page_index": 98,
+   "printed_page": 84,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n98/mode/1up"
+  },
+  "3.4.1": {
+   "scan_page_index": 98,
+   "printed_page": 84,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n98/mode/1up"
+  },
+  "3.4.2": {
+   "scan_page_index": 98,
+   "printed_page": 84,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n98/mode/1up"
+  },
+  "3.4.3": {
+   "scan_page_index": 98,
+   "printed_page": 84,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n98/mode/1up"
+  },
+  "3.5.1": {
+   "scan_page_index": 98,
+   "printed_page": 84,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n98/mode/1up"
+  },
+  "3.5.2": {
+   "scan_page_index": 98,
+   "printed_page": 84,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n98/mode/1up"
+  },
+  "3.5.3": {
+   "scan_page_index": 98,
+   "printed_page": 84,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n98/mode/1up"
+  },
+  "3.5.4": {
+   "scan_page_index": 98,
+   "printed_page": 84,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n98/mode/1up"
+  },
+  "3.6.1": {
+   "scan_page_index": 98,
+   "printed_page": 84,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n98/mode/1up"
+  },
+  "3.6.2": {
+   "scan_page_index": 99,
+   "printed_page": 85,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n99/mode/1up"
+  },
+  "3.6.3": {
+   "scan_page_index": 99,
+   "printed_page": 85,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n99/mode/1up"
+  },
+  "3.6.4": {
+   "scan_page_index": 99,
+   "printed_page": 85,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n99/mode/1up"
+  },
+  "3.7.1": {
+   "scan_page_index": 99,
+   "printed_page": 85,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n99/mode/1up"
+  },
+  "3.7.2": {
+   "scan_page_index": 99,
+   "printed_page": 85,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n99/mode/1up"
+  },
+  "3.7.3": {
+   "scan_page_index": 99,
+   "printed_page": 85,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n99/mode/1up"
+  },
+  "3.7.4": {
+   "scan_page_index": 99,
+   "printed_page": 85,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n99/mode/1up"
+  },
+  "3.8.1": {
+   "scan_page_index": 99,
+   "printed_page": 85,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n99/mode/1up"
+  },
+  "3.8.2": {
+   "scan_page_index": 99,
+   "printed_page": 85,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n99/mode/1up"
+  },
+  "3.8.3": {
+   "scan_page_index": 99,
+   "printed_page": 85,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n99/mode/1up"
+  },
+  "3.8.4": {
+   "scan_page_index": 99,
+   "printed_page": 85,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n99/mode/1up"
+  },
+  "3.9.1": {
+   "scan_page_index": 100,
+   "printed_page": 86,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n100/mode/1up"
+  },
+  "3.9.2": {
+   "scan_page_index": 100,
+   "printed_page": 86,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n100/mode/1up"
+  },
+  "3.9.3": {
+   "scan_page_index": 100,
+   "printed_page": 86,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n100/mode/1up"
+  },
+  "3.9.4": {
+   "scan_page_index": 100,
+   "printed_page": 86,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n100/mode/1up"
+  },
+  "3.10.1": {
+   "scan_page_index": 100,
+   "printed_page": 86,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n100/mode/1up"
+  },
+  "3.10.2": {
+   "scan_page_index": 100,
+   "printed_page": 86,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n100/mode/1up"
+  },
+  "3.10.3": {
+   "scan_page_index": 100,
+   "printed_page": 86,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n100/mode/1up"
+  },
+  "3.10.4": {
+   "scan_page_index": 100,
+   "printed_page": 86,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n100/mode/1up"
+  },
+  "3.11.1": {
+   "scan_page_index": 100,
+   "printed_page": 86,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n100/mode/1up"
+  },
+  "3.11.2": {
+   "scan_page_index": 100,
+   "printed_page": 86,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n100/mode/1up"
+  },
+  "3.11.3": {
+   "scan_page_index": 101,
+   "printed_page": 87,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n101/mode/1up"
+  },
+  "3.11.4": {
+   "scan_page_index": 101,
+   "printed_page": 87,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n101/mode/1up"
+  },
+  "3.11.5": {
+   "scan_page_index": 101,
+   "printed_page": 87,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n101/mode/1up"
+  },
+  "3.11.6": {
+   "scan_page_index": 101,
+   "printed_page": 87,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n101/mode/1up"
+  },
+  "3.12.1": {
+   "scan_page_index": 101,
+   "printed_page": 87,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n101/mode/1up"
+  },
+  "3.12.2": {
+   "scan_page_index": 101,
+   "printed_page": 87,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n101/mode/1up"
+  },
+  "3.12.3": {
+   "scan_page_index": 101,
+   "printed_page": 87,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n101/mode/1up"
+  },
+  "3.12.4": {
+   "scan_page_index": 101,
+   "printed_page": 87,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n101/mode/1up"
+  },
+  "3.12.5": {
+   "scan_page_index": 101,
+   "printed_page": 87,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n101/mode/1up"
+  },
+  "3.12.6": {
+   "scan_page_index": 101,
+   "printed_page": 87,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n101/mode/1up"
+  },
+  "3.12.7": {
+   "scan_page_index": 101,
+   "printed_page": 87,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n101/mode/1up"
+  },
+  "3.12.8": {
+   "scan_page_index": 102,
+   "printed_page": 88,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n102/mode/1up"
+  },
+  "3.12.9": {
+   "scan_page_index": 102,
+   "printed_page": 88,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n102/mode/1up"
+  },
+  "3.13.1": {
+   "scan_page_index": 102,
+   "printed_page": 88,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n102/mode/1up"
+  },
+  "3.13.2": {
+   "scan_page_index": 102,
+   "printed_page": 88,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n102/mode/1up"
+  },
+  "3.13.3": {
+   "scan_page_index": 102,
+   "printed_page": 88,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n102/mode/1up"
+  },
+  "3.13.4": {
+   "scan_page_index": 102,
+   "printed_page": 88,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n102/mode/1up"
+  },
+  "3.13.5": {
+   "scan_page_index": 102,
+   "printed_page": 88,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n102/mode/1up"
+  },
+  "3.13.6": {
+   "scan_page_index": 102,
+   "printed_page": 88,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n102/mode/1up"
+  },
+  "3.13.7": {
+   "scan_page_index": 102,
+   "printed_page": 88,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n102/mode/1up"
+  },
+  "3.13.8": {
+   "scan_page_index": 103,
+   "printed_page": 89,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n103/mode/1up"
+  },
+  "3.14.1": {
+   "scan_page_index": 103,
+   "printed_page": 89,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n103/mode/1up"
+  },
+  "3.14.2": {
+   "scan_page_index": 103,
+   "printed_page": 89,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n103/mode/1up"
+  },
+  "3.14.3": {
+   "scan_page_index": 103,
+   "printed_page": 89,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n103/mode/1up"
+  },
+  "3.14.4": {
+   "scan_page_index": 103,
+   "printed_page": 89,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n103/mode/1up"
+  },
+  "3.15.1": {
+   "scan_page_index": 103,
+   "printed_page": 89,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n103/mode/1up"
+  },
+  "3.15.2": {
+   "scan_page_index": 104,
+   "printed_page": 90,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n104/mode/1up"
+  },
+  "3.15.3": {
+   "scan_page_index": 104,
+   "printed_page": 90,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n104/mode/1up"
+  },
+  "3.15.4": {
+   "scan_page_index": 104,
+   "printed_page": 90,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n104/mode/1up"
+  },
+  "3.15.5": {
+   "scan_page_index": 104,
+   "printed_page": 90,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n104/mode/1up"
+  },
+  "3.15.6": {
+   "scan_page_index": 104,
+   "printed_page": 90,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n104/mode/1up"
+  },
+  "3.15.7": {
+   "scan_page_index": 104,
+   "printed_page": 90,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n104/mode/1up"
+  },
+  "3.16.1": {
+   "scan_page_index": 104,
+   "printed_page": 90,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n104/mode/1up"
+  },
+  "3.16.2": {
+   "scan_page_index": 104,
+   "printed_page": 90,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n104/mode/1up"
+  },
+  "3.16.3": {
+   "scan_page_index": 105,
+   "printed_page": 91,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n105/mode/1up"
+  },
+  "3.16.4": {
+   "scan_page_index": 105,
+   "printed_page": 91,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n105/mode/1up"
+  },
+  "3.16.5": {
+   "scan_page_index": 105,
+   "printed_page": 91,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n105/mode/1up"
+  },
+  "3.16.6": {
+   "scan_page_index": 105,
+   "printed_page": 91,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n105/mode/1up"
+  },
+  "3.16.7": {
+   "scan_page_index": 105,
+   "printed_page": 91,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n105/mode/1up"
+  },
+  "3.17.1": {
+   "scan_page_index": 105,
+   "printed_page": 91,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n105/mode/1up"
+  },
+  "3.17.2": {
+   "scan_page_index": 105,
+   "printed_page": 91,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n105/mode/1up"
+  },
+  "3.17.3": {
+   "scan_page_index": 105,
+   "printed_page": 91,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n105/mode/1up"
+  },
+  "3.17.4": {
+   "scan_page_index": 106,
+   "printed_page": 92,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n106/mode/1up"
+  },
+  "3.17.5": {
+   "scan_page_index": 106,
+   "printed_page": 92,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n106/mode/1up"
+  },
+  "3.17.6": {
+   "scan_page_index": 106,
+   "printed_page": 92,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n106/mode/1up"
+  },
+  "3.17.7": {
+   "scan_page_index": 106,
+   "printed_page": 92,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n106/mode/1up"
+  },
+  "3.18.1": {
+   "scan_page_index": 106,
+   "printed_page": 92,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n106/mode/1up"
+  },
+  "3.18.2": {
+   "scan_page_index": 106,
+   "printed_page": 92,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n106/mode/1up"
+  },
+  "3.18.3": {
+   "scan_page_index": 106,
+   "printed_page": 92,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n106/mode/1up"
+  },
+  "3.18.4": {
+   "scan_page_index": 106,
+   "printed_page": 92,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n106/mode/1up"
+  },
+  "3.18.5": {
+   "scan_page_index": 107,
+   "printed_page": 93,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n107/mode/1up"
+  },
+  "3.18.6": {
+   "scan_page_index": 107,
+   "printed_page": 93,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n107/mode/1up"
+  },
+  "3.19.1": {
+   "scan_page_index": 107,
+   "printed_page": 93,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n107/mode/1up"
+  },
+  "3.19.2": {
+   "scan_page_index": 107,
+   "printed_page": 93,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n107/mode/1up"
+  },
+  "3.19.3": {
+   "scan_page_index": 107,
+   "printed_page": 93,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n107/mode/1up"
+  },
+  "3.19.4": {
+   "scan_page_index": 107,
+   "printed_page": 93,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n107/mode/1up"
+  },
+  "4.1.1": {
+   "scan_page_index": 107,
+   "printed_page": 93,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n107/mode/1up"
+  },
+  "4.1.2": {
+   "scan_page_index": 108,
+   "printed_page": 94,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n108/mode/1up"
+  },
+  "4.1.3": {
+   "scan_page_index": 108,
+   "printed_page": 94,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n108/mode/1up"
+  },
+  "4.1.4": {
+   "scan_page_index": 108,
+   "printed_page": 94,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n108/mode/1up"
+  },
+  "4.1.5": {
+   "scan_page_index": 108,
+   "printed_page": 94,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n108/mode/1up"
+  },
+  "4.1.6": {
+   "scan_page_index": 108,
+   "printed_page": 94,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n108/mode/1up"
+  },
+  "4.1.7": {
+   "scan_page_index": 108,
+   "printed_page": 94,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n108/mode/1up"
+  },
+  "4.1.8": {
+   "scan_page_index": 108,
+   "printed_page": 94,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n108/mode/1up"
+  },
+  "4.2.1": {
+   "scan_page_index": 108,
+   "printed_page": 94,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n108/mode/1up"
+  },
+  "4.2.2": {
+   "scan_page_index": 109,
+   "printed_page": 95,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n109/mode/1up"
+  },
+  "4.2.3": {
+   "scan_page_index": 109,
+   "printed_page": 95,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n109/mode/1up"
+  },
+  "4.2.4": {
+   "scan_page_index": 109,
+   "printed_page": 95,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n109/mode/1up"
+  },
+  "4.2.5": {
+   "scan_page_index": 109,
+   "printed_page": 95,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n109/mode/1up"
+  },
+  "4.3.1": {
+   "scan_page_index": 109,
+   "printed_page": 95,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n109/mode/1up"
+  },
+  "4.3.2": {
+   "scan_page_index": 109,
+   "printed_page": 95,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n109/mode/1up"
+  },
+  "4.3.3": {
+   "scan_page_index": 109,
+   "printed_page": 95,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n109/mode/1up"
+  },
+  "4.3.4": {
+   "scan_page_index": 109,
+   "printed_page": 95,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n109/mode/1up"
+  },
+  "4.3.5": {
+   "scan_page_index": 109,
+   "printed_page": 95,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n109/mode/1up"
+  },
+  "4.3.6": {
+   "scan_page_index": 109,
+   "printed_page": 95,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n109/mode/1up"
+  },
+  "4.3.7": {
+   "scan_page_index": 110,
+   "printed_page": 96,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n110/mode/1up"
+  },
+  "4.3.8": {
+   "scan_page_index": 110,
+   "printed_page": 96,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n110/mode/1up"
+  },
+  "4.4.1": {
+   "scan_page_index": 110,
+   "printed_page": 96,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n110/mode/1up"
+  },
+  "4.4.2": {
+   "scan_page_index": 110,
+   "printed_page": 96,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n110/mode/1up"
+  },
+  "4.4.3": {
+   "scan_page_index": 110,
+   "printed_page": 96,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n110/mode/1up"
+  },
+  "4.4.4": {
+   "scan_page_index": 110,
+   "printed_page": 96,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n110/mode/1up"
+  },
+  "4.4.5": {
+   "scan_page_index": 111,
+   "printed_page": 97,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n111/mode/1up"
+  },
+  "4.5.1": {
+   "scan_page_index": 111,
+   "printed_page": 97,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n111/mode/1up"
+  },
+  "4.5.2": {
+   "scan_page_index": 111,
+   "printed_page": 97,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n111/mode/1up"
+  },
+  "4.5.3": {
+   "scan_page_index": 111,
+   "printed_page": 97,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n111/mode/1up"
+  },
+  "4.6.1": {
+   "scan_page_index": 111,
+   "printed_page": 97,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n111/mode/1up"
+  },
+  "4.6.2": {
+   "scan_page_index": 112,
+   "printed_page": 98,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n112/mode/1up"
+  },
+  "4.6.3": {
+   "scan_page_index": 112,
+   "printed_page": 98,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n112/mode/1up"
+  },
+  "4.6.4": {
+   "scan_page_index": 112,
+   "printed_page": 98,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n112/mode/1up"
+  },
+  "4.7.1": {
+   "scan_page_index": 112,
+   "printed_page": 98,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n112/mode/1up"
+  },
+  "4.7.2": {
+   "scan_page_index": 112,
+   "printed_page": 98,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n112/mode/1up"
+  },
+  "4.7.3": {
+   "scan_page_index": 112,
+   "printed_page": 98,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n112/mode/1up"
+  },
+  "4.7.4": {
+   "scan_page_index": 112,
+   "printed_page": 98,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n112/mode/1up"
+  },
+  "4.8.1": {
+   "scan_page_index": 112,
+   "printed_page": 98,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n112/mode/1up"
+  },
+  "4.8.2": {
+   "scan_page_index": 113,
+   "printed_page": 99,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n113/mode/1up"
+  },
+  "4.8.3": {
+   "scan_page_index": 113,
+   "printed_page": 99,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n113/mode/1up"
+  },
+  "4.8.4": {
+   "scan_page_index": 113,
+   "printed_page": 99,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n113/mode/1up"
+  },
+  "4.9.1": {
+   "scan_page_index": 113,
+   "printed_page": 99,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n113/mode/1up"
+  },
+  "4.9.2": {
+   "scan_page_index": 113,
+   "printed_page": 99,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n113/mode/1up"
+  },
+  "4.9.3": {
+   "scan_page_index": 113,
+   "printed_page": 99,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n113/mode/1up"
+  },
+  "4.10.1": {
+   "scan_page_index": 113,
+   "printed_page": 99,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n113/mode/1up"
+  },
+  "4.10.2": {
+   "scan_page_index": 113,
+   "printed_page": 99,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n113/mode/1up"
+  },
+  "4.10.3": {
+   "scan_page_index": 114,
+   "printed_page": 100,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n114/mode/1up"
+  },
+  "4.10.4": {
+   "scan_page_index": 114,
+   "printed_page": 100,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n114/mode/1up"
+  },
+  "4.10.5": {
+   "scan_page_index": 114,
+   "printed_page": 100,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n114/mode/1up"
+  },
+  "4.11.1": {
+   "scan_page_index": 114,
+   "printed_page": 100,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n114/mode/1up"
+  },
+  "4.11.2": {
+   "scan_page_index": 114,
+   "printed_page": 100,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n114/mode/1up"
+  },
+  "4.12.1": {
+   "scan_page_index": 114,
+   "printed_page": 100,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n114/mode/1up"
+  },
+  "4.12.2": {
+   "scan_page_index": 114,
+   "printed_page": 100,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n114/mode/1up"
+  },
+  "4.13.1": {
+   "scan_page_index": 115,
+   "printed_page": 101,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n115/mode/1up"
+  },
+  "4.13.2": {
+   "scan_page_index": 115,
+   "printed_page": 101,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n115/mode/1up"
+  },
+  "4.14.1": {
+   "scan_page_index": 115,
+   "printed_page": 101,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n115/mode/1up"
+  },
+  "4.14.2": {
+   "scan_page_index": 115,
+   "printed_page": 101,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n115/mode/1up"
+  },
+  "4.14.3": {
+   "scan_page_index": 115,
+   "printed_page": 101,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n115/mode/1up"
+  },
+  "4.15.1": {
+   "scan_page_index": 115,
+   "printed_page": 101,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n115/mode/1up"
+  },
+  "4.15.2": {
+   "scan_page_index": 116,
+   "printed_page": 102,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n116/mode/1up"
+  },
+  "4.15.3": {
+   "scan_page_index": 116,
+   "printed_page": 102,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n116/mode/1up"
+  },
+  "4.15.4": {
+   "scan_page_index": 116,
+   "printed_page": 102,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n116/mode/1up"
+  },
+  "4.15.5": {
+   "scan_page_index": 116,
+   "printed_page": 102,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n116/mode/1up"
+  },
+  "4.15.6": {
+   "scan_page_index": 116,
+   "printed_page": 102,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n116/mode/1up"
+  },
+  "4.16.1": {
+   "scan_page_index": 116,
+   "printed_page": 102,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n116/mode/1up"
+  },
+  "4.16.2": {
+   "scan_page_index": 116,
+   "printed_page": 102,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n116/mode/1up"
+  },
+  "4.16.3": {
+   "scan_page_index": 116,
+   "printed_page": 102,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n116/mode/1up"
+  },
+  "4.16.4": {
+   "scan_page_index": 117,
+   "printed_page": 103,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n117/mode/1up"
+  },
+  "4.16.5": {
+   "scan_page_index": 117,
+   "printed_page": 103,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n117/mode/1up"
+  },
+  "4.17.1": {
+   "scan_page_index": 117,
+   "printed_page": 103,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n117/mode/1up"
+  },
+  "4.17.2": {
+   "scan_page_index": 117,
+   "printed_page": 103,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n117/mode/1up"
+  },
+  "4.17.3": {
+   "scan_page_index": 117,
+   "printed_page": 103,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n117/mode/1up"
+  },
+  "4.17.4": {
+   "scan_page_index": 117,
+   "printed_page": 103,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n117/mode/1up"
+  },
+  "4.17.5": {
+   "scan_page_index": 117,
+   "printed_page": 103,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n117/mode/1up"
+  },
+  "4.17.6": {
+   "scan_page_index": 117,
+   "printed_page": 103,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n117/mode/1up"
+  },
+  "4.17.7": {
+   "scan_page_index": 117,
+   "printed_page": 103,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n117/mode/1up"
+  },
+  "4.17.8": {
+   "scan_page_index": 118,
+   "printed_page": 104,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n118/mode/1up"
+  },
+  "4.17.9": {
+   "scan_page_index": 118,
+   "printed_page": 104,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n118/mode/1up"
+  },
+  "4.17.10": {
+   "scan_page_index": 118,
+   "printed_page": 104,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n118/mode/1up"
+  },
+  "5.1.1": {
+   "scan_page_index": 118,
+   "printed_page": 104,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n118/mode/1up"
+  },
+  "5.1.2": {
+   "scan_page_index": 118,
+   "printed_page": 104,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n118/mode/1up"
+  },
+  "5.1.3": {
+   "scan_page_index": 118,
+   "printed_page": 104,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n118/mode/1up"
+  },
+  "5.1.4": {
+   "scan_page_index": 118,
+   "printed_page": 104,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n118/mode/1up"
+  },
+  "5.1.5": {
+   "scan_page_index": 118,
+   "printed_page": 104,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n118/mode/1up"
+  },
+  "5.1.6": {
+   "scan_page_index": 118,
+   "printed_page": 104,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n118/mode/1up"
+  },
+  "5.1.7": {
+   "scan_page_index": 118,
+   "printed_page": 104,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n118/mode/1up"
+  },
+  "5.1.8": {
+   "scan_page_index": 119,
+   "printed_page": 105,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n119/mode/1up"
+  },
+  "5.1.9": {
+   "scan_page_index": 119,
+   "printed_page": 105,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n119/mode/1up"
+  },
+  "5.1.10": {
+   "scan_page_index": 119,
+   "printed_page": 105,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n119/mode/1up"
+  },
+  "5.1.11": {
+   "scan_page_index": 119,
+   "printed_page": 105,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n119/mode/1up"
+  },
+  "5.1.12": {
+   "scan_page_index": 119,
+   "printed_page": 105,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n119/mode/1up"
+  },
+  "5.1.13": {
+   "scan_page_index": 119,
+   "printed_page": 105,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n119/mode/1up"
+  },
+  "5.1.14": {
+   "scan_page_index": 119,
+   "printed_page": 105,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n119/mode/1up"
+  },
+  "5.1.15": {
+   "scan_page_index": 120,
+   "printed_page": 106,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n120/mode/1up"
+  },
+  "5.2.1": {
+   "scan_page_index": 120,
+   "printed_page": 106,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n120/mode/1up"
+  },
+  "5.2.2": {
+   "scan_page_index": 120,
+   "printed_page": 106,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n120/mode/1up"
+  },
+  "5.2.3": {
+   "scan_page_index": 120,
+   "printed_page": 106,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n120/mode/1up"
+  },
+  "5.2.4": {
+   "scan_page_index": 120,
+   "printed_page": 106,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n120/mode/1up"
+  },
+  "5.2.5": {
+   "scan_page_index": 120,
+   "printed_page": 106,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n120/mode/1up"
+  },
+  "5.2.6": {
+   "scan_page_index": 120,
+   "printed_page": 106,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n120/mode/1up"
+  },
+  "5.2.7": {
+   "scan_page_index": 121,
+   "printed_page": 107,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n121/mode/1up"
+  },
+  "5.2.8": {
+   "scan_page_index": 121,
+   "printed_page": 107,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n121/mode/1up"
+  },
+  "5.2.9": {
+   "scan_page_index": 121,
+   "printed_page": 107,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n121/mode/1up"
+  },
+  "5.3.1": {
+   "scan_page_index": 121,
+   "printed_page": 107,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n121/mode/1up"
+  },
+  "5.3.2": {
+   "scan_page_index": 121,
+   "printed_page": 107,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n121/mode/1up"
+  },
+  "5.3.3": {
+   "scan_page_index": 121,
+   "printed_page": 107,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n121/mode/1up"
+  },
+  "5.3.4": {
+   "scan_page_index": 121,
+   "printed_page": 107,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n121/mode/1up"
+  },
+  "5.3.5": {
+   "scan_page_index": 121,
+   "printed_page": 107,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n121/mode/1up"
+  },
+  "5.3.6": {
+   "scan_page_index": 122,
+   "printed_page": 108,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n122/mode/1up"
+  },
+  "5.3.7": {
+   "scan_page_index": 122,
+   "printed_page": 108,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n122/mode/1up"
+  },
+  "5.4.1": {
+   "scan_page_index": 122,
+   "printed_page": 108,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n122/mode/1up"
+  },
+  "5.4.2": {
+   "scan_page_index": 122,
+   "printed_page": 108,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n122/mode/1up"
+  },
+  "5.5.1": {
+   "scan_page_index": 122,
+   "printed_page": 108,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n122/mode/1up"
+  },
+  "5.5.2": {
+   "scan_page_index": 122,
+   "printed_page": 108,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n122/mode/1up"
+  },
+  "5.6.1": {
+   "scan_page_index": 122,
+   "printed_page": 108,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n122/mode/1up"
+  },
+  "5.6.2": {
+   "scan_page_index": 123,
+   "printed_page": 109,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n123/mode/1up"
+  },
+  "5.7.1": {
+   "scan_page_index": 123,
+   "printed_page": 109,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n123/mode/1up"
+  },
+  "5.7.2": {
+   "scan_page_index": 123,
+   "printed_page": 109,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n123/mode/1up"
+  },
+  "5.8.1": {
+   "scan_page_index": 123,
+   "printed_page": 109,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n123/mode/1up"
+  },
+  "5.8.2": {
+   "scan_page_index": 123,
+   "printed_page": 109,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n123/mode/1up"
+  },
+  "5.9.1": {
+   "scan_page_index": 123,
+   "printed_page": 109,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n123/mode/1up"
+  },
+  "5.9.2": {
+   "scan_page_index": 123,
+   "printed_page": 109,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n123/mode/1up"
+  },
+  "5.10.1": {
+   "scan_page_index": 123,
+   "printed_page": 109,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n123/mode/1up"
+  },
+  "5.10.2": {
+   "scan_page_index": 123,
+   "printed_page": 109,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n123/mode/1up"
+  },
+  "5.10.3": {
+   "scan_page_index": 124,
+   "printed_page": 110,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n124/mode/1up"
+  },
+  "5.10.4": {
+   "scan_page_index": 124,
+   "printed_page": 110,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n124/mode/1up"
+  },
+  "5.10.5": {
+   "scan_page_index": 124,
+   "printed_page": 110,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n124/mode/1up"
+  },
+  "5.10.6": {
+   "scan_page_index": 124,
+   "printed_page": 110,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n124/mode/1up"
+  },
+  "5.10.7": {
+   "scan_page_index": 124,
+   "printed_page": 110,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n124/mode/1up"
+  },
+  "5.10.8": {
+   "scan_page_index": 124,
+   "printed_page": 110,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n124/mode/1up"
+  },
+  "5.10.9": {
+   "scan_page_index": 124,
+   "printed_page": 110,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n124/mode/1up"
+  },
+  "5.10.10": {
+   "scan_page_index": 124,
+   "printed_page": 110,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n124/mode/1up"
+  },
+  "5.11.1": {
+   "scan_page_index": 125,
+   "printed_page": 111,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n125/mode/1up"
+  },
+  "5.11.2": {
+   "scan_page_index": 125,
+   "printed_page": 111,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n125/mode/1up"
+  },
+  "5.11.3": {
+   "scan_page_index": 125,
+   "printed_page": 111,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n125/mode/1up"
+  },
+  "5.11.4": {
+   "scan_page_index": 125,
+   "printed_page": 111,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n125/mode/1up"
+  },
+  "5.11.5": {
+   "scan_page_index": 125,
+   "printed_page": 111,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n125/mode/1up"
+  },
+  "5.11.6": {
+   "scan_page_index": 125,
+   "printed_page": 111,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n125/mode/1up"
+  },
+  "5.11.7": {
+   "scan_page_index": 125,
+   "printed_page": 111,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n125/mode/1up"
+  },
+  "5.12.1": {
+   "scan_page_index": 126,
+   "printed_page": 112,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n126/mode/1up"
+  },
+  "5.12.2": {
+   "scan_page_index": 126,
+   "printed_page": 112,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n126/mode/1up"
+  },
+  "5.13.1": {
+   "scan_page_index": 126,
+   "printed_page": 112,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n126/mode/1up"
+  },
+  "5.13.2": {
+   "scan_page_index": 126,
+   "printed_page": 112,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n126/mode/1up"
+  },
+  "5.14.1": {
+   "scan_page_index": 126,
+   "printed_page": 112,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n126/mode/1up"
+  },
+  "5.14.2": {
+   "scan_page_index": 126,
+   "printed_page": 112,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n126/mode/1up"
+  },
+  "5.15.1": {
+   "scan_page_index": 127,
+   "printed_page": 113,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n127/mode/1up"
+  },
+  "5.15.2": {
+   "scan_page_index": 127,
+   "printed_page": 113,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n127/mode/1up"
+  },
+  "5.16.1": {
+   "scan_page_index": 127,
+   "printed_page": 113,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n127/mode/1up"
+  },
+  "5.16.2": {
+   "scan_page_index": 127,
+   "printed_page": 113,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n127/mode/1up"
+  },
+  "5.17.1": {
+   "scan_page_index": 127,
+   "printed_page": 113,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n127/mode/1up"
+  },
+  "5.17.2": {
+   "scan_page_index": 127,
+   "printed_page": 113,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n127/mode/1up"
+  },
+  "5.18.1": {
+   "scan_page_index": 128,
+   "printed_page": 114,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n128/mode/1up"
+  },
+  "5.18.2": {
+   "scan_page_index": 128,
+   "printed_page": 114,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n128/mode/1up"
+  },
+  "5.19.1": {
+   "scan_page_index": 128,
+   "printed_page": 114,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n128/mode/1up"
+  },
+  "5.19.2": {
+   "scan_page_index": 128,
+   "printed_page": 114,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n128/mode/1up"
+  },
+  "5.20.1": {
+   "scan_page_index": 128,
+   "printed_page": 114,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n128/mode/1up"
+  },
+  "5.20.2": {
+   "scan_page_index": 128,
+   "printed_page": 114,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n128/mode/1up"
+  },
+  "5.21.1": {
+   "scan_page_index": 129,
+   "printed_page": 115,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n129/mode/1up"
+  },
+  "5.21.2": {
+   "scan_page_index": 129,
+   "printed_page": 115,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n129/mode/1up"
+  },
+  "5.22.1": {
+   "scan_page_index": 129,
+   "printed_page": 115,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n129/mode/1up"
+  },
+  "5.22.2": {
+   "scan_page_index": 129,
+   "printed_page": 115,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n129/mode/1up"
+  },
+  "5.23.1": {
+   "scan_page_index": 129,
+   "printed_page": 115,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n129/mode/1up"
+  },
+  "5.23.2": {
+   "scan_page_index": 129,
+   "printed_page": 115,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n129/mode/1up"
+  },
+  "5.24.1": {
+   "scan_page_index": 130,
+   "printed_page": 116,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n130/mode/1up"
+  },
+  "5.24.2": {
+   "scan_page_index": 130,
+   "printed_page": 116,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n130/mode/1up"
+  },
+  "5.24.3": {
+   "scan_page_index": 130,
+   "printed_page": 116,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n130/mode/1up"
+  },
+  "5.24.4": {
+   "scan_page_index": 130,
+   "printed_page": 116,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n130/mode/1up"
+  },
+  "5.24.5": {
+   "scan_page_index": 130,
+   "printed_page": 116,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n130/mode/1up"
+  },
+  "6.1.1": {
+   "scan_page_index": 130,
+   "printed_page": 116,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n130/mode/1up"
+  },
+  "6.1.2": {
+   "scan_page_index": 130,
+   "printed_page": 116,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n130/mode/1up"
+  },
+  "6.1.3": {
+   "scan_page_index": 130,
+   "printed_page": 116,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n130/mode/1up"
+  },
+  "6.1.4": {
+   "scan_page_index": 130,
+   "printed_page": 116,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n130/mode/1up"
+  },
+  "6.1.5": {
+   "scan_page_index": 130,
+   "printed_page": 116,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n130/mode/1up"
+  },
+  "6.1.6": {
+   "scan_page_index": 131,
+   "printed_page": 117,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n131/mode/1up"
+  },
+  "6.1.7": {
+   "scan_page_index": 131,
+   "printed_page": 117,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n131/mode/1up"
+  },
+  "6.2.1": {
+   "scan_page_index": 131,
+   "printed_page": 117,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n131/mode/1up"
+  },
+  "6.2.2": {
+   "scan_page_index": 131,
+   "printed_page": 117,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n131/mode/1up"
+  },
+  "6.2.3": {
+   "scan_page_index": 131,
+   "printed_page": 117,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n131/mode/1up"
+  },
+  "6.2.4": {
+   "scan_page_index": 131,
+   "printed_page": 117,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n131/mode/1up"
+  },
+  "6.3.1": {
+   "scan_page_index": 131,
+   "printed_page": 117,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n131/mode/1up"
+  },
+  "6.3.2": {
+   "scan_page_index": 131,
+   "printed_page": 117,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n131/mode/1up"
+  },
+  "6.3.3": {
+   "scan_page_index": 131,
+   "printed_page": 117,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n131/mode/1up"
+  },
+  "6.3.4": {
+   "scan_page_index": 132,
+   "printed_page": 118,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n132/mode/1up"
+  },
+  "6.4.1": {
+   "scan_page_index": 132,
+   "printed_page": 118,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n132/mode/1up"
+  },
+  "6.4.2": {
+   "scan_page_index": 132,
+   "printed_page": 118,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n132/mode/1up"
+  },
+  "6.4.3": {
+   "scan_page_index": 132,
+   "printed_page": 118,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n132/mode/1up"
+  },
+  "6.4.4": {
+   "scan_page_index": 132,
+   "printed_page": 118,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n132/mode/1up"
+  },
+  "6.4.5": {
+   "scan_page_index": 132,
+   "printed_page": 118,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n132/mode/1up"
+  },
+  "6.4.6": {
+   "scan_page_index": 132,
+   "printed_page": 118,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n132/mode/1up"
+  },
+  "6.4.7": {
+   "scan_page_index": 132,
+   "printed_page": 118,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n132/mode/1up"
+  },
+  "6.5.1": {
+   "scan_page_index": 133,
+   "printed_page": 119,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n133/mode/1up"
+  },
+  "6.5.2": {
+   "scan_page_index": 133,
+   "printed_page": 119,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n133/mode/1up"
+  },
+  "6.5.3": {
+   "scan_page_index": 133,
+   "printed_page": 119,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n133/mode/1up"
+  },
+  "6.5.4": {
+   "scan_page_index": 133,
+   "printed_page": 119,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n133/mode/1up"
+  },
+  "6.6.1": {
+   "scan_page_index": 133,
+   "printed_page": 119,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n133/mode/1up"
+  },
+  "6.6.2": {
+   "scan_page_index": 133,
+   "printed_page": 119,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n133/mode/1up"
+  },
+  "6.6.3": {
+   "scan_page_index": 133,
+   "printed_page": 119,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n133/mode/1up"
+  },
+  "6.6.4": {
+   "scan_page_index": 133,
+   "printed_page": 119,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n133/mode/1up"
+  },
+  "6.6.5": {
+   "scan_page_index": 133,
+   "printed_page": 119,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n133/mode/1up"
+  },
+  "6.7.1": {
+   "scan_page_index": 134,
+   "printed_page": 120,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n134/mode/1up"
+  },
+  "6.7.2": {
+   "scan_page_index": 134,
+   "printed_page": 120,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n134/mode/1up"
+  },
+  "6.7.3": {
+   "scan_page_index": 134,
+   "printed_page": 120,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n134/mode/1up"
+  },
+  "6.7.4": {
+   "scan_page_index": 134,
+   "printed_page": 120,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n134/mode/1up"
+  },
+  "6.7.5": {
+   "scan_page_index": 134,
+   "printed_page": 120,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n134/mode/1up"
+  },
+  "6.7.6": {
+   "scan_page_index": 134,
+   "printed_page": 120,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n134/mode/1up"
+  },
+  "6.8.1": {
+   "scan_page_index": 134,
+   "printed_page": 120,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n134/mode/1up"
+  },
+  "6.8.2": {
+   "scan_page_index": 135,
+   "printed_page": 121,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n135/mode/1up"
+  },
+  "6.8.3": {
+   "scan_page_index": 135,
+   "printed_page": 121,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n135/mode/1up"
+  },
+  "6.8.4": {
+   "scan_page_index": 135,
+   "printed_page": 121,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n135/mode/1up"
+  },
+  "6.8.5": {
+   "scan_page_index": 135,
+   "printed_page": 121,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n135/mode/1up"
+  },
+  "6.8.6": {
+   "scan_page_index": 135,
+   "printed_page": 121,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n135/mode/1up"
+  },
+  "6.8.7": {
+   "scan_page_index": 135,
+   "printed_page": 121,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n135/mode/1up"
+  },
+  "6.9.1": {
+   "scan_page_index": 136,
+   "printed_page": 122,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n136/mode/1up"
+  },
+  "6.9.2": {
+   "scan_page_index": 136,
+   "printed_page": 122,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n136/mode/1up"
+  },
+  "6.9.3": {
+   "scan_page_index": 136,
+   "printed_page": 122,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n136/mode/1up"
+  },
+  "6.9.4": {
+   "scan_page_index": 136,
+   "printed_page": 122,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n136/mode/1up"
+  },
+  "6.10.1": {
+   "scan_page_index": 136,
+   "printed_page": 122,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n136/mode/1up"
+  },
+  "6.10.2": {
+   "scan_page_index": 136,
+   "printed_page": 122,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n136/mode/1up"
+  },
+  "6.10.3": {
+   "scan_page_index": 136,
+   "printed_page": 122,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n136/mode/1up"
+  },
+  "6.11.1": {
+   "scan_page_index": 137,
+   "printed_page": 123,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n137/mode/1up"
+  },
+  "6.11.2": {
+   "scan_page_index": 137,
+   "printed_page": 123,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n137/mode/1up"
+  },
+  "6.11.3": {
+   "scan_page_index": 137,
+   "printed_page": 123,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n137/mode/1up"
+  },
+  "6.12.1": {
+   "scan_page_index": 137,
+   "printed_page": 123,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n137/mode/1up"
+  },
+  "6.12.2": {
+   "scan_page_index": 137,
+   "printed_page": 123,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n137/mode/1up"
+  },
+  "6.12.3": {
+   "scan_page_index": 137,
+   "printed_page": 123,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n137/mode/1up"
+  },
+  "6.13.1": {
+   "scan_page_index": 138,
+   "printed_page": 124,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n138/mode/1up"
+  },
+  "6.13.2": {
+   "scan_page_index": 138,
+   "printed_page": 124,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n138/mode/1up"
+  },
+  "6.13.3": {
+   "scan_page_index": 138,
+   "printed_page": 124,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n138/mode/1up"
+  },
+  "6.14.1": {
+   "scan_page_index": 138,
+   "printed_page": 124,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n138/mode/1up"
+  },
+  "6.14.2": {
+   "scan_page_index": 138,
+   "printed_page": 124,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n138/mode/1up"
+  },
+  "6.14.3": {
+   "scan_page_index": 138,
+   "printed_page": 124,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n138/mode/1up"
+  },
+  "6.15.1": {
+   "scan_page_index": 139,
+   "printed_page": 125,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n139/mode/1up"
+  },
+  "6.15.2": {
+   "scan_page_index": 139,
+   "printed_page": 125,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n139/mode/1up"
+  },
+  "6.15.3": {
+   "scan_page_index": 139,
+   "printed_page": 125,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n139/mode/1up"
+  },
+  "6.16.1": {
+   "scan_page_index": 139,
+   "printed_page": 125,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n139/mode/1up"
+  },
+  "6.16.2": {
+   "scan_page_index": 139,
+   "printed_page": 125,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n139/mode/1up"
+  },
+  "6.16.3": {
+   "scan_page_index": 139,
+   "printed_page": 125,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n139/mode/1up"
+  },
+  "7.1.1": {
+   "scan_page_index": 140,
+   "printed_page": 126,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n140/mode/1up"
+  },
+  "7.1.2": {
+   "scan_page_index": 140,
+   "printed_page": 126,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n140/mode/1up"
+  },
+  "7.1.3": {
+   "scan_page_index": 140,
+   "printed_page": 126,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n140/mode/1up"
+  },
+  "7.1.4": {
+   "scan_page_index": 140,
+   "printed_page": 126,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n140/mode/1up"
+  },
+  "7.1.5": {
+   "scan_page_index": 140,
+   "printed_page": 126,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n140/mode/1up"
+  },
+  "7.2.1": {
+   "scan_page_index": 140,
+   "printed_page": 126,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n140/mode/1up"
+  },
+  "7.2.2": {
+   "scan_page_index": 141,
+   "printed_page": 127,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n141/mode/1up"
+  },
+  "7.3.1": {
+   "scan_page_index": 141,
+   "printed_page": 127,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n141/mode/1up"
+  },
+  "7.3.2": {
+   "scan_page_index": 141,
+   "printed_page": 127,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n141/mode/1up"
+  },
+  "7.4.1": {
+   "scan_page_index": 142,
+   "printed_page": 128,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n142/mode/1up"
+  },
+  "7.4.2": {
+   "scan_page_index": 142,
+   "printed_page": 128,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n142/mode/1up"
+  },
+  "7.4.3": {
+   "scan_page_index": 142,
+   "printed_page": 128,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n142/mode/1up"
+  },
+  "7.5.1": {
+   "scan_page_index": 142,
+   "printed_page": 128,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n142/mode/1up"
+  },
+  "7.5.2": {
+   "scan_page_index": 143,
+   "printed_page": 129,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n143/mode/1up"
+  },
+  "7.5.3": {
+   "scan_page_index": 143,
+   "printed_page": 129,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n143/mode/1up"
+  },
+  "7.6.1": {
+   "scan_page_index": 143,
+   "printed_page": 129,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n143/mode/1up"
+  },
+  "7.6.2": {
+   "scan_page_index": 143,
+   "printed_page": 129,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n143/mode/1up"
+  },
+  "7.7.1": {
+   "scan_page_index": 144,
+   "printed_page": 130,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n144/mode/1up"
+  },
+  "7.7.2": {
+   "scan_page_index": 144,
+   "printed_page": 130,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n144/mode/1up"
+  },
+  "7.8.1": {
+   "scan_page_index": 144,
+   "printed_page": 130,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n144/mode/1up"
+  },
+  "7.8.2": {
+   "scan_page_index": 145,
+   "printed_page": 131,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n145/mode/1up"
+  },
+  "7.9.1": {
+   "scan_page_index": 145,
+   "printed_page": 131,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n145/mode/1up"
+  },
+  "7.9.2": {
+   "scan_page_index": 145,
+   "printed_page": 131,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n145/mode/1up"
+  },
+  "7.10.1": {
+   "scan_page_index": 145,
+   "printed_page": 131,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n145/mode/1up"
+  },
+  "7.10.2": {
+   "scan_page_index": 145,
+   "printed_page": 131,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n145/mode/1up"
+  },
+  "7.11.1": {
+   "scan_page_index": 146,
+   "printed_page": 132,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n146/mode/1up"
+  },
+  "7.11.2": {
+   "scan_page_index": 146,
+   "printed_page": 132,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n146/mode/1up"
+  },
+  "7.12.1": {
+   "scan_page_index": 146,
+   "printed_page": 132,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n146/mode/1up"
+  },
+  "7.12.2": {
+   "scan_page_index": 146,
+   "printed_page": 132,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n146/mode/1up"
+  },
+  "7.13.1": {
+   "scan_page_index": 147,
+   "printed_page": 133,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n147/mode/1up"
+  },
+  "7.13.2": {
+   "scan_page_index": 147,
+   "printed_page": 133,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n147/mode/1up"
+  },
+  "7.14.1": {
+   "scan_page_index": 147,
+   "printed_page": 133,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n147/mode/1up"
+  },
+  "7.14.2": {
+   "scan_page_index": 147,
+   "printed_page": 133,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n147/mode/1up"
+  },
+  "7.15.1": {
+   "scan_page_index": 147,
+   "printed_page": 133,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n147/mode/1up"
+  },
+  "7.15.2": {
+   "scan_page_index": 148,
+   "printed_page": 134,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n148/mode/1up"
+  },
+  "7.15.3": {
+   "scan_page_index": 148,
+   "printed_page": 134,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n148/mode/1up"
+  },
+  "7.15.4": {
+   "scan_page_index": 148,
+   "printed_page": 134,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n148/mode/1up"
+  },
+  "7.16.1": {
+   "scan_page_index": 148,
+   "printed_page": 134,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n148/mode/1up"
+  },
+  "7.17.1": {
+   "scan_page_index": 148,
+   "printed_page": 134,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n148/mode/1up"
+  },
+  "7.18.1": {
+   "scan_page_index": 148,
+   "printed_page": 134,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n148/mode/1up"
+  },
+  "7.19.1": {
+   "scan_page_index": 149,
+   "printed_page": 135,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n149/mode/1up"
+  },
+  "7.20.1": {
+   "scan_page_index": 149,
+   "printed_page": 135,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n149/mode/1up"
+  },
+  "7.21.1": {
+   "scan_page_index": 149,
+   "printed_page": 135,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n149/mode/1up"
+  },
+  "7.22.1": {
+   "scan_page_index": 149,
+   "printed_page": 135,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n149/mode/1up"
+  },
+  "7.23.1": {
+   "scan_page_index": 149,
+   "printed_page": 135,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n149/mode/1up"
+  },
+  "7.24.1": {
+   "scan_page_index": 149,
+   "printed_page": 135,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n149/mode/1up"
+  },
+  "7.24.2": {
+   "scan_page_index": 150,
+   "printed_page": 136,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n150/mode/1up"
+  },
+  "7.25.1": {
+   "scan_page_index": 150,
+   "printed_page": 136,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n150/mode/1up"
+  },
+  "7.25.2": {
+   "scan_page_index": 150,
+   "printed_page": 136,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n150/mode/1up"
+  },
+  "7.26.1": {
+   "scan_page_index": 150,
+   "printed_page": 136,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n150/mode/1up"
+  },
+  "7.26.2": {
+   "scan_page_index": 151,
+   "printed_page": 137,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n151/mode/1up"
+  },
+  "8.1.1": {
+   "scan_page_index": 151,
+   "printed_page": 137,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n151/mode/1up"
+  },
+  "8.1.2": {
+   "scan_page_index": 151,
+   "printed_page": 137,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n151/mode/1up"
+  },
+  "8.1.3": {
+   "scan_page_index": 151,
+   "printed_page": 137,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n151/mode/1up"
+  },
+  "8.1.4": {
+   "scan_page_index": 152,
+   "printed_page": 138,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n152/mode/1up"
+  },
+  "8.1.5": {
+   "scan_page_index": 152,
+   "printed_page": 138,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n152/mode/1up"
+  },
+  "8.1.6": {
+   "scan_page_index": 152,
+   "printed_page": 138,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n152/mode/1up"
+  },
+  "8.2.1": {
+   "scan_page_index": 152,
+   "printed_page": 138,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n152/mode/1up"
+  },
+  "8.2.2": {
+   "scan_page_index": 152,
+   "printed_page": 138,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n152/mode/1up"
+  },
+  "8.2.3": {
+   "scan_page_index": 152,
+   "printed_page": 138,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n152/mode/1up"
+  },
+  "8.2.4": {
+   "scan_page_index": 152,
+   "printed_page": 138,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n152/mode/1up"
+  },
+  "8.2.5": {
+   "scan_page_index": 153,
+   "printed_page": 139,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n153/mode/1up"
+  },
+  "8.2.6": {
+   "scan_page_index": 153,
+   "printed_page": 139,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n153/mode/1up"
+  },
+  "8.2.7": {
+   "scan_page_index": 153,
+   "printed_page": 139,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n153/mode/1up"
+  },
+  "8.2.8": {
+   "scan_page_index": 153,
+   "printed_page": 139,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n153/mode/1up"
+  },
+  "8.2.9": {
+   "scan_page_index": 153,
+   "printed_page": 139,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n153/mode/1up"
+  },
+  "8.2.10": {
+   "scan_page_index": 153,
+   "printed_page": 139,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n153/mode/1up"
+  },
+  "8.3.1": {
+   "scan_page_index": 153,
+   "printed_page": 139,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n153/mode/1up"
+  },
+  "8.3.2": {
+   "scan_page_index": 153,
+   "printed_page": 139,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n153/mode/1up"
+  },
+  "8.3.3": {
+   "scan_page_index": 154,
+   "printed_page": 140,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n154/mode/1up"
+  },
+  "8.3.4": {
+   "scan_page_index": 154,
+   "printed_page": 140,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n154/mode/1up"
+  },
+  "8.3.5": {
+   "scan_page_index": 154,
+   "printed_page": 140,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n154/mode/1up"
+  },
+  "8.4.1": {
+   "scan_page_index": 154,
+   "printed_page": 140,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n154/mode/1up"
+  },
+  "8.4.2": {
+   "scan_page_index": 154,
+   "printed_page": 140,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n154/mode/1up"
+  },
+  "8.4.3": {
+   "scan_page_index": 154,
+   "printed_page": 140,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n154/mode/1up"
+  },
+  "8.5.1": {
+   "scan_page_index": 154,
+   "printed_page": 140,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n154/mode/1up"
+  },
+  "8.5.2": {
+   "scan_page_index": 155,
+   "printed_page": 141,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n155/mode/1up"
+  },
+  "8.5.3": {
+   "scan_page_index": 155,
+   "printed_page": 141,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n155/mode/1up"
+  },
+  "8.5.4": {
+   "scan_page_index": 155,
+   "printed_page": 141,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n155/mode/1up"
+  },
+  "8.6.1": {
+   "scan_page_index": 155,
+   "printed_page": 141,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n155/mode/1up"
+  },
+  "8.6.2": {
+   "scan_page_index": 155,
+   "printed_page": 141,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n155/mode/1up"
+  },
+  "8.6.3": {
+   "scan_page_index": 155,
+   "printed_page": 141,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n155/mode/1up"
+  },
+  "8.6.4": {
+   "scan_page_index": 156,
+   "printed_page": 142,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n156/mode/1up"
+  },
+  "8.6.5": {
+   "scan_page_index": 156,
+   "printed_page": 142,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n156/mode/1up"
+  },
+  "8.6.6": {
+   "scan_page_index": 156,
+   "printed_page": 142,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n156/mode/1up"
+  },
+  "8.7.1": {
+   "scan_page_index": 156,
+   "printed_page": 142,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n156/mode/1up"
+  },
+  "8.7.2": {
+   "scan_page_index": 156,
+   "printed_page": 142,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n156/mode/1up"
+  },
+  "8.7.3": {
+   "scan_page_index": 156,
+   "printed_page": 142,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n156/mode/1up"
+  },
+  "8.7.4": {
+   "scan_page_index": 157,
+   "printed_page": 143,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n157/mode/1up"
+  },
+  "8.8.1": {
+   "scan_page_index": 157,
+   "printed_page": 143,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n157/mode/1up"
+  },
+  "8.8.2": {
+   "scan_page_index": 157,
+   "printed_page": 143,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n157/mode/1up"
+  },
+  "8.8.3": {
+   "scan_page_index": 157,
+   "printed_page": 143,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n157/mode/1up"
+  },
+  "8.8.4": {
+   "scan_page_index": 157,
+   "printed_page": 143,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n157/mode/1up"
+  },
+  "8.8.5": {
+   "scan_page_index": 158,
+   "printed_page": 144,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n158/mode/1up"
+  },
+  "8.9.1": {
+   "scan_page_index": 158,
+   "printed_page": 144,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n158/mode/1up"
+  },
+  "8.9.2": {
+   "scan_page_index": 158,
+   "printed_page": 144,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n158/mode/1up"
+  },
+  "8.9.3": {
+   "scan_page_index": 158,
+   "printed_page": 144,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n158/mode/1up"
+  },
+  "8.10.1": {
+   "scan_page_index": 159,
+   "printed_page": 145,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n159/mode/1up"
+  },
+  "8.10.2": {
+   "scan_page_index": 159,
+   "printed_page": 145,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n159/mode/1up"
+  },
+  "8.10.3": {
+   "scan_page_index": 159,
+   "printed_page": 145,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n159/mode/1up"
+  },
+  "8.10.4": {
+   "scan_page_index": 159,
+   "printed_page": 145,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n159/mode/1up"
+  },
+  "8.11.1": {
+   "scan_page_index": 159,
+   "printed_page": 145,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n159/mode/1up"
+  },
+  "8.11.2": {
+   "scan_page_index": 160,
+   "printed_page": 146,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n160/mode/1up"
+  },
+  "8.11.3": {
+   "scan_page_index": 160,
+   "printed_page": 146,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n160/mode/1up"
+  },
+  "8.12.1": {
+   "scan_page_index": 160,
+   "printed_page": 146,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n160/mode/1up"
+  },
+  "8.12.2": {
+   "scan_page_index": 160,
+   "printed_page": 146,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n160/mode/1up"
+  },
+  "8.12.3": {
+   "scan_page_index": 160,
+   "printed_page": 146,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n160/mode/1up"
+  },
+  "8.12.4": {
+   "scan_page_index": 161,
+   "printed_page": 147,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n161/mode/1up"
+  },
+  "8.12.5": {
+   "scan_page_index": 161,
+   "printed_page": 147,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n161/mode/1up"
+  },
+  "8.12.6": {
+   "scan_page_index": 161,
+   "printed_page": 147,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n161/mode/1up"
+  },
+  "8.13.1": {
+   "scan_page_index": 161,
+   "printed_page": 147,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n161/mode/1up"
+  },
+  "8.14.1": {
+   "scan_page_index": 161,
+   "printed_page": 147,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n161/mode/1up"
+  },
+  "8.15.1": {
+   "scan_page_index": 162,
+   "printed_page": 148,
+   "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n162/mode/1up"
+  }
+ },
+ "transcription": {
+  "path": "docs/upanishads-pilot/upanishads-1906-nirnaya-sagar-ai-transcription.json",
+  "sha256": "429d9f7eabb034dd6d3b40889049a7346a866b997525f5db9a7a4fe6b7c97d09"
+ },
+ "downloaded_source_xml_url": "https://archive.org/download/twentyeightupan00upangoog/twentyeightupan00upangoog_djvu.xml",
+ "coverage_note": "All numbered units for this work in the supplied transcription; unnumbered peace invocations and paragraphs are excluded by the preparation script. Numbering is edition-specific; some Taittiriya sections use sequential unit numbers."
+}

@@ -1,0 +1,212 @@
+{
+ "manifest": {
+  "work_id": "mandukya-upanishad",
+  "edition_id": "nirnaya-sagar-1906-ashtavimshati-upanishads",
+  "release": "mandukya-open-1",
+  "completeness": "complete",
+  "publisher": "Nirnaya Sagar Press, Bombay (1906), via archive.org",
+  "publisher_location": "n/a",
+  "license_id": "public-domain",
+  "public_domain_basis": "Own AI transcription of page images from Isadi-ashtavimshatyupanishadah, Nirnaya Sagar Press, Bombay, published 1906. The Pramana project owner accepts the public-domain basis for this edition: publication in 1906 establishes US public domain; editor Vasudeva Laxmana Shastri Pansikar is reported as 1863-1931 in one Google AI overview supplied by the owner, which would put the edition outside India's life-plus-60 term. The editor dates remain singly sourced; a second authority source is still wanted, and other contributors have not been confirmed. No modern edition's text or translation is used.",
+  "permission_proof": "Approval recorded by the Pramana project owner in the publication task on 2026-10-16: the owner accepts the rights basis for the 1906 Nirnaya Sagar Isadi-ashtavimshatyupanishadah (archive.org item twentyeightupan00upangoog), including the reported editor dates 1863-1931 from one Google AI overview with second-source confirmation still wanted, and approves release of the AI transcription without human verse-by-verse review. See docs/upanishads-pilot/README.md and release-report-2026-10-16.md.",
+  "permissions": [
+   "index",
+   "quote"
+  ],
+  "rights_approved": true,
+  "source_url": "https://archive.org/details/twentyeightupan00upangoog",
+  "sources": [
+   {
+    "role": "original",
+    "title": "Isadi-ashtavimshatyupanishadah (The Twenty-eight Upanishads)",
+    "author": "Vasudeva Laxmana Shastri Pansikar (ed.)",
+    "publication_year": 1906,
+    "url": "https://archive.org/details/twentyeightupan00upangoog",
+    "sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95",
+    "retrieved_at": "2026-10-16"
+   }
+  ],
+  "hierarchy_levels": [],
+  "reviewers": [
+   "Pramana project owner (approved release without verse-by-verse review)",
+   "Claude AI transcription and cross-check (page images, merge check)"
+  ],
+  "reviewed_at": "2026-10-16",
+  "complete_coverage_confirmed": true,
+  "review_method": "AI transcription from page images with an AI merge check; no human verse-by-verse review",
+  "human_verse_review": false,
+  "review_notice": "AI-transcribed Sanskrit text of a 1906 edition; not yet human-reviewed. Numbering is this edition's own.",
+  "rights_class": "public_domain",
+  "expected_passage_count": 12
+ },
+ "passages": [
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "1",
+   "original": "ओमित्येतदक्षरमिद५ सर्वं तस्योपव्याख्यानं भूतं भवद्भविष्यदिति सर्वमोङ्कार एव ॥ यच्चान्यत्त्रिकालातीतं तदप्योङ्कार एव",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 36,
+    "pdf_page": 51,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n50/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "2",
+   "original": "सर्व५ ह्येतद्ब्रह्मायमात्मा ब्रह्म सोऽयमात्मा चतुष्पात्",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 36,
+    "pdf_page": 51,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n50/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "3",
+   "original": "जागरितस्थानो बहिःप्रज्ञः सप्ताङ्ग एकोनविंशतिमुखः स्थूलभुग्वैश्वानरः प्रथमः पादः",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 36,
+    "pdf_page": 51,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n50/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "4",
+   "original": "स्वप्नस्थानोऽन्तःप्रज्ञः सप्ताङ्ग एकोनविंशतिमुखः प्रविविक्तभुक् तैजसो द्वितीयः पादः",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 36,
+    "pdf_page": 51,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n50/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "5",
+   "original": "यत्र सुप्तो न कंचन कामं कामयते न कंचन स्वप्नं पश्यति तत्सुषुप्तम् ॥ सुषुप्तस्थान एकीभूतः प्रज्ञानघन एवानन्दमयो ह्यानन्दभुक् चेतोमुखः प्राज्ञस्तृतीयः पादः",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 36,
+    "pdf_page": 51,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n50/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "6",
+   "original": "एष सर्वेश्वर एष सर्वज्ञ एषोऽन्तर्याम्येष योनिः सर्वस्य प्रभवाप्ययौ हि भूतानाम्",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 36,
+    "pdf_page": 51,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n50/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "7",
+   "original": "नान्तःप्रज्ञं न बहिःप्रज्ञं नोभयतःप्रज्ञं न प्रज्ञानघनं न प्रज्ञं नाप्रज्ञम् ॥ अदृष्टमव्यवहार्यमग्राह्यमलक्षणमचिन्त्यमव्यपदेश्यमेकात्म्यप्रत्ययसारं प्रपञ्चोपशमं शान्तं शिवमद्वैतं चतुर्थं मन्यन्ते स आत्मा स विज्ञेयः",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 36,
+    "pdf_page": 51,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n50/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "8",
+   "original": "सोऽयमात्माऽध्यक्षरमोङ्कारोऽधिमात्रं पादा मात्रा मात्राश्च पादा अकार उकारो मकार इति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 37,
+    "pdf_page": 52,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n51/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "9",
+   "original": "जागरितस्थानो वैश्वानरोऽकारः प्रथमा मात्राऽऽप्तेरादिमत्त्वाद्वाप्नोति ह वै सर्वान्कामानादिश्च भवति य एवं वेद",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 37,
+    "pdf_page": 52,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n51/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "10",
+   "original": "स्वप्नस्थानस्तैजस उकारो द्वितीया मात्रोत्कर्षादुभयत्वाद्वोत्कर्षति ह वै ज्ञानसंततिं समानश्च भवति नास्याब्रह्मवित्कुले भवति य एवं वेद",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 37,
+    "pdf_page": 52,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n51/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "11",
+   "original": "सुषुप्तस्थानः प्राज्ञो मकारस्तृतीया मात्रा मितेरपीतेर्वा मिनोति ह वा इद५ सर्वमपीतिश्च भवति य एवं वेद",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 37,
+    "pdf_page": 52,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n51/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [],
+   "chapter": 1,
+   "verse": "12",
+   "original": "अमात्रश्चतुर्थोऽव्यवहार्यः प्रपञ्चोपशमः शिवोऽद्वैत एवमोङ्कार आत्मैव संविशत्यात्मनात्मानं य एवं वेद य एवं वेद",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 37,
+    "pdf_page": 52,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n51/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  }
+ ]
+}

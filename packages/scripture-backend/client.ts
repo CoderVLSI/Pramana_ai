@@ -82,6 +82,8 @@ export function validateRemotePassages(
       !/^[a-f0-9]{64}$/.test(p.source_locator.asset_sha256) ||
       !["complete", "abridged", "selected"].includes(p.completeness) ||
       typeof p.audio_allowed !== "boolean" ||
+      (p.print_year !== undefined &&
+        (!Number.isInteger(p.print_year) || p.print_year < 1)) ||
       !p.reference ||
       !p.released_in ||
       !p.license_id ||

@@ -1,0 +1,380 @@
+{
+  "status": "all_checks_passed",
+  "endpoint": "https://localhost:54443",
+  "catalog_total": 2272,
+  "upanishad_passages": 1572,
+  "works": [
+    {
+      "work_id": "isha-upanishad",
+      "release": "isha-open-1",
+      "release_id": "release_c7f4fd533f6279ec33c527aac35bed7a",
+      "passages": 18,
+      "status": "all_checks_passed",
+      "word_search": {
+        "query": "ईशावास्यमिदꣳ",
+        "hits": 1
+      },
+      "reference_search": {
+        "query": "1.1",
+        "hits": 1,
+        "passage_id": "pd_39d6708c5048b7476f303ea70c7e"
+      },
+      "scripture_page": {
+        "verified_records": 18
+      },
+      "scripture_record": {
+        "context_count": 5,
+        "scan_page": 16,
+        "printed_page": 1
+      },
+      "hash_checks": {
+        "originals": 18,
+        "quotations": 18,
+        "tamper_rejected": true
+      },
+      "source_locators_verified": 18,
+      "print_year": 1906,
+      "human_verse_review": false,
+      "audio_allowed": false
+    },
+    {
+      "work_id": "kena-upanishad",
+      "release": "kena-open-1",
+      "release_id": "release_914a07b07fbdd4e3e87c1057f5e400da",
+      "passages": 34,
+      "status": "all_checks_passed",
+      "word_search": {
+        "query": "केनेषितं",
+        "hits": 1
+      },
+      "reference_search": {
+        "query": "1.1",
+        "hits": 1,
+        "passage_id": "pd_121c940194c9a0b7a440a0284b42"
+      },
+      "scripture_page": {
+        "verified_records": 34
+      },
+      "scripture_record": {
+        "context_count": 5,
+        "scan_page": 18,
+        "printed_page": 3
+      },
+      "hash_checks": {
+        "originals": 34,
+        "quotations": 34,
+        "tamper_rejected": true
+      },
+      "source_locators_verified": 34,
+      "print_year": 1906,
+      "human_verse_review": false,
+      "audio_allowed": false
+    },
+    {
+      "work_id": "katha-upanishad",
+      "release": "katha-open-1",
+      "release_id": "release_3966ce4a0a946bd6f38c2075c3e0dcf9",
+      "passages": 118,
+      "status": "all_checks_passed",
+      "word_search": {
+        "query": "अणोरणीयान्महतो",
+        "hits": 1
+      },
+      "reference_search": {
+        "query": "1.2.20",
+        "hits": 1,
+        "passage_id": "pd_62cd0f49b9f59b7f02f2d7c393b5"
+      },
+      "scripture_page": {
+        "verified_records": 118
+      },
+      "scripture_record": {
+        "context_count": 5,
+        "scan_page": 27,
+        "printed_page": 12
+      },
+      "hash_checks": {
+        "originals": 118,
+        "quotations": 118,
+        "tamper_rejected": true
+      },
+      "source_locators_verified": 118,
+      "print_year": 1906,
+      "human_verse_review": false,
+      "audio_allowed": false
+    },
+    {
+      "work_id": "prashna-upanishad",
+      "release": "prashna-open-1",
+      "release_id": "release_d41783bb9cce58fda0f2906761ca943e",
+      "passages": 67,
+      "status": "all_checks_passed",
+      "word_search": {
+        "query": "सुकेशा",
+        "hits": 2
+      },
+      "reference_search": {
+        "query": "1.1",
+        "hits": 1,
+        "passage_id": "pd_6b546e350627ba29c958c569d384"
+      },
+      "scripture_page": {
+        "verified_records": 67
+      },
+      "scripture_record": {
+        "context_count": 5,
+        "scan_page": 34,
+        "printed_page": 19
+      },
+      "hash_checks": {
+        "originals": 67,
+        "quotations": 67,
+        "tamper_rejected": true
+      },
+      "source_locators_verified": 67,
+      "print_year": 1906,
+      "human_verse_review": false,
+      "audio_allowed": false
+    },
+    {
+      "work_id": "mundaka-upanishad",
+      "release": "mundaka-open-1",
+      "release_id": "release_10ca35aa8cdb2192bb7e8b28f8b9466c",
+      "passages": 64,
+      "status": "all_checks_passed",
+      "word_search": {
+        "query": "ब्रह्मा",
+        "hits": 1
+      },
+      "reference_search": {
+        "query": "1.1.1",
+        "hits": 1,
+        "passage_id": "pd_edb4f3863fbf7c8400caf409b6a3"
+      },
+      "scripture_page": {
+        "verified_records": 64
+      },
+      "scripture_record": {
+        "context_count": 5,
+        "scan_page": 43,
+        "printed_page": 28
+      },
+      "hash_checks": {
+        "originals": 64,
+        "quotations": 64,
+        "tamper_rejected": true
+      },
+      "source_locators_verified": 64,
+      "print_year": 1906,
+      "human_verse_review": false,
+      "audio_allowed": false
+    },
+    {
+      "work_id": "mandukya-upanishad",
+      "release": "mandukya-open-1",
+      "release_id": "release_9b3b27239afc69530a392f09f4a8d106",
+      "passages": 12,
+      "status": "all_checks_passed",
+      "word_search": {
+        "query": "ओमित्येतदक्षरमिद५",
+        "hits": 1
+      },
+      "reference_search": {
+        "query": "1.1",
+        "hits": 1,
+        "passage_id": "pd_1fa1a56809fd40c3cfe4e1e6fa41"
+      },
+      "scripture_page": {
+        "verified_records": 12
+      },
+      "scripture_record": {
+        "context_count": 5,
+        "scan_page": 51,
+        "printed_page": 36
+      },
+      "hash_checks": {
+        "originals": 12,
+        "quotations": 12,
+        "tamper_rejected": true
+      },
+      "source_locators_verified": 12,
+      "print_year": 1906,
+      "human_verse_review": false,
+      "audio_allowed": false
+    },
+    {
+      "work_id": "taittiriya-upanishad",
+      "release": "taittiriya-open-1",
+      "release_id": "release_bee00394ff111dd7557b94e1be01f2ff",
+      "passages": 47,
+      "status": "all_checks_passed",
+      "word_search": {
+        "query": "मित्रः",
+        "hits": 2
+      },
+      "reference_search": {
+        "query": "1.1.1",
+        "hits": 1,
+        "passage_id": "pd_4772dec93a7579e2f77e3f8294b0"
+      },
+      "scripture_page": {
+        "verified_records": 47
+      },
+      "scripture_record": {
+        "context_count": 1,
+        "scan_page": 53,
+        "printed_page": 38
+      },
+      "hash_checks": {
+        "originals": 47,
+        "quotations": 47,
+        "tamper_rejected": true
+      },
+      "source_locators_verified": 47,
+      "print_year": 1906,
+      "human_verse_review": false,
+      "audio_allowed": false
+    },
+    {
+      "work_id": "aitareya-upanishad",
+      "release": "aitareya-open-1",
+      "release_id": "release_03fec32e215137c560531b04a6d3dd55",
+      "passages": 33,
+      "status": "all_checks_passed",
+      "word_search": {
+        "query": "एवाग्र",
+        "hits": 1
+      },
+      "reference_search": {
+        "query": "1.1.1",
+        "hits": 1,
+        "passage_id": "pd_3372c78990d8700c5ed0a72d3b18"
+      },
+      "scripture_page": {
+        "verified_records": 33
+      },
+      "scripture_record": {
+        "context_count": 4,
+        "scan_page": 71,
+        "printed_page": 56
+      },
+      "hash_checks": {
+        "originals": 33,
+        "quotations": 33,
+        "tamper_rejected": true
+      },
+      "source_locators_verified": 33,
+      "print_year": 1906,
+      "human_verse_review": false,
+      "audio_allowed": false
+    },
+    {
+      "work_id": "chandogya-upanishad",
+      "release": "chandogya-open-1",
+      "release_id": "release_e7e4e5ec78a894e21e42e1d53dee43da",
+      "passages": 631,
+      "status": "all_checks_passed",
+      "word_search": {
+        "query": "ओमित्येतदक्षरमुद्गीथमुपासीतोमिति",
+        "hits": 2
+      },
+      "reference_search": {
+        "query": "1.1.1",
+        "hits": 1,
+        "passage_id": "pd_b87e3a42cd76bda65afd9cb337e7"
+      },
+      "scripture_page": {
+        "verified_records": 631
+      },
+      "scripture_record": {
+        "context_count": 5,
+        "scan_page": 76,
+        "printed_page": 61
+      },
+      "hash_checks": {
+        "originals": 631,
+        "quotations": 631,
+        "tamper_rejected": true
+      },
+      "source_locators_verified": 631,
+      "print_year": 1906,
+      "human_verse_review": false,
+      "audio_allowed": false
+    },
+    {
+      "work_id": "brihadaranyaka-upanishad",
+      "release": "brihadaranyaka-open-1",
+      "release_id": "release_0f290ab78d1b1908f797c23c911408d0",
+      "passages": 435,
+      "status": "all_checks_passed",
+      "word_search": {
+        "query": "अश्वस्य",
+        "hits": 1
+      },
+      "reference_search": {
+        "query": "1.1.1",
+        "hits": 1,
+        "passage_id": "pd_c6b9313769e1f75e0b21dcd5005b"
+      },
+      "scripture_page": {
+        "verified_records": 435
+      },
+      "scripture_record": {
+        "context_count": 2,
+        "scan_page": 164,
+        "printed_page": 149
+      },
+      "hash_checks": {
+        "originals": 435,
+        "quotations": 435,
+        "tamper_rejected": true
+      },
+      "source_locators_verified": 435,
+      "print_year": 1906,
+      "human_verse_review": false,
+      "audio_allowed": false
+    },
+    {
+      "work_id": "shvetashvatara-upanishad",
+      "release": "shvetashvatara-open-1",
+      "release_id": "release_9d310f25d2c90870b9e3d61a44eb09f4",
+      "passages": 113,
+      "status": "all_checks_passed",
+      "word_search": {
+        "query": "ब्रह्मवादिनो",
+        "hits": 2
+      },
+      "reference_search": {
+        "query": "1.1",
+        "hits": 1,
+        "passage_id": "pd_52354191bb2b8c7acd5607b8113b"
+      },
+      "scripture_page": {
+        "verified_records": 113
+      },
+      "scripture_record": {
+        "context_count": 5,
+        "scan_page": 258,
+        "printed_page": 243
+      },
+      "hash_checks": {
+        "originals": 113,
+        "quotations": 113,
+        "tamper_rejected": true
+      },
+      "source_locators_verified": 113,
+      "print_year": 1906,
+      "human_verse_review": false,
+      "audio_allowed": false
+    }
+  ],
+  "gita_regression": {
+    "passages": 700,
+    "originals_unchanged": true
+  },
+  "pagination": {
+    "all_records": 2272,
+    "page_size": 50
+  },
+  "human_verse_review": false
+}

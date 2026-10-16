@@ -1,0 +1,1263 @@
+{
+ "manifest": {
+  "work_id": "mundaka-upanishad",
+  "edition_id": "nirnaya-sagar-1906-ashtavimshati-upanishads",
+  "release": "mundaka-open-1",
+  "completeness": "complete",
+  "publisher": "Nirnaya Sagar Press, Bombay (1906), via archive.org",
+  "publisher_location": "n/a",
+  "license_id": "public-domain",
+  "public_domain_basis": "Own AI transcription of page images from Isadi-ashtavimshatyupanishadah, Nirnaya Sagar Press, Bombay, published 1906. The Pramana project owner accepts the public-domain basis for this edition: publication in 1906 establishes US public domain; editor Vasudeva Laxmana Shastri Pansikar is reported as 1863-1931 in one Google AI overview supplied by the owner, which would put the edition outside India's life-plus-60 term. The editor dates remain singly sourced; a second authority source is still wanted, and other contributors have not been confirmed. No modern edition's text or translation is used.",
+  "permission_proof": "Approval recorded by the Pramana project owner in the publication task on 2026-10-16: the owner accepts the rights basis for the 1906 Nirnaya Sagar Isadi-ashtavimshatyupanishadah (archive.org item twentyeightupan00upangoog), including the reported editor dates 1863-1931 from one Google AI overview with second-source confirmation still wanted, and approves release of the AI transcription without human verse-by-verse review. See docs/upanishads-pilot/README.md and release-report-2026-10-16.md.",
+  "permissions": [
+   "index",
+   "quote"
+  ],
+  "rights_approved": true,
+  "source_url": "https://archive.org/details/twentyeightupan00upangoog",
+  "sources": [
+   {
+    "role": "original",
+    "title": "Isadi-ashtavimshatyupanishadah (The Twenty-eight Upanishads)",
+    "author": "Vasudeva Laxmana Shastri Pansikar (ed.)",
+    "publication_year": 1906,
+    "url": "https://archive.org/details/twentyeightupan00upangoog",
+    "sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95",
+    "retrieved_at": "2026-10-16"
+   }
+  ],
+  "hierarchy_levels": [
+   "mundaka"
+  ],
+  "chapter_label": "khanda",
+  "reviewers": [
+   "Pramana project owner (approved release without verse-by-verse review)",
+   "Claude AI transcription and cross-check (page images, merge check)"
+  ],
+  "reviewed_at": "2026-10-16",
+  "complete_coverage_confirmed": true,
+  "review_method": "AI transcription from page images with an AI merge check; no human verse-by-verse review",
+  "human_verse_review": false,
+  "review_notice": "AI-transcribed Sanskrit text of a 1906 edition; not yet human-reviewed. Numbering is this edition's own.",
+  "rights_class": "public_domain",
+  "expected_passage_count": 64
+ },
+ "passages": [
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "1"
+    }
+   ],
+   "chapter": 1,
+   "verse": "1",
+   "original": "ॐ ब्रह्मा देवानां प्रथमः संबभूव विश्वस्य कर्ता भुवनस्य गोप्ता ॥ स ब्रह्मविद्यां सर्वविद्याप्रतिष्ठामथर्वाय ज्येष्ठपुत्राय प्राह",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 28,
+    "pdf_page": 43,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n42/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "1"
+    }
+   ],
+   "chapter": 1,
+   "verse": "2",
+   "original": "अथर्वणे यां प्रवदेत ब्रह्माथर्वा तां पुरोवाचाङ्गिरे ब्रह्मविद्याम् ॥ स भारद्वाजाय सत्यवाहाय प्राह भारद्वाजोऽङ्गिरसे परावराम्",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 28,
+    "pdf_page": 43,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n42/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "1"
+    }
+   ],
+   "chapter": 1,
+   "verse": "3",
+   "original": "शौनको ह वै महाशालोऽङ्गिरसं विधिवदुपसन्नः पप्रच्छ ॥ कस्मिन्नु भगवो विज्ञाते सर्वमिदं विज्ञातं भवतीति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 28,
+    "pdf_page": 43,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n42/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "1"
+    }
+   ],
+   "chapter": 1,
+   "verse": "4",
+   "original": "तस्मै स होवाच ॥ द्वे विद्ये वेदितव्ये इति ह स्म यद्ब्रह्मविदो वदन्ति परा चैवापरा च",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 28,
+    "pdf_page": 43,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n42/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "1"
+    }
+   ],
+   "chapter": 1,
+   "verse": "5",
+   "original": "तत्रापरा ऋग्वेदो यजुर्वेदः सामवेदोऽथर्ववेदः शिक्षा कल्पो व्याकरणं निरुक्तं छन्दो ज्योतिषमिति ॥ अथ परा यया तदक्षरमधिगम्यते",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 28,
+    "pdf_page": 43,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n42/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "1"
+    }
+   ],
+   "chapter": 1,
+   "verse": "6",
+   "original": "यत्तदद्रेश्यमग्राह्यमगोत्रमवर्णमचक्षुःश्रोत्रं तदपाणिपादं नित्यं विभुं सर्वगतं सुसूक्ष्मं तदव्ययं तद्भूतयोनिं परिपश्यन्ति धीराः",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 28,
+    "pdf_page": 43,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n42/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "1"
+    }
+   ],
+   "chapter": 1,
+   "verse": "7",
+   "original": "यथोर्णनाभिः सृजते गृह्णते च यथा पृथिव्यामोषधयः संभवन्ति ॥ यथा सतः पुरुषात्केशलोमानि तथाक्षरात्संभवतीह विश्वम्",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 29,
+    "pdf_page": 44,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n43/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "1"
+    }
+   ],
+   "chapter": 1,
+   "verse": "8",
+   "original": "तपसा चीयते ब्रह्म ततोऽन्नमभिजायते ॥ अन्नात्प्राणो मनः सत्यं लोकाः कर्मसु चामृतम्",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 29,
+    "pdf_page": 44,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n43/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "1"
+    }
+   ],
+   "chapter": 1,
+   "verse": "9",
+   "original": "यः सर्वज्ञः सर्वविद्यस्य ज्ञानमयं तपः ॥ तस्मादेतद्ब्रह्म नाम रूपमन्नं च जायते",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 29,
+    "pdf_page": 44,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n43/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "1"
+    }
+   ],
+   "chapter": 2,
+   "verse": "1",
+   "original": "तदेतत्सत्यं मन्त्रेषु कर्माणि कवयो यान्यपश्यंस्तानि त्रेतायां बहुधा संततानि ॥ तान्याचरथ नियतं सत्यकामा एष वः पन्थाः सुकृतस्य लोके",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 29,
+    "pdf_page": 44,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n43/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "1"
+    }
+   ],
+   "chapter": 2,
+   "verse": "2",
+   "original": "यदा लेलायते ह्यर्चिः समिद्धे हव्यवाहने ॥ तदाज्यभागावन्तरेणाहुतीः प्रतिपादयेच्छ्रद्धया हुतम्",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 29,
+    "pdf_page": 44,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n43/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "1"
+    }
+   ],
+   "chapter": 2,
+   "verse": "3",
+   "original": "यस्याग्निहोत्रमदर्शमपौर्णमासमचातुर्मास्यमनाग्रयणमतिथिवर्जितं च ॥ अहुतमवैश्वदेवमविधिना हुतमासप्तमांस्तस्य लोकान्हिनस्ति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 29,
+    "pdf_page": 44,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n43/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "1"
+    }
+   ],
+   "chapter": 2,
+   "verse": "4",
+   "original": "काली कराली च मनोजवा च सुलोहिता या च सुधूम्रवर्णा ॥ स्फुलिङ्गिनी विश्वरूपा च देवी लेलायमाना इति सप्त जिह्वाः",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 29,
+    "pdf_page": 44,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n43/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "1"
+    }
+   ],
+   "chapter": 2,
+   "verse": "5",
+   "original": "एतेषु यश्चरते भ्राजमानेषु यथाकालं चाहुतयो ह्याददायन् ॥ तन्नयन्त्येताः सूर्यस्य रश्मयो यत्र देवानां पतिरेकोऽधिवासः",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 29,
+    "pdf_page": 44,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n43/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "1"
+    }
+   ],
+   "chapter": 2,
+   "verse": "6",
+   "original": "एह्येहीति तमाहुतयः सुवर्चसः सूर्यस्य रश्मिभिर्यजमानं वहन्ति ॥ प्रियां वाचमभिवदन्त्योऽर्चयन्त्य एष वः पुण्यः सुकृतो ब्रह्मलोकः",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 29,
+    "pdf_page": 44,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n43/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "1"
+    }
+   ],
+   "chapter": 2,
+   "verse": "7",
+   "original": "प्लवा ह्येते अदृढा यज्ञरूपा अष्टादशोक्तमवरं येषु कर्म ॥ एतच्छ्रेयो येऽभिनन्दन्ति मूढा जरामृत्युं ते पुनरेवापियन्ति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 30,
+    "pdf_page": 45,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n44/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "1"
+    }
+   ],
+   "chapter": 2,
+   "verse": "8",
+   "original": "अविद्यायामन्तरे वर्तमानाः स्वयं धीराः पण्डितंमन्यमानाः ॥ जङ्घन्यमानाः परियन्ति मूढा अन्धेनैव नीयमाना यथान्धाः",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 30,
+    "pdf_page": 45,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n44/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "1"
+    }
+   ],
+   "chapter": 2,
+   "verse": "9",
+   "original": "अविद्यायां बहुधा वर्तमाना वयं कृतार्था इत्यभिमन्यन्ति बालाः ॥ यत्कर्मिणो न प्रवेदयन्ति रागात्तेनातुराः क्षीणलोकाश्च्यवन्ते",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 30,
+    "pdf_page": 45,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n44/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "1"
+    }
+   ],
+   "chapter": 2,
+   "verse": "10",
+   "original": "इष्टापूर्तं मन्यमाना वरिष्ठं नान्यच्छ्रेयो वेदयन्ते प्रमूढाः ॥ नाकस्य पृष्ठे ते सुकृतेऽनुभूत्वेमं लोकं हीनतरं चाविशन्ति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 30,
+    "pdf_page": 45,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n44/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "1"
+    }
+   ],
+   "chapter": 2,
+   "verse": "11",
+   "original": "तपःश्रद्धे ये ह्युपवसन्त्यरण्ये शान्ता विद्वांसो भैक्षचर्यां चरन्तः ॥ सूर्यद्वारेण ते विरजाः प्रयान्ति यत्रामृतः स पुरुषो ह्यव्ययात्मा",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 30,
+    "pdf_page": 45,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n44/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "1"
+    }
+   ],
+   "chapter": 2,
+   "verse": "12",
+   "original": "परीक्ष्य लोकान्कर्मचितान्ब्राह्मणो निर्वेदमायान्नास्त्यकृतः कृतेन ॥ तद्विज्ञानार्थं स गुरुमेवाभिगच्छेत्समित्पाणिः श्रोत्रियं ब्रह्मनिष्ठम्",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 30,
+    "pdf_page": 45,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n44/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "1"
+    }
+   ],
+   "chapter": 2,
+   "verse": "13",
+   "original": "तस्मै स विद्वानुपसन्नाय सम्यक् प्रशान्तचित्ताय शमान्विताय ॥ येनाक्षरं पुरुषं वेद सत्यं प्रोवाच तां तत्त्वतो ब्रह्मविद्याम्",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 30,
+    "pdf_page": 45,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n44/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "2"
+    }
+   ],
+   "chapter": 1,
+   "verse": "1",
+   "original": "तदेतत्सत्यं यथा सुदीप्तात्पावकाद्विस्फुलिङ्गाः सहस्रशः प्रभवन्ते सरूपाः ॥ तथाक्षराद्विविधाः सोम्य भावाः प्रजायन्ते तत्र चैवापियन्ति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 30,
+    "pdf_page": 45,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n44/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "2"
+    }
+   ],
+   "chapter": 1,
+   "verse": "2",
+   "original": "दिव्यो ह्यमूर्तः पुरुषः स बाह्याभ्यन्तरो ह्यजः ॥ अप्राणो ह्यमनाः शुभ्रो ह्यक्षरात्परतः परः",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 31,
+    "pdf_page": 46,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n45/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "2"
+    }
+   ],
+   "chapter": 1,
+   "verse": "3",
+   "original": "एतस्माज्जायते प्राणो मनः सर्वेन्द्रियाणि च ॥ खं वायुर्ज्योतिरापः पृथिवी विश्वस्य धारिणी",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 31,
+    "pdf_page": 46,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n45/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "2"
+    }
+   ],
+   "chapter": 1,
+   "verse": "4",
+   "original": "अग्निर्मूर्धा चक्षुषी चन्द्रसूर्यौ दिशः श्रोत्रे वाग्विवृताश्च वेदाः ॥ वायुः प्राणो हृदयं विश्वमस्य पद्भ्यां पृथिवी ह्येष सर्वभूतान्तरात्मा",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 31,
+    "pdf_page": 46,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n45/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "2"
+    }
+   ],
+   "chapter": 1,
+   "verse": "5",
+   "original": "तस्मादग्निः समिधो यस्य सूर्यः सोमात्पर्जन्य ओषधयः पृथिव्याम् ॥ पुमान् रेतः सिञ्चति योषितायां बह्वीः प्रजाः पुरुषात्संप्रसूताः",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 31,
+    "pdf_page": 46,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n45/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "2"
+    }
+   ],
+   "chapter": 1,
+   "verse": "6",
+   "original": "तस्मादृचः साम यजूंषि दीक्षा यज्ञाश्च सर्वे क्रतवो दक्षिणाश्च ॥ संवत्सरं च यजमानश्च लोकाः सोमो यत्र पवते यत्र सूर्यः",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 31,
+    "pdf_page": 46,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n45/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "2"
+    }
+   ],
+   "chapter": 1,
+   "verse": "7",
+   "original": "तस्माच्च देवा बहुधा संप्रसूताः साध्या मनुष्याः पशवो वया५सि ॥ प्राणापानौ व्रीहियवौ तपश्च श्रद्धा सत्यं ब्रह्मचर्यं विधिश्च",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 31,
+    "pdf_page": 46,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n45/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "2"
+    }
+   ],
+   "chapter": 1,
+   "verse": "8",
+   "original": "सप्त प्राणाः प्रभवन्ति तस्मात्सप्तार्चिषः समिधः सप्त होमाः ॥ सप्त इमे लोका येषु चरन्ति प्राणा गुहाशया निहिताः सप्त सप्त",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 31,
+    "pdf_page": 46,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n45/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "2"
+    }
+   ],
+   "chapter": 1,
+   "verse": "9",
+   "original": "अतः समुद्रा गिरयश्च सर्वेऽस्मात्स्यन्दन्ते सिन्धवः सर्वरूपाः ॥ अतश्च सर्वा ओषधयो रसश्च येनैष भूतैस्तिष्ठते ह्यन्तरात्मा",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 31,
+    "pdf_page": 46,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n45/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "2"
+    }
+   ],
+   "chapter": 1,
+   "verse": "10",
+   "original": "पुरुष एवेदं विश्वं कर्म तपो ब्रह्म परामृतम् ॥ एतद्यो वेद निहितं गुहायां सोऽविद्याग्रन्थिं विकिरतीह सोम्य",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 31,
+    "pdf_page": 46,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n45/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "2"
+    }
+   ],
+   "chapter": 2,
+   "verse": "1",
+   "original": "आविः संनिहितं गुहाचरं नाम महत्पदमत्रैतत्समर्पितम् ॥ एजत्प्राणन्निमिषच्च यदेतज्जानथ सदसद्वरेण्यं परं विज्ञानाद्यद्वरिष्ठं प्रजानाम्",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 32,
+    "pdf_page": 47,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n46/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "2"
+    }
+   ],
+   "chapter": 2,
+   "verse": "2",
+   "original": "यदर्चिमद्यदणुभ्योऽणु यस्मिँल्लोका निहिता लोकिनश्च ॥ तदेतदक्षरं ब्रह्म स प्राणस्तदु वाङ्मनः ॥ तदेतत्सत्यं तदमृतं तद्वेद्धव्यं सोम्य विद्धि",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 32,
+    "pdf_page": 47,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n46/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "2"
+    }
+   ],
+   "chapter": 2,
+   "verse": "3",
+   "original": "धनुर्गृहीत्वौपनिषदं महास्त्रं शरं ह्युपासानिशितं संधीयत ॥ आयम्य तद्भावगतेन चेतसा लक्ष्यं तदेवाक्षरं सोम्य विद्धि",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 32,
+    "pdf_page": 47,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n46/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "2"
+    }
+   ],
+   "chapter": 2,
+   "verse": "4",
+   "original": "प्रणवो धनुः शरो ह्यात्मा ब्रह्म तल्लक्ष्यमुच्यते ॥ अप्रमत्तेन वेद्धव्यं शरवत्तन्मयो भवेत्",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 32,
+    "pdf_page": 47,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n46/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "2"
+    }
+   ],
+   "chapter": 2,
+   "verse": "5",
+   "original": "यस्मिन्द्यौः पृथिवी चान्तरिक्षमोतं मनः सह प्राणैश्च सर्वैः ॥ तमेवैकं जानथ आत्मानमन्या वाचो विमुञ्चथामृतस्यैष सेतुः",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 32,
+    "pdf_page": 47,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n46/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "2"
+    }
+   ],
+   "chapter": 2,
+   "verse": "6",
+   "original": "अरा इव रथनाभौ संहता यत्र नाड्यः ॥ स एषोऽन्तश्चरते बहुधा जायमानः ॥ ॐमित्येवं ध्यायथ आत्मानं स्वस्ति वः पाराय तमसः परस्तात्",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 32,
+    "pdf_page": 47,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n46/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "2"
+    }
+   ],
+   "chapter": 2,
+   "verse": "7",
+   "original": "यः सर्वज्ञः सर्वविद्यस्यैष महिमा भुवि ॥ दिव्ये ब्रह्मपुरे ह्येष व्योम्न्यात्मा प्रतिष्ठितः ॥ मनोमयः प्राणशरीरनेता प्रतिष्ठितोऽन्ने हृदयं संनिधाय ॥ तद्विज्ञानेन परिपश्यन्ति धीरा आनन्दरूपममृतं यद्विभाति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 32,
+    "pdf_page": 47,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n46/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "2"
+    }
+   ],
+   "chapter": 2,
+   "verse": "8",
+   "original": "भिद्यते हृदयग्रन्थिश्छिद्यन्ते सर्वसंशयाः ॥ क्षीयन्ते चास्य कर्माणि तस्मिन्दृष्टे परावरे",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 32,
+    "pdf_page": 47,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n46/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "2"
+    }
+   ],
+   "chapter": 2,
+   "verse": "9",
+   "original": "हिरण्मये परे कोशे विरजं ब्रह्म निष्कलम् ॥ तच्छुभ्रं ज्योतिषां ज्योतिस्तद्यदात्मविदो विदुः",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 32,
+    "pdf_page": 47,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n46/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "2"
+    }
+   ],
+   "chapter": 2,
+   "verse": "10",
+   "original": "न तत्र सूर्यो भाति न चन्द्रतारकं नेमा विद्युतो भान्ति कुतोऽयमग्निः ॥ तमेव भान्तमनुभाति सर्वं तस्य भासा सर्वमिदं विभाति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 33,
+    "pdf_page": 48,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n47/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "2"
+    }
+   ],
+   "chapter": 2,
+   "verse": "11",
+   "original": "ब्रह्मैवेदममृतं पुरस्ताद्ब्रह्म पश्चाद्ब्रह्म दक्षिणतश्चोत्तरेण ॥ अधश्चोर्ध्वं च प्रसृतं ब्रह्मैवेदं विश्वमिदं वरिष्ठम्",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 33,
+    "pdf_page": 48,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n47/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "3"
+    }
+   ],
+   "chapter": 1,
+   "verse": "1",
+   "original": "द्वा सुपर्णा सयुजा सखाया समानं वृक्षं परिषस्वजाते ॥ तयोरन्यः पिप्पलं स्वाद्वत्त्यनश्नन्नन्यो अभिचाकशीति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 33,
+    "pdf_page": 48,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n47/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "3"
+    }
+   ],
+   "chapter": 1,
+   "verse": "2",
+   "original": "समाने वृक्षे पुरुषो निमग्नोऽनीशया शोचति मुह्यमानः ॥ जुष्टं यदा पश्यत्यन्यमीशमस्य महिमानमिति वीतशोकः",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 33,
+    "pdf_page": 48,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n47/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "3"
+    }
+   ],
+   "chapter": 1,
+   "verse": "3",
+   "original": "यदा पश्यः पश्यते रुक्मवर्णं कर्तारमीशं पुरुषं ब्रह्मयोनिम् ॥ तदा विद्वान्पुण्यपापे विधूय निरञ्जनः परमं साम्यमुपैति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 33,
+    "pdf_page": 48,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n47/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "3"
+    }
+   ],
+   "chapter": 1,
+   "verse": "4",
+   "original": "प्राणो ह्येष यः सर्वभूतैर्विभाति विजानन्विद्वान्भवते नातिवादी ॥ आत्मक्रीड आत्मरतिः क्रियावानेष ब्रह्मविदां वरिष्ठः",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 33,
+    "pdf_page": 48,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n47/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "3"
+    }
+   ],
+   "chapter": 1,
+   "verse": "5",
+   "original": "सत्येन लभ्यस्तपसा ह्येष आत्मा सम्यग्ज्ञानेन ब्रह्मचर्येण नित्यम् ॥ अन्तःशरीरे ज्योतिर्मयो हि शुभ्रो यं पश्यन्ति यतयः क्षीणदोषाः",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 33,
+    "pdf_page": 48,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n47/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "3"
+    }
+   ],
+   "chapter": 1,
+   "verse": "6",
+   "original": "सत्यमेव जयते नानृतं सत्येन पन्था विततो देवयानः ॥ येनाक्रमन्त्यृषयो ह्याप्तकामा यत्र तत्सत्यस्य परमं निधानम्",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 33,
+    "pdf_page": 48,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n47/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "3"
+    }
+   ],
+   "chapter": 1,
+   "verse": "7",
+   "original": "बृहच्च तद्दिव्यमचिन्त्यरूपं सूक्ष्माच्च तत्सूक्ष्मतरं विभाति ॥ दूरात्सुदूरे तदिहान्तिके च पश्यत्स्विहैव निहितं गुहायाम्",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 33,
+    "pdf_page": 48,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n47/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "3"
+    }
+   ],
+   "chapter": 1,
+   "verse": "8",
+   "original": "न चक्षुषा गृह्यते नापि वाचा नान्यैर्देवैस्तपसा कर्मणा वा ॥ ज्ञानप्रसादेन विशुद्धसत्त्वस्ततस्तु तं पश्यते निष्कलं ध्यायमानः",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 34,
+    "pdf_page": 49,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n48/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "3"
+    }
+   ],
+   "chapter": 1,
+   "verse": "9",
+   "original": "एषोऽणुरात्मा चेतसा वेदितव्यो यस्मिन्प्राणः पञ्चधा संविवेश ॥ प्राणैश्चित्तं सर्वमोतं प्रजानां यस्मिन्विशुद्धे विभवत्येष आत्मा",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 34,
+    "pdf_page": 49,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n48/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "3"
+    }
+   ],
+   "chapter": 1,
+   "verse": "10",
+   "original": "यं यं लोकं मनसा संविभाति विशुद्धसत्त्वः कामयते यांश्च कामान् ॥ तं तं लोकं जायते तांश्च कामांस्तस्मादात्मज्ञं ह्यर्चयेद्भूतिकामः",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 34,
+    "pdf_page": 49,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n48/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "3"
+    }
+   ],
+   "chapter": 2,
+   "verse": "1",
+   "original": "स वेदैतत्परमं ब्रह्म धाम यत्र विश्वं निहितं भाति शुभ्रम् ॥ उपासते पुरुषं ये ह्यकामास्ते शुक्रमेतदतिवर्तन्ति धीराः",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 34,
+    "pdf_page": 49,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n48/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "3"
+    }
+   ],
+   "chapter": 2,
+   "verse": "2",
+   "original": "कामान्यः कामयते मन्यमानः स कामभिर्जायते तत्र तत्र ॥ पर्याप्तकामस्य कृतात्मनस्तु इहैव सर्वे प्रविलीयन्ति कामाः",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 34,
+    "pdf_page": 49,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n48/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "3"
+    }
+   ],
+   "chapter": 2,
+   "verse": "3",
+   "original": "नायमात्मा प्रवचनेन लभ्यो न मेधया न बहुना श्रुतेन ॥ यमेवैष वृणुते तेन लभ्यस्तस्यैष आत्मा विवृणुते तनुं स्वाम्",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 34,
+    "pdf_page": 49,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n48/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "3"
+    }
+   ],
+   "chapter": 2,
+   "verse": "4",
+   "original": "नायमात्मा बलहीनेन लभ्यो न च प्रमादात्तपसो वाप्यलिङ्गात् ॥ एतैरुपायैर्यतते यस्तु विद्वांस्तस्यैष आत्मा विशते ब्रह्मधाम",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 34,
+    "pdf_page": 49,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n48/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "3"
+    }
+   ],
+   "chapter": 2,
+   "verse": "5",
+   "original": "संप्राप्यैनमृषयो ज्ञानतृप्ताः कृतात्मानो वीतरागाः प्रशान्ताः ॥ ते सर्वगं सर्वतः प्राप्य धीरा युक्तात्मानः सर्वमेवाविशन्ति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 34,
+    "pdf_page": 49,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n48/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "3"
+    }
+   ],
+   "chapter": 2,
+   "verse": "6",
+   "original": "वेदान्तविज्ञानसुनिश्चितार्थाः संन्यासयोगाद्यतयः शुद्धसत्त्वाः ॥ ते ब्रह्मलोकेषु परान्तकाले परामृताः परिमुच्यन्ति सर्वे",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 35,
+    "pdf_page": 50,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n49/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "3"
+    }
+   ],
+   "chapter": 2,
+   "verse": "7",
+   "original": "गताः कलाः पञ्चदश प्रतिष्ठा देवाश्च सर्वे प्रतिदेवतासु ॥ कर्माणि विज्ञानमयश्च आत्मा परेऽव्यये सर्व एकीभवन्ति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 35,
+    "pdf_page": 50,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n49/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "3"
+    }
+   ],
+   "chapter": 2,
+   "verse": "8",
+   "original": "यथा नद्यः स्यन्दमानाः समुद्रेऽस्तं गच्छन्ति नामरूपे विहाय ॥ तथा विद्वान्नामरूपाद्विमुक्तः परात्परं पुरुषमुपैति दिव्यम्",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 35,
+    "pdf_page": 50,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n49/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "3"
+    }
+   ],
+   "chapter": 2,
+   "verse": "9",
+   "original": "स यो ह वै तत्परमं ब्रह्म वेद ब्रह्मैव भवति नास्याब्रह्मवित्कुले भवति तरति शोकं तरति पाप्मानं गुहाग्रन्थिभ्यो विमुक्तोऽमृतो भवति",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 35,
+    "pdf_page": 50,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n49/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "3"
+    }
+   ],
+   "chapter": 2,
+   "verse": "10",
+   "original": "तदेतदृचाऽभ्युक्तं । क्रियावन्तः श्रोत्रिया ब्रह्मनिष्ठाः स्वयं जुह्वत एकर्षिं श्रद्धयन्तः । तेषामेवैतां ब्रह्मविद्यां वदेत शिरोव्रतं विधिवद्यैस्तु चीर्णम्",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 35,
+    "pdf_page": 50,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n49/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  },
+  {
+   "hierarchy": [
+    {
+     "name": "mundaka",
+     "value": "3"
+    }
+   ],
+   "chapter": 2,
+   "verse": "11",
+   "original": "तदेतत्सत्यमृषिरङ्गिराः पुरोवाच नैतदचीर्णव्रतोऽधीते नमः परमऋषिभ्यो नमः परमऋषिभ्यः",
+   "source_locator": {
+    "volume": "scan:f71a2a102086",
+    "printed_page": 35,
+    "pdf_page": 50,
+    "locator_kind": "scan",
+    "source_url": "https://archive.org/details/twentyeightupan00upangoog/page/n49/mode/1up",
+    "asset_sha256": "f71a2a102086055bced71e6570ccd97a628eb17972c8a42426da199ec298ed95"
+   }
+  }
+ ]
+}
