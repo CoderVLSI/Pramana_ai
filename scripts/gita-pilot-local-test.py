@@ -20,6 +20,9 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--state', required=True)
 parser.add_argument('--bundle-list', help='External JSON list of bundles, defaults to the Gita pilot')
 parser.add_argument('--verify-script', default='scripts/verify-gita-pilot-release.ts')
+parser.add_argument('--setup-sql', help='Optional TEST-only fixture SQL')
+parser.add_argument('--extra-migration', help='New migration to test before publication')
+parser.add_argument('--post-check-sql', help='Additional assertions after the new migration')
 args = parser.parse_args()
 state = pathlib.Path(args.state).resolve()
 assert not state.is_relative_to(ROOT), 'Test credentials must stay outside the repository'
@@ -85,6 +88,9 @@ migration = (ROOT/'supabase/migrations/202610140001_open_source_releases.sql').r
 sql(migration)
 sql(migration)
 sql("""do $$ begin if not exists(select 1 from pg_constraint where conname='unrelated_constraint_preserved') then raise exception 'Unrelated constraint was removed'; end if; end $$;""")
+if args.setup_sql: sql(pathlib.Path(args.setup_sql).read_text())
+if args.extra_migration: sql(pathlib.Path(args.extra_migration).read_text())
+if args.post_check_sql: sql(pathlib.Path(args.post_check_sql).read_text())
 manifest = json.loads((ROOT/'services/ingest/releases/gita-open-1.bundle.json').read_text())['manifest']
 for field, value in [('rights_approved',None),('permission_proof',None),('reviewers',None),('source_url',None),('sources',[]),('sources',{}),('rights_class','invalid')]:
     bad = dict(manifest, **{field:value})

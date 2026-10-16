@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-16",
+  "test": {
+    "status": "all_checks_passed",
+    "passages": 2272,
+    "gita": "all_checks_passed",
+    "event_trigger_ddl_cases": 3,
+    "anonymous_writes_denied": true
+  },
+  "live": {
+    "status": "all_checks_passed",
+    "passages": 2272,
+    "gita": "all_checks_passed",
+    "anon_execute": false,
+    "authenticated_execute": false,
+    "owner_execute": true,
+    "security_advisor_lints": []
+  }
+}
