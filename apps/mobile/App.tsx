@@ -52,6 +52,7 @@ import {
   VEDA_TARGETS,
 } from "../../packages/corpus-schema/register";
 import SettingsScreen from "./SettingsScreen";
+import { ALL_SCOPE, workIdsForScope } from "./scope";
 import RishiPreview, { RishiAvatar } from "./RishiAvatar";
 import React, { useEffect, useState } from "react";
 import {
@@ -211,7 +212,7 @@ function StudyApp() {
         editions?: { id: string }[];
       }[]
     >([]),
-    [scope, setScope] = useState("bhagavad-gita"),
+    [scope, setScope] = useState(ALL_SCOPE),
     [showSources, setShowSources] = useState(false),
     [report, setReport] = useState(false),
     [reason, setReason] = useState(""),
@@ -346,12 +347,7 @@ function StudyApp() {
       hide.remove();
     };
   }, []);
-  const selectedWorkIds =
-    scope === GITA_PRESS_SCOPE
-      ? MAHAPURANA_TARGETS.map(([id]) => id)
-      : scope === UPANISHAD_SCOPE
-        ? UPANISHAD_TARGETS.map(([id]) => id)
-        : [scope];
+  const selectedWorkIds = workIdsForScope(scope);
   const selectedEditions = [
     ...new Set(
       works
@@ -412,12 +408,7 @@ function StudyApp() {
           query: text,
           ...searchSelection,
           ...(profile.name ? { preferred_name: profile.name } : {}),
-          work_ids:
-            scope === GITA_PRESS_SCOPE
-              ? MAHAPURANA_TARGETS.map(([id]) => id)
-              : scope === UPANISHAD_SCOPE
-                ? UPANISHAD_TARGETS.map(([id]) => id)
-                : [scope],
+          work_ids: workIdsForScope(scope),
         });
         if (turn.answer) setAnswer(turn.answer);
         else
@@ -465,12 +456,7 @@ function StudyApp() {
       const result = await requestStudy({
         query: text,
         ...searchSelection,
-        work_ids:
-          scope === GITA_PRESS_SCOPE
-            ? MAHAPURANA_TARGETS.map(([id]) => id)
-            : scope === UPANISHAD_SCOPE
-              ? UPANISHAD_TARGETS.map(([id]) => id)
-              : [scope],
+        work_ids: workIdsForScope(scope),
       });
       setAnswer(result.answer);
       setWebFallback(result.web || null);
@@ -544,13 +530,7 @@ function StudyApp() {
     ["About", "information-circle-outline"],
   ] as const;
   const selectedHasPassages = works.some(
-    (w) =>
-      w.passage_count > 0 &&
-      (scope === GITA_PRESS_SCOPE
-        ? MAHAPURANA_TARGETS.some(([id]) => id === w.id)
-        : scope === UPANISHAD_SCOPE
-          ? UPANISHAD_TARGETS.some(([id]) => id === w.id)
-          : w.id === scope),
+    (w) => w.passage_count > 0 && workIdsForScope(scope).includes(w.id),
   );
 
   if (!profileReady || !preferences.ready)
@@ -844,13 +824,7 @@ function StudyApp() {
                             : "en-IN"
                       }
                       preferredName={profile.name}
-                      workIds={
-                        scope === GITA_PRESS_SCOPE
-                          ? MAHAPURANA_TARGETS.map(([id]) => id)
-                          : scope === UPANISHAD_SCOPE
-                            ? UPANISHAD_TARGETS.map(([id]) => id)
-                            : [scope]
-                      }
+                      workIds={workIdsForScope(scope)}
                       onSpeakingChange={setSpeaking}
                       onNotice={setNotice}
                     />
@@ -980,22 +954,24 @@ function StudyApp() {
                           onPress={() => setShowSources(!showSources)}
                         >
                           <Text style={[s.small, { color: C.green }]}>
-                            {scope === GITA_PRESS_SCOPE
-                              ? "18 Mahapuranas · Gita Press"
-                              : scope === "bhagavad-gita"
-                                ? DEVICE_CONNECTIONS
-                                  ? "Bhagavad Gita"
-                                  : "Bhagavad Gita · fixtures"
-                                : scope === UPANISHAD_SCOPE
-                                  ? "108 Upanishads · Muktika list"
-                                  : VEDA_TARGETS.some(([id]) => id === scope)
-                                    ? VEDA_TARGETS.find(
-                                        ([id]) => id === scope,
-                                      )?.[1] || "Veda"
-                                    : scope === "valmiki-ramayana"
-                                      ? "Valmiki Ramayana · Gita Press"
-                                      : works.find((w) => w.id === scope)
-                                          ?.title || scope}{" "}
+                            {scope === ALL_SCOPE
+                              ? "All available texts"
+                              : scope === GITA_PRESS_SCOPE
+                                ? "18 Mahapuranas · Gita Press"
+                                : scope === "bhagavad-gita"
+                                  ? DEVICE_CONNECTIONS
+                                    ? "Bhagavad Gita"
+                                    : "Bhagavad Gita · fixtures"
+                                  : scope === UPANISHAD_SCOPE
+                                    ? "108 Upanishads · Muktika list"
+                                    : VEDA_TARGETS.some(([id]) => id === scope)
+                                      ? VEDA_TARGETS.find(
+                                          ([id]) => id === scope,
+                                        )?.[1] || "Veda"
+                                      : scope === "valmiki-ramayana"
+                                        ? "Valmiki Ramayana · Gita Press"
+                                        : works.find((w) => w.id === scope)
+                                            ?.title || scope}{" "}
                             ▾
                           </Text>
                         </Pressable>
@@ -1010,6 +986,10 @@ function StudyApp() {
                             style={s.reportInput}
                           />
                           {[
+                            [
+                              ALL_SCOPE,
+                              "All available texts · Gita and Upanishads",
+                            ],
                             [
                               GITA_PRESS_SCOPE,
                               "All 18 Mahapuranas · Gita Press",
@@ -1227,7 +1207,7 @@ function StudyApp() {
                             <Text style={s.body}>Start a new question</Text>
                           </Pressable>
                         </View>
-                      ) : scope !== "bhagavad-gita" ? (
+                      ) : scope !== "bhagavad-gita" && scope !== ALL_SCOPE ? (
                         <View style={s.passage}>
                           <Text style={s.sectionTitle}>
                             {scope === GITA_PRESS_SCOPE
@@ -1547,11 +1527,13 @@ function StudyApp() {
                   </Pressable>
                   <Text style={s.small}>
                     Selected collection:{" "}
-                    {scope === GITA_PRESS_SCOPE
-                      ? "18 Mahapuranas"
-                      : scope === UPANISHAD_SCOPE
-                        ? "108 Upanishads"
-                        : works.find((w) => w.id === scope)?.title || scope}
+                    {scope === ALL_SCOPE
+                      ? "All available texts"
+                      : scope === GITA_PRESS_SCOPE
+                        ? "18 Mahapuranas"
+                        : scope === UPANISHAD_SCOPE
+                          ? "108 Upanishads"
+                          : works.find((w) => w.id === scope)?.title || scope}
                     . Change it in Study to check another work.
                   </Text>
                   <FactCheckScreen workIds={selectedWorkIds} onOpen={open} />
