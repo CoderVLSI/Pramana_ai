@@ -17,5 +17,9 @@ Nirnaya Sagar Press, Bombay, 1906, ed. Vasudeva Laxmana Shastri Pansikar. archiv
   The Vedic nasal sign the print draws like a digit 5 is transcribed as ꣳ (U+A8F3).
 - **Quality:** 1,158 high, 328 medium, 1 low. Check the medium/low entries and the long proper-name lists in
   Brihadaranyaka (4.6, 6.5) first. Merge check: no gaps or repeats in any section's verse sequence.
-- **Status:** NO human reviewer. Rights: published 1906 (US public domain). The editor's death year is NOT
-  confirmed (he was still editing in 1927); India status is likely public domain but unverified.
+- **Status:** NO human reviewer.
+- **Rights:** published 1906, so US public domain. Editor Vasudeva Laxmana Shastri Pansikar (Panshikar) is
+  reported as 1863-1931 (a Google AI overview, screenshot shared by the project owner on 2026-10-16; one
+  source, consistent with his editing record 1888-1927). Death in 1931 puts the edition in the public domain in
+  India too (life + 60 years = 1992). Still to do: confirm the dates from a second source such as a library
+  authority record. Contributors other than the named editor are not identified on the title page we saw.
