@@ -38,31 +38,49 @@ export function prepareUpanishadWork(
   const mine = entries.filter((e) => e.work === work);
   const numbered = mine.filter((e) => /^\d+$/.test(String(e.verse ?? "")));
   if (!numbered.length) throw Error(`No numbered units for ${work}.`);
-  const names = JSON.stringify(numbered[0].hierarchy.map(([n]) => n));
-  for (const e of numbered)
-    if (JSON.stringify(e.hierarchy.map(([n]) => n)) !== names)
-      throw Error(`${work} mixes section schemes (${names} vs other).`);
-  const levels = numbered[0].hierarchy.map(([n]) => n);
-  const outerNames = levels.slice(0, -1);
-  const chapterLabel = levels.length ? levels[levels.length - 1] : undefined;
+  const schemes = new Set(
+    numbered.map((e) => JSON.stringify(e.hierarchy.map(([n]) => n))),
+  );
+  const mixed = schemes.size > 1;
+  // Works whose sections do not all follow one scheme (e.g. numbered mantras plus a second run) get one
+  // uniform level, "section", whose value spells out the book's own path; chapter = running section index.
+  const levels = mixed ? ["section"] : numbered[0].hierarchy.map(([n]) => n);
+  const outerNames = mixed ? ["section"] : levels.slice(0, -1);
+  const chapterLabel = mixed
+    ? "part"
+    : levels.length
+      ? levels[levels.length - 1]
+      : undefined;
+  const pathOf = (e: UpanishadEntry) =>
+    e.hierarchy.length
+      ? e.hierarchy.map(([n, v]) => `${n} ${v}`).join(", ")
+      : "main";
   const groups = new Map<string, UpanishadEntry[]>();
   for (const e of numbered) {
-    const key = e.hierarchy.map(([, v]) => v).join(".");
+    const key = mixed ? pathOf(e) : e.hierarchy.map(([, v]) => v).join(".");
     groups.set(key, [...(groups.get(key) ?? []), e]);
   }
   const verses: VerseRow[] = [];
   const counts: Record<string, number> = {};
   const locators: PreparedWork["source_locators"] = {};
   const renumbered: string[] = [];
+  let sectionIndex = 0;
   for (const [path, list] of groups) {
+    sectionIndex += 1;
     const nums = list.map((e) => Number(e.verse));
     const contiguous = nums.every((n, i) => n === i + 1);
     if (!contiguous) renumbered.push(path || "(whole work)");
-    const values = path ? path.split(".") : [];
-    const chapter = values.length ? Number(values[values.length - 1]) : 1;
+    const values = path && !mixed ? path.split(".") : [];
+    const chapter = mixed
+      ? sectionIndex
+      : values.length
+        ? Number(values[values.length - 1])
+        : 1;
     if (!Number.isInteger(chapter) || chapter < 1)
       throw Error(`${work}: bad section number in ${path}.`);
-    const outer = outerNames.map((name, i) => ({ name, value: values[i] }));
+    const outer = mixed
+      ? [{ name: "section", value: path }]
+      : outerNames.map((name, i) => ({ name, value: values[i] }));
     const key = [...outer.map((l) => l.value), chapter].join(".");
     counts[key] = list.length;
     list.forEach((e, i) => {

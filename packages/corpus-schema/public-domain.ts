@@ -10,7 +10,11 @@ import { UPANISHAD_TARGETS } from "./upanishads";
 
 /** Works accepted from open sources in addition to the registered Gita Press targets.
  * The Bhagavad Gita is part of the Mahabharata but is cited and searched on its own. */
-export const OPEN_SOURCE_WORKS = ["bhagavad-gita"] as const;
+export const OPEN_SOURCE_WORKS = [
+  "bhagavad-gita",
+  /** Narayana-atharvashira Upanishad: printed as its own text in the 1906 and 1925 Nirnaya Sagar editions. */
+  "narayanatharvashira-upanishad",
+] as const;
 export const OPEN_LICENSES = ["public-domain", "CC0-1.0", "CC-BY-4.0"] as const;
 
 export interface SourceFile {

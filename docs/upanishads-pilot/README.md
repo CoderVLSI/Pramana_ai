@@ -1,8 +1,7 @@
 # Principal Upanishads transcription (AI-only, owner-approved pilot release)
 
-`upanishads-1906-nirnaya-sagar-ai-transcription.json` holds the plain mantra/prose text of the eleven principal
-Upanishads (Isha, Kena, Katha, Prashna, Mundaka, Mandukya, Taittiriya, Aitareya, Chandogya, Brihadaranyaka,
-Shvetashvatara), 1,602 entries, read from page images of "Isadi-ashtavimshatyupanishadah" (The Twenty-eight Upanishads),
+`upanishads-1906-nirnaya-sagar-ai-transcription.json` holds the plain mantra/prose text of the first 28 Upanishads of the book
+(the eleven principal ones, then Kaivalya through Muktika), 2,434 entries, read from page images of "Isadi-ashtavimshatyupanishadah" (The Twenty-eight Upanishads),
 Nirnaya Sagar Press, Bombay, 1906, ed. Vasudeva Laxmana Shastri Pansikar. archive.org item
 `twentyeightupan00upangoog`; printed page = image index - 14. Page link:
 `https://archive.org/details/twentyeightupan00upangoog/page/n<page_index>/mode/1up`.
@@ -33,3 +32,7 @@ The requested releases include all 1,572 **numbered units**. Thirty unnumbered e
 ## Publication result
 
 All eleven releases passed isolated local TEST and LIVE verification on 2026-10-16. See [publication report](release-report-2026-10-16.md), [TEST results](test-verification-2026-10-16.json) and [LIVE results](live-verification-2026-10-16.json). App flag unchanged.
+- **Brihajjabala and Kaushitaki** were flagged by their own reader as unreliable (images failed to display for
+  it); every entry of those two is set to `medium` until an independent re-read from the 1925 edition is compared.
+- **Mixed section schemes** (e.g. Narayana, Muktika, Hayagriva): the release preparation folds them into a single
+  `section` level so every passage still has a unique, checkable locator.

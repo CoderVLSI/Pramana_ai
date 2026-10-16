@@ -45,9 +45,9 @@ test("the real skeletons refuse to build until a person approves the rights and 
   );
 });
 
-test("all eleven principal Upanishads build, validate and get unique ids", () => {
+test("every transcribed Upanishad builds, validate and get unique ids", () => {
   const works = [...new Set(entries.map((e) => e.work))];
-  assert.equal(works.length, 11);
+  assert.ok(works.length >= 28, `expected 28 works, got ${works.length}`);
   for (const work of works) {
     const prepared = prepareUpanishadWork(entries, work);
     const bundle = buildPublicDomainBundle(
