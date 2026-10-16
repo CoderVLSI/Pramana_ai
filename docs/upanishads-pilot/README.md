@@ -1,8 +1,8 @@
 # Principal Upanishads transcription (UNREVIEWED, not for release)
 
-`upanishads-1906-nirnaya-sagar-ai-transcription.json` holds the plain mantra/prose text of the ten principal
-Upanishads (Isha, Kena, Katha, Prashna, Mundaka, Mandukya, Taittiriya, Aitareya, Chandogya, Brihadaranyaka),
-1,487 entries, read from page images of "Isadi-ashtavimshatyupanishadah" (The Twenty-eight Upanishads),
+`upanishads-1906-nirnaya-sagar-ai-transcription.json` holds the plain mantra/prose text of the eleven principal
+Upanishads (Isha, Kena, Katha, Prashna, Mundaka, Mandukya, Taittiriya, Aitareya, Chandogya, Brihadaranyaka,
+Shvetashvatara), 1,602 entries, read from page images of "Isadi-ashtavimshatyupanishadah" (The Twenty-eight Upanishads),
 Nirnaya Sagar Press, Bombay, 1906, ed. Vasudeva Laxmana Shastri Pansikar. archive.org item
 `twentyeightupan00upangoog`; printed page = image index - 14. Page link:
 `https://archive.org/details/twentyeightupan00upangoog/page/n<page_index>/mode/1up`.
