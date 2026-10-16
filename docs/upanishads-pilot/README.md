@@ -17,11 +17,7 @@ Nirnaya Sagar Press, Bombay, 1906, ed. Vasudeva Laxmana Shastri Pansikar. archiv
 - **Quality (actual JSON counts):** all 1,602 entries: 1,267 high, 334 medium, 1 low; the 1,572 numbered release units: 1,246 high, 325 medium, 1 low. Check the medium/low entries and the long proper-name lists in
   Brihadaranyaka (4.6, 6.5) first. Merge check: no gaps or repeats in any section's verse sequence.
 - **Status:** NO human verse-by-verse review. The project owner approved this AI-only pilot release on 2026-10-16; the rights basis and remaining uncertainty are recorded in each committed provenance file. No human reviewer is invented or implied.
-- **Rights:** published 1906, so US public domain. Editor Vasudeva Laxmana Shastri Pansikar (Panshikar) is
-  reported as 1863-1931 (a Google AI overview, screenshot shared by the project owner on 2026-10-16; one
-  source, consistent with his editing record 1888-1927). Death in 1931 puts the edition in the public domain in
-  India too (life + 60 years = 1992). Still to do: confirm the dates from a second source such as a library
-  authority record. Contributors other than the named editor are not identified on the title page we saw.
+- **Rights (updated authority check, 2026-10-16):** first publication 1906 is documented by the scan/catalogue, but editor life dates **1863–1931 are UNCONFIRMED**. The earlier Google AI overview is not an independent authority. See the detailed rights findings below; the new BnF evidence conflicts with 1931. Published releases retain their historical owner-approved provenance; no content or release manifest was silently rewritten.
 
 ## Owner publication approval — 2026-10-16
 
@@ -36,3 +32,19 @@ All eleven releases passed isolated local TEST and LIVE verification on 2026-10-
   it); every entry of those two is set to `medium` until an independent re-read from the 1925 edition is compared.
 - **Mixed section schemes** (e.g. Narayana, Muktika, Hayagriva): the release preparation folds them into a single
   `section` level so every passage still has a unique, checkable locator.
+
+## Rights: independent editor authority investigation — 2026-10-16
+
+**Result: exact birth/death dates UNCONFIRMED.** No two independently sourced records agreeing on 1863–1931 were found. In particular, the newly inspected library authority gives a conflicting death year, not corroboration of the AI overview.
+
+| Source | What it establishes | Limit / status |
+| --- | --- | --- |
+| [BnF authority FRBNF13517021, ark cb135170219](https://catalogue.bnf.fr/ark:/12148/cb135170219) | Vāsudeva Lakṣmaṇa Śāstrī Paṇaśīkara, with the Pansikar/Panshikar English variants; heading dates `18..–1925`; Sanskrit editor | **1925 UNCONFIRMED**: one authority, conflicts with 1931. Its source notes cite a Berlin record with 1925, but that citation is not a separately inspected independent confirmation. |
+| [BnF bibliographic record cb39437814h](https://catalogue.bnf.fr/ark:/12148/cb39437814h) | Associates that same `18..–1925` authority with the Nirnaya Sagar Brahmasutra editor | Same BnF authority lineage; not a second independent death-date source. |
+| [CiNii/NII authority DA04472828](https://ci.nii.ac.jp/author/DA04472828) | Numerous Sanskrit/English name forms and Nirnaya Sagar editorial credits | No life dates in the inspected authority heading; cannot corroborate 1931. |
+| [University of Pennsylvania Online Books Page, Harvard-local-name entry](https://onlinebooks.library.upenn.edu/webbin/book/lookupname?key=Panshikar%2C+Vasudeva+Laxman+Shastri%2C+%28Harvard+local+name%29) | Links Panshikar to *The twenty-eight Upanishads*, Nirnaya-sagar Press, 1906 | Name/work connection, not a birth/death authority. |
+| [2010 reproduction of a Natyasampada family account](https://groups.google.com/g/soc.culture.tamil/c/76WTeesge1A) | Reproduces family dates 1860–1937 for the grandfather Vasudevshastri Laxmanshastri Panshikar | **UNCONFIRMED**: reproduced family material, not independently checked original; conflicts with both 1925 and 1931. Do not treat repeated mirrors as independent evidence. |
+
+Method: inspected BnF SRU authority XML (`aut.anywhere all "Pansikar"` / `"Panshikar"`) in addition to catalogue pages. VIAF cluster 115976397 is linked by BnF, but the direct VIAF endpoint returned HTTP 403; Wikidata API also returned 403. LOC name suggestion searches did not resolve this editor and are not evidence of an absent LOC record. No dates were inferred from years of posthumous reprints.
+
+**Rights decision:** US first-publication basis is 1906; the owner previously accepted this release basis. The exact editor lifespan and a fully corroborated India rights determination remain **UNCONFIRMED** under this task’s two-independent-source rule. All three reported death years would be old enough for a 60-year term to have elapsed, but that observation does not establish which date/person is correct or identify all contributors. Obtain an independently sourced obituary/biography or original authority source before upgrading the status. No new text source, transcription, reviewer or rights approval was created by this investigation.
