@@ -176,6 +176,7 @@ export function createDeviceLiveSocket(
     enableWebSearch: boolean;
     userMemories?: string[];
     history?: LiveAgentOptions["history"];
+    voices?: LiveAgentOptions["voices"];
   },
 ): NativeSocket {
   const geminiSockets = new Set<NativeSocket>();
@@ -209,6 +210,7 @@ export function createDeviceLiveSocket(
     preferredName: options.preferredName,
     userMemories: options.userMemories,
     history: options.history,
+    voices: options.voices,
     enableWebSearch: options.enableWebSearch,
     connectGemini: geminiConnect(make, geminiSockets),
     createSocket: (url, config) => openAISocket(url, config, make),

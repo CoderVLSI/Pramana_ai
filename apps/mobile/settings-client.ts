@@ -263,6 +263,7 @@ export async function createConversationSocket(options: {
   workIds: string[];
   enableWebSearch: boolean;
   history?: { role: "user" | "assistant"; text: string }[];
+  voices?: { gemini?: string; openai?: string };
 }): Promise<NativeSocket> {
   const userMemories = await readApprovedMemory();
   if (!DEVICE_CONNECTIONS) {

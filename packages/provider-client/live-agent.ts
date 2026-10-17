@@ -15,6 +15,8 @@ export interface LiveAgentOptions {
   /** Recent on-screen turns, so a restarted session continues the conversation. */
   history?: { role: "user" | "assistant"; text: string }[];
   enableWebSearch?: boolean;
+  /** Chosen speaking voice for each provider; unknown names fall back to the provider default. */
+  voices?: { gemini?: string; openai?: string };
   /** Injectable transports for protocol tests; credentials remain server-side. */
   connectGemini?: (options: any) => Promise<any>;
   createSocket?: (url: string, options: any) => any;
@@ -487,6 +489,15 @@ export function createLiveAgent(options: LiveAgentOptions) {
           apiKey: settings.api_key,
           config: {
             responseModalities: ["AUDIO"],
+            ...(options.voices?.gemini
+              ? {
+                  speechConfig: {
+                    voiceConfig: {
+                      prebuiltVoiceConfig: { voiceName: options.voices.gemini },
+                    },
+                  },
+                }
+              : {}),
             realtimeInputConfig: {
               automaticActivityDetection: {
                 disabled: false,
@@ -561,7 +572,7 @@ export function createLiveAgent(options: LiveAgentOptions) {
                   },
                   output: {
                     format: { type: "audio/pcm", rate: 24000 },
-                    voice: "marin",
+                    voice: options.voices?.openai || "marin",
                   },
                 },
                 tools: [

@@ -37,6 +37,16 @@ import type { AudioPlayer } from "expo-audio";
 import type { ExpoSpeechRecognitionModuleType } from "expo-speech-recognition/build/ExpoSpeechRecognitionModule.types";
 
 import { androidLiveAudio } from "./live-audio";
+import {
+  VOICES,
+  deleteChat,
+  loadChats,
+  loadVoice,
+  saveChat,
+  saveVoice,
+  type SavedChat,
+  type VoiceChoice,
+} from "./chat-store";
 import { RishiAvatar } from "./RishiAvatar";
 import { Ionicons } from "@expo/vector-icons";
 
@@ -304,6 +314,12 @@ export default function LiveConversation({
   const [lines, setLines] = useState<Line[]>([]);
   const linesRef = useRef<Line[]>([]);
   linesRef.current = lines;
+  const [voice, setVoice] = useState<VoiceChoice>({});
+  const voiceRef = useRef<VoiceChoice>({});
+  voiceRef.current = voice;
+  const [chats, setChats] = useState<SavedChat[]>([]);
+  const [historyOpen, setHistoryOpen] = useState(false);
+  const chatId = useRef(`chat_${Date.now().toString(36)}`);
   const [sources, setSources] = useState<Source[]>([]);
   const [tools, setTools] = useState<string[]>([]);
   const [grounding, setGrounding] = useState<Grounding | null>(null);
@@ -824,6 +840,7 @@ export default function LiveConversation({
         preferredName,
         workIds,
         enableWebSearch: webSearchEnabled,
+        voices: voiceRef.current,
         history: linesRef.current.map((l) => ({
           role: l.role === "You" ? ("user" as const) : ("assistant" as const),
           text: l.text,
@@ -1231,6 +1248,50 @@ export default function LiveConversation({
     };
   }, []);
 
+  useEffect(() => {
+    void loadVoice().then(setVoice);
+    void activeProvider().then((p) => p && setProvider(p));
+  }, []);
+  // Every conversation is kept on this phone as it goes, so it can be reopened later.
+  useEffect(() => {
+    if (!lines.length) return;
+    const timer = setTimeout(
+      () => void saveChat(chatId.current, lines),
+      800,
+    );
+    return () => clearTimeout(timer);
+  }, [lines]);
+  const refreshChats = () => void loadChats().then(setChats);
+  function pickVoice(kind: "gemini" | "openai", id: string) {
+    const next = { ...voiceRef.current, [kind]: id };
+    voiceRef.current = next;
+    setVoice(next);
+    void saveVoice(next);
+    // A voice is fixed once a session starts, so a live session reconnects with the new one.
+    if (active.current) {
+      const withMic = microphoneEnabled;
+      stop();
+      setTimeout(() => void start(withMic), 200);
+    }
+  }
+  function newChat() {
+    if (active.current) stop();
+    chatId.current = `chat_${Date.now().toString(36)}`;
+    setLines([]);
+    setSources([]);
+    setTools([]);
+    setHistoryOpen(false);
+  }
+  function openChat(chat: SavedChat) {
+    if (active.current) stop();
+    chatId.current = chat.id;
+    setLines(chat.lines.map((l) => ({ role: l.role, text: l.text })));
+    setSources([]);
+    setTools([]);
+    setHistoryOpen(false);
+    setDetails(false);
+  }
+
   async function replayReply(problem = "") {
     const chunks = [...lastReplyAudio.current];
     if (!chunks.length) return;
@@ -1370,7 +1431,7 @@ export default function LiveConversation({
       inputPaused.current = false;
       waiting.current = false;
       notice(
-        "No transcript or reply arrived. Check microphone level and packet counts in ⋮, then retry.",
+        "No transcript or reply arrived. Check your microphone and connection, then retry.",
       );
     }, 20000);
   }
@@ -1397,6 +1458,18 @@ export default function LiveConversation({
           </View>
           <Pressable
             accessibilityRole="button"
+            accessibilityLabel="Past chats"
+            onPress={() => {
+              refreshChats();
+              setHistoryOpen((v) => !v);
+              setDetails(false);
+            }}
+            style={[styles.iconButton, historyOpen && styles.iconButtonOn]}
+          >
+            <Glyph name="time-outline" />
+          </Pressable>
+          <Pressable
+            accessibilityRole="button"
             accessibilityLabel="Source search"
             onPress={onSourceSearch}
             style={styles.iconButton}
@@ -1406,7 +1479,10 @@ export default function LiveConversation({
           <Pressable
             accessibilityRole="button"
             accessibilityLabel="Voice details"
-            onPress={() => setDetails((v) => !v)}
+            onPress={() => {
+              setDetails((v) => !v);
+              setHistoryOpen(false);
+            }}
             style={[styles.iconButton, details && styles.iconButtonOn]}
           >
             <Glyph name="ellipsis-horizontal" />
@@ -1453,9 +1529,87 @@ export default function LiveConversation({
               messageScroll.current?.scrollToEnd({ animated: true });
           }}
         >
+          {historyOpen && (
+            <View style={styles.panel}>
+              <Text style={styles.panelTitle}>Past chats</Text>
+              <Pressable
+                accessibilityRole="button"
+                onPress={newChat}
+                style={styles.ghost}
+              >
+                <Glyph name="add-circle-outline" size={18} />
+                <Text style={styles.ghostText}>New chat</Text>
+              </Pressable>
+              {!chats.length && (
+                <Text style={styles.detail}>
+                  Your conversations will appear here. They are kept only on
+                  this phone.
+                </Text>
+              )}
+              {chats.map((chat) => (
+                <View key={chat.id} style={styles.kv}>
+                  <Pressable
+                    accessibilityRole="button"
+                    accessibilityLabel={`Open chat: ${chat.title}`}
+                    onPress={() => openChat(chat)}
+                    style={{ flex: 1, gap: 2 }}
+                  >
+                    <Text numberOfLines={1} style={styles.kvValue}>
+                      {chat.title}
+                    </Text>
+                    <Text style={styles.detail}>
+                      {new Date(chat.at).toLocaleString()}
+                    </Text>
+                  </Pressable>
+                  <Pressable
+                    accessibilityRole="button"
+                    accessibilityLabel={`Delete chat: ${chat.title}`}
+                    onPress={() =>
+                      void deleteChat(chat.id).then(() => {
+                        refreshChats();
+                      })
+                    }
+                    style={styles.iconButton}
+                  >
+                    <Glyph name="trash-outline" size={18} />
+                  </Pressable>
+                </View>
+              ))}
+              {chats.length > 0 && (
+                <Pressable
+                  accessibilityRole="button"
+                  onPress={() => void deleteChat().then(refreshChats)}
+                  style={styles.ghost}
+                >
+                  <Text style={styles.ghostText}>Delete all chats</Text>
+                </Pressable>
+              )}
+            </View>
+          )}
           {details && (
             <View style={styles.panel}>
-              <Text style={styles.panelTitle}>Voice details</Text>
+              <Text style={styles.panelTitle}>Rishi’s voice</Text>
+              <View style={styles.chips}>
+                {VOICES[provider ?? "gemini"].map(([id, label]) => {
+                  const chosen =
+                    (voice[provider ?? "gemini"] ?? VOICES[provider ?? "gemini"][0][0]) === id;
+                  return (
+                    <Pressable
+                      key={id}
+                      accessibilityRole="button"
+                      accessibilityState={{ selected: chosen }}
+                      onPress={() => pickVoice(provider ?? "gemini", id)}
+                      style={[styles.chip, chosen && styles.iconButtonOn]}
+                    >
+                      <Text style={styles.chipText}>
+                        {chosen ? "✓ " : ""}
+                        {label}
+                      </Text>
+                    </Pressable>
+                  );
+                })}
+              </View>
+              <Text style={styles.panelTitle}>Details</Text>
               <Text style={styles.detail}>
                 {Platform.OS === "web"
                   ? "Microphone audio streams to your selected AI provider."
@@ -1469,22 +1623,6 @@ export default function LiveConversation({
                   <Text style={styles.detail}>Model</Text>
                   <Text style={styles.kvValue}>{connectedModel}</Text>
                 </View>
-              )}
-              {Platform.OS === "android" && (
-                <>
-                  <View style={styles.kv}>
-                    <Text style={styles.detail}>Microphone level</Text>
-                    <Text style={styles.kvValue}>
-                      {micLevel}% · {micLevel > 0 ? "sound detected" : "silent"}
-                    </Text>
-                  </View>
-                  <View style={styles.kv}>
-                    <Text style={styles.detail}>Audio packets</Text>
-                    <Text style={styles.kvValue}>
-                      {audioStatus.sent} sent · {audioStatus.received} received
-                    </Text>
-                  </View>
-                </>
               )}
               <View style={styles.kv}>
                 <Text style={[styles.detail, { flex: 1 }]}>
