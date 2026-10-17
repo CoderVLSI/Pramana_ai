@@ -1,6 +1,7 @@
 import { scriptureDigest } from "../corpus-schema/gita-press";
 import type { Answer, Passage } from "../citation-schema";
 import { normalizeSourceLanguage } from "../device-preferences";
+import { UPANISHAD_TARGETS } from "../corpus-schema/upanishads";
 
 export interface ScriptureSelection {
   work_ids?: string[];
@@ -45,6 +46,25 @@ export function cloudSearchQuery(query: string) {
   ]
     .map((word) => `"${word}"`)
     .join(" OR ");
+}
+// Names that are also ordinary words need the word "Upanishad" beside them to count as a work name.
+const AMBIGUOUS_STEMS = new Set([
+  "krishna", "devi", "surya", "atma", "maha", "sita", "tripura", "brahma", "narayana", "garuda", "varaha",
+]);
+// "Show Isha 1.1" names a work: search only that work instead of every text with a verse 1.1.
+export function namedWorks(query: string, candidates?: string[]) {
+  const text = query.normalize("NFC").toLowerCase();
+  const found: string[] = [];
+  if (/(?<![\p{L}])(bhagavad\s*)?gita(?![\p{L}])/u.test(text)) found.push("bhagavad-gita");
+  for (const [id] of UPANISHAD_TARGETS) {
+    const stem = id.replace(/-upanishad$/, "");
+    const named = new RegExp(
+      `(?<![\\p{L}])${stem}(?:\\s+upanishad)${AMBIGUOUS_STEMS.has(stem) ? "" : "?"}(?![\\p{L}])`,
+      "u",
+    ).test(text);
+    if (named) found.push(id);
+  }
+  return found.filter((id) => !candidates?.length || candidates.includes(id));
 }
 export function validateRemotePassages(
   value: unknown,
@@ -195,9 +215,11 @@ export class ScriptureBackend {
     const reference = query
       .match(/(?<!\d)(\d+(?:[.:]\d+)+)(?!\d)/)?.[1]
       .replaceAll(":", ".");
+    const named = reference ? namedWorks(query, selection.work_ids) : [];
+    const works = named.length ? named : selection.work_ids;
     const result = await this.rpc("search_scripture", {
       search_query: cloudSearchQuery(query),
-      selected_works: selection.work_ids?.length ? selection.work_ids : null,
+      selected_works: works?.length ? works : null,
       selected_editions: selection.edition_ids?.length
         ? selection.edition_ids
         : null,
@@ -205,7 +227,7 @@ export class ScriptureBackend {
         ? normalizeSourceLanguage(selection.translation_language)
         : null,
       exact_locator: reference || null,
-      result_limit: 3,
+      result_limit: named.length === 1 ? 1 : 3,
     });
     return remoteAnswer(query, validateRemotePassages(result, selection));
   }

@@ -191,3 +191,12 @@ test("record accepts open-source (pd_) and Gita Press (gp_) ids but not others",
     await assert.rejects(backend.record(id), /not available/);
   await assert.rejects(backend.record("xx_" + "a".repeat(28)), /Invalid scripture passage identifier/);
 });
+
+test("a verse reference that names a work is searched in that work only", async () => {
+  const { namedWorks } = await import("../packages/scripture-backend/client");
+  assert.deepEqual(namedWorks("Show isha upanishad 1.1"), ["isha-upanishad"]);
+  assert.deepEqual(namedWorks("Katha 1.2.20"), ["katha-upanishad"]);
+  assert.deepEqual(namedWorks("Gita 2.47"), ["bhagavad-gita"]);
+  assert.deepEqual(namedWorks("what does Krishna say in 2.47"), []);
+  assert.deepEqual(namedWorks("Isha 1.1", ["kena-upanishad"]), []);
+});
