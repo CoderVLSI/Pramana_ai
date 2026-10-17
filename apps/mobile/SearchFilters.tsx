@@ -49,7 +49,7 @@ export default function SearchFilters({
           </Pressable>
         ))}
       </View>
-      <Text>Translation language · only recorded edition metadata is used</Text>
+      <Text>Translation language</Text>
       <View style={row}>
         {[
           ["", "Any"],
@@ -101,9 +101,8 @@ export default function SearchFilters({
         ))}
       </View>
       <Text style={{ color: "#778179", fontSize: 12, lineHeight: 20 }}>
-        Edition and language filters apply to local retrieval, not public web
-        results. Live has its own web-search switch and uses the selected work
-        collection. Filters do not translate queries or sources.
+        Edition and language filters apply to local sources only; they do not
+        translate text.
       </Text>
     </View>
   );

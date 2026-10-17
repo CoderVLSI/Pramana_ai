@@ -1255,10 +1255,7 @@ export default function LiveConversation({
   // Every conversation is kept on this phone as it goes, so it can be reopened later.
   useEffect(() => {
     if (!lines.length) return;
-    const timer = setTimeout(
-      () => void saveChat(chatId.current, lines),
-      800,
-    );
+    const timer = setTimeout(() => void saveChat(chatId.current, lines), 800);
     return () => clearTimeout(timer);
   }, [lines]);
   const refreshChats = () => void loadChats().then(setChats);
@@ -1592,7 +1589,8 @@ export default function LiveConversation({
               <View style={styles.chips}>
                 {VOICES[provider ?? "gemini"].map(([id, label]) => {
                   const chosen =
-                    (voice[provider ?? "gemini"] ?? VOICES[provider ?? "gemini"][0][0]) === id;
+                    (voice[provider ?? "gemini"] ??
+                      VOICES[provider ?? "gemini"][0][0]) === id;
                   return (
                     <Pressable
                       key={id}
@@ -1655,8 +1653,7 @@ export default function LiveConversation({
               <RishiAvatar size={112} speaking={speakingNow} />
               <Text style={styles.hello}>Namaste</Text>
               <Text style={styles.helloSub}>
-                Ask about the Gita, Upanishads or Puranas, or share a quote to
-                verify.
+                Ask a question or attach a quote to check.
               </Text>
               <View style={styles.chips}>
                 {SUGGESTIONS.map((text) => (
@@ -1874,8 +1871,7 @@ export default function LiveConversation({
               <Image source={{ uri: image.uri }} style={styles.thumb} />
               <View style={{ flex: 1, gap: 2 }}>
                 <Text style={styles.detail}>
-                  Sending uploads this image with your message to your AI
-                  provider.
+                  Image will be sent to your AI provider.
                 </Text>
                 <Pressable
                   accessibilityRole="button"
@@ -1883,7 +1879,7 @@ export default function LiveConversation({
                   onPress={() => void readImage()}
                 >
                   <Text style={styles.link}>
-                    {readingImage ? "Reading…" : "Read text from image"}
+                    {readingImage ? "Reading…" : "Extract text"}
                   </Text>
                 </Pressable>
               </View>
@@ -2040,7 +2036,7 @@ export default function LiveConversation({
             )}
           </View>
           <Text style={styles.footnote}>
-            AI-generated · scripture sources are checked separately
+            AI replies · check sources
             {process.env.EXPO_PUBLIC_BUILD_NUMBER
               ? ` · build ${process.env.EXPO_PUBLIC_BUILD_NUMBER}`
               : ""}

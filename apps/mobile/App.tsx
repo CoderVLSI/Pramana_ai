@@ -54,6 +54,7 @@ import {
 import SettingsScreen from "./SettingsScreen";
 import { ALL_SCOPE, workIdsForScope } from "./scope";
 import RishiPreview, { RishiAvatar } from "./RishiAvatar";
+import { CollectionArtwork, SceneArtwork } from "./Artwork";
 import React, { useEffect, useState } from "react";
 import {
   Linking,
@@ -733,23 +734,26 @@ function StudyApp() {
                 <>
                   {!liveMode && (
                     <>
-                      <View style={s.row}>
-                        <Text style={s.kicker}>
-                          THE SCRIPTURE STUDY COMPANION
-                        </Text>
-                        <Text style={s.small}>✦ Begin with a question</Text>
-                      </View>
-                      {profile.name ? (
-                        <Text style={s.kicker}>Welcome, {profile.name}.</Text>
-                      ) : null}
-                      <Text style={[s.title, !wide && { fontSize: 36 }]}>
-                        Let curiosity lead.{"\n"}Let the source speak.
+                      <Text style={s.kicker}>
+                        {profile.name
+                          ? `Namaste, ${profile.name}`
+                          : "YOUR STUDY SPACE"}
+                      </Text>
+                      <Text style={[s.title, !wide && { fontSize: 32 }]}>
+                        Explore scripture.
                       </Text>
                       <Text style={s.intro}>
-                        Explore scripture with care. Ask a question, find the
-                        passage,
-                        {"\n"}and make room for a deeper understanding.
+                        Ask a question. Follow the sources.
                       </Text>
+                      <SceneArtwork
+                        scene="welcome"
+                        style={{
+                          width: "100%",
+                          height: wide ? 180 : 130,
+                          borderRadius: 20,
+                          marginBottom: 16,
+                        }}
+                      />
                       {Object.entries(preferences.state.positions).length >
                         0 && (
                         <View style={s.info}>
@@ -779,9 +783,11 @@ function StudyApp() {
                       )}
                     </>
                   )}
-                  <View style={{ alignItems: "center", marginBottom: 12 }}>
-                    <RishiAvatar speaking={speaking} size={104} />
-                  </View>
+                  {!liveMode && (
+                    <View style={{ alignItems: "center", marginBottom: 8 }}>
+                      <RishiAvatar speaking={speaking} size={64} />
+                    </View>
+                  )}
 
                   <Pressable
                     accessibilityRole="switch"
@@ -800,9 +806,7 @@ function StudyApp() {
                   >
                     <Icon name="radio-outline" size={20} />
                     <Text style={s.body}>
-                      {liveMode
-                        ? "Chat with Rishi · switch to source search"
-                        : "Source search · switch to chat"}
+                      {liveMode ? "Switch to source search" : "Chat with Rishi"}
                     </Text>
                   </Pressable>
                   {liveMode && (
@@ -936,9 +940,7 @@ function StudyApp() {
                           size={16}
                           color={C.green}
                         />
-                        <Text style={s.small}>
-                          Sources first. No unsupported claims.
-                        </Text>
+                        <Text style={s.small}>Source collection</Text>
                         <Text style={s.small}>·</Text>
                         <Pressable
                           accessibilityLabel="Choose source collection"
@@ -1339,10 +1341,8 @@ function StudyApp() {
               ) : tab === "Library" ? (
                 <>
                   <Text style={s.kicker}>THE SOURCE COLLECTION</Text>
-                  <Text style={s.title}>A library, thoughtfully built.</Text>
-                  <Text style={s.intro}>
-                    Every text shows where it came from. More are being added.
-                  </Text>
+                  <Text style={s.title}>Library</Text>
+                  <Text style={s.intro}>Browse texts and editions.</Text>
                   <TextInput
                     accessibilityLabel="Search library collections"
                     placeholder="Search works or editions"
@@ -1363,17 +1363,17 @@ function StudyApp() {
                         .includes(librarySearch.toLowerCase()),
                     )
                     .map(({ id, title: name, status, passage_count }) => {
-                      const icon =
-                        id === "bhagavad-gita"
-                          ? "book-outline"
-                          : "library-outline";
                       return (
                         <View key={name} style={s.passage}>
-                          <View style={s.row}>
-                            <Icon name={icon as any} color={C.accent} />
-                            <Text style={s.sectionTitle}>{name}</Text>
-                            <Text style={s.badge}>
-                              AVAILABLE
+                          <View style={[s.row, { gap: 12 }]}>
+                            <CollectionArtwork work={id} />
+                            <Text
+                              style={[
+                                s.sectionTitle,
+                                { flex: 1, flexShrink: 1 },
+                              ]}
+                            >
+                              {name}
                             </Text>
                           </View>
                           <Text style={[s.small, { marginTop: 12 }]}>
@@ -1422,9 +1422,9 @@ function StudyApp() {
               ) : tab === "Saved" ? (
                 <>
                   <Text style={s.kicker}>YOUR PERSONAL COLLECTION</Text>
-                  <Text style={s.title}>Return to what resonates.</Text>
+                  <Text style={s.title}>Saved verses</Text>
                   <Text style={s.intro}>
-                    Passages saved on this device for your next study session.
+                    Your collection, saved on this device.
                   </Text>
                   <View
                     style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}
@@ -1458,9 +1458,18 @@ function StudyApp() {
                   </View>
                   {saved.length === 0 ? (
                     <View style={s.info}>
-                      <Icon name="bookmark-outline" size={30} />
+                      <SceneArtwork
+                        scene="saved"
+                        style={{
+                          width: 280,
+                          maxWidth: "100%",
+                          height: 210,
+                          borderRadius: 18,
+                          alignSelf: "center",
+                        }}
+                      />
                       <Text style={s.body}>
-                        Open a passage and tap the bookmark to save it here.
+                        Tap a passage’s bookmark to save it here.
                       </Text>
                     </View>
                   ) : (
@@ -1578,13 +1587,15 @@ function StudyApp() {
                     </Text>
                   </View>
                   <View style={s.info}>
-                    <Text style={s.sectionTitle}>Where the texts come from</Text>
+                    <Text style={s.sectionTitle}>
+                      Where the texts come from
+                    </Text>
                     <Text style={s.body}>
                       The Sanskrit comes from printed public-domain editions,
                       transcribed with AI and not yet checked by human
                       reviewers. Each verse links to its page scan so you can
-                      compare. Spoken answers are generated by AI and can
-                      be wrong; the verse shown is the source.
+                      compare. Spoken answers are generated by AI and can be
+                      wrong; the verse shown is the source.
                     </Text>
                   </View>
                   <Text style={s.small}>

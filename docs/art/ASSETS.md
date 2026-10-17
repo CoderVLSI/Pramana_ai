@@ -53,3 +53,14 @@ b4034bfadfdb9ac2144690dbb523223c2af4b5ceca64f83304fd2d6d77f9f30d  cover-puranas.
 c1ca742274ac5b9eb20339a3d175c12d10456fea69e0389516f64a7c239d2d27  verse-card-strip-dark.webp
 b695bea06d2b81fd284ba726f244d61bbce33da3a17cf8653edc5accfff0655a  verse-card-strip.webp
 ```
+
+## App icon and in-app integration — 2026-10-17
+
+Tool: OpenAI `image_gen.imagegen`. Original text-only prompt: minimal ivory open-manuscript / lotus emblem with a saffron rising sun, deep-indigo background, no text, faces, deities, existing brands or artist imitation. No external reference artwork. Generated master retained outside the repo; PNG exports resized/stripped with ImageMagick.
+
+- `apps/mobile/assets/icon.png`: 1024×1024 launcher, favicon and splash artwork.
+- `apps/mobile/assets/adaptive-icon.png`: 1024×1024 Android foreground export, master scaled to 768×768 and centered on indigo for mask-safe padding. Background `#202440`.
+- Existing generated collection covers now appear in Library, with matching dark variants. The welcome and saved scenes and themed verse-card strips are integrated as decorative art; source metadata stays separate.
+- Shortened study headings, switching labels, saved instructions and chat/attachment copy. Voice/privacy details and source status remain available. Rishi remains the chat character rather than the launcher icon.
+
+Validation for the integration: TypeScript passed; Expo web and Android bundle exports passed; resolved Expo config points to the new launcher/adaptive images and indigo splash. Chromium checks at 390×844 passed for chat, Library and Saved in light/dark themes using fixture library metadata (no provider calls): no page errors or document overflow. Visually checked the library thumbnails and compact saved scene. Corrected React Native Web intrinsic-height behavior by setting explicit scene/strip heights. Existing Metro `@noble/hashes/crypto.js` export warning remains non-blocking. This verifies bundles and web rendering, not a rebuilt APK or Android launcher installation.

@@ -2,6 +2,7 @@ import React from "react";
 import { Pressable, Text, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { palette } from "./theme";
+import { SceneArtwork } from "./Artwork";
 
 export type VerseInfo = {
   work: string;
@@ -37,6 +38,7 @@ export default function VerseCard({
         overflow: "hidden",
       }}
     >
+      <SceneArtwork scene="verse" style={{ width: "100%", height: 48 }} />
       <View
         style={{
           flexDirection: "row",

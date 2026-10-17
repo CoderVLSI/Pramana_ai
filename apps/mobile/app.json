@@ -8,8 +8,8 @@
     "android": {
       "package": "org.pramana.study",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/icon.png",
-        "backgroundColor": "#143D29"
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#202440"
       },
       "versionCode": 2,
       "blockedPermissions": [
@@ -23,14 +23,14 @@
     },
     "web": {
       "bundler": "metro",
-      "name": "Pramana \u00b7 Scripture study",
+      "name": "Pramana · Scripture study",
       "favicon": "./assets/icon.png"
     },
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#143D29"
+      "backgroundColor": "#202440"
     },
     "plugins": [
       "expo-secure-store",
