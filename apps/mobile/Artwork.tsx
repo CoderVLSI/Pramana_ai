@@ -1,5 +1,10 @@
 import React from "react";
-import { Image, type ImageStyle, type StyleProp } from "react-native";
+import {
+  Image,
+  type ImageStyle,
+  type ImageSourcePropType,
+  type StyleProp,
+} from "react-native";
 import { useDarkMode } from "./ui";
 
 const covers = {
@@ -20,19 +25,22 @@ const covers = {
     require("./assets/art/cover-puranas-dark.webp"),
   ],
 };
-const upanishads = new Set([
-  "isha",
-  "kena",
-  "katha",
-  "prashna",
-  "mundaka",
-  "mandukya",
-  "taittiriya",
-  "aitareya",
-  "chandogya",
-  "brihadaranyaka",
-  "shvetashvatara",
-]);
+// Each released work has its own symbolic cover; both catalog ID forms resolve.
+const upanishadCovers: Record<string, ImageSourcePropType> = {
+  isha: require("./assets/art/upanishads/isha.webp"),
+  kena: require("./assets/art/upanishads/kena.webp"),
+  katha: require("./assets/art/upanishads/katha.webp"),
+  prashna: require("./assets/art/upanishads/prashna.webp"),
+  mundaka: require("./assets/art/upanishads/mundaka.webp"),
+  mandukya: require("./assets/art/upanishads/mandukya.webp"),
+  taittiriya: require("./assets/art/upanishads/taittiriya.webp"),
+  aitareya: require("./assets/art/upanishads/aitareya.webp"),
+  chandogya: require("./assets/art/upanishads/chandogya.webp"),
+  brihadaranyaka: require("./assets/art/upanishads/brihadaranyaka.webp"),
+  shvetashvatara: require("./assets/art/upanishads/shvetashvatara.webp"),
+  nrisimhatapaniya: require("./assets/art/upanishads/nrisimhatapaniya.webp"),
+};
+const upanishads = new Set(Object.keys(upanishadCovers));
 
 /** Decorative artwork only: collection identity and source status stay in text. */
 export function CollectionArtwork({
@@ -43,6 +51,8 @@ export function CollectionArtwork({
   size?: number;
 }) {
   const dark = useDarkMode();
+  const individualCover =
+    upanishadCovers[work.toLowerCase().replace(/-upanishad$/, "")];
   const kind =
     work === "bhagavad-gita"
       ? "gita"
@@ -53,10 +63,10 @@ export function CollectionArtwork({
           : /^(rig|sama|yajur|atharva)-?veda/.test(work)
             ? "vedas"
             : null;
-  if (!kind) return null;
+  if (!individualCover && !kind) return null;
   return (
     <Image
-      source={covers[kind][dark ? 1 : 0]}
+      source={individualCover ?? covers[kind!][dark ? 1 : 0]}
       accessible={false}
       style={{ width: size, height: size, borderRadius: 14 }}
     />

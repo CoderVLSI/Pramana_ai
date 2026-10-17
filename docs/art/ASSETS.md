@@ -64,3 +64,35 @@ Tool: OpenAI `image_gen.imagegen`. Original text-only prompt: minimal ivory open
 - Shortened study headings, switching labels, saved instructions and chat/attachment copy. Voice/privacy details and source status remain available. Rishi remains the chat character rather than the launcher icon.
 
 Validation for the integration: TypeScript passed; Expo web and Android bundle exports passed; resolved Expo config points to the new launcher/adaptive images and indigo splash. Chromium checks at 390×844 passed for chat, Library and Saved in light/dark themes using fixture library metadata (no provider calls): no page errors or document overflow. Visually checked the library thumbnails and compact saved scene. Corrected React Native Web intrinsic-height behavior by setting explicit scene/strip heights. Existing Metro `@noble/hashes/crypto.js` export warning remains non-blocking. This verifies bundles and web rendering, not a rebuilt APK or Android launcher installation.
+
+## Individual Upanishad covers — 2026-10-17
+
+[Preview the eleven principal covers and Nrisimha Tapaniya](upanishad-covers-preview.webp). Tool: OpenAI `image_gen.imagegen`, one original text-prompted image per released Upanishad. No source artwork was supplied. Shared prompt direction: editorial gouache / cut-paper, saffron, ivory and deep-indigo edges, large central motif readable at thumbnail size, respectful treatment, no text, pseudo-script, logos, calendar imagery, Gita Press artwork or artist imitation. These are symbolic illustrations, not literal reconstructions, depictions of particular source pages or evidence for scripture.
+
+Exports: ImageMagick resize to 768×768, metadata stripping, opaque WebP quality 82; original generated masters retained outside Git. All covers have dark indigo edges and work unchanged on light and dark backgrounds. Paths are relative to `apps/mobile/assets/art/upanishads/`.
+
+| File | Pixels | KB | Short prompt | SHA-256 |
+| --- | --- | ---: | --- | --- |
+| `isha.webp` | 768×768 | 111.2 | Sun, river and interconnected living landscape. | `9be0c03cc79c0baeb7b3fd51c51d92a5eed74b6a68252861706c98152279202c` |
+| `kena.webp` | 768×768 | 88.4 | Quiet flame, wind-blown grass and a small ungraspable light. | `e51af73d4a42f25d0ade0546c73deaa42023fd787e97140698c246eb1c363940` |
+| `katha.webp` | 768×768 | 135.0 | Seeker, chariot, two forest paths and luminous doorway. | `9d84279f6dc9b079582887dbf5228b453c9ff8fdd9df28caa0b325c853adc360` |
+| `prashna.webp` | 768×768 | 132.1 | Seekers in dialogue with an elder beneath a broad tree. | `51d1a817ab8a060f6faa6128ad2a93367025205c79d3bdf444dc5370b4991644` |
+| `mundaka.webp` | 768×768 | 101.1 | Two birds on a fruiting branch, one active and one watching. | `f8eda519eba964032850120cfe67627bf94205c9803bd114dc21481bc21f814c` |
+| `mandukya.webp` | 768×768 | 92.6 | Nested waking, dream and stillness circles with a luminous center. | `95895769e218cac9ba656e9c60805712e4de61aff027e76d16e2a5fdc1a1c365` |
+| `taittiriya.webp` | 768×768 | 112.7 | Nested lotus-like layers, grain, leaves and inner light. | `723d1ea415bfe3a4829766aeec114cf3995d57d2de64ddcd6b0b88c62314258c` |
+| `aitareya.webp` | 768×768 | 114.5 | Solitary contemplation beside a river at dawn. | `65811b287ff49517f4f7041fb55861744ac5729c2346ea4a7fd08771c66dcacc` |
+| `chandogya.webp` | 768×768 | 147.6 | Banyan, open seed pod, clay vessel and a quiet river. | `c696d81e8a1327dc3fcc61cd90602755bf1e98d376d30b7cf32e5bc2032b10ec` |
+| `brihadaranyaka.webp` | 768×768 | 143.7 | Two philosophers in a spacious ancient forest, lamp between them. | `60367122b40d206d561fa2168e9b07881fd4a19124e6535004111a6500dc4bf9` |
+| `shvetashvatara.webp` | 768×768 | 154.9 | Meditator, wheel, mountain, river and warm central sun. | `cefa14a55b61f7b03da5cf54987afd306d715c48567ae1ff0fb20e6438a1b202` |
+
+Integration: `Artwork.tsx` resolves each released work’s short ID and `-upanishad` catalog ID to its own cover; other Upanishads retain the collection illustration until their individual artwork is added. Covers appear in Library, passage/search/saved thumbnails and the reader header. Images are decorative for accessibility; adjacent text supplies the work and reference. No scripture text, source status or retrieval behavior changed.
+
+### Next set: Nrisimha Tapaniya — 2026-10-17
+
+Requested first for the next set. Tool: OpenAI `image_gen.imagegen`. Short prompt: dignified serene lion-faced divine guardian seated in meditation on an ivory lotus; saffron drapery, restrained crown and sun halo; river and mountains; same original indigo/saffron/ivory editorial gouache treatment, no violence, text, external source artwork or artist imitation.
+
+- File: `apps/mobile/assets/art/upanishads/nrisimhatapaniya.webp`, 768×768, 121.2 KB, opaque WebP quality 82.
+- SHA-256: `ede73ad553444c1af53a7c6646f8db8bc464138293872cd6b597c817c6e649ea`.
+- Canonical work ID `nrisimhatapaniya-upanishad` (and short form `nrisimhatapaniya`) resolves to this cover. This adds artwork only: it does not publish scripture or make an unavailable work appear available. The owner subsequently supplied Claude’s next-set shortlist by screenshot; those 21 covers are being generated as a separate batch.
+
+Validation of the first twelve covers: all WebP files decoded; original prompts, export sizes and hashes recorded above. TypeScript, Expo web and Android exports passed. Browser fixture checks at 390×844 confirmed twelve distinct loaded images, 80px reader covers and 36px passage covers in both themes, without page errors or horizontal overflow. Opening a reader now resets the existing list scroll so its image and heading are visible. Fixtures were local layout data, not a scripture publication or provider session.

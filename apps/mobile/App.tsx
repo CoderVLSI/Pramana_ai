@@ -55,7 +55,7 @@ import SettingsScreen from "./SettingsScreen";
 import { ALL_SCOPE, workIdsForScope } from "./scope";
 import RishiPreview, { RishiAvatar } from "./RishiAvatar";
 import { CollectionArtwork, SceneArtwork } from "./Artwork";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   Linking,
   Image,
@@ -131,8 +131,9 @@ function PassageCard({
   const { state } = useDevicePreferences();
   return (
     <Pressable onPress={() => onOpen(p)} style={s.passage}>
-      <View style={s.row}>
-        <Text style={s.reference}>{p.reference}</Text>
+      <View style={[s.row, { gap: 10 }]}>
+        <CollectionArtwork work={p.work_id} size={36} />
+        <Text style={[s.reference, { flex: 1 }]}>{p.reference}</Text>
         <Pressable
           accessibilityLabel={
             saved.includes(p.id) ? "Remove bookmark" : "Save passage"
@@ -175,6 +176,7 @@ export default function App() {
   );
 }
 function StudyApp() {
+  const studyScroll = useRef<import("react-native").ScrollView>(null);
   const preferences = useDevicePreferences();
   const dark = useDarkMode();
   const [searchSelection, setSearchSelection] =
@@ -219,6 +221,14 @@ function StudyApp() {
     [reason, setReason] = useState(""),
     [notice, setNotice] = useState(""),
     [ready, setReady] = useState(false);
+  // Opening a passage from a scrolled list should reveal its cover and heading.
+  useEffect(() => {
+    if (!reader?.id) return;
+    const frame = requestAnimationFrame(() =>
+      studyScroll.current?.scrollTo({ y: 0, animated: false }),
+    );
+    return () => cancelAnimationFrame(frame);
+  }, [reader?.id]);
   const [webFallback, setWebFallback] = useState<WebFallback | null>(null);
   const [profile, setProfile] = useState<StudyProfile>(EMPTY_PROFILE);
   useEffect(() => {
@@ -653,6 +663,7 @@ function StudyApp() {
             />
           ) : (
             <ScrollView
+              ref={studyScroll}
               contentContainerStyle={[s.content, !wide && { padding: 20 }]}
               keyboardShouldPersistTaps="handled"
             >
@@ -663,7 +674,12 @@ function StudyApp() {
                     <Text style={s.body}> Back to study</Text>
                   </Pressable>
                   <Text style={s.kicker}>EXACT PASSAGE</Text>
-                  <Text style={s.title}>{reader.reference}</Text>
+                  <View style={[s.row, { gap: 16, marginVertical: 12 }]}>
+                    <CollectionArtwork work={reader.work_id} size={80} />
+                    <Text style={[s.title, { flex: 1 }]}>
+                      {reader.reference}
+                    </Text>
+                  </View>
                   <PassageCard
                     saved={saved}
                     onOpen={open}
