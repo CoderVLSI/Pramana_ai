@@ -676,7 +676,13 @@ function StudyApp() {
                   <Text style={s.kicker}>EXACT PASSAGE</Text>
                   <View style={[s.row, { gap: 16, marginVertical: 12 }]}>
                     <CollectionArtwork work={reader.work_id} size={80} />
-                    <Text style={[s.title, { flex: 1 }]}>
+                    <Text
+                      style={[
+                        s.title,
+                        { flex: 1 },
+                        !wide && { fontSize: 30, lineHeight: 38 },
+                      ]}
+                    >
                       {reader.reference}
                     </Text>
                   </View>
