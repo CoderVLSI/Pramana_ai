@@ -25,7 +25,7 @@ const covers = {
     require("./assets/art/cover-puranas-dark.webp"),
   ],
 };
-// Each released work has its own symbolic cover; both catalog ID forms resolve.
+// Individual symbolic covers support both short IDs and full catalog IDs.
 const upanishadCovers: Record<string, ImageSourcePropType> = {
   isha: require("./assets/art/upanishads/isha.webp"),
   kena: require("./assets/art/upanishads/kena.webp"),
@@ -39,6 +39,27 @@ const upanishadCovers: Record<string, ImageSourcePropType> = {
   brihadaranyaka: require("./assets/art/upanishads/brihadaranyaka.webp"),
   shvetashvatara: require("./assets/art/upanishads/shvetashvatara.webp"),
   nrisimhatapaniya: require("./assets/art/upanishads/nrisimhatapaniya.webp"),
+  amritabindu: require("./assets/art/upanishads/amritabindu.webp"),
+  hamsa: require("./assets/art/upanishads/hamsa.webp"),
+  aruneya: require("./assets/art/upanishads/aruneya.webp"),
+  paramahamsa: require("./assets/art/upanishads/paramahamsa.webp"),
+  brahma: require("./assets/art/upanishads/brahma.webp"),
+  amritanada: require("./assets/art/upanishads/amritanada.webp"),
+  atharvashiras: require("./assets/art/upanishads/atharvashiras.webp"),
+  tripuratapini: require("./assets/art/upanishads/tripuratapini.webp"),
+  devi: require("./assets/art/upanishads/devi.webp"),
+  tripura: require("./assets/art/upanishads/tripura.webp"),
+  katharudra: require("./assets/art/upanishads/katharudra.webp"),
+  bhavana: require("./assets/art/upanishads/bhavana.webp"),
+  rudrahridaya: require("./assets/art/upanishads/rudrahridaya.webp"),
+  yogakundalini: require("./assets/art/upanishads/yogakundalini.webp"),
+  tarasara: require("./assets/art/upanishads/tarasara.webp"),
+  panchabrahma: require("./assets/art/upanishads/panchabrahma.webp"),
+  pranagnihotra: require("./assets/art/upanishads/pranagnihotra.webp"),
+  gopalatapaniya: require("./assets/art/upanishads/gopalatapaniya.webp"),
+  naradaparivrajaka: require("./assets/art/upanishads/naradaparivrajaka.webp"),
+  paingala: require("./assets/art/upanishads/paingala.webp"),
+  bhikshuka: require("./assets/art/upanishads/bhikshuka.webp"),
 };
 const upanishads = new Set(Object.keys(upanishadCovers));
 
