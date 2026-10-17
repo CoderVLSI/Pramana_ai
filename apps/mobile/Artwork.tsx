@@ -141,6 +141,12 @@ const itihasaCovers: Record<string, ImageSourcePropType> = {
   ramayana: require("./assets/art/itihasas/valmiki-ramayana.webp"),
   mahabharata: require("./assets/art/itihasas/mahabharata.webp"),
 };
+const vedaCovers: Record<string, ImageSourcePropType> = {
+  rigveda: require("./assets/art/vedas/rigveda.webp"),
+  yajurveda: require("./assets/art/vedas/yajurveda.webp"),
+  samaveda: require("./assets/art/vedas/samaveda.webp"),
+  atharvaveda: require("./assets/art/vedas/atharvaveda.webp"),
+};
 const upanishads = new Set(Object.keys(upanishadCovers));
 
 /** Decorative artwork only: collection identity and source status stay in text. */
@@ -153,6 +159,7 @@ export function CollectionArtwork({
 }) {
   const dark = useDarkMode();
   const individualCover =
+    vedaCovers[work.toLowerCase().replace(/-/g, "")] ??
     itihasaCovers[work.toLowerCase()] ??
     upanishadCovers[work.toLowerCase().replace(/-upanishad$/, "")];
   const kind =
