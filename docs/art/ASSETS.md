@@ -132,3 +132,11 @@ Paths below are relative to `apps/mobile/assets/art/upanishads/`.
 The 33 exports total 3.90 MB. Every key matches the existing Muktika catalog ID; no new scripture availability/status, release data or backend flag is introduced.
 
 Validation of the complete set: all 33 exports decoded at 768×768, have distinct SHA-256 values and match canonical IDs in `packages/corpus-schema/upanishads.ts`. Visually checked all covers together and in smaller batches. TypeScript and Expo web/Android exports passed. Chromium fixture checks at 390×844 confirmed 33 distinct loaded covers in both themes, correct reader/passage cover sizes, visible reader header after navigation, no page errors and no document overflow. No provider API or live scripture publication was involved. Native APK installation has not been tested for this artwork-only change.
+
+## Mahanarayana content correction — 2026-10-17
+
+File: `apps/mobile/assets/art/upanishads/mahanarayana.webp`. Tool: OpenAI `image_gen.imagegen`; original generated illustration, exported as 768×768 WebP. Short prompt: Tripadvibhuti-Mahanarayana, crowned four-armed Narayana teaching Brahma, lotus seats and symbolic cosmic radiance; saffron, ivory and indigo; no writing or external reference artwork.
+
+Content basis: [Nirnaya Sagar 1925, printed p.308 / image n324](https://archive.org/download/in.ernet.dli.2015.427659/page/n324_w1600.jpg), inspected directly. The heading names Tripadvibhuti-Mahanarayana; the opening has Brahma ask Mahavishnu about ultimate reality. This illustrates that dialogue symbolically, rather than substituting the similarly named Taittiriya anthology or a generic lotus landscape. Decorative art is not a claim of scripture publication or human textual review.
+
+SHA-256: `77b31dd56fa13747146b9190c1caf0fc6bcd063afeefc84af91e86ecf8473266`.
