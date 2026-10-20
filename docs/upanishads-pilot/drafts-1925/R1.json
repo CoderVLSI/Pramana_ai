@@ -1,0 +1,2733 @@
+{
+"entries": [
+{
+"work": "amritabindu-upanishad",
+"hierarchy": [],
+"verse": "shanti",
+"printed_numbers": [],
+"text": "अमृतबिन्दूपनिषद्वेद्यं यत्परमाक्षरम् । तदेव हि त्रिपाद्रामचन्द्राख्यं नः परा गतिः ॥",
+"page_index": 143,
+"confidence": "high",
+"note": "shanti. Invocation verse printed under the heading, before the shanti. 'ब्रह्मबिन्दूपनिषत्' is the book's printed heading (serial 12); slug amritabindu-upanishad."
+},
+{
+"work": "amritabindu-upanishad",
+"hierarchy": [],
+"verse": "shanti",
+"printed_numbers": [],
+"text": "ॐ सह नाववत्विति शान्तिः ॥",
+"page_index": 143,
+"confidence": "high",
+"note": "shanti. Printed as an abbreviated shanti ('सह नाववत्विति')."
+},
+{
+"work": "amritabindu-upanishad",
+"hierarchy": [
+[
+"khanda",
+"1"
+]
+],
+"verse": "1",
+"printed_numbers": [
+"1"
+],
+"text": "मनो हि द्विविधं प्रोक्तं शुद्धं चाशुद्धमेव च । अशुद्धं कामसंकल्पं शुद्धं कामविवर्जितम् ॥",
+"page_index": 143,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritabindu-upanishad",
+"hierarchy": [
+[
+"khanda",
+"1"
+]
+],
+"verse": "2",
+"printed_numbers": [
+"2"
+],
+"text": "मन एव मनुष्याणां कारणं बन्धमोक्षयोः । बन्धाय विषयासक्तं मुक्त्यै निर्विषयं स्मृतम् ॥",
+"page_index": 143,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritabindu-upanishad",
+"hierarchy": [
+[
+"khanda",
+"1"
+]
+],
+"verse": "3",
+"printed_numbers": [
+"3"
+],
+"text": "यतो निर्विषयस्यास्य मनसो मुक्तिरिष्यते । तस्मान्निर्विषयं नित्यं मनः कार्यं मुमुक्षुणा ॥",
+"page_index": 143,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritabindu-upanishad",
+"hierarchy": [
+[
+"khanda",
+"1"
+]
+],
+"verse": "4",
+"printed_numbers": [
+"4"
+],
+"text": "निरस्तविषयासङ्गं संनिरुद्धं मनो हृदि । यदा यात्युन्मनीभावं तदा तत्परमं पदम् ॥",
+"page_index": 143,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritabindu-upanishad",
+"hierarchy": [
+[
+"khanda",
+"1"
+]
+],
+"verse": "5",
+"printed_numbers": [
+"5",
+"1"
+],
+"text": "तावदेव निरोद्धव्यं यावद्धृदि गतं क्षयम् । एतज्ज्ञानं च मोक्षं च अतोऽन्यो ग्रन्थविस्तरः ॥",
+"page_index": 143,
+"confidence": "high",
+"note": "Second number (1) is the section (khanda) count; verse numbers run 1-22 across 4 sections."
+},
+{
+"work": "amritabindu-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "6",
+"printed_numbers": [
+"6"
+],
+"text": "नैव चिन्त्यं न चाचिन्त्यमचिन्त्यं चिन्त्यमेव च । पक्षपातविनिर्मुक्तं ब्रह्म संपद्यते तदा ॥",
+"page_index": 143,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritabindu-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "7",
+"printed_numbers": [
+"7"
+],
+"text": "स्वरेण संधयेद्योगमस्वरं भावयेत्परम् । अस्वरेण हि भावेन भावो नाभाव दृश्यते ॥",
+"page_index": 143,
+"confidence": "high",
+"note": "Printed 'नाभाव दृश्यते', kept as printed."
+},
+{
+"work": "amritabindu-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "8",
+"printed_numbers": [
+"8"
+],
+"text": "तदेव निष्कलं ब्रह्म निर्विकल्पं निरञ्जनम् । तद्ब्रह्माहमिति ज्ञात्वा ब्रह्म संपद्यते ध्रुवम् ॥",
+"page_index": 143,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritabindu-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "9",
+"printed_numbers": [
+"9"
+],
+"text": "निर्विकल्पमनन्तं च हेतुदृष्टान्तवर्जितम् । अप्रमेयमनाद्यं च ज्ञात्वा च परमं शिवम् ॥",
+"page_index": 143,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritabindu-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "10",
+"printed_numbers": [
+"10",
+"2"
+],
+"text": "न निरोधो न चोत्पत्तिर्न बन्धो न च शासनम् । न मुमुक्षा न मुक्तिश्च इत्येषा परमार्थता ॥",
+"page_index": 143,
+"confidence": "high",
+"note": "Second number is the section count."
+},
+{
+"work": "amritabindu-upanishad",
+"hierarchy": [
+[
+"khanda",
+"3"
+]
+],
+"verse": "11",
+"printed_numbers": [
+"11"
+],
+"text": "एक एवात्मा मन्तव्यो जाग्रत्स्वप्नसुषुप्तिषु । स्थानत्रयाद्व्यतीतस्य पुनर्जन्म न विद्यते ॥",
+"page_index": 143,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritabindu-upanishad",
+"hierarchy": [
+[
+"khanda",
+"3"
+]
+],
+"verse": "12",
+"printed_numbers": [
+"12"
+],
+"text": "एक एव हि भूतात्मा भूते भूते व्यवस्थितः । एकधा बहुधा चैव दृश्यते जलचन्द्रवत् ॥",
+"page_index": 143,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritabindu-upanishad",
+"hierarchy": [
+[
+"khanda",
+"3"
+]
+],
+"verse": "13",
+"printed_numbers": [
+"13"
+],
+"text": "घटसंभूतमाकाशं लीयमाने घटे यथा । घटो लीयेत नाकाशं तद्वज्जीवो घटोपमः ॥",
+"page_index": 143,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritabindu-upanishad",
+"hierarchy": [
+[
+"khanda",
+"3"
+]
+],
+"verse": "14",
+"printed_numbers": [
+"14"
+],
+"text": "घटवद्विविधाकारं भिद्यमानं पुनः पुनः । तद्भेदं न च जानाति स जानाति च नित्यशः ॥",
+"page_index": 143,
+"confidence": "medium",
+"note": "'घटवद्विविधाकारं' (first syllable of the second word) and 'तद्भेदं' slightly unclear; continues from p.143 to 144 (page_index = start)."
+},
+{
+"work": "amritabindu-upanishad",
+"hierarchy": [
+[
+"khanda",
+"3"
+]
+],
+"verse": "15",
+"printed_numbers": [
+"15",
+"3"
+],
+"text": "शब्दमायावृतो यावत्तावत्तिष्ठति पुष्करे । भिन्ने तमसि चैकत्वमेकमेवानुपश्यति ॥",
+"page_index": 144,
+"confidence": "high",
+"note": "Second number is the section count."
+},
+{
+"work": "amritabindu-upanishad",
+"hierarchy": [
+[
+"khanda",
+"4"
+]
+],
+"verse": "16",
+"printed_numbers": [
+"16"
+],
+"text": "शब्दाक्षरं परं ब्रह्म यस्मिन्क्षीणे यदक्षरम् । तद्विद्वानक्षरं ध्यायेद्यदीच्छेच्छान्तिमात्मनः ॥",
+"page_index": 144,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritabindu-upanishad",
+"hierarchy": [
+[
+"khanda",
+"4"
+]
+],
+"verse": "17",
+"printed_numbers": [
+"17"
+],
+"text": "द्वे विद्ये वेदितव्ये तु शब्दब्रह्म परं च यत् । शब्दब्रह्मणि निष्णातः परं ब्रह्माधिगच्छति ॥",
+"page_index": 144,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritabindu-upanishad",
+"hierarchy": [
+[
+"khanda",
+"4"
+]
+],
+"verse": "18",
+"printed_numbers": [
+"18"
+],
+"text": "ग्रन्थमभ्यस्य मेधावी ज्ञानविज्ञानतत्परः । पलालमिव धान्यार्थी त्यजेद्ग्रन्थमशेषतः ॥",
+"page_index": 144,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritabindu-upanishad",
+"hierarchy": [
+[
+"khanda",
+"4"
+]
+],
+"verse": "19",
+"printed_numbers": [
+"19"
+],
+"text": "गवामनेकवर्णानां क्षीरस्याप्येकवर्णता । क्षीरवत्पश्यते ज्ञानं लिङ्गिनस्तु गवां यथा ॥",
+"page_index": 144,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritabindu-upanishad",
+"hierarchy": [
+[
+"khanda",
+"4"
+]
+],
+"verse": "20",
+"printed_numbers": [
+"20"
+],
+"text": "घृतमिव पयसि निगूढं भूते भूते च वसति विज्ञानम् । सततं मन्थयितव्यं मनसा मन्धानभूतेन ॥",
+"page_index": 144,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritabindu-upanishad",
+"hierarchy": [
+[
+"khanda",
+"4"
+]
+],
+"verse": "21",
+"printed_numbers": [
+"21"
+],
+"text": "ज्ञाननेत्रं समादाय चरेद्वह्निमतः परम् । निष्कलं निर्मलं शान्तं तद्ब्रह्माहमिति स्मृतम् ॥",
+"page_index": 144,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritabindu-upanishad",
+"hierarchy": [
+[
+"khanda",
+"4"
+]
+],
+"verse": "22",
+"printed_numbers": [
+"22",
+"4"
+],
+"text": "सर्वभूताधिवासं च यद्भूतेषु वसत्यधि । सर्वानुग्राहकत्वेन तदस्म्यहं वासुदेवः तदस्म्यहं वासुदेव इति ॥",
+"page_index": 144,
+"confidence": "high",
+"note": "Second number is the section count."
+},
+{
+"work": "amritabindu-upanishad",
+"hierarchy": [],
+"verse": "shanti",
+"printed_numbers": [],
+"text": "सहेति शान्तिः ॥",
+"page_index": 144,
+"confidence": "high",
+"note": "shanti. Abbreviated closing shanti."
+},
+{
+"work": "hamsa-upanishad",
+"hierarchy": [
+[
+"part",
+"1"
+]
+],
+"verse": "shanti",
+"printed_numbers": [],
+"text": "हंसाख्योपनिषत्प्रोक्तनाडालिर्यत्र विश्रमेत् । तदाधारं निराधारं ब्रह्ममात्रमहं महः ॥",
+"page_index": 147,
+"confidence": "medium",
+"note": "shanti. Opening invocation verse printed under heading (before the shanti), as printed; entry order: this verse precedes the shanti above."
+},
+{
+"work": "hamsa-upanishad",
+"hierarchy": [
+[
+"part",
+"1"
+]
+],
+"verse": "shanti",
+"printed_numbers": [],
+"text": "ॐ पूर्णमद इति शान्तिः ॥",
+"page_index": 147,
+"confidence": "high",
+"note": "shanti."
+},
+{
+"work": "hamsa-upanishad",
+"hierarchy": [
+[
+"part",
+"1"
+]
+],
+"verse": "1",
+"printed_numbers": [
+"1"
+],
+"text": "[…]भगवन्सर्वधर्मज्ञ सर्वशास्त्रविशारद । ब्रह्मविद्याप्रबोधो […]गीयते ॥",
+"page_index": 147,
+"confidence": "low",
+"note": "Page has a diagonal ink stamp/overlay that obscures the left of lines 1-7; letters before 'भगवन्' and in the middle of the line are illegible ([…] marks the gap)."
+},
+{
+"work": "hamsa-upanishad",
+"hierarchy": [
+[
+"part",
+"1"
+]
+],
+"verse": "2",
+"printed_numbers": [
+"2"
+],
+"text": "सनत्कुमार उवाच । विचार्य सर्ववेदेषु मतं […]नः । पार्वत्या कथितं तत्त्वं शृणु गौतम तन्मम ॥",
+"page_index": 147,
+"confidence": "low",
+"note": "Obscured by the stamp; gap marked […]."
+},
+{
+"work": "hamsa-upanishad",
+"hierarchy": [
+[
+"part",
+"1"
+]
+],
+"verse": "3",
+"printed_numbers": [],
+"text": "अना[…]ं योगिनां कोशसंनिभम् । हंसस्याकृतिविस्तारं भुक्तिमुक्तिफल[…]म् ॥",
+"page_index": 147,
+"confidence": "low",
+"note": "Verse ends with a double danda but NO printed number; numbered 3 by sequence. Stamp obscures letters."
+},
+{
+"work": "hamsa-upanishad",
+"hierarchy": [
+[
+"part",
+"2"
+]
+],
+"verse": "1",
+"printed_numbers": [
+"1"
+],
+"text": "अथ हंसपरमहंसनिर्णयं व्याख्यास्यामः । ब्रह्मचारिणे शान्ताय […]रुभक्ताय । हंसहंसेति सदा ध्यायन्सर्वेषु देहेषु व्याप्य वर्तते ॥ यथा […]षु तिलेषु तैलमिव तं विदित्वा मृत्युमत्येति । गुदमवष्टभ्याधाराद्वा[…]ाप्य स्वाधिष्ठानं त्रिः प्रदक्षिणीकृत्य मणिपूरकं च गत्वा अनाहतमतिक्रम्य विशुद्धौ प्राणान्निरुध्याज्ञामनुध्यायन्ब्रह्मरन्ध्रं ध्यायन् त्रिमात्रोऽहमित्येवं सर्वदा ध्यायन् । अथो नादमाधाराद्ब्रह्मरन्ध्रपर्यन्तं शुद्धस्फटिकसंकाशं स वै ब्रह्म परमात्मेत्युच्यते ॥",
+"page_index": 147,
+"confidence": "low",
+"note": "Starts on p.147 (left side obscured by stamp), ends p.148."
+},
+{
+"work": "hamsa-upanishad",
+"hierarchy": [
+[
+"part",
+"2"
+]
+],
+"verse": "2",
+"printed_numbers": [
+"2"
+],
+"text": "अथ हंस ऋषिः । अव्यक्ता गायत्री छन्दः । परमहंसो देवता । अहमिति बीजम् । स इति शक्तिः । सोऽहमिति कीलकम् । षट्संख्यया अहोरात्रयोरेकविंशतिसहस्राणि षट्शतान्यधिकानि भवन्ति । सूर्याय सोमाय निरञ्जनाय निराभासाय तनु सूक्ष्मं प्रचोदयादिति अग्नीषोमाभ्यां वौषट् हृदयाद्यङ्गन्यासकरन्यासौ भवतः । एवं कृत्वा हृदये अष्टदले हंसात्मानं ध्यायेत् । अग्नीषोमौ पक्षावोंकारः शिरो बिन्दुस्तु नेत्रं मुखं रुद्रो रुद्राणी चरणौ बाहू कालश्चाग्निश्चोभे पार्श्वे भवतः । पश्यत्यनागारश्च शिष्टोभयपार्श्वे भवतः । एषोऽसौ परमहंसो भानुकोटिप्रतीकाशः । येनेदं व्याप्तम् । तस्याष्टधा वृत्तिर्भवति । पूर्वदले पुण्ये मतिः आग्नेये निद्रालस्यादयो भवन्ति याम्ये क्रूरे मतिः नैर्ऋते पापे मनीषा वारुण्यां क्रीडा वायव्यगमनादौ बुद्धिः सौम्ये रतिर्प्रीतिः ईशाने द्रव्यादानं मध्ये वैराग्यं केसरे जाग्रदवस्था कर्णिकायां स्वप्नं लिङ्गे सुषुप्तिः पद्मत्यागे तुर्यं यदा हंसो नादे लीनो भवति तदा तुर्यातीतमुन्मनमजपोपसंहारमित्यभिधीयते । एवं सर्वं हंसवशात्तस्मान्मनो हंसो विचार्यते । स एव जपकोट्या नादमनुभवति । एवं सर्वं हंसवशान्नादो दशविधो जायते । चिणीति प्रथमः । चिञ्चिणीति द्वितीयः । घण्टानादस्तृतीयः । शङ्खनादश्चतुर्थः । पञ्चमस्तन्त्रीनादः । षष्ठस्तालनादः । सप्तमो वेणुनादः । अष्टमो मृदङ्गनादः । नवमो भेरीनादः । दशमो मेघनादः । नवमं परित्यज्य दशममेवाभ्यसेत् । प्रथमे चिञ्चिणीगात्रं द्वितीये गात्रभञ्जनम् । तृतीये खेदनं याति चतुर्थे कम्पते शिरः ॥ पञ्चमे स्रवते तालु षष्ठेऽमृतनिषेवणम् । सप्तमे गूढविज्ञानं परा वाचा तथाष्टमे ॥ अदृश्यं नवमे देहं दिव्यं चक्षुस्तथामलम् । दशमे परं ब्रह्म भवेद्ब्रह्मात्मसंनिधौ ॥ तस्मिन्मनो विलीयते मनसि संकल्पविकल्पे दग्धे पुण्यपापे सदाशिवः शक्त्यात्मा सर्वत्रावस्थितः स्वयंज्योतिः शुद्धो बुद्धो नित्यो निरञ्जनः शान्तः प्रकाशत इति ॥ इति वेदप्रवचन वेदप्रवचनम् ॥",
+"page_index": 148,
+"confidence": "medium",
+"note": "Printed '॥ १ ॥' / '॥ २ ॥' mark the end of two prose sections after three opening verses (two verses numbered, third unnumbered). 'पश्यत्यनागारश्च शिष्टोभयपार्श्वे' and 'चिणीति' readings uncertain."
+},
+{
+"work": "hamsa-upanishad",
+"hierarchy": [],
+"verse": "shanti",
+"printed_numbers": [],
+"text": "ॐ पूर्णमद इति शान्तिः ॥",
+"page_index": 148,
+"confidence": "high",
+"note": "shanti."
+},
+{
+"work": "aruneya-upanishad",
+"hierarchy": [],
+"verse": "shanti",
+"printed_numbers": [],
+"text": "आरुणिकाख्योपनिषत्ख्यातसंन्यासिनोऽमलाः । यत्प्रबोधाधिगम्यन्ति मुक्तिं तद्रामब्रह्म मे गतिः ॥",
+"page_index": 148,
+"confidence": "medium",
+"note": "shanti. Invocation verse printed under heading, before the shanti; second line read approximately."
+},
+{
+"work": "aruneya-upanishad",
+"hierarchy": [],
+"verse": "shanti",
+"printed_numbers": [],
+"text": "ॐ आप्यायन्त्विति शान्तिः ॥",
+"page_index": 148,
+"confidence": "high",
+"note": "shanti."
+},
+{
+"work": "aruneya-upanishad",
+"hierarchy": [],
+"verse": "1",
+"printed_numbers": [
+"1"
+],
+"text": "ॐ आरुणिः प्राजापत्यः प्रजापतेर्लोकं जगाम । तं गत्वोवाच । केन भगवन्कर्माण्यशेषतो विसृजामीति । तं होवाच प्रजापतिस्तव पुत्रान्भ्रातॄन्बन्ध्वादीञ्छिखां यज्ञोपवीतं यागं स्वाध्यायं भूर्लोकभुवर्लोकस्वर्लोकमहर्लोकजनोलोकतपोलोकसत्यलोकं चातलतलातलवितलसुतलरसातलमहातलपातालं ब्रह्माण्डं च विसृजेत् । दण्डमाच्छादनं चैव कौपीनं च परिग्रहेत् । शेषं विसृजेदिति ॥",
+"page_index": 148,
+"confidence": "medium",
+"note": "Starts p.148, ends p.149. Medium on 'प्रजापतिस्तव' and 'चातल...' (uncertain letters)."
+},
+{
+"work": "aruneya-upanishad",
+"hierarchy": [],
+"verse": "2",
+"printed_numbers": [
+"2"
+],
+"text": "गृहस्थो ब्रह्मचारी वा वानप्रस्थो वा उपवीतं भूमावप्सु वा विसृजेत् । लौकिकाग्नीनुदराग्नौ समारोपयेत् । गायत्रीं च स्ववाचाग्नौ समारोपयेत् । कुटीचरो ब्रह्मचारी कुटुम्बं विसृजेत् । पात्रं विसृजेत् । पवित्रं विसृजेत् । दण्डांल्लोकांश्च विसृजेदिति होवाच । अथ ऊर्ध्वममन्त्रवदाचरेत् । ऊर्ध्वगमनं विसृजेत् । औषधवदशनमाचरेत् । त्रिसंध्यादौ स्नानमाचरेत् । संधिं समाधावात्मन्याचरेत् । सर्वेषु वेदेष्वारण्यकमावर्तयेदुपनिषदमावर्तयेदुपनिषदमावर्तयेदिति ॥",
+"page_index": 149,
+"confidence": "medium",
+"note": "'दण्डांल्लोकांश्च' slightly unclear."
+},
+{
+"work": "aruneya-upanishad",
+"hierarchy": [],
+"verse": "3",
+"printed_numbers": [
+"3"
+],
+"text": "खल्वहं ब्रह्मसूचनात्सूत्रं ब्रह्मसूत्रमहमेव विद्वान्त्रिवृत्सूत्रं त्यजेद्विद्वानेवं वेद संन्यस्तं मया संन्यस्तं मया संन्यस्तं मयेति त्रिरुक्त्वाभयं सर्वभूतेभ्यो मत्तः सर्वं प्रवर्तते । सखामागोपायोजः सखायोऽसीन्द्रस्य वज्रोऽसि वार्त्रघ्नः शर्म मे भव यत्पापं तन्निवारयेति । अनेन मन्त्रेण कृतं वस्त्रं दण्डं कौपीनं परिग्रहेदौषधवदशनमाचरेदौषधवदशनं प्राश्नीयाद्यथालाभमश्नीयात् । ब्रह्मचर्यमहिंसां चापरिग्रहं च सत्यं च यत्नेन हे रक्षत हे रक्षत हे रक्षत इति ॥",
+"page_index": 149,
+"confidence": "medium",
+"note": "'वस्त्रं' (printed letters look like 'वणयं'/'वस्त्रं') uncertain."
+},
+{
+"work": "aruneya-upanishad",
+"hierarchy": [],
+"verse": "4",
+"printed_numbers": [
+"4"
+],
+"text": "अथातः परमहंसपरिव्राजकानामासनशयनादिकं भूमौ ब्रह्मचर्यं मृत्पात्रमलाबुपात्रं दारुपात्रं वा यतीनां कामक्रोधहर्षरोषलोभमोहदम्भदर्पेच्छासूयाममत्वाहंकारादीनपि परित्यजेत् । वर्षासु ध्रुवशीलोऽष्टौ मासानेकाकी यतिश्चरेत् द्वावेव वा विचरेद्द्वावेव वा विचरेदिति ॥",
+"page_index": 149,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "aruneya-upanishad",
+"hierarchy": [],
+"verse": "5",
+"printed_numbers": [
+"5"
+],
+"text": "स खल्वेव यो विद्वान्सोपनयनादूर्ध्वमेतानि प्राग्वा त्यजेत् । पितरं पुत्रमभ्युपवीतं कर्म कलत्रं चान्यदपीह यतयो भिक्षार्थं ग्रामं प्रविशन्ति पाणिपात्रमुदरपात्रं वा । ॐ हि ॐ हि ॐ हीत्येतदुपनिषदं व्यत्यसेत् ॥ खल्वेतदुपनिषदं विद्वान्य एवं वेद पालाशं बैल्वमाश्वत्थमौदुम्बरं दण्डं मौञ्जीं मेखलां यज्ञोपवीतं च त्यक्त्वा शूद्रो य एवं वेद । तद्विष्णोः परमं पदं सदा पश्यन्ति सूरयः । दिवीव चक्षुराततम् । तद्विप्रासो विपन्यवो जागृवांसः समिन्धते । विष्णोर्यत्परमं पदमिति । एवं निर्वाणानुशासनं वेदानुशासनं वेदानुशासनमिति ॥",
+"page_index": 149,
+"confidence": "medium",
+"note": "Some words uncertain (e.g. 'पितरं पुत्रमभ्युपवीतं')."
+},
+{
+"work": "aruneya-upanishad",
+"hierarchy": [],
+"verse": "shanti",
+"printed_numbers": [],
+"text": "ॐ आप्यायन्त्विति शान्तिः ॥",
+"page_index": 149,
+"confidence": "high",
+"note": "shanti."
+},
+{
+"work": "paramahamsa-upanishad",
+"hierarchy": [],
+"verse": "shanti",
+"printed_numbers": [],
+"text": "परमहंसोपनिषद्वेद्यापारसुखाकृति । त्रैपादश्रीरामतत्त्वं स्वमात्रमिति चिन्तये ॥",
+"page_index": 166,
+"confidence": "medium",
+"note": "shanti. Opening invocation verse printed under the heading, before the shanti; 'परमहंसोपनिषद्वेद्यापारसुखाकृति' read as printed (letters slightly unclear)."
+},
+{
+"work": "paramahamsa-upanishad",
+"hierarchy": [],
+"verse": "shanti",
+"printed_numbers": [],
+"text": "ॐ पूर्णमद इति शान्तिः ॥",
+"page_index": 166,
+"confidence": "high",
+"note": "shanti."
+},
+{
+"work": "paramahamsa-upanishad",
+"hierarchy": [],
+"verse": "1",
+"printed_numbers": [],
+"text": "हरिः ॐ । अथ योगिनां परमहंसानां कोऽयं मार्गस्तेषां का स्थितिरिति नारदो भगवन्तमुपसमेत्योवाच तं भगवानाह योऽयं परमहंसमार्गो लोके दुर्लभतरो न तु बाहुल्यो यद्येको भवति स एव नित्यकूटस्थः स एव वेदपुरुष इति विदुषो मन्यन्ते महापुरुषो यच्चित्तं तत्सदा मय्येवावतिष्ठते तस्मादहं च तस्मिन्नेवावस्थीयतेऽसौ स्वपुत्रमित्रकलत्रबन्ध्वादीञ्छिखां यज्ञोपवीतं यागं सूत्रं स्वाध्यायं च सर्वकर्माणि संन्यस्यायं ब्रह्माण्डं च हित्वा कौपीनं दण्डमाच्छादनं च स्वशरीरोपभोगार्थाय लोकस्यैवोपकारार्थाय च परिग्रहेत् । तच्च न मुख्योऽस्ति कोऽयं मुख्य इति चेदयं मुख्यः । न दण्डं न कमण्डलुं न शिखां न यज्ञोपवीतं नाच्छादनं चरति परमहंसो न शीतं न चोष्णं न सुखं न दुःखं न मानावमाने इति षडूर्मिवर्जितो न शब्दं न स्पर्शं न रूपं न रसं न गन्धं न च मनोऽप्येव निन्दागर्वमत्सरदम्भदर्पेच्छाद्वेषसुखदुःखकामक्रोधलोभमोहहर्षासूयाहंकारादींश्च हित्वा स्ववपुः कुणपमिव दृश्यते यतस्तद्वपुरध्वस्तमंशयविपर्ययमिथ्याज्ञानानां यो हेतुस्तेन नित्यनिवृत्तस्तं नित्यबोधस्तं स्वयमेवावस्थितस्तं शान्तमचलमद्वयानन्दविज्ञानघन एवास्मि । तदेव मम परमं धाम तदेव शिखा तदेवोपवीतं च । परमात्मात्मनोरैकत्वज्ञानेन तयोर्भेद एव विभ्रमः सा संध्या ॥",
+"page_index": 166,
+"confidence": "medium",
+"note": "No printed unit numbers; split at double dandas (numbered by sequence). Several words in this long unit are uncertain in the print ('सूत्रं', 'विभ्रमः', 'तस्मिन्नेवावस्थीयतेऽसौ')."
+},
+{
+"work": "paramahamsa-upanishad",
+"hierarchy": [],
+"verse": "2",
+"printed_numbers": [],
+"text": "सर्वान्कामान्परित्यज्य अद्वैते परमे स्थितिः । ज्ञानदण्डो धृतो येन एकदण्डी स उच्यते ॥",
+"page_index": 166,
+"confidence": "high",
+"note": "Unnumbered; sequence number."
+},
+{
+"work": "paramahamsa-upanishad",
+"hierarchy": [],
+"verse": "3",
+"printed_numbers": [],
+"text": "काष्ठदण्डो धृतो येन सर्वाशी ज्ञानवर्जितः । तितिक्षाज्ञानवैराग्यशमादिगुणवर्जितः । भिक्षामात्रेण यो जीवेत्स पापी यतिवृत्तिहा । स याति नरकान्घोरान्महारौरवसंज्ञकान् । इदमन्तरं ज्ञात्वा स परमहंस आकाशाम्बरो न नमस्कारो न स्वाहाकारो न निन्दा न स्तुतिर्यादृच्छिको भवेत्स भिक्षुः । नावाहनं न विसर्जनं न मन्त्रं न ध्यानं नोपासितं च न लक्ष्यं नालक्ष्यं न पृथङ्नापृथग्गहं न सत्त्वं स सर्वं चानिकेतः स्थिरमतिरेव स भिक्षुः सौवर्णादीनां नैव परिग्रहेत् । लोकं नावलोकनं च बाधको न चाबाधकः क इति चेद्बाधकोऽस्त्येव यस्माद्भिक्षुर्हिरण्यं रसेन दृष्टं चेत्स ब्रह्महा भवेद्यस्माद्भिक्षुर्हिरण्यं रसेन स्पृष्टं चेत्स पाशकसो भवेद्यस्माद्भिक्षुर्हिरण्यं रसेन ग्राह्यं चेत्स आत्महा भवेत्तस्माद्भिक्षुर्हिरण्यं रसेन न दृष्टं च न स्पृष्टं च न ग्राह्यं च सर्वे कामा मनोगता व्यावर्तन्ते दुःखे च नोद्विग्नः सुखे निःस्पृहस्त्यागो रागे सर्वत्र शुभाशुभयोरभिस्नेहो न मोदते च सर्वेषामिन्द्रियाणां गतिरुपरमते च आत्मन्येवावस्थीयते । यत्पूर्णानन्दैकबोधस्तद्ब्रह्मैवाहमस्मीति कृतकृत्यो भवति कृतकृत्यो भवति ॥",
+"page_index": 166,
+"confidence": "medium",
+"note": "Unnumbered; sequence number. Starts p.166, ends p.167. 'पाशकसो', 'न पृथङ्नापृथग्गहं न सत्त्वं स सर्वं' and 'अभिस्नेहो' are uncertain readings of the print (kept as read)."
+},
+{
+"work": "paramahamsa-upanishad",
+"hierarchy": [],
+"verse": "shanti",
+"printed_numbers": [],
+"text": "पूर्णमद इति शान्तिः ॥",
+"page_index": 167,
+"confidence": "high",
+"note": "shanti. Closing shanti printed as 'पूर्णमद इति शान्तिः' (without ॐ)."
+},
+{
+"work": "brahma-upanishad",
+"hierarchy": [],
+"verse": "shanti",
+"printed_numbers": [],
+"text": "ॐ सह नाववत्विति शान्तिः ॥",
+"page_index": 167,
+"confidence": "high",
+"note": "shanti. Abbreviated shanti."
+},
+{
+"work": "brahma-upanishad",
+"hierarchy": [],
+"verse": "1",
+"printed_numbers": [
+"1"
+],
+"text": "ब्रह्मकैवल्यजाबालाः श्वेताश्वो हंस आरुणिः । गर्भो नारायणो हंसो बिन्दुनादशिरः शिखा ॥",
+"page_index": 167,
+"confidence": "high",
+"note": "Printed number ॥ १ ॥ ; the unit is a list of 13 Upanishad names. The remaining units have no printed numbers (split at double dandas, numbered by sequence continuing from 1)."
+},
+{
+"work": "brahma-upanishad",
+"hierarchy": [],
+"verse": "2",
+"printed_numbers": [],
+"text": "एतास्त्रयोदश ॐ ॥",
+"page_index": 167,
+"confidence": "medium",
+"note": "No printed number; sequence 2. First word uncertain (read 'एतास्त्रयोदश')."
+},
+{
+"work": "brahma-upanishad",
+"hierarchy": [],
+"verse": "3",
+"printed_numbers": [],
+"text": "अथास्य पुरुषस्य चत्वारि स्थानानि भवन्ति । नाभिर्हृदयं कण्ठं मूर्धा च । तत्र चतुष्पादं ब्रह्म विभाति । जागरिते ब्रह्मा स्वप्ने विष्णुः सुषुप्तौ रुद्रस्तुरीयमक्षरम् । स आदित्यो विष्णुश्चेश्वरश्च । स्वयममनस्कमश्रोत्रमपाणिपादं ज्योतिर्विदितम् । यत्र लोका न लोका देवा न देवा वेदा न वेदा यज्ञा न यज्ञा माता न माता पिता न पिता स्नुषा न स्नुषा चाण्डालो न चाण्डालः पौष्कसो न पौष्कसः श्रमणो न श्रमणस्तापसो न तापस एकमेव तत्परं ब्रह्म विभाति निर्वाणम् । न तत्र देवा ऋषयः पितर ईशते प्रतिबुद्धः सर्ववित्येति । हृदिस्था देवताः सर्वा हृदि प्राणाः प्रतिष्ठिताः । हृदि प्राणाश्च ज्योतिश्च त्रिवृत्सूत्रं च तद्विदुरिति । हृदि चैतन्ये तिष्ठति यज्ञोपवीतं परमं पवित्रं प्रजापतेर्यत्सहजं पुरस्तात् । आयुष्यमग्र्यं प्रतिमुञ्च शुभ्रं यज्ञोपवीतं बलमस्तु तेजः । सशिखं वपनं कृत्वा बहिःसूत्रं त्यजेद्बुधः । यदक्षरं परं ब्रह्म तत्सूत्रमिति धारयेत् । सूचनात्सूत्रमित्याहुः सूत्रं नाम परं पदम् । तत्सूत्रं विदितं येन स विप्रो वेदपारगः । येन सर्वमिदं प्रोतं सूत्रे मणिगणा इव । तत्सूत्रं धारयेद्योगी योगवित्तत्त्वदर्शिवान् । बहिःसूत्रं त्यजेद्विद्वान्योगमुत्तममास्थितः । ब्रह्मभावमिदं सूत्रं धारयेद्यः स चेतनः । धारणात्तस्य सूत्रस्य नोच्छिष्टो नाशुचिर्भवेत् ॥",
+"page_index": 167,
+"confidence": "medium",
+"note": "No printed number; sequence 3. 'पौष्कसो', 'तत्त्वदर्शिवान्', 'आयुष्यमग्र्यं' read from the slightly rough print."
+},
+{
+"work": "brahma-upanishad",
+"hierarchy": [],
+"verse": "4",
+"printed_numbers": [],
+"text": "सूत्रमन्तर्गतं येषां ज्ञानयज्ञोपवीतिनाम् । ते वै सूत्रविदो लोके ते च यज्ञोपवीतिनः ॥",
+"page_index": 167,
+"confidence": "high",
+"note": "No printed number; sequence 4."
+},
+{
+"work": "brahma-upanishad",
+"hierarchy": [],
+"verse": "5",
+"printed_numbers": [],
+"text": "ज्ञानशिखिनो ज्ञाननिष्ठा ज्ञानयज्ञोपवीतिनः । ज्ञानमेव परं तेषां पवित्रं ज्ञानमुच्यते ॥",
+"page_index": 167,
+"confidence": "high",
+"note": "No printed number; sequence 5."
+},
+{
+"work": "brahma-upanishad",
+"hierarchy": [],
+"verse": "6",
+"printed_numbers": [],
+"text": "अग्नेरिव शिखा नान्या यस्य ज्ञानमयी शिखा । स शिखीत्युच्यते विद्वानितरे केशधारिणः ॥",
+"page_index": 167,
+"confidence": "high",
+"note": "No printed number; sequence 6."
+},
+{
+"work": "brahma-upanishad",
+"hierarchy": [],
+"verse": "7",
+"printed_numbers": [],
+"text": "कर्मण्यधिकृता ये तु वैदिके ब्राह्मणादयः । तेभिर्धार्यमिदं सूत्रं क्रियाङ्गं तद्धि वै स्मृतम् ॥",
+"page_index": 167,
+"confidence": "high",
+"note": "No printed number; sequence 7."
+},
+{
+"work": "brahma-upanishad",
+"hierarchy": [],
+"verse": "8",
+"printed_numbers": [],
+"text": "शिखा ज्ञानमयी यस्य उपवीतं च तन्मयम् । ब्राह्मण्यं सकलं तस्य इति ब्रह्मविदो विदुः ॥",
+"page_index": 167,
+"confidence": "high",
+"note": "No printed number; sequence 8."
+},
+{
+"work": "brahma-upanishad",
+"hierarchy": [],
+"verse": "9",
+"printed_numbers": [],
+"text": "इदं यज्ञोपवीतं तु परमं यत्परायणम् । स विद्वान्यज्ञोपवीती स्यात्स यज्ञस्तं यज्ञवानं विदुः ॥",
+"page_index": 167,
+"confidence": "medium",
+"note": "No printed number; sequence 9. Last words uncertain."
+},
+{
+"work": "brahma-upanishad",
+"hierarchy": [],
+"verse": "10",
+"printed_numbers": [],
+"text": "एको देवः सर्वभूतेषु गूढः सर्वव्यापी सर्वभूतान्तरात्मा । कर्माध्यक्षः सर्वभूताधिवासः साक्षी चेता केवलो निर्गुणश्च ॥",
+"page_index": 167,
+"confidence": "high",
+"note": "No printed number; sequence 10."
+},
+{
+"work": "brahma-upanishad",
+"hierarchy": [],
+"verse": "11",
+"printed_numbers": [],
+"text": "एको वशी सर्वभूतान्तरात्मैकं रूपं बहुधा यः करोति । तमात्मस्थं येऽनुपश्यन्ति धीरास्तेषां सुखं शाश्वतं नेतरेषाम् ॥",
+"page_index": 167,
+"confidence": "high",
+"note": "No printed number; sequence 11. Starts p.167, ends p.168. Print has 'येनु' (kept as 'येऽनु')."
+},
+{
+"work": "brahma-upanishad",
+"hierarchy": [],
+"verse": "12",
+"printed_numbers": [],
+"text": "आत्मानमरणिं कृत्वा प्रणवं चोत्तरारणिम् । ध्याननिर्मथनाभ्यासाद्देवं पश्येन्निगूढवत् ॥",
+"page_index": 168,
+"confidence": "high",
+"note": "No printed number; sequence 12."
+},
+{
+"work": "brahma-upanishad",
+"hierarchy": [],
+"verse": "13",
+"printed_numbers": [],
+"text": "तिलेषु तैलं दधनीव सर्पिरापः स्रोतःस्वरणीषु चाग्निः । एवमात्मात्मनि जायतेऽसौ सत्येन तपसा योऽनुपश्यति ॥",
+"page_index": 168,
+"confidence": "high",
+"note": "No printed number; sequence 13."
+},
+{
+"work": "brahma-upanishad",
+"hierarchy": [],
+"verse": "14",
+"printed_numbers": [],
+"text": "ऊर्णनाभिर्यथा तन्तून्सृजते संहरत्यपि । जाग्रत्स्वप्ने तथा जीवो गच्छत्यागच्छते पुनः ॥",
+"page_index": 168,
+"confidence": "high",
+"note": "No printed number; sequence 14."
+},
+{
+"work": "brahma-upanishad",
+"hierarchy": [],
+"verse": "15",
+"printed_numbers": [],
+"text": "नेत्रस्थं जागरितं विद्यात्कण्ठे स्वप्नं समाविशेत् । सुषुप्तं हृदयस्थं तु तुरीयं मूर्ध्नि संस्थितम् ॥",
+"page_index": 168,
+"confidence": "high",
+"note": "No printed number; sequence 15."
+},
+{
+"work": "brahma-upanishad",
+"hierarchy": [],
+"verse": "16",
+"printed_numbers": [],
+"text": "यतो वाचो निवर्तन्ते अप्राप्य मनसा सह । आनन्दमेतज्जीवस्य यज्ज्ञात्वा मुच्यते बुधः ॥",
+"page_index": 168,
+"confidence": "high",
+"note": "No printed number; sequence 16."
+},
+{
+"work": "brahma-upanishad",
+"hierarchy": [],
+"verse": "17",
+"printed_numbers": [],
+"text": "सर्वव्यापिनमात्मानं क्षीरे सर्पिरिवार्पितम् । आत्मविद्यातपोमूलं तद्ब्रह्मोपनिषत्पदं तद्ब्रह्मोपनिषत्पदमिति ॥",
+"page_index": 168,
+"confidence": "high",
+"note": "No printed number; sequence 17."
+},
+{
+"work": "brahma-upanishad",
+"hierarchy": [],
+"verse": "shanti",
+"printed_numbers": [],
+"text": "सह नाववत्विति शान्तिः ॥",
+"page_index": 168,
+"confidence": "high",
+"note": "shanti. Abbreviated closing shanti."
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "shanti",
+"printed_numbers": [],
+"text": "अमृतनादोपनिषत्प्रतिपाद्यं पराक्षरम् । त्रिपदानन्दसाम्राज्यं हृदि मे भातु संततम् ॥",
+"page_index": 168,
+"confidence": "medium",
+"note": "shanti. Opening invocation verse printed under the heading, before the shanti."
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "shanti",
+"printed_numbers": [],
+"text": "ॐ सह नाववत्विति शान्तिः ॥",
+"page_index": 168,
+"confidence": "high",
+"note": "shanti. Abbreviated shanti."
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "1",
+"printed_numbers": [
+"1"
+],
+"text": "शाखाण्यधीत्य मेधावी अभ्यस्य च पुनः पुनः । परमं ब्रह्म विज्ञाय उल्कावत्तान्यथोत्सृजेत् ॥",
+"page_index": 168,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "2",
+"printed_numbers": [
+"2"
+],
+"text": "ओंकाररथमारुह्य विष्णुं कृत्वाथ सारथिम् । ब्रह्मलोकपदान्वेषी रुद्राराधनतत्परः ॥",
+"page_index": 168,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "3",
+"printed_numbers": [
+"3"
+],
+"text": "तावद्रथेन गन्तव्यं यावद्रथपथि स्थितः । स्थित्वा रथपतिस्थानं रथमुत्सृज्य गच्छति ॥",
+"page_index": 168,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "4",
+"printed_numbers": [
+"4"
+],
+"text": "मात्रालिङ्गपदं त्यक्त्वा शब्दव्यञ्जनवर्जितम् । अस्वरेण मकारेण पदं सूक्ष्मं हि गच्छति ॥",
+"page_index": 168,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "5",
+"printed_numbers": [
+"5"
+],
+"text": "शब्दादि विषयान्पञ्च मनश्चैवातिचञ्चलम् । चिन्तयेदात्मनो रश्मीन्प्रत्याहारः स उच्यते ॥",
+"page_index": 168,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "6",
+"printed_numbers": [
+"6"
+],
+"text": "प्रत्याहारस्तथा ध्यानं प्राणायामोऽथ धारणा । तर्कश्चैव समाधिश्च षडङ्गो योग उच्यते ॥",
+"page_index": 168,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "7",
+"printed_numbers": [
+"7"
+],
+"text": "यथा पर्वतधातूनां दह्यन्ते धमनान्मलाः । तथेन्द्रियकृता दोषा दह्यन्ते प्राणधारणात् ॥",
+"page_index": 168,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "8",
+"printed_numbers": [
+"8"
+],
+"text": "प्राणायामैर्दहेद्दोषान्धारणाभिश्च किल्बिषम् । प्रत्याहारेण संसर्गान्ध्यानेनानीश्वरान्गुणान् ॥",
+"page_index": 168,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "9",
+"printed_numbers": [
+"9"
+],
+"text": "किल्बिषं हि क्षयं नीत्वा रुचिरं चैव चिन्तयेत् ॥",
+"page_index": 168,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "10",
+"printed_numbers": [
+"10"
+],
+"text": "रुचिरं रेचकं चैव वायोराकर्षणं तथा । प्राणायामास्त्रयः प्रोक्ता रेचपूरककुम्भकाः ॥",
+"page_index": 168,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "11",
+"printed_numbers": [
+"11"
+],
+"text": "सव्याहृतिं सप्रणवां गायत्रीं शिरसा सह । त्रिः पठेदायतप्राणः प्राणायामः स उच्यते ॥",
+"page_index": 168,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "12",
+"printed_numbers": [
+"12"
+],
+"text": "उत्क्षिप्य वायुमाकाशं शून्यं कृत्वा निरारम्भकम् । शून्यभावे नियुञ्जीयाद्रेचकस्येति लक्षणम् ॥",
+"page_index": 168,
+"confidence": "medium",
+"note": "निरारम्भकम् uncertain (print reads like निरारमकम्)."
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "13",
+"printed_numbers": [
+"13"
+],
+"text": "वक्त्रेणोत्पलनालेन तोयमाकर्षयेत्सरः । एवं वायुर्ग्रहीतव्यः पूरकस्येति लक्षणम् ॥",
+"page_index": 168,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "14",
+"printed_numbers": [
+"14"
+],
+"text": "नोच्छ्वसेन्न च निश्वसेदेव गात्राणि चालयेत् । एवं भावं नियुञ्जीयात्कुम्भकस्येति लक्षणम् ॥",
+"page_index": 168,
+"confidence": "low",
+"note": "First words of the first line (printed like मोच्छ्रसेज्ञ च निश्वसेदेव) unclear; reading approximate. Starts p.168, ends p.169."
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "15",
+"printed_numbers": [
+"15"
+],
+"text": "अन्धवत्पश्य रूपाणि शब्दं बधिरवच्छृणु । काष्ठवत्पश्य वै देहं प्रशान्तस्येति लक्षणम् ॥",
+"page_index": 169,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "16",
+"printed_numbers": [
+"16"
+],
+"text": "मनः संकल्पकं ध्यात्वा संक्षिप्यात्मनि बुद्धिमान् । धारयित्वा तथात्मानं धारणा परिकीर्तिता ॥",
+"page_index": 169,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "17",
+"printed_numbers": [
+"17"
+],
+"text": "आगमस्याविरोधेन ऊहनं तर्क उच्यते । समं मन्वेत यल्लब्ध्वा स समाधिः प्रकीर्तितः ॥",
+"page_index": 169,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "18",
+"printed_numbers": [
+"18"
+],
+"text": "भूमौ दर्भासने रम्ये सर्वदोषविवर्जिते । कृत्वा मनोमयीमृक्षां जप्त्वा वै रथमण्डले ॥",
+"page_index": 169,
+"confidence": "medium",
+"note": "मृक्षां and जप्त्वा uncertain."
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "19",
+"printed_numbers": [
+"19"
+],
+"text": "पद्मकं स्वस्तिकं वापि भद्रासनमथापि वा । बद्ध्वा योगासनं सम्यगुत्तराभिमुखः स्थितः ॥",
+"page_index": 169,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "20",
+"printed_numbers": [
+"20"
+],
+"text": "नासिकापुटमङ्गुल्या पिधायैकेन मारुतम् । आकृष्य धारयेदग्निं शब्दमेव विचिन्तयेत् ॥",
+"page_index": 169,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "21",
+"printed_numbers": [
+"21"
+],
+"text": "ओमित्येकाक्षरं ब्रह्म ओमित्येतेन रेचयेत् । दिव्यमन्त्रेण बहुधा कुर्यादामलमुक्तये ॥",
+"page_index": 169,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "22",
+"printed_numbers": [
+"22"
+],
+"text": "पश्चाद्ध्यायीत पूर्वोक्तक्रमशो मन्त्रविद्बुधः । स्थूलादिस्थूलसूक्ष्मं च नाभेरूर्ध्वमुपक्रमः ॥",
+"page_index": 169,
+"confidence": "medium",
+"note": "First word read as पश्चाद्ध्यायीत (print looks like पश्चाज्ज्ञायीत)."
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "23",
+"printed_numbers": [
+"23"
+],
+"text": "तिर्यगूर्ध्वमधोदृष्टिं विहाय च महामतिः । स्थिरस्थायी विनिष्कम्पः सदा योगं समभ्यसेत् ॥",
+"page_index": 169,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "24",
+"printed_numbers": [
+"24"
+],
+"text": "नालमात्रविनिष्कम्पो धारणायोजनं तथा । द्वादशमात्रो योगस्तु कालतो नियमः स्मृतः ॥",
+"page_index": 169,
+"confidence": "high",
+"note": "Printed नालमात्र (kept)."
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "25",
+"printed_numbers": [
+"25"
+],
+"text": "अघोषमव्यञ्जनमस्वरं च यत्तालुकण्ठोष्ठमनासिकं च यत् । अरेफजातमुभयोष्मवर्जितं यदक्षरं न क्षरते कथंचित् ॥",
+"page_index": 169,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "26",
+"printed_numbers": [
+"26"
+],
+"text": "येनासौ गच्छते मार्गं प्राणस्तेनाभिगच्छति । अतस्तमभ्यसेन्नित्यं यन्मार्गगमनाय वै ॥",
+"page_index": 169,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "27",
+"printed_numbers": [
+"27"
+],
+"text": "हृद्द्वारं वायुद्वारं च मूर्धि द्वारमथापरम् । मोक्षद्वारं बिलं चैव सुषिरं मण्डलं विदुः ॥",
+"page_index": 169,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "28",
+"printed_numbers": [
+"28"
+],
+"text": "भयं क्रोधमथालस्यमतिस्वप्नातिजागरम् । अत्याहारमनाहारं नित्यं योगी विवर्जयेत् ॥",
+"page_index": 169,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "29",
+"printed_numbers": [
+"29"
+],
+"text": "अनेन विधिना सम्यक्क्षिप्रमभ्यस्यते क्रमात् । स्वयमुत्पद्यते ज्ञानं त्रिभिर्मासैर्न संशयः ॥",
+"page_index": 169,
+"confidence": "medium",
+"note": "सम्यक्क्षिप्रम् uncertain."
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "30",
+"printed_numbers": [
+"30"
+],
+"text": "चतुर्भिः पश्यते देवान्पञ्चभिर्विततक्रमान् । इच्छयाप्नोति कैवल्यं षष्ठे मासि न संशयः ॥",
+"page_index": 169,
+"confidence": "medium",
+"note": "विततक्रमान् uncertain."
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "31",
+"printed_numbers": [
+"31"
+],
+"text": "पार्थिवः पञ्चमात्रस्तु चतुर्मात्रस्तु वारुणः । आग्नेयस्तु त्रिमात्रोऽस्मिन्वायव्यस्तु द्विमात्रकः ॥",
+"page_index": 169,
+"confidence": "medium",
+"note": "त्रिमात्रोऽस्मिन् uncertain (print letters rough)."
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "32",
+"printed_numbers": [
+"32"
+],
+"text": "एकमात्रस्तथाकाशो ह्यमात्रं तु विचिन्तयेत् । संधिं कृत्वा तु मनसा चिन्तयेदात्मनात्मनि ॥",
+"page_index": 169,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "33",
+"printed_numbers": [
+"33"
+],
+"text": "त्रिंशत्पर्वाङ्गुलः प्राणो यत्र प्राणः प्रतिष्ठितः । एष प्राण इति ख्यातो बाह्यप्राणस्य गोचरः ॥",
+"page_index": 169,
+"confidence": "medium",
+"note": "त्रिंशत्पर्वाङ्गुलः uncertain."
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "34",
+"printed_numbers": [
+"34"
+],
+"text": "अशीतिश्च शतं चैव सहस्राणि त्रयोदश । लक्षमेको विनिश्वास अहोरात्रप्रमाणतः ॥",
+"page_index": 169,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "35",
+"printed_numbers": [
+"35"
+],
+"text": "प्राण आद्यो हृदि स्थाने अपानस्तु पुनर्गुदे । समानो नाभिदेशे तु उदानः कण्ठमाश्रितः ॥",
+"page_index": 169,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "36",
+"printed_numbers": [
+"36"
+],
+"text": "व्यानः सर्वेषु चाङ्गेषु व्याप्य तिष्ठति सर्वदा । अथ वर्णास्तु पञ्चानां प्राणादीनामनुक्रमात् ॥",
+"page_index": 169,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "37",
+"printed_numbers": [
+"37"
+],
+"text": "रक्तवर्णो मणिप्रख्यः प्राणवायुः प्रकीर्तितः । अपानस्तस्य मध्ये तु इन्द्रगोपसमप्रभः ॥",
+"page_index": 169,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "38",
+"printed_numbers": [
+"38"
+],
+"text": "समानस्तु द्वयोर्मध्ये गोक्षीरधवलप्रभः । आपाण्डर उदानश्च व्यानो ह्यर्चिःसमप्रभः ॥",
+"page_index": 169,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "39",
+"printed_numbers": [
+"39"
+],
+"text": "यस्येदं मण्डलं भित्त्वा मारुतो याति मूर्धनि । यत्र यत्र म्रियेद्वापि न स भूयोऽभिजायते न स भूयोऽभिजायत इत्युपनिषत् ॥",
+"page_index": 169,
+"confidence": "medium",
+"note": "Starts p.169 (last word before the page break unclear, read भित्त्वा), ends p.170."
+},
+{
+"work": "amritanada-upanishad",
+"hierarchy": [],
+"verse": "shanti",
+"printed_numbers": [],
+"text": "ॐ सह नाववत्विति शान्तिः ॥",
+"page_index": 170,
+"confidence": "high",
+"note": "shanti. Abbreviated closing shanti."
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [],
+"verse": "shanti",
+"printed_numbers": [],
+"text": "अथर्वशिरसामर्थमनर्थप्रोतवाचकम् । सर्वाधारमनाधारं स्वमात्रैपदाक्षरम् ॥",
+"page_index": 170,
+"confidence": "medium",
+"note": "shanti. Opening invocation verse printed under heading, before the shanti."
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [],
+"verse": "shanti",
+"printed_numbers": [],
+"text": "ॐ भद्रं कर्णेभिरिति शान्तिः ॥",
+"page_index": 170,
+"confidence": "high",
+"note": "shanti."
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [],
+"verse": "1",
+"printed_numbers": [
+"1"
+],
+"text": "ॐ देवा ह वै स्वर्गं लोकमायँस्ते रुद्रमपृच्छन्को भवानिति । सोऽब्रवीदहमेकः प्रथममासं वर्तामि च भविष्यामि च नान्यः कश्चिन्मत्तो व्यतिरिक्त इति । सोऽन्तरादन्तरं प्राविशद्दिशश्चान्तरं प्राविशत्सोऽहं नित्यानित्योऽहं व्यक्ताव्यक्तो ब्रह्माब्रह्माहं प्राञ्चः प्रत्यञ्चोऽहं दक्षिणाञ्चः उदञ्चोऽहमधश्चोर्ध्वं चाहं दिशश्च प्रतिदिशश्चाहं पुमानपुमान्स्त्रियश्चाहं गायत्र्यहं सावित्र्यहं त्रिष्टुब्जगत्यनुष्टुप्चाहं छन्दोऽहं गार्हपत्यो दक्षिणाग्निराहवनीयोऽहं सत्योऽहं गौरहं गौर्यहमृगहं यजुरहं सामाहमथर्वाङ्गिरसोऽहं ज्येष्ठोऽहं श्रेष्ठोऽहं वरिष्ठोऽहमापोऽहं तेजोऽहं गुह्योऽहमरण्योऽहमक्षरमहं क्षरमहं पुष्करमहं पवित्रमहमुग्रं च मध्यं च बहिश्च पुरस्ताज्ज्योतिरित्यहमेव सर्वेभ्यो मामेव स सर्वः समां यो मां वेद स सर्वान्देवान्वेद सर्वांश्च वेदान्साङ्गानपि ब्रह्म ब्राह्मणैश्च गां गोभिर्ब्राह्मणान्ब्राह्मणेन हविर्हविषा आयुरायुषा सत्येन सत्यं धर्मेण धर्मं तर्पयामि स्वेन तेजसा । ततो ह वै ते देवा रुद्रमपृच्छन्ते देवा रुद्रमपश्यन् । ते देवा रुद्रमध्यायन् ततो देवा ऊर्ध्वबाहवो रुद्रं स्तुवन्ति",
+"page_index": 170,
+"confidence": "medium",
+"note": "Several words of this long unit uncertain at print resolution (e.g. ब्रह्माब्रह्माहं, गुह्योऽहमरण्योऽहं, समां). Marker ॥ १ ॥."
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "1",
+"printed_numbers": [
+"1"
+],
+"text": "ॐ यो वै रुद्रः स भगवान्यश्च ब्रह्मा तस्मै वै नमोनमः",
+"page_index": 170,
+"confidence": "high",
+"note": "Repetitive formula; mantra 1 begins with ॐ."
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "2",
+"printed_numbers": [
+"2"
+],
+"text": "यो वै रुद्रः स भगवान्यश्च विष्णुस्तस्मै वै नमोनमः",
+"page_index": 170,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "3",
+"printed_numbers": [
+"3"
+],
+"text": "यो वै रुद्रः स भगवान्यश्च स्कन्दस्तस्मै वै नमोनमः",
+"page_index": 170,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "4",
+"printed_numbers": [
+"4"
+],
+"text": "यो वै रुद्रः स भगवान्यश्चेन्द्रस्तस्मै वै नमोनमः",
+"page_index": 170,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "5",
+"printed_numbers": [
+"5"
+],
+"text": "यो वै रुद्रः स भगवान्यश्चाग्निस्तस्मै वै नमोनमः",
+"page_index": 170,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "6",
+"printed_numbers": [
+"6"
+],
+"text": "यो वै रुद्रः स भगवान्यश्च वायुस्तस्मै वै नमोनमः",
+"page_index": 170,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "7",
+"printed_numbers": [
+"7"
+],
+"text": "यो वै रुद्रः स भगवान्यश्च सूर्यस्तस्मै वै नमोनमः",
+"page_index": 170,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "8",
+"printed_numbers": [
+"8"
+],
+"text": "यो वै रुद्रः स भगवान्यश्च सोमस्तस्मै वै नमोनमः",
+"page_index": 170,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "9",
+"printed_numbers": [
+"9"
+],
+"text": "यो वै रुद्रः स भगवान्ये चाष्टौ ग्रहास्तस्मै वै नमोनमः",
+"page_index": 170,
+"confidence": "medium",
+"note": "Middle phrase read from print at moderate zoom."
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "10",
+"printed_numbers": [
+"10"
+],
+"text": "यो वै रुद्रः स भगवान्ये चाष्टौ प्रतिग्रहास्तस्मै वै नमोनमः",
+"page_index": 170,
+"confidence": "medium",
+"note": "Middle phrase read from print at moderate zoom."
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "11",
+"printed_numbers": [
+"11"
+],
+"text": "यो वै रुद्रः स भगवान्यश्च भूस्तस्मै वै नमोनमः",
+"page_index": 170,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "12",
+"printed_numbers": [
+"12"
+],
+"text": "यो वै रुद्रः स भगवान्यश्च भुवस्तस्मै वै नमोनमः",
+"page_index": 170,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "13",
+"printed_numbers": [
+"13"
+],
+"text": "यो वै रुद्रः स भगवान्यश्च स्वस्तस्मै वै नमोनमः",
+"page_index": 170,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "14",
+"printed_numbers": [
+"14"
+],
+"text": "यो वै रुद्रः स भगवान्यश्च महस्तस्मै वै नमोनमः",
+"page_index": 170,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "15",
+"printed_numbers": [
+"15"
+],
+"text": "यो वै रुद्रः स भगवान्या च पृथिवी तस्मै वै नमोनमः",
+"page_index": 171,
+"confidence": "medium",
+"note": "Middle phrase read from print at moderate zoom."
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "16",
+"printed_numbers": [
+"16"
+],
+"text": "यो वै रुद्रः स भगवान्यश्चान्तरिक्षं तस्मै वै नमोनमः",
+"page_index": 171,
+"confidence": "medium",
+"note": "Middle phrase read from print at moderate zoom."
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "17",
+"printed_numbers": [
+"17"
+],
+"text": "यो वै रुद्रः स भगवान्या च द्यौस्तस्मै वै नमोनमः",
+"page_index": 171,
+"confidence": "medium",
+"note": "Middle phrase read from print at moderate zoom."
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "18",
+"printed_numbers": [
+"18"
+],
+"text": "यो वै रुद्रः स भगवान्यश्चापस्तस्मै वै नमोनमः",
+"page_index": 171,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "19",
+"printed_numbers": [
+"19"
+],
+"text": "यो वै रुद्रः स भगवान्यश्च तेजस्तस्मै वै नमोनमः",
+"page_index": 171,
+"confidence": "medium",
+"note": "Middle phrase read from print at moderate zoom."
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "20",
+"printed_numbers": [
+"20"
+],
+"text": "यो वै रुद्रः स भगवान्यश्च कालस्तस्मै वै नमोनमः",
+"page_index": 171,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "21",
+"printed_numbers": [
+"21"
+],
+"text": "यो वै रुद्रः स भगवान्यश्च यमस्तस्मै वै नमोनमः",
+"page_index": 171,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "22",
+"printed_numbers": [
+"22"
+],
+"text": "यो वै रुद्रः स भगवान्यश्च मृत्युस्तस्मै वै नमोनमः",
+"page_index": 171,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "23",
+"printed_numbers": [
+"23"
+],
+"text": "यो वै रुद्रः स भगवान्यश्चामृतं तस्मै वै नमोनमः",
+"page_index": 171,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "24",
+"printed_numbers": [
+"24"
+],
+"text": "यो वै रुद्रः स भगवान्यश्चाकाशं तस्मै वै नमोनमः",
+"page_index": 171,
+"confidence": "medium",
+"note": "Middle phrase read from print at moderate zoom."
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "25",
+"printed_numbers": [
+"25"
+],
+"text": "यो वै रुद्रः स भगवान्यश्च विश्वं तस्मै वै नमोनमः",
+"page_index": 171,
+"confidence": "medium",
+"note": "Middle phrase read from print at moderate zoom."
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "26",
+"printed_numbers": [
+"26"
+],
+"text": "यो वै रुद्रः स भगवान्यश्च स्थूलं तस्मै वै नमोनमः",
+"page_index": 171,
+"confidence": "medium",
+"note": "Middle phrase read from print at moderate zoom."
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "27",
+"printed_numbers": [
+"27"
+],
+"text": "यो वै रुद्रः स भगवान्यश्च सूक्ष्मं तस्मै वै नमोनमः",
+"page_index": 171,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "28",
+"printed_numbers": [
+"28"
+],
+"text": "यो वै रुद्रः स भगवान्यश्च शुक्लं तस्मै वै नमोनमः",
+"page_index": 171,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "29",
+"printed_numbers": [
+"29"
+],
+"text": "यो वै रुद्रः स भगवान्यश्च कृष्णं तस्मै वै नमोनमः",
+"page_index": 171,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "30",
+"printed_numbers": [
+"30"
+],
+"text": "यो वै रुद्रः स भगवान्यश्च कृत्स्नं तस्मै वै नमोनमः",
+"page_index": 171,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "31",
+"printed_numbers": [
+"31"
+],
+"text": "यो वै रुद्रः स भगवान्यश्च सत्यं तस्मै वै नमोनमः",
+"page_index": 171,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [
+[
+"khanda",
+"2"
+]
+],
+"verse": "32",
+"printed_numbers": [
+"32",
+"2"
+],
+"text": "यो वै रुद्रः स भगवान्यश्च सर्वं तस्मै वै नमोनमः",
+"page_index": 171,
+"confidence": "high",
+"note": "Printed ॥ २ ॥ after ॥ ३२ ॥ closes the section of 32 namah-mantras."
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [],
+"verse": "3",
+"printed_numbers": [
+"3"
+],
+"text": "भूस्ते आदिर्मध्यं भुवः स्वस्ते शीर्षं विश्वरूपोऽसि ब्रह्मैकस्त्वं द्विधा त्रिधा वृद्धिस्त्वं शान्तिस्त्वं पुष्टिस्त्वं हुतमहुतं दत्तमदत्तं सर्वमसर्वं विश्वमविश्वं कृतमकृतं परमपरं परायणं च त्वम् । अपाम सोमममृता अभूमागन्म ज्योतिरविदाम देवान् । किं नूनमस्मान्कृणवदरातिः किमु धूर्तिरमृतं मर्त्यस्य । सोमसूर्यपुरस्तात्सूक्ष्मः पुरुषः । सर्वं जगद्धितं वा एतदक्षरं प्राजापत्यं सूक्ष्मं सौम्यं पुरुषं ग्राह्यमग्राह्येण भावं भावेन सौम्यं सौम्येन सूक्ष्मं सूक्ष्मेण वायव्यं वायव्येन ग्रसति स्वेन तेजसा तस्मादुपसंहर्त्रे महाग्रासाय वै नमो नमः । हृदिस्था देवताः सर्वा हृदि प्राणाः प्रतिष्ठिताः । हृदि त्वमसि यो नित्यं तिस्रो मात्राः परस्तु सः । तस्योत्तरतः शिरो दक्षिणतः पादौ य उत्तरतः स ओङ्कारः य ओङ्कारः स प्रणवः यः प्रणवः स सर्वव्यापी यः सर्वव्यापी सोऽनन्तः योऽनन्तस्तत्तारं यत्तारं तत्सूक्ष्मं यत्सूक्ष्मं तच्छुक्लं यच्छुक्लं तद्वैद्युतं यद्वैद्युतं तत्परं ब्रह्म यत्परं ब्रह्म स एकः य एकः स रुद्रः यो रुद्रः स ईशानः य ईशानः स भगवान्महेश्वरः",
+"page_index": 171,
+"confidence": "medium",
+"note": "Printed after \"॥ ३२ ॥ २ ॥\"; marker ॥ ३ ॥. Some words uncertain (e.g. सोमममृता, महाग्रासाय)."
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [],
+"verse": "4",
+"printed_numbers": [
+"4"
+],
+"text": "अथ कस्मादुच्यत ओङ्कारो यस्मादुच्चार्यमाण एव प्राणानूर्ध्वमुत्क्रामयति तस्मादुच्यते ओङ्कारः । अथ कस्मादुच्यते प्रणवः यस्मादुच्चार्यमाण एव ऋग्यजुःसामाथर्वाङ्गिरसं ब्रह्म ब्राह्मणेभ्यः प्रणामयति नामयति च तस्मादुच्यते प्रणवः । अथ कस्मादुच्यते सर्वव्यापी यस्मादुच्चार्यमाण एव सर्वाँल्लोकान्व्याप्नोति स्नेहो यथा पल्वलपिण्डमिव शान्तरूपमोतप्रोतमनुप्राप्तो व्यतिषक्तश्च तस्मादुच्यते सर्वव्यापी । अथ कस्मादुच्यतेऽनन्तो यस्मादुच्चार्यमाण एव तिर्यगूर्ध्वमधस्ताच्चास्यान्तो नोपलभ्यते तस्मादुच्यतेऽनन्तः । अथ कस्मादुच्यते तारं यस्मादुच्चार्यमाण एव गर्भजन्मव्याधिजरामरणसंसारमहाभयात्तारयति त्रायते च तस्मादुच्यते तारम् । अथ कस्मादुच्यते शुक्लं यस्मादुच्चार्यमाण एव क्लन्दते क्लामयति च तस्मादुच्यते शुक्लम् । अथ कस्मादुच्यते सूक्ष्मं यस्मादुच्चार्यमाण एव सूक्ष्मो भूत्वा शरीराण्यधितिष्ठति सर्वाणि चाङ्गान्यभिमृशति तस्मादुच्यते सूक्ष्मम् । अथ कस्मादुच्यते वैद्युतं यस्मादुच्चार्यमाण एव व्यक्ते महति तमसि द्योतयति तस्मादुच्यते वैद्युतम् । अथ कस्मादुच्यते परं ब्रह्म यस्मात्परमपरं परायणं च बृहद्बृहत्या बृंहयति तस्मादुच्यते परं ब्रह्म । अथ कस्मादुच्यते एकः यः सर्वान्प्राणान्संभक्ष्य संभक्षणेनाजः संसृजति विसृजति तीर्थमेके व्रजन्ति तीर्थमेके दक्षिणाः प्रत्यञ्च उदञ्चः प्राञ्चोऽभिव्रजन्त्येके तेषां सर्वेषामिह सङ्गतिः । साकं स एको भूतश्चरति प्रजानां तस्मादुच्यत एकः । अथ कस्मादुच्यते रुद्रः यस्माद्ऋषिभिर्नान्यैर्भक्तैर्द्रुतमस्य रूपमुपलभ्यते तस्मादुच्यते रुद्रः । अथ कस्मादुच्यते ईशानः यः सर्वान्देवानीशते ईशानीभिर्जननीभिश्च परमशक्तिभिः । अभि त्वा शूर णोनुमो दुग्धा इव धेनवः । ईशानमस्य जगतः स्वर्दृशमीशानमिन्द्र तस्थुषः इति तस्मादुच्यते ईशानः । अथ कस्मादुच्यते भगवान्महेश्वरः यस्माद्भक्ता ज्ञानेन भजन्त्यनुगृह्णाति च वाचं संसृजति विसृजति च सर्वान्भावान्परित्यज्यात्मज्ञानेन योगैश्वर्येण महति महीयते तस्मादुच्यते भगवान्महेश्वरः । तदेतद्रुद्रचरितम्",
+"page_index": 171,
+"confidence": "medium",
+"note": "Long prose unit; marker ॥ ४ ॥; starts p.171, ends p.172. Several words uncertain at this resolution (e.g. क्लन्दते, णोनुमो, final words)."
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [],
+"verse": "5",
+"printed_numbers": [
+"5"
+],
+"text": "एको ह देवः प्रदिशो नु सर्वाः पूर्वो ह जातः स उ गर्भे अन्तः । स एव जातः स जनिष्यमाणः प्रत्यङ्जनांस्तिष्ठति सर्वतोमुखः । एको रुद्रो न द्वितीयाय तस्थे य इमाँल्लोकानीशत ईशनीभिः । प्रत्यङ्जनांस्तिष्ठति संचुकोचान्तकाले संसृज्य विश्वा भुवनानि गोप्ता । यो योनिं योनिमधितिष्ठत्येको येनेदं सर्वं विचरति सर्वम् । तमीशानं पुरुषं देवमीड्यं निचाय्येमां शान्तिमत्यन्तमेति । क्षमां हित्वा हेतुजालस्य मूलं बुद्ध्वा संचिन्त्य स्थापयित्वा तु रुद्रे । रुद्रमेकत्वमाहुः शाश्वतं वै पुराणमिषमूर्जेन पशवोऽनुनामयन्तं मृत्युपाशान् । तदेतेनाग्निमन्त्रेणाथ चतुर्थेन मात्रेण शान्तिं संसृजन्ति पशुपाशविमोक्षणम् । या सा प्रथमा मात्रा ब्रह्मदेवत्या रक्ता वर्णेन यस्तां ध्यायते नित्यं स गच्छेद्ब्रह्मपदम् । या सा द्वितीया मात्रा विष्णुदेवत्या कृष्णा वर्णेन यस्तां ध्यायते नित्यं स गच्छेद्वैष्णवं पदम् । या सा तृतीया मात्रा ईशानदेवत्या कपिला वर्णेन यस्तां ध्यायते नित्यं स गच्छेदैशानं पदम् । या सार्धचतुर्थी मात्रा सर्वदेवत्याऽव्यक्तीभूता खे विचरति शुद्धा स्फटिकसन्निभा वर्णेन यस्तां ध्यायते नित्यं स गच्छेत्पदमनामयम् । तदेतदुपासीत मुनयो वाग्वदन्ति न तस्य ग्रहणमयं पन्था विहित उत्तरेण येन देवा यान्ति येन पितरो येन ऋषयः परमपरं परायणं चेति । वालाग्रमात्रं हृदयस्य मध्ये विश्वं देवं जातरूपं वरेण्यम् । तमात्मस्थं येऽनुपश्यन्ति धीरास्तेषां शान्तिर्भवति नेतरेषाम् । यस्मिन्क्रोधं यां च तृष्णां क्षमां चाक्षमां हित्वा हेतुजालस्य मूलम् । बुद्ध्वा संचित्य स्थापयित्वा तु रुद्रे रुद्रमेकत्वमाहुः । रुद्रो हि शाश्वतेन वै पुराणेनेषमूर्जेन तपसा नियन्ता । अग्निरिति भस्म वायुरिति भस्म जलमिति भस्म स्थलमिति भस्म व्योमेति भस्म सर्वं ह वा इदं भस्म मन एतानि चक्षूंषि यस्माद्व्रतमिदं पाशुपतं यद्भस्मना अङ्गानि संस्पृशेत्तस्माद्ब्रह्म तदेतत्पाशुपतं पशुपाशविमोक्षणाय",
+"page_index": 172,
+"confidence": "medium",
+"note": "Marker ॥ ५ ॥; starts p.172, ends p.173. Prose/verse mix; many words uncertain at print resolution; medium confidence overall."
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [],
+"verse": "6",
+"printed_numbers": [
+"6"
+],
+"text": "योऽसौ रुद्रो योऽप्स्वन्तर्य ओषधीर्वीरुध आविवेश । य इमा विश्वा भुवनानि चाक्लृपे तस्मै रुद्राय नमोऽस्त्वग्नये । यो रुद्रोऽग्नौ यो रुद्रोऽप्स्वन्तर्यो रुद्र ओषधीर्वीरुध आविवेश । यो रुद्र इमा विश्वा भुवनानि चाक्लृपे तस्मै रुद्राय नमोनमः । यो रुद्रोऽप्सु यो रुद्र ओषधीषु यो रुद्रो वनस्पतिषु । येन रुद्रेण जगदूर्ध्वं धारितं पृथिवी द्विधा त्रिधा धर्ता धारिता नागा येऽन्तरिक्षे तस्मै रुद्राय वै नमोनमः । मूर्धानमस्य संसेव्याप्यथर्वा हृदयं च यत् । मस्तिष्कादूर्ध्वं प्रेरयत्यवमानोऽधिशीर्षतः । तद्वा अथर्वणः शिरो देवकोशः समुज्झितः । तत्प्राणोऽभिरक्षति शिरोऽन्नमथो मनः । न च दिवो देवजनेन गुप्ता न चान्तरिक्षाणि न च भूम इमाः । यस्मिन्निदं सर्वमोतप्रोतं तस्मादन्यन्न परं किंचनास्ति । न तस्मात्पूर्वं न परं तदस्ति न भूतं नोत भव्यं यदासीत् । सहस्रपादेकमूर्धा व्याप्तं स एवेदमावरीवर्ति भूतम् । अक्षरात्संजायते कालः कालाद्व्यापक उच्यते । व्यापको हि भगवान्रुद्रो भोगायमानो यदा शेते रुद्रस्तदा संहार्यते प्रजाः । उच्छ्वासिते तमो भवति तमस आपोऽप्स्वङ्गुल्या मथितं मथितं शिशिरे शिशिरं मथ्यमानं फेनं भवति फेनादण्डं भवत्यण्डाद्ब्रह्मा भवति ब्रह्मणो वायुः वायोरोंकारः ओंकारात्सावित्री सावित्र्या गायत्री गायत्र्या लोका भवन्ति । अर्चयन्ति तपः सत्यं मधु क्षरन्ति यद्ध्रुवम् । एतद्धि परमं तपः । आपो ज्योती रसोऽमृतं ब्रह्म भूर्भुवः स्वरों नम इति",
+"page_index": 173,
+"confidence": "medium",
+"note": "Marker ॥ ६ ॥. Opening words after the ॥ ५ ॥ marker read as योऽसौ रुद्रो (print rough). Medium confidence; long unit."
+},
+{
+"work": "atharvashiras-upanishad",
+"hierarchy": [],
+"verse": "7",
+"printed_numbers": [
+"7"
+],
+"text": "य इदमथर्वशिरो ब्राह्मणोऽधीते अश्रोत्रियः श्रोत्रियो भवति अनुपनीत उपनीतो भवति सोऽग्निपूतो भवति स वायुपूतो भवति स सूर्यपूतो भवति स सोमपूतो भवति स सत्यपूतो भवति स सर्वैर्देवैर्ज्ञातो भवति स सर्वैर्वेदैरनुध्यातो भवति स सर्वेषु तीर्थेषु स्नातो भवति तेन सर्वैः क्रतुभिरिष्टं भवति गायत्र्याः षष्टिसहस्राणि जप्तानि भवन्ति इतिहासपुराणानां रुद्राणां शतसहस्राणि जप्तानि भवन्ति । प्रणवानामयुतं जप्तं भवति । स चक्षुषः पङ्क्तिं पुनाति । आ सप्तमात्पुरुषयुगान्पुनातीत्याह भगवानथर्वशिरः सकृज्जप्त्वैव शुचिः स पूतः कर्मण्यो भवति । द्वितीयं जप्त्वा गणाधिपत्यमवाप्नोति । तृतीयं जप्त्वैवमेवानुप्रविशत्योंसत्यमों सत्यमों सत्यम्",
+"page_index": 173,
+"confidence": "medium",
+"note": "Marker ॥ ७ ॥. Starts p.173, ends p.174. Final words read approximately; ends on p.174 with the marker ॥ ७ ॥ then colophon."
+},
+{
+"work": "atharvashikha-upanishad",
+"hierarchy": [],
+"verse": "shanti",
+"printed_numbers": [],
+"text": "ओंकारार्थतया भात तुर्योंकाराप्रभासुरम् । तुर्यतुर्यत्रिपाद्रामं स्वमात्रं कलयेऽन्वहम् ॥",
+"page_index": 174,
+"confidence": "medium",
+"note": "shanti. Invocation verse printed under heading, before the shanti; several letters uncertain."
+},
+{
+"work": "atharvashikha-upanishad",
+"hierarchy": [],
+"verse": "shanti",
+"printed_numbers": [],
+"text": "ॐ भद्रं कर्णेभिरिति शान्तिः ॥",
+"page_index": 174,
+"confidence": "high",
+"note": "shanti."
+},
+{
+"work": "atharvashikha-upanishad",
+"hierarchy": [],
+"verse": "1",
+"printed_numbers": [
+"1"
+],
+"text": "ॐ अथैनं पैप्पलादोऽङ्गिराः सनत्कुमारश्चाथर्वणमुवाच भगवन्किमादौ प्रयुक्तं ध्यानं ध्यायितव्यं किं तद्ध्यानं को वा ध्याता कश्च ध्येयः । स होवाचाथर्वा प्रत्युवाच । ओमित्येतदक्षरमादौ प्रयुक्तं ध्यानं ध्यायितव्यमित्येतदक्षरं परं ब्रह्मास्य पादाश्चत्वारो वेदाश्चतुष्पादिदमक्षरं परं ब्रह्म । पूर्वास्य मात्रा पृथिव्यकारः ऋग्भिरृग्वेदो ब्रह्मा वसवो गायत्री गार्हपत्यः । द्वितीयान्तरिक्षं स उकारः स यजुर्भिर्यजुर्वेदो विष्णू रुद्रा त्रिष्टुब्दक्षिणाग्निः । तृतीया द्यौः स मकारः स सामभिः सामवेदो रुद्रा आदित्या जगत्याहवनीयः । यावसानेऽस्य चतुर्थार्धमात्रा सा सोमलोक ओंकारः साथर्वणमन्त्रैरथर्ववेदः संवर्तकोऽग्निर्मरुतो विराडेकर्षिर्भास्वती स्मृता । प्रथमा रक्तपीता महद्ब्रह्मदैवत्या । द्वितीया विद्युमती कृष्णा विष्णुदैवत्या । तृतीया शुभाशुभा शुक्ला रुद्रदैवत्या । यावसानेऽस्य चतुर्थार्धमात्रा सा विद्युमती सर्ववर्णा पुरुषदैवत्या । स एष ओंकारश्चतुरक्षरश्चतुष्पादश्चतुःशिरश्चतुर्थमात्रः स्थूलमेतदर्धार्धकृत इति । ॐ ॐ ॐ इति त्रिरुक्त्वा चतुर्थः शान्त आत्माकृतप्रणवप्रयोगेण समस्तमोमिति प्रयुक्तं भारूपज्योतिः सकृदावर्तते सकृदुच्चारितमात्रः स एष ऊर्ध्वमक्रमयतीत्योंकारः । प्राणान्सर्वान्प्रलीयत इति प्रलयः । प्राणान्सर्वान्परमात्मनि प्रणयतीत्येतस्मात्प्रणवः । चतुर्थावस्थित इति सर्वदेववेदयोनिः सर्ववाच्यवस्तु प्रणवात्मकम्",
+"page_index": 174,
+"confidence": "low",
+"note": "Dense prose in rough print; many words uncertain (e.g. 'यजुर्भिर्', 'विष्णू रुद्रा', 'भास्वती', 'भारूपज्योतिः', 'स्थूलमेतदर्धार्धकृत', 'प्रणयतीत्येतस्मात्'). Internal 'ॐ ॐ ॐ' sits after '॥' in print ('॥ ॐ ॐ ॐ इति त्रिरुक्त्वा'); I treated that '॥' as an internal double danda rendered '।'. Starts p.174."
+},
+{
+"work": "atharvashikha-upanishad",
+"hierarchy": [],
+"verse": "2",
+"printed_numbers": [
+"2"
+],
+"text": "देवाश्वति संधत्सां सर्वेभ्यो दुःखभयेभ्यः संतारयनीति तारणात्तारः । सर्वे देवाः संविशन्तीति विष्णुः । सर्वाणि बृंहयतीति ब्रह्मा । सर्वेभ्योऽन्तःस्थानेभ्यो ध्येयेभ्यः प्रदीपवत्प्रकाशयतीति प्रकाशः । प्रकाशेभ्यः सदोमित्यन्तःशरीरं विद्युद्द्योतयति मुहुर्मुहुरिति विद्युद्वत्प्रनीयादिशं दिशं भित्वा सर्वाँल्लोकान्व्याप्नोति व्यापयतीति व्यापनाद्व्यापी महादेवः",
+"page_index": 174,
+"confidence": "low",
+"note": "Rough print; several words uncertain (first words 'देवाश्वति संधत्सां', 'संतारयनीति', 'विद्युद्वत्प्रनीया')."
+},
+{
+"work": "atharvashikha-upanishad",
+"hierarchy": [],
+"verse": "3",
+"printed_numbers": [
+"3"
+],
+"text": "पूर्वास्य मात्रा जागर्ति जागरितं द्वितीया स्वप्नं तृतीया सुषुप्तिश्चतुर्थी तुरीयं मात्रा मात्राः प्रतिमात्रागताः सम्यक्समस्तानपि पादा अयनीति स्वयंप्रकाशः स्वयं ब्रह्म भवनीत्येव सिद्धिकर एतस्माद्ध्यानादौ प्रयुज्यते । सर्वकरणोपसंहारस्वाद्धार्यधारणाद्ब्रह्म तुरीयम् । सर्वकरणानि मनसि संप्रतिष्ठाप्य ध्यानं विष्णुः प्राणं मनसि सह करणैः संप्रतिष्ठाप्य ध्याता रुद्रः प्राणं मनसि सहकरणैर्नादान्ते परमात्मनि संप्रतिष्ठाप्य ध्यायीतेशानं प्रध्यायितव्यं सर्वमिदं ब्रह्मविष्णुरुद्रेन्द्रास्ते संप्रसूयन्ते सर्वाणि चेन्द्रियाणि सह भूतैर्न कारणं कारणानां ध्याता कारणं तु ध्येयः सर्वैश्वर्यसंपन्नः सर्वेश्वरः शंभुराकाशमध्ये ध्रुवं स्वल्पाधिकं क्षणमेकं क्रतुशतस्यापि चतुःसत्या यत्फलं तदवाप्नोति कृत्स्नमोंकारगतिं च सर्वध्यानयोगज्ञानानां यत्फलमोंकारो वेद परमीशो वा शिव एको ध्येयः शिवंकरः सर्वमन्यत्परित्यज्य समस्ताथर्वशिखैतामधीत्य द्विजो गर्भवासाद्विमुक्तो विमुच्यत एतामधीत्य द्विजो गर्भवासाद्विमुक्तो विमुच्यत इत्योसत्यमित्युपनिषत्",
+"page_index": 174,
+"confidence": "low",
+"note": "Starts p.174, ends p.175 (marker ॥ ३ ॥). Rough print; uncertain: 'सर्वकरणोपसंहारस्वाद्धार्यधारणाद्', 'स्वल्पाधिकं', 'चतुःसत्या', 'इत्योसत्यमित्युपनिषत्'."
+},
+{
+"work": "atharvashikha-upanishad",
+"hierarchy": [],
+"verse": "shanti",
+"printed_numbers": [],
+"text": "ॐ भद्रं कर्णेभिरिति शान्तिः ॥",
+"page_index": 175,
+"confidence": "high",
+"note": "shanti."
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [],
+"verse": "shanti",
+"printed_numbers": [],
+"text": "वैराग्योत्थभक्तियुक्तब्रह्ममात्रप्रबोधतः । यत्पदं मुनयो यान्ति तत्रपदमहं महः ॥",
+"page_index": 175,
+"confidence": "medium",
+"note": "shanti. Invocation verse printed under heading, before the shanti."
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [],
+"verse": "shanti",
+"printed_numbers": [],
+"text": "ॐ आप्यायन्त्विति शान्तिः ॥",
+"page_index": 175,
+"confidence": "high",
+"note": "shanti."
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [],
+"verse": "",
+"printed_numbers": [],
+"text": "मैत्रायणी कौषीतकी बृहज्जाबालतापनी । कालाग्निरुद्रमैत्रेयी सुबालक्षुरिमन्त्रिका ॥",
+"page_index": 175,
+"confidence": "high",
+"note": "Unnumbered list-verse printed before the first section (names of Upanishads); no printed number; the first line ends with a danda and the verse has no closing double danda in print (given here as printed approximately)."
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"1"
+]
+],
+"verse": "1",
+"printed_numbers": [
+"1"
+],
+"text": "ॐ बृहद्रथो ह वै नाम राजा राज्ये ज्येष्ठं पुत्रं निधापयित्वेदमशाश्वतं मन्यमानः शारीरं वैराग्यमुपेतोऽरण्यं निर्जगाम स तत्र परमं तप आस्थायादित्यमीक्षमाण ऊर्ध्वबाहुस्तिष्ठत्यन्ते सहस्रस्य मुनिरग्निकमाजगामाग्निरिवाधूमकस्तेजसा निर्दहन्निवात्मविद्भगवाञ्छाकायन्य उत्तिष्ठोत्तिष्ठ वरं वृणीष्वेति राजानमब्रवीत्स तस्मै नमस्कृत्योवाच भगवन्नाहमात्मवित्त्वं तत्त्वविच्छृणुमो वयं स त्वं नो ब्रूहीत्येतद्वृत्तं पुरस्ताद्दशक्यं मा पृच्छ प्रश्नमिक्ष्वाकान्यान्कामान्वृणीष्वेति शाकायन्यस्य चरणावभिमृश्यमानो राजेमां गाथां जगाद",
+"page_index": 175,
+"confidence": "medium",
+"note": "Some words uncertain (e.g. 'सहस्रस्य', 'आत्मविद्भगवान्', 'दशक्यं'). Includes opening 'ॐ'."
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"1"
+]
+],
+"verse": "2",
+"printed_numbers": [
+"2"
+],
+"text": "भगवन्नस्थिचर्मस्नायुमज्जामांसशुक्रशोणितश्लेष्माश्रुदूषिते विण्मूत्रवातपित्तकफसंघाते दुर्गन्धे निःसारेऽस्मिञ्छरीरे किं कामोपभोगैः",
+"page_index": 175,
+"confidence": "medium",
+"note": "Reads 'विण्मूत्र' (print rough)."
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"1"
+]
+],
+"verse": "3",
+"printed_numbers": [
+"3"
+],
+"text": "कामक्रोधलोभभयविषादेर्ष्येष्टवियोगानिष्टसंप्रयोगक्षुत्पिपासाजरामृत्युरोगशोकाद्यैरभिहतेऽस्मिञ्छरीरे किं कामोपभोगैः",
+"page_index": 175,
+"confidence": "medium",
+"note": "'विषादेर्ष्येष्ट' uncertain."
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"1"
+]
+],
+"verse": "4",
+"printed_numbers": [
+"4"
+],
+"text": "सर्वं चेदं क्षयिष्णु पश्यामो यथेमे दंशमशकादयस्तृणवनस्पतयोद्भूतप्रध्वंसिनः",
+"page_index": 175,
+"confidence": "medium",
+"note": ""
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"1"
+]
+],
+"verse": "5",
+"printed_numbers": [
+"5"
+],
+"text": "अथ किमेतैर्वा परेऽन्ये महाधनुर्धरा अक्रवर्तिनः केचित्सुद्युम्नभूरिद्युम्नेन्द्रद्युम्नकुवलयाश्वयौवनाश्ववद्धियाश्वाश्वपतिः शशबिन्दुर्हरिश्चन्द्रोऽम्बरीषो ननक्तुर्ययातिरनरण्योऽक्षसेनो मरुत्तभरतप्रभृतयो राजानो मिषतो बन्धुवर्गस्य महतीं श्रियं त्यक्त्वास्माल्लोकादमुं लोकं प्रयान्ति",
+"page_index": 175,
+"confidence": "medium",
+"note": "Starts p.175, ends p.176. Several names uncertain ('कुवलयाश्वयौवनाश्व', 'वद्धियाश्व', 'ननक्तु')."
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"1"
+]
+],
+"verse": "6",
+"printed_numbers": [
+"6"
+],
+"text": "अथ किमेतैर्वापरेऽन्ये गन्धर्वासुरयक्षराक्षसभूतगणपिशाचोरगग्रहादीनां निरोधनं पश्यामः",
+"page_index": 176,
+"confidence": "high",
+"note": ""
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"1"
+]
+],
+"verse": "7",
+"printed_numbers": [
+"7"
+],
+"text": "अथ किमेतैर्वान्यानां शोषणं महार्णवानां शिखरिणां प्रपतनं ध्रुवस्य प्रचलनं स्थानं वा तरूणां निमज्जनं पृथिव्याः स्थानादपसरणं सुराणां सोऽहमित्येतद्विधेऽस्मिन्संसारे किं कामोपभोगैर्यैरेवाश्रितस्यासकृदिहावर्तनं दृश्यत इत्युद्धर्तुमर्हसीत्यन्धोदपानस्थो भेक इवाहमस्मिन्संसारे भगवंस्त्वं नो गतिस्त्वं नो गतिः",
+"page_index": 176,
+"confidence": "medium",
+"note": "Colophon follows: 'इति प्रथमः प्रपाठकः'."
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"2"
+]
+],
+"verse": "1",
+"printed_numbers": [
+"1"
+],
+"text": "अथ भगवाञ्छाकायन्यः सुप्रीतोऽब्रवीद्राजानं महाराज बृहद्रथेक्ष्वाकुवंशध्वजशीर्षमजः कृतकृत्यस्त्वं मरुन्नाम्नो विश्रुतोऽसीयं वा व आत्मा ते कतमो भगवन्वर्ष्म इति तं होवाचेति",
+"page_index": 176,
+"confidence": "medium",
+"note": "Words after 'वंशध्वज' uncertain."
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"2"
+]
+],
+"verse": "2",
+"printed_numbers": [
+"2"
+],
+"text": "य एषो बाह्यावष्टम्भनेनोर्ध्वमुत्क्रान्तो व्यथमानोऽव्यथमानस्तमः प्रणुदत्येष आत्मेत्याह भगवानथ य एष संप्रसादोऽस्माच्छरीरात्समुत्थाय परं ज्योतिरुपसंपद्य स्वेन रूपेणाभिनिष्पद्यत एष आत्मेति होवाचैतदमृतमभयमेतद्ब्रह्मेति",
+"page_index": 176,
+"confidence": "medium",
+"note": ""
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"2"
+]
+],
+"verse": "3",
+"printed_numbers": [
+"3"
+],
+"text": "अथ खल्विय ब्रह्मविद्या सर्वोपनिषद्विद्या वा राजन्नस्माकं भगवता मैत्रेण व्याख्याताहं ते कथयिष्यामीत्यथापहतपाप्मानस्तिग्मतेजस ऊर्ध्वरेतसो वालखिल्या इति श्रूयन्तेऽथ ते प्रजापतिमब्रुवन्भगवञ्छकटमिवाचेतनमिदं शरीरं कस्यैष खल्वीदृशो महिमेन्द्रियभूतस्य येनैतद्विधमिदं चेतनवत्प्रतिष्ठापितं प्रचोदयितास्य को भगवन्नेतदस्माकं ब्रूहीति तान्होवाच",
+"page_index": 176,
+"confidence": "medium",
+"note": "'खल्विय' and 'शकटमिवाचेतनम्' uncertain."
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"2"
+]
+],
+"verse": "4",
+"printed_numbers": [
+"4"
+],
+"text": "यो ह खल्ववाचोपरिस्थः श्रूयते स एव वा एष शुद्धः पूतः शून्यः शान्तोऽप्राणोऽनीशात्मानन्तोऽक्षय्यः स्थिरः शाश्वतोऽजः स्वतन्त्रः स्वे महिम्नि तिष्ठत्यनेनेदं शरीरं चेतनवत्प्रतिष्ठापितं प्रचोदयिता चैषोऽस्येति ते होचुर्भगवन्कथमनेनेदृशेनानिच्छेनैतद्विधमिदं चेतनवत्प्रतिष्ठापितं प्रचोदयिता चैषोऽस्येति कथमिति तान्होवाच",
+"page_index": 176,
+"confidence": "low",
+"note": "Opening words 'यो ह खल्ववाचोपरिस्थः' unclear in the print."
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"2"
+]
+],
+"verse": "5",
+"printed_numbers": [
+"5"
+],
+"text": "स वा एष सूक्ष्मोऽग्राह्योऽदृश्यः पुरुषसंज्ञको बुद्धिपूर्वमिहावर्तनेऽशेन सुप्तस्येव बुद्धिपूर्वं निबोधयत्यथ यो ह खलु वावतस्यांशोऽयं यश्चेतनमात्रः प्रतिपूरुषं क्षेत्रज्ञः संकल्पाध्यवसायाभिमानलिङ्गः प्रजापतिर्विश्वाख्यस्तेन चेतनेनेदं शरीरं चेतनवत्प्रतिष्ठापितं प्रचोदयिता चैषोऽस्येति ते होचुर्भगवन्नीदृशस्य कथमंशेन वर्तनमिति तान्होवाच",
+"page_index": 176,
+"confidence": "medium",
+"note": ""
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"2"
+]
+],
+"verse": "6",
+"printed_numbers": [
+"6"
+],
+"text": "प्रजापतिर्वा एषोऽग्रेऽनिष्ठत्स नारमत स आत्मानमभिध्यायद्बह्वीः प्रजा असृजत ता अस्वात्मप्रबुद्धा अप्राणा स्थाणुरिव तिष्ठमाना अपश्यत्स नारमत सोऽमन्यत तासां प्रतिबोधनायाभ्यन्तरं प्रविशानीत्यथ स वायुमिवात्मानं कृत्वाभ्यन्तरं प्राविशत्स एको नाविशत्स पञ्चधात्मानं प्रविभज्योच्यते यः प्राणोऽपानः समान उदानो व्यान इति",
+"page_index": 176,
+"confidence": "low",
+"note": "Several words uncertain ('अनिष्ठत्', 'अस्वात्मप्रबुद्धा', 'अपश्यत्')."
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"2"
+]
+],
+"verse": "7",
+"printed_numbers": [
+"7"
+],
+"text": "अथ योऽयमूर्ध्वमुत्क्रामतीत्येष वाव स प्राणोऽथ योऽयमवाङ्संक्रामत्येष वाव सोऽपानोऽथ येन स्थविष्ठमन्नधातुमपाने स्थापयत्यणिष्ठं चाङ्गेऽङ्गे समं नयत्येष वाव स समानोऽथ योऽयं पीताशितमुद्गिरति निगिरतीति चैष वाव स उदानोऽथ येनैताः शिरा अनुव्याप्ता एष वाव स व्यानः",
+"page_index": 176,
+"confidence": "medium",
+"note": "Starts p.176, ends p.177."
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"2"
+]
+],
+"verse": "8",
+"printed_numbers": [
+"8"
+],
+"text": "अथोपांशुरन्तर्याम्यभिभवन्त्यन्तर्याममुपांशुमेतयोरन्तराले चाण्वं मासवद्द्रव्यं स पुरुषोऽथ यः पुरुषः सोऽग्निर्वैश्वानरोऽप्यन्यत्राप्युक्तमयमग्निर्वैश्वानरो योऽयमन्तः पुरुषे येनेदमन्नं पच्यते यदिदमद्यते तस्यैष घोषो भवति यदेतत्कर्णावपिधाय शृणोति स यदोत्क्रमिष्यन्भवति नैनं घोषं शृणोति",
+"page_index": 177,
+"confidence": "medium",
+"note": "'चाण्वं मासवद्द्रव्यं' uncertain."
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"2"
+]
+],
+"verse": "9",
+"printed_numbers": [
+"9"
+],
+"text": "स वा एष पञ्चधात्मानं प्रविभज्य निहितो गुहायां मनोमयः प्राणशरीरो बहुरूपः सत्यसंकल्प आत्मेति स वा एषोऽस्य हृदन्तरे निष्पङ्ककृतार्थोऽमन्यताथानसानि तत्त्वानीमानि भित्वोदितः पञ्चभी रश्मिभिर्विषयानत्तीति बुद्धीन्द्रियाणि यानीमान्येवास्य रश्मयः कर्मेन्द्रियाण्यस्य हया रथः शरीरं मनो नियन्ता प्रकृतिमयोऽस्य प्रतोदनेन खल्वीरितं परिभ्रमतीदं शरीरं चक्रमिव मृत्ते स नेदं शरीरं चेतनवत्प्रतिष्ठापितं प्रचोदयिता चैषोऽस्येति",
+"page_index": 177,
+"confidence": "medium",
+"note": "'निष्पङ्ककृतार्थोऽमन्यताथानसानि' and 'यानीमान्येवास्य' uncertain."
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"2"
+]
+],
+"verse": "10",
+"printed_numbers": [
+"10"
+],
+"text": "स वा एष आत्मेत्यद्रो वशं नीत इव मितासितं कर्मफलैरभिभूयमान इव प्रतिशरीरेषु चरत्यव्यक्तत्वात्सूक्ष्मत्वादद‍ृश्यत्वादग्राह्यत्वान्निर्ममत्वाच्चानवस्थोऽकर्ता कर्तेवावस्थित",
+"page_index": 177,
+"confidence": "low",
+"note": "Word after 'आत्मेति' (read 'अद्रो') unclear."
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"2"
+]
+],
+"verse": "11",
+"printed_numbers": [
+"11"
+],
+"text": "स वा एष शुद्धः स्थिरोऽचलश्चालेपोऽव्यग्रो निस्पृहः प्रेक्षकवदवस्थितः स्वस्य चरितभुग्गुणमयेन पटेनात्मानमन्तर्धायावस्थित इत्यवस्थित इति",
+"page_index": 177,
+"confidence": "medium",
+"note": "Followed by colophon 'द्वितीयः प्रपाठकः'."
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"3"
+]
+],
+"verse": "1",
+"printed_numbers": [
+"1"
+],
+"text": "ते होचुर्भगवन्यथैवमस्यात्मनो महिमानं सूचयमीत्यन्यो वा परः कोऽयमात्मा मितासितः कर्मफलैरभिभूयमानः सदसद्योनिमापद्यत इत्यवाचीं वोर्ध्वां वा गतिं द्वन्द्वैरभिभूयमानः परिभ्रमतीति कतम एष इति तान्होवाच",
+"page_index": 177,
+"confidence": "medium",
+"note": "'सूचयमीत्य' as printed."
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"3"
+]
+],
+"verse": "2",
+"printed_numbers": [
+"2"
+],
+"text": "अस्ति खल्वन्योऽपरो भूतात्मा योऽयं मितासितः कर्मफलैरभिभूयमानः सदसद्योनिमापद्यत इत्यवाचीं वोर्ध्वां गतिं द्वन्द्वैरभिभूयमानः परिभ्रमतीत्यस्योपव्याख्यानं पञ्च तन्मात्राणि भूतशब्देनोच्यन्ते पञ्च महाभूतानि भूतशब्देनोच्यन्तेऽथ तेषां यः समुदायः शरीरमित्युक्तमथ यो ह खलु वाव शरीरमित्युक्तं स भूतात्मेत्युक्तमथास्यात्मा बिन्दुरिव पुष्कर इति स वा एषोऽभिभूतः प्राकृतैर्गुणैरित्यतोऽभिभूतस्वात्संमूढत्वं प्रयात्यसंमूढत्वाद्आत्मस्थं प्रभुं भगवन्तं कारयितारं नापश्यद्गुणौघैस्तृप्यमानः कलुषीकृतश्चास्थिरश्चलो लोलुप्यमानः सस्पृहो व्यग्रश्चाभिमानित्वं प्रयात इत्यहं सो ममेदमित्येवं मन्यमानो निबध्नात्यात्मनात्मानं जालेनेव खचरः कृतस्यानुफलैरभिभूयमानः परिभ्रमतीति",
+"page_index": 177,
+"confidence": "medium",
+"note": "Rough print in places ('अथास्यात्मा', 'अभिभूतस्वात्', 'असंमूढत्वाद्'); medium."
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"3"
+]
+],
+"verse": "3",
+"printed_numbers": [
+"3"
+],
+"text": "अथान्यत्राप्युक्तं यः कर्ता सोऽयं वै भूतात्मा करणैः कारयितान्तःपुरुषोऽथ यथाग्निनायःपिण्डो वाभिभूतः कर्तृभिर्हन्यमानो नानात्वमुपैत्येव वाव खल्वसौ भूतात्मान्तःपुरुषेणाभिभूतो गुणैर्हन्यमानो नानात्वमुपैत्यथ यत्त्रिगुणं चतुरशीतिलक्षयोनिपरिणतं भूतत्रिगुणमेतद्धे नानात्वस्य रूपं तानि ह वा इमानि गुणानि पुरुषेणेरितानि चक्रमिव चक्रिणेत्यथ यथायःपिण्डे हन्यमाने नाग्निरभिभूयत्येवं नाभिभूयत्यसौ पुरुषोऽभिभूयत्ययं भूतात्मोपसंश्लिष्टत्वादिति",
+"page_index": 177,
+"confidence": "medium",
+"note": "Starts p.177, ends p.178."
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"3"
+]
+],
+"verse": "4",
+"printed_numbers": [
+"4"
+],
+"text": "अथान्यत्राप्युक्तं शरीरमिदं मैथुनादेवोद्भूतं संविदपेतं निरय एव मूत्रद्वारेण निष्क्रान्तमस्थिभिश्चितं मांसेनानुलिप्तं चर्मणावबद्धं विण्मूत्रपित्तकफमज्जामेदोवसाभिरन्यैश्च मलैर्बहुभिः परिपूर्णं कोश इवावसक्त इति",
+"page_index": 178,
+"confidence": "medium",
+"note": "'विण्मूत्र' read as printed 'त्रिणमूत्र' roughly."
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"3"
+]
+],
+"verse": "5",
+"printed_numbers": [
+"5"
+],
+"text": "अथान्यत्राप्युक्तं संमोहो भयं विषादो निद्रा तन्द्री क्षणो जरा शोकः क्षुत्पिपासा कार्पण्यं क्रोधो नास्तिक्यमज्ञानं मात्सर्यं वैकारुण्यं मूढत्वं निर्लज्जत्वं निकृतत्वमुद्धतत्वमसमत्वमिति तामसान्वितत्वं तृष्णा स्नेहो रागो लोभो हिंसा रतिर्दृष्टिव्यापृतत्वमीर्ष्या कामानवस्थितत्वं चञ्चलत्वं जिहीर्षार्थोपार्जनं मित्रानुग्रहणं परिग्रहावलम्बोऽनिष्टेष्विन्द्रियार्थेषु द्विष्टेष्वभिषङ्ग इति राजसान्वितः परिपूर्णः पुनरभिभूत इत्ययं भूतात्मा तस्मान्नानारूपाण्याप्नोतीत्याप्नोतीति",
+"page_index": 178,
+"confidence": "medium",
+"note": "Rough print; several words uncertain ('तन्द्री', 'निर्लज्जत्वं', 'रतिर्दृष्टि', 'जिहीर्षार्थोपार्जनं'). Followed by colophon 'तृतीयः प्रपाठकः'."
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"4"
+]
+],
+"verse": "1",
+"printed_numbers": [
+"1"
+],
+"text": "ते ह खल्वथोर्ध्वरेतसोऽनिमिषेऽन्योचुर्भगवन्नस्माकं स्वं न शाधि स्वमस्माकं गतिरन्या न विद्यत इत्यस्य कोऽनिर्भुनात्मनो येनेदं हित्वात्मन्येव सायुज्यमुपैति तान्होवाच",
+"page_index": 178,
+"confidence": "low",
+"note": "Line-end/line-start words ('स्वं न', 'कोऽनि…') are poorly legible; low confidence. Prapathaka numbering (4) inferred from the colophon 'तृतीयः प्रपाठकः' before it."
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"4"
+]
+],
+"verse": "2",
+"printed_numbers": [
+"2"
+],
+"text": "अथान्यत्राप्युक्तं महार्णवाग्रमिव निवर्तकमस्य यत्पुराकृतं समुद्रवेलेव दुर्निवारमस्य मृत्योरागमनं भद्रफलमर्यैर्हि पाशः पशुरिव बद्धं बन्धनस्थमिवाम्बानघ्र्यं यमविषयस्थमिव बहुभयावस्थं मदिरोन्मत्त इवामोऽमदिरोन्मत्त पाप्मना गृहीत इव भ्राम्यमाणं महोरगदष्ट इव विषदष्टं महान्धकार इव गगान्धसिन्द्रजालमिव मायामयं स्वप्न इव मिथ्यादर्शनं कदलीगर्भ इवासारं नट इव क्षणवेषं चित्रनित्तिरिव मिथ्यामनोरममित्यथोक्तम् । शब्दस्पर्शादयो येऽर्था अनर्था इव ते स्थिताः । येषां सक्तस्तु भूतात्मा न स्मरेच्च परं पदम्",
+"page_index": 178,
+"confidence": "low",
+"note": "Rough print; several words are conjectural readings (e.g. 'भद्रफलमर्यैर्हि', 'अम्बानघ्र्यं', 'गगान्धसिन्द्रजालमिव'); low confidence. Marker ॥ २ ॥ after 'परं पदम्'. The verse 'शब्दस्पर्शादयो…' is inside the unit."
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"4"
+]
+],
+"verse": "3",
+"printed_numbers": [
+"3"
+],
+"text": "अथ यो वा खल्वस्य प्रतिविधिर्भूतात्मनो यद्येव विद्यागमस्य धर्मस्यानुसरणं स्वाश्रमेष्वेवानुक्रमणं स्वधर्म एव सर्वं धत्ते स्तम्भनात्त्वेतराण्यनेनोर्ध्वं भ्रमन्त्यन्यथाध पतत्येष स्वधर्माभिभूतो यो वेदेषु न स्वधर्मातिक्रमेणाधर्मा भवत्याश्रमेष्वेवावस्थितस्तपस्वी चेत्युच्यत एतदप्युक्तं नातपस्कस्यात्मध्यानेऽधिगमः कर्मशुद्धिर्वेत्येव ह्याह । तपसा प्राप्यते सत्त्वं सत्त्वात्संप्राप्यते मनः । मनसा प्राप्यते त्वात्मा ह्यात्मापत्त्या निवर्तन इति",
+"page_index": 178,
+"confidence": "low",
+"note": "Rough print; low. Marker ॥ ३ ॥."
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"4"
+]
+],
+"verse": "4",
+"printed_numbers": [
+"4"
+],
+"text": "अत्रैते श्लोका भवन्ति । यथा निरिन्धनो वह्निः स्वयोनावुपशाम्यति । तथा वृत्तिक्षयाच्चित्तं स्वयोनावुपशाम्यति ॥ १ ॥ स्वयोनावुपशान्तस्य मनसः सत्यगामिनः । इन्द्रियार्थविमूढस्यानृताः कर्मवशानुगाः ॥ २ ॥ चित्तमेव हि संसारस्तत्प्रयत्नेन शोधयेत् । यच्चित्तस्तन्मयो भवति गुह्यमेतत्सनातनम् ॥ ३ ॥ चित्तस्य हि प्रसादेन हन्ति कर्म शुभाशुभम् । प्रसन्नात्मात्मनि स्थित्वा सुखमव्ययमश्नुते ॥ ४ ॥ समासक्तं यदा चित्तं जन्तोर्विषयगोचरे । यद्येवं ब्रह्मणि स्यात्तत्को न मुच्येत बन्धनात् ॥ ५ ॥ मनो हि द्विविधं प्रोक्तं शुद्धं चाशुद्धमेव च । अशुद्धं कामसंकल्पं शुद्धं कामविवर्जितम् ॥ ६ ॥ लयविक्षेपरहितं मनः कृत्वा सुनिश्चलम् । यदा यात्यमनीभावं तदा तत्परमं पदम् ॥ ७ ॥ तावदेव निरोद्धव्यं हृदि यावत्क्षयं गतम् । एतज्ज्ञानं च मोक्षं च शेषास्तु ग्रन्थविस्तराः ॥ ८ ॥ समाधिनिर्धूतमलस्य चेतसो निवेशितस्यात्मनि यत्सुखं भवेत् । न शक्यते वर्णयितुं गिरा तदा स्वयं तदन्तःकरणेन गृह्यते ॥ ९ ॥ अपामपोऽग्निरग्नौ वा ज्योतिर्व्योम न लक्षयेत् । एवमन्तर्गतं चित्तं पुरुषः प्रतिमुच्यते ॥ १० ॥ मन एव मनुष्याणां कारणं बन्धमोक्षयोः । बन्धाय विषयासक्तं मुक्त्यै निर्विषयं स्मृतम् ॥ ११ ॥ अथ यथेयं कौत्सायनिस्तुतिः । त्वं ब्रह्मा त्वं च वै विष्णुस्त्वं रुद्रस्त्वं प्रजापतिः । त्वमग्निर्वरुणो वायुस्त्वमिन्द्रस्त्वं निशाकरः ॥ १२ ॥ त्वं मनुस्त्वं यमश्च त्वं पृथिवी त्वमथाच्युत । स्वार्थः स्वाभाविकोऽर्थश्च बहुधा तिष्ठसे दिवि ॥ १३ ॥ विश्वेश्वर नमस्तुभ्यं विश्वात्मा विश्वकर्मकृत् । विश्वभुग्विश्वमायश्च विश्वक्रीडारतिः प्रभुः ॥ १४ ॥ नमः शान्तात्मने तुभ्यं नमो गुह्यतमाय च । अचिन्त्यायाप्रमेयाय अनादिनिधनाय चेति ॥ १५ ॥",
+"page_index": 178,
+"confidence": "low",
+"note": "A block of verses with internal verse numbers 1-15 (kept inside the text as printed), closed by the unit marker ॥ ४ ॥. Starts p.178, ends p.179. Several words uncertain (medium-low)."
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"4"
+]
+],
+"verse": "5",
+"printed_numbers": [
+"5"
+],
+"text": "तमो वा इदमेकमासीत्तत्परेणेरितं विषमत्वं प्रयात्येतद्वै रजसो रूपं तद्रजः खल्वीरितं विषमत्वं प्रयात्येतद्वै सत्त्वस्य रूपं तत्सत्त्वमीरितं तस्मात्संप्राप्नवत्सत्त्वांशोऽयं यश्चेतनमात्रः प्रतिपुरुषं क्षेत्रज्ञः संकल्पाध्यवसायाभिमानलिङ्गः प्रजापतिस्तस्य प्रोक्ता अध्यात्मनर्वा ब्रह्मा रुद्रो विष्णुरित्यथ यो ह खलु वावास्य राजसोऽंशोऽस्मा स योऽयं ब्रह्माथ यो ह खलु वावास्य तामसोंऽशोऽस्मा स योऽयं रुद्रोऽथ यो ह खलु वावास्य सात्त्विकोंऽशोऽस्मा स एव विष्णुः स वा एष एकस्त्रिधाभूतोऽष्टधैकादशधा द्वादशधापरिमितधा चोद्भूत उद्भूतत्वाद्भूतेषु चरति प्रतिष्ठा सर्वभूतानामविपर्ययं भूत्वैवमात्मान्तर्बहिश्चान्तर्बहिश्च",
+"page_index": 179,
+"confidence": "low",
+"note": "Rough print; low. Marker ॥ ५ ॥ then 'चतुर्थः प्रपाठकः'."
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"5"
+]
+],
+"verse": "1",
+"printed_numbers": [
+"1"
+],
+"text": "द्विधा वा एष आत्मानं विभज्ययः प्राणो यश्चासावादित्योऽथ द्वा वा एनावात्मानं पञ्चधा नामान्तर्बहिश्चाहोरात्रे तौ व्यावर्तेते असौ वा आदित्यो बहिरात्मान्तरात्मा प्राणो बहिरात्मा गत्यान्तरात्मनानुमीयते । गतिरित्येवं ह्याह यः कश्चिद्विद्वानपहतपाप्माध्यक्षोऽवदातमनास्तस्मिन्नायतचक्षुः सोऽन्तरात्मागत्या बहिरात्मनोऽनुमीयते गतिरित्येव ह्याहाथ य एषोऽन्तरादित्ये हिरण्मयः पुरुषो यः पश्यति मां हिरण्यवत्स एषोऽन्तरे हृत्पुष्कर एवाश्रितोऽन्नमत्ति",
+"page_index": 179,
+"confidence": "medium",
+"note": "'द्विधा वा एष आत्मानं विभज्ययः' printed so ('विभज्य यः'); kept as printed run-together."
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"5"
+]
+],
+"verse": "2",
+"printed_numbers": [
+"2"
+],
+"text": "अथ य एषोऽन्तरे हृत्पुष्कर एवाश्रितोऽन्नमत्ति स एषोऽग्निर्दिवि श्रितः सौरः कालाख्योऽदृश्यः सर्वभूतान्नमत्ति कः पुष्करः किमयं वेद वा तत्पुष्करं योऽयमाकाशोऽस्येमाश्चतस्रो दिशश्चतस्र उपदिशः संध्या अयमर्वाग्गतिः परन एतौ प्राणादित्यावेतानुपासीतोमित्यक्षरेण व्याहृतिभिः सावित्र्या चेति",
+"page_index": 179,
+"confidence": "medium",
+"note": "Starts p.179, ends p.180. 'किमयं वेद वा' as printed."
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"5"
+]
+],
+"verse": "3",
+"printed_numbers": [
+"3"
+],
+"text": "द्वे वाव ब्रह्मणो रूपे मूर्तं चामूर्तं चाथ यन्मूर्तं तदसत्यं यदमूर्तं तत्सत्यं तद्ब्रह्म तज्ज्योतिर्यज्ज्योतिः स आदित्यः स वा एष ओमित्येतदात्मा स त्रेधात्मानं व्यकुरुत ओमिति तिस्रो मात्रा एताभिः सर्वमिदमोतं प्रोतं चैवास्मिन्नित्येवं ह्याहेनद्वा आदित्य ओमित्येवं ध्यायस्तथात्मानं युञ्जीतेति",
+"page_index": 180,
+"confidence": "medium",
+"note": ""
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"5"
+]
+],
+"verse": "4",
+"printed_numbers": [
+"4"
+],
+"text": "अथान्यत्राप्युक्तमथ खलु य उद्गीथः स प्रणवो यः प्रणवः स उद्गीथ इत्यसावादित्य उद्गीथ एव प्रणव इत्येवं ह्याहोद्गीथः प्रणवाख्यं प्रणेतारं नामरूपं विगतनिद्रं विजरमविमृत्युं पुनः पञ्चधा ज्ञेयं निहितं गुहायामित्येव ह्याहोर्ध्वमूलं ह्याब्रह्मशाखमाकाशवाय्वग्न्युदकभूम्यादय एकेनात्मनेदं सर्वं तस्यैतस्य यदसावादित्य ओमित्येतदक्षरस्य चैतस्मादोमित्यनेनैतदुपासीताजस्रमित्येकोऽस्य रसं बोधयीत इत्येव ह्याहैतदेवाक्षरं पुण्यमेतदेवाक्षरं ज्ञात्वा यो यदिच्छति तस्य तत्",
+"page_index": 180,
+"confidence": "low",
+"note": "Rough print in places; low."
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"5"
+]
+],
+"verse": "5",
+"printed_numbers": [
+"5"
+],
+"text": "अथान्यत्राप्युक्तं मनयत्यस्य तनूर्यां ओमिति स्त्रीपुंनपुंसकमिति लिङ्गवत्येषाथाग्निर्वायुरादित्य इति भास्वत्येषाथ रुद्रो विष्णुरित्यधिपतिरित्येषाथ गार्हपत्यो दक्षिणाग्निराहवनीय इति मुखवत्येषाथ ऋग्यजुःसामेति विज्ञानवत्येषाथ भूर्भुवःस्वरिति लोकवत्येषाथ भूतं भव्यं भविष्यदिति कालवत्येषाथ प्राणोऽग्निः सूर्य इति प्रतापवत्येषाथान्नमापश्चन्द्रमा इत्याप्यायनवत्येषाथ बुद्धिर्मनोऽहंकार इति चेतनवत्येषाथ प्राणोऽपानो व्यान इति प्राणवत्येके स्वजामीत्युक्तं ह्याहः प्रमोनार्थिना भवन्तीत्येव ह्याहैतद्वै सत्यकाम परं चापरं च यदोमित्येतदक्षरमिति",
+"page_index": 180,
+"confidence": "low",
+"note": "Rough print; low ('मनयत्यस्य तनूर्यां', 'प्रमोनार्थिना', 'स्वजामीत्युक्तं')."
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"5"
+]
+],
+"verse": "6",
+"printed_numbers": [
+"6"
+],
+"text": "अथ व्यात्तं वा इदमासीन्मलं प्रजापतिमन्तस्तत्त्वा अनुव्याहरद्भूर्भुवःस्वरित्येषा हाथ प्रजापतेः स्वविष्टा तनूर्वा लोकवतीति स्वरित्यस्याः शिरो नाभिर्भुवो भूः पादा आदित्यश्चक्षुरायत्तः पुरुषस्य महतो मात्राश्चक्षुषा ह्ययं मात्राश्चरति मन्यं वै चक्षुर्गक्षणुपस्थितो हि पुरुषः सर्वार्थेषु बदत्येतस्माद्भूर्भुवःस्वरित्युपासीतान्नं हि प्रजापतिर्विश्वात्मा विश्वचक्षुरिवोपासितो भवतीत्येव ह्याहैषा वै प्रजापतिविश्वभृत्तनूर्गतभ्यामिदं सर्वमन्तर्हितमस्मिंश्च सर्वमशेषान्तर्हितेति तस्मादेवोपासीतेति",
+"page_index": 180,
+"confidence": "low",
+"note": "Rough print; low ('मलं', 'स्वविष्टा', 'गक्षणुपस्थितो')."
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"5"
+]
+],
+"verse": "7",
+"printed_numbers": [
+"7"
+],
+"text": "तत्सवितुर्वरेण्यमित्यसौ वा आदित्यः सविता स वा एवं प्रवरणाय आत्मकामेनेत्याहुर्ब्रह्मवादिनोऽथ भर्गो देवस्य धीमहीति सविता वै देवोऽवस्थिता योऽस्य भर्गः कं मंचिन्तयामीत्याहुर्ब्रह्मवादिनोऽथ धियो यो नः प्रचोदयादिति बुद्धयो वै धियस्ता योऽस्माकं प्रचोदयादित्याहुर्ब्रह्मवादिनोऽथ भर्ग इति यो ह वा अस्मिन्नादित्ये निहितस्तारकेऽक्षिणि चैष भर्गाख्यो भाभिर्गतिरस्य हीति भर्गो भर्जति वैष भर्ग इति रुद्रो ब्रह्मवादिनोऽथ भर्ग इति भासयनीमाँल्लोकान्रञ्जयतीमानि भूतानि गच्छत इति गच्छत्यग्निमागच्छत्यसा इमाः प्रजा रकत्वाद्वर्गः शत्रून्सूयमानत्वात्सूर्यः सवनात्सविता दानादादित्यः पावनात्पावमानोऽथायनादादित्य इत्येवं ह्याह खल्वात्मनात्मामृताख्यश्रोता मन्ता गन्ता स्रष्टा नन्दयिता कर्ता वक्ता रसयिता घ्राता स्पर्शयिता च विभुर्विग्रहे सन्निष्टा इत्येवं ह्याहाथ यत्र द्वैतीभूतं विज्ञानं तत्र हि शृणोति पश्यति जिघ्रति रसयते चैव स्पर्शयति सर्वमात्मा जानातीति यत्राद्वैतीभूतं विज्ञानं कार्यकारणनिर्मुक्तं निर्वचनमनौपम्यं निरुपाख्यं किं तदङ्ग वाच्यम्",
+"page_index": 180,
+"confidence": "low",
+"note": "Starts p.180, ends p.181. A black blotch covers the start of the first 2-3 lines of p.181: the words there (after 'भासयनीमाँल्लोका' to 'इमाः प्रजा', incl. 'रञ्जयतीमानि', 'रकत्वाद्वर्गः') are partly lost/conjectural; low confidence. Marker ॥ ७ ॥."
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"5"
+]
+],
+"verse": "8",
+"printed_numbers": [],
+"text": "एष हि खल्वात्मेशानः शंभुर्भवो रुद्रः प्रजापतिर्विश्वसृग्घिरण्यगर्भः सत्यं प्राणो हंसः शान्तो विष्णुर्नारायणोऽर्कः सविता धाता सम्राडिन्द्र इन्दुरिति य एष तपत्यग्निना पिहितः सहस्राक्षेण हिरण्मयेनाण्डेनैष वाव विजिज्ञासितव्योऽन्वेष्टव्यः सर्वभूतेभ्योऽभयं दत्त्वारण्यं गत्वाथ बहिःकृतेन्द्रियार्थान्स्वशरीरादुपलभतेऽधनमिति विश्वरूपं हरिणं जातवेदसं परायणं ज्योतिरेकं तपन्तम् । सहस्ररश्मिः शतधा वर्तमानः प्राणः प्रजानामुदयत्येष सूर्यः ॥",
+"page_index": 181,
+"confidence": "medium",
+"note": "No printed number (the closing section after ॥ ७ ॥; ends with a double danda and 'इति पञ्चमः प्रपाठकः'); numbered 8 by sequence. The final danda sign is kept as printed."
+},
+{
+"work": "maitrayaniya-upanishad",
+"hierarchy": [
+[
+"prapathaka",
+"5"
+]
+],
+"verse": "shanti",
+"printed_numbers": [],
+"text": "ॐ आप्यायन्त्विति शान्तिः ॥",
+"page_index": 181,
+"confidence": "high",
+"note": "shanti."
+}
+]
+}
