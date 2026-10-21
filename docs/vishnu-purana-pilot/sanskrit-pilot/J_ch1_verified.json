@@ -1,0 +1,370 @@
+{
+ "entries": [
+  {
+   "verse": "1",
+   "printed_numbers": [
+    "1"
+   ],
+   "text": "जितं ते पुण्डरीकाक्ष ! नमस्ते विश्वभावन ! । नमस्तेऽस्तु हृषीकेश ! महापुरुषपूर्वज !",
+   "page_index": 14,
+   "confidence": "high",
+   "note": "Printed as invocation verse under heading; closing number ॥ १ ॥ on n14. Mangala verses of the commentator (श्रीविष्णुमाधवं...) are commentary-type and skipped. Exclamation marks kept as printed."
+  },
+  {
+   "verse": "2",
+   "printed_numbers": [
+    "2"
+   ],
+   "text": "सदक्षरं ब्रह्म य ईश्वरः पुमान् गुणोर्मि·सृष्टि·स्थिति·काल·संलयः । प्रधानबुद्ध्यादिजगत्प्रपञ्चसूः स नोऽस्तु विष्णुर्मतिभूतिमुक्तिदः",
+   "page_index": 15,
+   "confidence": "low",
+   "note": "First letter of line 1 looks like स (not य) in the poor print; 'ब्रह्म' glyph blotted; 'गुणोर्मि' medium; middle dots between words as printed; verse continues to n16, number ॥ २ ॥ on n16; 'बुद्ध्यादि' conjunct blurred."
+  },
+  {
+   "verse": "3",
+   "printed_numbers": [
+    "3"
+   ],
+   "text": "प्रणम्य विष्णुं विश्वेशं ब्रह्मादीन् प्रणिपत्य च । गुरुं प्रणम्य वक्ष्यामि पुराणं वेदसम्मितम्",
+   "page_index": 16,
+   "confidence": "medium",
+   "note": "Glyphs blurred (ब्रह्मादीन्, प्रणिपत्य, वेदसम्मितम्)."
+  },
+  {
+   "verse": "4",
+   "printed_numbers": [
+    "4"
+   ],
+   "text": "इतिहासपुराणज्ञं वेदवेदाङ्गपारगम् । धर्मशास्त्रादितत्त्वज्ञं वसिष्ठतनयात्मजम्",
+   "page_index": 17,
+   "confidence": "medium",
+   "note": "Second line blurred."
+  },
+  {
+   "verse": "5",
+   "printed_numbers": [
+    "5"
+   ],
+   "text": "पराशरं मुनिवरं कृतपूर्वाह्णिकक्रियम् । मैत्रेयः परिपप्रच्छ प्रणिपत्याभिवाद्य च",
+   "page_index": 17,
+   "confidence": "medium",
+   "note": "'कृतपूर्वाह्णिक' blurred; ण/न uncertain."
+  },
+  {
+   "verse": "6",
+   "printed_numbers": [
+    "6"
+   ],
+   "text": "त्वत्तो हि वेदाध्ययनमधीतमखिलं गुरो ! । धर्मशास्त्राणि सर्वाणि वेदाङ्गानि यथाक्रमम्",
+   "page_index": 17,
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "verse": "7",
+   "printed_numbers": [
+    "7"
+   ],
+   "text": "त्वत्प्रसादान्मुनिश्रेष्ठ ! मामन्ये नाकृतश्रमम् । वक्ष्यन्ति सर्वशास्त्रेषु प्रायशो येऽपि विद्विषः",
+   "page_index": 17,
+   "confidence": "medium",
+   "note": "'मुनिश्रेष्ठ' printed with comma-like mark; blurred."
+  },
+  {
+   "verse": "8",
+   "printed_numbers": [
+    "8"
+   ],
+   "text": "सोऽहमिच्छामि धर्मज्ञ ! श्रोतुं त्वत्तो यथा जगत् । बभूव, भूयश्च यथा महाभाग ! भविष्यति",
+   "page_index": 18,
+   "confidence": "medium",
+   "note": "Comma after बभूव as printed."
+  },
+  {
+   "verse": "9",
+   "printed_numbers": [
+    "9"
+   ],
+   "text": "यन्मयश्च जगत् ब्रह्मन् ! यतश्चैतच्चराचरम् । लीनमासीत् तथा यत्र, लयमेष्यति यत्र च",
+   "page_index": 18,
+   "confidence": "low",
+   "note": "'यन्मयश्च', 'यतश्चैतत्' and 'लीनमासीत्' glyphs blurred (जगत्/जगद्?)."
+  },
+  {
+   "verse": "10",
+   "printed_numbers": [
+    "10"
+   ],
+   "text": "यत्प्रमाणानि भूतानि, देवादीनाञ्च सम्भवम् । समुद्रपर्वतानाञ्च संस्थानञ्च तथा भुवः",
+   "page_index": 18,
+   "confidence": "medium",
+   "note": "Conjunct 'श्च' vs 'ञ्च' ambiguous in print; transcribed as ञ्च? see note: glyph resembles श्च-like ligature; kept ञ्च."
+  },
+  {
+   "verse": "11",
+   "printed_numbers": [
+    "11"
+   ],
+   "text": "सूर्यादीनाञ्च संस्थानं प्रमाणं मुनिसत्तम ! । देवादीनां तथा वंशान् मनून्, मन्वन्तराणि च",
+   "page_index": 18,
+   "confidence": "medium",
+   "note": "ञ्च/श्च ambiguity as v10; 'मनून्' blurred."
+  },
+  {
+   "verse": "12",
+   "printed_numbers": [
+    "12"
+   ],
+   "text": "कल्पान्, कल्पविकल्पांश्च चतुर्युगविकल्पितान् । कल्पान्तस्य स्वरूपञ्च युगधर्माश्च कृत्स्नशः",
+   "page_index": 18,
+   "confidence": "medium",
+   "note": "ञ्च/श्च ambiguity."
+  },
+  {
+   "verse": "13",
+   "printed_numbers": [
+    "13"
+   ],
+   "text": "देवर्षिपार्थिवानाञ्च चरितं यन्महामुने ! । वेदशाखाप्रणयनं यथावद्व्यासकर्त्तृकम्",
+   "page_index": 18,
+   "confidence": "medium",
+   "note": "'व्यासकर्त्तृकम्' printed with doubled त; blurred."
+  },
+  {
+   "verse": "14",
+   "printed_numbers": [
+    "14"
+   ],
+   "text": "धर्माश्च ब्राह्मणादीनां तथा चाश्रमवासिनाम् । श्रोतुमिच्छाम्यहं सर्वं त्वत्तो वासिष्ठनन्दन !",
+   "page_index": 18,
+   "confidence": "medium",
+   "note": "Blurred first words of each line."
+  },
+  {
+   "verse": "15",
+   "printed_numbers": [
+    "15"
+   ],
+   "text": "ब्रह्मन् ! प्रसादप्रवणं कुरुष्व मयि मानसम् । येनाहमेतज्जानीयां त्वत्प्रसादान्महामुने !",
+   "page_index": 18,
+   "confidence": "medium",
+   "note": "Verse begins at the foot of n18, second line on n19."
+  },
+  {
+   "verse": "15a",
+   "printed_numbers": [],
+   "text": "पराशर उवाच ।",
+   "page_index": 19,
+   "confidence": "high",
+   "note": "Speaker line, unnumbered."
+  },
+  {
+   "verse": "16",
+   "printed_numbers": [
+    "16"
+   ],
+   "text": "पराशर उवाच । साधु मैत्रेय ! धर्मज्ञ ! स्मारितोऽस्मि पुरातनम् । पितुः पिता मे भगवान् वसिष्ठो यदुवाच ह",
+   "page_index": 19,
+   "confidence": "medium",
+   "note": "Initial 'स्मारितो' blurred. [arbiter fix: speaker label पराशर उवाच printed by Calcutta on its own line, added]"
+  },
+  {
+   "verse": "17",
+   "printed_numbers": [
+    "17"
+   ],
+   "text": "विश्वामित्रप्रयुक्तेन रक्षसा भक्षितो मया । श्रुतस्तातस्ततः क्रोधो मैत्रेयासीन्ममातुलः",
+   "page_index": 19,
+   "confidence": "low",
+   "note": "Dot between विश्वामित्र and प्रयुक्तेन as printed (omitted); 'भक्षितो मया' and 'ममातुलः' blurred."
+  },
+  {
+   "verse": "18",
+   "printed_numbers": [
+    "18"
+   ],
+   "text": "ततोऽहं रक्षसां सत्रं विनाशाय समारभम् । भस्मीकृताश्च शतशस्तस्मिन् सत्रे निशाचराः",
+   "page_index": 19,
+   "confidence": "low",
+   "note": "'सत्रं' printed in a व-like form; 'समारभम्' and 'सत्रे' blurred."
+  },
+  {
+   "verse": "19",
+   "printed_numbers": [
+    "19"
+   ],
+   "text": "ततः संक्षीयमाणेषु तेषु रक्षःस्वशेषतः । मामुवाच महाभागो वसिष्ठो मत्पितामहः",
+   "page_index": 19,
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "verse": "20",
+   "printed_numbers": [
+    "20"
+   ],
+   "text": "अलमत्यन्तकोपेन, तात ! मन्युमिमं जहि । राक्षसा नापराध्यन्ति पितुस्ते विहितं तथा",
+   "page_index": 19,
+   "confidence": "low",
+   "note": "'नापराध्यन्ति' ending and 'पितुस्ते' blurred."
+  },
+  {
+   "verse": "21",
+   "printed_numbers": [
+    "21"
+   ],
+   "text": "मूढानामेव भवति क्रोधो ज्ञानवतां कुतः ? । हन्यते तात ! कः केन, यतः स्वकृतभुक् पुमान्",
+   "page_index": 19,
+   "confidence": "medium",
+   "note": "Question mark printed as small mark; 'स्वकृतभुक्' blurred."
+  },
+  {
+   "verse": "22",
+   "printed_numbers": [
+    "22"
+   ],
+   "text": "सञ्चितस्यापि महतो वत्स ! क्लेशेन मानवैः । यशसस्तपसश्चैव क्रोधो नाशकरः परः",
+   "page_index": 19,
+   "confidence": "medium",
+   "note": "[arbiter fix: महता→महतो]"
+  },
+  {
+   "verse": "23",
+   "printed_numbers": [
+    "23"
+   ],
+   "text": "स्वर्गापवर्गव्यासेधकारणं परमर्षयः । वर्जयन्ति सदा क्रोधं तात ! मा तद्वशो भव",
+   "page_index": 19,
+   "confidence": "low",
+   "note": "'स्वर्गापवर्गव्यासेधकारणं' very blurred (first letter, व्यासेध)."
+  },
+  {
+   "verse": "24",
+   "printed_numbers": [
+    "24"
+   ],
+   "text": "अलं निशाचरैर्दग्धैर्दीनैरनपकारिभिः । सत्रं ते विरमत्वेतत्, क्षमासारा हि साधवः",
+   "page_index": 20,
+   "confidence": "medium",
+   "note": "First line is last line of n19; 'सत्रं' printed in a व-like form (same as v18); 'क्षमासारा' initial blurred."
+  },
+  {
+   "verse": "25",
+   "printed_numbers": [
+    "25"
+   ],
+   "text": "एवं तातेन तेनाहमनुनीतो महात्मना । उपसंहृतवान् सत्रं सद्यस्तद्वाक्यगौरवात्",
+   "page_index": 20,
+   "confidence": "medium",
+   "note": "'सत्रं' व-like glyph; 'उपसंहृतवान्' blurred."
+  },
+  {
+   "verse": "26",
+   "printed_numbers": [
+    "26"
+   ],
+   "text": "ततः प्रीतः स भगवान् वसिष्ठो मुनिसत्तमः । संप्राप्तश्च तदा तत्र पुलस्त्यो ब्रह्मणः सुतः",
+   "page_index": 20,
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "verse": "27",
+   "printed_numbers": [
+    "27"
+   ],
+   "text": "पितामहेन दत्तार्घ्यः कृतासनपरिग्रहः । मामुवाच महाभागो मैत्रेय ! पुलहाग्रजः",
+   "page_index": 20,
+   "confidence": "medium",
+   "note": "Number glyph blurred (२७)."
+  },
+  {
+   "verse": "28",
+   "printed_numbers": [
+    "28"
+   ],
+   "text": "वैरे महति यद्वाक्याद् गुरोरस्थायिता क्षमा । त्वया तस्मात् समस्तानि भवान् शास्त्राणि वेत्स्यति",
+   "page_index": 20,
+   "confidence": "low",
+   "note": "Number printed blurred (read as २८); 'गुरोरस्थायिता' and 'वैरे' blurred."
+  },
+  {
+   "verse": "29",
+   "printed_numbers": [
+    "29"
+   ],
+   "text": "सन्ततेः मम च्छेदः क्रुद्धेनापि यतः कृतः । त्वया तस्मान्महाभाग ! ददाम्यन्यं महावरम्",
+   "page_index": 20,
+   "confidence": "low",
+   "note": "Printed number glyph looks like २८/२९ (blurred); 29 follows the sequence; 'सन्ततेः' and 'क्रुद्धेन' blurred."
+  },
+  {
+   "verse": "30",
+   "printed_numbers": [
+    "30"
+   ],
+   "text": "पुराणसंहिताकर्ता भवान् वत्स ! भविष्यति । देवतापरमार्थश्च यथावद् वेत्स्यते भवान्",
+   "page_index": 20,
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "verse": "31",
+   "printed_numbers": [
+    "31"
+   ],
+   "text": "प्रवृत्ते च निवृत्ते च कर्मण्यस्त्वमला मतिः । मत्प्रसादादसन्दिग्धा तव वत्स ! भविष्यति",
+   "page_index": 20,
+   "confidence": "low",
+   "note": "'कर्मण्यस्त्वमला' unclear glyphs; number glyph blurred (३१)."
+  },
+  {
+   "verse": "32",
+   "printed_numbers": [
+    "32"
+   ],
+   "text": "ततश्च भगवान् प्राह वसिष्ठो मत्पितामहः । पुलस्त्येन यदुक्तं ते सर्वमेतद्भविष्यति",
+   "page_index": 20,
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "verse": "33",
+   "printed_numbers": [
+    "33"
+   ],
+   "text": "इति पूर्वं वसिष्ठेन पुलस्त्येन च धीमता । यदुक्तं, तत् स्मृतिं यातं त्वत्प्रश्नादखिलं मम",
+   "page_index": 20,
+   "confidence": "medium",
+   "note": "'यदुक्तं' blurred."
+  },
+  {
+   "verse": "34",
+   "printed_numbers": [
+    "34"
+   ],
+   "text": "सोऽहं वदाम्यशेषं ते मैत्रेय ! परिपृच्छते । पुराणसंहितां सम्यक् तां निबोध यथातथम्",
+   "page_index": 21,
+   "confidence": "low",
+   "note": "Last word looks like 'यथायथम्'/'यथातथम्', blurred; 'वदाम्यशेषं' blurred."
+  },
+  {
+   "verse": "35",
+   "printed_numbers": [
+    "35"
+   ],
+   "text": "विष्णोः सकाशात् सम्भूतं जगत् तत्रैव संस्थितम् । स्थितिसंयमकर्त्तासौ जगतोऽस्य जगच्च सः",
+   "page_index": 21,
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "verse": "35a",
+   "printed_numbers": [],
+   "text": "इति श्रीविष्णुपुराणे प्रथमांशे प्रथमोऽध्यायः ।",
+   "page_index": 21,
+   "confidence": "medium",
+   "note": "Colophon line; 'प्रथमांशे' blurred (task wording was प्रथमेंशे)."
+  }
+ ]
+}

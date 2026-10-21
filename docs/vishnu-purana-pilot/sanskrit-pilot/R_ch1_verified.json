@@ -1,0 +1,362 @@
+{
+ "entries": [
+  {
+   "verse": "1",
+   "printed_numbers": [
+    "1"
+   ],
+   "text": "ॐ नमोभगवतेवासुदेवाय । जितंतेपुंडरीकाक्षनमस्तेविश्वभावन । नमस्तेऽस्तुहृषीकेशमहापुरुषपूर्वज",
+   "page_index": 5,
+   "confidence": "high",
+   "note": "Mangala verse; printed number continues into chapter text. Print has almost no word spaces; spaces here follow visible gaps."
+  },
+  {
+   "verse": "2",
+   "printed_numbers": [
+    "2"
+   ],
+   "text": "सदक्षरं ब्रह्मयईश्वरःपुमान्गुणोर्मिसृष्टिस्थितिकालसंलयः । प्रधानबुद्ध्यादिजगत्प्रपंचसूःसनोऽस्तुविष्णुर्मतिभूतिमुक्तिदः",
+   "page_index": 5,
+   "confidence": "medium",
+   "note": "Mangala verse 2; 'ब्रह्मयईश्वरः' and 'गुणोर्मि' as printed (first pada begins with 'सदक्षरं' at end of line 1)"
+  },
+  {
+   "verse": "3",
+   "printed_numbers": [
+    "3"
+   ],
+   "text": "प्रणम्यविष्णुंविश्वेशब्रह्मादीन्प्रणिपत्यच । गुरुंप्रणम्यवक्ष्यामिपुराणंवेदसंमितम्",
+   "page_index": 6,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "4",
+   "printed_numbers": [
+    "4"
+   ],
+   "text": "इतिहासपुराणज्ञंवेदवेदांगपारगम् । धर्मशास्त्रादितत्त्वज्ञंवसिष्ठतनयात्मजम्",
+   "page_index": 6,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "5",
+   "printed_numbers": [
+    "5"
+   ],
+   "text": "पराशरंसुखासीनमृषिंमुनिवरोत्तमं । मैत्रेयःपरिपप्रच्छप्रणिपत्याभिवाद्यच",
+   "page_index": 6,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "6",
+   "printed_numbers": [
+    "6"
+   ],
+   "text": "त्वत्तोहिवेदाध्ययनमधीतमखिलंगुरो । धर्मशास्त्राणिसर्वाणिवेदांगानियथाक्रमम्",
+   "page_index": 6,
+   "confidence": "medium",
+   "note": "initial glyph looks like 'ल्व' in this font, read as त्व"
+  },
+  {
+   "verse": "7",
+   "printed_numbers": [
+    "7"
+   ],
+   "text": "त्वत्प्रसादान्मुनिश्रेष्ठमयाधीतंश्रमःकृतः । वक्ष्यंतेसर्वशास्त्रेषुप्रायशोयेपिविद्विषः",
+   "page_index": 6,
+   "confidence": "medium",
+   "note": "initial glyph looks like 'ल्व', read as त्व"
+  },
+  {
+   "verse": "8",
+   "printed_numbers": [
+    "8"
+   ],
+   "text": "सोहमिच्छामिधर्मज्ञश्रोतुंत्वत्तोयथाजगत् । बभूवभूयश्चयथामहाभागभविष्यति",
+   "page_index": 6,
+   "confidence": "medium",
+   "note": "'त्वत्तो' read from ल्व-like glyph"
+  },
+  {
+   "verse": "9",
+   "printed_numbers": [
+    "9"
+   ],
+   "text": "यन्मयंचजगद्ब्रह्मन्यतश्चैतच्चराचरम् । लीनमासीत्तथायत्रलयमेष्यतियत्रच",
+   "page_index": 6,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "10",
+   "printed_numbers": [
+    "10"
+   ],
+   "text": "यत्प्रमाणानिभूतानिदेवादीनांचसंभवम् । समुद्रपर्वतानांचसंस्थानंचतथाभुवः",
+   "page_index": 7,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "11",
+   "printed_numbers": [
+    "11"
+   ],
+   "text": "सूर्यादीनांचसंस्थानंप्रमाणंमुनिसत्तम । देवादीनांतथावंशान्मनून्मन्वंतराणिच",
+   "page_index": 7,
+   "confidence": "high",
+   "note": "[arbiter fix: वंशान्मन्वंतराणि→वंशान्मनून्मन्वंतराणि]"
+  },
+  {
+   "verse": "12",
+   "printed_numbers": [
+    "12"
+   ],
+   "text": "कल्पान्कल्पविकल्पांश्चचतुर्युगविकल्पितान् । कल्पांतस्यस्वरूपंचयुगांतांश्चैवकृत्स्नशः",
+   "page_index": 7,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "13",
+   "printed_numbers": [
+    "13"
+   ],
+   "text": "देवर्षिपार्थिवानांचचरितंयन्महामुने । वेदशाखाप्रणयनंयथावद्व्यासकर्तृकम्",
+   "page_index": 7,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "14",
+   "printed_numbers": [
+    "14"
+   ],
+   "text": "धर्मांश्चब्राह्मणादीनांतथाचाश्रमसंज्ञितान् । श्रोतुमिच्छाम्यहंसर्वंत्वत्तोवासिष्ठनंदन",
+   "page_index": 7,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "15",
+   "printed_numbers": [
+    "15"
+   ],
+   "text": "ब्रह्मन्प्रसादप्रवणंकुरुष्वमयिमानसम् । येनाहमेतज्जानीयांत्वत्प्रसादान्महामुने",
+   "page_index": 7,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "16",
+   "printed_numbers": [
+    "16"
+   ],
+   "text": "पराशरउवाच साधुमैत्रेयधर्मज्ञस्मारितोऽस्मिपुरातनम् । पितुःपितामेभगवान्वसिष्ठोयदुवाचह",
+   "page_index": 7,
+   "confidence": "medium",
+   "note": "'पराशरउवाच' (printed with reddish tint) included at start; 'पितामेभगवान्' as printed"
+  },
+  {
+   "verse": "17",
+   "printed_numbers": [
+    "17"
+   ],
+   "text": "विश्वामित्रप्रयुक्तेनरक्षसाभाक्षितोमया । श्रुतस्तातस्ततःक्रोधोमैत्रेयाभून्ममातुलः",
+   "page_index": 7,
+   "confidence": "medium",
+   "note": "'रक्षसाभाक्षितो' glyph after सा unclear (भ/भा/ऽ?); written as seen"
+  },
+  {
+   "verse": "18",
+   "printed_numbers": [
+    "18"
+   ],
+   "text": "ततोहंरक्षसांसत्रंविनाशायसमारभम् । भस्मीकृताश्चशतशस्तस्मिन्सत्रेनिशाचराः",
+   "page_index": 7,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "19",
+   "printed_numbers": [
+    "19"
+   ],
+   "text": "ततःसंक्षीयमाणेषुतेषुरक्षःस्वशेषतः । मामुवाचमहाभागोवसिष्ठोस्मत्पितामहः",
+   "page_index": 7,
+   "confidence": "medium",
+   "note": "avagraha after 'वसिष्ठो' not clearly seen [arbiter fix: संक्षीयमाणेषुरक्षः→संक्षीयमाणेषुतेषुरक्षः]"
+  },
+  {
+   "verse": "20",
+   "printed_numbers": [
+    "20"
+   ],
+   "text": "अलमत्यंतकोपेनतातमन्युमिमंजहि । राक्षसानापराध्यंतेपितुस्तेविहितंतथा",
+   "page_index": 7,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "21",
+   "printed_numbers": [
+    "21"
+   ],
+   "text": "मूढानामेषभवतिक्रोधोज्ञानवतांकुतः । हन्यतेतातकःकेनयतःस्वकृतभुक्पुमान्",
+   "page_index": 7,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "22",
+   "printed_numbers": [
+    "22"
+   ],
+   "text": "संचितस्यापिमहतोवत्सक्लेशेनमानवैः । यशसस्तपसश्चैवक्रोधोनाशकरःपरः",
+   "page_index": 7,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "23",
+   "printed_numbers": [
+    "23"
+   ],
+   "text": "स्वर्गापवर्गव्यासेधकारणंपरमर्षयः । वर्जयंतिसदाक्रोधंतातमातद्वशोभव",
+   "page_index": 7,
+   "confidence": "medium",
+   "note": "'स्वर्गापवर्ग' + 'व्यासेध' compound glyph slightly unclear; number marker preceded by a slash-like stroke"
+  },
+  {
+   "verse": "24",
+   "printed_numbers": [
+    "24"
+   ],
+   "text": "अलंनिशाचरैर्दग्धैस्तेजसानपकारिभिः । सत्रंतद्विरमत्वेतक्षमासाराहिसाधवः",
+   "page_index": 7,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "25",
+   "printed_numbers": [
+    "25"
+   ],
+   "text": "एवंतातेनतेनाहमनुनीतोमहात्मना । उपसंहृतवान्सत्रंसद्यस्तद्वाक्यगौरवात्",
+   "page_index": 7,
+   "confidence": "high",
+   "note": "[arbiter fix: उपसंहतवान्→उपसंहृतवान्]"
+  },
+  {
+   "verse": "26",
+   "printed_numbers": [
+    "26"
+   ],
+   "text": "ततःप्रीतःसभगवान्वसिष्ठोमुनिसत्तमः । संप्राप्तश्चतदातत्रपुलस्त्योब्रह्मणःसुतः",
+   "page_index": 7,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "27",
+   "printed_numbers": [
+    "27"
+   ],
+   "text": "पितामहेनदत्तार्घःकृतासनपरिग्रहः । मामुवाचमहाभागोमैत्रेयपुलहाग्रजः",
+   "page_index": 7,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "28",
+   "printed_numbers": [
+    "28"
+   ],
+   "text": "वैरेमहतियद्वाक्याद्गुरोरस्याश्रिताक्षमा । त्वयातस्मात्समस्तानिभवान्शास्त्राणिवेत्स्यति",
+   "page_index": 8,
+   "confidence": "medium",
+   "note": "first word 'वैरे' follows verse 27 at page turn; 'त्वया' read from ल्व-like glyph"
+  },
+  {
+   "verse": "29",
+   "printed_numbers": [
+    "29"
+   ],
+   "text": "संततेर्नममच्छेदःक्रुद्धेनापियतःकृतः । त्वयातस्मान्महाभागददाम्यन्यंमहावरम्",
+   "page_index": 8,
+   "confidence": "medium",
+   "note": "'त्वया' ल्व-like glyph"
+  },
+  {
+   "verse": "30",
+   "printed_numbers": [
+    "30"
+   ],
+   "text": "पुराणसंहिताकर्ताभवान्वत्सभविष्यति । देवतापरमार्थंचयथावद्वेत्स्यतेभवान्",
+   "page_index": 8,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "31",
+   "printed_numbers": [
+    "31"
+   ],
+   "text": "प्रवृत्तेचनिवृत्तेचकर्मण्यस्तमलामतिः । मत्प्रसादादसंदिग्धातववत्सभविष्यति",
+   "page_index": 8,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "32",
+   "printed_numbers": [
+    "32"
+   ],
+   "text": "ततःसभगवान्प्राहवसिष्ठोमेपितामहः । पुलस्त्येनयदुक्तंतेसर्वमेतद्भविष्यति",
+   "page_index": 8,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "33",
+   "printed_numbers": [
+    "33"
+   ],
+   "text": "इतिपूर्वंवसिष्ठेनपुलस्त्येनचधीमता । यदुक्तंतत्स्मृतियातंत्वत्प्रश्नादखिलंमम",
+   "page_index": 8,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "34",
+   "printed_numbers": [
+    "34"
+   ],
+   "text": "सोहंवदाम्यशेषंतेमैत्रेयपरिपृच्छते । पुराणसंहितांसम्यक्तांनिबोधयथातथम्",
+   "page_index": 8,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "35",
+   "printed_numbers": [
+    "35"
+   ],
+   "text": "विष्णोःसकाशादुद्भूतंजगदत्रैवचस्थितं । स्थितिसंयमकर्तासौजगतोस्यजगच्चसः",
+   "page_index": 8,
+   "confidence": "medium",
+   "note": "'जगदत्रैव' and 'जगतोस्य' (avagraha?) slightly unclear"
+  },
+  {
+   "verse": "colophon",
+   "printed_numbers": [],
+   "text": "इतिश्रीविष्णुपुराणेप्रथमांशेप्रथमोध्यायः",
+   "page_index": 8,
+   "confidence": "medium",
+   "note": "Colophon as printed (followed by numeral १ and then ch.2 opening, not transcribed); 'प्रथमांशे' read as printed"
+  }
+ ]
+}
