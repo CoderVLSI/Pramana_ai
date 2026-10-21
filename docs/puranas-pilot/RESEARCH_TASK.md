@@ -1,0 +1,13 @@
+# Codex research job: public-domain sources for the 18 Mahapuranas (no scripture text is copied in this job)
+
+Goal: for each Mahapurana, find the best PUBLIC-DOMAIN printed edition(s) we could later transcribe, with page-level provenance and a rights basis. Prefer clear, Latin-script English translations from before 1931 (good machine reading), and note the clearest Sanskrit editions separately. Vishnu Purana is already surveyed (`docs/vishnu-purana-pilot/source-candidates.md`): do not repeat it.
+
+Targets (work ids in `packages/corpus-schema/register.ts`, MAHAPURANA_TARGETS): all except vishnu-purana. Start with the ones most likely to have a clear PD English translation: Markandeya (Pargiter 1904, Bibliotheca Indica; Wortham 1911 on Project Gutenberg #7169 for Books VII-VIII), Agni (M. N. Dutt, Calcutta, c. 1903), Garuda (Wood & Subrahmanyam 1911, Sacred Books of the Hindus; also Dutt 1908), Matsya ("A Taluqdar of Oudh", Sacred Books of the Hindus vol. 17, 1916-17), Bhagavata (M. N. Dutt, Calcutta 1895; check what exists), Brahmavaivarta (Sacred Books of the Hindus), Padma, Narada, Shiva, Linga, Brahmanda, Skanda, Vayu, Varaha, Vamana, Kurma, Brahma, Bhavishya. Verify every candidate yourself; do not rely on this list.
+
+For each work report:
+1. Best English translation candidate(s): exact title page data (translator, publisher, place, year as PRINTED), archive.org item id and URL, image/page count, scan quality (readable? dark? incomplete?), whether the whole Purana or only part is translated, and chapter/verse structure.
+2. Rights: translator's and editor's death years (with a confirmed source and an independent second source where possible; say UNCONFIRMED if one source), first publication year, and a US and India rights conclusion. Exclude modern reprint introductions, notes by later editors, and any platform marks.
+3. Best Sanskrit edition candidate(s) (older editions only, e.g. Venkateshwar Press, Anandashram, Bibliotheca Indica, Jivananda), same fields, plus a note whether the printed type is large and clear (we have found small blurry type unreliable).
+4. A short feasibility verdict: "English first", "Sanskrit possible", "not yet".
+
+Rules: research only. Do NOT copy, quote or commit any scripture text (titles, headings, page numbers and short bibliographic quotes are fine). Do NOT use Gita Press, GRETIL, Sanskrit Documents, Wikisource, or any modern edition as a text source (they may be mentioned as leads only). Do not change apps/, packages/, services/, workflows or secrets. Write one file: `docs/puranas-pilot/source-candidates.md` (a summary table first, then a section per work). Commit and push to the working branch. Report short results only.
