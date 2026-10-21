@@ -223,3 +223,21 @@ test("cloud reader accepts validated public-domain passage IDs", async () => {
     /Invalid scripture passage identifier/,
   );
 });
+
+test("an English-only edition is released as English, spoken from the original, with the translator named", () => {
+  const p: any = provenance();
+  p.manifest.text_language = "en";
+  p.manifest.sources = [{ ...p.manifest.sources[0], author: "Synthetic Translator" }];
+  delete p.translation;
+  const rows = verses().map(({ chapter, verse, original }) => ({ chapter, verse, original }));
+  const prepared = prepareRelease(buildPublicDomainBundle(rows as any, p));
+  const first = prepared.rows[0].passage;
+  assert.equal(first.translation_language, "en");
+  assert.equal(first.quote_source, "original");
+  assert.equal(first.translator, "Synthetic Translator");
+  assert.equal(prepared.rows[0].translation_language, "en");
+  const sanskrit = prepareRelease(buildPublicDomainBundle(verses(), provenance()));
+  assert.equal(sanskrit.rows[0].passage.translation_language, "en"); // translated edition keeps its own language
+  p.manifest.text_language = "fr";
+  assert.throws(() => prepareRelease(buildPublicDomainBundle(rows as any, p)), /text_language/);
+});

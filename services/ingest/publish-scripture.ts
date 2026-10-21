@@ -31,10 +31,14 @@ export function prepareRelease(raw: unknown) {
       source_locator: p.source_locator,
       original: p.original,
       translation: quotation,
-      translator: p.translation?.author ?? "Original source text",
+      translator:
+        p.translation?.author ??
+        (manifest.text_language === "en"
+          ? manifest.sources[0].author
+          : "Original source text"),
       translation_language: p.translation
         ? normalizeSourceLanguage(p.translation.language)
-        : "sa",
+        : (manifest.text_language ?? "sa"),
       keywords: [],
       review_status: "approved",
       ...(manifest.review_method

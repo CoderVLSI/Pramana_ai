@@ -9,6 +9,8 @@ export type VerseInfo = {
   ref: string;
   edition: string;
   aiOnly: boolean;
+  /** "en" for an English-only edition (shown left-aligned in Latin type); default Sanskrit. */
+  language?: string;
 };
 
 export default function VerseCard({
@@ -26,6 +28,7 @@ export default function VerseCard({
     .split("\n")
     .map((l) => l.trim().replace(/\s+(॥|।)/g, "\u00A0$1"))
     .filter(Boolean);
+  const english = v.language === "en";
   return (
     <View
       accessible
@@ -59,7 +62,11 @@ export default function VerseCard({
             backgroundColor: P.saffronSoft,
           }}
         >
-          <Text style={{ fontSize: 20, color: P.saffron }}>ॐ</Text>
+          {english ? (
+            <Ionicons name="book-outline" size={20} color={P.saffron} />
+          ) : (
+            <Text style={{ fontSize: 20, color: P.saffron }}>ॐ</Text>
+          )}
         </View>
         <View style={{ flex: 1 }}>
           <Text style={{ fontSize: 16, fontWeight: "700", color: P.ink }}>
@@ -101,11 +108,11 @@ export default function VerseCard({
             key={i}
             selectable
             style={{
-              fontSize: 21,
-              lineHeight: 34,
-              textAlign: "center",
+              fontSize: english ? 17 : 21,
+              lineHeight: english ? 27 : 34,
+              textAlign: english ? "left" : "center",
               color: P.ink,
-              letterSpacing: 0.2,
+              letterSpacing: english ? 0 : 0.2,
             }}
           >
             {line}

@@ -46,10 +46,14 @@ export async function deviceLibraryRequest(path: string, body?: unknown) {
               .reduce((n, r) => n + r.passage_count, 0),
             status: "Cloud passages · internet required",
             subtitle: releases.some(
-              (r) => r.work_id === w.id && /^gita-open/.test(r.released_in),
+              (r) => r.work_id === w.id && /-en-/.test(r.released_in),
             )
-              ? "Sanskrit text from a public-domain 1909 edition · AI-checked, not yet human-reviewed"
-              : "Gita Press scripture backend",
+              ? "English translation (Wilson, 1840) · AI-transcribed, not yet human-reviewed"
+              : releases.some(
+                    (r) => r.work_id === w.id && /^gita-open/.test(r.released_in),
+                  )
+                ? "Sanskrit text from a public-domain 1909 edition · AI-checked, not yet human-reviewed"
+                : "Gita Press scripture backend",
             editions: releases
               .filter((r) => r.work_id === w.id)
               .map((r) => ({

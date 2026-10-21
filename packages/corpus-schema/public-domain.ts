@@ -56,6 +56,9 @@ export interface PublicDomainBundle {
     review_method?: string;
     human_verse_review?: boolean;
     review_notice?: string;
+    /** Language of the passages' `original` text; defaults to Sanskrit ("sa"). An English-only
+     * edition such as Wilson's 1840 translation declares "en" so the app shows it as English. */
+    text_language?: "sa" | "en";
   };
   passages: SourcePassage[];
 }
@@ -140,6 +143,9 @@ export function validatePublicDomainBundle(
       /^[a-z][a-z -]{0,29}$/.test(
         m.chapter_label,
       )), 'chapter_label must be a short lowercase word such as "valli" or "khanda".');
+  require(m.text_language === undefined ||
+    m.text_language === "sa" ||
+    m.text_language === "en", 'text_language must be "sa" or "en".');
   require(Array.isArray(bundle.passages) &&
     bundle.passages.length > 0, "No passages supplied.");
   require(Number.isInteger(m.expected_passage_count) &&

@@ -189,6 +189,10 @@ function sourcesFrom(result: unknown, name: string): Source[] {
               .filter(Boolean)
               .join(" · "),
             aiOnly: source.human_verse_review === false,
+            ...(source.quote_source === "original" &&
+            source.translation_language === "en"
+              ? { language: "en" }
+              : {}),
           }
         : undefined;
     const scanUrl =
