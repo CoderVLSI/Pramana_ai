@@ -1,0 +1,897 @@
+[
+ {
+  "verse": "R1/J1",
+  "bombay_image": 8,
+  "calcutta_image": 22,
+  "differences": [
+   {
+    "bombay": "पराशरउवाचअविक",
+    "calcutta": "अविक"
+   }
+  ]
+ },
+ {
+  "verse": "R2/J2",
+  "bombay_image": 9,
+  "calcutta_image": 22,
+  "differences": [
+   {
+    "bombay": "रयेशंकराय",
+    "calcutta": "रयेशङ्कराय"
+   },
+   {
+    "bombay": "ित्यंतकार",
+    "calcutta": "ित्यन्तकार"
+   }
+  ]
+ },
+ {
+  "verse": "R3/J3",
+  "bombay_image": 9,
+  "calcutta_image": 23,
+  "differences": [
+   {
+    "bombay": "यक्तरूपाय",
+    "calcutta": "यक्तभूताय"
+   },
+   {
+    "bombay": "्तरूपायवि",
+    "calcutta": "्तभूतायवि"
+   }
+  ]
+ },
+ {
+  "verse": "R4/J4",
+  "bombay_image": 9,
+  "calcutta_image": 23,
+  "differences": [
+   {
+    "bombay": "जगतोयोजग",
+    "calcutta": "जगतोस्यजगन"
+   },
+   {
+    "bombay": "गतोयोजगन्",
+    "calcutta": "ोस्यजगन्"
+   }
+  ]
+ },
+ {
+  "verse": "R6/J6",
+  "bombay_image": 9,
+  "calcutta_image": 23,
+  "differences": [
+   {
+    "bombay": "मत्यंतनिर",
+    "calcutta": "मत्यन्तनिर"
+   },
+   {
+    "bombay": "भ्रांतिदर",
+    "calcutta": "भ्रान्तिदर"
+   }
+  ]
+ },
+ {
+  "verse": "R7/J7",
+  "bombay_image": 9,
+  "calcutta_image": 23,
+  "differences": [
+   {
+    "bombay": "्णुंग्रस",
+    "calcutta": "्णुंर्यसगांव"
+   },
+   {
+    "bombay": "णुंग्रसिष्णुंविश",
+    "calcutta": "्यसगांविश"
+   },
+   {
+    "bombay": "वस्यास्थि",
+    "calcutta": "वस्यस्थि"
+   },
+   {
+    "bombay": "सर्गेतथाप",
+    "calcutta": "सर्गंतथाप"
+   }
+  ]
+ },
+ {
+  "verse": "R9/J9",
+  "bombay_image": 9,
+  "calcutta_image": 23,
+  "differences": [
+   {
+    "bombay": "तैश्चोक्तंपुर",
+    "calcutta": "तेषांपुर"
+   }
+  ]
+ },
+ {
+  "verse": "R10/J10",
+  "bombay_image": 9,
+  "calcutta_image": 24,
+  "differences": [
+   {
+    "bombay": "णांपुरुषः",
+    "calcutta": "णांपरमःप"
+   },
+   {
+    "bombay": "ंपुरुषःपरम",
+    "calcutta": "ांपरमःपरम"
+   }
+  ]
+ },
+ {
+  "verse": "R11/J11",
+  "bombay_image": 9,
+  "calcutta_image": 24,
+  "differences": [
+   {
+    "bombay": "अपक्षयविन",
+    "calcutta": "अपचयविन"
+   }
+  ]
+ },
+ {
+  "verse": "R13/J13",
+  "bombay_image": 10,
+  "calcutta_image": 24,
+  "differences": [
+   {
+    "bombay": "वरूपंचसदा",
+    "calcutta": "वरूपश्चसदा"
+   }
+  ]
+ },
+ {
+  "verse": "R14/J14",
+  "bombay_image": 10,
+  "calcutta_image": 25,
+  "differences": [
+   {
+    "bombay": "तदेवसर्व",
+    "calcutta": "तदेतत्सर्व"
+   },
+   {
+    "bombay": "वमेवैतद्व्",
+    "calcutta": "वमेवासीद्व्"
+   },
+   {
+    "bombay": "्थितश्च",
+    "calcutta": "्थितम्"
+   },
+   {
+    "bombay": "ितश्च",
+    "calcutta": "ितम्"
+   }
+  ]
+ },
+ {
+  "verse": "R15/J15",
+  "bombay_image": 10,
+  "calcutta_image": 25,
+  "differences": [
+   {
+    "bombay": "्रथमेद्वि",
+    "calcutta": "्रथमंद्वि"
+   }
+  ]
+ },
+ {
+  "verse": "R16/J16",
+  "bombay_image": 10,
+  "calcutta_image": 26,
+  "differences": [
+   {
+    "bombay": "ांपरंहिय",
+    "calcutta": "ांपरमंहिय"
+   },
+   {
+    "bombay": "पश्यंतिसू",
+    "calcutta": "पश्यन्तिसू"
+   },
+   {
+    "bombay": "ूरयःसिद्धं",
+    "calcutta": "ूरयःशुद्धं"
+   }
+  ]
+ },
+ {
+  "verse": "R17/J17",
+  "bombay_image": 10,
+  "calcutta_image": 26,
+  "differences": [
+   {
+    "bombay": "यक्तंकालस",
+    "calcutta": "यक्तकाला"
+   },
+   {
+    "bombay": "ंकालस्तु",
+    "calcutta": "तकालास्तु"
+   },
+   {
+    "bombay": "ुप्रतिभाव",
+    "calcutta": "ुप्रविभाग"
+   },
+   {
+    "bombay": "तिभावशःरू",
+    "calcutta": "विभागशःरू"
+   },
+   {
+    "bombay": "र्गांतव्य",
+    "calcutta": "र्गान्तव्य"
+   },
+   {
+    "bombay": "्तिसद्भाव",
+    "calcutta": "्तिसम्भाव"
+   }
+  ]
+ },
+ {
+  "verse": "R22/J22",
+  "bombay_image": 11,
+  "calcutta_image": 27,
+  "differences": [
+   {
+    "bombay": "दोविप्रान",
+    "calcutta": "दोविद्वन्"
+   },
+   {
+    "bombay": "विप्रानियत",
+    "calcutta": "विद्वन्नियत"
+   },
+   {
+    "bombay": "नःपठंतिचै",
+    "calcutta": "नःपठन्तिवै"
+   },
+   {
+    "bombay": "ठंतिचैतमे",
+    "calcutta": "न्तिवैतमे"
+   }
+  ]
+ },
+ {
+  "verse": "R23/J23",
+  "bombay_image": 11,
+  "calcutta_image": 27,
+  "differences": [
+   {
+    "bombay": "नाहोनरा",
+    "calcutta": "नाह्नोनरा"
+   },
+   {
+    "bombay": "िरभून्नच",
+    "calcutta": "िरभूच्चनान्"
+   },
+   {
+    "bombay": "रभून्नचान्य",
+    "calcutta": "च्चनान्य"
+   },
+   {
+    "bombay": "ध्याद्युपलभ",
+    "calcutta": "ध्यानुपलभ"
+   }
+  ]
+ },
+ {
+  "verse": "R24/J24",
+  "bombay_image": 11,
+  "calcutta_image": 28,
+  "differences": [
+   {
+    "bombay": "ेरूपादियत्त",
+    "calcutta": "ेरूपेणयत्त"
+   }
+  ]
+ },
+ {
+  "verse": "R25/J25",
+  "bombay_image": 11,
+  "calcutta_image": 28,
+  "differences": [
+   {
+    "bombay": "कृतौसंस्थि",
+    "calcutta": "कृतौस्थि"
+   },
+   {
+    "bombay": "रतिसंचरः",
+    "calcutta": "रतिसञ्चरः"
+   }
+  ]
+ },
+ {
+  "verse": "R26/J26",
+  "bombay_image": 11,
+  "calcutta_image": 28,
+  "differences": [
+   {
+    "bombay": "लोनांतोस्",
+    "calcutta": "लोनान्तोस्"
+   },
+   {
+    "bombay": "ित्यंतसंय",
+    "calcutta": "ित्यन्तसंय"
+   }
+  ]
+ },
+ {
+  "verse": "R27/J27",
+  "bombay_image": 11,
+  "calcutta_image": 29,
+  "differences": [
+   {
+    "bombay": "वरूपरूपंतद्",
+    "calcutta": "वरूपंतद्"
+   },
+   {
+    "bombay": "ष्णोमैत्",
+    "calcutta": "ष्णोर्मैत्"
+   }
+  ]
+ },
+ {
+  "verse": "R28/J28",
+  "bombay_image": 12,
+  "calcutta_image": 29,
+  "differences": [
+   {
+    "bombay": "त्परमंब्र",
+    "calcutta": "त्परंब्र"
+   }
+  ]
+ },
+ {
+  "verse": "R29/J29",
+  "bombay_image": 12,
+  "calcutta_image": 29,
+  "differences": [
+   {
+    "bombay": "ुरुषंचापि",
+    "calcutta": "ुरुषश्चापि"
+   },
+   {
+    "bombay": "माससंप्रा",
+    "calcutta": "माससम्प्रा"
+   }
+  ]
+ },
+ {
+  "verse": "R30/J30",
+  "bombay_image": 12,
+  "calcutta_image": 29,
+  "differences": [
+   {
+    "bombay": "यथासंनिधि",
+    "calcutta": "यथासन्निधि"
+   },
+   {
+    "bombay": "रेणगंधःक्",
+    "calcutta": "रेणगन्धःक्"
+   }
+  ]
+ },
+ {
+  "verse": "R31/J31",
+  "bombay_image": 12,
+  "calcutta_image": 30,
+  "differences": [
+   {
+    "bombay": "मःससंकोचव",
+    "calcutta": "मःससङ्कोचव"
+   }
+  ]
+ },
+ {
+  "verse": "R32/J32",
+  "bombay_image": 12,
+  "calcutta_image": 30,
+  "differences": [
+   {
+    "bombay": "काराणुस्वर",
+    "calcutta": "कारान्स्वर"
+   },
+   {
+    "bombay": "वरूपश्चब्रह",
+    "calcutta": "वरूपेणब्रह"
+   }
+  ]
+ },
+ {
+  "verse": "R33/J33",
+  "bombay_image": 12,
+  "calcutta_image": 30,
+  "differences": [
+   {
+    "bombay": "णव्यंजनसं",
+    "calcutta": "णव्यञ्जनसम"
+   },
+   {
+    "bombay": "ंजनसंभूति",
+    "calcutta": "्जनसम्भूति"
+   }
+  ]
+ },
+ {
+  "verse": "R34/J34",
+  "bombay_image": 12,
+  "calcutta_image": 30,
+  "differences": [
+   {
+    "bombay": "रधानंतत्त",
+    "calcutta": "रधानतत्त"
+   },
+   {
+    "bombay": "ंमहांतंतत",
+    "calcutta": "ंमहान्तंतत"
+   },
+   {
+    "bombay": "त्सात्वि",
+    "calcutta": "त्सात्त्वि"
+   },
+   {
+    "bombay": "हान्",
+    "calcutta": "हान्प्रधानतत्त्वनसमंत्वचाबीजमिवावृतम्"
+   }
+  ]
+ },
+ {
+  "verse": "R35/J35",
+  "bombay_image": 12,
+  "calcutta_image": 31,
+  "differences": [
+   {
+    "bombay": "प्रधानतत्त्वेनसमंत्वचाबीजमिवावृतम्वैका",
+    "calcutta": "वैका"
+   },
+   {
+    "bombay": "त्रिधोयम",
+    "calcutta": "त्रिविधोयम"
+   },
+   {
+    "bombay": "ोयमहंकारो",
+    "calcutta": "ोयमहङ्कारो"
+   }
+  ]
+ },
+ {
+  "verse": "R36/J36",
+  "bombay_image": 12,
+  "calcutta_image": 31,
+  "differences": [
+   {
+    "bombay": "भूतेंद्रि",
+    "calcutta": "भूतेन्द्रि"
+   }
+  ]
+ },
+ {
+  "verse": "R37/J37",
+  "bombay_image": 12,
+  "calcutta_image": 31,
+  "differences": [
+   {
+    "bombay": "वाणःसर्गंत",
+    "calcutta": "वाणःशब्दतन"
+   },
+   {
+    "bombay": "ःसर्गंतन्म",
+    "calcutta": "ःशब्दतन्म"
+   },
+   {
+    "bombay": "दिःसमावृ",
+    "calcutta": "दिःससमावृ"
+   }
+  ]
+ },
+ {
+  "verse": "R44/J42",
+  "bombay_image": 13,
+  "calcutta_image": 32,
+  "differences": [
+   {
+    "bombay": "ेनशांताना",
+    "calcutta": "ेनशान्ताना"
+   }
+  ]
+ },
+ {
+  "verse": "R45/J43",
+  "bombay_image": 13,
+  "calcutta_image": 32,
+  "differences": [
+   {
+    "bombay": "ोयमहंकारा",
+    "calcutta": "ोयमहङ्कारा"
+   },
+   {
+    "bombay": "सानींद्रि",
+    "calcutta": "सानीन्द्रि"
+   }
+  ]
+ },
+ {
+  "verse": "R46/J44",
+  "bombay_image": 13,
+  "calcutta_image": 32,
+  "differences": [
+   {
+    "bombay": "्रचपंचमम्",
+    "calcutta": "्रचपञ्चमम्"
+   },
+   {
+    "bombay": "मवाप्यर्",
+    "calcutta": "मवाप्त्यर्"
+   }
+  ]
+ },
+ {
+  "verse": "R47/J45",
+  "bombay_image": 13,
+  "calcutta_image": 32,
+  "differences": [
+   {
+    "bombay": "वायूप",
+    "calcutta": "पायूप"
+   },
+   {
+    "bombay": "रेयपंचमीव",
+    "calcutta": "रेयपञ्चमीव"
+   },
+   {
+    "bombay": "क्तिकर्म",
+    "calcutta": "क्तिःकर्म"
+   }
+  ]
+ },
+ {
+  "verse": "R48/J46",
+  "bombay_image": 13,
+  "calcutta_image": 32,
+  "differences": [
+   {
+    "bombay": "रह्मसंयु",
+    "calcutta": "रह्मन्संयु"
+   }
+  ]
+ },
+ {
+  "verse": "R49/J47",
+  "bombay_image": 13,
+  "calcutta_image": 32,
+  "differences": [
+   {
+    "bombay": "शांताघो",
+    "calcutta": "शान्ताघो"
+   }
+  ]
+ },
+ {
+  "verse": "R50/J48",
+  "bombay_image": 13,
+  "calcutta_image": 32,
+  "differences": [
+   {
+    "bombay": "तस्तेसंहत",
+    "calcutta": "तस्तसंहत"
+   }
+  ]
+ },
+ {
+  "verse": "R51/J49",
+  "bombay_image": 14,
+  "calcutta_image": 32,
+  "differences": [
+   {
+    "bombay": "ःएकसंघातल",
+    "calcutta": "ःएकसङ्घातल"
+   },
+   {
+    "bombay": "श्चसंप्रा",
+    "calcutta": "श्चसम्प्रा"
+   }
+  ]
+ },
+ {
+  "verse": "R52/J50",
+  "bombay_image": 14,
+  "calcutta_image": 32,
+  "differences": [
+   {
+    "bombay": "रहेणवामहदा",
+    "calcutta": "रहेणचमहदा"
+   },
+   {
+    "bombay": "हदादयोवि",
+    "calcutta": "हदाद्यावि"
+   },
+   {
+    "bombay": "दादयोविशे",
+    "calcutta": "ाद्याविशे"
+   },
+   {
+    "bombay": "शेषांताह्",
+    "calcutta": "शेषान्ताह्"
+   },
+   {
+    "bombay": "ाह्यंडमुत",
+    "calcutta": "ाह्यण्डमुत"
+   },
+   {
+    "bombay": "पादयंतिते",
+    "calcutta": "पादयन्तिते"
+   }
+  ]
+ },
+ {
+  "verse": "R53/J51",
+  "bombay_image": 14,
+  "calcutta_image": 32,
+  "differences": [
+   {
+    "bombay": "ृद्धंतुजल",
+    "calcutta": "ृद्धस्तुजल"
+   },
+   {
+    "bombay": "भ्योंडंमह",
+    "calcutta": "भ्योण्डंमह"
+   },
+   {
+    "bombay": "ंमहाबुद्ब",
+    "calcutta": "ंमहामुनेब"
+   },
+   {
+    "bombay": "हाबुद्बृहत",
+    "calcutta": "हामुनेबृहत"
+   },
+   {
+    "bombay": "णोःसंस्थान",
+    "calcutta": "णोःस्थान"
+   }
+  ]
+ },
+ {
+  "verse": "R56/J54",
+  "bombay_image": 14,
+  "calcutta_image": 33,
+  "differences": [
+   {
+    "bombay": "ुद्रश्चसज",
+    "calcutta": "ुद्रास्तुस"
+   },
+   {
+    "bombay": "्रश्चसज्य",
+    "calcutta": "रास्तुसज्य"
+   },
+   {
+    "bombay": "िन्नंडेवभ",
+    "calcutta": "िन्नण्डेभव"
+   },
+   {
+    "bombay": "नंडेवभवद्",
+    "calcutta": "ण्डेभवद्"
+   }
+  ]
+ },
+ {
+  "verse": "R57/J55",
+  "bombay_image": 14,
+  "calcutta_image": 33,
+  "differences": [
+   {
+    "bombay": "ारिवन्ह्",
+    "calcutta": "ारिवह्न्यन"
+   },
+   {
+    "bombay": "रिवन्ह्यनि",
+    "calcutta": "वह्न्यनि"
+   },
+   {
+    "bombay": "ुणैरंडंभू",
+    "calcutta": "ुणैरण्डंभू"
+   }
+  ]
+ },
+ {
+  "verse": "R58/J56",
+  "bombay_image": 14,
+  "calcutta_image": 33,
+  "differences": [
+   {
+    "bombay": "रणैरंडंसप",
+    "calcutta": "रणैरण्डंसप"
+   },
+   {
+    "bombay": "ृतम्",
+    "calcutta": "ृतम्नारिकेलफलस्यान्तर्बीजंबाह्यदलैरिव"
+   }
+  ]
+ },
+ {
+  "verse": "R59/J57",
+  "bombay_image": 14,
+  "calcutta_image": 33,
+  "differences": [
+   {
+    "bombay": "नारिकेलफलस्यांतर्बीजंबाह्यदलैरिवजुषत",
+    "calcutta": "जुषन"
+   },
+   {
+    "bombay": "वजुषत्रजो",
+    "calcutta": "जुषन्रजो"
+   },
+   {
+    "bombay": "्टौसंप्रव",
+    "calcutta": "्टौसम्प्रव"
+   }
+  ]
+ },
+ {
+  "verse": "R60/J58",
+  "bombay_image": 14,
+  "calcutta_image": 33,
+  "differences": [
+   {
+    "bombay": "ृष्टंचयात",
+    "calcutta": "ृष्टश्चपात"
+   },
+   {
+    "bombay": "्टंचयात्य",
+    "calcutta": "टश्चपात्य"
+   }
+  ]
+ },
+ {
+  "verse": "R61/J59",
+  "bombay_image": 14,
+  "calcutta_image": 33,
+  "differences": [
+   {
+    "bombay": "ोद्रेकीचक",
+    "calcutta": "ोद्रक्ता"
+   },
+   {
+    "bombay": "्रेकीचकल्",
+    "calcutta": "द्रक्ताचकल्"
+   },
+   {
+    "bombay": "ल्पांतेरु",
+    "calcutta": "ल्पान्तेरु"
+   },
+   {
+    "bombay": "ररूपीजनार",
+    "calcutta": "ररूपोजनार"
+   }
+  ]
+ },
+ {
+  "verse": "R62/J60",
+  "bombay_image": 14,
+  "calcutta_image": 34,
+  "differences": [
+   {
+    "bombay": "संभक्ष",
+    "calcutta": "सभक्ष"
+   },
+   {
+    "bombay": "पर्यंकशयन",
+    "calcutta": "पर्यङ्कशयन"
+   },
+   {
+    "bombay": "शेतेसपरमे",
+    "calcutta": "शेतेचपरमे"
+   },
+   {
+    "bombay": "्वरःप्रबुद्धश्चपुनःसृष्टिंकरोतिब्रह्मरूपधृक्",
+    "calcutta": "्वरः"
+   }
+  ]
+ },
+ {
+  "verse": "R63/J62",
+  "bombay_image": 14,
+  "calcutta_image": 34,
+  "differences": [
+   {
+    "bombay": "ित्यंतकरण",
+    "calcutta": "ित्यन्तकरण"
+   },
+   {
+    "bombay": "गवानेकएवज",
+    "calcutta": "गवान्एकएवज"
+   }
+  ]
+ },
+ {
+  "verse": "R64/J63",
+  "bombay_image": 14,
+  "calcutta_image": 34,
+  "differences": [
+   {
+    "bombay": "तेचांतेसं",
+    "calcutta": "तेचान्तेसं"
+   }
+  ]
+ },
+ {
+  "verse": "R65/J64",
+  "bombay_image": 15,
+  "calcutta_image": 34,
+  "differences": [
+   {
+    "bombay": "र्वेंद्रि",
+    "calcutta": "र्वेन्द्रि"
+   },
+   {
+    "bombay": "रियांतःकर",
+    "calcutta": "रियान्तःकर"
+   }
+  ]
+ },
+ {
+  "verse": "R66/J65",
+  "bombay_image": 15,
+  "calcutta_image": 34,
+  "differences": [
+   {
+    "bombay": "रूपोयतोव्",
+    "calcutta": "रूपोगतोव्"
+   },
+   {
+    "bombay": "स्थमुपकार",
+    "calcutta": "स्थमपकार"
+   }
+  ]
+ },
+ {
+  "verse": "R67/J66",
+  "bombay_image": 15,
+  "calcutta_image": 35,
+  "differences": [
+   {
+    "bombay": "्यतेद्यःब्रह",
+    "calcutta": "्यतेचब्रह"
+   }
+  ]
+ },
+ {
+  "verse": "R39-43/J39-41 (block)",
+  "bombay_image": 13,
+  "calcutta_image": 31,
+  "differences": [
+   {
+    "bombay": "शब्दतन्मात्रंस्पर",
+    "calcutta": "शब्दमात्रंतुस्पर"
+   },
+   {
+    "bombay": "ात्रश्चैववा",
+    "calcutta": "ात्रस्तुवैवाय"
+   },
+   {
+    "bombay": "्चैववायूर",
+    "calcutta": "ुवैवायूर"
+   },
+   {
+    "bombay": "्जहसंभवंत",
+    "calcutta": "्जहसम्भवन्"
+   },
+   {
+    "bombay": "संभवंतिततोंभांस",
+    "calcutta": "म्भवन्तिततोम्भांस"
+   },
+   {
+    "bombay": "णिचांभांस",
+    "calcutta": "णिचाम्भांस"
+   },
+   {
+    "bombay": "निचांभांस",
+    "calcutta": "निचाम्भांस"
+   },
+   {
+    "bombay": "ंसिगंधमात",
+    "calcutta": "ंसिगन्धमात"
+   },
+   {
+    "bombay": "स्यगंधोगु",
+    "calcutta": "स्यगन्धोगु"
+   }
+  ]
+ }
+]

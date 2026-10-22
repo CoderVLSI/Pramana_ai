@@ -1,0 +1,1058 @@
+[
+{
+"verse": "R1/J1",
+"spot": 0,
+"decision": "both_print_same_but_reader_differed",
+"printed_bombay": "पराशर उवाच",
+"printed_calcutta": "पराशर उवाच",
+"note": "Calcutta also prints the 'पराशर उवाच' line (above the verse); Calcutta reader omitted it"
+},
+{
+"verse": "R2/J2",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "शंकराय",
+"printed_calcutta": "शङ्कराय",
+"note": "anusvara vs nasal conjunct"
+},
+{
+"verse": "R2/J2",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "त्यंतकारिणे",
+"printed_calcutta": "त्यन्तकारिणे",
+"note": "anusvara vs न्त"
+},
+{
+"verse": "R3/J3",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "अव्यक्तरूपाय",
+"printed_calcutta": "अव्यक्तभूताय",
+"note": ""
+},
+{
+"verse": "R3/J3",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "व्यक्तरूपाय",
+"printed_calcutta": "व्यक्तभूताय",
+"note": ""
+},
+{
+"verse": "R4/J4",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "जगतोयोजगन्मयः",
+"printed_calcutta": "जगतोऽस्यजगन्मयः",
+"note": ""
+},
+{
+"verse": "R4/J4",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "जगतोयोजगन्मयः",
+"printed_calcutta": "जगतोऽस्यजगन्मयः",
+"note": ""
+},
+{
+"verse": "R6/J6",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "मत्यंतनिर्मलं",
+"printed_calcutta": "मत्यन्तनिर्मलं",
+"note": "anusvara vs न्त"
+},
+{
+"verse": "R6/J6",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "भ्रांतिदर्शनतः",
+"printed_calcutta": "भ्रान्तिदर्शनतः",
+"note": "anusvara vs न्त"
+},
+{
+"verse": "R7/J7",
+"spot": 0,
+"decision": "both_print_same_but_reader_differed",
+"printed_bombay": "विष्णुंग्रसिष्णुं",
+"printed_calcutta": "विष्णुं ग्रसिष्णुं (blurred)",
+"note": "Calcutta word blurred; shapes fit ग्रसिष्णुं, reader's 'र्यसगां' looks like misreading; moderate confidence"
+},
+{
+"verse": "R7/J7",
+"spot": 1,
+"decision": "both_print_same_but_reader_differed",
+"printed_bombay": "ग्रसिष्णुंविश्व",
+"printed_calcutta": "ग्रसिष्णुं विश्व (blurred)",
+"note": "as spot 0"
+},
+{
+"verse": "R7/J7",
+"spot": 2,
+"decision": "editions_differ",
+"printed_bombay": "विश्वस्यास्थिति",
+"printed_calcutta": "विश्वस्य स्थिति",
+"note": "Bombay has ा (स्यास्थि); Calcutta no ā"
+},
+{
+"verse": "R7/J7",
+"spot": 3,
+"decision": "editions_differ",
+"printed_bombay": "सर्गेतथा",
+"printed_calcutta": "सर्गंतथा",
+"note": "Bombay े; Calcutta reph+anusvara"
+},
+{
+"verse": "R9/J9",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "तैश्चोक्तंपुरु",
+"printed_calcutta": "तैषांपुरु",
+"note": "Calcutta तैषां/तेषां"
+},
+{
+"verse": "R10/J10",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "पराणांपुरुषःपरमात्म",
+"printed_calcutta": "पराणांपरमःपरमात्म",
+"note": ""
+},
+{
+"verse": "R10/J10",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "पुरुषःपरमात्म",
+"printed_calcutta": "परमःपरमात्म",
+"note": ""
+},
+{
+"verse": "R11/J11",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "अपक्षयविनाश",
+"printed_calcutta": "अपचयविनाश",
+"note": ""
+},
+{
+"verse": "R13/J13",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "एकस्वरूपंचसदा",
+"printed_calcutta": "एकस्वरूपश्चसदा",
+"note": ""
+},
+{
+"verse": "R14/J14",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "तदेवसर्व",
+"printed_calcutta": "तदेतत्सर्व",
+"note": ""
+},
+{
+"verse": "R14/J14",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "मेवैतद्व्यक्ता",
+"printed_calcutta": "मेवासीद्व्यक्ता",
+"note": ""
+},
+{
+"verse": "R14/J14",
+"spot": 2,
+"decision": "editions_differ",
+"printed_bombay": "स्थितश्च",
+"printed_calcutta": "स्थितम्",
+"note": ""
+},
+{
+"verse": "R14/J14",
+"spot": 3,
+"decision": "editions_differ",
+"printed_bombay": "स्थितश्च",
+"printed_calcutta": "स्थितम्",
+"note": ""
+},
+{
+"verse": "R15/J15",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "प्रथमेद्विज",
+"printed_calcutta": "प्रथमंद्विज",
+"note": ""
+},
+{
+"verse": "R16/J16",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "कालानांपरंहि",
+"printed_calcutta": "कालानांपरमंहि",
+"note": ""
+},
+{
+"verse": "R16/J16",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "पश्यंति",
+"printed_calcutta": "पश्यन्ति",
+"note": "anusvara vs न्ति"
+},
+{
+"verse": "R16/J16",
+"spot": 2,
+"decision": "editions_differ",
+"printed_bombay": "सिद्धं",
+"printed_calcutta": "शुद्धं",
+"note": ""
+},
+{
+"verse": "R17/J17",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "व्यक्तंकालस्तु",
+"printed_calcutta": "व्यक्तकालास्तु",
+"note": ""
+},
+{
+"verse": "R17/J17",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "व्यक्तंकालस्तु",
+"printed_calcutta": "व्यक्तकालास्तु",
+"note": ""
+},
+{
+"verse": "R17/J17",
+"spot": 2,
+"decision": "editions_differ",
+"printed_bombay": "प्रतिभावशः",
+"printed_calcutta": "प्रविभागशः",
+"note": ""
+},
+{
+"verse": "R17/J17",
+"spot": 3,
+"decision": "editions_differ",
+"printed_bombay": "प्रतिभावशः",
+"printed_calcutta": "प्रविभागशः",
+"note": ""
+},
+{
+"verse": "R17/J17",
+"spot": 4,
+"decision": "editions_differ",
+"printed_bombay": "सर्गांतव्यक्ति",
+"printed_calcutta": "सर्गान्तव्यक्ति",
+"note": ""
+},
+{
+"verse": "R17/J17",
+"spot": 5,
+"decision": "editions_differ",
+"printed_bombay": "सद्भावहेतवः",
+"printed_calcutta": "सम्भावहेतवः",
+"note": "Calcutta blurred, reads सम्भाव"
+},
+{
+"verse": "R22/J22",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "विप्रानियता",
+"printed_calcutta": "विद्वन्नियता",
+"note": ""
+},
+{
+"verse": "R22/J22",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "विप्रानियता",
+"printed_calcutta": "विद्वन्नियता",
+"note": ""
+},
+{
+"verse": "R22/J22",
+"spot": 2,
+"decision": "editions_differ",
+"printed_bombay": "पठंतिचैतमे",
+"printed_calcutta": "पठन्तिवैतमे",
+"note": ""
+},
+{
+"verse": "R22/J22",
+"spot": 3,
+"decision": "editions_differ",
+"printed_bombay": "पठंतिचैतमे",
+"printed_calcutta": "पठन्तिवैतमे",
+"note": ""
+},
+{
+"verse": "R23/J23",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "नाहोनरा",
+"printed_calcutta": "नाह्नोनरा",
+"note": "Calcutta ह्नो ligature, slightly blurred"
+},
+{
+"verse": "R23/J23",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "भून्नचान्यत्",
+"printed_calcutta": "भूच्चनान्यत्",
+"note": "Calcutta conjunct blurred"
+},
+{
+"verse": "R23/J23",
+"spot": 2,
+"decision": "editions_differ",
+"printed_bombay": "भून्नचान्यत्",
+"printed_calcutta": "भूच्चनान्यत्",
+"note": "Calcutta conjunct blurred"
+},
+{
+"verse": "R23/J23",
+"spot": 3,
+"decision": "editions_differ",
+"printed_bombay": "बुद्ध्याद्युपलभ्य",
+"printed_calcutta": "बुद्ध्यानुपलभ्य",
+"note": ""
+},
+{
+"verse": "R24/J24",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "रूपादियत्",
+"printed_calcutta": "रूपेणयत्",
+"note": ""
+},
+{
+"verse": "R25/J25",
+"spot": 0,
+"decision": "both_print_same_but_reader_differed",
+"printed_bombay": "संस्थितं",
+"printed_calcutta": "संस्थितं",
+"note": "Calcutta shows anusvara dot above स of 'सं'; reader dropped it"
+},
+{
+"verse": "R25/J25",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "प्रतिसंचरः",
+"printed_calcutta": "प्रतिसञ्चरः",
+"note": ""
+},
+{
+"verse": "R26/J26",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "कालोनांतोस्य",
+"printed_calcutta": "नान्तोऽस्य",
+"note": "anusvara vs न्त"
+},
+{
+"verse": "R26/J26",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "त्यंतसंयमाः",
+"printed_calcutta": "त्यन्तसंयमाः",
+"note": ""
+},
+{
+"verse": "R27/J27",
+"spot": 0,
+"decision": "both_print_same_but_reader_differed",
+"printed_bombay": "कालस्वरूपरूपंतद्",
+"printed_calcutta": "कालस्वरूपरूपंतद्",
+"note": "Calcutta also prints the doubled रूप (blurred); reader dropped one"
+},
+{
+"verse": "R27/J27",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "विष्णोमैत्रेय",
+"printed_calcutta": "विष्णोर्मैत्रेय",
+"note": "Calcutta has reph above"
+},
+{
+"verse": "R28/J28",
+"spot": 0,
+"decision": "both_print_same_but_reader_differed",
+"printed_bombay": "तत्परमंब्रह्म",
+"printed_calcutta": "तत्परमंब्रह्म",
+"note": "Calcutta print: परमं with anusvara over म; Calcutta reader dropped म"
+},
+{
+"verse": "R29/J29",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "पुरुषंचापि",
+"printed_calcutta": "पुरुषश्चापि",
+"note": ""
+},
+{
+"verse": "R29/J29",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "माससंप्रा",
+"printed_calcutta": "माससम्प्रा",
+"note": ""
+},
+{
+"verse": "R30/J30",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "यथासंनिधि",
+"printed_calcutta": "यथासन्निधि",
+"note": ""
+},
+{
+"verse": "R30/J30",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "गंधः",
+"printed_calcutta": "गन्धः",
+"note": ""
+},
+{
+"verse": "R31/J31",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "ससंकोच",
+"printed_calcutta": "ससङ्कोच",
+"note": ""
+},
+{
+"verse": "R32/J32",
+"spot": 0,
+"decision": "unclear",
+"printed_bombay": "विकाराणुस्वरूपश्च",
+"printed_calcutta": "विकाराण्/णुस्वरूपेण",
+"note": "Calcutta mark under ण is ambiguous between u-sign and virama; reader's न् is not what is printed (ण)"
+},
+{
+"verse": "R32/J32",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "स्वरूपश्चब्रह्म",
+"printed_calcutta": "स्वरूपेणब्रह्म",
+"note": ""
+},
+{
+"verse": "R33/J33",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "व्यंजनसंभूतिः",
+"printed_calcutta": "व्यञ्जनसम्भूतिः",
+"note": ""
+},
+{
+"verse": "R33/J33",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "व्यंजनसंभूतिः",
+"printed_calcutta": "व्यञ्जनसम्भूतिः",
+"note": ""
+},
+{
+"verse": "R34/J34",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "प्रधानंतत्त्वमुद्भूतं",
+"printed_calcutta": "प्रधानतत्त्वमुद्भूतं",
+"note": ""
+},
+{
+"verse": "R34/J34",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "महांतंतत्",
+"printed_calcutta": "महान्तंतत्",
+"note": ""
+},
+{
+"verse": "R34/J34",
+"spot": 2,
+"decision": "editions_differ",
+"printed_bombay": "सात्विकः",
+"printed_calcutta": "सात्त्विकः",
+"note": ""
+},
+{
+"verse": "R34/J34",
+"spot": 3,
+"decision": "editions_differ",
+"printed_bombay": "महान्३४",
+"printed_calcutta": "महान्प्रधानतत्त्वेनसमंत्वचाबीजमिवावृतम्३४",
+"note": "verse division: Bombay puts the line 'प्रधानतत्त्वेन...' after its ३४ (into R35); Calcutta puts it inside J34"
+},
+{
+"verse": "R35/J35",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "प्रधानतत्त्वेनसमंत्वचाबीजमिवावृतम्वैकारिकः",
+"printed_calcutta": "वैकारिकः",
+"note": "verse division: Bombay carries the 'प्रधानतत्त्वेन..आवृतम्' line at start of its verse 35; Calcutta has it inside J34 before ३४"
+},
+{
+"verse": "R35/J35",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "त्रिधोयम",
+"printed_calcutta": "त्रिविधोऽयम",
+"note": ""
+},
+{
+"verse": "R35/J35",
+"spot": 2,
+"decision": "editions_differ",
+"printed_bombay": "महंकारो",
+"printed_calcutta": "महङ्कारो",
+"note": ""
+},
+{
+"verse": "R36/J36",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "भूतेंद्रियाणां",
+"printed_calcutta": "भूतेन्द्रियाणां",
+"note": ""
+},
+{
+"verse": "R37/J37",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "विकुर्वाणःसर्गंतन्मात्रिकं",
+"printed_calcutta": "विकुर्वाणःशब्दतन्मात्रिकं",
+"note": ""
+},
+{
+"verse": "R37/J37",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "विकुर्वाणःसर्गंतन्मात्रिकं",
+"printed_calcutta": "विकुर्वाणःशब्दतन्मात्रिकं",
+"note": ""
+},
+{
+"verse": "R37/J37",
+"spot": 2,
+"decision": "editions_differ",
+"printed_bombay": "भूतादिःसमावृणोत्",
+"printed_calcutta": "भूतादिःससमावृणोत्",
+"note": ""
+},
+{
+"verse": "R44/J42",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "शांतानापि",
+"printed_calcutta": "शान्तानापि",
+"note": "न्त vs anusvara"
+},
+{
+"verse": "R45/J43",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "महंकारा",
+"printed_calcutta": "महङ्कारा",
+"note": ""
+},
+{
+"verse": "R45/J43",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "सानींद्रि",
+"printed_calcutta": "सानीन्द्रि",
+"note": ""
+},
+{
+"verse": "R46/J44",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "पंचमम्",
+"printed_calcutta": "पञ्चमम्",
+"note": ""
+},
+{
+"verse": "R46/J44",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "मवाप्यर्थं",
+"printed_calcutta": "मवाप्त्यर्थं",
+"note": "Calcutta conjunct blurred, looks like प्त्य; moderate confidence"
+},
+{
+"verse": "R47/J45",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "वायूपस्थौ",
+"printed_calcutta": "पायूपस्थौ",
+"note": "Bombay वा; Calcutta पा"
+},
+{
+"verse": "R47/J45",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "पंचमी",
+"printed_calcutta": "पञ्चमी",
+"note": ""
+},
+{
+"verse": "R47/J45",
+"spot": 2,
+"decision": "editions_differ",
+"printed_bombay": "क्तिकर्म",
+"printed_calcutta": "क्तिःकर्म",
+"note": "Calcutta has visarga"
+},
+{
+"verse": "R48/J46",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "ब्रह्मसंयुक्तान्",
+"printed_calcutta": "ब्रह्मन्संयुक्तान्",
+"note": ""
+},
+{
+"verse": "R49/J47",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "शांताघोराश्च",
+"printed_calcutta": "शान्ताघोराश्च",
+"note": ""
+},
+{
+"verse": "R50/J48",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "ततस्तेसंहतिं",
+"printed_calcutta": "ततस्तुसंहतिं",
+"note": "Bombay ते; Calcutta तु"
+},
+{
+"verse": "R51/J49",
+"spot": 0,
+"decision": "unclear",
+"printed_bombay": "एकसंघातलक्ष्याश्च",
+"printed_calcutta": "एक?घातलक्ष्याश्च",
+"note": "Calcutta letters after एक blurred/blotted"
+},
+{
+"verse": "R51/J49",
+"spot": 1,
+"decision": "both_print_same_but_reader_differed",
+"printed_bombay": "संप्राप्यैक्यम्",
+"printed_calcutta": "संप्राप्यैक्यम्",
+"note": "Calcutta shows anusvara dot over स; reader wrote सम्"
+},
+{
+"verse": "R52/J50",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "प्रधानानुग्रहेणवा",
+"printed_calcutta": "प्रधानानुग्रहेणच",
+"note": ""
+},
+{
+"verse": "R52/J50",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "महदादयोविशेषान्ता",
+"printed_calcutta": "महदाद्याविशेषान्ता",
+"note": ""
+},
+{
+"verse": "R52/J50",
+"spot": 2,
+"decision": "editions_differ",
+"printed_bombay": "महदादयोविशेषान्ता",
+"printed_calcutta": "महदाद्याविशेषान्ता",
+"note": ""
+},
+{
+"verse": "R52/J50",
+"spot": 3,
+"decision": "editions_differ",
+"printed_bombay": "शेषांताह्य",
+"printed_calcutta": "शेषान्ताह्य",
+"note": ""
+},
+{
+"verse": "R52/J50",
+"spot": 4,
+"decision": "editions_differ",
+"printed_bombay": "ह्यंडमुत्",
+"printed_calcutta": "ह्याण्डमुत्",
+"note": "Calcutta blurred; reads ण्ड"
+},
+{
+"verse": "R52/J50",
+"spot": 5,
+"decision": "editions_differ",
+"printed_bombay": "पादयंतिते",
+"printed_calcutta": "पादयन्तिते",
+"note": ""
+},
+{
+"verse": "R53/J51",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "विवृद्धंतुजल",
+"printed_calcutta": "विवृद्धस्तुजल",
+"note": ""
+},
+{
+"verse": "R53/J51",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "भूतेभ्योंडं",
+"printed_calcutta": "भूतेभ्योऽण्डं",
+"note": ""
+},
+{
+"verse": "R53/J51",
+"spot": 2,
+"decision": "editions_differ",
+"printed_bombay": "महाबुद्बृहत्",
+"printed_calcutta": "महामुनेबृहत्",
+"note": "Bombay letters approx; Calcutta blurred but clearly मुने"
+},
+{
+"verse": "R53/J51",
+"spot": 3,
+"decision": "editions_differ",
+"printed_bombay": "महाबुद्बृहत्",
+"printed_calcutta": "महामुनेबृहत्",
+"note": ""
+},
+{
+"verse": "R53/J51",
+"spot": 4,
+"decision": "both_print_same_but_reader_differed",
+"printed_bombay": "संस्थानमुत्तमम्",
+"printed_calcutta": "संस्थानमुत्तमम्",
+"note": "Calcutta shows anusvara over स; reader dropped it"
+},
+{
+"verse": "R56/J54",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "समुद्रश्चसज्योतिः",
+"printed_calcutta": "समुद्रा?सज्योतिः",
+"note": "Calcutta syllable after समुद्र blurred (ा + something, not श्च clearly); differs from Bombay anyway"
+},
+{
+"verse": "R56/J54",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "समुद्रश्चसज्योतिः",
+"printed_calcutta": "समुद्रा?सज्योतिः",
+"note": "same as spot 0"
+},
+{
+"verse": "R56/J54",
+"spot": 2,
+"decision": "editions_differ",
+"printed_bombay": "तस्मिन्नंडेऽभवद्",
+"printed_calcutta": "तस्मिन्नण्डेऽभवद्",
+"note": ""
+},
+{
+"verse": "R56/J54",
+"spot": 3,
+"decision": "editions_differ",
+"printed_bombay": "तस्मिन्नंडेऽभवद्",
+"printed_calcutta": "तस्मिन्नण्डेऽभवद्",
+"note": ""
+},
+{
+"verse": "R57/J55",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "वारिवन्ह्यनिला",
+"printed_calcutta": "वारिवह्न्यनिला",
+"note": "Calcutta conjunct order differs; moderate confidence"
+},
+{
+"verse": "R57/J55",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "वारिवन्ह्यनिला",
+"printed_calcutta": "वारिवह्न्यनिला",
+"note": ""
+},
+{
+"verse": "R57/J55",
+"spot": 2,
+"decision": "editions_differ",
+"printed_bombay": "गुणैरंडं",
+"printed_calcutta": "गुणैरण्डं",
+"note": ""
+},
+{
+"verse": "R58/J56",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "गुणैरंडंसप्तभिः",
+"printed_calcutta": "गुणैरण्डंसप्तभिः",
+"note": ""
+},
+{
+"verse": "R58/J56",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "वृतम् ।(verse ends)",
+"printed_calcutta": "वृतम्नारिकेलफलस्यान्तर्बीजंबाह्यदलैरिव",
+"note": "verse division: Bombay puts the नारिकेल line in R59 after number 58; Calcutta puts it in J56 before ५६"
+},
+{
+"verse": "R59/J57",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "नारिकेलफलस्यांतर्बीजंबाह्यदलैरिवजुषन्(त्र)",
+"printed_calcutta": "जुषन्",
+"note": "verse division as in R58/J56"
+},
+{
+"verse": "R59/J57",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "जुषत्रजोगुणं",
+"printed_calcutta": "जुषन्रजोगुणं",
+"note": "Bombay glyph before रजो looks like त्र (low-moderate confidence); Calcutta clearly न् + रजो"
+},
+{
+"verse": "R59/J57",
+"spot": 2,
+"decision": "editions_differ",
+"printed_bombay": "सृष्टौसंप्रवर्तते",
+"printed_calcutta": "सृष्टौसम्प्रवर्त्तते",
+"note": "Bombay anusvara; Calcutta म्प"
+},
+{
+"verse": "R60/J58",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "सृष्टंचयात्यनुयुगं",
+"printed_calcutta": "सृष्टश्चपात्यनुयुगं",
+"note": ""
+},
+{
+"verse": "R60/J58",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "सृष्टंचयात्यनुयुगं",
+"printed_calcutta": "सृष्टश्चपात्यनुयुगं",
+"note": ""
+},
+{
+"verse": "R61/J59",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "तमोद्रेकीचकल्पान्ते",
+"printed_calcutta": "तमोद्रक्ताचकल्पान्ते",
+"note": ""
+},
+{
+"verse": "R61/J59",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "तमोद्रेकीचकल्पान्ते",
+"printed_calcutta": "तमोद्रक्ताचकल्पान्ते",
+"note": ""
+},
+{
+"verse": "R61/J59",
+"spot": 2,
+"decision": "editions_differ",
+"printed_bombay": "कल्पांते",
+"printed_calcutta": "कल्पान्ते",
+"note": ""
+},
+{
+"verse": "R61/J59",
+"spot": 3,
+"decision": "editions_differ",
+"printed_bombay": "रुद्ररूपीजनार्दनः",
+"printed_calcutta": "रुद्ररूपोजनार्दनः",
+"note": "Bombay ई, Calcutta ओ (printed 'रूपो'); Calcutta blurred but o-sign seen"
+},
+{
+"verse": "R62/J60",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "संभक्षयित्वा",
+"printed_calcutta": "सभक्षयित्वा",
+"note": "Calcutta without anusvara"
+},
+{
+"verse": "R62/J60",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "पर्यंकशयने",
+"printed_calcutta": "पर्यङ्कशयने",
+"note": ""
+},
+{
+"verse": "R62/J60",
+"spot": 2,
+"decision": "editions_differ",
+"printed_bombay": "शेतेसपरमेश्वरः",
+"printed_calcutta": "शेतेचपरमेश्वरः",
+"note": ""
+},
+{
+"verse": "R62/J60",
+"spot": 3,
+"decision": "editions_differ",
+"printed_bombay": "परमेश्वरःप्रबुद्धश्चपुनःसृष्टिंकरोतिब्रह्मरूपधृक् ६२",
+"printed_calcutta": "परमेश्वरः ६०",
+"note": "verse division: Calcutta numbers J61 for 'प्रबुद्धश्च..ब्रह्मरूपधृक्'; Bombay has no number there"
+},
+{
+"verse": "R63/J62",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "सृष्टिस्थित्यंतकरण",
+"printed_calcutta": "सृष्टिस्थित्यन्तकरण",
+"note": ""
+},
+{
+"verse": "R63/J62",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "भगवानेकएवजनार्दनः",
+"printed_calcutta": "भगवान्एकएवजनार्दनः",
+"note": "Bombay sandhi भगवानेक, Calcutta भगवान् एक"
+},
+{
+"verse": "R64/J63",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "तेचांतेसंहर्ताच",
+"printed_calcutta": "चान्तेसंहर्ताच",
+"note": ""
+},
+{
+"verse": "R65/J64",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "सर्वेंद्रि",
+"printed_calcutta": "सर्वेन्द्रि",
+"note": ""
+},
+{
+"verse": "R65/J64",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "रियांतःकरणं",
+"printed_calcutta": "रियान्तःकरणं",
+"note": ""
+},
+{
+"verse": "R66/J65",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "रूपोयतोव्ययः",
+"printed_calcutta": "रूपोगतोव्ययः",
+"note": ""
+},
+{
+"verse": "R66/J65",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "भूतस्थमुपकारकम्",
+"printed_calcutta": "भूतस्थमपकारकम्",
+"note": "Calcutta u-sign not visible (blurred); moderate confidence"
+},
+{
+"verse": "R67/J66",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "पाल्यतेद्यः",
+"printed_calcutta": "पाल्यतेच",
+"note": "Bombay glyph ध्य/द्य; Calcutta च"
+},
+{
+"verse": "R39-43/J39-41 (block)",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "आकाशंशब्दतन्मात्रंस्पर्श",
+"printed_calcutta": "आकाशंशब्दमात्रंतुस्पर्श",
+"note": ""
+},
+{
+"verse": "R39-43/J39-41 (block)",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "स्पर्शमात्रश्चैववायू",
+"printed_calcutta": "स्पर्शमात्रस्तुवैवायू",
+"note": ""
+},
+{
+"verse": "R39-43/J39-41 (block)",
+"spot": 2,
+"decision": "editions_differ",
+"printed_bombay": "स्पर्शमात्रश्चैववायू",
+"printed_calcutta": "स्पर्शमात्रस्तुवैवायू",
+"note": ""
+},
+{
+"verse": "R39-43/J39-41 (block)",
+"spot": 3,
+"decision": "editions_differ",
+"printed_bombay": "ससर्जहसंभवंति",
+"printed_calcutta": "ससर्जहसम्भवन्ति",
+"note": ""
+},
+{
+"verse": "R39-43/J39-41 (block)",
+"spot": 4,
+"decision": "editions_differ",
+"printed_bombay": "संभवंतिततोंभांसि",
+"printed_calcutta": "सम्भवन्तिततोऽम्भांसि",
+"note": ""
+},
+{
+"verse": "R39-43/J39-41 (block)",
+"spot": 5,
+"decision": "editions_differ",
+"printed_bombay": "चांभांसि",
+"printed_calcutta": "चाम्भांसि",
+"note": ""
+},
+{
+"verse": "R39-43/J39-41 (block)",
+"spot": 6,
+"decision": "editions_differ",
+"printed_bombay": "चांभांसि",
+"printed_calcutta": "चाम्भांसि",
+"note": ""
+},
+{
+"verse": "R39-43/J39-41 (block)",
+"spot": 7,
+"decision": "editions_differ",
+"printed_bombay": "भांसिगंधमात्रं",
+"printed_calcutta": "भांसिगन्धमात्रं",
+"note": ""
+},
+{
+"verse": "R39-43/J39-41 (block)",
+"spot": 8,
+"decision": "editions_differ",
+"printed_bombay": "तस्यगंधोगुणो",
+"printed_calcutta": "तस्यगन्धोगुणो",
+"note": ""
+},
+{
+"verse": "J61",
+"spot": 0,
+"decision": "neither",
+"printed_bombay": "",
+"printed_calcutta": "",
+"note": "Bombay does not print J61 as a separate numbered verse: Bombay 62 ends after 'ब्रह्मरूपधृक्' and so covers Calcutta J60 tail + J61; Bombay numbers run +1 from there (Bombay 63 = J62 etc.)"
+}
+]
