@@ -1,0 +1,1010 @@
+[
+ {
+  "verse": "R3",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "ततो",
+  "printed_calcutta": "तथा",
+  "note": "Bombay prints ततो, Calcutta prints तथा"
+ },
+ {
+  "verse": "R4",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints conjunct nasal"
+ },
+ {
+  "verse": "R4",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints conjunct nasal"
+ },
+ {
+  "verse": "R5",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints conjunct nasal"
+ },
+ {
+  "verse": "R7",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints conjunct nasal"
+ },
+ {
+  "verse": "R8",
+  "spot": 0,
+  "decision": "bombay",
+  "printed_bombay": "तनू",
+  "printed_calcutta": "तनू",
+  "note": "Calcutta print shows long ू (तनू) matching Bombay reading; Calcutta reader misread; Bombay line only indirectly viewed"
+ },
+ {
+  "verse": "R8",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "तद्वद्",
+  "printed_calcutta": "तद्वत्",
+  "note": "Bombay prints तद्वद्वाराहं, Calcutta prints तद्वत् वाराहं"
+ },
+ {
+  "verse": "R8",
+  "spot": 2,
+  "decision": "unclear",
+  "printed_bombay": "वपुरास्थितः",
+  "printed_calcutta": "",
+  "note": "Bombay prints वपुरास्थितः; Calcutta glyph (स्थि vs श्रि) not resolvable at this resolution"
+ },
+ {
+  "verse": "R8",
+  "spot": 3,
+  "decision": "unclear",
+  "printed_bombay": "ुरास्थितःवे",
+  "printed_calcutta": "",
+  "note": "same as previous spot"
+ },
+ {
+  "verse": "R11",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "वसुंधरा",
+  "printed_calcutta": "वसुन्धरा",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints conjunct nasal"
+ },
+ {
+  "verse": "R11a",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "पृथ्व्युवाच",
+  "printed_calcutta": "पृथिव्युवाच",
+  "note": "Bombay prints पृथ्व्युवाच, Calcutta prints पृथिव्युवाच"
+ },
+ {
+  "verse": "R12",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "शंख",
+  "printed_calcutta": "शङ्ख",
+  "note": "Bombay anusvara शंख; Calcutta appears to print conjunct ङ्ख (moderate confidence)"
+ },
+ {
+  "verse": "R12",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "धरास्मादद्य",
+  "printed_calcutta": "धराद्य",
+  "note": "Bombay prints मामुद्धरास्मादद्य; Calcutta prints मामुद्धराद्य (no स्मा)"
+ },
+ {
+  "verse": "R14",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "परमात्मात्मन्",
+  "printed_calcutta": "परमात्मन्",
+  "note": "Bombay prints परमात्मात्मन् (doubled); Calcutta prints परमात्मन्"
+ },
+ {
+  "verse": "R16",
+  "spot": 0,
+  "decision": "both_print_same_but_reader_differed",
+  "printed_bombay": "संभक्षय",
+  "printed_calcutta": "संभक्षय",
+  "note": "both print संभक्ष (anusvara); Calcutta reader normalised to म्भ"
+ },
+ {
+  "verse": "R16",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "गोविंदचिंत्य",
+  "printed_calcutta": "गोविन्दचिन्त्य",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints conjunct nasal"
+ },
+ {
+  "verse": "R16",
+  "spot": 2,
+  "decision": "editions_differ",
+  "printed_bombay": "चिंत्य",
+  "printed_calcutta": "चिन्त्य",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints conjunct nasal"
+ },
+ {
+  "verse": "R17",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "परंरूपं",
+  "printed_calcutta": "परंतत्त्वं",
+  "note": "Bombay prints परंरूपं, Calcutta prints परं तत्त्वं"
+ },
+ {
+  "verse": "R17",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "तदर्चंति",
+  "printed_calcutta": "तदर्चन्ति",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints conjunct nasal"
+ },
+ {
+  "verse": "R19",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "किंचिन्",
+  "printed_calcutta": "किञ्चिन्",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints conjunct nasal"
+ },
+ {
+  "verse": "R21",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "जयानंत",
+  "printed_calcutta": "जयानन्त",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints conjunct nasal"
+ },
+ {
+  "verse": "R22",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "परावर",
+  "printed_calcutta": "परापर",
+  "note": "Bombay prints परावरात्मन्, Calcutta prints परापरात्मन्"
+ },
+ {
+  "verse": "R22",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "त्वमोंकार",
+  "printed_calcutta": "त्वमोङ्कार",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints conjunct nasal"
+ },
+ {
+  "verse": "R23",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "तदंगानि",
+  "printed_calcutta": "तदङ्गानि",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints conjunct nasal"
+ },
+ {
+  "verse": "R23",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "खिलंचयत्",
+  "printed_calcutta": "खिलंजगत्",
+  "note": "Bombay prints यखिलंचयत्; Calcutta prints यखिलंजगत्"
+ },
+ {
+  "verse": "R24",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "मूर्ता",
+  "printed_calcutta": "मूर्त्ता",
+  "note": "Bombay मूर्ता, Calcutta मूर्त्ता (tt conjunct)"
+ },
+ {
+  "verse": "R24",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "मूर्तमदृश्यं",
+  "printed_calcutta": "मूर्त्तमदृश्य",
+  "note": "Bombay मूर्तम्, Calcutta मूर्त्तम्"
+ },
+ {
+  "verse": "R24",
+  "spot": 2,
+  "decision": "editions_differ",
+  "printed_bombay": "दृश्यंचदृश्यंच",
+  "printed_calcutta": "दृश्यञ्चकठिनं",
+  "note": "Bombay: दृश्यंच दृश्यंच पुरुषोत्तमः; Calcutta: दृश्यञ्च कठिनं पुरुषोत्तम (different words)"
+ },
+ {
+  "verse": "R24",
+  "spot": 3,
+  "decision": "editions_differ",
+  "printed_bombay": "दृश्यंचदृश्यंच",
+  "printed_calcutta": "दृश्यञ्चकठिनं",
+  "note": "Bombay: दृश्यंच दृश्यंच पुरुषोत्तमः; Calcutta: दृश्यञ्च कठिनं पुरुषोत्तम (different words)"
+ },
+ {
+  "verse": "R24",
+  "spot": 4,
+  "decision": "editions_differ",
+  "printed_bombay": "पुरुषोत्तमः",
+  "printed_calcutta": "पुरुषोत्तम",
+  "note": "Bombay prints पुरुषोत्तमः with visarga; Calcutta prints पुरुषोत्तम without"
+ },
+ {
+  "verse": "R24",
+  "spot": 5,
+  "decision": "unclear",
+  "printed_bombay": "मयात्र",
+  "printed_calcutta": "",
+  "note": "Bombay prints मयात्र; Calcutta glyph reads like मयाव, not resolvable"
+ },
+ {
+  "verse": "R25",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "",
+  "printed_calcutta": "पराशरउवाच",
+  "note": "Calcutta has an extra \"पराशर उवाच\" before एवं संस्तूयमान; Bombay lacks it"
+ },
+ {
+  "verse": "R25",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "श्रीमाज्ञगर्ज",
+  "printed_calcutta": "श्रीमान्जगर्ज",
+  "note": "Bombay prints श्रीमाञ्जगर्ज (ञ्ज/ज्ञ-like conjunct), Calcutta prints श्रीमान् जगर्ज"
+ },
+ {
+  "verse": "R25",
+  "spot": 2,
+  "decision": "editions_differ",
+  "printed_bombay": "श्रीमाज्ञगर्ज",
+  "printed_calcutta": "श्रीमान्जगर्ज",
+  "note": "same as previous spot"
+ },
+ {
+  "verse": "R26",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "सदंष्ट्र",
+  "printed_calcutta": "स्वदंष्ट्र",
+  "note": "Bombay prints धरां सदंष्ट्रया, Calcutta prints धरां स्वदंष्ट्रया"
+ },
+ {
+  "verse": "R27",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "प्लवांभोज",
+  "printed_calcutta": "प्लवाम्भोज",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints conjunct nasal"
+ },
+ {
+  "verse": "R27",
+  "spot": 1,
+  "decision": "bombay",
+  "printed_bombay": "महाद्युतीन्",
+  "printed_calcutta": "महाद्युतीन्",
+  "note": "Calcutta print is महाद्युतीन्, same as Bombay; Calcutta reader misread"
+ },
+ {
+  "verse": "R27",
+  "spot": 2,
+  "decision": "bombay",
+  "printed_bombay": "महाद्युतीन्",
+  "printed_calcutta": "महाद्युतीन्",
+  "note": "same as previous"
+ },
+ {
+  "verse": "R27",
+  "spot": 3,
+  "decision": "editions_differ",
+  "printed_bombay": "सनंदन",
+  "printed_calcutta": "सनन्दन",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints conjunct nasal"
+ },
+ {
+  "verse": "R28",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "",
+  "printed_calcutta": "प्रयान्ति...वसन्ति",
+  "note": "Calcutta prints a stanza (प्रयान्ति तोयानि ... रसातलेऽधः कृतमन्दसन्तति । श्वासानिलास्ताः परतः प्रयान्ति सिद्धा जने ये नियतं वसन्ति) here in a different order/wording; Bombay has a different form of it in the next verse"
+ },
+ {
+  "verse": "R28",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "विभुत्वतो",
+  "printed_calcutta": "विधुन्वतो",
+  "note": "Bombay prints विभुत्वतो; Calcutta prints विधुन्वतो (and धार्य्य vs धार्य)"
+ },
+ {
+  "verse": "R28",
+  "spot": 2,
+  "decision": "editions_differ",
+  "printed_bombay": "विभुत्वतो",
+  "printed_calcutta": "विधुन्वतो",
+  "note": "Bombay prints विभुत्वतो; Calcutta prints विधुन्वतो (and धार्य्य vs धार्य)"
+ },
+ {
+  "verse": "R28",
+  "spot": 3,
+  "decision": "editions_differ",
+  "printed_bombay": "विभुत्वतो",
+  "printed_calcutta": "विधुन्वतो",
+  "note": "Bombay prints विभुत्वतो; Calcutta prints विधुन्वतो (and धार्य्य vs धार्य)"
+ },
+ {
+  "verse": "R28",
+  "spot": 4,
+  "decision": "editions_differ",
+  "printed_bombay": "रोमांतर",
+  "printed_calcutta": "रोमान्तर",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints conjunct nasal"
+ },
+ {
+  "verse": "R28",
+  "spot": 5,
+  "decision": "unclear",
+  "printed_bombay": "जुषंति",
+  "printed_calcutta": "",
+  "note": "Bombay prints जुषंति; Calcutta glyph reads like जषन्ति/जपन्ति, not resolvable"
+ },
+ {
+  "verse": "R29",
+  "spot": 0,
+  "decision": "unclear",
+  "printed_bombay": "षंति",
+  "printed_calcutta": "",
+  "note": "same spot as R28 spot 5; Calcutta glyph not resolvable"
+ },
+ {
+  "verse": "R29",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "खुराग्रविक्षते",
+  "printed_calcutta": "खुराग्रविद्यते",
+  "note": "Bombay verse text (खुराग्रविक्षते ... सिद्धाजनेयेनियतावसंति) and Calcutta stanza differ in wording and order; both print their own"
+ },
+ {
+  "verse": "R30",
+  "spot": 0,
+  "decision": "unclear",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "Bombay prints तापपरीत (apparent); Calcutta glyph ताष/ताप ambiguous"
+ },
+ {
+  "verse": "R30",
+  "spot": 1,
+  "decision": "both_print_same_but_reader_differed",
+  "printed_bombay": "लोकं",
+  "printed_calcutta": "लोकं",
+  "note": "both print लोकं; Bombay reader misread as लोके"
+ },
+ {
+  "verse": "R30",
+  "spot": 2,
+  "decision": "editions_differ",
+  "printed_bombay": "निवसंति",
+  "printed_calcutta": "निवसन्ति",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints conjunct nasal"
+ },
+ {
+  "verse": "R30",
+  "spot": 3,
+  "decision": "editions_differ",
+  "printed_bombay": "सनंदनाद्य",
+  "printed_calcutta": "सनन्दनाद्य",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints conjunct nasal"
+ },
+ {
+  "verse": "R30",
+  "spot": 4,
+  "decision": "editions_differ",
+  "printed_bombay": "कंधर",
+  "printed_calcutta": "कन्धर",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints conjunct nasal"
+ },
+ {
+  "verse": "R30",
+  "spot": 5,
+  "decision": "editions_differ",
+  "printed_bombay": "तारतरोद्वतेक्षणम्",
+  "printed_calcutta": "धीरतराद्धते",
+  "note": "Bombay: तारतरोद्वतेक्षणम्; Calcutta: धीरतराद्धते... different wording"
+ },
+ {
+  "verse": "R30",
+  "spot": 6,
+  "decision": "editions_differ",
+  "printed_bombay": "तारतरोद्वतेक्षणम्",
+  "printed_calcutta": "धीरतराद्धते",
+  "note": "Bombay: तारतरोद्वतेक्षणम्; Calcutta: धीरतराद्धते... different wording"
+ },
+ {
+  "verse": "R30",
+  "spot": 7,
+  "decision": "editions_differ",
+  "printed_bombay": "तारतरोद्वतेक्षणम्",
+  "printed_calcutta": "धीरतराद्धते",
+  "note": "Bombay: तारतरोद्वतेक्षणम्; Calcutta: धीरतराद्धते... different wording"
+ },
+ {
+  "verse": "R30",
+  "spot": 8,
+  "decision": "editions_differ",
+  "printed_bombay": "तारतरोद्वतेक्षणम्",
+  "printed_calcutta": "धीरतराद्धते",
+  "note": "Bombay: तारतरोद्वतेक्षणम्; Calcutta: धीरतराद्धते... different wording"
+ },
+ {
+  "verse": "R30",
+  "spot": 9,
+  "decision": "editions_differ",
+  "printed_bombay": "तारतरोद्वतेक्षणम्",
+  "printed_calcutta": "धीरतराद्धते",
+  "note": "Bombay: तारतरोद्वतेक्षणम्; Calcutta: धीरतराद्धते... different wording"
+ },
+ {
+  "verse": "R30",
+  "spot": 10,
+  "decision": "editions_differ",
+  "printed_bombay": "तारतरोद्वतेक्षणम्",
+  "printed_calcutta": "धीरतराद्धते",
+  "note": "Bombay: तारतरोद्वतेक्षणम्; Calcutta: धीरतराद्धते... different wording"
+ },
+ {
+  "verse": "R31",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "परमेशकेशव",
+  "printed_calcutta": "परमेश्वरकेशव",
+  "note": "Bombay परमेश केशव; Calcutta परमेश्य(श्वर) केशव"
+ },
+ {
+  "verse": "R31",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "भोगदाशंखधरासि",
+  "printed_calcutta": "गदाब्जधरासि",
+  "note": "Bombay भोगदाशंखधरासि; Calcutta गदाब्जधरासि-like"
+ },
+ {
+  "verse": "R31",
+  "spot": 2,
+  "decision": "editions_differ",
+  "printed_bombay": "परमंचयत्पद",
+  "printed_calcutta": "परमस्तियत्पद",
+  "note": "Bombay परमंचयत्पदम्; Calcutta परमस्ति यत् पदम्"
+ },
+ {
+  "verse": "R32",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "दंते",
+  "printed_calcutta": "दन्ते",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints conjunct nasal"
+ },
+ {
+  "verse": "R33",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "ब्रह्मपरं",
+  "printed_calcutta": "ब्रह्मपदं",
+  "note": "Bombay ब्रह्मपरं शिरस्ते; Calcutta ब्रह्मपदं शिरस्ते"
+ },
+ {
+  "verse": "R34",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "तुंड",
+  "printed_calcutta": "तुण्ड",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints conjunct nasal"
+ },
+ {
+  "verse": "R34",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "सत्रसंधे",
+  "printed_calcutta": "सत्रसन्धे",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints conjunct nasal"
+ },
+ {
+  "verse": "R35",
+  "spot": 0,
+  "decision": "unclear",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "Bombay line reads पदक्रमाक्रांतभवंतमंतमादिं स्थितिं चाक्षर...; Calcutta reads पदक्रमाक्रान्तभुवं भवन्तम् आदिस्थितिस्थाचर...: words appear to differ but glyph-level reading not resolved"
+ },
+ {
+  "verse": "R35",
+  "spot": 1,
+  "decision": "unclear",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "Bombay line reads पदक्रमाक्रांतभवंतमंतमादिं स्थितिं चाक्षर...; Calcutta reads पदक्रमाक्रान्तभुवं भवन्तम् आदिस्थितिस्थाचर...: words appear to differ but glyph-level reading not resolved"
+ },
+ {
+  "verse": "R35",
+  "spot": 2,
+  "decision": "unclear",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "Bombay line reads पदक्रमाक्रांतभवंतमंतमादिं स्थितिं चाक्षर...; Calcutta reads पदक्रमाक्रान्तभुवं भवन्तम् आदिस्थितिस्थाचर...: words appear to differ but glyph-level reading not resolved"
+ },
+ {
+  "verse": "R35",
+  "spot": 3,
+  "decision": "unclear",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "Bombay line reads पदक्रमाक्रांतभवंतमंतमादिं स्थितिं चाक्षर...; Calcutta reads पदक्रमाक्रान्तभुवं भवन्तम् आदिस्थितिस्थाचर...: words appear to differ but glyph-level reading not resolved"
+ },
+ {
+  "verse": "R35",
+  "spot": 4,
+  "decision": "unclear",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "Bombay line reads पदक्रमाक्रांतभवंतमंतमादिं स्थितिं चाक्षर...; Calcutta reads पदक्रमाक्रान्तभुवं भवन्तम् आदिस्थितिस्थाचर...: words appear to differ but glyph-level reading not resolved"
+ },
+ {
+  "verse": "R35",
+  "spot": 5,
+  "decision": "unclear",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "Bombay line reads पदक्रमाक्रांतभवंतमंतमादिं स्थितिं चाक्षर...; Calcutta reads पदक्रमाक्रान्तभुवं भवन्तम् आदिस्थितिस्थाचर...: words appear to differ but glyph-level reading not resolved"
+ },
+ {
+  "verse": "R35",
+  "spot": 6,
+  "decision": "unclear",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "Bombay line reads पदक्रमाक्रांतभवंतमंतमादिं स्थितिं चाक्षर...; Calcutta reads पदक्रमाक्रान्तभुवं भवन्तम् आदिस्थितिस्थाचर...: words appear to differ but glyph-level reading not resolved"
+ },
+ {
+  "verse": "R35",
+  "spot": 7,
+  "decision": "unclear",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "Bombay line reads पदक्रमाक्रांतभवंतमंतमादिं स्थितिं चाक्षर...; Calcutta reads पदक्रमाक्रान्तभुवं भवन्तम् आदिस्थितिस्थाचर...: words appear to differ but glyph-level reading not resolved"
+ },
+ {
+  "verse": "R35",
+  "spot": 8,
+  "decision": "bombay",
+  "printed_bombay": "विश्वस्यविघ्नः",
+  "printed_calcutta": "विश्वस्यविघ्नः",
+  "note": "Bombay prints विघ्नः; Calcutta also prints विघ्नः; Calcutta reader misread"
+ },
+ {
+  "verse": "R35",
+  "spot": 9,
+  "decision": "bombay",
+  "printed_bombay": "विघ्नः",
+  "printed_calcutta": "विघ्नः",
+  "note": "same as previous"
+ },
+ {
+  "verse": "R36",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "भूमंडल",
+  "printed_calcutta": "भूमण्डल",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints conjunct nasal"
+ },
+ {
+  "verse": "R36",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "पंक",
+  "printed_calcutta": "पङ्क",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints conjunct nasal"
+ },
+ {
+  "verse": "R37",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "यदंतरं",
+  "printed_calcutta": "यदन्तरं",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints conjunct nasal"
+ },
+ {
+  "verse": "R37",
+  "spot": 1,
+  "decision": "unclear",
+  "printed_bombay": "समर्थदीप्ते",
+  "printed_calcutta": "",
+  "note": "Bombay prints समर्थदीप्ते; Calcutta glyphs read like समर्थटोसे, not resolvable"
+ },
+ {
+  "verse": "R38",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "तवैव",
+  "printed_calcutta": "तवैष",
+  "note": "Bombay तवैव महिमा; Calcutta तवैष महिमा"
+ },
+ {
+  "verse": "R39",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "मेतज्ज्ञा",
+  "printed_calcutta": "मेतद्ज्ञा",
+  "note": "Bombay मेतज्ज्ञान; Calcutta मेतद् ज्ञान"
+ },
+ {
+  "verse": "R39",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "भ्रांति",
+  "printed_calcutta": "भ्रान्ति",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints conjunct nasal"
+ },
+ {
+  "verse": "R39",
+  "spot": 2,
+  "decision": "editions_differ",
+  "printed_bombay": "पश्यंति",
+  "printed_calcutta": "पश्यन्ति",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints conjunct nasal"
+ },
+ {
+  "verse": "R40",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "पश्यंतो",
+  "printed_calcutta": "पश्यन्तो",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints conjunct nasal"
+ },
+ {
+  "verse": "R40",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "राम्यंते",
+  "printed_calcutta": "राम्यन्ते",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints conjunct nasal"
+ },
+ {
+  "verse": "R41",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "पश्यंति",
+  "printed_calcutta": "पश्यन्ति",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints conjunct nasal"
+ },
+ {
+  "verse": "R42",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "सर्वसर्वा",
+  "printed_calcutta": "सर्वंसर्वा",
+  "note": "Calcutta prints सर्वं सर्वात्मन्; Bombay सर्व सर्वात्मन्"
+ },
+ {
+  "verse": "R42",
+  "spot": 1,
+  "decision": "both_print_same_but_reader_differed",
+  "printed_bombay": "मिमा",
+  "printed_calcutta": "मिमाम्",
+  "note": "both print ...मिमाम् (m); Bombay reader wrote anusvara"
+ },
+ {
+  "verse": "R42",
+  "spot": 2,
+  "decision": "bombay",
+  "printed_bombay": "ममेयात्मन्",
+  "printed_calcutta": "ममेयात्मन्",
+  "note": "Calcutta print is ममेयात्मन् (उद्धरोर्वीममेयात्मन्), agreeing with Bombay; Calcutta reader misread"
+ },
+ {
+  "verse": "R42",
+  "spot": 3,
+  "decision": "bombay",
+  "printed_bombay": "ममेयात्मन्",
+  "printed_calcutta": "ममेयात्मन्",
+  "note": "Calcutta print is ममेयात्मन् (उद्धरोर्वीममेयात्मन्), agreeing with Bombay; Calcutta reader misread"
+ },
+ {
+  "verse": "R42",
+  "spot": 4,
+  "decision": "bombay",
+  "printed_bombay": "ममेयात्मन्",
+  "printed_calcutta": "ममेयात्मन्",
+  "note": "Calcutta print is ममेयात्मन् (उद्धरोर्वीममेयात्मन्), agreeing with Bombay; Calcutta reader misread"
+ },
+ {
+  "verse": "R42",
+  "spot": 5,
+  "decision": "editions_differ",
+  "printed_bombay": "शन्नोदेह्यब्जलोचन",
+  "printed_calcutta": "त्वंनोदेवाब्जलोचन",
+  "note": "Bombay: शन्नो देह्यब्जलोचन; Calcutta: त्वं नो देव अब्जलोचन"
+ },
+ {
+  "verse": "R42",
+  "spot": 6,
+  "decision": "editions_differ",
+  "printed_bombay": "शन्नोदेह्यब्जलोचन",
+  "printed_calcutta": "त्वंनोदेवाब्जलोचन",
+  "note": "Bombay: शन्नो देह्यब्जलोचन; Calcutta: त्वं नो देव अब्जलोचन"
+ },
+ {
+  "verse": "R42",
+  "spot": 7,
+  "decision": "editions_differ",
+  "printed_bombay": "शन्नोदेह्यब्जलोचन",
+  "printed_calcutta": "त्वंनोदेवाब्जलोचन",
+  "note": "Bombay: शन्नो देह्यब्जलोचन; Calcutta: त्वं नो देव अब्जलोचन"
+ },
+ {
+  "verse": "R43",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "गोविंद",
+  "printed_calcutta": "गोविन्द",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints conjunct nasal"
+ },
+ {
+  "verse": "R43",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "शन्नोदेह्य",
+  "printed_calcutta": "त्वंनोदेव",
+  "note": "Bombay: शन्नो देह्यब्जलोचन; Calcutta: त्वं नो देव अब्जलोचन"
+ },
+ {
+  "verse": "R43",
+  "spot": 2,
+  "decision": "editions_differ",
+  "printed_bombay": "शन्नोदेह्य",
+  "printed_calcutta": "त्वंनोदेव",
+  "note": "Bombay: शन्नो देह्यब्जलोचन; Calcutta: त्वं नो देव अब्जलोचन"
+ },
+ {
+  "verse": "R43",
+  "spot": 3,
+  "decision": "editions_differ",
+  "printed_bombay": "शन्नोदेह्य",
+  "printed_calcutta": "त्वंनोदेव",
+  "note": "Bombay: शन्नो देह्यब्जलोचन; Calcutta: त्वं नो देव अब्जलोचन"
+ },
+ {
+  "verse": "R44",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "शन्नोदेह्य",
+  "printed_calcutta": "त्वंनोदेव",
+  "note": "Bombay: शन्नो देह्यब्जलोचन; Calcutta: त्वं नो देव अब्जलोचन"
+ },
+ {
+  "verse": "R44",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "शन्नोदेह्य",
+  "printed_calcutta": "त्वंनोदेव",
+  "note": "Bombay: शन्नो देह्यब्जलोचन; Calcutta: त्वं नो देव अब्जलोचन"
+ },
+ {
+  "verse": "R44",
+  "spot": 2,
+  "decision": "editions_differ",
+  "printed_bombay": "शन्नोदेह्य",
+  "printed_calcutta": "त्वंनोदेव",
+  "note": "Bombay: शन्नो देह्यब्जलोचन; Calcutta: त्वं नो देव अब्जलोचन"
+ },
+ {
+  "verse": "R45",
+  "spot": 0,
+  "decision": "unclear",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "Calcutta images n49-n50 (and Bombay n21 detail) could not be read reliably in this session; no decision"
+ },
+ {
+  "verse": "R45",
+  "spot": 1,
+  "decision": "unclear",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "Calcutta images n49-n50 (and Bombay n21 detail) could not be read reliably in this session; no decision"
+ },
+ {
+  "verse": "R45",
+  "spot": 2,
+  "decision": "unclear",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "Calcutta images n49-n50 (and Bombay n21 detail) could not be read reliably in this session; no decision"
+ },
+ {
+  "verse": "R45",
+  "spot": 3,
+  "decision": "unclear",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "Calcutta images n49-n50 (and Bombay n21 detail) could not be read reliably in this session; no decision"
+ },
+ {
+  "verse": "R46",
+  "spot": 0,
+  "decision": "unclear",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "Calcutta images n49-n50 (and Bombay n21 detail) could not be read reliably in this session; no decision"
+ },
+ {
+  "verse": "R46",
+  "spot": 1,
+  "decision": "unclear",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "Calcutta images n49-n50 (and Bombay n21 detail) could not be read reliably in this session; no decision"
+ },
+ {
+  "verse": "R46",
+  "spot": 2,
+  "decision": "unclear",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "Calcutta images n49-n50 (and Bombay n21 detail) could not be read reliably in this session; no decision"
+ },
+ {
+  "verse": "R46",
+  "spot": 3,
+  "decision": "unclear",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "Calcutta images n49-n50 (and Bombay n21 detail) could not be read reliably in this session; no decision"
+ },
+ {
+  "verse": "R47",
+  "spot": 0,
+  "decision": "unclear",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "Calcutta images n49-n50 (and Bombay n21 detail) could not be read reliably in this session; no decision"
+ },
+ {
+  "verse": "R47",
+  "spot": 1,
+  "decision": "unclear",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "Calcutta images n49-n50 (and Bombay n21 detail) could not be read reliably in this session; no decision"
+ },
+ {
+  "verse": "R47",
+  "spot": 2,
+  "decision": "unclear",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "Calcutta images n49-n50 (and Bombay n21 detail) could not be read reliably in this session; no decision"
+ },
+ {
+  "verse": "R47",
+  "spot": 3,
+  "decision": "unclear",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "Calcutta images n49-n50 (and Bombay n21 detail) could not be read reliably in this session; no decision"
+ },
+ {
+  "verse": "R47",
+  "spot": 4,
+  "decision": "unclear",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "Calcutta images n49-n50 (and Bombay n21 detail) could not be read reliably in this session; no decision"
+ },
+ {
+  "verse": "R47",
+  "spot": 5,
+  "decision": "unclear",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "Calcutta images n49-n50 (and Bombay n21 detail) could not be read reliably in this session; no decision"
+ },
+ {
+  "verse": "R47",
+  "spot": 6,
+  "decision": "unclear",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "Calcutta images n49-n50 (and Bombay n21 detail) could not be read reliably in this session; no decision"
+ },
+ {
+  "verse": "R47",
+  "spot": 7,
+  "decision": "unclear",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "Calcutta images n49-n50 (and Bombay n21 detail) could not be read reliably in this session; no decision"
+ },
+ {
+  "verse": "R48",
+  "spot": 0,
+  "decision": "unclear",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "Calcutta images n49-n50 (and Bombay n21 detail) could not be read reliably in this session; no decision"
+ },
+ {
+  "verse": "R49",
+  "spot": 0,
+  "decision": "unclear",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "Calcutta images n49-n50 (and Bombay n21 detail) could not be read reliably in this session; no decision"
+ },
+ {
+  "verse": "R49",
+  "spot": 1,
+  "decision": "unclear",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "Calcutta images n49-n50 (and Bombay n21 detail) could not be read reliably in this session; no decision"
+ },
+ {
+  "verse": "R49",
+  "spot": 2,
+  "decision": "unclear",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "Calcutta images n49-n50 (and Bombay n21 detail) could not be read reliably in this session; no decision"
+ },
+ {
+  "verse": "R49",
+  "spot": 3,
+  "decision": "unclear",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "Calcutta images n49-n50 (and Bombay n21 detail) could not be read reliably in this session; no decision"
+ },
+ {
+  "verse": "R51",
+  "spot": 0,
+  "decision": "unclear",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "Calcutta images n49-n50 (and Bombay n21 detail) could not be read reliably in this session; no decision"
+ },
+ {
+  "verse": "R51",
+  "spot": 1,
+  "decision": "unclear",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "Calcutta images n49-n50 (and Bombay n21 detail) could not be read reliably in this session; no decision"
+ },
+ {
+  "verse": "R52",
+  "spot": 0,
+  "decision": "unclear",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "Calcutta images n49-n50 (and Bombay n21 detail) could not be read reliably in this session; no decision"
+ },
+ {
+  "verse": "R52",
+  "spot": 1,
+  "decision": "unclear",
+  "printed_bombay": "",
+  "printed_calcutta": "",
+  "note": "Calcutta images n49-n50 (and Bombay n21 detail) could not be read reliably in this session; no decision"
+ }
+]
