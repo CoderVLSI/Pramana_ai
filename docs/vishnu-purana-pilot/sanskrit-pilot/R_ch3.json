@@ -1,0 +1,290 @@
+{
+ "entries": [
+  {
+   "verse": "0a",
+   "printed_numbers": [],
+   "text": "मैत्रेय उवाच ।",
+   "page_index": 15,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "1",
+   "printed_numbers": [
+    "1"
+   ],
+   "text": "निर्गुणस्याप्रमेयस्य शुद्धस्याप्यमलात्मनः । कथं सर्गादिकर्तृत्वं ब्रह्मणोह्युपपद्यते",
+   "page_index": 15,
+   "confidence": "high",
+   "note": "a stray extra danda precedes the verse after the speaker line"
+  },
+  {
+   "verse": "1a",
+   "printed_numbers": [],
+   "text": "पराशर उवाच ।",
+   "page_index": 15,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "2",
+   "printed_numbers": [
+    "2"
+   ],
+   "text": "शक्तयः सर्वभावानामचिंत्यज्ञानगोचराः । यतोतो ब्रह्मणस्तास्तु सर्गाद्या भावशक्तयः । भवंति तपतां श्रेष्ठ पावकस्य यथोष्णता",
+   "page_index": 15,
+   "confidence": "high",
+   "note": "line break splits अचिं|त्यज्ञान; reads यतोतो as printed"
+  },
+  {
+   "verse": "3",
+   "printed_numbers": [
+    "3"
+   ],
+   "text": "तन्निबोध यथा सर्गे भगवान् संप्रवर्तते । नारायणाख्यो भगवान् ब्रह्मा लोकपितामहः । उत्पन्नः प्रोच्यते विद्वान् नित्य एवोपचारतः",
+   "page_index": 15,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "4",
+   "printed_numbers": [
+    "4"
+   ],
+   "text": "निजेन तस्य मानेन आयुर्वर्षशतं स्मृतम् । तत्पराख्यं तदर्धं च परार्धमभिधीयते",
+   "page_index": 15,
+   "confidence": "high",
+   "note": "verse runs from end of n15 into start of n16 (परा|र्धम)"
+  },
+  {
+   "verse": "5",
+   "printed_numbers": [
+    "5"
+   ],
+   "text": "कालस्वरूपं विष्णोश्च यन्मयोक्तं तवानघ । तेन तस्य निबोधत्वं परिमाणोपपादनम्",
+   "page_index": 16,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "6",
+   "printed_numbers": [
+    "6"
+   ],
+   "text": "अन्येषां चैव जंतूनां चराणामचराश्रये । भूभूभृत्सागरादीनामशेषाणां च सत्तम",
+   "page_index": 16,
+   "confidence": "medium",
+   "note": "first word of second line looks like भूभूभृत् (double भू); read as seen"
+  },
+  {
+   "verse": "7",
+   "printed_numbers": [
+    "7"
+   ],
+   "text": "काष्ठाः पंचदशाख्याता निमेषा मुनिसत्तम । काष्ठा त्रिंशत्कला त्रिंशत्कला मौहूर्तिको विधिः",
+   "page_index": 16,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "8",
+   "printed_numbers": [
+    "8"
+   ],
+   "text": "तावत्संख्यैरहोरात्रं मुहूर्तैर्मानुषं स्मृतम् । अहोरात्राणि तावंति मासः पक्षद्वयात्मकः",
+   "page_index": 16,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "9",
+   "printed_numbers": [
+    "9"
+   ],
+   "text": "तैः षड्भिरयनं वर्षमयने दक्षिणोत्तरे । अयनं दक्षिणं रात्रिर्देवानामुत्तरं दिनम्",
+   "page_index": 16,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "10",
+   "printed_numbers": [
+    "10"
+   ],
+   "text": "दिव्यैर्वर्षसहस्रैस्तु कृतत्रेतादिसंज्ञितम् । चतुर्युगं द्वादशभिस्तद्विभागं निबोध मे",
+   "page_index": 16,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "11",
+   "printed_numbers": [
+    "11"
+   ],
+   "text": "चत्वारि त्रीणि द्वे चैकं कृतादिषु यथाक्रमम् । दिव्याब्दानां सहस्राणि युगेष्वाहुः पुराविदः",
+   "page_index": 16,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "12",
+   "printed_numbers": [
+    "12"
+   ],
+   "text": "तत्प्रमाणैः शतैः संध्यापूर्वा तत्राभिधीयते । संध्यांशकश्च तत्तुल्यो युगस्यानंतरो हि सः",
+   "page_index": 16,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "13",
+   "printed_numbers": [
+    "13"
+   ],
+   "text": "संध्यासंध्यांशयोरंतर्यः कालो मुनिसत्तम । युगाख्यः स तु विज्ञेयः कृतत्रेतादिसंज्ञितः",
+   "page_index": 16,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "14",
+   "printed_numbers": [
+    "14"
+   ],
+   "text": "कृतं त्रेता द्वापरश्च कलिश्चैव चतुर्युगम् । प्रोच्यते तत्सहस्रं च ब्रह्मणो दिवसं मुने",
+   "page_index": 16,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "15",
+   "printed_numbers": [
+    "15"
+   ],
+   "text": "ब्रह्मणो दिवसे ब्रह्मन् मनवश्चतुर्दश । भवंति परिमाणं च तेषां कालकृतं शृणु",
+   "page_index": 16,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "16",
+   "printed_numbers": [
+    "16"
+   ],
+   "text": "सप्तर्षयः सुराः शक्रो मनुस्तत्सूनवो नृपाः । एककाले हि सृज्यंते संह्रियंते च पूर्ववत्",
+   "page_index": 16,
+   "confidence": "high",
+   "note": "line break at पूर्वव|त्"
+  },
+  {
+   "verse": "17",
+   "printed_numbers": [
+    "17"
+   ],
+   "text": "चतुर्युगानां संख्याता साधिका ह्येकसप्ततिः । मन्वंतरं मनोः कालः सुरादीनां च सत्तम",
+   "page_index": 16,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "18",
+   "printed_numbers": [
+    "18"
+   ],
+   "text": "अष्टौ शतसहस्राणि दिव्यया संख्यया स्मृतम् । द्विपंचाशत्तथान्यानि सहस्राण्यधिकानि तु",
+   "page_index": 16,
+   "confidence": "high",
+   "note": "verse runs from n16 end into n17 start; page_index 16 = where it begins"
+  },
+  {
+   "verse": "19",
+   "printed_numbers": [
+    "19"
+   ],
+   "text": "त्रिंशत्कोट्यस्तु संपूर्णाः संख्याताः संख्यया द्विज । सप्तषष्टिस्तथान्यानि नियुतानि महामते",
+   "page_index": 17,
+   "confidence": "medium",
+   "note": "संख्याताः vs संख्यातः: read as संख्याताः"
+  },
+  {
+   "verse": "20",
+   "printed_numbers": [
+    "20"
+   ],
+   "text": "विंशतिश्च सहस्राणि कालोयमधिकं विना । मन्वंतरस्य संख्येयं मानुषैर्वत्सरैर्द्विज",
+   "page_index": 17,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "21",
+   "printed_numbers": [
+    "21"
+   ],
+   "text": "चतुर्दशगुणो ह्येष कालो ब्राह्ममहः स्मृतम् । ब्राह्मो नैमित्तिको नाम तस्यांते प्रतिसंचरः",
+   "page_index": 17,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "22",
+   "printed_numbers": [
+    "22"
+   ],
+   "text": "तदा दिदह्यते सर्वं त्रैलोक्यं भूर्भुवादिकम् । जनं प्रयांति तापार्ता महर्लोकनिवासिनः",
+   "page_index": 17,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "23",
+   "printed_numbers": [
+    "23"
+   ],
+   "text": "एकार्णवे तु त्रैलोक्ये ब्रह्मा नारायणात्मकः । भोगिशय्यागतः शेते त्रैलोक्यग्रासबृंहितः",
+   "page_index": 17,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "24",
+   "printed_numbers": [
+    "24"
+   ],
+   "text": "जनस्थैर्योगिभिर्देवैश्चिंत्यमानोब्जसंभवः । तत्प्रमाणां हि तां रात्रिं तदंते सृजते पुनः",
+   "page_index": 17,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "25",
+   "printed_numbers": [
+    "25"
+   ],
+   "text": "एवं तु ब्रह्मणो वर्षमेवं वर्षशतं च तत् । शतं हि तस्य वर्षाणां परमायुर्महात्मनः",
+   "page_index": 17,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "26",
+   "printed_numbers": [
+    "26"
+   ],
+   "text": "एकमस्य व्यतीतं तु परार्धं ब्रह्मणोऽनघ । तस्यांते भून्महाकल्पः पाद्म इत्यभिश्रुतः",
+   "page_index": 17,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "27",
+   "printed_numbers": [
+    "27"
+   ],
+   "text": "द्वितीयस्य परार्धस्य वर्तमानस्य वै द्विज । वाराह इति कल्पोयं प्रथमः परिकल्पितः",
+   "page_index": 17,
+   "confidence": "high",
+   "note": "verse 27 followed by a stray single danda before the colophon"
+  }
+ ]
+}

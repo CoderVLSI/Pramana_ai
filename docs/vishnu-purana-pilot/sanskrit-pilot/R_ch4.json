@@ -1,0 +1,548 @@
+{
+ "entries": [
+  {
+   "verse": "0a",
+   "printed_numbers": [],
+   "text": "मैत्रेय उवाच",
+   "page_index": 17,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "1",
+   "printed_numbers": [
+    "1"
+   ],
+   "text": "ब्रह्मा नारायणाख्योऽसौ कल्पादौ भगवान्यथा । ससर्ज सर्वभूतानि तदाचक्ष्व महामुने",
+   "page_index": 17,
+   "confidence": "medium",
+   "note": "print reads नारायाणारूयो (extra आ; ख्य printed like रू्य); normalised to नारायणाख्यो"
+  },
+  {
+   "verse": "1a",
+   "printed_numbers": [],
+   "text": "पराशर उवाच",
+   "page_index": 17,
+   "confidence": "high",
+   "note": "inline after verse 1 number on same line, as its own speaker line"
+  },
+  {
+   "verse": "2",
+   "printed_numbers": [
+    "2"
+   ],
+   "text": "प्रजाः ससर्ज भगवान्ब्रह्मा नारायणात्मकः । प्रजापतिपतिर्देवो यथा तन्मे निशामय",
+   "page_index": 17,
+   "confidence": "high",
+   "note": "text spans line end/start; closing number 2 printed after निशामय"
+  },
+  {
+   "verse": "3",
+   "printed_numbers": [
+    "3"
+   ],
+   "text": "अतीतकल्पावसानेनिशासुप्तोत्थितः प्रभुः । सत्त्वोद्रिक्तस्ततो ब्रह्मा शून्यं लोकमवैक्षत",
+   "page_index": 17,
+   "confidence": "medium",
+   "note": "अतीतकल्पावसाने निशाwords run together as printed; सुप्तोत्थितः printed with a ligature-like form"
+  },
+  {
+   "verse": "4",
+   "printed_numbers": [
+    "4"
+   ],
+   "text": "नारायणः परोचिंत्यः परेषामपि सप्रभुः । ब्रह्मस्वरूपी भगवाननादिः सर्वसंभवः",
+   "page_index": 17,
+   "confidence": "medium",
+   "note": "print has परोचिंत्यः (no avagraha seen) and 'पिसप्रभुः'; closing number printed like 8 form (४), taken as 4"
+  },
+  {
+   "verse": "5",
+   "printed_numbers": [
+    "5"
+   ],
+   "text": "इमं चोदाहरंत्यत्र श्लोकं नारायणं प्रति । ब्रह्मस्वरूपिणं देवं जगतः प्रभवाप्ययम्",
+   "page_index": 17,
+   "confidence": "high",
+   "note": "spans n17 end to n18 start (प्रभ | वाप्ययम्); number ५ on n18"
+  },
+  {
+   "verse": "6",
+   "printed_numbers": [
+    "6"
+   ],
+   "text": "आपो नारा इति प्रोक्ता आपो वै नरसूनवः । अयनं तस्य ताः पूर्वं तेन नारायणः स्मृतः",
+   "page_index": 18,
+   "confidence": "high",
+   "note": "आपोनाराइति as printed"
+  },
+  {
+   "verse": "7",
+   "printed_numbers": [
+    "7"
+   ],
+   "text": "तोयांतः समहीं ज्ञात्वा जगत्येकार्णवे प्रभुः । अनुमानात्तदुद्धारं कर्तुकामः प्रजापतिः",
+   "page_index": 18,
+   "confidence": "medium",
+   "note": "ज्ञात्वा printed with त्वा looking like ला"
+  },
+  {
+   "verse": "8",
+   "printed_numbers": [
+    "8"
+   ],
+   "text": "अकरोत्सतनूमन्यां कल्पादिषु यथापुरा । मत्स्यकूर्मादिकां तद्वद्वाराहं वपुरास्थितः",
+   "page_index": 18,
+   "confidence": "medium",
+   "note": "तनूम् vs तनुम् : print seems to show ऊ-mark"
+  },
+  {
+   "verse": "9",
+   "printed_numbers": [
+    "9"
+   ],
+   "text": "वेदयज्ञमयं रूपमशेषजगतः स्थितौ । स्थितः स्थिरात्मा सर्वात्मा परमात्मा प्रजापतिः",
+   "page_index": 18,
+   "confidence": "medium",
+   "note": "closing number printed as ८ again (repeat of 8); taken as 9 from sequence"
+  },
+  {
+   "verse": "10",
+   "printed_numbers": [
+    "10"
+   ],
+   "text": "जनलोकगतैः सिद्धैः सनकाद्यैरभिष्टुतः । प्रविवेश तदा तोयमात्माधारो धराधरः",
+   "page_index": 18,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "11",
+   "printed_numbers": [
+    "11"
+   ],
+   "text": "निरीक्ष्य तं तदा देवी पातालतलमागतम् । तुष्टाव प्रणता भूत्वा भक्तिनम्रा वसुंधरा",
+   "page_index": 18,
+   "confidence": "high",
+   "note": "पातालतलम् with ळ-like ल as printed ल"
+  },
+  {
+   "verse": "11a",
+   "printed_numbers": [],
+   "text": "पृथ्व्युवाच",
+   "page_index": 18,
+   "confidence": "high",
+   "note": "print पृथ्व्युवाच"
+  },
+  {
+   "verse": "12",
+   "printed_numbers": [
+    "12"
+   ],
+   "text": "नमस्ते सर्वभूताय तुभ्यं शंखगदाधर । मामुद्धरास्मादद्य त्वत्तोऽहं पूर्वमुत्थिता",
+   "page_index": 18,
+   "confidence": "medium",
+   "note": "line break मामुद्धरा|स्मादद्य; त्वत्तो printed oddly"
+  },
+  {
+   "verse": "13",
+   "printed_numbers": [
+    "13"
+   ],
+   "text": "त्वत्तोहमुद्धृता पूर्वं त्वन्मयाहं जनार्दन । तथान्यानि च भूतानि गगनादीन्यशेषतः",
+   "page_index": 18,
+   "confidence": "medium",
+   "note": "मुद्धृता: print reads like मुद्गृता; चभूतानि; text shows तथान्यानिचभूतानिगगनादीन्यशेषतः"
+  },
+  {
+   "verse": "14",
+   "printed_numbers": [
+    "14"
+   ],
+   "text": "नमस्ते परमात्मात्मन् पुरुषात्म न्नमोऽस्तुते । प्रधानव्यक्तभूताय कालभूताय ते नमः",
+   "page_index": 18,
+   "confidence": "medium",
+   "note": "पुरुषात्म|न्नमोऽस्तुते across line break; joined as printed"
+  },
+  {
+   "verse": "15",
+   "printed_numbers": [
+    "15"
+   ],
+   "text": "त्वं कर्ता सर्वभूतानां त्वं पाता त्वं विनाशकृत् । सर्गादिषु प्रभो ब्रह्मविष्णुरुद्रात्मरूपधृक्",
+   "page_index": 18,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "16",
+   "printed_numbers": [
+    "16"
+   ],
+   "text": "संभक्षयित्वा सकलं जगत्येकार्णवीकृते । शेषे त्वमेव गोविंद चिंत्यमानो मनीषिभिः",
+   "page_index": 18,
+   "confidence": "high",
+   "note": "संभक्ष|यित्वा across line break"
+  },
+  {
+   "verse": "17",
+   "printed_numbers": [
+    "17"
+   ],
+   "text": "भवतो यत्परं रूपं तन्न जानाति कश्चन । अवतारेषु यद्रूपं तदर्चंति दिवौकसः",
+   "page_index": 18,
+   "confidence": "medium",
+   "note": "number १७ printed at start of next line; तदर्चंति"
+  },
+  {
+   "verse": "18",
+   "printed_numbers": [
+    "18"
+   ],
+   "text": "त्वामाराध्य परं ब्रह्म याता मुक्तिं मुमुक्षवः । वासुदेवमनाराध्य को मोक्षं समवाप्स्यति",
+   "page_index": 18,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "19",
+   "printed_numbers": [
+    "19"
+   ],
+   "text": "यत्किंचिन्मनसाग्राह्यं यद्ग्राह्यं चक्षुरादिभिः । बुद्ध्या च यत्परिच्छेद्यं तद्रूपमखिलं तव",
+   "page_index": 18,
+   "confidence": "medium",
+   "note": "second ग्राह्यं printed like द्राह्यं"
+  },
+  {
+   "verse": "20",
+   "printed_numbers": [
+    "20"
+   ],
+   "text": "त्वन्मयाहं त्वदाधारा त्वत्सृष्टा त्वामुपाश्रिता । माधवीमिति लोकोयमभिधत्ते ततो हि माम्",
+   "page_index": 18,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "21",
+   "printed_numbers": [
+    "21"
+   ],
+   "text": "जयाखिलज्ञानमय जयस्थूल मयाव्यय । जयानंत जयाव्यक्त जयव्यक्तमय प्रभो",
+   "page_index": 18,
+   "confidence": "medium",
+   "note": "line break जयस्थूल|मयाव्यय; as printed"
+  },
+  {
+   "verse": "22",
+   "printed_numbers": [
+    "22"
+   ],
+   "text": "परावरात्मन् विश्वात्मन् जय यज्ञपतेऽनघ । त्वं यज्ञस्त्वं वषट्कारस्त्वमोंकारस्त्वमग्नयः",
+   "page_index": 18,
+   "confidence": "high",
+   "note": "closing 22 on n18 end"
+  },
+  {
+   "verse": "23",
+   "printed_numbers": [
+    "23"
+   ],
+   "text": "त्वं वेदास्त्वं तदंगानि त्वं यज्ञपुरुषो हरे । सूर्यादयो ग्रहास्तारा नक्षत्राण्यखिलं च यत्",
+   "page_index": 19,
+   "confidence": "high",
+   "note": "first line of n19 root"
+  },
+  {
+   "verse": "24",
+   "printed_numbers": [
+    "24"
+   ],
+   "text": "मूर्तामूर्तमदृश्यं च दृश्यं च पुरुषोत्तमः । यच्चोक्तं यच्च नैवोक्तं मयात्र परमेश्वर",
+   "page_index": 19,
+   "confidence": "high",
+   "note": "line break at मयात्र|परमेश्वर"
+  },
+  {
+   "verse": "25",
+   "printed_numbers": [
+    "25"
+   ],
+   "text": "तत्सर्वं त्वं नमस्तुभ्यं भूयो भूयो नमोनमः । एवं संस्तूयमानस्तु पृथिव्या पृथिवीधरः । सामस्वरध्वनिः श्रीमाज्ञगर्ज परिघर्घरम्",
+   "page_index": 19,
+   "confidence": "medium",
+   "note": "श्रीमाज्ञगर्ज: conjunct in print looks like ज्ञ (expected ञ्ज?); written as seen"
+  },
+  {
+   "verse": "26",
+   "printed_numbers": [
+    "26"
+   ],
+   "text": "ततः समुत्क्षिप्य धरां सदंष्ट्रया महावराहः स्फुटपद्मलोचनः । रसातलादुत्पलपत्रसन्निभः समुत्थितो नील इवाचलो महान्",
+   "page_index": 19,
+   "confidence": "high",
+   "note": "ततःस|मुत्क्षिप्य across line break"
+  },
+  {
+   "verse": "27",
+   "printed_numbers": [
+    "27"
+   ],
+   "text": "उत्तिष्ठता तेन मुखानिलाहतं तत्संप्लवांभो जनलोकसंश्रयान् । प्रक्षालयामास हितान्महाद्युतीन्सनंदनादीनपकल्मषान्मुनीन्",
+   "page_index": 19,
+   "confidence": "high",
+   "note": "तत्सं|प्लवांभो across line break"
+  },
+  {
+   "verse": "28",
+   "printed_numbers": [
+    "28"
+   ],
+   "text": "उत्तिष्ठतस्तस्य जलार्द्रकुक्षेर्महावराहस्य महीं विधार्य । विभुत्वतो वेदमयं शरीरं रोमांतरस्था मुनयो जुषंति",
+   "page_index": 19,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "29",
+   "printed_numbers": [
+    "29"
+   ],
+   "text": "प्रयांति तोयानि खुराग्रविक्षते रसातले धः कृतशब्दसंतति । श्वासानिलास्ताः परितः प्रयांति सिद्धा जने ये नियता वसंति",
+   "page_index": 19,
+   "confidence": "medium",
+   "note": "word division of सिद्धाजनेयेनियतावसंति is mine; रसातलेधः printed together; संतति sic"
+  },
+  {
+   "verse": "30",
+   "printed_numbers": [
+    "30"
+   ],
+   "text": "तं तुष्टुवुस्तोषपरीतचेतसो लोके जने ये निवसंति योगिनः । सनंदनाद्यानतिनम्रकंधरा धराधरं तारतरोद्वतेक्षणम्",
+   "page_index": 19,
+   "confidence": "medium",
+   "note": "तारतरोद्वतेक्षणम् : द्वत/द्यत unclear in print; number ३० printed at start of next line"
+  },
+  {
+   "verse": "31",
+   "printed_numbers": [
+    "31"
+   ],
+   "text": "जयेश्वराणां परमेश केशव प्रभो गदाशंखधरासिचक्रधृक् । प्रसूतिनाशस्थितिहेतुरीश्वरस्त्वमेव नान्यत्परमं च यत्पदम्",
+   "page_index": 19,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "32",
+   "printed_numbers": [
+    "32"
+   ],
+   "text": "पादेषु वेदास्तव यूपदंष्ट्र दंतेषु यज्ञाश्चितयश्च वक्त्रे । हुताशजिह्वोसि तनूरुहाणि दर्भाः प्रभो यज्ञपुमांस्त्वमेव",
+   "page_index": 19,
+   "confidence": "high",
+   "note": "दंष्ट्र|दंतेषु across line break"
+  },
+  {
+   "verse": "33",
+   "printed_numbers": [
+    "33"
+   ],
+   "text": "विलोचने रात्र्यहनी महात्मन् सर्वाश्रयं ब्रह्म परं शिरस्ते । सूक्तान्यशेषाणि सटाकलापो घ्राणं समस्तानि हवींषि देव",
+   "page_index": 20,
+   "confidence": "high",
+   "note": "begins at end of n19 (विलोचने...शिरस्ते । सू) and ends on n20 line 1 (क्तान्यशेषाणि...देव ३३)"
+  },
+  {
+   "verse": "34",
+   "printed_numbers": [
+    "34"
+   ],
+   "text": "स्रुक्तुंडसामस्वरधीरनाद प्राग्वंशकायाखिलसत्रसंधे । पूर्तेष्टधर्मश्रवणोसि देव सनातनात्मन् भगवन् प्रसीद",
+   "page_index": 20,
+   "confidence": "high",
+   "note": "सनातना|त्मन् across line break"
+  },
+  {
+   "verse": "35",
+   "printed_numbers": [
+    "35"
+   ],
+   "text": "पदक्रमक्रांतभवंतमंतमादिं स्थितिं चाक्षरविश्वमूर्ते । विश्वस्य विघ्नः परमेश्वरोसि प्रसीद नाथोसि चराचरस्य",
+   "page_index": 20,
+   "confidence": "medium",
+   "note": "विघ्नः: glyph reads like विद्न/विघ्न, uncertain"
+  },
+  {
+   "verse": "36",
+   "printed_numbers": [
+    "36"
+   ],
+   "text": "दंष्ट्राग्रविन्यस्तमशेषमेतद्भूमंडलं नाथ विभाव्यतेते । विगाहतः पद्मवनं विलग्नं सरोजिनीपत्रमिवोढपंकम्",
+   "page_index": 20,
+   "confidence": "medium",
+   "note": "विभाव्यतेते as printed (double ते); विगाहतः as seen; line break दंष्ट्राग्रवि|न्यस्त"
+  },
+  {
+   "verse": "37",
+   "printed_numbers": [
+    "37"
+   ],
+   "text": "द्यावापृथिव्योरतुल प्रभाव यदंतरं तद्वपुषा तवैव । व्याप्तं जगद्व्याप्तिसमर्थदीप्ते हिताय विश्वस्य विभो भवत्वम्",
+   "page_index": 20,
+   "confidence": "medium",
+   "note": "word division mine; जगद्व्याप्ति vs जगद्वाप्ति and दीप्ते हिताय unclear in print; ends भवत्वम् as printed"
+  },
+  {
+   "verse": "38",
+   "printed_numbers": [
+    "38"
+   ],
+   "text": "परमार्थस्त्वमेवैको नान्योऽस्ति जगतः पते । तवैव महिमा येन व्याप्तमेतच्चराचरम्",
+   "page_index": 20,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "39",
+   "printed_numbers": [
+    "39"
+   ],
+   "text": "यदेतद्दृश्यते मूर्तमेतज्ज्ञानात्मनस्तव । भ्रांतिज्ञानेन पश्यंति जगद्रूपमयोगिनः",
+   "page_index": 20,
+   "confidence": "high",
+   "note": "यदे|तद्दृश्यते across line break; number ३९ at line end"
+  },
+  {
+   "verse": "40",
+   "printed_numbers": [
+    "40"
+   ],
+   "text": "ज्ञानस्वरूपमखिलं जगदेतदबुद्धयः । अर्थस्वरूपं पश्यंतो भ्राम्यंते मोहसंप्लवे",
+   "page_index": 20,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "41",
+   "printed_numbers": [
+    "41"
+   ],
+   "text": "ये तु ज्ञानविदः शुद्धचेतसस्तेऽखिलं जगत् । ज्ञानात्मकं प्रपश्यंति त्वद्रूपं परमेश्वर",
+   "page_index": 20,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "42",
+   "printed_numbers": [
+    "42"
+   ],
+   "text": "प्रसीद सर्वसर्वात्मन् भवाय जगतामिमां । उद्धरोर्वीं ममेयात्मन् शन्नो देह्यब्जलोचन",
+   "page_index": 20,
+   "confidence": "medium",
+   "note": "उ|द्धरोर्वीं across line break; ममेयात्मन् and भवाय read as printed"
+  },
+  {
+   "verse": "43",
+   "printed_numbers": [
+    "43"
+   ],
+   "text": "सत्त्वोद्रिक्तोसि भगवन् गोविंद पृथिवीमिमाम् । समुद्धर भवायेश शन्नो देह्यब्जलोचन",
+   "page_index": 20,
+   "confidence": "medium",
+   "note": "पृथिवी glyph printed like प्टथिवी"
+  },
+  {
+   "verse": "44",
+   "printed_numbers": [
+    "44"
+   ],
+   "text": "सर्गप्रवृत्तिर्भवतो जगतामुपकारिणी । भवत्वेषा नमस्तेस्तु शन्नो देह्यब्जलोचन",
+   "page_index": 21,
+   "confidence": "medium",
+   "note": "starts at end of n20 (सर्गप्रवृत्तिर्भव; print glyphs ambiguous) and continues n21 line 1 (तो जगतामुपकारिणी)"
+  },
+  {
+   "verse": "45",
+   "printed_numbers": [
+    "45"
+   ],
+   "text": "एवं संस्तूयमानस्तु परमात्मा महीधरः । उज्जहार महीं क्षिप्रं न्यस्तवांश्च महांभसि",
+   "page_index": 21,
+   "confidence": "high",
+   "note": "number ४५ at start of next line"
+  },
+  {
+   "verse": "46",
+   "printed_numbers": [
+    "46"
+   ],
+   "text": "तस्योपरि जलौघस्य महती नौरिव स्थिता । विततत्वात्तु देहस्य न मही याति संप्लवं",
+   "page_index": 21,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "47",
+   "printed_numbers": [
+    "47"
+   ],
+   "text": "ततः क्षितिं समां कृत्वा पृथिव्यां सोचिनोद्गिरीन् । यथाविभागं भगवाननादिः पुरुषोत्तमः",
+   "page_index": 21,
+   "confidence": "medium",
+   "note": "सोचिनो as printed; यथावि|भागं across line break"
+  },
+  {
+   "verse": "48",
+   "printed_numbers": [
+    "48"
+   ],
+   "text": "प्राक्सर्गदग्धानखिलान्पर्वतान्पृथिवीतले । अमोघेन प्रभावेण ससर्जामोघवांञ्छितः",
+   "page_index": 21,
+   "confidence": "medium",
+   "note": "वांञ्छितः glyph reads like ञ्छ"
+  },
+  {
+   "verse": "49",
+   "printed_numbers": [
+    "49"
+   ],
+   "text": "भूविभागं ततः कृत्वा सतद्वीपान्यथातथम् । भूराद्यांश्चतुरो लोकान्पूर्ववत्समकल्पयत्",
+   "page_index": 21,
+   "confidence": "low",
+   "note": "line break कृत्वास|तद्वीपान्: print shows स + तद्वीपान् (no प visible); written as seen; closing number glyph like ४१, taken as 49 from sequence"
+  },
+  {
+   "verse": "50",
+   "printed_numbers": [
+    "50"
+   ],
+   "text": "ब्रह्मरूपधरो देवस्ततोसौ रजसावृतः । चकार सृष्टिं भगवांश्चतुर्वक्त्रधरो हरिः",
+   "page_index": 21,
+   "confidence": "high",
+   "note": "number ५० at start of next line"
+  },
+  {
+   "verse": "51",
+   "printed_numbers": [
+    "51"
+   ],
+   "text": "निमित्तमात्रमेवासौ सृज्यानां सर्गकर्मणाम् । प्रधानकारणीभूता यतो वै सृज्यशक्तयः",
+   "page_index": 21,
+   "confidence": "high",
+   "note": "यतो|वै across line break"
+  },
+  {
+   "verse": "52",
+   "printed_numbers": [
+    "52"
+   ],
+   "text": "निमित्तमात्रं मुक्त्वैकं नान्यत्किंचिदपेक्ष्यते । नीयते तपसां श्रेष्ठ स्वशक्त्या वस्तु वस्तुताम्",
+   "page_index": 21,
+   "confidence": "medium",
+   "note": "line break नीयतेतप|सांश्रेष्ठ; my word division (तपसां श्रेष्ठ); chapter colophon follows (इति श्री विष्णुपुराणे प्रथमेंशे चतुर्थोध्यायः ४), not included"
+  }
+ ]
+}
