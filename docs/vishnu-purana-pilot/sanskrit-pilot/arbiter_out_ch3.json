@@ -1,0 +1,466 @@
+[
+ {
+  "verse": "R1",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "ब्रह्मणोह्युपपद्यते",
+  "printed_calcutta": "ब्रह्मणोऽभ्युपगम्यते",
+  "note": "different wording; both readers match their own print"
+ },
+ {
+  "verse": "R1",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "ह्युपपद्यते",
+  "printed_calcutta": "भ्युपगम्यते",
+  "note": "same word as spot 0"
+ },
+ {
+  "verse": "R2",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "अचिंत्य",
+  "printed_calcutta": "अचिन्त्य",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints homorganic nasal conjunct"
+ },
+ {
+  "verse": "R2",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "भवंति",
+  "printed_calcutta": "भवन्ति",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints homorganic nasal conjunct"
+ },
+ {
+  "verse": "R3",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "सर्गे भगवान्",
+  "printed_calcutta": "सर्गं भगवान्",
+  "note": "e vs anusvara"
+ },
+ {
+  "verse": "R3",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "संप्रवर्तते",
+  "printed_calcutta": "सम्प्रवर्तते",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints homorganic nasal conjunct"
+ },
+ {
+  "verse": "R3",
+  "spot": 2,
+  "decision": "editions_differ",
+  "printed_bombay": "ब्रह्मालोक",
+  "printed_calcutta": "ब्रह्मलोक",
+  "note": "long ā vs short a before लोक"
+ },
+ {
+  "verse": "R3",
+  "spot": 3,
+  "decision": "editions_differ",
+  "printed_bombay": "विद्वान्नित्य",
+  "printed_calcutta": "विद्वन् ! नित्य",
+  "note": "Calcutta has vocative विद्वन्"
+ },
+ {
+  "verse": "R6",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "जंतूनां",
+  "printed_calcutta": "जन्तूनां",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints homorganic nasal conjunct"
+ },
+ {
+  "verse": "R6",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "चराश्रये",
+  "printed_calcutta": "चराश्चये/श्वये",
+  "note": "Bombay glyph श्र; Calcutta glyph is a poor scan, looks like श्च/श्व, not clearly श्र (medium confidence)"
+ },
+ {
+  "verse": "R6",
+  "spot": 2,
+  "decision": "both_print_same_but_reader_differed",
+  "printed_bombay": "भूभूभृत्",
+  "printed_calcutta": "भूभूभृत् (three भ-shaped glyphs)",
+  "note": "both prints appear to show three भ-glyphs before त्; Calcutta reader dropped one (medium-low confidence, Calcutta scan poor)"
+ },
+ {
+  "verse": "R6",
+  "spot": 3,
+  "decision": "editions_differ",
+  "printed_bombay": "शेषाणांच",
+  "printed_calcutta": "शेषाणाञ्च",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints homorganic nasal conjunct"
+ },
+ {
+  "verse": "R7",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "काष्ठाः पंचदश",
+  "printed_calcutta": "काष्ठा पञ्चदश",
+  "note": "Bombay has visarga after काष्ठा; Calcutta none; plus nasal"
+ },
+ {
+  "verse": "R7",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "ाःपंचदशाख्यात",
+  "printed_calcutta": "ापञ्चदशख्यात",
+  "note": "Bombay दशाख्याता (with ā), Calcutta दशख्याता; plus visarga/nasal"
+ },
+ {
+  "verse": "R7",
+  "spot": 2,
+  "decision": "editions_differ",
+  "printed_bombay": "पंचदशाख्यात",
+  "printed_calcutta": "ञ्चदशख्यात",
+  "note": "as spot 1"
+ },
+ {
+  "verse": "R7",
+  "spot": 3,
+  "decision": "both_print_same_but_reader_differed",
+  "printed_bombay": "काष्ठास्त्रिंशत्",
+  "printed_calcutta": "काष्ठास्त्रिंशत्",
+  "note": "both print स्त्रिं; Bombay reader dropped स्"
+ },
+ {
+  "verse": "R7",
+  "spot": 4,
+  "decision": "editions_differ",
+  "printed_bombay": "कलास्त्रिंशत् (Bombay reader omitted स्)",
+  "printed_calcutta": "कला तास्तु त्रिंशत्",
+  "note": "Calcutta prints कला तास्तु त्रिंशत् मौहूर्तिको; Bombay prints कलास्त्रिंशत्कला; Bombay reader also dropped स्"
+ },
+ {
+  "verse": "R7",
+  "spot": 5,
+  "decision": "editions_differ",
+  "printed_bombay": "त्कलामौहूर्तिक",
+  "printed_calcutta": "त्मौहूर्तिक",
+  "note": "Bombay has the extra word कला before मौहूर्तिक, Calcutta lacks it"
+ },
+ {
+  "verse": "R8",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "तावंति",
+  "printed_calcutta": "तावन्ति",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints homorganic nasal conjunct"
+ },
+ {
+  "verse": "R9",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "वर्षमयने",
+  "printed_calcutta": "वर्षं द्वेऽयने",
+  "note": "Calcutta has द्वे (हे-like glyph with avagraha) that Bombay lacks"
+ },
+ {
+  "verse": "R12",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "संध्या",
+  "printed_calcutta": "सन्ध्या",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints homorganic nasal conjunct"
+ },
+ {
+  "verse": "R12",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "संध्यां",
+  "printed_calcutta": "सन्ध्यां",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints homorganic nasal conjunct"
+ },
+ {
+  "verse": "R12",
+  "spot": 2,
+  "decision": "editions_differ",
+  "printed_bombay": "स्यानंतरो",
+  "printed_calcutta": "स्यानन्तरो",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints homorganic nasal conjunct"
+ },
+ {
+  "verse": "R13",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "संध्यास",
+  "printed_calcutta": "सन्ध्यास",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints homorganic nasal conjunct"
+ },
+ {
+  "verse": "R13",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "संध्यां",
+  "printed_calcutta": "सन्ध्यां",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints homorganic nasal conjunct"
+ },
+ {
+  "verse": "R13",
+  "spot": 2,
+  "decision": "editions_differ",
+  "printed_bombay": "योरंतर्यः",
+  "printed_calcutta": "योरन्तर्यः",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints homorganic nasal conjunct"
+ },
+ {
+  "verse": "R14",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "सहस्रंच",
+  "printed_calcutta": "सहस्रञ्च",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints homorganic nasal conjunct (Calcutta glyph reads ञ्च, scan coarse)"
+ },
+ {
+  "verse": "R15",
+  "spot": 0,
+  "decision": "both_print_same_but_reader_differed",
+  "printed_bombay": "मनवश्चचतुर्दश (श्च + च)",
+  "printed_calcutta": "मनवश्च चतुर्दश (श्च + च)",
+  "note": "both prints show the same letters; Bombay reader dropped one च"
+ },
+ {
+  "verse": "R15",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "भवंति",
+  "printed_calcutta": "भवन्ति",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints homorganic nasal conjunct"
+ },
+ {
+  "verse": "R15",
+  "spot": 2,
+  "decision": "editions_differ",
+  "printed_bombay": "परिमाणंच",
+  "printed_calcutta": "परिमाणञ्च",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints homorganic nasal conjunct"
+ },
+ {
+  "verse": "R16",
+  "spot": 0,
+  "decision": "both_print_same_but_reader_differed",
+  "printed_bombay": "सप्तर्षयः सुराः शक्रो मनुस्तत्सूनवो नृपाः । एककाले हि सृज्यंते संक्रियंते च पूर्ववत्",
+  "printed_calcutta": "सप्तर्षयः सुराः शक्रो मनुस्तत्सूनवो नृपाः । एककाले हि सृज्यन्ते संक्षियन्ते च पूर्ववत् ॥१६॥",
+  "note": "the stretch is printed in both books (end of Calcutta page 38); Calcutta reader omitted it; inside it the nasal/ conjunct letters differ orthographically (Bombay verb form partly unclear)"
+ },
+ {
+  "verse": "R17",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "मन्वंतरं",
+  "printed_calcutta": "मन्वन्तरं",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints homorganic nasal conjunct"
+ },
+ {
+  "verse": "R17",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "ादीनांच",
+  "printed_calcutta": "ादीनाञ्च",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints homorganic nasal conjunct"
+ },
+ {
+  "verse": "R18",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "संख्यया स्मृतम्",
+  "printed_calcutta": "संख्यया गतिः",
+  "note": "different wording"
+ },
+ {
+  "verse": "R18",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "स्मृतम् द्विपंचाशत्",
+  "printed_calcutta": "गतिः द्वापञ्चाशत्",
+  "note": "same"
+ },
+ {
+  "verse": "R18",
+  "spot": 2,
+  "decision": "editions_differ",
+  "printed_bombay": "द्विपंचाशत्",
+  "printed_calcutta": "द्वापञ्चाशत्",
+  "note": "द्वि vs द्वा plus nasal"
+ },
+ {
+  "verse": "R18",
+  "spot": 3,
+  "decision": "editions_differ",
+  "printed_bombay": "द्विपंचाशत्",
+  "printed_calcutta": "द्वापञ्चाशत्",
+  "note": "same word"
+ },
+ {
+  "verse": "R18",
+  "spot": 4,
+  "decision": "editions_differ",
+  "printed_bombay": "अधिकानि तु त्रिंशत्",
+  "printed_calcutta": "अधिकानि च त्रिंशत्",
+  "note": "तु vs च"
+ },
+ {
+  "verse": "R19",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "स्तुसंपूर्ण",
+  "printed_calcutta": "स्तुसम्पूर्ण",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints homorganic nasal conjunct"
+ },
+ {
+  "verse": "R20",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "मन्वंतरस्य",
+  "printed_calcutta": "मन्वन्तरस्य",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints homorganic nasal conjunct"
+ },
+ {
+  "verse": "R21",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "स्मृतम् ब्राह्म",
+  "printed_calcutta": "स्मृतः ब्राह्म",
+  "note": "Bombay स्मृतम्, Calcutta स्मृतः"
+ },
+ {
+  "verse": "R21",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "तस्यांते",
+  "printed_calcutta": "तस्यान्ते",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints homorganic nasal conjunct"
+ },
+ {
+  "verse": "R21",
+  "spot": 2,
+  "decision": "editions_differ",
+  "printed_bombay": "प्रतिसंचरः",
+  "printed_calcutta": "प्रतिसञ्चरः",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints homorganic nasal conjunct"
+ },
+ {
+  "verse": "R22",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "तदादिदह्यते",
+  "printed_calcutta": "तदा हि दह्यते",
+  "note": "Bombay दि, Calcutta हि"
+ },
+ {
+  "verse": "R22",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "प्रयांति",
+  "printed_calcutta": "प्रयान्ति",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints homorganic nasal conjunct"
+ },
+ {
+  "verse": "R22",
+  "spot": 2,
+  "decision": "editions_differ",
+  "printed_bombay": "तापार्ता",
+  "printed_calcutta": "तापार्त्ता",
+  "note": "Calcutta prints doubled त"
+ },
+ {
+  "verse": "R24",
+  "spot": 0,
+  "decision": "unclear",
+  "printed_bombay": "भिर्दैवश्चिंत्य (ै over द; reading of े/ै uncertain)",
+  "printed_calcutta": "भिर्दैवश्चिन्त्य (same look)",
+  "note": "both prints look alike at this spot (vowel sign on द, none visibly on व); readers disagree on where े/ै sits; scans too coarse to settle"
+ },
+ {
+  "verse": "R24",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "श्चिंत्य",
+  "printed_calcutta": "श्चिन्त्य",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints homorganic nasal conjunct"
+ },
+ {
+  "verse": "R24",
+  "spot": 2,
+  "decision": "editions_differ",
+  "printed_bombay": "ब्जसंभवः",
+  "printed_calcutta": "ब्जसम्भवः",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints homorganic nasal conjunct"
+ },
+ {
+  "verse": "R24",
+  "spot": 3,
+  "decision": "editions_differ",
+  "printed_bombay": "तदंते",
+  "printed_calcutta": "तदन्ते",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints homorganic nasal conjunct"
+ },
+ {
+  "verse": "R24",
+  "spot": 4,
+  "decision": "editions_differ",
+  "printed_bombay": "सृजते पुनः",
+  "printed_calcutta": "सृज्यते पुनः",
+  "note": "Bombay सृजते, Calcutta सृज्यते"
+ },
+ {
+  "verse": "R25",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "शतंच",
+  "printed_calcutta": "शतञ्च",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints homorganic nasal conjunct"
+ },
+ {
+  "verse": "R26",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "व्यतीतं तु",
+  "printed_calcutta": "व्यतीतस्तु/व्यतीतन्तु",
+  "note": "Bombay anusvara; Calcutta glyph is स्तु or न्तु (coarse scan) but not anusvara"
+ },
+ {
+  "verse": "R26",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "तस्यांते",
+  "printed_calcutta": "तस्यान्ते",
+  "note": "orthographic: Bombay prints anusvara, Calcutta prints homorganic nasal conjunct"
+ },
+ {
+  "verse": "R26",
+  "spot": 2,
+  "decision": "editions_differ",
+  "printed_bombay": "इत्यभिश्रुतः",
+  "printed_calcutta": "इत्यभिधीयते",
+  "note": "different wording"
+ },
+ {
+  "verse": "R26",
+  "spot": 3,
+  "decision": "editions_differ",
+  "printed_bombay": "श्रुतः",
+  "printed_calcutta": "धीयते",
+  "note": "same"
+ },
+ {
+  "verse": "R27",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "परिकल्पितः",
+  "printed_calcutta": "परिकीर्तितः",
+  "note": "different wording"
+ },
+ {
+  "verse": "R27",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "परिकल्पितः",
+  "printed_calcutta": "परिकीर्तितः",
+  "note": "same"
+ }
+]
