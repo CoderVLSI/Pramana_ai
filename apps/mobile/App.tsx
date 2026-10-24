@@ -158,7 +158,7 @@ function PassageCard({
         <Text style={s.small}>
           {p.review_status === "approved"
             ? `${p.translator} · ${p.completeness ?? "coverage pending"} edition`
-            : "Development rendering · Sanskrit fixture"}
+            : "Source passage"}
         </Text>
         <Icon name="arrow-forward" size={18} />
       </View>
@@ -976,7 +976,7 @@ function StudyApp() {
                                 : scope === "bhagavad-gita"
                                   ? DEVICE_CONNECTIONS
                                     ? "Bhagavad Gita"
-                                    : "Bhagavad Gita · fixtures"
+                                    : "Bhagavad Gita"
                                   : scope === UPANISHAD_SCOPE
                                     ? "108 Upanishads · Muktika list"
                                     : VEDA_TARGETS.some(([id]) => id === scope)
@@ -1074,9 +1074,8 @@ function StudyApp() {
                               are pending. No approved passages are indexed for
                               this collection; a full matching edition must be
                               established.
-                              {DEVICE_CONNECTIONS
-                                ? "Web results are shown separately while local collections are being prepared."
-                                : "Select development fixtures to explore the working reader."}
+                              Web results are shown separately while this
+                              collection is being prepared.
                             </Text>
                           </View>
                         )}
@@ -1295,66 +1294,6 @@ function StudyApp() {
                               </Pressable>
                             ))}
                           </View>
-                          {!DEVICE_CONNECTIONS && (
-                            <>
-                              <View style={s.sectionRow}>
-                                <Text style={s.sectionTitle}>
-                                  A passage to sit with
-                                </Text>
-                                <Text style={s.small}>
-                                  BHAGAVAD GITA · 2.47
-                                </Text>
-                              </View>
-                              <View style={s.feature}>
-                                <Text style={s.quoteMark}>“</Text>
-                                <Text style={s.featureQuote}>
-                                  Your concern is with action alone,{"\n"}never
-                                  with its fruits.
-                                </Text>
-                                <Text
-                                  style={[
-                                    s.small,
-                                    { color: "#d8dfcb", marginTop: 16 },
-                                  ]}
-                                >
-                                  DEVELOPMENT RENDERING · REVIEW PENDING
-                                </Text>
-                                <Pressable
-                                  onPress={async () => {
-                                    try {
-                                      setReader(
-                                        await request(
-                                          "/v1/passages/fixture_bg_2_47",
-                                        ),
-                                      );
-                                    } catch (e) {
-                                      setError((e as Error).message);
-                                    }
-                                  }}
-                                  style={[
-                                    s.row,
-                                    {
-                                      justifyContent: "flex-start",
-                                      gap: 10,
-                                      marginTop: 22,
-                                    },
-                                  ]}
-                                >
-                                  <Text
-                                    style={{ color: "white", fontSize: 14 }}
-                                  >
-                                    Read the full passage
-                                  </Text>
-                                  <Icon
-                                    name="arrow-forward"
-                                    color="white"
-                                    size={17}
-                                  />
-                                </Pressable>
-                                <View style={s.featureCircle} />
-                              </View>
-                            </>
-                          )}
                         </>
                       )}
                     </>

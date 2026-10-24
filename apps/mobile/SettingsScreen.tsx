@@ -7,7 +7,6 @@ import { View, Text, TextInput, Pressable } from "./ui";
 import { providerLinks, tavilyLinks } from "./provider-links";
 import { hapticsEnabled, setHapticsEnabled, selectionHaptic } from "./haptics";
 import React, { useEffect, useState } from "react";
-import ScripturePacks from "./ScripturePacks";
 import {
   StyleSheet,
   Switch,
@@ -234,7 +233,6 @@ export default function SettingsScreen({
           />
         </View>
       )}
-      {DEVICE_CONNECTIONS && <ScripturePacks />}
       <View style={s.notice}>
         <Text style={s.body}>
           {DEVICE_CONNECTIONS

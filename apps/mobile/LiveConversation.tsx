@@ -1322,65 +1322,6 @@ export default function LiveConversation({
       notice("Reply playback failed. Check your audio output and retry.");
     }
   }
-  async function testSpeaker() {
-    stop();
-    try {
-      if (Platform.OS === "android") {
-        const bridge = androidLiveAudio((event) => {
-          if (event.type === "playing")
-            callbacks.current.onSpeakingChange(true);
-          else if (event.type === "ended") {
-            callbacks.current.onSpeakingChange(false);
-            bridge.dispose();
-            if (duplex.current === bridge) duplex.current = null;
-          } else if (event.type === "error") {
-            notice(event.data);
-            bridge.dispose();
-            if (duplex.current === bridge) duplex.current = null;
-          }
-        });
-        duplex.current = bridge;
-        await bridge.start(false);
-        const bytes = new Uint8Array(24000),
-          view = new DataView(bytes.buffer);
-        for (let i = 0; i < 12000; i++) {
-          const fade = Math.min(1, i / 480, (12000 - i) / 480);
-          view.setInt16(
-            i * 2,
-            Math.sin((i * 2 * Math.PI * 440) / 24000) * 2400 * fade,
-            true,
-          );
-        }
-        bridge.play(toBase64(bytes));
-        bridge.endTurn();
-        notice(
-          "You should hear a short tone through the live voice output. Press volume up while it plays. This test uses no API.",
-        );
-        return;
-      }
-      const speech = await import("expo-speech");
-      await speech.stop();
-      speech.speak("Pramana voice is ready.", {
-        language,
-        onStart: () => callbacks.current.onSpeakingChange(true),
-        onDone: () => callbacks.current.onSpeakingChange(false),
-        onStopped: () => callbacks.current.onSpeakingChange(false),
-        onError: () => {
-          callbacks.current.onSpeakingChange(false);
-          notice(
-            "The phone speech voice could not play. Check media volume and installed speech voices.",
-          );
-        },
-      });
-      notice(
-        "Speaker test uses your phone's voice. Turn up media volume; this does not test the AI provider.",
-      );
-    } catch {
-      notice(
-        "Speaker test could not start. Check your phone's speech settings.",
-      );
-    }
-  }
   const dark = useDarkMode();
   const accent = useThemeColor("#315444");
   const haloColor = useThemeColor("#cce7d1");
@@ -1479,7 +1420,7 @@ export default function LiveConversation({
           </Pressable>
           <Pressable
             accessibilityRole="button"
-            accessibilityLabel="Voice details"
+            accessibilityLabel="Chat options"
             onPress={() => {
               setDetails((v) => !v);
               setHistoryOpen(false);
@@ -1611,7 +1552,7 @@ export default function LiveConversation({
                   );
                 })}
               </View>
-              <Text style={styles.panelTitle}>Details</Text>
+              <Text style={styles.panelTitle}>Options</Text>
               <Text style={styles.detail}>
                 {Platform.OS === "web"
                   ? "Microphone audio streams to your selected AI provider."
@@ -1620,12 +1561,6 @@ export default function LiveConversation({
                     : "Device speech recognition transcribes your voice; final text goes to your AI provider."}{" "}
                 Sessions last up to 10 minutes.
               </Text>
-              {!!connectedModel && (
-                <View style={styles.kv}>
-                  <Text style={styles.detail}>Model</Text>
-                  <Text style={styles.kvValue}>{connectedModel}</Text>
-                </View>
-              )}
               <View style={styles.kv}>
                 <Text style={[styles.detail, { flex: 1 }]}>
                   Web search (provider charges may apply)
@@ -1642,14 +1577,6 @@ export default function LiveConversation({
                   disabled={state === "live" || state === "connecting"}
                 />
               </View>
-              <Pressable
-                accessibilityRole="button"
-                onPress={() => void testSpeaker()}
-                style={styles.ghost}
-              >
-                <Glyph name="volume-high" size={18} />
-                <Text style={styles.ghostText}>Test phone speaker</Text>
-              </Pressable>
             </View>
           )}
           {!lines.length && (
