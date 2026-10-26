@@ -1229,8 +1229,11 @@ export default function LiveConversation({
 
   useEffect(() => {
     const subscription = AppState.addEventListener("change", (value) => {
+      // On Android the native audio service keeps the conversation alive in the background;
+      // if it could not start, the native module reports "paused" and the session ends there.
       if (
         value === "background" &&
+        !(Platform.OS === "android" && duplex.current) &&
         shouldStopLive(value, active.current, requestingPermission.current)
       ) {
         stop();

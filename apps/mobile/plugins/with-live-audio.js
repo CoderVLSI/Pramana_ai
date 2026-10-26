@@ -1,4 +1,5 @@
 const {
+  withAndroidManifest,
   withDangerousMod,
   withMainApplication,
   AndroidConfig,
@@ -9,7 +10,23 @@ module.exports = function withLiveAudio(config) {
   config = AndroidConfig.Permissions.withPermissions(config, [
     "android.permission.RECORD_AUDIO",
     "android.permission.MODIFY_AUDIO_SETTINGS",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_MICROPHONE",
   ]);
+  // The service that keeps a live conversation running while the app is minimized.
+  config = withAndroidManifest(config, (mod) => {
+    const app = mod.modResults.manifest.application[0];
+    app.service = app.service || [];
+    if (!app.service.some((s) => s.$["android:name"] === ".PramanaLiveService"))
+      app.service.push({
+        $: {
+          "android:name": ".PramanaLiveService",
+          "android:exported": "false",
+          "android:foregroundServiceType": "microphone",
+        },
+      });
+    return mod;
+  });
   config = withMainApplication(config, (mod) => {
     const marker = "PackageList(this).packages.apply {";
     if (!mod.modResults.contents.includes("add(PramanaAudioPackage())")) {
@@ -30,7 +47,11 @@ module.exports = function withLiveAudio(config) {
         "app/src/main/java/org/pramana/study",
       );
       fs.mkdirSync(target, { recursive: true });
-      for (const name of ["PramanaAudioModule.kt", "PramanaAudioPackage.kt"])
+      for (const name of [
+        "PramanaAudioModule.kt",
+        "PramanaAudioPackage.kt",
+        "PramanaLiveService.kt",
+      ])
         fs.copyFileSync(
           path.join(__dirname, "live-audio", name),
           path.join(target, name),

@@ -1,6 +1,7 @@
 package org.pramana.study
 
 import android.Manifest
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.media.*
 import android.media.audiofx.AcousticEchoCanceler
@@ -17,7 +18,7 @@ import java.util.concurrent.Executors
 import java.util.concurrent.atomic.AtomicInteger
 import java.util.concurrent.atomic.AtomicLong
 
-/** Foreground-only PCM16 transport: 16 kHz microphone, 24 kHz streamed speaker.
+/** PCM16 transport (kept alive in the background by PramanaLiveService while a conversation runs): 16 kHz microphone, 24 kHz streamed speaker.
  * Never saves microphone audio. Each playback task is bounded and cancellable. */
 @ReactModule(name = "PramanaLiveAudio")
 class PramanaAudioModule(private val context: ReactApplicationContext) :
@@ -41,6 +42,7 @@ class PramanaAudioModule(private val context: ReactApplicationContext) :
   private var echo: AcousticEchoCanceler? = null
   private var noise: NoiseSuppressor? = null
   private var oldSpeaker = false
+  @Volatile private var serviceOn = false
   private var focused = false
   private val focus = AudioManager.OnAudioFocusChangeListener { change ->
     if (running && change < 0) {
@@ -71,6 +73,19 @@ class PramanaAudioModule(private val context: ReactApplicationContext) :
       }
     }
   } catch (_: Exception) { false }
+  // While the service runs, Android keeps the microphone and the network connection alive in
+  // the background; if it cannot start, the session still stops when the app is minimized.
+  private fun startKeepAlive() {
+    try {
+      androidx.core.content.ContextCompat.startForegroundService(context, Intent(context, PramanaLiveService::class.java))
+      serviceOn = true
+    } catch (_: Exception) { serviceOn = false }
+  }
+  private fun stopKeepAlive() {
+    if (!serviceOn) return
+    serviceOn = false
+    try { context.stopService(Intent(context, PramanaLiveService::class.java)) } catch (_: Exception) {}
+  }
   @Synchronized @ReactMethod
   fun start(capture: Boolean, promise: Promise) {
     shutdown()
@@ -81,6 +96,7 @@ class PramanaAudioModule(private val context: ReactApplicationContext) :
       if (manager.requestAudioFocus(focus, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN_TRANSIENT) != AudioManager.AUDIOFOCUS_REQUEST_GRANTED)
         throw IllegalStateException("Another app is using audio. Close it and retry.")
       focused = true
+      if (capture) startKeepAlive()
       manager.mode = AudioManager.MODE_NORMAL
       // Media output follows the user's speaker/headset route and media volume.
       // Communication mode can send replies to a quiet call/earpiece route on OEM phones.
@@ -259,6 +275,7 @@ class PramanaAudioModule(private val context: ReactApplicationContext) :
   @Synchronized private fun shutdown() {
     running = false
     playbackEpoch++
+    stopKeepAlive()
     val recorder = record
     record = null
     try { recorder?.stop() } catch (_: Exception) {}
@@ -281,7 +298,7 @@ class PramanaAudioModule(private val context: ReactApplicationContext) :
     }
   }
   override fun onHostResume() {}
-  override fun onHostPause() { if (running) { emit("paused"); shutdown() } }
+  override fun onHostPause() { if (running && !serviceOn) { emit("paused"); shutdown() } }
   override fun onHostDestroy() { shutdown() }
   override fun invalidate() { shutdown(); output.shutdownNow(); context.removeLifecycleEventListener(this); super.invalidate() }
 }
