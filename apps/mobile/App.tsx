@@ -117,6 +117,38 @@ function Icon({
   const themedColor = useThemeColor(color);
   return <Ionicons name={name} size={size} color={themedColor} />;
 }
+const TAB_ICONS = {
+  chat: [
+    require("./assets/icons/tab-chat.png"),
+    require("./assets/icons/tab-chat-active.png"),
+  ],
+  library: [
+    require("./assets/icons/tab-library.png"),
+    require("./assets/icons/tab-library-active.png"),
+  ],
+  settings: [
+    require("./assets/icons/tab-settings.png"),
+    require("./assets/icons/tab-settings-active.png"),
+  ],
+} as const;
+function TabIcon({
+  icon,
+  active,
+  size = 26,
+}: {
+  icon: keyof typeof TAB_ICONS;
+  active: boolean;
+  size?: number;
+}) {
+  const tint = useThemeColor(active ? C.green : C.muted);
+  return (
+    <Image
+      source={TAB_ICONS[icon][active ? 1 : 0]}
+      style={{ width: size, height: size, tintColor: tint }}
+      accessibilityIgnoresInvertColors
+    />
+  );
+}
 function PassageCard({
   p,
   saved,
@@ -534,12 +566,20 @@ function StudyApp() {
       setNotice((e as Error).message);
     }
   }
+  // Three tabs. Saved lives inside Library; About and Profile live inside Settings.
   const nav = [
-    ["Study", "sparkles-outline"],
-    ["Library", "library-outline"],
-    ["Saved", "bookmark-outline"],
-    ["About", "information-circle-outline"],
+    ["Study", "Chat", "chat"],
+    ["Library", "Library", "library"],
+    ["Settings", "Settings", "settings"],
   ] as const;
+  const navTab = (t: string) =>
+    t === "Saved"
+      ? "Library"
+      : t === "About" || t === "Profile"
+        ? "Settings"
+        : t === "Fact check"
+          ? "Study"
+          : t;
   const selectedHasPassages = works.some(
     (w) => w.passage_count > 0 && workIdsForScope(scope).includes(w.id),
   );
@@ -588,22 +628,24 @@ function StudyApp() {
               </View>
             </View>
             <Text style={s.navLabel}>YOUR STUDY SPACE</Text>
-            {nav.map(([name, icon]) => (
+            {nav.map(([name, label, icon]) => (
               <Pressable
                 key={name}
                 onPress={() => {
                   setTab(name);
                   setReader(null);
                 }}
-                style={[s.nav, tab === name && s.navActive]}
+                style={[s.nav, navTab(tab) === name && s.navActive]}
               >
-                <Icon name={icon} color={tab === name ? C.green : C.muted} />
-                <Text style={[s.navText, tab === name && { color: C.green }]}>
-                  {name}
+                <TabIcon icon={icon} active={navTab(tab) === name} size={24} />
+                <Text
+                  style={[
+                    s.navText,
+                    navTab(tab) === name && { color: C.green },
+                  ]}
+                >
+                  {label}
                 </Text>
-                {name === "Saved" && (
-                  <Text style={s.count}>{saved.length}</Text>
-                )}
               </Pressable>
             ))}
             <View style={{ flex: 1 }} />
@@ -617,7 +659,7 @@ function StudyApp() {
         )}
         <View style={{ flex: 1 }}>
           <View style={s.header}>
-            <Text style={s.headerTitle}>{wide ? tab : "pramāṇa"}</Text>
+            <Text style={s.headerTitle}>{wide ? (tab === "Study" ? "Chat" : tab) : "pramāṇa"}</Text>
             <View style={s.row}>
               <View style={s.pill}>
                 <View style={s.dot} />
@@ -1304,6 +1346,14 @@ function StudyApp() {
                   <Text style={s.kicker}>THE SOURCE COLLECTION</Text>
                   <Text style={s.title}>Library</Text>
                   <Text style={s.intro}>Browse texts and editions.</Text>
+                  <Pressable
+                    accessibilityRole="button"
+                    onPress={() => setTab("Saved")}
+                    style={s.secondary}
+                  >
+                    <Icon name="bookmark-outline" size={18} />
+                    <Text style={s.body}>Saved verses · {saved.length}</Text>
+                  </Pressable>
                   <TextInput
                     accessibilityLabel="Search library collections"
                     placeholder="Search works or editions"
@@ -1513,6 +1563,13 @@ function StudyApp() {
                   >
                     <Text style={s.body}>Profile & study preferences</Text>
                   </Pressable>
+                  <Pressable
+                    accessibilityRole="button"
+                    onPress={() => setTab("About")}
+                    style={s.secondary}
+                  >
+                    <Text style={s.body}>About Pramana</Text>
+                  </Pressable>
                   <SettingsScreen
                     studyProfile={profile}
                     onRestoreProfile={async (value) => {
@@ -1585,38 +1642,40 @@ function StudyApp() {
           )}
           {!wide && !keyboardOpen && (
             <View style={s.bottomNav}>
-              {nav.map(([name, icon]) => (
-                <Pressable
-                  accessibilityLabel={name}
-                  key={name}
-                  onPress={() => {
-                    if (tab !== name) void selectionHaptic();
-                    setTab(name);
-                    setReader(null);
-                  }}
-                  style={s.tabItem}
-                >
-                  <View
-                    style={[
-                      s.tabIcon,
-                      tab === name && { backgroundColor: "#e0e6d8" },
-                    ]}
+              {nav.map(([name, label, icon]) => {
+                const on = navTab(tab) === name;
+                return (
+                  <Pressable
+                    accessibilityLabel={label}
+                    accessibilityRole="tab"
+                    accessibilityState={{ selected: on }}
+                    key={name}
+                    onPress={() => {
+                      if (!on || tab !== name) void selectionHaptic();
+                      setTab(name);
+                      setReader(null);
+                    }}
+                    style={s.tabItem}
                   >
-                    <Icon
-                      name={icon}
-                      color={tab === name ? C.green : C.muted}
-                    />
-                  </View>
-                  <Text
-                    style={[
-                      s.small,
-                      tab === name && { color: C.green, fontWeight: "700" },
-                    ]}
-                  >
-                    {name}
-                  </Text>
-                </Pressable>
-              ))}
+                    <View
+                      style={[
+                        s.tabIcon,
+                        on && { backgroundColor: "#e0e6d8" },
+                      ]}
+                    >
+                      <TabIcon icon={icon} active={on} />
+                    </View>
+                    <Text
+                      style={[
+                        s.small,
+                        on && { color: C.green, fontWeight: "700" },
+                      ]}
+                    >
+                      {label}
+                    </Text>
+                  </Pressable>
+                );
+              })}
             </View>
           )}
         </View>
