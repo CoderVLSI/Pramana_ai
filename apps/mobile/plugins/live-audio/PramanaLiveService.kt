@@ -11,9 +11,10 @@ import android.content.pm.ServiceInfo
 import android.os.Build
 import android.os.IBinder
 
-/** Keeps a live voice conversation running while the app is minimized or the screen is off.
- * Android requires a visible notification (and shows the microphone indicator) for as long
- * as the microphone is in use; the service stops as soon as the conversation ends. */
+/** Keeps a live conversation running while the app is minimized or the screen is off, so a
+ * spoken or typed question still gets its answer. Android requires a visible notification for
+ * as long as it runs (and shows the microphone indicator when the microphone is in use); the
+ * service stops as soon as the conversation ends. */
 class PramanaLiveService : Service() {
   override fun onBind(intent: Intent?): IBinder? = null
   override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
@@ -28,15 +29,20 @@ class PramanaLiveService : Service() {
     val open = launch?.let {
       PendingIntent.getActivity(this, 0, it, PendingIntent.FLAG_IMMUTABLE or PendingIntent.FLAG_UPDATE_CURRENT)
     }
+    val listening = intent?.getBooleanExtra("capture", true) ?: true
     val builder = if (Build.VERSION.SDK_INT >= 26) Notification.Builder(this, CHANNEL) else Notification.Builder(this)
     val notification = builder
       .setContentTitle("Pramana · live conversation")
-      .setContentText("Rishi is listening. Tap to return to the app.")
+      .setContentText(if (listening) "Rishi is listening. Tap to return to the app." else "Rishi is replying. Tap to return to the app.")
       .setSmallIcon(android.R.drawable.ic_btn_speak_now)
       .setOngoing(true)
       .apply { if (open != null) setContentIntent(open) }
       .build()
-    if (Build.VERSION.SDK_INT >= 29) startForeground(ID, notification, ServiceInfo.FOREGROUND_SERVICE_TYPE_MICROPHONE)
+    if (Build.VERSION.SDK_INT >= 29)
+      startForeground(
+        ID, notification,
+        if (listening) ServiceInfo.FOREGROUND_SERVICE_TYPE_MICROPHONE else ServiceInfo.FOREGROUND_SERVICE_TYPE_MEDIA_PLAYBACK,
+      )
     else startForeground(ID, notification)
     return START_NOT_STICKY
   }

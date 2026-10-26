@@ -75,9 +75,10 @@ class PramanaAudioModule(private val context: ReactApplicationContext) :
   } catch (_: Exception) { false }
   // While the service runs, Android keeps the microphone and the network connection alive in
   // the background; if it cannot start, the session still stops when the app is minimized.
-  private fun startKeepAlive() {
+  private fun startKeepAlive(listening: Boolean) {
     try {
-      androidx.core.content.ContextCompat.startForegroundService(context, Intent(context, PramanaLiveService::class.java))
+      androidx.core.content.ContextCompat.startForegroundService(
+        context, Intent(context, PramanaLiveService::class.java).putExtra("capture", listening))
       serviceOn = true
     } catch (_: Exception) { serviceOn = false }
   }
@@ -96,7 +97,7 @@ class PramanaAudioModule(private val context: ReactApplicationContext) :
       if (manager.requestAudioFocus(focus, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN_TRANSIENT) != AudioManager.AUDIOFOCUS_REQUEST_GRANTED)
         throw IllegalStateException("Another app is using audio. Close it and retry.")
       focused = true
-      if (capture) startKeepAlive()
+      startKeepAlive(capture)
       manager.mode = AudioManager.MODE_NORMAL
       // Media output follows the user's speaker/headset route and media volume.
       // Communication mode can send replies to a quiet call/earpiece route on OEM phones.

@@ -12,6 +12,7 @@ module.exports = function withLiveAudio(config) {
     "android.permission.MODIFY_AUDIO_SETTINGS",
     "android.permission.FOREGROUND_SERVICE",
     "android.permission.FOREGROUND_SERVICE_MICROPHONE",
+    "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
   ]);
   // The service that keeps a live conversation running while the app is minimized.
   config = withAndroidManifest(config, (mod) => {
@@ -22,7 +23,7 @@ module.exports = function withLiveAudio(config) {
         $: {
           "android:name": ".PramanaLiveService",
           "android:exported": "false",
-          "android:foregroundServiceType": "microphone",
+          "android:foregroundServiceType": "microphone|mediaPlayback",
         },
       });
     return mod;
