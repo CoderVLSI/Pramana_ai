@@ -1,0 +1,686 @@
+{
+ "entries": [
+  {
+   "verse": "0a",
+   "printed_numbers": [],
+   "text": "मैत्रेय उवाच ।",
+   "page_index": 50,
+   "confidence": "high",
+   "note": "Chapter heading पञ्चमोऽध्यायः । printed above."
+  },
+  {
+   "verse": "1",
+   "printed_numbers": [
+    "1"
+   ],
+   "text": "यथा ससर्ज देवोऽसौ देवर्षिपितृदानवान् । मनुष्यतिर्य्यग्वृक्षादीन् भूर्व्योमसलिलौकसः",
+   "page_index": 50,
+   "confidence": "medium",
+   "note": "भूर्व्योम: the रेफ/ऊ marks are small and blurred."
+  },
+  {
+   "verse": "2",
+   "printed_numbers": [
+    "2"
+   ],
+   "text": "यद्गुणं यत्स्वरूपञ्च यत्स्वभावं जगद् द्विज ! । सर्गादौ सृष्टवान् ब्रह्मा तन् ममाचक्ष्व तत्त्वतः",
+   "page_index": 51,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "2a",
+   "printed_numbers": [],
+   "text": "पराशर उवाच ।",
+   "page_index": 51,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "3",
+   "printed_numbers": [
+    "3"
+   ],
+   "text": "मैत्रेय ! कथयाम्येष, शृणुष्व सुसमाहितः । यथा ससर्ज देवोऽसौ देवादीनखिलान् प्रभुः",
+   "page_index": 51,
+   "confidence": "high",
+   "note": "A comma is printed after कथयाम्येष (kept)."
+  },
+  {
+   "verse": "4",
+   "printed_numbers": [
+    "4"
+   ],
+   "text": "सृष्टिं चिन्तयतस्तस्य कल्पादिषु यथा पुरा । अबुद्धिपूर्वकः सर्गः प्रादुर्भूतस्तमोमयः",
+   "page_index": 51,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "5",
+   "printed_numbers": [
+    "5"
+   ],
+   "text": "तमो मोहो महामोहस्तामिस्रो ह्यन्धसंज्ञितः । अविद्या पञ्चपर्वैषा प्रादुर्भूता महात्मनः",
+   "page_index": 51,
+   "confidence": "medium",
+   "note": "ह्यन्ध first conjunct blackened."
+  },
+  {
+   "verse": "6",
+   "printed_numbers": [
+    "6"
+   ],
+   "text": "पञ्चधावस्थितः सर्गो ध्यायतोऽप्रतिबोधवान् । बहिरन्तोऽप्रकाशश्च संवृतात्मा नगात्मकः",
+   "page_index": 51,
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "verse": "7",
+   "printed_numbers": [
+    "7"
+   ],
+   "text": "मुख्या नगा यतः प्रोक्ता मुख्यसर्गस्ततस्त्वयम् । तं दृष्ट्वाऽसाधकं सर्गमन्यद् ध्यायत् परं पुनः",
+   "page_index": 52,
+   "confidence": "low",
+   "note": "Line 1 last word (ततस्त्वयम्) and line 2 words after सर्गम् are blurred; 'मन्यद्पर' read; word division uncertain."
+  },
+  {
+   "verse": "8",
+   "printed_numbers": [
+    "8"
+   ],
+   "text": "तस्याभिध्यायतः सर्गं तिर्य्यक्स्रोताभ्यवर्त्तत । यस्मात् तिर्य्यक् प्रवृत्तः स तिर्य्यक्स्रोतास्ततः स्मृतः",
+   "page_index": 52,
+   "confidence": "medium",
+   "note": "Closing number glyph ८ printed small/blurred."
+  },
+  {
+   "verse": "9",
+   "printed_numbers": [
+    "9"
+   ],
+   "text": "पश्वादयस्ते विख्यातास्तमःप्राया ह्यवेदिनः । उत्पथग्राहिणश्चैव तेऽज्ञाने ज्ञानमानिनः",
+   "page_index": 52,
+   "confidence": "medium",
+   "note": "पश्वादयस्ते and ह्यवेदिनः first conjuncts blackened."
+  },
+  {
+   "verse": "10",
+   "printed_numbers": [
+    "10"
+   ],
+   "text": "अहङ्कृता अहम्माना अष्टाविंशद्वधात्मकाः । अन्तःप्रकाशास्ते सर्वे आवृताश्च परस्परम्",
+   "page_index": 52,
+   "confidence": "medium",
+   "note": "अहङ्कृता and अष्टाविंशद्वधात्मकाः conjuncts blobby."
+  },
+  {
+   "verse": "11",
+   "printed_numbers": [
+    "11"
+   ],
+   "text": "तमप्यसाधकं मत्वा ध्यायतोऽन्यस्ततोऽभवत् । ऊर्ध्वस्रोतास्तृतीयस्तु सात्त्विकोर्ध्वमवर्त्तत",
+   "page_index": 54,
+   "confidence": "medium",
+   "note": "Initial ऊ and ध्व conjuncts slightly blurred."
+  },
+  {
+   "verse": "12",
+   "printed_numbers": [
+    "12"
+   ],
+   "text": "तं सुखप्रीतिबहुला बहिरन्तस्त्वनावृताः । प्रकाशा बहिरन्तश्च ऊर्ध्वस्रोतोभवाः स्मृताः",
+   "page_index": 54,
+   "confidence": "medium",
+   "note": "First word reads तं (anusvara visible); सुख/ध्व conjuncts blobby."
+  },
+  {
+   "verse": "13",
+   "printed_numbers": [
+    "13"
+   ],
+   "text": "तुष्टात्मनस्तृतीयस्तु देवसर्गस्तु स स्मृतः । तस्मिन् सर्गेऽभवत् प्रीतिर्निष्पन्ने ब्रह्मणस्तदा",
+   "page_index": 54,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "14",
+   "printed_numbers": [
+    "14"
+   ],
+   "text": "ततोऽन्यं स तदा दध्यौ साधकं सर्गमुत्तमम् । असाधकांस्तु तान् ज्ञात्वा मुख्यसर्गादिसम्भवान्",
+   "page_index": 54,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "15",
+   "printed_numbers": [
+    "15"
+   ],
+   "text": "तथाभिध्यायतस्तस्य सत्याभिध्यायिनस्ततः । प्रादुर्बभूव चाव्यक्ताद् अर्वाक्स्रोतास्तु साधकम्",
+   "page_index": 54,
+   "confidence": "medium",
+   "note": "Line 2: word after चा read as 'व्यक्ताद्' with a blurred conjunct."
+  },
+  {
+   "verse": "16",
+   "printed_numbers": [
+    "16"
+   ],
+   "text": "यस्मादर्वाक् प्रवर्त्तन्ते ततोऽर्वाक्स्रोतसस्तु ते । तं च प्रकाशबहुलास्तमोद्रिक्ता रजोऽधिकाः",
+   "page_index": 55,
+   "confidence": "medium",
+   "note": "Line 2 first word reads तं (anusvara visible, could be ते); प्रकाश conjunct blurred."
+  },
+  {
+   "verse": "17",
+   "printed_numbers": [
+    "17"
+   ],
+   "text": "तस्मात् ते दुःखबहुला भूयोभूयश्च कारिणः । प्रकाशा बहिरन्तश्च मनुष्याः साधकाश्च ते",
+   "page_index": 55,
+   "confidence": "medium",
+   "note": "दुःखबहुला and कारिणः slightly blurred."
+  },
+  {
+   "verse": "18",
+   "printed_numbers": [
+    "18"
+   ],
+   "text": "इत्येते कथिताः सर्गाः षडत्र मुनिसत्तम ! । प्रथमा महतः सर्गो विज्ञेयो ब्रह्मणस्तु सः",
+   "page_index": 55,
+   "confidence": "medium",
+   "note": "Printed 'प्रथमा' (ा visible); विज्ञेयो blobby."
+  },
+  {
+   "verse": "19",
+   "printed_numbers": [
+    "19"
+   ],
+   "text": "तन्मात्राणां द्वितीयश्च भूतसर्गस्तु स स्मृतः । वैकारिकस्तृतीयस्तु सर्ग ऐन्द्रियकः स्मृतः",
+   "page_index": 55,
+   "confidence": "medium",
+   "note": "Closing number looks like १८ (second occurrence); taken as 19 from the sequence."
+  },
+  {
+   "verse": "20",
+   "printed_numbers": [
+    "20"
+   ],
+   "text": "इत्येष प्राकृतः सर्गः सम्भूतो बुद्धिपूर्वकः । मुख्यसर्गश्चतुर्थस्तु मुख्या वै स्थावराः स्मृताः",
+   "page_index": 55,
+   "confidence": "medium",
+   "note": "इत्येष and सम्भूतो letters slightly blurred."
+  },
+  {
+   "verse": "21",
+   "printed_numbers": [
+    "21"
+   ],
+   "text": "तिर्य्यक्स्रोतास्तु यः प्रोक्तस्तैर्य्यग्योन्यः स उच्यते । ऊर्ध्वस्रोतास्ततः षष्ठा देवसर्गस्तु स स्मृतः",
+   "page_index": 56,
+   "confidence": "medium",
+   "note": "प्रोक्त and स्मृतः conjuncts blurred."
+  },
+  {
+   "verse": "22",
+   "printed_numbers": [
+    "22"
+   ],
+   "text": "ततोऽर्वाक्स्रोतसः सर्गः सप्तमः स तु मानुषः । अष्टमोऽनुग्रहः सर्गः सात्त्विकस्तामसश्च सः",
+   "page_index": 56,
+   "confidence": "medium",
+   "note": "अष्टमो first letter blurred."
+  },
+  {
+   "verse": "23",
+   "printed_numbers": [
+    "23"
+   ],
+   "text": "पञ्चैते वैकृताः सर्गाः, प्राकृतास्तु त्रयः स्मृताः । प्राकृता वैकृतश्चैव कौमारो नवमः स्मृतः",
+   "page_index": 56,
+   "confidence": "medium",
+   "note": "A comma printed after सर्गाः (kept); वैकृत conjuncts blurred."
+  },
+  {
+   "verse": "24",
+   "printed_numbers": [
+    "24"
+   ],
+   "text": "इत्येते वै समाख्याता नव सर्गाः प्रजापतेः । प्राकृता वैकृताश्चैव जगतो मूलहेतवः । सृजतो जगदीशस्य किमन्यत् श्रोतुमिच्छसि ?",
+   "page_index": 57,
+   "confidence": "high",
+   "note": "Verse has three printed lines."
+  },
+  {
+   "verse": "24a",
+   "printed_numbers": [],
+   "text": "मैत्रेय उवाच ।",
+   "page_index": 57,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "25",
+   "printed_numbers": [
+    "25"
+   ],
+   "text": "संक्षेपात् कथितः सर्गो देवादीनां मुने ! त्वया । विस्तरात् श्रोतुमिच्छामि त्वत्तो मुनिवरोत्तम !",
+   "page_index": 57,
+   "confidence": "medium",
+   "note": "Closing number glyph small; त्वत्तो blurred."
+  },
+  {
+   "verse": "25a",
+   "printed_numbers": [],
+   "text": "पराशर उवाच ।",
+   "page_index": 57,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "26",
+   "printed_numbers": [
+    "26"
+   ],
+   "text": "कर्मभिर्भाविताः पूर्वैः कुशलाकुशलैस्तु ताः । ख्यात्या तया ह्यनिर्मुक्ताः संहारे ह्युपसंहृताः",
+   "page_index": 57,
+   "confidence": "medium",
+   "note": "कुशलाकुशलैः and ह्यनि/ह्युप conjuncts blackened."
+  },
+  {
+   "verse": "27",
+   "printed_numbers": [
+    "27"
+   ],
+   "text": "स्थावरान्ताः सुराद्यास्तु प्रजा ब्रह्मंश्चतुर्विधाः । ब्रह्मणः कुर्वतः सृष्टिं जज्ञिरे मानसास्तु ताः",
+   "page_index": 57,
+   "confidence": "medium",
+   "note": "ब्रह्मंश्चतुर्विधाः conjunct blobby."
+  },
+  {
+   "verse": "28",
+   "printed_numbers": [
+    "28"
+   ],
+   "text": "ततो देवासुरपितॄन् मानुषांश्च चतुष्टयम् । सिसृक्षुरम्भांस्येतानि स्वमात्मानमयूयुजत्",
+   "page_index": 57,
+   "confidence": "low",
+   "note": "Line 2 first word (सिसृक्षुरम्भांसि...) heavily blackened; read as seen."
+  },
+  {
+   "verse": "29",
+   "printed_numbers": [
+    "29"
+   ],
+   "text": "युक्तात्मनस्तमोमात्रा उद्रिक्ताभूत् प्रजापतेः । सिसृक्षोर्जघनात् पूर्वमसुरा जज्ञिरे ततः",
+   "page_index": 57,
+   "confidence": "medium",
+   "note": "युक्तात्मनः and उद्रिक्ता conjuncts blobby."
+  },
+  {
+   "verse": "30",
+   "printed_numbers": [
+    "30"
+   ],
+   "text": "उत्ससर्ज ततस्तान्तु तमोमात्रात्मिकां तनुम् । सा तु त्यक्ता ततस्तेन मैत्रेयाभूद् विभावरी",
+   "page_index": 58,
+   "confidence": "medium",
+   "note": "त्यक्ता and ततस्तान्तु conjuncts blobby."
+  },
+  {
+   "verse": "31",
+   "printed_numbers": [
+    "31"
+   ],
+   "text": "सिसृक्षुरन्यदेहस्थः प्रीतिमापततः सुराः । सत्त्वोद्रिक्ताः समुद्भूता मुखतो ब्रह्मणो द्विज !",
+   "page_index": 58,
+   "confidence": "medium",
+   "note": "सिसृक्षु and ब्रह्मणो blobby; प्रीतिमापततः read as printed."
+  },
+  {
+   "verse": "32",
+   "printed_numbers": [
+    "32"
+   ],
+   "text": "त्यक्ता सा तु तमस्तेन सत्त्वप्रायमभूद् दिनम् । ततो हि बलिनो रात्रावसुरा देवता दिवा",
+   "page_index": 58,
+   "confidence": "medium",
+   "note": "त्यक्ता and सत्त्व conjuncts blobby."
+  },
+  {
+   "verse": "33",
+   "printed_numbers": [
+    "33"
+   ],
+   "text": "सत्त्वमात्रात्मिकामेव ततोऽन्यां जगृहे तनुम् । पितृवन्मन्यमानस्य पितरस्तस्य जज्ञिरे",
+   "page_index": 58,
+   "confidence": "medium",
+   "note": "पितृवन्मन्य conjuncts blobby."
+  },
+  {
+   "verse": "34",
+   "printed_numbers": [
+    "34"
+   ],
+   "text": "उत्ससर्ज पितॄन् सृष्ट्वा ततस्तामपि स प्रभुः । सा चोत्सृष्टाऽभवत् सन्ध्या दिनक्षान्तरस्थितिः",
+   "page_index": 58,
+   "confidence": "low",
+   "note": "Last word of line 2 (दिनम.न्तरस्थितिः) is a blackened blob; read as seen; closing number glyph unclear (34 by sequence)."
+  },
+  {
+   "verse": "35",
+   "printed_numbers": [
+    "35"
+   ],
+   "text": "रजोमात्रात्मिकामन्यां जगृहे स तनुं ततः । रजोमात्रोत्कटा जाता मनुष्या द्विजसत्तम",
+   "page_index": 58,
+   "confidence": "medium",
+   "note": "रजोमात्रोत्कटा conjunct blobby."
+  },
+  {
+   "verse": "36",
+   "printed_numbers": [
+    "36"
+   ],
+   "text": "तामप्याशु स तत्याज तनुं सद्यः प्रजापतिः । ज्योत्स्ना समभवत् सापि प्राक्सन्ध्या याभिधीयते",
+   "page_index": 59,
+   "confidence": "medium",
+   "note": "Closing number glyph blurred (read as १६-like); taken as 36 by sequence."
+  },
+  {
+   "verse": "37",
+   "printed_numbers": [
+    "37"
+   ],
+   "text": "ज्योत्स्नायामिव बलिनो मनुष्याः पितरस्तथा । मैत्रेय ! सन्ध्यासमये तस्मादेते भवन्ति वै",
+   "page_index": 59,
+   "confidence": "medium",
+   "note": "Number printed ॥ १७ ॥ in the image; taken as 37 by sequence. ज्योत्स्ना conjuncts blobby."
+  },
+  {
+   "verse": "38",
+   "printed_numbers": [
+    "38"
+   ],
+   "text": "ज्योत्स्ना रात्र्यहनी सन्ध्या चत्वार्येतानि वै प्रभोः । ब्रह्मणस्तु शरीराणि त्रिगुणोपाश्रयाणि तु",
+   "page_index": 59,
+   "confidence": "medium",
+   "note": "Number printed like १८; taken as 38 by sequence."
+  },
+  {
+   "verse": "39",
+   "printed_numbers": [
+    "39"
+   ],
+   "text": "रजोमात्रात्मिकामेव ततोऽन्यां जगृहे तनुम् । ततः क्षुद् ब्रह्मणो जाता जज्ञे कोपस्तया ततः",
+   "page_index": 59,
+   "confidence": "medium",
+   "note": "Number printed like २८; taken as 39 by sequence. क्षुद् conjunct blobby."
+  },
+  {
+   "verse": "40",
+   "printed_numbers": [
+    "40"
+   ],
+   "text": "क्षुत्क्षामानन्धकारेऽथ सोऽसृजद् भगवांस्ततः । विरूपाः श्मश्रुला जातास्तेऽभ्यधावंस्ततः प्रभुम्",
+   "page_index": 59,
+   "confidence": "low",
+   "note": "First word क्षुत्क्षामान् and श्मश्रुला heavily blackened; read as seen."
+  },
+  {
+   "verse": "41",
+   "printed_numbers": [
+    "41"
+   ],
+   "text": "मैवं भो ! रक्षतामेष यैरक्षम् राक्षसास्तु ते । ऊचुः खादाम इत्यन्ये ये तं यक्षास्तु भक्षणात्",
+   "page_index": 59,
+   "confidence": "low",
+   "note": "भो/भा, रक्षताम् and यैरक्षम् blurred; ये तं यक्षास्तु भक्षणात् uncertain."
+  },
+  {
+   "verse": "42",
+   "printed_numbers": [
+    "42"
+   ],
+   "text": "अप्रियानथ तान् दृष्ट्वा केशाः शीर्य्यन्त वेधसः । हीनाश्च शिरसो भूयः समारोहन्त तच्छिरः",
+   "page_index": 59,
+   "confidence": "low",
+   "note": "First word blurred; number printed ४२ (partly blurred)."
+  },
+  {
+   "verse": "43",
+   "printed_numbers": [
+    "43"
+   ],
+   "text": "सर्पणात् तेऽभवन् सर्पा हीनत्वादहयः स्मृताः । ततः क्रुद्धो जगत्स्रष्टा क्रोधात्मानो विनिर्ममे",
+   "page_index": 60,
+   "confidence": "medium",
+   "note": "सर्पणात् and हीनत्वादहयः partly blackened; क्रुद्धो and क्रोधात्मानो blobby."
+  },
+  {
+   "verse": "44",
+   "printed_numbers": [
+    "44"
+   ],
+   "text": "वर्णेन कपिशेनोग्रा भूतास्ते पिशिताशनाः । धयन्तो गां समुत्पन्ना गन्धर्वास्तद्गणात्",
+   "page_index": 60,
+   "confidence": "low",
+   "note": "Line 2 end (गन्धर्वास्तस्य तद्वणात् / तद्गणात्) blackened; first word धयन्तो read as seen."
+  },
+  {
+   "verse": "45",
+   "printed_numbers": [
+    "45"
+   ],
+   "text": "पिबन्तो जज्ञिरे वाचं गन्धर्वास्तेन ते द्विज ! । एतानि सृष्ट्वा भगवान् ब्रह्मा तच्छक्तिनोदितः",
+   "page_index": 60,
+   "confidence": "medium",
+   "note": "ब्रह्मा and तच्छक्ति conjuncts blobby."
+  },
+  {
+   "verse": "46",
+   "printed_numbers": [
+    "46"
+   ],
+   "text": "ततः स्वच्छन्दतोऽन्यानि वयांसि वयसोऽसृजत् । अवयो वक्षसश्चक्रे मुखतोऽजाः स सृष्टवान्",
+   "page_index": 60,
+   "confidence": "medium",
+   "note": "अवयो and सृष्टवान् blobby."
+  },
+  {
+   "verse": "47",
+   "printed_numbers": [
+    "47"
+   ],
+   "text": "सृष्टवानुदराद् गाश्च पार्श्वाभ्याञ्च प्रजापतिः । पद्भ्यामश्वान् स मातङ्गान् शरभान् गवयान् मृगान्",
+   "page_index": 60,
+   "confidence": "medium",
+   "note": "Closing number ४७ is attached directly after मृगान् with no visible danda pair."
+  },
+  {
+   "verse": "48",
+   "printed_numbers": [
+    "48"
+   ],
+   "text": "उष्ट्रानश्वतरांश्चैव न्यङ्कूनन्याश्च जातयः । ओषध्यः फलमूलिन्यो रोमभ्यस्तस्य जज्ञिरे",
+   "page_index": 60,
+   "confidence": "medium",
+   "note": "उष्ट्रानश्वतरांश्चैव and न्यङ्कून conjuncts blobby."
+  },
+  {
+   "verse": "49",
+   "printed_numbers": [
+    "49"
+   ],
+   "text": "त्रेतायुगमुखे ब्रह्मा कल्पस्यादौ द्विजोत्तम ! । सृष्ट्वा पशौषधीः सम्यग् युयोज स तदाध्वरे",
+   "page_index": 60,
+   "confidence": "medium",
+   "note": "पशौषधीः conjunct blackened; closing number looks like ४८, taken as 49 by sequence."
+  },
+  {
+   "verse": "50",
+   "printed_numbers": [
+    "50"
+   ],
+   "text": "गौरजः पुरुषा मेषा अश्वा अश्वतराः खराः । एतान् ग्राम्यान् पशून् प्राहुरारण्यांश्च निबोध मे",
+   "page_index": 61,
+   "confidence": "medium",
+   "note": "पुरुषा, अश्वा and अश्वतराः slightly blobby."
+  },
+  {
+   "verse": "51",
+   "printed_numbers": [
+    "51"
+   ],
+   "text": "श्वापदा द्विखुरा हस्ती वानरः पक्षिपञ्चमः । औदकाः पशवः षष्ठाः सप्तमास्तु सरीसृपाः",
+   "page_index": 61,
+   "confidence": "medium",
+   "note": "श्वापदा, पक्षिपञ्चमः conjuncts blurred."
+  },
+  {
+   "verse": "52",
+   "printed_numbers": [
+    "52"
+   ],
+   "text": "गायत्रञ्च ऋचश्चैव त्रिवृत्स्तोमं रथन्तरम् । अग्निष्टोमञ्च यज्ञानां निर्ममे प्रथमान् मुखात्",
+   "page_index": 61,
+   "confidence": "medium",
+   "note": "गायत्रञ्च and यज्ञानां conjuncts blurred."
+  },
+  {
+   "verse": "53",
+   "printed_numbers": [
+    "53"
+   ],
+   "text": "यजूंषि त्रैष्टुभं छन्दस्तोमं पञ्चदशं तथा । बृहत् साम तथोक्थञ्च दक्षिणादसृजन् मुखात्",
+   "page_index": 61,
+   "confidence": "medium",
+   "note": "बृहत् first letters and तथोक्थ blurred."
+  },
+  {
+   "verse": "54",
+   "printed_numbers": [
+    "54"
+   ],
+   "text": "सामानि जगतीच्छन्दः स्तोमं सप्तदशं तथा । वैरूपमतिरात्रञ्च पश्चिमादसृजन् मुखात्",
+   "page_index": 61,
+   "confidence": "medium",
+   "note": "Conjuncts in सप्तदशं and पश्चिमा blurred."
+  },
+  {
+   "verse": "55",
+   "printed_numbers": [
+    "55"
+   ],
+   "text": "एकविंशमथर्वाणमाप्तोर्यामाणमेव च । अनुष्टुभं स वैराजम् उत्तरादसृजन् मुखात्",
+   "page_index": 61,
+   "confidence": "medium",
+   "note": "आप्तोर्यामाण blurred; closing number ५५."
+  },
+  {
+   "verse": "56",
+   "printed_numbers": [
+    "56"
+   ],
+   "text": "उच्चावचानि भूतानि गात्रेभ्यस्तस्य जज्ञिरे । देवासुरपितॄन् सृष्ट्वा मनुष्यांश्च प्रजापतिः",
+   "page_index": 61,
+   "confidence": "medium",
+   "note": "उच्चावचानि and सृष्ट्वा blobby; closing number ५६ partly blurred."
+  },
+  {
+   "verse": "57",
+   "printed_numbers": [
+    "57"
+   ],
+   "text": "ततः पुनः ससर्जादौ स कल्पस्य पितामहः । यक्षान् पिशाचान् गन्धर्वांस्तथैवाप्सरसां गणान्",
+   "page_index": 62,
+   "confidence": "medium",
+   "note": "पितामहः last letters slightly blobby."
+  },
+  {
+   "verse": "58",
+   "printed_numbers": [
+    "58"
+   ],
+   "text": "नरकिन्नररक्षांसि वयःपशुमृगोरगान् । अव्ययञ्च व्ययञ्चैव यदिदं स्थाणुजङ्गमम्",
+   "page_index": 62,
+   "confidence": "medium",
+   "note": "Line 1 conjuncts blobby."
+  },
+  {
+   "verse": "59",
+   "printed_numbers": [
+    "59"
+   ],
+   "text": "तत् ससर्ज तदा ब्रह्मा भगवानादिकृद् विभुः । तेषां ये यानि कर्माणि प्राक् सृष्ट्यां प्रतिपेदिरे",
+   "page_index": 62,
+   "confidence": "medium",
+   "note": "Closing number looks like ५८; taken as 59 by sequence."
+  },
+  {
+   "verse": "60",
+   "printed_numbers": [
+    "60"
+   ],
+   "text": "तान्येव ते प्रपद्यन्ते सृज्यमानाः पुनः पुनः । हिंस्राहिंस्रे मृदुक्रूरे धर्माधर्माहितानृते । तद्भाविताः प्रपद्यन्ते तस्मात् तत् तस्य रोचते",
+   "page_index": 62,
+   "confidence": "low",
+   "note": "Three printed lines. In धर्माधर्माहितानृते the letters after धर्माधर्मा are blurred; read as seen."
+  },
+  {
+   "verse": "61",
+   "printed_numbers": [
+    "61"
+   ],
+   "text": "इन्द्रियार्थेषु भूतेषु शरीरेषु च स प्रभुः । नानात्वं विनियोगञ्च धातैव व्यसृजत् स्वयम्",
+   "page_index": 62,
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "verse": "62",
+   "printed_numbers": [
+    "62"
+   ],
+   "text": "नामरूपञ्च भूतानां कृत्यानाञ्च प्रपञ्चनम् । वेदशब्देभ्य एवादौ देवादीनां चकार सः",
+   "page_index": 63,
+   "confidence": "medium",
+   "note": "कृत्यानां and प्रपञ्चनम् conjuncts blobby."
+  },
+  {
+   "verse": "63",
+   "printed_numbers": [
+    "63"
+   ],
+   "text": "ऋषीणां नामधेयानि यथा वेदश्रुतानि वै । यथा नियोगयोग्यानि सर्वेषामपि सोऽकरोत्",
+   "page_index": 63,
+   "confidence": "medium",
+   "note": "Closing number glyph looks like ६३."
+  },
+  {
+   "verse": "64",
+   "printed_numbers": [
+    "64"
+   ],
+   "text": "यथर्त्तावृतुलिङ्गानि नानारूपाणि पर्य्यये । दृश्यन्ते तानि तान्येव तथा भावा युगादिषु",
+   "page_index": 63,
+   "confidence": "medium",
+   "note": "First word यथर्त्ता… conjunct blurred; closing number ६४."
+  },
+  {
+   "verse": "65",
+   "printed_numbers": [
+    "65"
+   ],
+   "text": "करोत्येवंविधां सृष्टिं कल्पादौ स पुनः पुनः । सिसृक्षायां नियुक्तोऽसौ सृज्यशक्तिप्रचोदितः",
+   "page_index": 63,
+   "confidence": "medium",
+   "note": "Verse 65 is the last on this page; no colophon printed after it (commentary follows, then a rule)."
+  }
+ ]
+}

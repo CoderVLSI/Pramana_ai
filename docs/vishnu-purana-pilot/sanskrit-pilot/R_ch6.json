@@ -1,0 +1,430 @@
+{
+ "entries": [
+  {
+   "verse": "0a",
+   "printed_numbers": [],
+   "text": "मैत्रेय उवाच",
+   "page_index": 27,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "1",
+   "printed_numbers": [
+    "1"
+   ],
+   "text": "अर्वाक्स्त्रोतस्तु कथिता भवता यस्तु मानुषः । ब्रह्मन् विस्तरतो ब्रूहि ब्रह्मा तमसृजद्यथा",
+   "page_index": 27,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "2",
+   "printed_numbers": [
+    "2"
+   ],
+   "text": "यथा च वर्णानिसृजद्ब्रह्मणांश्रमहामुने । यच्च तेषां स्मृतं कर्म विप्रादीनां तदुच्यताम्",
+   "page_index": 27,
+   "confidence": "low",
+   "note": "'यथाचवर्णानिसृजद्ब्रह्मणांश्रमहामुने' first half unclear (वर्णान् असृजद् / गुणांश्रम?)"
+  },
+  {
+   "verse": "2a",
+   "printed_numbers": [],
+   "text": "पराशर उवाच",
+   "page_index": 27,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "3",
+   "printed_numbers": [
+    "3"
+   ],
+   "text": "सत्याभिध्यायिनस्तस्य सिसृक्षोर्ब्रह्मणो जगत् । अजायंत द्विजश्रेष्ठ सत्त्वोद्रिक्ता मुखात्प्रजाः",
+   "page_index": 27,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "4",
+   "printed_numbers": [
+    "4"
+   ],
+   "text": "वक्षसो रजसोद्रिक्तास्तथान्या ब्रह्मणो भवन् । रजसा तमसा चैव समुद्रिक्तास्तथोरुतः",
+   "page_index": 27,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "5",
+   "printed_numbers": [
+    "5"
+   ],
+   "text": "पद्भ्यामन्याः प्रजा ब्रह्मा ससर्ज द्विजसत्तम । तमःप्रधानास्ताः सर्वाश्चातुर्वर्ण्यमिदं ततः",
+   "page_index": 27,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "6",
+   "printed_numbers": [
+    "6"
+   ],
+   "text": "ब्राह्मणाः क्षत्रिया वैश्याः शूद्राश्च द्विजसत्तम । पादोरुवक्षःस्थलतो मुखतश्च समुद्गताः",
+   "page_index": 27,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "7",
+   "printed_numbers": [
+    "7"
+   ],
+   "text": "यज्ञनिष्पत्तये सर्वमेतद्ब्रह्मा चकार वै । चातुर्वर्ण्यं महाभाग यज्ञसाधनमुत्तमम्",
+   "page_index": 27,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "8",
+   "printed_numbers": [
+    "8"
+   ],
+   "text": "यज्ञैराप्यायिता देवा वृष्ट्युत्सर्गेण वै प्रजाः । आप्याययंते धर्मज्ञ यज्ञाः कल्याणहेतवः",
+   "page_index": 27,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "9",
+   "printed_numbers": [
+    "9"
+   ],
+   "text": "निष्पाद्यंते नरैस्तैस्तु स्वकर्माभिरतैस्तदा । विरुद्धाचरणापेतैः सद्भिः सन्मार्गगामिभिः",
+   "page_index": 27,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "10",
+   "printed_numbers": [
+    "10"
+   ],
+   "text": "स्वर्गापवर्गौ मानुष्यात्प्राप्नुवंति नरा मुने । यच्चाभिरुचितं स्थानं तद्यांति मनुजा द्विज",
+   "page_index": 27,
+   "confidence": "high",
+   "note": "verse begins 'स्वर्गा' at end of n27 and continues on n28 first line"
+  },
+  {
+   "verse": "11",
+   "printed_numbers": [
+    "11"
+   ],
+   "text": "प्रजास्ता ब्रह्मणा सृष्टाश्चातुर्वर्ण्यव्यवस्थितौ । सम्यक्श्रद्धासमाचारप्रवणा मुनिसत्तम",
+   "page_index": 28,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "12",
+   "printed_numbers": [
+    "12"
+   ],
+   "text": "यथेच्छावासनिरताः सर्वबाधाविवर्जिताः । शुद्धांतःकरणाः शुद्धाः सर्वानुष्ठाननिर्मलाः",
+   "page_index": 28,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "13",
+   "printed_numbers": [
+    "13"
+   ],
+   "text": "शुद्धे च तासां मनसि शुद्धेंतः संस्थिते हरौ । शुद्धज्ञानं प्रपश्यंति विष्णवाख्यं येन तत्पदम्",
+   "page_index": 28,
+   "confidence": "medium",
+   "note": "'शुद्धे च तासां' read from print"
+  },
+  {
+   "verse": "14",
+   "printed_numbers": [
+    "14"
+   ],
+   "text": "ततः कालात्मको योसौ सचांशः कथितो हरेः । सपातयत्यघोघोरमल्पमल्पासारवत्",
+   "page_index": 28,
+   "confidence": "medium",
+   "note": "'मल्पमल्पासारवत्' as seen"
+  },
+  {
+   "verse": "15",
+   "printed_numbers": [
+    "15"
+   ],
+   "text": "अधर्मबीजभूतं तु तमोलोभसमुद्भवम् । प्रजासु तासु मैत्रेय रागादिकमसाधकम्",
+   "page_index": 28,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "16",
+   "printed_numbers": [
+    "16"
+   ],
+   "text": "ततः सा सहजा सिद्धिस्तासां नातीव जायते । रसोल्लासादयश्चान्याः सिद्धयोष्टौ भवंति याः",
+   "page_index": 28,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "17",
+   "printed_numbers": [
+    "17"
+   ],
+   "text": "तासु क्षीणासु स्वशेषासु वर्धमाने च पातके । द्वंद्वाभिभवदुःखार्तास्ता भवंति ततः प्रजाः",
+   "page_index": 28,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "18",
+   "printed_numbers": [
+    "18"
+   ],
+   "text": "ततो दुर्गाणि ताश्चक्रुर्वार्क्षं पार्वतमौदकम् । कृत्रिमं च तथा दुर्गं पुरखर्वटकादि यत्",
+   "page_index": 28,
+   "confidence": "high",
+   "note": "verse runs from last line of n28 to first line of n29"
+  },
+  {
+   "verse": "19",
+   "printed_numbers": [
+    "19"
+   ],
+   "text": "गृहाणि च यथान्यायं तेषु चक्रुः पुरादिषु । शीतातपादिबाधानां प्रशमाय महामते",
+   "page_index": 29,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "20",
+   "printed_numbers": [
+    "20"
+   ],
+   "text": "प्रतीकारमिमं कृत्वा शीतादेस्ताः प्रजाः पुनः । वार्तोपायं ततश्चक्रुर्हस्तासिद्धिं च कर्मजाम्",
+   "page_index": 29,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "21",
+   "printed_numbers": [
+    "21"
+   ],
+   "text": "व्रीहयश्च यवाश्चैव गोधूमा अणवस्तिलाः । प्रियंगवो ह्युदाराश्च कोरदूषाः सचीनकाः",
+   "page_index": 29,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "22",
+   "printed_numbers": [
+    "22"
+   ],
+   "text": "माषामुद्गामसूराश्च निष्पावाः सकुलत्थकाः । आढक्यश्चणकाश्चैव शणसप्तदशाः स्मृताः",
+   "page_index": 29,
+   "confidence": "medium",
+   "note": "'शणसप्तदशाः' letters partly in overlap; 'माषामुद्गामसूराश्च' as seen"
+  },
+  {
+   "verse": "23",
+   "printed_numbers": [
+    "23"
+   ],
+   "text": "इत्येता ओषधीनां तु ग्राम्याणां जातयो मुने । ओषध्यो यज्ञिया श्चैव ग्राम्यारण्याश्चतुर्दश",
+   "page_index": 29,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "24",
+   "printed_numbers": [
+    "24"
+   ],
+   "text": "व्रीहयः सयवा माषा गोधूमा अणवस्तिलाः । प्रियंगुः सप्तमा ह्येता अष्टमास्तु कुलत्थकाः",
+   "page_index": 29,
+   "confidence": "high",
+   "note": "closing number looks like २९ but sequence gives २४"
+  },
+  {
+   "verse": "25",
+   "printed_numbers": [
+    "25"
+   ],
+   "text": "श्यामाकात्वथ नीवारा जर्तिलाः सगवेधुकाः । तथा वेणुयवाः प्रोक्तास्तद्वन्मर्कटका मुने",
+   "page_index": 29,
+   "confidence": "medium",
+   "note": "'श्यामाकात्वथ' and 'जर्तिलाः' letters as seen"
+  },
+  {
+   "verse": "26",
+   "printed_numbers": [
+    "26"
+   ],
+   "text": "ग्राम्यारण्याः स्मृता ह्येता ओषध्यश्चतुर्दश । यज्ञनिष्पत्तये यज्ञस्तथा सांहेतुरुत्तमः",
+   "page_index": 29,
+   "confidence": "medium",
+   "note": "'यज्ञस्तथा सांहेतुरुत्तमः' as seen"
+  },
+  {
+   "verse": "27",
+   "printed_numbers": [
+    "27"
+   ],
+   "text": "एताश्च सह यज्ञेन प्रजानां कारणं परम् । परापरविदः प्राज्ञास्ततो यज्ञान्वितन्वते",
+   "page_index": 29,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "28",
+   "printed_numbers": [
+    "28"
+   ],
+   "text": "अहन्यहन्यनुष्ठानं यज्ञानां मुनिसत्तम । उपकारकरं पुंसां क्रियमाणाघशांतिदम्",
+   "page_index": 29,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "29",
+   "printed_numbers": [
+    "29"
+   ],
+   "text": "येषां तु कालसृष्टोऽसौ पापबिंदुर्महामते । चेतः सुवृद्धे चक्रुस्तेन यज्ञेषु मानसम्",
+   "page_index": 29,
+   "confidence": "low",
+   "note": "'सुवृद्धे' glyph unclear (looks like सुवट्धे / सुवृद्धे)"
+  },
+  {
+   "verse": "30",
+   "printed_numbers": [
+    "30"
+   ],
+   "text": "वेदवादांस्तथा वेदान्यज्ञकर्मादिकं च यत् । तत्सर्वं निंदमानास्ते यज्ञव्यासेधकारिणः",
+   "page_index": 29,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "31",
+   "printed_numbers": [
+    "31"
+   ],
+   "text": "प्रवृत्तिमार्गव्युच्छित्तिकारिणो वेदनिंदकाः । दुरात्मानो दुराचारा बभूवुः कुटिलाशयाः",
+   "page_index": 29,
+   "confidence": "high",
+   "note": "verse runs from last line of n29 ('कुटिलाश') to first line of n30 ('याः')"
+  },
+  {
+   "verse": "32",
+   "printed_numbers": [
+    "32"
+   ],
+   "text": "संसिद्धायां तु वार्तायां प्रजाः सृष्ट्वा प्रजापतिः । मर्यादां स्थापयामास यथास्थानं यथागुणम्",
+   "page_index": 30,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "33",
+   "printed_numbers": [
+    "33"
+   ],
+   "text": "वर्णानामाश्रमाणां च धर्मान्धर्मभृतां वर । लोकांश्च सर्ववर्णानां सम्यग्धर्मानुपालिनाम्",
+   "page_index": 30,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "34",
+   "printed_numbers": [
+    "34"
+   ],
+   "text": "प्राजापत्यं ब्राह्मणानां स्मृतं स्थानं क्रियावताम् । स्थानमैंद्रं क्षत्रियाणां संग्रामेष्वनिवर्तिनाम्",
+   "page_index": 30,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "35",
+   "printed_numbers": [
+    "35"
+   ],
+   "text": "वैश्यानां मारुतं स्थानं स्वधर्ममनुवर्तिनाम् । गांधर्वं शूद्रजातीनां परिचर्यासुवर्तताम्",
+   "page_index": 30,
+   "confidence": "high",
+   "note": "closing number resembles ३९/३५; sequence gives ३५"
+  },
+  {
+   "verse": "36",
+   "printed_numbers": [
+    "36"
+   ],
+   "text": "अष्टाशीतिसहस्राणां यतीनामूर्ध्वरेतसाम् । स्मृतं तेषां तु यत्स्थानं तद्देवगुरुवासिनाम्",
+   "page_index": 30,
+   "confidence": "medium",
+   "note": "'तद्देवगुरुवासिनाम्' conjunct slightly unclear"
+  },
+  {
+   "verse": "37",
+   "printed_numbers": [
+    "37"
+   ],
+   "text": "सप्तर्षीणां तु यत्स्थानं स्मृतं तद्दैवनौकसाम् । प्राजापत्यं गृहास्थानां न्यासिनां ब्रह्मसंज्ञितम्",
+   "page_index": 30,
+   "confidence": "medium",
+   "note": "'तद्दैवनौकसाम्' and 'गृहास्थानां' as seen, slightly unclear"
+  },
+  {
+   "verse": "38",
+   "printed_numbers": [
+    "38"
+   ],
+   "text": "योगिनाममृतं स्थानं तद्विष्णोः परमं पदम् । एकांतिनः सदा ब्रह्मध्यायिनो योगिनो हि ये । तेषां तु परमं स्थानं यत्तत्पश्यंति सूरयः",
+   "page_index": 30,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "39",
+   "printed_numbers": [
+    "39"
+   ],
+   "text": "गत्वागत्वा निवर्तंते चंद्रसूर्यादयो ग्रहाः । अद्यापि न निवर्तंते द्वादशाक्षरचिंतकाः",
+   "page_index": 30,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "40",
+   "printed_numbers": [
+    "40"
+   ],
+   "text": "तामिस्रमंधतामिस्रं महारौरवरौरवौ । असिपत्रवनं घोरं कालसूत्रमवीचिमत्",
+   "page_index": 30,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "41",
+   "printed_numbers": [
+    "41"
+   ],
+   "text": "विनिंदकानां वेदस्य यज्ञव्याघातकारिणाम् । स्थानमेतत्समाख्यातं स्वधर्मत्यागिनश्च ये",
+   "page_index": 30,
+   "confidence": "high",
+   "note": "chapter colophon 'इतिश्रीविष्णुपुराणे प्रथमेंशे षष्ठोध्यायः ६' follows; then 'पराशर उवाच' begins the next chapter (not included)"
+  }
+ ]
+}

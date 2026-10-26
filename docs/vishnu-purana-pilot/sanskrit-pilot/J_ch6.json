@@ -1,0 +1,430 @@
+{
+ "entries": [
+  {
+   "verse": "0a",
+   "printed_numbers": [],
+   "text": "मैत्रेय उवाच ।",
+   "page_index": 64,
+   "confidence": "high",
+   "note": "Chapter heading षष्ठोऽध्यायः । printed above."
+  },
+  {
+   "verse": "1",
+   "printed_numbers": [
+    "1"
+   ],
+   "text": "अर्वाक्स्रोतस्तु कथितो भवता यस्तु मानुषः । ब्रह्मन् ! विस्तरतो ब्रूहि ब्रह्मा तमसृजद् यथा",
+   "page_index": 64,
+   "confidence": "medium",
+   "note": "Closing number partly cut; initial अ of line 1 and ब्रह्मन् blobby."
+  },
+  {
+   "verse": "2",
+   "printed_numbers": [
+    "2"
+   ],
+   "text": "यथा च वर्णानसृजद् यद्गुणांश्च महामुने ! । यच्च तेषां स्मृतं कर्म विप्रादीनां तदुच्यताम्",
+   "page_index": 64,
+   "confidence": "medium",
+   "note": "यद्गुणांश्च and तदुच्यताम् blobby."
+  },
+  {
+   "verse": "2a",
+   "printed_numbers": [],
+   "text": "पराशर उवाच ।",
+   "page_index": 64,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "3",
+   "printed_numbers": [
+    "3"
+   ],
+   "text": "सत्याभिध्यायिनः पूर्वं सिसृक्षोर्ब्रह्मणो जगत् । प्रजायन्त द्विजश्रेष्ठ ! सत्त्वोद्रिक्ता मुखात् प्रजाः",
+   "page_index": 64,
+   "confidence": "medium",
+   "note": "सिसृक्षोर्ब्रह्मणो and सत्त्वोद्रिक्ता conjuncts blobby."
+  },
+  {
+   "verse": "4",
+   "printed_numbers": [
+    "4"
+   ],
+   "text": "वक्षसो रजमोद्रिक्तास्तथा वै ब्रह्मणोऽभवन् । रजसा तमसा चैव समुद्रिक्तास्तथोरुजाः",
+   "page_index": 64,
+   "confidence": "medium",
+   "note": "Line 1 second word reads 'रजमोद्रिक्ता' (मो) as printed; ब्रह्मणो blobby."
+  },
+  {
+   "verse": "5",
+   "printed_numbers": [
+    "5"
+   ],
+   "text": "पद्भ्यामन्याः प्रजा ब्रह्मा समत्तं द्विजसत्तम । तमःप्रधानास्ताः सर्वाश्चातुर्वर्ण्यमिद ततः",
+   "page_index": 64,
+   "confidence": "low",
+   "note": "Line 1 'समत्तं' and line 2 'सर्वाश्चातुर्वर्ण्यमिद् ततः' blurred; read as seen."
+  },
+  {
+   "verse": "6",
+   "printed_numbers": [
+    "6"
+   ],
+   "text": "ब्राह्मणाः क्षत्रिया वैश्याः शूद्राश्च द्विजसत्तम । पादोरुवक्षःस्थलतो मुखतश्च समुद्गताः",
+   "page_index": 64,
+   "confidence": "low",
+   "note": "Many conjuncts blackened (ब्राह्मणाः, वक्षःस्थलतो, मुखतश्च); closing number ६ is a blot."
+  },
+  {
+   "verse": "7",
+   "printed_numbers": [
+    "7"
+   ],
+   "text": "यज्ञनिष्पत्तये सर्वमेतद् ब्रह्मा चकार वै । चातुर्वर्ण्यं महाभाग ! यज्ञसाधनमुत्तमम्",
+   "page_index": 64,
+   "confidence": "medium",
+   "note": "यज्ञनिष्पत्तये and चातुर्वर्ण्यं conjuncts blobby."
+  },
+  {
+   "verse": "8",
+   "printed_numbers": [
+    "8"
+   ],
+   "text": "यज्ञैराप्यायिता देवा वृष्ट्युत्सर्गेण वै प्रजाः । आप्याययन्ते धर्मज्ञ ! यज्ञाः कल्याणहेतवः",
+   "page_index": 65,
+   "confidence": "medium",
+   "note": "वृष्ट्युत्सर्गेण first conjunct blackened."
+  },
+  {
+   "verse": "9",
+   "printed_numbers": [
+    "9"
+   ],
+   "text": "निष्पाद्यन्ते नरैस्तैस्तु स्वधर्माभिरतैस्ततः । विशुद्धाचरणोपेतैः सद्भिः सन्मार्गगामिभिः",
+   "page_index": 65,
+   "confidence": "medium",
+   "note": "विशुद्धा and सन्मार्ग conjuncts blurred; number printed ८, taken as 9 by sequence."
+  },
+  {
+   "verse": "10",
+   "printed_numbers": [
+    "10"
+   ],
+   "text": "स्वर्गापवर्गौ मानुष्यात् प्राप्नुवन्ति नरा मुने ! । यथाभिलषितं स्थानं तद् यान्ति मनुजा द्विज !",
+   "page_index": 65,
+   "confidence": "medium",
+   "note": "यथाभिलषितं letters blurred."
+  },
+  {
+   "verse": "11",
+   "printed_numbers": [
+    "11"
+   ],
+   "text": "प्रजास्ता ब्रह्मणा सृष्टाश्चातुर्वर्ण्ये व्यवस्थिताः । सम्यक्श्रद्धासमाचारप्रवणा मुनिसत्तम !",
+   "page_index": 65,
+   "confidence": "medium",
+   "note": "सृष्टाश्चातुर्वर्ण्ये and सम्यक्श्रद्धा conjuncts blobby."
+  },
+  {
+   "verse": "12",
+   "printed_numbers": [
+    "12"
+   ],
+   "text": "यथेच्छावासनिरताः सर्वबाधाविवर्जिताः । शुद्धान्तःकरणाः शुद्धाः सर्वानुष्ठाननिर्मलाः",
+   "page_index": 65,
+   "confidence": "medium",
+   "note": "Line 2 read from the downsized page view only; conjuncts blobby."
+  },
+  {
+   "verse": "13",
+   "printed_numbers": [
+    "13"
+   ],
+   "text": "शुद्धे च तासां मनसि शुद्धेऽन्तःसंस्थिते हरौ । शुद्धं ज्ञानं प्रपश्यन्ति विष्ण्वाख्यं येन तत्पदम्",
+   "page_index": 66,
+   "confidence": "medium",
+   "note": "शुद्धे/शुद्धं initial conjuncts blackened; विष्ण्वाख्यं ligature blurred."
+  },
+  {
+   "verse": "14",
+   "printed_numbers": [
+    "14"
+   ],
+   "text": "ततः कालात्मको योऽसौ स चांशः कथितो हरेः ! । स पातयत्यघं घोरमल्पमल्पारवत्",
+   "page_index": 66,
+   "confidence": "low",
+   "note": "Line 2 end (घोरमल्पमल्पसारवत् / ...) heavily blurred; read as seen."
+  },
+  {
+   "verse": "15",
+   "printed_numbers": [
+    "15"
+   ],
+   "text": "अधर्मबीजसम्भूतं तमोलोभसमुद्भवम् । प्रजासु तासु मैत्रेय ! रागादिकमसाधकम्",
+   "page_index": 66,
+   "confidence": "medium",
+   "note": "अधर्मबीज and समुद्भवम् conjuncts blurred."
+  },
+  {
+   "verse": "16",
+   "printed_numbers": [
+    "16"
+   ],
+   "text": "ततः सा सहसा सिद्धिस्तेषां नातीव जायते । रमोक्षासादययान्याः सिद्धयोऽष्टौ भवन्ति याः",
+   "page_index": 66,
+   "confidence": "low",
+   "note": "Line 2 first two words (रमोक्षासादय...) heavily blackened, read as seen."
+  },
+  {
+   "verse": "17",
+   "printed_numbers": [
+    "17"
+   ],
+   "text": "तासु शीताम्रघर्मासु वर्त्तमाने च पातके । द्वन्द्वाभिभवदुःखार्त्तास्ता भवन्ति ततः प्रजाः",
+   "page_index": 67,
+   "confidence": "low",
+   "note": "Line 1 second word (शीता…मासु) heavily blackened, read as seen; वर्त्तमाने blobby."
+  },
+  {
+   "verse": "18",
+   "printed_numbers": [
+    "18"
+   ],
+   "text": "ततो दुर्गाणि ताश्चक्रुर्वार्क्षं पार्वतमौदकम् । कृत्रिमञ्च तथा दुर्गं पुरं खर्वटकादिकम्",
+   "page_index": 67,
+   "confidence": "medium",
+   "note": "ताश्चक्रु and कृत्रिमञ्च conjuncts blurred."
+  },
+  {
+   "verse": "19",
+   "printed_numbers": [
+    "19"
+   ],
+   "text": "गृहाणि च यथान्यायं तेषु चक्रुः पुरादिषु । शीतातपादिबाधानां प्रशमाय महामुने !",
+   "page_index": 67,
+   "confidence": "medium",
+   "note": "Initial letters of गृहाणि and शीतात blurred; number printed like १८, taken as 19 by sequence."
+  },
+  {
+   "verse": "20",
+   "printed_numbers": [
+    "20"
+   ],
+   "text": "प्रतीकारमिदं कृत्वा शीतादेस्ताः प्रजाः पुनः । वार्त्तोपायं ततश्चक्रुर्हस्तसिद्धिञ्च कर्मजाम्",
+   "page_index": 67,
+   "confidence": "medium",
+   "note": "कृत्वा, ततश्चक्रु conjuncts blurred."
+  },
+  {
+   "verse": "21",
+   "printed_numbers": [
+    "21"
+   ],
+   "text": "व्रीहयश्च यवाश्चैव गोधूमा अणवस्तिलाः । प्रियङ्गवो ह्युदाराश्च कोरदूषाः सचीनकाः",
+   "page_index": 68,
+   "confidence": "medium",
+   "note": "First line is the last root line of image n67 (seen there), second line is the first on n68; conjuncts blobby."
+  },
+  {
+   "verse": "22",
+   "printed_numbers": [
+    "22"
+   ],
+   "text": "माषा मुद्गा मसूराश्च निष्पावाः सकुलत्थकाः । आढक्यश्चणकाश्चैव धान्याः सप्तदश स्मृताः",
+   "page_index": 68,
+   "confidence": "low",
+   "note": "Line 2: word after चैव is blobby (धान्याः vs ग्राम्याः); आढक्य conjunct blurred."
+  },
+  {
+   "verse": "23",
+   "printed_numbers": [
+    "23"
+   ],
+   "text": "इत्येता ओषधीनान्तु ग्राम्याणां जातयो मुने ! । ओषध्यो यज्ञियाश्चैव ग्राम्यारण्याश्चतुर्दश",
+   "page_index": 68,
+   "confidence": "medium",
+   "note": "Number looks like २२/२३, taken as 23 by sequence."
+  },
+  {
+   "verse": "24",
+   "printed_numbers": [
+    "24"
+   ],
+   "text": "व्रीहयः सयवा माषा गोधूमा अणवस्तिलाः । प्रियङ्गुः सप्तमा ह्येता अष्टमास्तु कुलत्थकाः",
+   "page_index": 68,
+   "confidence": "medium",
+   "note": "ह्येता blobby."
+  },
+  {
+   "verse": "25",
+   "printed_numbers": [
+    "25"
+   ],
+   "text": "श्यामाकास्त्वथ नीवारा जर्तिलाः सगवेधुकाः । तथा वेणुयवाः प्रोक्तास्तद्वन् मर्कटका मुने !",
+   "page_index": 68,
+   "confidence": "medium",
+   "note": "श्यामाका initial, जर्तिलाः blurred."
+  },
+  {
+   "verse": "26",
+   "printed_numbers": [
+    "26"
+   ],
+   "text": "ग्राम्यारण्याः स्मृता ह्येता ओषध्यस्तु चतुर्दश । यज्ञनिष्पत्तये यज्ञस्तथासां हेतुरुत्तमः",
+   "page_index": 68,
+   "confidence": "medium",
+   "note": "conjuncts blobby."
+  },
+  {
+   "verse": "27",
+   "printed_numbers": [
+    "27"
+   ],
+   "text": "एताश्च सह यज्ञेन प्रजानां कारणं परम् । परापरविदः प्राज्ञास्ततो यज्ञान् वितन्वते",
+   "page_index": 68,
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "verse": "28",
+   "printed_numbers": [
+    "28"
+   ],
+   "text": "अहन्यहन्यनुष्ठानं यज्ञानां मुनिसत्तम ! । उपकारकरं पुंसां क्रियमाणस्य पाप्मिदम्",
+   "page_index": 69,
+   "confidence": "low",
+   "note": "Line 1 first word and line 2 last word blurred; 'पाप्मिदम्' read as seen (shapes ambiguous, perhaps पाप्मनिदम्/ग्राम्यमिदम्)."
+  },
+  {
+   "verse": "29",
+   "printed_numbers": [
+    "29"
+   ],
+   "text": "येषान्तु कालरूपोऽसौ पापविघ्नमहामते !। चेतःसु वर्धते, चक्रुस्ते न यज्ञेषु मानसम्",
+   "page_index": 69,
+   "confidence": "low",
+   "note": "Line 1 पापविघ्न conjuncts blobby; a comma is printed after वर्धते (kept? omitted from text); closing number ॥ २९ read from partly blurred glyph."
+  },
+  {
+   "verse": "30",
+   "printed_numbers": [
+    "30"
+   ],
+   "text": "वेदवादांस्तथा वेदान् यज्ञनिष्पादकञ्च यत् । तत् सर्वं निन्दमानास्ते यज्ञव्यामेधकारिणः",
+   "page_index": 69,
+   "confidence": "low",
+   "note": "Line 1: वेदवादां... and 'वेद्' letters blurred; यज्ञव्यामेधकारिणः first conjuncts blackened; may be यज्ञव्यामोहकारिणः."
+  },
+  {
+   "verse": "31",
+   "printed_numbers": [
+    "31"
+   ],
+   "text": "प्रवृत्तिमार्गव्युच्छित्तिकारिणो वेदनिन्दकाः । दुरात्मानो दुराचारा बभूवुः कुटिलाशयाः",
+   "page_index": 69,
+   "confidence": "medium",
+   "note": "प्रवृत्ति first conjunct and व्युच्छित्ति blurred."
+  },
+  {
+   "verse": "32",
+   "printed_numbers": [
+    "32"
+   ],
+   "text": "अभिहायान्तु वार्त्तायां प्रजाः सृष्ट्वा प्रजापतिः । मर्यादां स्थापयामास यथास्थानं यथागुणम्",
+   "page_index": 69,
+   "confidence": "low",
+   "note": "First word of line 1 (अभिहायान्तु / समिहायान्तु) blackened; वार्त्तायां blurred."
+  },
+  {
+   "verse": "33",
+   "printed_numbers": [
+    "33"
+   ],
+   "text": "वर्णानामाश्रमाणाञ्च धर्मान् धर्मभृतां वर । लोकांश्च सर्ववर्णानां सम्यग् धर्मानुपालनाम्",
+   "page_index": 69,
+   "confidence": "medium",
+   "note": "Closing number partly blurred (read as २३, taken as 33 by sequence); final word read as printed (ा visible)."
+  },
+  {
+   "verse": "34",
+   "printed_numbers": [
+    "34"
+   ],
+   "text": "प्राजापत्यं ब्राह्मणानां स्मृतं स्थानं क्रियावताम् । स्थानमैन्द्रं क्षत्रियाणां संग्रामेष्वनिवर्त्तिनाम्",
+   "page_index": 70,
+   "confidence": "medium",
+   "note": "First line is the last line of n69; ब्राह्मणानां blobby. Closing number ३४."
+  },
+  {
+   "verse": "35",
+   "printed_numbers": [
+    "35"
+   ],
+   "text": "वैश्यानां मारुतं स्थानं स्वधर्ममनुवर्त्तिनाम् । गान्धर्वं शूद्रजातीनां परिचर्यानुवर्त्तिनाम्",
+   "page_index": 70,
+   "confidence": "medium",
+   "note": "Some conjuncts blurred."
+  },
+  {
+   "verse": "36",
+   "printed_numbers": [
+    "36"
+   ],
+   "text": "अष्टाशीतिसहस्राणि मुनीनामूर्ध्वरेतसाम् । स्मृतं तेषां तु यत्स्थानं तदेव गुरुवासिनाम्",
+   "page_index": 70,
+   "confidence": "medium",
+   "note": "Closing number looks like ३६; स्मृतं and गुरुवासिनाम् blurred."
+  },
+  {
+   "verse": "37",
+   "printed_numbers": [
+    "37"
+   ],
+   "text": "सप्तर्षीणान्तु यत् स्थानं स्मृतं तद् वै वनौकसाम् । प्राजापत्यं गृहस्थानां न्यासिनां ब्रह्मसंज्ञितम्",
+   "page_index": 70,
+   "confidence": "medium",
+   "note": "Closing number printed as ३७ (partly blurred); न्यासिनां/ब्रह्मसंज्ञितम् conjuncts blobby."
+  },
+  {
+   "verse": "38",
+   "printed_numbers": [
+    "38"
+   ],
+   "text": "योगिनामम्रृतं स्थानं यद् विष्णोः परमं पदम् । एकान्तिनः सदा ब्रह्मध्यायिनो योगिनो हि ये",
+   "page_index": 70,
+   "confidence": "low",
+   "note": "First word of line 1 and ब्रह्मध्यायिनो blobby; read as seen."
+  },
+  {
+   "verse": "39",
+   "printed_numbers": [
+    "39"
+   ],
+   "text": "तेषां तत् परमं स्थानं यत् तु पश्यन्ति सूरयः । गत्वा गत्वा निवर्त्तन्ते चन्द्रसूर्य्यादयो ग्रहाः",
+   "page_index": 70,
+   "confidence": "medium",
+   "note": "Closing number looks like २९ but is 39 by sequence."
+  },
+  {
+   "verse": "40",
+   "printed_numbers": [
+    "40"
+   ],
+   "text": "अथापि न निवर्त्तन्ते ध्वान्ताचारचिन्तकाः । तामिस्रमन्धतामिस्रं महारौरवरौरवौ",
+   "page_index": 70,
+   "confidence": "low",
+   "note": "Line 1 second half (ध्वान्ताचार...) blackened; verse 40 closes after the तामिस्र line."
+  },
+  {
+   "verse": "41",
+   "printed_numbers": [
+    "41"
+   ],
+   "text": "असिपत्रवनं घोरं कालसूत्रमवीचिमत् । विनिन्दकानां वेदस्य यज्ञव्याघातकारिणाम् । स्थानमेतत् समाख्यातं स्वधर्मत्यागिनश्च ये",
+   "page_index": 70,
+   "confidence": "medium",
+   "note": "Three printed lines in this verse; first conjuncts blobby."
+  }
+ ]
+}
