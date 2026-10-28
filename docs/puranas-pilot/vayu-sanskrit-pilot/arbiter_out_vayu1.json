@@ -1,0 +1,947 @@
+[
+{
+"verse": "A0a",
+"spot": 0,
+"decision": "a",
+"printed": "श्रीश्रीगणेशाय नमः",
+"note": "header printed"
+},
+{
+"verse": "A0c",
+"spot": 0,
+"decision": "b",
+"printed": "पिवति",
+"note": ""
+},
+{
+"verse": "A3",
+"spot": 0,
+"decision": "a",
+"printed": "धर्म्मश्चसहसिद्धि",
+"note": "glyph like ञ्च-type श्च"
+},
+{
+"verse": "A3",
+"spot": 1,
+"decision": "a",
+"printed": "धर्म्मश्चसहसिद्धि",
+"note": ""
+},
+{
+"verse": "A6",
+"spot": 0,
+"decision": "a",
+"printed": "जिज्ञासुर्व्रजामि",
+"note": "curl above व्र is repha"
+},
+{
+"verse": "A8",
+"spot": 0,
+"decision": "b",
+"printed": "तन्नमे चातियशसे",
+"note": "म with े matra; stray mark below"
+},
+{
+"verse": "A10",
+"spot": 0,
+"decision": "b",
+"printed": "असीमकृष्णे विक्रान्ते",
+"note": ""
+},
+{
+"verse": "A10",
+"spot": 1,
+"decision": "b",
+"printed": "असीमकृष्णे विक्रान्ते",
+"note": ""
+},
+{
+"verse": "A10",
+"spot": 2,
+"decision": "b",
+"printed": "असीमकृष्णे विक्रान्ते",
+"note": ""
+},
+{
+"verse": "A11",
+"spot": 0,
+"decision": "a",
+"printed": "संश्रितात्मानः",
+"note": ""
+},
+{
+"verse": "A5",
+"spot": 0,
+"decision": "b",
+"printed": "लोककृल्लोकतत्त्व",
+"note": "blob same as ल्लो in v13; only two glyphs between"
+},
+{
+"verse": "A5",
+"spot": 1,
+"decision": "b",
+"printed": "लोककृल्लोकतत्त्व",
+"note": ""
+},
+{
+"verse": "A13",
+"spot": 0,
+"decision": "neither",
+"printed": "द्रष्टुन्तान् स",
+"note": "print shows ष्टु (u hook) then न्ता; no ट्वा"
+},
+{
+"verse": "A13",
+"spot": 1,
+"decision": "b",
+"printed": "लोमानि",
+"note": ""
+},
+{
+"verse": "A13",
+"spot": 2,
+"decision": "b",
+"printed": "लोमानि",
+"note": ""
+},
+{
+"verse": "A13",
+"spot": 3,
+"decision": "a",
+"printed": "अस्मिल्लोमहर्षणः",
+"note": ""
+},
+{
+"verse": "A17",
+"spot": 0,
+"decision": "b",
+"printed": "उपसंस्कृत्य नमस्कृत्य",
+"note": "same स्कृ ligature as in नमस्कृत्य"
+},
+{
+"verse": "A19",
+"spot": 0,
+"decision": "b",
+"printed": "विश्वस्तं",
+"note": ""
+},
+{
+"verse": "A19",
+"spot": 1,
+"decision": "b",
+"printed": "विश्वस्तं",
+"note": ""
+},
+{
+"verse": "A22",
+"spot": 0,
+"decision": "a",
+"printed": "धीमतां",
+"note": "anusvara dot"
+},
+{
+"verse": "A23",
+"spot": 0,
+"decision": "a",
+"printed": "सर्व्वे होमे महा",
+"note": "ह not च"
+},
+{
+"verse": "A26",
+"spot": 0,
+"decision": "a",
+"printed": "तेजसां",
+"note": "anusvara present"
+},
+{
+"verse": "A27",
+"spot": 0,
+"decision": "a",
+"printed": "महात्मनां",
+"note": "anusvara present"
+},
+{
+"verse": "A28",
+"spot": 0,
+"decision": "neither",
+"printed": "वैण्यस्य",
+"note": "glyph has ण-style diagonal tail + य; neither श्य nor न्य clearly"
+},
+{
+"verse": "A34",
+"spot": 0,
+"decision": "a",
+"printed": "पितृणां",
+"note": "single ृ mark"
+},
+{
+"verse": "A34",
+"spot": 1,
+"decision": "b",
+"printed": "पितृभिर्म्मत्स्य",
+"note": ""
+},
+{
+"verse": "A39",
+"spot": 0,
+"decision": "a",
+"printed": "द्रुमश्च यं",
+"note": "compact श्च glyph, differs from wide ञ्च glyph"
+},
+{
+"verse": "A44",
+"spot": 0,
+"decision": "b",
+"printed": "वरणाञ्चाद्भिर",
+"note": "wide ञ्च glyph"
+},
+{
+"verse": "A49",
+"spot": 0,
+"decision": "b",
+"printed": "हरेरत्रपृथिव्य",
+"note": ""
+},
+{
+"verse": "A49",
+"spot": 1,
+"decision": "b",
+"printed": "हरेरत्रपृथिव्य",
+"note": ""
+},
+{
+"verse": "A51",
+"spot": 0,
+"decision": "a",
+"printed": "मर्त्त्यानां",
+"note": "double-त conjunct with repha"
+},
+{
+"verse": "A52",
+"spot": 0,
+"decision": "a",
+"printed": "मर्त्त्यानां",
+"note": "same"
+},
+{
+"verse": "A56",
+"spot": 0,
+"decision": "a",
+"printed": "बुद्धिपूर्व्वकाः",
+"note": ""
+},
+{
+"verse": "A62",
+"spot": 0,
+"decision": "a",
+"printed": "सात्विकस्य",
+"note": "single त glyph"
+},
+{
+"verse": "A65",
+"spot": 0,
+"decision": "b",
+"printed": "तथैवचत्रैवेदिकां",
+"note": "same त्र glyph as हरेरत्र"
+},
+{
+"verse": "A66",
+"spot": 0,
+"decision": "neither",
+"printed": "देवेश्चस्तुतोष",
+"note": "े matra + श्च glyph"
+},
+{
+"verse": "A66",
+"spot": 1,
+"decision": "neither",
+"printed": "देवेश्चस्तुतोष",
+"note": ""
+},
+{
+"verse": "A66",
+"spot": 2,
+"decision": "b",
+"printed": "स्तुतोषभगवान्",
+"note": ""
+},
+{
+"verse": "A67",
+"spot": 0,
+"decision": "b",
+"printed": "यथाऽरोदीन्",
+"note": ""
+},
+{
+"verse": "A68",
+"spot": 0,
+"decision": "b",
+"printed": "यथा ह्यष्टौ नामा",
+"note": "ह्य glyph, ष्ट with ौ"
+},
+{
+"verse": "A68",
+"spot": 1,
+"decision": "b",
+"printed": "ह्यष्टौ नामा",
+"note": ""
+},
+{
+"verse": "A69",
+"spot": 0,
+"decision": "b",
+"printed": "वशिष्ठस्य",
+"note": ""
+},
+{
+"verse": "A70",
+"spot": 0,
+"decision": "neither",
+"printed": "पितणां",
+"note": "no ृ visible under त; ण directly follows"
+},
+{
+"verse": "A72",
+"spot": 0,
+"decision": "b",
+"printed": "दक्षाद्भुतकर्म्मणः",
+"note": "द्भ conjunct"
+},
+{
+"verse": "A77",
+"spot": 0,
+"decision": "b",
+"printed": "हेमकूटस्त निषधो",
+"note": "स्त conjunct"
+},
+{
+"verse": "A77",
+"spot": 1,
+"decision": "b",
+"printed": "हेमकूटस्त निषधो",
+"note": ""
+},
+{
+"verse": "A79",
+"spot": 0,
+"decision": "b",
+"printed": "पर्वतैस्तथा",
+"note": "single व"
+},
+{
+"verse": "A84",
+"spot": 0,
+"decision": "b",
+"printed": "अत ऊर्द्ध",
+"note": "no visarga after अत"
+},
+{
+"verse": "A85",
+"spot": 0,
+"decision": "b",
+"printed": "योर्लेखयोश्चैव",
+"note": "ल+ख with e-mark above"
+},
+{
+"verse": "A85",
+"spot": 1,
+"decision": "neither",
+"printed": "अङ्गो विषुवत",
+"note": "conjunct looks like ङ्ग (same as in सङ्ग्रह); not अयनो; ञ्ज not certain"
+},
+{
+"verse": "A86",
+"spot": 0,
+"decision": "a",
+"printed": "चतुर्दिशं",
+"note": "single द"
+},
+{
+"verse": "A86",
+"spot": 1,
+"decision": "a",
+"printed": "पितृणां",
+"note": "ृ mark beneath त"
+},
+{
+"verse": "A87",
+"spot": 0,
+"decision": "b",
+"printed": "गृहिणां",
+"note": "ग with ृ hook"
+},
+{
+"verse": "A87",
+"spot": 1,
+"decision": "b",
+"printed": "न्यासिनां",
+"note": "न्या"
+},
+{
+"verse": "A91",
+"spot": 0,
+"decision": "b",
+"printed": "तथा वृद्धिक्षयौ च",
+"note": "faint first glyph, read as व with ृ"
+},
+{
+"verse": "A91",
+"spot": 1,
+"decision": "b",
+"printed": "वृद्धिक्षयौ",
+"note": "faint"
+},
+{
+"verse": "A91",
+"spot": 2,
+"decision": "b",
+"printed": "वृद्धिक्षयौ",
+"note": "faint"
+},
+{
+"verse": "A91",
+"spot": 3,
+"decision": "b",
+"printed": "वृद्धिक्षयौ",
+"note": "faint"
+},
+{
+"verse": "A91",
+"spot": 4,
+"decision": "b",
+"printed": "वृद्धिक्षयौ",
+"note": "faint"
+},
+{
+"verse": "A91",
+"spot": 5,
+"decision": "neither",
+"printed": "कीर्त्त्यंते सूर्य",
+"note": "print has anusvara/chandrabindu mark not े"
+},
+{
+"verse": "A91",
+"spot": 6,
+"decision": "b",
+"printed": "कारितौ",
+"note": ""
+},
+{
+"verse": "A99",
+"spot": 0,
+"decision": "b",
+"printed": "प्राप्तानाञ्चाप्य",
+"note": "प्त conjunct"
+},
+{
+"verse": "A100",
+"spot": 0,
+"decision": "a",
+"printed": "र्षाद्वार्त्ताया",
+"note": "repha over त्ता"
+},
+{
+"verse": "A100",
+"spot": 1,
+"decision": "a",
+"printed": "र्षाद्वार्त्ताया",
+"note": ""
+},
+{
+"verse": "A103",
+"spot": 0,
+"decision": "a",
+"printed": "दुर्वचत्वञ्च",
+"note": "single व"
+},
+{
+"verse": "A103",
+"spot": 1,
+"decision": "a",
+"printed": "भुवमृते मनुं",
+"note": "single glyph म+ृ; no स्"
+},
+{
+"verse": "A113",
+"spot": 0,
+"decision": "a",
+"printed": "पात्राणां",
+"note": "त्र glyph"
+},
+{
+"verse": "A113",
+"spot": 1,
+"decision": "b",
+"printed": "वंशानाञ्च",
+"note": ""
+},
+{
+"verse": "A120",
+"spot": 0,
+"decision": "b",
+"printed": "अत ऊर्ध्वं",
+"note": "no visarga"
+},
+{
+"verse": "A120",
+"spot": 1,
+"decision": "b",
+"printed": "पृथक्त्वञ्च",
+"note": "no ा"
+},
+{
+"verse": "A121",
+"spot": 0,
+"decision": "a",
+"printed": "त्वाञ्च यथा",
+"note": "wide ञ्च glyph"
+},
+{
+"verse": "A121",
+"spot": 1,
+"decision": "a",
+"printed": "यथा सप्त जाता",
+"note": "स+प्त conjunct (blurred)"
+},
+{
+"verse": "A121",
+"spot": 2,
+"decision": "a",
+"printed": "यथा सप्त जाता",
+"note": ""
+},
+{
+"verse": "A122",
+"spot": 0,
+"decision": "b",
+"printed": "दैवत्वं",
+"note": "ै"
+},
+{
+"verse": "A124",
+"spot": 0,
+"decision": "b",
+"printed": "जन्मैरावत",
+"note": ""
+},
+{
+"verse": "A125",
+"spot": 0,
+"decision": "b",
+"printed": "त्रेर्म्महात्मनः",
+"note": "म्म double"
+},
+{
+"verse": "A129",
+"spot": 0,
+"decision": "b",
+"printed": "चरितञ्चोक्तं",
+"note": "wide ञ्च glyph; moderate confidence"
+},
+{
+"verse": "A129",
+"spot": 1,
+"decision": "a",
+"printed": "संक्षेप",
+"note": "anusvara dot above"
+},
+{
+"verse": "A130",
+"spot": 0,
+"decision": "b",
+"printed": "निम्यादीनां",
+"note": ""
+},
+{
+"verse": "A130",
+"spot": 1,
+"decision": "neither",
+"printed": "म्यादीनां चितौ",
+"note": "print दीनां; then चि-like"
+},
+{
+"verse": "A130",
+"spot": 2,
+"decision": "neither",
+"printed": "दीनां चितौ",
+"note": "दी not दा"
+},
+{
+"verse": "A130",
+"spot": 3,
+"decision": "a",
+"printed": "चितौधानां",
+"note": "glyph ambiguous ध/ष्ठ; low confidence"
+},
+{
+"verse": "A130",
+"spot": 4,
+"decision": "a",
+"printed": "जङ्गुगादिति",
+"note": "ङ्गु ligature"
+},
+{
+"verse": "A132",
+"spot": 0,
+"decision": "neither",
+"printed": "वृधस्य ल्वक्षस्य",
+"note": "first glyph looks like ल/त्व curl+loop; low confidence"
+},
+{
+"verse": "A132",
+"spot": 1,
+"decision": "neither",
+"printed": "हृष्टेश्चैवमहा",
+"note": "हृ then ष्टे"
+},
+{
+"verse": "A132",
+"spot": 2,
+"decision": "neither",
+"printed": "हृष्टेश्चैव",
+"note": "ह not व"
+},
+{
+"verse": "A132",
+"spot": 3,
+"decision": "b",
+"printed": "ष्टेश्चैवमहा",
+"note": "े and श्च"
+},
+{
+"verse": "A134",
+"spot": 0,
+"decision": "neither",
+"printed": "कीर्त्त्यंतेचान्वयः",
+"note": "anusvara in print, no न्"
+},
+{
+"verse": "A134",
+"spot": 1,
+"decision": "neither",
+"printed": "राजर्षेर्द्वमीयुषः",
+"note": "extra द्-like glyph before व"
+},
+{
+"verse": "A134",
+"spot": 2,
+"decision": "neither",
+"printed": "र्वमीयुषः",
+"note": "यु as B but extra glyph before"
+},
+{
+"verse": "A137",
+"spot": 0,
+"decision": "b",
+"printed": "स्त्रीबधे",
+"note": "glyph reads ब"
+},
+{
+"verse": "A137",
+"spot": 1,
+"decision": "b",
+"printed": "संरक्षता शक्रबधं",
+"note": "no ु mark"
+},
+{
+"verse": "A138",
+"spot": 0,
+"decision": "b",
+"printed": "प्राणनाशनाः",
+"note": ""
+},
+{
+"verse": "A138",
+"spot": 1,
+"decision": "b",
+"printed": "प्राणनाशनाः",
+"note": ""
+},
+{
+"verse": "A138",
+"spot": 2,
+"decision": "b",
+"printed": "प्राणनाशनाः",
+"note": ""
+},
+{
+"verse": "A138",
+"spot": 3,
+"decision": "b",
+"printed": "प्राणनाशनाः",
+"note": ""
+},
+{
+"verse": "A127",
+"spot": 0,
+"decision": "a",
+"printed": "निर्द्देशो",
+"note": "stacked द्द-like glyph same as in v139; moderate confidence"
+},
+{
+"verse": "A139",
+"spot": 0,
+"decision": "b",
+"printed": "प्रलुब्धेन",
+"note": ""
+},
+{
+"verse": "A139",
+"spot": 1,
+"decision": "b",
+"printed": "प्रलुब्धेन",
+"note": ""
+},
+{
+"verse": "A139",
+"spot": 2,
+"decision": "a",
+"printed": "यत्र भवस्तव",
+"note": "भ glyph"
+},
+{
+"verse": "A139",
+"spot": 3,
+"decision": "a",
+"printed": "विनिर्द्दिष्टं",
+"note": "stacked द्द glyph; moderate"
+},
+{
+"verse": "A140",
+"spot": 0,
+"decision": "a",
+"printed": "सक्ते(३) तु",
+"note": "े matra"
+},
+{
+"verse": "A140",
+"spot": 1,
+"decision": "a",
+"printed": "शुक्रे महात्मनि",
+"note": "े matra"
+},
+{
+"verse": "A140",
+"spot": 2,
+"decision": "b",
+"printed": "शुक्रः शशाप",
+"note": "low confidence; first glyph श-like"
+},
+{
+"verse": "A141",
+"spot": 0,
+"decision": "b",
+"printed": "उक्ताश्च",
+"note": ""
+},
+{
+"verse": "A141",
+"spot": 1,
+"decision": "b",
+"printed": "विष्णोर्जन्मादि",
+"note": "single ज seen"
+},
+{
+"verse": "A141",
+"spot": 2,
+"decision": "b",
+"printed": "तुर्वसुः",
+"note": ""
+},
+{
+"verse": "A141",
+"spot": 3,
+"decision": "a",
+"printed": "पूरुर्य्ययाति",
+"note": "low confidence"
+},
+{
+"verse": "A143",
+"spot": 0,
+"decision": "neither",
+"printed": "सम्यगृयो",
+"note": "single ग with hook below, then यो; low confidence"
+},
+{
+"verse": "A154",
+"spot": 0,
+"decision": "a",
+"printed": "दुर्लभत्वञ्च",
+"note": "single ल"
+},
+{
+"verse": "A156",
+"spot": 0,
+"decision": "a",
+"printed": "ततस्तापत्रयातीतो",
+"note": ""
+},
+{
+"verse": "A156",
+"spot": 1,
+"decision": "a",
+"printed": "ततस्तापत्रयातीतो",
+"note": ""
+},
+{
+"verse": "A156",
+"spot": 2,
+"decision": "a",
+"printed": "ततस्तापत्रयातीतो",
+"note": ""
+},
+{
+"verse": "A156",
+"spot": 3,
+"decision": "a",
+"printed": "ततस्तापत्रयातीतो",
+"note": ""
+},
+{
+"verse": "A158",
+"spot": 0,
+"decision": "b",
+"printed": "जगतोऽह्न",
+"note": ""
+},
+{
+"verse": "A158",
+"spot": 1,
+"decision": "b",
+"printed": "जगतोऽह्न सर्व",
+"note": ""
+},
+{
+"verse": "A158",
+"spot": 2,
+"decision": "b",
+"printed": "तोऽह्न सर्व",
+"note": ""
+},
+{
+"verse": "A159",
+"spot": 0,
+"decision": "b",
+"printed": "वशिष्ठस्य",
+"note": ""
+},
+{
+"verse": "A159",
+"spot": 1,
+"decision": "b",
+"printed": "शक्तेर्जन्म",
+"note": "single ज"
+},
+{
+"verse": "A160",
+"spot": 0,
+"decision": "a",
+"printed": "रदृश्यत्वं",
+"note": "दृ"
+},
+{
+"verse": "A162",
+"spot": 0,
+"decision": "b",
+"printed": "वशिष्ठ",
+"note": ""
+},
+{
+"verse": "A162",
+"spot": 1,
+"decision": "b",
+"printed": "भृतस्याग्नि",
+"note": "low confidence; glyph after त not wide श्च"
+},
+{
+"verse": "A162",
+"spot": 2,
+"decision": "b",
+"printed": "भृतस्याग्नि",
+"note": "low confidence"
+},
+{
+"verse": "A163",
+"spot": 0,
+"decision": "a",
+"printed": "वेदञ्चतुष्पाद",
+"note": "no anusvara; wide ञ्च glyph"
+},
+{
+"verse": "A163",
+"spot": 1,
+"decision": "b",
+"printed": "चतुर्द्धा",
+"note": "stacked द over ध; moderate"
+},
+{
+"verse": "A167",
+"spot": 0,
+"decision": "b",
+"printed": "स्मृते",
+"note": "wide glyph with ृ; moderate"
+},
+{
+"verse": "A167",
+"spot": 1,
+"decision": "a",
+"printed": "शरद्वति",
+"note": ""
+},
+{
+"verse": "A167",
+"spot": 2,
+"decision": "a",
+"printed": "शरद्वति",
+"note": ""
+},
+{
+"verse": "A173",
+"spot": 0,
+"decision": "b",
+"printed": "लरख्यान्ते",
+"note": "print रूप looks like ल र ख्या; त्व in जनयित्वा prints like ल्व so ambiguity; moderate"
+},
+{
+"verse": "A173",
+"spot": 1,
+"decision": "b",
+"printed": "लरख्यान्ते",
+"note": "moderate"
+},
+{
+"verse": "A178",
+"spot": 0,
+"decision": "neither",
+"printed": "संप्रवच्यते",
+"note": "anusvara not म्; व not च"
+},
+{
+"verse": "A178",
+"spot": 1,
+"decision": "neither",
+"printed": "संप्रवच्यते",
+"note": "anusvara not म्"
+},
+{
+"verse": "A178",
+"spot": 2,
+"decision": "a",
+"printed": "प्रवच्यते",
+"note": ""
+},
+{
+"verse": "A179",
+"spot": 0,
+"decision": "a",
+"printed": "पादमाद्य",
+"note": "no halant-looking mark under द; glyph द with ṛ-like tail; B's द्मा not seen"
+},
+{
+"verse": "A47",
+"spot": 0,
+"decision": "b",
+"printed": "ब्रह्मक्षत्रस्य",
+"note": "क्षत्र ligature, not वचन"
+}
+]
