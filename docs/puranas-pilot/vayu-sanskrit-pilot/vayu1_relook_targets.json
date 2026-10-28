@@ -1,0 +1,163 @@
+[
+ {
+  "verse": "8",
+  "start_image": "15",
+  "also_check_images": [
+   15
+  ]
+ },
+ {
+  "verse": "13",
+  "start_image": "15",
+  "also_check_images": [
+   15
+  ]
+ },
+ {
+  "verse": "28",
+  "start_image": "17",
+  "also_check_images": [
+   17
+  ]
+ },
+ {
+  "verse": "34",
+  "start_image": "17",
+  "also_check_images": [
+   17
+  ]
+ },
+ {
+  "verse": "66",
+  "start_image": "20",
+  "also_check_images": [
+   20
+  ]
+ },
+ {
+  "verse": "70",
+  "start_image": "21",
+  "also_check_images": [
+   21
+  ]
+ },
+ {
+  "verse": "85",
+  "start_image": "22",
+  "also_check_images": [
+   22
+  ]
+ },
+ {
+  "verse": "91",
+  "start_image": "23",
+  "also_check_images": [
+   23
+  ]
+ },
+ {
+  "verse": "113",
+  "start_image": "25",
+  "also_check_images": [
+   25
+  ]
+ },
+ {
+  "verse": "127",
+  "start_image": "26",
+  "also_check_images": [
+   26
+  ]
+ },
+ {
+  "verse": "129",
+  "start_image": "26",
+  "also_check_images": [
+   26
+  ]
+ },
+ {
+  "verse": "130",
+  "start_image": "26",
+  "also_check_images": [
+   26
+  ]
+ },
+ {
+  "verse": "132",
+  "start_image": "27",
+  "also_check_images": [
+   27
+  ]
+ },
+ {
+  "verse": "134",
+  "start_image": "27",
+  "also_check_images": [
+   27
+  ]
+ },
+ {
+  "verse": "139",
+  "start_image": "27",
+  "also_check_images": [
+   27
+  ]
+ },
+ {
+  "verse": "140",
+  "start_image": "28",
+  "also_check_images": [
+   27
+  ]
+ },
+ {
+  "verse": "141",
+  "start_image": "28",
+  "also_check_images": [
+   28
+  ]
+ },
+ {
+  "verse": "143",
+  "start_image": "28",
+  "also_check_images": [
+   28
+  ]
+ },
+ {
+  "verse": "162",
+  "start_image": "30",
+  "also_check_images": [
+   30
+  ]
+ },
+ {
+  "verse": "163",
+  "start_image": "30",
+  "also_check_images": [
+   30
+  ]
+ },
+ {
+  "verse": "167",
+  "start_image": "30",
+  "also_check_images": [
+   30
+  ]
+ },
+ {
+  "verse": "173",
+  "start_image": "31",
+  "also_check_images": [
+   31
+  ]
+ },
+ {
+  "verse": "178",
+  "start_image": "31",
+  "also_check_images": [
+   31
+  ]
+ }
+]

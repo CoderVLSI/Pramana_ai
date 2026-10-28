@@ -1,0 +1,165 @@
+{
+ "entries": [
+  {
+   "verse": "8",
+   "text": "तन्नमस्ये चातियशसे जातूकर्णाय चर्षये । वसिष्ठाय च शुचये कृष्णद्वैपायनाय च",
+   "image": 15,
+   "confidence": "low",
+   "note": "1st word: print shows तन्नम with a hook mark below and e-matra above (read as तन्नमस्ये, doubtful); यश/शसे conjunct blurry (श looks like म्र); चर्षये printed with च, र्ष (not ऋ) as seen; शुचये first letter unusual glyph; कृष्ण conjunct blurred"
+  },
+  {
+   "verse": "13",
+   "text": "द्रष्टुन्तान् स महाबुद्धिः सूतः पौराणिकोत्तमः । लोमानि हर्षयाञ्चक्रे श्रोतृणां यत् सुभाषितैः । कर्म्मणा प्रथितस्तेन लोकेऽस्मिल्लोमहर्षणः",
+   "image": 15,
+   "confidence": "low",
+   "note": "3 half-lines before number. First word द्रष्टुन्तान् (conjunct ष्टु and न्ता unclear; could be द्रष्टुं तान्); ञ्च in हर्षयाञ्चक्रे looks like च्च/ञ्च; ऽस्मिल्लो: न् before ल्लो not seen"
+  },
+  {
+   "verse": "28",
+   "text": "न हि वेदेष्वधीकारः कश्चित् सूतस्य दृश्यते । वैन्यस्य हि पृथोर्यज्ञे वर्त्तमाने महात्मनः । सुत्यायामभवत् सूतः प्रथमं वर्णवैकृतः",
+   "image": 17,
+   "confidence": "medium",
+   "note": "doubtful: कश्चित् (श्च looks like स्व), दृश्यते (first letter), वैन्यस्य (न्य glyph blurry), सुत्यायाम (u-matra short, printed सु not सू)"
+  },
+  {
+   "verse": "34",
+   "text": "पितृणां मानसी कन्या वासवी समपद्यत । अपध्याता च पितृभिर्म्मत्स्ययोनौ बभूव सा",
+   "image": 17,
+   "confidence": "medium",
+   "note": "doubtful: ऋ/ृ in पितृणां, पितृभिर्म्म, conjunct त्स्य in मत्स्ययोनौ (looks like त्स्य)"
+  },
+  {
+   "verse": "66",
+   "text": "ब्रह्मनारायणाभ्याञ्च यत्र स्तोत्रं प्रकीर्त्तितम् । स्तुतस्ताभ्यां स देवैश्चस्तुतोष भगवान् शिवः",
+   "image": 20,
+   "confidence": "medium",
+   "note": "doubtful: ञ्च in भ्याञ्च and श्च in देवैश्चस्तुतोष (print shows glyph like श्व/स्व run together with स्तु); शिवः first letter glyph unusual; यत्र printed with a त्र glyph resembling च"
+  },
+  {
+   "verse": "70",
+   "text": "अग्नेः प्रजायाः सम्भूतिः स्वाहायां यत्र कीर्त्तिता । पितणां द्विःप्रकाराणां स्वधायास्तदनन्तरं",
+   "image": 21,
+   "confidence": "medium",
+   "note": "पितणां: no ृ visible under त in this crop (as printed); द्विःप्रकाराणां printed without space after visarga; यत्र glyph; स्तद conjunct slightly blurred"
+  },
+  {
+   "verse": "85",
+   "text": "काष्ठयोर्लखयोश्चैव मण्डलानाञ्च योजनैः । लोकालोकस्य सङ्ख्याया अङ्को विषुवतस्तथा",
+   "image": 22,
+   "confidence": "low",
+   "note": "काष्ठयोर्लखयोश्चैव: letters after यो (repha-like mark over ल, then ख-like glyph, श्च) are cramped and doubtful; सङ्ख्याया and अङ्को conjuncts look like न्ख/ङ्क; योजनैः ऐ-matra over न"
+  },
+  {
+   "verse": "91",
+   "text": "अपां सारमयस्येन्दोः कीर्त्त्यते च रथस्तथा । हिद्वद्वयौ च सोमस्य कीर्त्त्यते सूर्य्यकारितौ",
+   "image": 23,
+   "confidence": "low",
+   "note": "word 2 of line 2 (हिद्वद्वयौ) is very doubtful: letters after ह are cramped/mottled (looks like ह + vertical stroke + box-shaped द्भ/द्व + त्व-like + यौ); मयस्येन्दोः: glyph after य is स्ये-like; repha/त्त्य in कीर्त्त्यते and ू/ु in सूर्य्य doubtful"
+  },
+  {
+   "verse": "113",
+   "text": "पात्राणां पयसाञ्चैव वंशानाञ्च विश्लेषणम् । ब्रह्मादिभिः पूर्व्वमेव दुग्धा चेयं वसुन्धरा",
+   "image": 25,
+   "confidence": "medium",
+   "note": "doubtful: पात्राणां (त्र looks like ञ्च), ञ्च in पयसाञ्चैव/वंशानाञ्च, विश्लेषणम् (conjunct after वि cramped: श्ल/स्न-like), वंशा first letters blurred"
+  },
+  {
+   "verse": "127",
+   "text": "तिस्रः कन्याः प्रकीर्त्त्यन्ते यासु लोकाः प्रतिष्ठिताः । पितृदौहित्रनिर्द्देशो देवानां जन्म चोच्यते",
+   "image": 26,
+   "confidence": "medium",
+   "note": "doubtful: पितृदौहित्र (ृ and त्र glyphs cramped), निर्द्देशो (repha and द्दे conjunct), repha placement in कीर्त्त्यन्ते"
+  },
+  {
+   "verse": "129",
+   "text": "विकुक्षिचरितञ्चोक्तं धुन्धोश्चैव निवर्हणम् । बृहद्बलान्तसंक्षेपादिक्ष्वाकाद्याः प्रकीर्त्तिताः",
+   "image": 26,
+   "confidence": "medium",
+   "note": "doubtful: क्षि in विकुक्षि, ञ्च, श्चै in धुन्धोश्चैव, संक्षेप (क्ष looks like च्छ/चे), दिक्ष्वाका (letters after ष्वा cramped), बृ first letter"
+  },
+  {
+   "verse": "130",
+   "text": "निम्यादीनां चितौघानां यावज्जङ्कुगणादिति । कीर्त्त्यते विस्तरो यश्च ययातेरपि भूपतेः",
+   "image": 26,
+   "confidence": "low",
+   "note": "doubtful: चितौघानां (matra and घा/भ्रा glyph), यावज्जङ्कुगणादिति (ज्ज, ङ्कु, and whether ग carries ण or just ा), यश्च (looks like यश्व), repha in कीर्त्त्यते"
+  },
+  {
+   "verse": "132",
+   "text": "ज्यामघस्य च माहात्म्यं प्रजासर्गश्च कीर्त्त्यते । देवावृधस्य लक्षंस्य हृष्टेश्चैव महात्मनः",
+   "image": 27,
+   "confidence": "low",
+   "note": "doubtful: लक्षंस्य (glyph cluster after ल looks like क्ष with anusvara/candrabindu above), हृष्टेश्चैव (first letter looks ह with ृ), माहात्म्यं (म्य/त्र ambiguity), देवावृधस्य (वृ vs बृ)"
+  },
+  {
+   "verse": "134",
+   "text": "युधाजितः प्रजासर्गः कीर्त्त्यते च महात्मनः । कीर्त्त्यते सान्वयः श्रीमान् राजर्षिर्हवमीयुषः",
+   "image": 27,
+   "confidence": "low",
+   "note": "doubtful: राजर्षिर्हवमीयुषः (two repha/candrabindu-like marks over ष and ह; letters between ज and वमी unclear), सान्वयः (सा looks like घा), repha placement in कीर्त्त्यते; printed note mark (२) omitted"
+  },
+  {
+   "verse": "139",
+   "text": "शुक्रेणाराधनं स्थाणोर्घोरेण तपसा कृतं । वरदानप्रलुब्धेन यत्र अर्वस्तवः कृतः । अनन्तरं विनिर्द्दिष्टं देवासुरविचेष्टितं",
+   "image": 27,
+   "confidence": "medium",
+   "note": "3 half-lines before number; doubtful: अर्वस्तवः (अ printed like ग्र, repha above व), यत्र glyph, प्रलुब्धेन (ब्ध), विनिर्द्दिष्टं conjuncts"
+  },
+  {
+   "verse": "140",
+   "text": "जयन्त्या सह सक्तो तु यत्र शुक्रो महात्मनि । असुरान्मोहयामास शुक्ररूपेण बुद्धिमान् । बृहस्पतिस्तु तान् शुक्रः प्रमाप सुमहाद्युतिः",
+   "image": 28,
+   "confidence": "low",
+   "note": "Verse starts on image 27 (last two lines) and ends on 28; 3 half-lines. Doubtful: सक्तो (क्त glyph), बृहस्पति first letters (print shows ब/ह with ृ cramped), प्रमाप (first two glyphs look like ग्र + भ/म; शाप intended? read as printed ग्रमाप/प्रमाप), द्यु in सुमहाद्युतिः, यत्र glyph; printed note mark (३) omitted"
+  },
+  {
+   "verse": "141",
+   "text": "उक्ताश्च विष्णुमाहात्म्यं विष्णोर्जन्मादिशब्दनं । तुर्वसुः शुक्रदौहित्रो देवयान्या यदोरभूत् । अनुद्रुह्युस्तथा पूरुर्ययातितनया नृपाः",
+   "image": 28,
+   "confidence": "low",
+   "note": "3 half-lines (starts after 140 on image 28). Doubtful: उक्ताश्च (first letters like ऊ/उ + क्ता), विष्णोर्जन्मादिशब्दनं (conjuncts ष्ण, र्ज, श्द), शुक्रदौहित्रो, अनुद्रुह्यु (द्रु/ह्यु), पूरुर्य्ययाति (र्य्य count: printed as र्य्य then या)"
+  },
+  {
+   "verse": "143",
+   "text": "कुम्भिकस्य च विप्रर्षेः सम्यग्गयो धर्मसंश्रयः । वार्हस्पत्यन्तु सुरभिर्यत्र शापमिहानुदत्",
+   "image": 28,
+   "confidence": "low",
+   "note": "2 half-lines. Doubtful: कुम्भिक (letters after कु cramped, looks like कुभ्रिक), विप्रर्षेः, सम्यग्गयो (print shows सम्यग्गयो; possibly misprint), धर्मसंश्रयः, वार्हस्पत्यन्तु (ह with anusvara-like mark above), सुरभिर्यत्र (र्य mark), शापमिहानुदत् (first glyph looks like आ/ग्रा)"
+  },
+  {
+   "verse": "162",
+   "text": "वसिष्ठसम्भृतस्याग्निर्विश्वामित्रजिघांसया । सन्तानहेतोर्विभुना चौर्णः स्कन्देन धीमता । दैवेन विधिना विप्र विश्वामित्रहितैषिणा",
+   "image": 30,
+   "confidence": "low",
+   "note": "3 half-lines. Doubtful: वसिष्ठ (first glyphs cramped, ष्ठ looks like ग्न/ष्ठ), सम्भृत (ृ below भ faint; स्वा/स्या after त), चौर्णः (first letter blurred, looks like चौ with ण conjunct), द्वैवेन first glyph looks like दै with extra stroke; printed foot note mark omitted"
+  },
+  {
+   "verse": "163",
+   "text": "एकं वेदश्चतुष्पादश्चतुर्धा पुनरीश्वरः । यथा विभेद भगवान् व्यासः सर्वान् स्वबुद्धितः । तस्य शिष्यैः प्रशिष्यैश्च शाखाभेदाः पुनः कृताः",
+   "image": 30,
+   "confidence": "medium",
+   "note": "3 half-lines; doubtful: चतुष्पाद/चतुर्धा conjuncts (ष्पा, र्धा), विभेद (भे/मे), शिष्यैः first letter, स्वबुद्धितः (द्धि), कृताः; printed (१) mark omitted"
+  },
+  {
+   "verse": "167",
+   "text": "ईजिरे चैव सत्रेण मुनयो नैमिषे तदा । मृते आरद्वति तथा तस्य चोत्थापनं कृतं",
+   "image": 30,
+   "confidence": "low",
+   "note": "2 half-lines. Doubtful: मृते (first glyph looks like सृ/मृ), second word first glyph looks like ग्रा/आ then रद्वति (as printed; reading uncertain), चोत्थापनं (त् with थ), कृतं; ईजिरे first letter ई with odd hook"
+  },
+  {
+   "verse": "173",
+   "text": "जनयित्वा त्वरस्यान्ते ऐडपुत्रं यथायुषं । समापयित्वा तत्सत्रमायुषं पर्य्युपासते",
+   "image": 31,
+   "confidence": "low",
+   "note": "doubtful: त्वरस्यान्ते (second word letters cramped; possibly ल्वरस्यान्ते), ऐडपुत्रं, तत्सत्र (त्स/त्स्र), पर्य्युपासते (र्य्यु conjunct), आयुषं printed as आयुषं"
+  },
+  {
+   "verse": "178",
+   "text": "अनेन हि क्रमेणेदं पुराणं संप्रचक्ष्यते । सुखमर्थः समासेन महानप्युपलभ्यते । तस्मात् किञ्चित्समुद्दिश्य पश्चाद्वच्यामि विस्तरम्",
+   "image": 31,
+   "confidence": "low",
+   "note": "3 half-lines. Doubtful: संप्रचक्ष्यते (क्ष glyph), सुखमर्थः (anusvara above थ), किञ्चित्समुद्दिश्य (ञ्चि, त्स, द्दि), पश्चाद्वच्यामि (print shows च-like glyph, possibly क्ष/ख्य), विस्तरम्"
+  }
+ ]
+}
