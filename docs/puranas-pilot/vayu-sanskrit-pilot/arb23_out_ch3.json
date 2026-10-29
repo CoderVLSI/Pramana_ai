@@ -1,0 +1,383 @@
+[
+ {
+  "verse": "3",
+  "spot_index": 0,
+  "decision": "A",
+  "confidence": "medium",
+  "note": "print shows द + क्ष-glyph (kSa looks like च in this font) i.e. daksha"
+ },
+ {
+  "verse": "3",
+  "spot_index": 1,
+  "decision": "A",
+  "confidence": "medium",
+  "note": "same glyphs"
+ },
+ {
+  "verse": "3",
+  "spot_index": 2,
+  "decision": "A",
+  "confidence": "low",
+  "note": "single ligature glyph resembles द्ध, not plain ध; small न subscript; hard to resolve"
+ },
+ {
+  "verse": "4",
+  "spot_index": 0,
+  "decision": "A",
+  "confidence": "high",
+  "note": "चुक्रोधन, ु visible"
+ },
+ {
+  "verse": "4",
+  "spot_index": 1,
+  "decision": "A",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "verse": "4",
+  "spot_index": 2,
+  "decision": "A",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "verse": "4",
+  "spot_index": 3,
+  "decision": "B",
+  "confidence": "medium",
+  "note": "वि + सृ-glyph (same as in header सृष्टि) + ष्ट्य; not हृद्र"
+ },
+ {
+  "verse": "4",
+  "spot_index": 4,
+  "decision": "B",
+  "confidence": "medium",
+  "note": ""
+ },
+ {
+  "verse": "4",
+  "spot_index": 5,
+  "decision": "B",
+  "confidence": "medium",
+  "note": ""
+ },
+ {
+  "verse": "4",
+  "spot_index": 6,
+  "decision": "B",
+  "confidence": "medium",
+  "note": ""
+ },
+ {
+  "verse": "5",
+  "spot_index": 0,
+  "decision": "A",
+  "confidence": "medium",
+  "note": "शौभिनः, ौ marks visible"
+ },
+ {
+  "verse": "5",
+  "spot_index": 1,
+  "decision": "B",
+  "confidence": "high",
+  "note": "बृहस्पत्युशनः"
+ },
+ {
+  "verse": "5",
+  "spot_index": 2,
+  "decision": "B",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "verse": "5",
+  "spot_index": 3,
+  "decision": "B",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "verse": "5",
+  "spot_index": 4,
+  "decision": "B",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "verse": "6",
+  "spot_index": 0,
+  "decision": "B",
+  "confidence": "high",
+  "note": "सुरेश-देवर्षि; े mark on र and श-glyph"
+ },
+ {
+  "verse": "6",
+  "spot_index": 1,
+  "decision": "neither",
+  "confidence": "low",
+  "note": "print has ल्याममहाऋषि: no anusvara after ल्या, and an ऋ-like glyph, not र्षि/हर्षि",
+  "own_reading": "ल्याममहाऋषि"
+ },
+ {
+  "verse": "6",
+  "spot_index": 2,
+  "decision": "neither",
+  "confidence": "low",
+  "note": "same as previous",
+  "own_reading": "याममहाऋषिप्"
+ },
+ {
+  "verse": "6",
+  "spot_index": 3,
+  "decision": "A",
+  "confidence": "low",
+  "note": "ल्बनार्चि: न (not ण) clear; ब vs व ambiguous"
+ },
+ {
+  "verse": "7",
+  "spot_index": 0,
+  "decision": "B",
+  "confidence": "high",
+  "note": "रुषश्रियं"
+ },
+ {
+  "verse": "7",
+  "spot_index": 1,
+  "decision": "B",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "verse": "7",
+  "spot_index": 2,
+  "decision": "B",
+  "confidence": "high",
+  "note": "पराणामनिल, single पु-less"
+ },
+ {
+  "verse": "8",
+  "spot_index": 0,
+  "decision": "B",
+  "confidence": "medium",
+  "note": "र्य्य conjunct appears double य"
+ },
+ {
+  "verse": "8",
+  "spot_index": 1,
+  "decision": "A",
+  "confidence": "medium",
+  "note": "ब्द followed by ने then ना (extra न present)"
+ },
+ {
+  "verse": "8",
+  "spot_index": 2,
+  "decision": "B",
+  "confidence": "medium",
+  "note": "बद्धा, no ु below ब"
+ },
+ {
+  "verse": "8",
+  "spot_index": 3,
+  "decision": "B",
+  "confidence": "low",
+  "note": "final vowel looks like ी with curl on stem, not ो"
+ },
+ {
+  "verse": "9",
+  "spot_index": 0,
+  "decision": "A",
+  "confidence": "high",
+  "note": "line ends with प्रसूति । (danda) then आत्मा, no visarga"
+ },
+ {
+  "verse": "9",
+  "spot_index": 1,
+  "decision": "A",
+  "confidence": "medium",
+  "note": "final glyph is the same ligature as in याश्च (श्च); not distinguishable as ञ्च"
+ },
+ {
+  "verse": "10",
+  "spot_index": 0,
+  "decision": "A",
+  "confidence": "low",
+  "note": "glyphs: त + द्‍-ligature + ग्र-like glyph + ष्टि; ग present, no clear ृ"
+ },
+ {
+  "verse": "11",
+  "spot_index": 0,
+  "decision": "A",
+  "confidence": "medium",
+  "note": "print has वधेश्च + क्षेत्रज्ञ (क्ष looks like च glyph; ज्ञ glyph present)"
+ },
+ {
+  "verse": "11",
+  "spot_index": 1,
+  "decision": "A",
+  "confidence": "medium",
+  "note": ""
+ },
+ {
+  "verse": "11",
+  "spot_index": 2,
+  "decision": "A",
+  "confidence": "medium",
+  "note": ""
+ },
+ {
+  "verse": "12",
+  "spot_index": 0,
+  "decision": "neither",
+  "confidence": "medium",
+  "note": "print ताराग्रहार्क्क: no anusvara after रा; ग्र (not गृ)",
+  "own_reading": "ाराग्रहार्"
+ },
+ {
+  "verse": "12",
+  "spot_index": 1,
+  "decision": "neither",
+  "confidence": "medium",
+  "note": "same",
+  "own_reading": "ाराग्रहार्क्"
+ },
+ {
+  "verse": "12",
+  "spot_index": 2,
+  "decision": "neither",
+  "confidence": "medium",
+  "note": "ग्र so letters रहा, but क्क and र्च्च present",
+  "own_reading": "रहार्क्कर्च्चन"
+ },
+ {
+  "verse": "12",
+  "spot_index": 3,
+  "decision": "A",
+  "confidence": "medium",
+  "note": "र्क्कर्च्चनि: doubled क्क and च्च visible"
+ },
+ {
+  "verse": "13",
+  "spot_index": 0,
+  "decision": "neither",
+  "confidence": "medium",
+  "note": "print ररात्रग्रहानां: has ग्र, and न (not ण)",
+  "own_reading": "ररात्रग्रहानांद"
+ },
+ {
+  "verse": "13",
+  "spot_index": 1,
+  "decision": "neither",
+  "confidence": "medium",
+  "note": "",
+  "own_reading": "ात्रग्रहानांदिक्"
+ },
+ {
+  "verse": "14",
+  "spot_index": 0,
+  "decision": "B",
+  "confidence": "low",
+  "note": "glyph contains द्व ligature box after य; unclear"
+ },
+ {
+  "verse": "14",
+  "spot_index": 1,
+  "decision": "B",
+  "confidence": "low",
+  "note": "सर्वस्य glyph shows doubled व (र्व्व)"
+ },
+ {
+  "verse": "14",
+  "spot_index": 2,
+  "decision": "A",
+  "confidence": "medium",
+  "note": "next page starts राब्रह्मणो; no त्र seen"
+ },
+ {
+  "verse": "15",
+  "spot_index": 0,
+  "decision": "neither",
+  "confidence": "low",
+  "note": "print भ + ो/ी + प् (halant below) + सि + त + श्च-glyph: A's missing halant, B's ञ्च differ",
+  "own_reading": "भीप्सितश्"
+ },
+ {
+  "verse": "15",
+  "spot_index": 1,
+  "decision": "neither",
+  "confidence": "low",
+  "note": "",
+  "own_reading": "भीप्सितश्च"
+ },
+ {
+  "verse": "15",
+  "spot_index": 2,
+  "decision": "neither",
+  "confidence": "low",
+  "note": "",
+  "own_reading": "ीप्सितश्चदेवस"
+ },
+ {
+  "verse": "16",
+  "spot_index": 0,
+  "decision": "A",
+  "confidence": "medium",
+  "note": "तस्याश्च, final glyph is श्च-ligature"
+ },
+ {
+  "verse": "16",
+  "spot_index": 1,
+  "decision": "A",
+  "confidence": "medium",
+  "note": ""
+ },
+ {
+  "verse": "16",
+  "spot_index": 2,
+  "decision": "B",
+  "confidence": "high",
+  "note": "सुरेश-देवर्षि"
+ },
+ {
+  "verse": "16",
+  "spot_index": 3,
+  "decision": "A",
+  "confidence": "medium",
+  "note": "श्च ligature same as in याश्च"
+ },
+ {
+  "verse": "17",
+  "spot_index": 0,
+  "decision": "A",
+  "confidence": "medium",
+  "note": "चाप्यत्र, प्य conjunct"
+ },
+ {
+  "verse": "18",
+  "spot_index": 0,
+  "decision": "B",
+  "confidence": "medium",
+  "note": "र्य्य double य visible"
+ },
+ {
+  "verse": "20",
+  "spot_index": 0,
+  "decision": "A",
+  "confidence": "medium",
+  "note": "र्कै with two marks (ै) then ण"
+ },
+ {
+  "verse": "21",
+  "spot_index": 0,
+  "decision": "A",
+  "confidence": "medium",
+  "note": "विशिष्य; श glyph + ि + ष्य"
+ },
+ {
+  "verse": "22",
+  "spot_index": 0,
+  "decision": "B",
+  "confidence": "medium",
+  "note": "तो: e-mark above त"
+ }
+]

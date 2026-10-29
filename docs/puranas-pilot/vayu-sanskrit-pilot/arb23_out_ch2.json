@@ -1,0 +1,311 @@
+[
+ {
+  "verse": "1",
+  "spot_index": 0,
+  "decision": "unclear",
+  "confidence": "low",
+  "note": "page-33/34 crops were not displayed by the viewer (media removed); not judged"
+ },
+ {
+  "verse": "2",
+  "spot_index": 0,
+  "decision": "unclear",
+  "confidence": "low",
+  "note": "page-33/34 crops were not displayed by the viewer (media removed); not judged"
+ },
+ {
+  "verse": "3",
+  "spot_index": 0,
+  "decision": "unclear",
+  "confidence": "low",
+  "note": "page-33/34 crops were not displayed by the viewer (media removed); not judged"
+ },
+ {
+  "verse": "3",
+  "spot_index": 1,
+  "decision": "unclear",
+  "confidence": "low",
+  "note": "page-33/34 crops were not displayed by the viewer (media removed); not judged"
+ },
+ {
+  "verse": "6",
+  "spot_index": 0,
+  "decision": "unclear",
+  "confidence": "low",
+  "note": "page-33/34 crops were not displayed by the viewer (media removed); not judged"
+ },
+ {
+  "verse": "6",
+  "spot_index": 1,
+  "decision": "unclear",
+  "confidence": "low",
+  "note": "page-33/34 crops were not displayed by the viewer (media removed); not judged"
+ },
+ {
+  "verse": "6",
+  "spot_index": 2,
+  "decision": "unclear",
+  "confidence": "low",
+  "note": "page-33/34 crops were not displayed by the viewer (media removed); not judged"
+ },
+ {
+  "verse": "7",
+  "spot_index": 0,
+  "decision": "unclear",
+  "confidence": "low",
+  "note": "page-33/34 crops were not displayed by the viewer (media removed); not judged"
+ },
+ {
+  "verse": "9",
+  "spot_index": 0,
+  "decision": "unclear",
+  "confidence": "low",
+  "note": "page-33/34 crops were not displayed by the viewer (media removed); not judged"
+ },
+ {
+  "verse": "9",
+  "spot_index": 1,
+  "decision": "unclear",
+  "confidence": "low",
+  "note": "page-33/34 crops were not displayed by the viewer (media removed); not judged"
+ },
+ {
+  "verse": "9",
+  "spot_index": 2,
+  "decision": "unclear",
+  "confidence": "low",
+  "note": "page-33/34 crops were not displayed by the viewer (media removed); not judged"
+ },
+ {
+  "verse": "9",
+  "spot_index": 3,
+  "decision": "unclear",
+  "confidence": "low",
+  "note": "page-33/34 crops were not displayed by the viewer (media removed); not judged"
+ },
+ {
+  "verse": "10",
+  "spot_index": 0,
+  "decision": "unclear",
+  "confidence": "low",
+  "note": "page-33/34 crops were not displayed by the viewer (media removed); not judged"
+ },
+ {
+  "verse": "10",
+  "spot_index": 1,
+  "decision": "unclear",
+  "confidence": "low",
+  "note": "page-33/34 crops were not displayed by the viewer (media removed); not judged"
+ },
+ {
+  "verse": "13",
+  "spot_index": 0,
+  "decision": "unclear",
+  "confidence": "low",
+  "note": "page-33/34 crops were not displayed by the viewer (media removed); not judged"
+ },
+ {
+  "verse": "14",
+  "spot_index": 0,
+  "decision": "unclear",
+  "confidence": "low",
+  "note": "page-33/34 crops were not displayed by the viewer (media removed); not judged"
+ },
+ {
+  "verse": "16",
+  "spot_index": 0,
+  "decision": "unclear",
+  "confidence": "low",
+  "note": "page-33/34 crops were not displayed by the viewer (media removed); not judged"
+ },
+ {
+  "verse": "19",
+  "spot_index": 0,
+  "decision": "unclear",
+  "confidence": "low",
+  "note": "page-33/34 crops were not displayed by the viewer (media removed); not judged"
+ },
+ {
+  "verse": "20",
+  "spot_index": 0,
+  "decision": "A",
+  "confidence": "medium",
+  "note": "print reads निभ्रान्ते (भ्रा), not शा"
+ },
+ {
+  "verse": "21",
+  "spot_index": 0,
+  "decision": "unclear",
+  "confidence": "low",
+  "note": "conjunct after पुन ambiguous: श्च vs स्व; न vs त unclear"
+ },
+ {
+  "verse": "21",
+  "spot_index": 1,
+  "decision": "unclear",
+  "confidence": "low",
+  "note": "same ambiguity"
+ },
+ {
+  "verse": "23",
+  "spot_index": 0,
+  "decision": "B",
+  "confidence": "medium",
+  "note": "print कर्त्तुं with doubled त"
+ },
+ {
+  "verse": "24",
+  "spot_index": 0,
+  "decision": "A",
+  "confidence": "medium",
+  "note": "बह्वाश् ligature"
+ },
+ {
+  "verse": "24",
+  "spot_index": 1,
+  "decision": "A",
+  "confidence": "medium",
+  "note": "बह्वाश् ligature"
+ },
+ {
+  "verse": "24",
+  "spot_index": 2,
+  "decision": "B",
+  "confidence": "medium",
+  "note": "र्य्यं with y-y doubled"
+ },
+ {
+  "verse": "26",
+  "spot_index": 0,
+  "decision": "A",
+  "confidence": "high",
+  "note": "रेवेन्द्र"
+ },
+ {
+  "verse": "27",
+  "spot_index": 0,
+  "decision": "A",
+  "confidence": "low",
+  "note": "long vowel sign ॄ appears; resolution limited"
+ },
+ {
+  "verse": "27",
+  "spot_index": 1,
+  "decision": "B",
+  "confidence": "high",
+  "note": "पित्र्यैश्च with ai sign"
+ },
+ {
+  "verse": "29",
+  "spot_index": 0,
+  "decision": "B",
+  "confidence": "low",
+  "note": "no reph visible before मु; chandrabindu above"
+ },
+ {
+  "verse": "32",
+  "spot_index": 0,
+  "decision": "A",
+  "confidence": "low",
+  "note": "first glyph श-like not भ; partly cut"
+ },
+ {
+  "verse": "34",
+  "spot_index": 0,
+  "decision": "B",
+  "confidence": "high",
+  "note": "भवद्भिर्य्यदहं"
+ },
+ {
+  "verse": "34",
+  "spot_index": 1,
+  "decision": "B",
+  "confidence": "high",
+  "note": "same"
+ },
+ {
+  "verse": "34",
+  "spot_index": 2,
+  "decision": "A",
+  "confidence": "high",
+  "note": "प्रनोदित with न"
+ },
+ {
+  "verse": "35",
+  "spot_index": 0,
+  "decision": "B",
+  "confidence": "low",
+  "note": "ष्य-like conjunct; could be ष्ठ"
+ },
+ {
+  "verse": "35",
+  "spot_index": 1,
+  "decision": "A",
+  "confidence": "medium",
+  "note": "दृग्वशी"
+ },
+ {
+  "verse": "35",
+  "spot_index": 2,
+  "decision": "A",
+  "confidence": "medium",
+  "note": "दृग्वशी"
+ },
+ {
+  "verse": "36",
+  "spot_index": 0,
+  "decision": "A",
+  "confidence": "medium",
+  "note": "single व after र"
+ },
+ {
+  "verse": "36",
+  "spot_index": 1,
+  "decision": "A",
+  "confidence": "low",
+  "note": "read सम-; ambiguous with सप्त"
+ },
+ {
+  "verse": "37",
+  "spot_index": 0,
+  "decision": "B",
+  "confidence": "medium",
+  "note": "नन्दधा"
+ },
+ {
+  "verse": "41",
+  "spot_index": 0,
+  "decision": "B",
+  "confidence": "medium",
+  "note": "श्लक्ष्णया"
+ },
+ {
+  "verse": "41",
+  "spot_index": 1,
+  "decision": "B",
+  "confidence": "medium",
+  "note": "श्लक्ष्णया"
+ },
+ {
+  "verse": "41",
+  "spot_index": 2,
+  "decision": "neither",
+  "confidence": "low",
+  "note": "first part ्णया (B) with सर्व्वान् (doubled व, A)",
+  "own_reading": "्णयासर्व्वान्म"
+ },
+ {
+  "verse": "41",
+  "spot_index": 3,
+  "decision": "unclear",
+  "confidence": "low",
+  "note": "glyph after पुराण ambiguous ङ्ग vs ज्ञ"
+ },
+ {
+  "verse": "41",
+  "spot_index": 4,
+  "decision": "unclear",
+  "confidence": "low",
+  "note": "same"
+ }
+]

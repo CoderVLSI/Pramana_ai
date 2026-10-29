@@ -1,0 +1,146 @@
+[
+ {
+  "verse": "1",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "र्म्म",
+  "confidence": "medium",
+  "note": "print shows reph plus doubled म ligature in कर्म्मणाम्"
+ },
+ {
+  "verse": "2",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "क्ष",
+  "confidence": "low",
+  "note": "final glyph reads as single क्ष conjunct, no visible extra व; hard to resolve"
+ },
+ {
+  "verse": "3",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "न्न",
+  "confidence": "medium",
+  "note": "स + न्न, not ञ्च"
+ },
+ {
+  "verse": "3",
+  "spot_index": 1,
+  "decision": "B",
+  "own_reading": "न्न",
+  "confidence": "medium",
+  "note": "same glyph"
+ },
+ {
+  "verse": "6",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "शा",
+  "confidence": "medium",
+  "note": "glyph has श shape with tail, not प्र"
+ },
+ {
+  "verse": "6",
+  "spot_index": 1,
+  "decision": "A",
+  "own_reading": "श्च",
+  "confidence": "low",
+  "note": "top श-like with lower loop; unlike स्व in स्वयं elsewhere"
+ },
+ {
+  "verse": "6",
+  "spot_index": 2,
+  "decision": "A",
+  "own_reading": "श्च",
+  "confidence": "low",
+  "note": "same glyph"
+ },
+ {
+  "verse": "7",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "र्य्य",
+  "confidence": "medium",
+  "note": "glyph appears doubled य with reph"
+ },
+ {
+  "verse": "9",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "शक्ति",
+  "confidence": "medium",
+  "note": "first glyph श-shaped, conjunct क्त; not अग्नि"
+ },
+ {
+  "verse": "9",
+  "spot_index": 1,
+  "decision": "A",
+  "own_reading": "शक्तिर्ज्य",
+  "confidence": "medium",
+  "note": "reph visible over ज्य"
+ },
+ {
+  "verse": "9",
+  "spot_index": 2,
+  "decision": "A",
+  "own_reading": "शक्तिर्ज्येष्",
+  "confidence": "medium",
+  "note": "same"
+ },
+ {
+  "verse": "9",
+  "spot_index": 3,
+  "decision": "B",
+  "own_reading": "सु",
+  "confidence": "medium",
+  "note": "third glyph स with u-hook, not म"
+ },
+ {
+  "verse": "10",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "शामस्वशक्ति",
+  "confidence": "high",
+  "note": "glyphs read शा म स्व, no प्त"
+ },
+ {
+  "verse": "10",
+  "spot_index": 1,
+  "decision": "B",
+  "own_reading": "शामस्वशक्ति",
+  "confidence": "high",
+  "note": "same"
+ },
+ {
+  "verse": "13",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "ां",
+  "confidence": "high",
+  "note": "dot above ा, anusvara, not म्"
+ },
+ {
+  "verse": "14",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "स्न",
+  "confidence": "low",
+  "note": "conjunct has स-type flag stroke, unlike ग"
+ },
+ {
+  "verse": "16",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "द्द",
+  "confidence": "medium",
+  "note": "stacked double द glyph before ी"
+ },
+ {
+  "verse": "19",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "र्य्य",
+  "confidence": "low",
+  "note": "य glyph doubled with reph"
+ }
+]
