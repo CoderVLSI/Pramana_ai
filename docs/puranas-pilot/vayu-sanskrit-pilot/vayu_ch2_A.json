@@ -1,0 +1,438 @@
+{
+ "entries": [
+  {
+   "verse": "0a",
+   "printed_numbers": [],
+   "text": "द्वादशवार्षिकसत्रनिरूपणं",
+   "page_index": 33,
+   "confidence": "medium",
+   "note": "sub-heading printed under chapter heading (same words recur in the colophon)"
+  },
+  {
+   "verse": "0b",
+   "printed_numbers": [],
+   "text": "शुक उवाच ।",
+   "page_index": 33,
+   "confidence": "low",
+   "note": "first glyph looks like शु/श्रु; read as seen"
+  },
+  {
+   "verse": "1",
+   "printed_numbers": [
+    "1"
+   ],
+   "text": "प्रत्यब्रुवन् पुनः सूतमृषयस्ते तपोधनाः । कुत्र सत्रं समभवत् तेषामद्भुतकर्म्मणाम्",
+   "page_index": 33,
+   "confidence": "medium",
+   "note": "तेषामद्भुत conjunct blotted"
+  },
+  {
+   "verse": "2",
+   "printed_numbers": [
+    "2"
+   ],
+   "text": "कियन्तश्चैव तत्कालं कथञ्च समवर्त्तत । आचचक्ष्व पुराणञ्च कथं तेभ्यः प्रभञ्जनः",
+   "page_index": 33,
+   "confidence": "medium",
+   "note": "word 'आचचक्ष्व' blotted: glyphs आ च च क्ष्व; 'प्रभञ्जनः' read"
+  },
+  {
+   "verse": "3",
+   "printed_numbers": [
+    "3"
+   ],
+   "text": "आचक्ष्व विस्तरेणेदम्परं कौतूहलं हि नः । इति सञ्चोदितः सूतः प्रत्युवाच शुभं वचः",
+   "page_index": 33,
+   "confidence": "medium",
+   "note": "'सञ्चोदितः' conjunct looks like न्च/न्न; 'विस्तरेणेदम्परं' middle blotted"
+  },
+  {
+   "verse": "4",
+   "printed_numbers": [
+    "4"
+   ],
+   "text": "शृणुध्वं यत्र ते धीरा ईजिरे सत्रमुत्तमं । यावन्तश्चाभवत् कालं यथा च समवर्त्तत",
+   "page_index": 33,
+   "confidence": "medium",
+   "note": "printed number looks like 8 shape (४) read as 4"
+  },
+  {
+   "verse": "5",
+   "printed_numbers": [
+    "5"
+   ],
+   "text": "सिसृक्षमाणा विश्वं हि यत्र विश्वसृजः पुरा । सत्रं हि ईजिरे पुण्यं सहस्रं परिवत्सरान्",
+   "page_index": 33,
+   "confidence": "medium",
+   "note": "क्ष in सिसृक्ष blotted"
+  },
+  {
+   "verse": "6",
+   "printed_numbers": [
+    "6"
+   ],
+   "text": "तपोगृहपतिर्यत्र ब्रह्मा ब्रह्माऽभवत्स्वयं । इलाया यत्र पत्नीत्वं प्रामितं यत्र बुद्धिमान् । मृत्युश्चक्रे महातेजास्तस्मिन् सत्रे महात्मनां",
+   "page_index": 33,
+   "confidence": "low",
+   "note": "unclear: 'तिर्यत्र', 'प्रामितं' first glyph, 'मृत्युश्चक्रे' (glyphs look like स्व/श्च + क्रे)"
+  },
+  {
+   "verse": "7",
+   "printed_numbers": [
+    "7"
+   ],
+   "text": "विबुधा ईजिरे तत्र सहस्रं प्रतिवत्सरान् । भ्रमतो धर्म्मचक्रस्य यत्र नेमिरशीर्य्यत । कर्म्मणा तेन विख्यातं नैमिषं मुनिपूजितं",
+   "page_index": 33,
+   "confidence": "medium",
+   "note": "'नेमिरशीर्य्यत' middle glyph (शी/श्री) unclear"
+  },
+  {
+   "verse": "8",
+   "printed_numbers": [
+    "8"
+   ],
+   "text": "यत्र सा गोमती पुण्या सिद्धचारणसेविता । रोहिणी सुषुवे तत्र ततः सौम्योऽभवत् सुतः",
+   "page_index": 33,
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "verse": "9",
+   "printed_numbers": [
+    "9"
+   ],
+   "text": "शक्तिर्ज्येष्ठः समभवत् वशिष्ठस्य महात्मनः । अरुन्धत्याः सुता यत्र शतमुत्तमतेजसः",
+   "page_index": 33,
+   "confidence": "low",
+   "note": "verse starts last line of n33 and ends first line of n34; first glyph of 'शक्तिर्' looks like अ/श (read श), क्ति looks like क्लि/ग्नि; 'अरुन्धत्याः' first letters blotted; printed number 9 looks like ८/९ shape, taken as 9 by sequence"
+  },
+  {
+   "verse": "10",
+   "printed_numbers": [
+    "10"
+   ],
+   "text": "कल्माषपादो नृपतिर्यत्र शप्तश्च शक्तिना । यत्र वैरं समभवद्विश्वामित्रवशिष्ठयोः",
+   "page_index": 34,
+   "confidence": "medium",
+   "note": "'शप्तश्च' blotted (glyphs श, प्त, स्व/श्च); small ring above य of 'र्यत्र' ignored"
+  },
+  {
+   "verse": "11",
+   "printed_numbers": [
+    "11"
+   ],
+   "text": "अदृश्यन्त्यां समभवन्मुनिर्यत्र पराशरः । पराभवो वशिष्ठस्य यस्मिन् जातेप्यवर्त्तत",
+   "page_index": 34,
+   "confidence": "medium",
+   "note": "'मुनिर्यत्र' possibly र्य्य; no avagraha printed in जातेप्य"
+  },
+  {
+   "verse": "12",
+   "printed_numbers": [
+    "12"
+   ],
+   "text": "तत्र ते ईजिरे सत्रं नैमिषे ब्रह्मवादिनः । नैमिषे ईजिरे यत्र नैमिषेयास्ततः स्मृताः",
+   "page_index": 34,
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "verse": "13",
+   "printed_numbers": [
+    "13"
+   ],
+   "text": "तत्सत्रमभवत्तेषां समाः द्वादश धीमतां । पुरूरवसि विक्रान्ते प्रशासति वसुन्धरां",
+   "page_index": 34,
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "verse": "14",
+   "printed_numbers": [
+    "14"
+   ],
+   "text": "अष्टादश समुद्रस्य द्वीपानस्नन्पुरूरवाः । तुतोष नैव रत्नानां लोभादिति हि नः श्रुतं",
+   "page_index": 34,
+   "confidence": "low",
+   "note": "'द्वीपानस्नन्' glyphs unclear (स्न/श्न); possibly different reading"
+  },
+  {
+   "verse": "15",
+   "printed_numbers": [
+    "15"
+   ],
+   "text": "उर्वशी चकमे यत्र देवहूतिप्रणोदिता । आजहार च तत्सत्रं स्वर्वेश्यासहसङ्गतः",
+   "page_index": 34,
+   "confidence": "low",
+   "note": "ी in this font looks like ौ with a hook, ू like a curl under the letter; line 2 तत्सत्रं and स्वर्वेश्या unclear"
+  },
+  {
+   "verse": "16",
+   "printed_numbers": [
+    "16"
+   ],
+   "text": "तस्मिन्नरपतौ सत्रं नैमिषेयाः प्रचक्रिरे । यं गर्भं सुषुवे गङ्गा पावकादीप्ततेजसं । तदुल्बं पर्वते न्यस्तं हिरण्यं प्रत्यपद्यत",
+   "page_index": 34,
+   "confidence": "medium",
+   "note": "'तदुल्बं' glyph could be तदुल्वं; 'हिरण्यं' conjunct ण्य"
+  },
+  {
+   "verse": "17",
+   "printed_numbers": [
+    "17"
+   ],
+   "text": "हिरण्मयन्ततश्चक्रे यज्ञवाढं महात्मनां । विश्वकर्म्मा स्वयं देवो भावयन् लोकभावनं",
+   "page_index": 34,
+   "confidence": "low",
+   "note": "'हिरण्मयन्ततश्चक्रे' blotted (न्त after य; श्च looks like स्व); 'यज्ञवाढं' ढ looks like ढ here though next verse has वाटं"
+  },
+  {
+   "verse": "18",
+   "printed_numbers": [
+    "18"
+   ],
+   "text": "बृहस्पतिस्ततस्तत्र तेषाममिततेजसां । ऐडः पुरूरवा भेजे तं देशं मृगयां चरन्",
+   "page_index": 34,
+   "confidence": "medium",
+   "note": "first glyph of बृहस्पतिः (ब with ृ) appears like ह्न/ब्ह"
+  },
+  {
+   "verse": "19",
+   "printed_numbers": [
+    "19"
+   ],
+   "text": "तं दृष्ट्वा महदाश्चर्यं यज्ञवाटं हिरण्मयं । लोभेन हतविज्ञानस्तदादातुं प्रचक्रमे",
+   "page_index": 34,
+   "confidence": "medium",
+   "note": "printed number 19 (९ shape like ८)"
+  },
+  {
+   "verse": "20",
+   "printed_numbers": [
+    "20"
+   ],
+   "text": "नैमिषेयास्ततस्तस्य चुक्रुधुर्नृपतेर्भृशं । निजघ्नुश्चापि संक्रुद्धाः कुशवज्रैर्मनीषिणः । ततो निभ्रान्ते राजानं मुनयो दैवनोदिताः",
+   "page_index": 34,
+   "confidence": "low",
+   "note": "verse spans n34 (first line) and n35; number 20 printed (२०); CONTINUATION of verse 20 (first line is on n34, merged later); 'निभ्रान्ते' unclear"
+  },
+  {
+   "verse": "21",
+   "printed_numbers": [
+    "21"
+   ],
+   "text": "कुशवज्रैर्विनिष्पिष्टः स राजा व्यजहात्तनुं । और्वशेयं ततस्तस्य पुनश्चक्रुर्नृपं भुवि",
+   "page_index": 35,
+   "confidence": "medium",
+   "note": "first word and 'पुनश्चक्रुर्' blotted"
+  },
+  {
+   "verse": "22",
+   "printed_numbers": [
+    "22"
+   ],
+   "text": "नहुषस्य महात्मानं पितरं यं प्रचक्षते । स तेषु वर्त्तते सम्यक् धर्म्मशीलो महीपतिः । आयुरारोग्यमत्युग्रं तस्मिन् स नरसत्तमः",
+   "page_index": 35,
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "verse": "23",
+   "printed_numbers": [
+    "23"
+   ],
+   "text": "सान्त्वयित्वा च राजानं ततो ब्रह्मविदांवराः । सत्रमारेभिरे कर्तुं यथावद्धर्म्मभूतये",
+   "page_index": 35,
+   "confidence": "medium",
+   "note": "'यथावद्धर्म्म' द्ध blotted"
+  },
+  {
+   "verse": "24",
+   "printed_numbers": [
+    "24"
+   ],
+   "text": "बभूव सत्रं तत्तेषां बह्वाश्चर्यं महात्मनां । विश्वं सिसृक्षमाणानां पुरा विश्वसृजामिव",
+   "page_index": 35,
+   "confidence": "medium",
+   "note": "'बह्वाश्चर्यं' first glyph unclear (ब्र vs ब)"
+  },
+  {
+   "verse": "25",
+   "printed_numbers": [
+    "25"
+   ],
+   "text": "वैखानसैः प्रियसखैर्बालखिल्यैर्मरीचिकैः । अन्यैश्च मुनिभिर्जुष्टं सूर्य्यवैश्वानरप्रभैः",
+   "page_index": 35,
+   "confidence": "medium",
+   "note": "'मरीचिकैः' last syllables blotted"
+  },
+  {
+   "verse": "26",
+   "printed_numbers": [
+    "26"
+   ],
+   "text": "पितृदेवाप्सरःसिद्धैर्गन्धर्व्वोरगचारणैः । सम्भारैस्तु शुभैर्जुष्टन्तैरेवेन्द्रसदो यथा",
+   "page_index": 35,
+   "confidence": "medium",
+   "note": "'पितृदेवाप्सरः' स/प्स unclear"
+  },
+  {
+   "verse": "27",
+   "printed_numbers": [
+    "27"
+   ],
+   "text": "स्तोत्रसत्रग्रहैर्देवान् पितॄन् पित्र्याश्च कर्म्मभिः । आनर्चुश्च यथाजाति गन्धर्व्वादीन् यथाविधि",
+   "page_index": 35,
+   "confidence": "medium",
+   "note": "'स्तोत्र' and 'पित्र्याश्च' conjuncts blotted"
+  },
+  {
+   "verse": "28",
+   "printed_numbers": [
+    "28"
+   ],
+   "text": "आराधयितुमिच्छन्तस्ततः कर्म्मान्तरेष्वथ । जगुः सामानि गन्धर्व्वा ननृतुश्चाप्सरोगणाः",
+   "page_index": 35,
+   "confidence": "medium",
+   "note": "printed number 28 (८ shape)"
+  },
+  {
+   "verse": "29",
+   "printed_numbers": [
+    "29"
+   ],
+   "text": "व्याजह्रुर्मुनयो वाचं चित्राक्षरपदां शुभां । मन्त्रादितत्त्वविद्वांसो जगदुश्च परस्परं",
+   "page_index": 35,
+   "confidence": "low",
+   "note": "'चित्राक्षरपदां' third glyph looks like च (क्ष printed like च?); 'मन्त्रादि' initial glyphs faint; 'व्याजह्रुः' read with ring above as reph; number 29 (९ looks like ८)"
+  },
+  {
+   "verse": "30",
+   "printed_numbers": [
+    "30"
+   ],
+   "text": "वितण्डावचनाश्चैके निजघ्नुः प्रतिवादिनः । ऋषयस्तत्र विद्वांसः साङ्ख्यार्थन्यायकोविदाः",
+   "page_index": 35,
+   "confidence": "low",
+   "note": "first word faint (वित..डा); 'साङ्ख्यार्थ' reph/anusvara uncertain"
+  },
+  {
+   "verse": "31",
+   "printed_numbers": [
+    "31"
+   ],
+   "text": "न तत्र दुरितं किञ्चिद्विदधुर्ब्रह्मराक्षसाः । न च यज्ञहनो दैत्या न च यज्ञमुषोऽसुराः",
+   "page_index": 36,
+   "confidence": "medium",
+   "note": "'किञ्चिद्विदधुः' blotted; क्ष printed like च्च"
+  },
+  {
+   "verse": "32",
+   "printed_numbers": [
+    "32"
+   ],
+   "text": "प्रायश्चित्तं दुरिष्टं वा न तत्र समजायत । शक्तिप्रज्ञाक्रियायोगैर्विधिरासीत् स्वनुष्ठितः",
+   "page_index": 36,
+   "confidence": "low",
+   "note": "first glyph of शक्ति looks like अ/श/भ blotted; read श"
+  },
+  {
+   "verse": "33",
+   "printed_numbers": [
+    "33"
+   ],
+   "text": "एवं वितेनिरे सत्रं द्वादशाब्दं मनीषिणः । भृग्वाद्या ऋषयो धीरा ज्योतिष्टोमान् पृथक् पृथक् । चक्रिरे पृष्ठगमनान् सर्व्वानयुतदक्षिणान्",
+   "page_index": 36,
+   "confidence": "medium",
+   "note": "footnote mark (१) after वितेनिरे omitted; क्ष in दक्षिणान् printed like च"
+  },
+  {
+   "verse": "34",
+   "printed_numbers": [
+    "34"
+   ],
+   "text": "समाप्तयज्ञास्ते सर्वे वायुमेव महाधिपं । पप्रच्छुरमितात्मानं भर्वाङ्मिय्यदहं द्विजाः । प्रनोदितश्च वंशार्थं स च तानब्रवीत्प्रभुः",
+   "page_index": 36,
+   "confidence": "low",
+   "note": "'भर्वाङ्मिय्यदहं' unclear conjunct glyphs; 'वंशार्थं' reph/anusvara; प्त printed like म्त"
+  },
+  {
+   "verse": "35",
+   "printed_numbers": [
+    "35"
+   ],
+   "text": "शिष्ठः स्वयम्भुवो देवः सर्व्वप्रत्यक्षदृग्वशी । अणिमादिभिरष्टाभिरैश्वर्य्यैः समन्वितः",
+   "page_index": 36,
+   "confidence": "low",
+   "note": "first word unclear (शिष्ठः / श्रिष्ठः / भिष्ठः); 'प्रत्यक्षदृग्' क्ष like च"
+  },
+  {
+   "verse": "36",
+   "printed_numbers": [
+    "36"
+   ],
+   "text": "तिर्य्यग्योन्यादिभिर्द्धर्म्मैः सर्वलोकान्विभर्त्ति यः । समस्कन्धादिकं शश्वत् प्लवते योजनाद्वरः",
+   "page_index": 36,
+   "confidence": "low",
+   "note": "'योजनाद्वरः' and 'तिर्य्यग्योन्यादिभिर्द्धर्म्मैः' blotted"
+  },
+  {
+   "verse": "37",
+   "printed_numbers": [
+    "37"
+   ],
+   "text": "विषये नियता यस्य संस्थिताः सप्तका गणाः । व्यूहांस्त्रयाणां भूतानां कुर्व्वन् यश्च महाबलः । तेजसश्चाप्युपध्यानन्द्धातीमं शरीरिणां",
+   "page_index": 36,
+   "confidence": "low",
+   "note": "'सप्तका' printed glyph like समका; 3rd line blotted"
+  },
+  {
+   "verse": "38",
+   "printed_numbers": [
+    "38"
+   ],
+   "text": "प्राणाद्यावृत्तयः पञ्च करणानाञ्च वृत्तिभिः । प्रेर्य्यमाणाः शरीराणां कुर्व्वते यास्तु धारणं",
+   "page_index": 36,
+   "confidence": "medium",
+   "note": "printed number 38 (८ shape)"
+  },
+  {
+   "verse": "39",
+   "printed_numbers": [
+    "39"
+   ],
+   "text": "आकाशयोनिर्द्विगुणः शब्दस्पर्शसमन्वितः । तैजसप्रकृतिश्चोक्तोऽप्ययं भावो मनीषिभिः",
+   "page_index": 36,
+   "confidence": "medium",
+   "note": "first word आकाश.. blotted; number 39 (९ shape)"
+  },
+  {
+   "verse": "40",
+   "printed_numbers": [
+    "40"
+   ],
+   "text": "तत्राभिमानी भगवान् वायुश्चातिक्रियात्मकः । वातारणिः समाख्यातः शब्दशास्त्रविशारदः",
+   "page_index": 36,
+   "confidence": "low",
+   "note": "spans n36-n37; 2nd line: वातारणिः glyphs unclear"
+  },
+  {
+   "verse": "41",
+   "printed_numbers": [
+    "41"
+   ],
+   "text": "भारत्या स्वनया सर्व्वान् मुनीन् प्रह्लादयन्निव । पुराणाङ्गः सुमनसः पुराणाश्रययुक्तया",
+   "page_index": 37,
+   "confidence": "low",
+   "note": "'स्वनया' word unclear (glyphs like ह्ल/स्व + ण/न); 'पुराणाङ्गः' faint"
+  },
+  {
+   "verse": "colophon",
+   "printed_numbers": [],
+   "text": "इति श्रीमहापुराणे वायुप्रोक्ते द्वादशवार्षिकसत्रनिरूपणं नाम द्वितीयोऽध्यायः ।",
+   "page_index": 37,
+   "confidence": "medium",
+   "note": "no printed chapter number after the colophon; single danda only"
+  }
+ ]
+}

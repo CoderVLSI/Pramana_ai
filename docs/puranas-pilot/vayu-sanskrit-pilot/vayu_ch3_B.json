@@ -1,0 +1,240 @@
+{
+ "entries": [
+  {
+   "verse": "0a",
+   "printed_numbers": [],
+   "text": "सूत उवाच ।",
+   "page_index": 37,
+   "confidence": "high",
+   "note": "printed in left margin on the same line as the first verse line; sub-heading line above (प्रजापतिसृष्टिकथनं) omitted as not root text; chapter heading 'अथ तृतीयोऽध्यायः' omitted"
+  },
+  {
+   "verse": "1",
+   "printed_numbers": [
+    "१"
+   ],
+   "text": "महेश्वरायोत्तमवीर्य्यकर्म्मणे सुरर्षभायामितबुद्धितेजसे । सहस्रसूर्य्यानलवर्च्चसे नमस्त्रिलोकसंहारविसृष्टये नमः",
+   "page_index": 37,
+   "confidence": "medium",
+   "note": "four lines (line 3 ends with hyphen नम- continuing into स्त्रिलोक...); सुरर्षभाय read with some doubt"
+  },
+  {
+   "verse": "2",
+   "printed_numbers": [
+    "२"
+   ],
+   "text": "प्रजापतीन् लोकनमस्कृतांस्तथा स्वयम्भुरुद्रप्रभृतीन् महेश्वरान् । भृगुं मरीचिं परमेष्ठिनं मनुं रजस्तमो धर्म्ममथापि कश्यपं",
+   "page_index": 37,
+   "confidence": "medium",
+   "note": "four lines"
+  },
+  {
+   "verse": "3",
+   "printed_numbers": [
+    "३"
+   ],
+   "text": "वशिष्ठश्चात्रिपुलस्त्यकर्दमान् रुचिं विवस्वन्तमथापि च क्रतुं । मुनिन्तथैवाङ्गिरसं प्रजापतिं प्रणम्य मूर्ध्ना पुलहञ्च भावतः",
+   "page_index": 37,
+   "confidence": "low",
+   "note": "first word of line 3 (मुनिन्, first letter looks like सु/मु); पुलहञ्च; मूर्ध्ना has a small subscript न-like mark; वशिष्ठश्चात्रि glyph"
+  },
+  {
+   "verse": "4",
+   "printed_numbers": [
+    "४"
+   ],
+   "text": "तथैव चक्षोभनमेविंकम्पितं । प्रजाविसृष्ट्यार्पितकार्य्यशासनं । पुरातनानप्यपरांश्च शाश्वतांस्तथैव चान्यान् सगणानवस्थितान्",
+   "page_index": 37,
+   "confidence": "low",
+   "note": "first line is the last line of page 37 (तथैव चक्षोभनमेविंकम्पितं: letters after तथैव च unclear); second line प्रजाविसृष्ट्यार्पित... conjunct unclear; शाश्वतां- ends line with hyphen, next line starts स्तथैव"
+  },
+  {
+   "verse": "5",
+   "printed_numbers": [
+    "५"
+   ],
+   "text": "तथैव चान्यानपि धर्म्मशीलिनः मुनीन् बृहस्पत्युशनःपुरोगमान् । तपःशुभाचारऋषीन् दयान्वितान् प्रणम्य वक्ष्ये कलिपापनाशिनीं",
+   "page_index": 38,
+   "confidence": "medium",
+   "note": "तपःशुभाचारऋषीन् (ऋषीन् glyph) ; four lines"
+  },
+  {
+   "verse": "6",
+   "printed_numbers": [
+    "६"
+   ],
+   "text": "प्रजापतेः सृष्टिमिमामनुत्तमां सुरेशदेवर्षिगणैरलङ्कृतां । शुभामतुल्यां महर्षिप्रियां प्रजापतीनामपि चोल्वणार्चिषां विशुद्धवाग्बुद्धिशरीरतेजसां",
+   "page_index": 38,
+   "confidence": "medium",
+   "note": "five lines"
+  },
+  {
+   "verse": "7",
+   "printed_numbers": [
+    "७"
+   ],
+   "text": "तपोभृतां ब्रह्मदिनादिकालिकीं प्रभूतमाविष्कृतपौरुषश्रियं । श्रुतौ स्मृतौ च प्रसृतामुदाहृतां परां पराणामनिलप्रकीर्त्तितां",
+   "page_index": 38,
+   "confidence": "medium",
+   "note": "प्रभूतमाविष्कृतपौरुषश्रियं: letters after विष्कृ slightly unclear; five lines"
+  },
+  {
+   "verse": "8",
+   "printed_numbers": [
+    "८"
+   ],
+   "text": "समासबन्धैर्नियतैर्य्यथातथं विशब्देनापि मनःप्रहर्षिणीं । यस्याश्च बद्धा प्रथमा प्रवृत्तिः प्राधानिकी चेश्वरकारिता च",
+   "page_index": 38,
+   "confidence": "medium",
+   "note": "four lines; समासबन्धैर्नियतैर्य्यथातथं letters read with some doubt"
+  },
+  {
+   "verse": "9",
+   "printed_numbers": [
+    "९"
+   ],
+   "text": "यत्तत्स्मृतं कारणमप्रमेयं ब्रह्म प्रधानं प्रकृतिप्रसूतिः । आत्मा गुहा योनिरथापि चक्षुः क्षेत्रं तथैवामृतमक्षरञ्च",
+   "page_index": 38,
+   "confidence": "medium",
+   "note": "four lines starting at foot of page 38 (यत्तत्स्मृतं ... आत्मा गुहा योनिरथापि चक्षुः) and ending on page 39 (क्षेत्रं तथैवामृतमक्षरञ्च); क्ष glyphs and अक्षरञ्च ending read with some doubt"
+  },
+  {
+   "verse": "10",
+   "printed_numbers": [
+    "१०"
+   ],
+   "text": "शुक्रं तपः सत्त्वमतिप्रकाशं तद्दृष्टि नित्यं पुरुषं द्वितीयं । तमप्रमेयं पुरुषेण युक्तं स्वयम्भुवा लोकपितामहेन",
+   "page_index": 39,
+   "confidence": "low",
+   "note": "तद्दृष्टि (word 1 of line 2) glyphs unclear"
+  },
+  {
+   "verse": "11",
+   "printed_numbers": [
+    "११"
+   ],
+   "text": "उत्पादकत्वाद्रजसोतिरेकात् कालस्य योगान्नियमावधेश्च । चित्रत्रययुक्तान् नियतान्विकारान् लोकस्य सन्तानविवृद्धिहेतून् । प्रकृत्यवस्था सुषुवे तथाष्टौ सङ्कल्पमात्रेण महेश्वरस्य",
+   "page_index": 39,
+   "confidence": "medium",
+   "note": "five lines; चित्रत्रययुक्तान् glyphs (first word of line 3) and प्रकृत्यवस्था read with some doubt"
+  },
+  {
+   "verse": "12",
+   "printed_numbers": [
+    "१२"
+   ],
+   "text": "देवासुराद्रिद्रुमसागराणां मनुप्रजेशर्षिपितृद्विजानां । पिशाचयक्षोरगराक्षसानां तारांग्रहार्कर्चनिशाचराणां",
+   "page_index": 39,
+   "confidence": "medium",
+   "note": "four lines"
+  },
+  {
+   "verse": "13",
+   "printed_numbers": [
+    "१३"
+   ],
+   "text": "मासर्त्तुसंवत्सररात्रहानां दिक्कालयोगादियुगायनानां । वनौषधीनामपि वीरुधाञ्च जलौकसामप्सरसां पशूनां",
+   "page_index": 39,
+   "confidence": "medium",
+   "note": "four lines; मासर्त्तुसंवत्सर (र्त्तु) ; पशूनां"
+  },
+  {
+   "verse": "14",
+   "printed_numbers": [
+    "१४"
+   ],
+   "text": "विद्युत्सरिन्मेघविहङ्गमानां यत्सूक्ष्मगं यद्भूवि यद्द्वियत्स्थं यत्स्थावरं यच्च यदस्ति किञ्चित् । सर्व्वस्य तस्यास्ति गतिर्विभक्तिरात्रब्रह्मणो यावदियं प्रसूतिः",
+   "page_index": 39,
+   "confidence": "low",
+   "note": "five lines, first four on page 39 (विद्युत्... to गतिर्विभक्ति- with hyphen), last line रात्र... at top of page 40; first word of last line (राब्रह्मणो / रात्रब्रह्मणो) glyph unclear; यद्द्वियत्स्थं, यद्भूवि uncertain"
+  },
+  {
+   "verse": "15",
+   "printed_numbers": [
+    "१५"
+   ],
+   "text": "छन्दांसि वेदाः सऋचो यजूंषि सामानि सोमश्च तथैव यज्ञः । आजीव्यमेषां यदभीप्सितञ्च देवस्य तस्यैव च वै प्रजापतेः",
+   "page_index": 40,
+   "confidence": "low",
+   "note": "first word सऋचो looks like सक्रचो (ऋ glyph); सोमश्च"
+  },
+  {
+   "verse": "16",
+   "printed_numbers": [
+    "१६"
+   ],
+   "text": "वैवस्वतस्यास्य मनोः पुरस्तात् सम्भूतिरुक्ता प्रसवश्च तेषां । येषामिदं पुण्यकृतां प्रसूत्या लोकत्रयं लोकनमस्कृतानां । सुरेशदेवर्षिमनुप्रधानामापूरितश्चोपरिभूषितञ्च",
+   "page_index": 40,
+   "confidence": "medium",
+   "note": "सम्भूतिरुक्ता read with some doubt; six lines (line 5 ends with hyphen)"
+  },
+  {
+   "verse": "17",
+   "printed_numbers": [
+    "१७"
+   ],
+   "text": "रुद्रस्य शापात् पुनरुद्भवश्च दक्षस्य चान्यत्र मनुष्यलोके । वासः क्षितौ वा नियमाद्भवस्य दक्षस्य चात्र प्रतिशापलाभः",
+   "page_index": 40,
+   "confidence": "low",
+   "note": "क्षितौ glyph unclear (looks like चितौ/ज्ञितौ); नियमाद्भवस्य doubtful"
+  },
+  {
+   "verse": "18",
+   "printed_numbers": [
+    "१८"
+   ],
+   "text": "मन्वन्तराणां परिवर्त्तनानि युगेषु सम्भूतिविकल्पनञ्च । ऋषित्वमार्षस्य च संप्रवृद्धिर्य्यथायुगादिष्वपि चेत्तदत्र",
+   "page_index": 40,
+   "confidence": "low",
+   "note": "चेत्तदत्र last word unclear; line 3 ends with hyphen (संप्रवृद्धि-)"
+  },
+  {
+   "verse": "19",
+   "printed_numbers": [
+    "१९"
+   ],
+   "text": "ये द्वापरेषु प्रथयन्ति वेदान् व्यासाश्च तेऽत्र क्रमशो निबद्धाः । कल्पस्य संख्या भुवनस्य संख्या ब्राह्मस्य चाप्यत्र दिनस्य संख्या",
+   "page_index": 40,
+   "confidence": "medium",
+   "note": "printed number looks like १८/१९, from sequence"
+  },
+  {
+   "verse": "20",
+   "printed_numbers": [
+    "२०"
+   ],
+   "text": "अण्डोद्भिज स्वेदजरायुजानां धर्म्मात्मनां स्वर्गनिवासिनां वा । ये यातनास्थानगताश्च जीवास्तर्केण तेषामपि च प्रमाणं",
+   "page_index": 41,
+   "confidence": "medium",
+   "note": "footnote mark (१) after अण्डोद्भिज omitted; four lines (line 3 ends with hyphen जीवा-, continued स्तर्केण)"
+  },
+  {
+   "verse": "21",
+   "printed_numbers": [
+    "२१"
+   ],
+   "text": "आत्यन्तिकः प्राकृतिकश्च योऽयं नैमित्तिकश्च प्रतिसर्गहेतुः । बन्धश्च मोक्षश्च विग्रथ्य तत्र प्रोक्ता च संसारगतिः परा च",
+   "page_index": 41,
+   "confidence": "low",
+   "note": "five lines; विग्रथ्य (word 3 of line 3) glyphs unclear, read as विग्रथ्य"
+  },
+  {
+   "verse": "22",
+   "printed_numbers": [
+    "२२"
+   ],
+   "text": "प्रकृत्यवस्थेषु च कारणेषु या च स्थितिर्या च पुनः प्रवृत्तिः । तच्छास्त्रयुक्त्या स्वमतिप्रयत्नात् समस्तमाविष्कृतधीधृतिभ्यः । विप्रा ऋषिभ्यः समुदाहृतं यत् यथातथन्तच्छृणुतोच्यमानं",
+   "page_index": 41,
+   "confidence": "medium",
+   "note": "धीधृतिभ्यः (ध/ऋ glyph) and तच्छृणुतोच्यमानं (last word) read with some doubt; six lines"
+  },
+  {
+   "verse": "colophon",
+   "printed_numbers": [],
+   "text": "इति श्रीमहापुराणे वायुप्रोक्ते सृष्टिप्रकरणं नाम तृतीयोऽध्यायः ।",
+   "page_index": 41,
+   "confidence": "medium",
+   "note": "printed on one line; वायुप्रोक्ते and सृष्टिप्रकरणं partly smudged in crop; read with overview support"
+  }
+ ]
+}
