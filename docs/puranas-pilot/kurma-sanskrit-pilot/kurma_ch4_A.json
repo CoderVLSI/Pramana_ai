@@ -1,0 +1,496 @@
+{
+ "edition": "Kurma Purana, ed. Nilmani Mukhopadhyaya, Bibliotheca Indica, Calcutta 1890 (archive.org b30094914), Blind Reader A, chapter 4",
+ "convention": "Printed spelling kept (reph+doubled consonant as printed; typeface क्ष read for च-like glyph, श for ग्र-like glyph). Verse numbers are not printed; numbered 1.. by ॥ endings within chapter; speaker lines 0a,0b..; footnote marks and footnotes omitted; stray double-bars omitted and noted. page_index = archive.org n-index.",
+ "entries": [
+  {
+   "verse": "0a",
+   "text": "सूत उवाच ।",
+   "page_index": 83,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "1",
+   "text": "श्रुत्वाश्रमविधिं कृत्स्नमृषयो हृष्टचेतसः । नमस्कृत्य हृषीकेशं पुनर्वचनमब्रुवन् ॥",
+   "page_index": 83,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "0b",
+   "text": "मुनय ऊचुः ।",
+   "page_index": 83,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "2",
+   "text": "भाषितं भवता सर्वं चातुराश्रम्यमुत्तमम् । इदानीं श्रोतुमिच्छामो यथा सम्भवते जगत् ॥",
+   "page_index": 83,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "3",
+   "text": "कुतः सर्वमिदं जातं कस्मिंश्च लयमेष्यति । नियन्ता कश्च सर्वेषां वदस्व पुरुषोत्तम ॥",
+   "page_index": 83,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "4",
+   "text": "श्रुत्वा नारायणो वाक्यमृषीणां कूर्म्मरूपधृक् । प्राह गभीरया वाचा भूतानां प्रभवोऽव्ययः ॥",
+   "page_index": 83,
+   "confidence": "medium",
+   "note": "गभीरया printed without anusvara (not गम्भीरया)"
+  },
+  {
+   "verse": "0c",
+   "text": "कूर्म्म उवाच ।",
+   "page_index": 83,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "5",
+   "text": "महेश्वरः परोऽव्यक्तः चतुर्व्यूहः सनातनः । अनन्तश्चाप्रमेयश्च नियन्ता सर्व्वतोमुखः ॥",
+   "page_index": 83,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "6",
+   "text": "अव्यक्तं कारणं यत्तन्नित्यं सदसदात्मकम् । प्रधानं प्रकृतिश्चेति यमाहुस्तत्त्वचिन्तकाः ॥",
+   "page_index": 84,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "7",
+   "text": "गन्धवर्णरसैर्हीनं शब्दस्पर्शविवर्ज्जितम् । अजरं ध्रुवमक्षय्यं नित्यं स्वात्मन्यवस्थितम् ॥",
+   "page_index": 84,
+   "confidence": "medium",
+   "note": "क्ष prints like च: अक्षय्यं read from च-like glyph"
+  },
+  {
+   "verse": "8",
+   "text": "जगद्योनिर्महाभूतं परब्रह्म सनातनम् । विग्रहः सर्वभूतानामात्मनाधिष्ठितं महत् ॥",
+   "page_index": 84,
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "verse": "9",
+   "text": "अनाद्यन्तमजं सूक्ष्मं त्रिगुणं प्रभवाव्ययम् । असाम्प्रतमविज्ञेयं ब्रह्माग्रे समवर्त्तत ॥",
+   "page_index": 84,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "10",
+   "text": "गुणसाम्ये तदा तस्मिन् पुरुषे वात्मनि स्थिते । प्राकृतः प्रलयो ज्ञेयो यावद्विश्वसमुद्भवः ॥",
+   "page_index": 84,
+   "confidence": "medium",
+   "note": "वात्मनि: first glyph looks like व (could be च); copied as printed"
+  },
+  {
+   "verse": "11",
+   "text": "ब्राह्मी रात्रिरियं प्रोक्ता ह्यहः सृष्टिरुदाहृता । अहर्न विद्यते तस्य न रात्रिर्ह्युपचारतः ॥",
+   "page_index": 84,
+   "confidence": "medium",
+   "note": "stray thin double bar after सृष्टि omitted"
+  },
+  {
+   "verse": "12",
+   "text": "निशान्ते प्रतिबुद्धोऽसौ जगदादिरनादिमान् । सर्वभूतमयोऽव्यक्तादन्तर्यामीश्वरः परः ॥",
+   "page_index": 84,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "13",
+   "text": "प्रकृतिं पुरुषं चैव प्रविश्याशु महेश्वरः । क्षोभयामास योगेन परेण परमेश्वरः ॥",
+   "page_index": 85,
+   "confidence": "high",
+   "note": "क्ष prints like च"
+  },
+  {
+   "verse": "14",
+   "text": "यथा मदो नरस्त्रीणां यथा वा माधवोऽनिलः । अनुप्रविष्टः क्षोभाय तथासौ योगमूर्त्तिमान् ॥",
+   "page_index": 85,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "15",
+   "text": "स एव क्षोभको विप्राः क्षोभ्यश्च परमेश्वरः । स संकोचविकाशाभ्यां प्रधानत्वे व्यवस्थितः ॥",
+   "page_index": 85,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "16",
+   "text": "प्रधानात्क्षोभ्यमानाच्च तथा पुंसः पुरातनात् । प्रादुरासीन्महद्बीजं प्रधानपुरुषात्मकम् ॥",
+   "page_index": 85,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "17",
+   "text": "महानात्मा मतिर्ब्रह्मा प्रबुद्धिः ख्यातिरीश्वरः । प्रज्ञा धृतिः स्मृतिः संविदेतस्मादिति तत्स्मृतम् ॥",
+   "page_index": 85,
+   "confidence": "medium",
+   "note": "संविदेतस्मादिति: glyph above द uncertain (दे vs दि)"
+  },
+  {
+   "verse": "18",
+   "text": "वैकारिकस्तैजसश्च भूतादिश्चैव तामसः । त्रिविधोऽयमहंकारो महतः संबभूव ह ॥",
+   "page_index": 85,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "19",
+   "text": "अहंकारोऽभिमानश्च कर्त्ता मन्ता च स स्मृतः । आत्मा च मत्परो जीवो यतः सर्वाः प्रवृत्तयः ॥",
+   "page_index": 85,
+   "confidence": "medium",
+   "note": "stray thin double bar after मत्परो omitted"
+  },
+  {
+   "verse": "20",
+   "text": "पञ्चभूतान्यहंकारात्तन्मात्राणि च जज्ञिरे । इन्द्रियाणि च सर्वाणि सर्वं तस्यात्मजं जगत् ॥",
+   "page_index": 86,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "21",
+   "text": "मनस्वव्यक्तजं प्रोक्तं विकारः प्रथमः स्मृतः । येनासौ जायते कर्त्ता भूतादींश्चानुपश्यति ॥",
+   "page_index": 86,
+   "confidence": "medium",
+   "note": "मनस्वव्यक्तजं: no त visible before व (expected मनस्त्वव्यक्तजं); copied as seen"
+  },
+  {
+   "verse": "22",
+   "text": "वैकारिकादहंकारात्सर्गो वैकारिकोऽभवत् । तैजसानीन्द्रियाणि स्युर्देवा वैकारिका दश ॥",
+   "page_index": 86,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "23",
+   "text": "एकादशं मनस्तत्र स्वगुणोभयात्मकम् । भूततन्मात्रसर्गोऽयं भूतादेरभवद्विजाः ॥",
+   "page_index": 86,
+   "confidence": "medium",
+   "note": "printed with single द in भवद्विजाः"
+  },
+  {
+   "verse": "24",
+   "text": "भूतादिस्तु विकुर्वाणः शब्दमात्रं ससर्ज्ज ह । आकाशोऽजायते तस्मात्तस्य शब्दो गुणो मतः ॥",
+   "page_index": 86,
+   "confidence": "medium",
+   "note": "glyph after आकाशो is unclear (read as ऽज)"
+  },
+  {
+   "verse": "25",
+   "text": "आकाशस्तु विकुर्वाणः स्पर्शमात्रं ससर्ज्ज ह । वायुरुत्पद्यते तस्मात्तस्य स्पर्शं गुणं विदुः ॥",
+   "page_index": 86,
+   "confidence": "medium",
+   "note": "stray thin double bar after ह omitted"
+  },
+  {
+   "verse": "26",
+   "text": "वायुश्चापि विकुर्वाणो रूपमात्रं ससर्ज्ज ह । ज्योतिरुत्पद्यते वायोस्तद्रूपगुणमुच्यते ॥",
+   "page_index": 86,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "27",
+   "text": "ज्योतिश्चापि विकुर्वाणं रसमात्रं ससर्ज्ज ह । सम्भवन्ति ततोऽम्भांसि रसाधाराणि तानि च ॥",
+   "page_index": 87,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "28",
+   "text": "आपश्चापि विकुर्वाणा गन्धमात्रं ससर्ज्जिरे । सङ्घातो जायते तस्मात्तस्य गन्धो गुणो मतः ॥",
+   "page_index": 87,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "29",
+   "text": "आकाशं शब्दमात्रं तु स्पर्शमात्रं समावृणोत् । द्विगुणस्तु ततो वायुः शब्दस्पर्शात्मकोऽभवत् ॥",
+   "page_index": 87,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "30",
+   "text": "रूपं तथैवाविशतः शब्दस्पर्शौ गुणावुभौ । त्रिगुणः स्यात्ततो वह्निः स शब्दस्पर्शरूपवान् ॥",
+   "page_index": 87,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "31",
+   "text": "शब्दः स्पर्शश्च रूपञ्च रसमात्रं समाविशत् । तस्माच्चतुर्गुणा आपो विज्ञेयास्तु रसात्मकाः ॥",
+   "page_index": 87,
+   "confidence": "medium",
+   "note": "रूपञ्च: glyph reads as ञ्च; आपो followed by footnote mark (omitted)"
+  },
+  {
+   "verse": "32",
+   "text": "शब्दः स्पर्शश्च रूपञ्च रसो गन्धं समाविशत् । तस्मात्पञ्चगुणा भूमिः स्थूला भूतेषु शब्द्यते ॥",
+   "page_index": 87,
+   "confidence": "medium",
+   "note": "शब्द्यते: द्य conjunct slightly unclear"
+  },
+  {
+   "verse": "33",
+   "text": "शान्ता घोराश्च मूढाश्च विशेषास्तेन ते स्मृताः । परस्परानुप्रवेशाद्धारयन्ति परस्परम् ॥",
+   "page_index": 87,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "34",
+   "text": "एते सप्त महात्मानो ह्यन्योन्यस्य समाश्रयात् । नाशक्नुवन् प्रजाः स्रष्टुमसमागम्य कृत्स्नशः ॥",
+   "page_index": 87,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "35",
+   "text": "पुरुषाधिष्ठितत्वाच्च अव्यक्तानुग्रहेण च । महदादयो विशेषान्ता ह्यण्डमुत्पादयन्ति ते ॥",
+   "page_index": 88,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "36",
+   "text": "एककालसमुत्पन्नं जलबुद्बुदवच्च तत् । विशेषेभ्योऽण्डमभवद्बृहत्तदुदकेशयम् ॥",
+   "page_index": 88,
+   "confidence": "medium",
+   "note": "भवद्बृहत्: द्+बृ glyph slightly unclear"
+  },
+  {
+   "verse": "37",
+   "text": "तस्मिन् कार्यस्य कारणं संसिद्धं परमेष्ठिनः । प्राकृतेऽण्डे विवृद्धे तु चेतन्यो ब्रह्मसंज्ञितः ॥",
+   "page_index": 88,
+   "confidence": "medium",
+   "note": "चेतन्यो as printed (not चैतन्यो)"
+  },
+  {
+   "verse": "38",
+   "text": "स वै शरीरी प्रथमः स वै पुरुष उच्यते । आदिकर्त्ता स भूतानां ब्रह्माग्रे समवर्त्तत ॥",
+   "page_index": 88,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "39",
+   "text": "यमाहुः पुरुषं हंसं प्रधानात्परतः स्थितम् । हिरण्यगर्भं कपिलं छन्दोमूर्त्तिं सनातनम् ॥",
+   "page_index": 88,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "40",
+   "text": "मेरुरुल्बमभूत्तस्य जरायुश्चापि पर्वताः । गर्भोदकं समुद्राश्च तस्यासन्परमात्मनः ॥",
+   "page_index": 88,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "41",
+   "text": "तस्मिन्नण्डेऽभवद्विश्वं सदेवासुरमानुषम् । चन्द्रादित्यौ सनक्षत्रौ सग्रहौ सह वायुना ॥",
+   "page_index": 88,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "42",
+   "text": "अग्निर्दशगुणाभिश्च बाह्यतोऽण्डं समावृतम् । आपो दशगुणेनैव तेजसा बाह्यतो वृताः ॥",
+   "page_index": 88,
+   "confidence": "medium",
+   "note": "first word अग्निर्दश: initial conjunct unclear (ग्नि vs other)"
+  },
+  {
+   "verse": "43",
+   "text": "तेजोदशगुणेनैव बाह्यतो वायुना वृतम् । आकाशेनावृतो वायुः खं तु भूतादिना वृतम् ॥",
+   "page_index": 89,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "44",
+   "text": "भूतादिर्महता तद्वदव्यक्तेनावृतो महान् । एते लोका महात्मानः सर्वे तत्त्वाभिमानिनः ॥",
+   "page_index": 89,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "45",
+   "text": "वसन्ति तत्र पुरुषास्तदात्मानो व्यवस्थिताः । ईश्वरायोगधर्म्माणो ये चान्ये तत्त्वचिन्तकाः ॥",
+   "page_index": 89,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "46",
+   "text": "सर्वज्ञाः शान्तरजसो नित्यं मुदितमानसाः । एतैरावरणैरण्डं प्राकृतैः सप्तभिर्वृतम् ॥",
+   "page_index": 89,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "47",
+   "text": "एतावच्छक्यते वक्तुं मायेषा गहना द्विजाः । एतत्प्राधानिकं कार्यं यन्मया बीजमीरितम् ॥",
+   "page_index": 89,
+   "confidence": "medium",
+   "note": "मायेषा printed with ए-matra"
+  },
+  {
+   "verse": "48",
+   "text": "प्रजापतेः परा मूर्त्तिरितीयं वैदिकी श्रुतिः । ब्रह्माण्डमेतत्सकलं सप्तलोकबलान्वितम् ॥",
+   "page_index": 89,
+   "confidence": "medium",
+   "note": "stray thin double bar after परा omitted"
+  },
+  {
+   "verse": "49",
+   "text": "द्वितीयं तस्य देवस्य शरीरं परमेष्ठिनः । हिरण्यगर्भो भगवान् ब्रह्मा वै कनकाण्डजः ॥",
+   "page_index": 90,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "50",
+   "text": "तृतीयं भगवद्रूपं प्राहुर्वेदार्थवेदिनः । रजोगुणमयं चान्यद्रूपं तस्यैव धीमतः ॥",
+   "page_index": 90,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "51",
+   "text": "चतुर्मुखस्तु भगवान् जगत्सृष्टौ प्रवर्त्तते । सृष्टं च पाति सकलं विश्वात्मा विश्वतोमुखः ॥",
+   "page_index": 90,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "52",
+   "text": "सत्वं गुणमुपाश्रित्य विष्णुर्विश्वेश्वरः स्वयम् । अन्तकाले स्वयं देवः सर्वात्मा परमेश्वरः ॥",
+   "page_index": 90,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "53",
+   "text": "तमोगुणं समाश्रित्य रुद्रः संहरते जगत् । एकोऽपि सन्महादेवस्त्रिधासौ समवस्थितः ॥",
+   "page_index": 90,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "54",
+   "text": "सर्गरक्षालयगुणैर्निर्गुणोऽपि निरञ्जनः । एकधा स द्विधा चैव त्रिधा च बहुधा गुणैः ॥",
+   "page_index": 90,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "55",
+   "text": "योगेश्वरः शरीराणि करोति विकरोति च । नानाकृतिक्रियारूपनामवन्ति स्वलीलया ॥",
+   "page_index": 90,
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "verse": "56",
+   "text": "हिताय चैव भक्तानां स एव ग्रसते पुनः । त्रिधा विभज्य चात्मानं त्रैलोक्ये संप्रवर्त्तते ॥",
+   "page_index": 90,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "57",
+   "text": "सृजते ग्रसते चैव वीक्षते च विशेषतः । यस्मात्सृष्ट्वानुगृह्णाति ग्रसते च पुनः प्रजाः ॥",
+   "page_index": 90,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "58",
+   "text": "गुणात्मकत्वाच्चैकाल्ये तस्मादेकः स उच्यते । अग्रे हिरण्यगर्भः स प्रादुर्भूतः सनातनः ॥",
+   "page_index": 91,
+   "confidence": "medium",
+   "note": "च्चै glyph uncertain (could be त्त्रै); footnote has a variant reading ending -लोक्यं"
+  },
+  {
+   "verse": "59",
+   "text": "आदित्वादादिदेवोऽसावजातत्वादजः स्मृतः । पाति यस्मात्प्रजाः सर्वाः प्रजापतिरिति स्मृतः ॥",
+   "page_index": 91,
+   "confidence": "medium",
+   "note": "stray thin double bar before ॥ omitted"
+  },
+  {
+   "verse": "60",
+   "text": "देवेषु च महादेवो महादेव इति स्मृतः । बृहत्त्वाच्च स्मृतो ब्रह्मा परत्वात्परमेश्वरः ॥",
+   "page_index": 91,
+   "confidence": "medium",
+   "note": "बृहत्त्वाच्च: first glyph looks like द्व/वृ; read as बृ"
+  },
+  {
+   "verse": "61",
+   "text": "वशित्वादप्यवश्यत्वादीश्वरः परिभाषितः । ऋषिः सर्व्वत्रगत्वेन हरिः सर्व्वहरो यतः ॥",
+   "page_index": 91,
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "verse": "62",
+   "text": "अनुत्पादाच्च पूर्वत्वात्स्वयंभूरिति स स्मृतः । नराणामयनं यस्मात्तेन नारायणः स्मृतः ॥",
+   "page_index": 91,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "63",
+   "text": "हरः संसारहरणाद्विभुत्वाद्विष्णुरुच्यते । भगवान्सर्वविज्ञानादवनादोमिति स्मृतः ॥",
+   "page_index": 91,
+   "confidence": "medium",
+   "note": "stray thin double bar before ॥ omitted"
+  },
+  {
+   "verse": "64",
+   "text": "सर्वज्ञः सर्वविज्ञानात्सर्वः सर्वमयो यतः । शिवः स्यान्निर्म्मलो यस्माद्विभुः सर्वगतो यतः ॥",
+   "page_index": 91,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "65",
+   "text": "तारणात्सर्वदुःखानां तारकः परिगीयते । बहुनाऽत्र किमुक्तेन सर्वं ब्रह्ममयं जगत् ॥",
+   "page_index": 92,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "66",
+   "text": "अनेकभेदभिन्नस्तु क्रीडते परमेश्वरः । इत्येष प्राकृतः सर्गः संक्षेपात्कथितो मया । अबुद्धिपूर्वकां विप्रा ब्राह्मीं सृष्टिं निबोधत ॥",
+   "page_index": 92,
+   "confidence": "medium",
+   "note": "क्रीडते printed with a nukta-like dot under ड; verse contains three half-verse dandas"
+  },
+  {
+   "verse": "colophon",
+   "text": "इति श्रीकूर्म्मपुराणे प्राकृतसर्गो नाम चतुर्थोऽध्यायः ।",
+   "page_index": 92,
+   "confidence": "high",
+   "note": ""
+  }
+ ]
+}

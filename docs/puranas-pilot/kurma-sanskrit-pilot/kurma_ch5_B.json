@@ -1,0 +1,181 @@
+{
+ "edition": "Kurma Purana, ed. Nilmani Mukhopadhyaya, Bibliotheca Indica, Calcutta 1890 (archive.org b30094914)",
+ "convention": "Printed spelling kept (reph + doubled consonant as printed); footnote marks and footnotes dropped; verses numbered by double-danda endings within the chapter; speaker lines 0a,0b,...; stray thin double-bars omitted. page_index = archive.org page image index n<INDEX>.",
+ "entries": [
+  {
+   "verse": "0a",
+   "text": "कूर्म्म उवाच ।",
+   "page_index": 93,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "1",
+   "text": "स्वयम्भुवो निवृत्तस्य कालसंख्या द्विजोत्तमाः । न शक्यते समाख्यातुं बहुवर्षैरपि स्वयम् ॥",
+   "page_index": 93,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "2",
+   "text": "कालसंख्या समासेन परार्द्धद्वयकल्पिता । स एव स्यात्परः कालस्तदन्ते सृज्यते पुनः ॥",
+   "page_index": 93,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "3",
+   "text": "निजेन तस्य मानेन चायुर्वर्षशतं स्मृतम् । तत्परार्द्धं तदर्द्धं वा परार्द्धमभिधीयते ॥",
+   "page_index": 93,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "4",
+   "text": "काष्ठा पञ्चदश ख्याता निमेषा द्विजसत्तमाः । काष्ठात्रिंशत् कला त्रिंशत्कला मौहूर्त्तिकी गतिः ॥",
+   "page_index": 94,
+   "confidence": "medium",
+   "note": "काष्ठात्रिंशत्: त्रि prints like चि, word spacing after काष्ठा unclear"
+  },
+  {
+   "verse": "5",
+   "text": "तावत्सङ्ख्यैरहोरात्रं मुहूर्त्तैर्मानुषं स्मृतम् । अहोरात्राणि तावन्ति मासः पक्षद्वयात्मकः ॥",
+   "page_index": 94,
+   "confidence": "medium",
+   "note": "तावत्सङ्ख्यै: ङ्ख्य ligature read as such (could be anusvara form)"
+  },
+  {
+   "verse": "6",
+   "text": "तैः षड्भिरयनं वर्षं द्वेऽयने दक्षिणोत्तरे । अयनं दक्षिणं रात्रिर्देवानामुत्तरं दिनम् ॥",
+   "page_index": 94,
+   "confidence": "medium",
+   "note": "षड्भिरयनं: a small stray tail/dot under ड in print (artefact), letters read षड्भि"
+  },
+  {
+   "verse": "7",
+   "text": "दिव्यैर्वर्षसहस्रैस्तु कृतत्रेतादिसंज्ञितम् । चतुर्युगं द्वादशभिस्तद्विभागं निबोधत ॥",
+   "page_index": 94,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "8",
+   "text": "चत्वार्याहुः सहस्राणि वर्षाणां तत्कृतं युगम् । तस्य तावच्छती सन्ध्या सन्ध्यांशश्च कृतस्य तु ॥",
+   "page_index": 94,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "9",
+   "text": "त्रिशती द्विशती सन्ध्या तथा चैकशती क्रमात् । अंशकं षट्शतं तस्मात्कृतसन्ध्यांशकैर्विना ॥",
+   "page_index": 94,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "10",
+   "text": "त्रिद्व्येकधा च साहस्रं विना सन्ध्यांशकेन तु । त्रेता द्वापरतिष्याणां कालज्ञाने प्रकीर्त्तितम् ॥",
+   "page_index": 94,
+   "confidence": "medium",
+   "note": "त्रिद्व्येकधा: cluster after त्रि is hard to resolve in print (read द्व्ये)"
+  },
+  {
+   "verse": "11",
+   "text": "एतद्वादशसाहस्रं साधिकं परिकल्पितम् । तदेकसप्ततिगुणं मनोरन्तरमुच्यते ॥",
+   "page_index": 94,
+   "confidence": "medium",
+   "note": "एतद्वादश: printed with one द before the द्वा ligature (द्द्वा expected); stray double-bar after तदेकसप्ततिगुणं (footnote mark) omitted; मनोरन्तर printed (not मन्वन्तर)"
+  },
+  {
+   "verse": "12",
+   "text": "ब्रह्मणो दिवसे विप्रा मनवश्च चतुर्दश । स्वायम्भुवादयः सर्वे ततः सावर्णिकादयः ॥",
+   "page_index": 95,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "13",
+   "text": "तैरियं पृथिवी सर्वा सप्तद्वीपा सपर्वता । पूर्णं युगसहस्रं वै परिपाल्या नरेश्वरैः ॥",
+   "page_index": 95,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "14",
+   "text": "मन्वन्तरेण चैकेन सर्वाण्येवान्तराणि वै । व्याख्यातानि न सन्देहः कल्पे कल्पे न चैव हि ॥",
+   "page_index": 95,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "15",
+   "text": "ब्राह्ममेकमहः कल्पस्तावती रात्रिरिष्यते । चतुर्युगसहस्रं तु कल्पमाहुर्मनीषिणः ॥",
+   "page_index": 95,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "16",
+   "text": "त्रीणि कल्पशतानि स्युस्तथा षष्टिर्द्विजोत्तमाः । ब्रह्मणो वत्सरस्तज्ज्ञैः कथितो वै द्विजोत्तमाः ॥",
+   "page_index": 95,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "17",
+   "text": "स च कालः शतगुणः परार्द्धं चैव तद्विदुः । तस्यान्ते सर्वसत्त्वानां स्वहेतौ प्रकृतौ लयः ॥",
+   "page_index": 95,
+   "confidence": "medium",
+   "note": "सत्त्वानां: ligature after स wider than in सत्वं earlier, read त्त्व"
+  },
+  {
+   "verse": "18",
+   "text": "तेनायं प्रोच्यते सद्भिः प्राकृतः प्रतिसंचरः । ब्रह्मनारायणेशानां त्रयाणां प्रकृतौ लयः ॥",
+   "page_index": 95,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "19",
+   "text": "प्रोच्यते कालयोगेन पुनरेव च सम्भवः । एवं ब्रह्मा च भूतानि वासुदेवोऽपि शङ्करः ॥",
+   "page_index": 95,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "20",
+   "text": "कालेनैव तु सृज्यन्ते सएव ग्रसते पुनः । अनादिरेष भगवान् कालोऽनन्तोऽजरोऽमरः ॥",
+   "page_index": 95,
+   "confidence": "high",
+   "note": "सएव printed joined (no space)"
+  },
+  {
+   "verse": "21",
+   "text": "सर्वगत्वात्स्वतन्त्रत्वात्सर्वात्मत्वान्महेश्वरः । ब्रह्माणो बहवो रुद्रा ह्यन्ये नारायणादयः ॥",
+   "page_index": 96,
+   "confidence": "medium",
+   "note": "स्वतन्त्रत्वात्: न्त्र cluster hard to resolve in print"
+  },
+  {
+   "verse": "22",
+   "text": "एको हि भगवानीशः कालः कविरिति श्रुतिः । एकमत्र व्यतीतं तु परार्द्धं ब्रह्मणो द्विजाः ॥",
+   "page_index": 96,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "23",
+   "text": "साम्प्रतं वर्त्तते त्वर्द्धं तस्य कल्पोऽयमग्रजः । योऽतीतः सोऽन्तिमः कल्पः पाद्म इत्युच्यते बुधैः । वाराहो वर्त्तते कल्पस्तस्य वक्ष्यामि विस्तरम् ॥",
+   "page_index": 96,
+   "confidence": "medium",
+   "note": "पाद्म: no anusvara visible; verse has three half-verse segments before ॥; वक्ष्यामि: क्ष prints like च"
+  },
+  {
+   "verse": "colophon",
+   "text": "इति श्रीकूर्म्मपुराणे कालसंख्याकथनं नाम पञ्चमोऽध्यायः ।",
+   "page_index": 96,
+   "confidence": "high",
+   "note": ""
+  }
+ ]
+}

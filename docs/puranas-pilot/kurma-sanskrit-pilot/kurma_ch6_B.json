@@ -1,0 +1,202 @@
+{
+ "edition": "Kurma Purana, ed. Nilmani Mukhopadhyaya, Bibliotheca Indica, Calcutta 1890 (archive.org b30094914)",
+ "convention": "Printed spelling kept (reph + doubled consonant as printed); footnote marks and footnotes dropped; verses numbered by double-danda endings within the chapter; speaker lines 0a,0b,...; stray thin double-bars omitted. page_index = archive.org page image index n<INDEX>.",
+ "entries": [
+  {
+   "verse": "0a",
+   "text": "कूर्म्म उवाच ।",
+   "page_index": 97,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "1",
+   "text": "आसीदेकार्णवं घोरमविभागं तमोमयम् । शान्तवातादिकं सर्वं न प्राज्ञायत किञ्चन ॥",
+   "page_index": 97,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "2",
+   "text": "एकार्णवे तदा तस्मिन्नष्टे स्थावरजङ्गमे । तदा समभवद्ब्रह्मा सहस्राक्षः सहस्रपात् ॥",
+   "page_index": 97,
+   "confidence": "high",
+   "note": "सहस्राक्षः: क्ष prints like च; read क्ष"
+  },
+  {
+   "verse": "3",
+   "text": "सहस्रशीर्षा पुरुषो रुक्मवर्णो ह्यतीन्द्रियः । ब्रह्मा नारायणाख्यस्तु सुष्वाप सलिले तदा ॥",
+   "page_index": 97,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "4",
+   "text": "इमं चोदाहरन्त्यत्र श्लोकं नारायणं प्रति । ब्रह्मस्वरूपिणं देवं जगतः प्रभवाव्ययम् ॥",
+   "page_index": 97,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "5",
+   "text": "आपो नारा इति प्रोक्ता आपो वै नरसूनवः । अयनं तस्य ता यस्मात्तेन नारायणः स्मृतः ॥",
+   "page_index": 97,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "6",
+   "text": "तुल्यं युगसहस्रस्य नैशं कालमुपास्य सः । शर्वयन्ते प्रकुरुते ब्रह्मत्वं सर्गकारणात् ॥",
+   "page_index": 97,
+   "confidence": "medium",
+   "note": "शर्वयन्ते: first letter prints like ग्र (श); footnote cites variant सर्व्वयत्नेन, so reading uncertain"
+  },
+  {
+   "verse": "7",
+   "text": "ततस्तु सलिले तस्मिन् विज्ञायान्तर्गतां महीम् । अनुमानात्तदुद्धारं कर्त्तुकामः प्रजापतिः ॥",
+   "page_index": 97,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "8",
+   "text": "जलक्रीड़ासु रुचिरं वाराहं रूपमास्थितः । अदृष्टं मनसाप्यन्यैर्वाङ्मयं ब्रह्मसंज्ञितम् ॥",
+   "page_index": 98,
+   "confidence": "high",
+   "note": "क्रीड़ा printed with a dot under ड (nukta-like mark)"
+  },
+  {
+   "verse": "9",
+   "text": "पृथिव्युद्धरणार्थाय प्रविश्य च रसातलम् । दंष्ट्रयाभ्युज्जहारैनामात्माधारो धराधरः ॥",
+   "page_index": 98,
+   "confidence": "medium",
+   "note": "भ्युज्जहार: भ्यु ligature read from close crop"
+  },
+  {
+   "verse": "10",
+   "text": "दृष्ट्वा दंष्ट्राग्रविन्यस्तां पृथ्वीं प्रथितपौरुषम् । अस्तुवञ्जनलोकस्थाः सिद्धा ब्रह्मर्षयो हरिम् ॥",
+   "page_index": 98,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "0b",
+   "text": "ऋषय ऊचुः ।",
+   "page_index": 98,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "11",
+   "text": "नमस्ते देवदेवाय ब्रह्मणे परमेष्ठिने । पुरुषाय पुराणाय शाश्वताय जयाय च ॥",
+   "page_index": 98,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "12",
+   "text": "नमः स्वयम्भुवे तुभ्यं स्रष्ट्रे सर्वार्थवेदिने । नमो हिरण्यगर्भाय वेधसे परमात्मने ॥",
+   "page_index": 98,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "13",
+   "text": "नमस्ते वासुदेवाय विष्णवे विश्वयोनये । नारायणाय देवाय देवानां हितकारिणे ॥",
+   "page_index": 98,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "14",
+   "text": "नमोऽस्तु ते चतुर्वक्त्रशार्ङ्गचक्रासिधारिणे । सर्वभूतात्मभूताय कूटस्थाय नमो नमः ॥",
+   "page_index": 98,
+   "confidence": "medium",
+   "note": "चतुर्वक्त्र: cluster after चतुर्व prints like ब्ल/क्ल, read क्त्र; शार्ङ्ग read as printed"
+  },
+  {
+   "verse": "15",
+   "text": "नमो वेदरहस्याय नमस्ते वेदयोनये । नमो बुद्धाय शुद्धाय नमस्ते ज्ञानरूपिणे ॥",
+   "page_index": 98,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "16",
+   "text": "नमोऽस्त्वानन्दरूपाय साक्षिणे जगतां नमः । अनन्तायाप्रमेयाय कार्याय कारणाय च ॥",
+   "page_index": 99,
+   "confidence": "high",
+   "note": "साक्षिणे: क्ष prints like च; read क्ष"
+  },
+  {
+   "verse": "17",
+   "text": "नमस्ते पञ्चभूताय पञ्चभूतात्मने नमः । नमो मूलप्रकृतये मायारूपाय ते नमः ॥",
+   "page_index": 99,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "18",
+   "text": "नमोऽस्तु ते वराहाय नमस्ते मत्स्यरूपिणे । नमो योगाधिगम्याय नमः संकर्षणाय ते ॥",
+   "page_index": 99,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "19",
+   "text": "नमस्त्रिमूर्त्तये तुभ्यं त्रिधाम्ने दिव्यतेजसे । नमः सिद्धाय पूज्याय गुणत्रयविभागिने ॥",
+   "page_index": 99,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "20",
+   "text": "नमोऽस्त्वादित्यरूपाय नमस्ते पद्मयोनये । नमोऽमूर्त्ताय मूर्त्ताय माधवाय नमो नमः ॥",
+   "page_index": 99,
+   "confidence": "medium",
+   "note": "पद्मयोनये: द्म prints like ञ्च/झ; read पद्म"
+  },
+  {
+   "verse": "21",
+   "text": "त्वयैव सृष्टमखिलं त्वय्येव सकलं स्थितम् । पालयैतज्जगत्सर्वं त्राता त्वं शरणं गतिः ॥",
+   "page_index": 99,
+   "confidence": "medium",
+   "note": "stray thin double-bar after गतिः (footnote mark/artefact) omitted"
+  },
+  {
+   "verse": "22",
+   "text": "इत्थं स भगवान् विष्णुः सनकाद्यैरभिष्टुतः । प्रसादमकरोत्तेषां वराहवपुरीश्वरः ॥",
+   "page_index": 99,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "23",
+   "text": "ततः स्वस्थानमानीय पृथिवीं पृथिवीधरः । मुमोच रूपं मनसा धारयित्वा धराधरः ॥",
+   "page_index": 100,
+   "confidence": "high",
+   "note": "footnote mark sits between स्वस्थान and मानीय (omitted, word joined)"
+  },
+  {
+   "verse": "24",
+   "text": "तस्योपरि जलौघस्य महतो नौरिव स्थिता । विततत्वाच्च देहस्य न मही याति संप्लवम् ॥",
+   "page_index": 100,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "25",
+   "text": "पृथिवीं स समीकृत्य पृथिव्यां सोऽचिनोद्गिरीन् । प्राक् सर्गदग्धानखिलान्ततः सर्गेऽदधन्मनः ॥",
+   "page_index": 100,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "colophon",
+   "text": "इति श्रीकूर्म्मपुराणे पृथिव्युद्धारे षष्ठोऽध्यायः ।",
+   "page_index": 100,
+   "confidence": "medium",
+   "note": "पृथिव्युद्धारे: द्ध cluster read from print"
+  }
+ ]
+}
