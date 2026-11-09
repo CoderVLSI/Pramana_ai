@@ -1,0 +1,474 @@
+[
+ {
+  "verse": "R1",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "अर्वाक्स्त्रोतस्",
+  "printed_calcutta": "अर्वाक्स्रोतस्",
+  "note": "Calcutta glyph slightly blotchy (स्र)"
+ },
+ {
+  "verse": "R1",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "कथिताभवता",
+  "printed_calcutta": "कथितोभवता",
+  "note": ""
+ },
+ {
+  "verse": "R2",
+  "spot": 0,
+  "decision": "both_print_same_but_reader_differed",
+  "printed_bombay": "वर्णानसृजद्",
+  "printed_calcutta": "वर्णानसृजद्",
+  "note": "Bombay reader inserted ि; no ि in print"
+ },
+ {
+  "verse": "R2",
+  "spot": 1,
+  "decision": "both_print_same_but_reader_differed",
+  "printed_bombay": "सृजद्यद्गुणांश्च",
+  "printed_calcutta": "सृजद्यद्गुणांश्च",
+  "note": "Bombay reader misread (ब्रह्म); both print यद्गुणां"
+ },
+ {
+  "verse": "R2",
+  "spot": 2,
+  "decision": "both_print_same_but_reader_differed",
+  "printed_bombay": "सृजद्यद्गुणांश्च",
+  "printed_calcutta": "सृजद्यद्गुणांश्च",
+  "note": "Bombay reader misread"
+ },
+ {
+  "verse": "R2",
+  "spot": 3,
+  "decision": "both_print_same_but_reader_differed",
+  "printed_bombay": "गुणांश्चमहामुने",
+  "printed_calcutta": "गुणांश्चमहामुने",
+  "note": "Bombay reader read श्र; print श्च"
+ },
+ {
+  "verse": "R3",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "यायिनस्तस्यासि",
+  "printed_calcutta": "यायिनः पूर्वं सि",
+  "note": ""
+ },
+ {
+  "verse": "R3",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "यायिनस्तस्यासि",
+  "printed_calcutta": "यायिनः पूर्वं सि",
+  "note": ""
+ },
+ {
+  "verse": "R3",
+  "spot": 2,
+  "decision": "editions_differ",
+  "printed_bombay": "अजायंत",
+  "printed_calcutta": "प्रजायन्त",
+  "note": ""
+ },
+ {
+  "verse": "R3",
+  "spot": 3,
+  "decision": "editions_differ",
+  "printed_bombay": "अजायंत",
+  "printed_calcutta": "प्रजायन्त",
+  "note": ""
+ },
+ {
+  "verse": "R4",
+  "spot": 0,
+  "decision": "both_print_same_but_reader_differed",
+  "printed_bombay": "रजसोद्रिक्ता",
+  "printed_calcutta": "रजसोद्रिक्ता (blotchy स/म)",
+  "note": "Calcutta reader likely misread blotchy स as म"
+ },
+ {
+  "verse": "R4",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "तथान्याब्रह्मणो",
+  "printed_calcutta": "तथावैब्रह्मणो",
+  "note": ""
+ },
+ {
+  "verse": "R4",
+  "spot": 2,
+  "decision": "editions_differ",
+  "printed_bombay": "तथोरुतः",
+  "printed_calcutta": "तथोरुजाः",
+  "note": ""
+ },
+ {
+  "verse": "R5",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "ब्रह्माससर्जद्विज",
+  "printed_calcutta": "ब्रह्मा सम.. द्विज (blotchy, read as समत्तं)",
+  "note": "Calcutta glyphs badly blotched; not ससर्ज as far as visible"
+ },
+ {
+  "verse": "R5",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "ब्रह्माससर्जद्विज",
+  "printed_calcutta": "ब्रह्मा सम.. द्विज (blotchy)",
+  "note": "same as spot 0"
+ },
+ {
+  "verse": "R5",
+  "spot": 2,
+  "decision": "bombay",
+  "printed_bombay": "मिदंततः",
+  "printed_calcutta": "मिद ततः (no visible anusvara)",
+  "note": "Bombay prints anusvara on द; Calcutta shows none (maybe lost)"
+ },
+ {
+  "verse": "R8",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "आप्याययंते",
+  "printed_calcutta": "आप्याययन्ते",
+  "note": ""
+ },
+ {
+  "verse": "R9",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "निष्पाद्यंते",
+  "printed_calcutta": "निष्पाद्यन्ते",
+  "note": ""
+ },
+ {
+  "verse": "R9",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "स्वकर्माभि",
+  "printed_calcutta": "स्वधर्माभि",
+  "note": ""
+ },
+ {
+  "verse": "R9",
+  "spot": 2,
+  "decision": "editions_differ",
+  "printed_bombay": "तैस्तदाविरुद्धा",
+  "printed_calcutta": "तैस्ततः विशुद्धा",
+  "note": ""
+ },
+ {
+  "verse": "R9",
+  "spot": 3,
+  "decision": "editions_differ",
+  "printed_bombay": "तैस्तदाविरुद्धा",
+  "printed_calcutta": "तैस्ततः विशुद्धा",
+  "note": ""
+ },
+ {
+  "verse": "R9",
+  "spot": 4,
+  "decision": "editions_differ",
+  "printed_bombay": "चरणापेतैः",
+  "printed_calcutta": "चरणोपेतैः",
+  "note": ""
+ },
+ {
+  "verse": "R10",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "प्राप्नुवंति",
+  "printed_calcutta": "प्राप्नुवन्ति",
+  "note": ""
+ },
+ {
+  "verse": "R10",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "यच्चाभिरुचितं",
+  "printed_calcutta": "यथाभिलषितं",
+  "note": ""
+ },
+ {
+  "verse": "R10",
+  "spot": 2,
+  "decision": "editions_differ",
+  "printed_bombay": "यच्चाभिरुचितं",
+  "printed_calcutta": "यथाभिलषितं",
+  "note": "see spot 1"
+ },
+ {
+  "verse": "R10",
+  "spot": 3,
+  "decision": "editions_differ",
+  "printed_bombay": "तद्यांति",
+  "printed_calcutta": "तद्यान्ति",
+  "note": ""
+ },
+ {
+  "verse": "R11",
+  "spot": 0,
+  "decision": "both_print_same_but_reader_differed",
+  "printed_bombay": "र्ण्यव्यवस्थितौ",
+  "printed_calcutta": "र्ण्य व्यवस्थितौ (mark above is reph-like)",
+  "note": "Calcutta reader read े; mark looks like reph"
+ },
+ {
+  "verse": "R11",
+  "spot": 1,
+  "decision": "both_print_same_but_reader_differed",
+  "printed_bombay": "स्थितौ",
+  "printed_calcutta": "स्थितौ",
+  "note": "Calcutta reader read स्थिताः; print shows ौ"
+ },
+ {
+  "verse": "R12",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "शुद्धांतःकरण",
+  "printed_calcutta": "शुद्धान्तःकरण",
+  "note": ""
+ },
+ {
+  "verse": "R13",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "शुद्धेंतःसं",
+  "printed_calcutta": "शुद्धेऽन्तःसं",
+  "note": "Calcutta has avagraha and न्त; Bombay ं"
+ },
+ {
+  "verse": "R13",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "शुद्धज्ञानं",
+  "printed_calcutta": "शुद्धं ज्ञानं",
+  "note": ""
+ },
+ {
+  "verse": "R13",
+  "spot": 2,
+  "decision": "editions_differ",
+  "printed_bombay": "पश्यंति",
+  "printed_calcutta": "पश्यन्ति",
+  "note": ""
+ },
+ {
+  "verse": "R13",
+  "spot": 3,
+  "decision": "editions_differ",
+  "printed_bombay": "विष्णवाख्यं",
+  "printed_calcutta": "विष्ण्वाख्यं",
+  "note": ""
+ },
+ {
+  "verse": "R14",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "यत्यघोघोर",
+  "printed_calcutta": "यत्यघं घोर",
+  "note": ""
+ },
+ {
+  "verse": "R14",
+  "spot": 1,
+  "decision": "bombay",
+  "printed_bombay": "मल्पमल्पासारवत्",
+  "printed_calcutta": "मल्पमल्प..सारवत् (blotchy; a सा-like glyph is present)",
+  "note": "Calcutta reader omitted a glyph; print blotchy"
+ },
+ {
+  "verse": "R15",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "बीजभूतंतुतमो",
+  "printed_calcutta": "बीजसम्भूतं तमो",
+  "note": ""
+ },
+ {
+  "verse": "R15",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "बीजभूतंतुतमो",
+  "printed_calcutta": "बीजसम्भूतं तमो",
+  "note": ""
+ },
+ {
+  "verse": "R16",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "सहजासिद्धि",
+  "printed_calcutta": "सहसासिद्धि",
+  "note": ""
+ },
+ {
+  "verse": "R16",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "सिद्धिस्तासां",
+  "printed_calcutta": "सिद्धिस्तेषां",
+  "note": ""
+ },
+ {
+  "verse": "R16",
+  "spot": 2,
+  "decision": "editions_differ",
+  "printed_bombay": "रसोल्लासादय",
+  "printed_calcutta": "रमोक्षासादय (blotchy)",
+  "note": ""
+ },
+ {
+  "verse": "R16",
+  "spot": 3,
+  "decision": "editions_differ",
+  "printed_bombay": "रसोल्लासादय",
+  "printed_calcutta": "रमोक्षासादय (blotchy)",
+  "note": ""
+ },
+ {
+  "verse": "R16",
+  "spot": 4,
+  "decision": "editions_differ",
+  "printed_bombay": "रसोल्लासादय",
+  "printed_calcutta": "रमोक्षासादय (blotchy)",
+  "note": ""
+ },
+ {
+  "verse": "R16",
+  "spot": 5,
+  "decision": "editions_differ",
+  "printed_bombay": "सादयश्चान्या",
+  "printed_calcutta": "सादययान्या",
+  "note": ""
+ },
+ {
+  "verse": "R16",
+  "spot": 6,
+  "decision": "editions_differ",
+  "printed_bombay": "भवंतियाः",
+  "printed_calcutta": "भवन्तियाः",
+  "note": ""
+ },
+ {
+  "verse": "R17",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "तासुक्षीणास्वशेषासु",
+  "printed_calcutta": "तासु शीताम्रघर्मासु (blotchy)",
+  "note": ""
+ },
+ {
+  "verse": "R17",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "तासुक्षीणास्वशेषासु",
+  "printed_calcutta": "तासु शीताम्रघर्मासु (blotchy)",
+  "note": ""
+ },
+ {
+  "verse": "R17",
+  "spot": 2,
+  "decision": "editions_differ",
+  "printed_bombay": "तासुक्षीणास्वशेषासु",
+  "printed_calcutta": "तासु शीताम्रघर्मासु (blotchy)",
+  "note": ""
+ },
+ {
+  "verse": "R17",
+  "spot": 3,
+  "decision": "editions_differ",
+  "printed_bombay": "सुवर्धमाने",
+  "printed_calcutta": "सुवर्त्तमाने",
+  "note": ""
+ },
+ {
+  "verse": "R17",
+  "spot": 4,
+  "decision": "editions_differ",
+  "printed_bombay": "द्वंद्वाभि",
+  "printed_calcutta": "द्वन्द्वाभि",
+  "note": ""
+ },
+ {
+  "verse": "R17",
+  "spot": 5,
+  "decision": "editions_differ",
+  "printed_bombay": "खार्तास्ता",
+  "printed_calcutta": "खार्त्तास्ता",
+  "note": ""
+ },
+ {
+  "verse": "R17",
+  "spot": 6,
+  "decision": "editions_differ",
+  "printed_bombay": "भवंतिततः",
+  "printed_calcutta": "भवन्तिततः",
+  "note": ""
+ },
+ {
+  "verse": "R18",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "कृत्रिमंचतथा",
+  "printed_calcutta": "कृत्रिमञ्चतथा",
+  "note": ""
+ },
+ {
+  "verse": "R18",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "दुर्गंपुरखर्वट",
+  "printed_calcutta": "दुर्गं पुरं खर्वट",
+  "note": ""
+ },
+ {
+  "verse": "R18",
+  "spot": 2,
+  "decision": "editions_differ",
+  "printed_bombay": "कादियत् १८ गृहा",
+  "printed_calcutta": "कादिकम् १८ गृहा",
+  "note": ""
+ },
+ {
+  "verse": "R19",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "महामते प्रत",
+  "printed_calcutta": "महामुने प्रत",
+  "note": ""
+ },
+ {
+  "verse": "R20",
+  "spot": 0,
+  "decision": "editions_differ",
+  "printed_bombay": "कारमिमंकृत्",
+  "printed_calcutta": "कारमिदंकृत्",
+  "note": ""
+ },
+ {
+  "verse": "R20",
+  "spot": 1,
+  "decision": "editions_differ",
+  "printed_bombay": "वार्तोपायं",
+  "printed_calcutta": "वार्त्तोपायं",
+  "note": ""
+ },
+ {
+  "verse": "R20",
+  "spot": 2,
+  "decision": "editions_differ",
+  "printed_bombay": "हस्तासिद्धिं",
+  "printed_calcutta": "हस्तसिद्धि",
+  "note": ""
+ },
+ {
+  "verse": "R20",
+  "spot": 3,
+  "decision": "editions_differ",
+  "printed_bombay": "सिद्धिंचकर्म",
+  "printed_calcutta": "सिद्धिञ्चकर्म",
+  "note": ""
+ }
+]

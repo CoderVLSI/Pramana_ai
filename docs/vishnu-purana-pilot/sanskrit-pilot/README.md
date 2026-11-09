@@ -21,3 +21,6 @@ First arbiter pass (126 spots) could not display many images: 40 spots came back
 
 ## Chapters 5 and 6 — readings done, arbiter in progress
 `R_ch5.json` (Bombay, 66 verse entries + 4 speaker lines; the printed number 7 occurs twice, kept as 7 and "7b"), `R_ch6.json` (Bombay, 41 verses + 2 speaker lines), `J_ch5.json` (Calcutta, 65 verses + 4 speaker lines; verses 40-44 almost solid ink, 8 low), `J_ch6.json` (Calcutta, 41 verses + 2 speaker lines; 12 low). Whole-chapter comparison: ch5 94.4% similar (196 spots / 59 Bombay verses), ch6 94.2% (118 spots / 38 verses): `arbiter_input_ch5.json`, `arbiter_input_ch6.json`. Arbiter passes were started; results not yet saved here. Not for publication.
+
+## Chapters 5–6 arbiter results
+Chapter 5: 54 spots decided from the page images: 47 are real differences between the Bombay and Calcutta prints (editions differ), 5 where both print the same and a reader slipped, 1 Calcutta, 1 neither. Chapter 6: 59 spots: 50 editions differ, 7 same print/reader slip, 2 Bombay. Files: `arbiter_out_ch5.json`, `arbiter_out_ch6.json`. The checked Bombay readings for ch5–6 are not yet assembled; most differences are spelling conventions between the two presses (for example य् doubling, स्त्र/स्र), not damaged text. Not for publication.

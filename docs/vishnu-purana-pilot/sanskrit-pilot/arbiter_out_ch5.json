@@ -1,0 +1,434 @@
+[
+{
+"verse": "R1",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "तिर्यग्वृक्ष",
+"printed_calcutta": "तिर्य्यग्वृक्ष",
+"note": "Calcutta prints य् before य"
+},
+{
+"verse": "R1",
+"spot": 1,
+"decision": "neither",
+"printed_bombay": "भूव्योम (no visible reph; glyph ring before य)",
+"printed_calcutta": "भूर्व्योम",
+"note": "Bombay glyph ambiguous; reader dropped व्; Calcutta shows reph"
+},
+{
+"verse": "R2",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "यद्गुणंयत्स्वभावंचयद्रूपंच",
+"printed_calcutta": "यद्गुणं यत्स्वरूपञ्च यत्स्वभावं",
+"note": ""
+},
+{
+"verse": "R2",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "यद्गुणंयत्स्वभावंचयद्रूपंचजगद्द्विज",
+"printed_calcutta": "यत्स्वभावंजगद्द्विज",
+"note": ""
+},
+{
+"verse": "R2",
+"spot": 2,
+"decision": "editions_differ",
+"printed_bombay": "चक्ष्वविस्तरात्",
+"printed_calcutta": "चक्ष्वतत्त्वतः",
+"note": ""
+},
+{
+"verse": "R2",
+"spot": 3,
+"decision": "editions_differ",
+"printed_bombay": "विस्तरात्",
+"printed_calcutta": "तत्त्वतः",
+"note": ""
+},
+{
+"verse": "R2",
+"spot": 4,
+"decision": "editions_differ",
+"printed_bombay": "विस्तरात्",
+"printed_calcutta": "तत्त्वतः",
+"note": ""
+},
+{
+"verse": "R3",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "खिलान्विभुः",
+"printed_calcutta": "खिलान्प्रभुः",
+"note": ""
+},
+{
+"verse": "R4",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "चिंतयतः",
+"printed_calcutta": "चिन्तयतः",
+"note": ""
+},
+{
+"verse": "R5",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "ह्यंधसंज्ञितः",
+"printed_calcutta": "ह्यन्धसंज्ञितः",
+"note": ""
+},
+{
+"verse": "R5",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "अविद्यापंचपर्वैषा",
+"printed_calcutta": "अविद्या पञ्चपर्वैषा",
+"note": ""
+},
+{
+"verse": "R6",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "पंचधावस्थितः",
+"printed_calcutta": "पञ्चधावस्थितः",
+"note": ""
+},
+{
+"verse": "R6",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "बहिरंताप्रकाश",
+"printed_calcutta": "बहिरन्तोऽप्रकाश",
+"note": "Bombay prints ता, no ऽ"
+},
+{
+"verse": "R6",
+"spot": 2,
+"decision": "editions_differ",
+"printed_bombay": "बहिरंताप्रकाश",
+"printed_calcutta": "बहिरन्तोऽप्रकाश",
+"note": ""
+},
+{
+"verse": "R7",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "मुख्यानगायतश्चोक्ता",
+"printed_calcutta": "मुख्या नगा यतःप्रोक्ता",
+"note": "Calcutta glyphs blurry, read as यतःप्रोक्ता"
+},
+{
+"verse": "R7",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "मुख्यानगायतश्चोक्ता",
+"printed_calcutta": "मुख्या नगा यतःप्रोक्ता",
+"note": ""
+},
+{
+"verse": "R7b",
+"spot": 0,
+"decision": "both_print_same_but_reader_differed",
+"printed_bombay": "सर्गममन्यद़परंपुनः",
+"printed_calcutta": "सर्गममन्यद़परं पुनः",
+"note": "both print ममन्यद with dot; Calcutta reader dropped one म"
+},
+{
+"verse": "R7b",
+"spot": 1,
+"decision": "both_print_same_but_reader_differed",
+"printed_bombay": "सर्गममन्यद़परंपुनः",
+"printed_calcutta": "सर्गममन्यद़परं पुनः",
+"note": "Calcutta print has no ध्यायत्; reader added it"
+},
+{
+"verse": "R8",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "सर्गस्तिर्यक्स्त्रोता",
+"printed_calcutta": "सर्गं तिर्य्यक्स्रोता",
+"note": ""
+},
+{
+"verse": "R8",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "तिर्यक्स्त्रोता",
+"printed_calcutta": "तिर्य्यक्स्रोता",
+"note": ""
+},
+{
+"verse": "R8",
+"spot": 2,
+"decision": "editions_differ",
+"printed_bombay": "यक्स्त्रोता",
+"printed_calcutta": "यक्स्रोता",
+"note": ""
+},
+{
+"verse": "R8",
+"spot": 3,
+"decision": "calcutta",
+"printed_bombay": "वर्त्तत (त्त ligature, Bombay reader dropped a t)",
+"printed_calcutta": "वर्त्तत",
+"note": ""
+},
+{
+"verse": "R8",
+"spot": 4,
+"decision": "editions_differ",
+"printed_bombay": "त्तिर्यक्प्रवृत्तः",
+"printed_calcutta": "त्तिर्य्यक्प्रवृत्तः",
+"note": ""
+},
+{
+"verse": "R8",
+"spot": 5,
+"decision": "editions_differ",
+"printed_bombay": "तिर्यक्स्त्रोतस्ततः",
+"printed_calcutta": "तिर्य्यक्स्रोतास्ततः",
+"note": ""
+},
+{
+"verse": "R8",
+"spot": 6,
+"decision": "editions_differ",
+"printed_bombay": "यक्स्त्रोतस्ततः",
+"printed_calcutta": "यक्स्रोतास्ततः",
+"note": ""
+},
+{
+"verse": "R8",
+"spot": 7,
+"decision": "editions_differ",
+"printed_bombay": "स्त्रोतस्ततः",
+"printed_calcutta": "स्रोतास्ततः",
+"note": ""
+},
+{
+"verse": "R10",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "अहंकृता",
+"printed_calcutta": "अहङ्कृता",
+"note": ""
+},
+{
+"verse": "R10",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "अहंमाना",
+"printed_calcutta": "अहम्माना",
+"note": ""
+},
+{
+"verse": "R10",
+"spot": 2,
+"decision": "editions_differ",
+"printed_bombay": "द्वधान्विताः",
+"printed_calcutta": "द्वधात्मकाः",
+"note": ""
+},
+{
+"verse": "R10",
+"spot": 3,
+"decision": "editions_differ",
+"printed_bombay": "द्वधान्विताः अंतः",
+"printed_calcutta": "द्वधात्मकाः अन्तः",
+"note": ""
+},
+{
+"verse": "R10",
+"spot": 4,
+"decision": "editions_differ",
+"printed_bombay": "न्विताः अंतः",
+"printed_calcutta": "त्मकाः अन्तः",
+"note": ""
+},
+{
+"verse": "R11",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "ऊर्ध्वस्त्रोतस्तृतीय",
+"printed_calcutta": "ऊर्ध्वस्रोतास्तृतीय",
+"note": ""
+},
+{
+"verse": "R11",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "स्त्रोतस्तृतीय",
+"printed_calcutta": "स्रोतास्तृतीय",
+"note": ""
+},
+{
+"verse": "R11",
+"spot": 2,
+"decision": "editions_differ",
+"printed_bombay": "सात्विकोर्ध्वं",
+"printed_calcutta": "सात्त्विकोर्ध्वं",
+"note": "Bombay single त with वि ligature; Calcutta double त"
+},
+{
+"verse": "R11",
+"spot": 3,
+"decision": "both_print_same_but_reader_differed",
+"printed_bombay": "सात्विकोर्ध्वंमवर्त्तत",
+"printed_calcutta": "सात्त्विकोर्ध्वंमवर्त्तत",
+"note": "Bombay print has reph (reader dropped it); Calcutta mark over ध्व is reph/anusvara blur"
+},
+{
+"verse": "R11",
+"spot": 4,
+"decision": "both_print_same_but_reader_differed",
+"printed_bombay": "कोर्ध्वंमवर्त्तत",
+"printed_calcutta": "कोर्ध्वंमवर्त्तत",
+"note": "Bombay reader dropped reph; Calcutta reader dropped anusvara or blur"
+},
+{
+"verse": "R11",
+"spot": 5,
+"decision": "editions_differ",
+"printed_bombay": "मवर्त्तत ११ तेसुख",
+"printed_calcutta": "मवर्त्तत ११ तंसुख",
+"note": "Bombay prints वर्त्तत (reader dropped t); Bombay तेसु, Calcutta तं सु"
+},
+{
+"verse": "R12",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "र्त्तत ११ तेसुख",
+"printed_calcutta": "र्त्तत ११ तंसुख",
+"note": "Bombay reader also dropped the त्त ligature"
+},
+{
+"verse": "R12",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "बहिरंतश्चनावृताः",
+"printed_calcutta": "बहिरन्तस्त्वनावृताः",
+"note": ""
+},
+{
+"verse": "R12",
+"spot": 2,
+"decision": "editions_differ",
+"printed_bombay": "बहिरंतश्चनावृताः",
+"printed_calcutta": "बहिरन्तस्त्वनावृताः",
+"note": ""
+},
+{
+"verse": "R12",
+"spot": 3,
+"decision": "editions_differ",
+"printed_bombay": "रंतश्चनावृताः",
+"printed_calcutta": "न्तस्त्वनावृताः",
+"note": ""
+},
+{
+"verse": "R12",
+"spot": 4,
+"decision": "editions_differ",
+"printed_bombay": "बहिरंतश्चऊर्ध्व",
+"printed_calcutta": "बहिरन्तश्चऊर्ध्व",
+"note": ""
+},
+{
+"verse": "R12",
+"spot": 5,
+"decision": "editions_differ",
+"printed_bombay": "ऊर्ध्वस्त्रोतो",
+"printed_calcutta": "ऊर्ध्वस्रोतो",
+"note": ""
+},
+{
+"verse": "R13",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "तुष्ट्यात्मकस्तृतीय",
+"printed_calcutta": "तुष्टात्मनस्तृतीय",
+"note": ""
+},
+{
+"verse": "R13",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "तुष्ट्यात्मकस्तृतीय",
+"printed_calcutta": "तुष्टात्मनस्तृतीय",
+"note": ""
+},
+{
+"verse": "R13",
+"spot": 2,
+"decision": "editions_differ",
+"printed_bombay": "देवसर्गस्तुयःस्मृतः",
+"printed_calcutta": "देवसर्गस्तु स स्मृतः",
+"note": ""
+},
+{
+"verse": "R14",
+"spot": 0,
+"decision": "both_print_same_but_reader_differed",
+"printed_bombay": "सतदादध्यौ",
+"printed_calcutta": "सतदादध्यौ",
+"note": "Bombay reader added a virama (द्ध्यौ); print shows दादध्यौ"
+},
+{
+"verse": "R14",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "संभवान्",
+"printed_calcutta": "सम्भवान्",
+"note": ""
+},
+{
+"verse": "R15",
+"spot": 0,
+"decision": "editions_differ",
+"printed_bombay": "प्रादुर्भूतस्तदा",
+"printed_calcutta": "प्रादुर्बभूव चा",
+"note": ""
+},
+{
+"verse": "R15",
+"spot": 1,
+"decision": "editions_differ",
+"printed_bombay": "दुर्भूतस्तदाव्यक्त",
+"printed_calcutta": "दुर्बभूव चाव्यक्त",
+"note": ""
+},
+{
+"verse": "R15",
+"spot": 2,
+"decision": "editions_differ",
+"printed_bombay": "क्तादर्वाक्",
+"printed_calcutta": "क्ताद्र्वाक् (halant under द, no अ)",
+"note": "Calcutta reader's extra अ not printed"
+},
+{
+"verse": "R15",
+"spot": 3,
+"decision": "editions_differ",
+"printed_bombay": "क्स्त्रोतस्तु",
+"printed_calcutta": "क्स्रोतास्तु",
+"note": ""
+},
+{
+"verse": "R15",
+"spot": 4,
+"decision": "editions_differ",
+"printed_bombay": "स्त्रोतस्तु",
+"printed_calcutta": "स्रोतास्तु",
+"note": ""
+},
+{
+"verse": "R15",
+"spot": 5,
+"decision": "editions_differ",
+"printed_bombay": "साधकः",
+"printed_calcutta": "साधकम्",
+"note": ""
+}
+]
