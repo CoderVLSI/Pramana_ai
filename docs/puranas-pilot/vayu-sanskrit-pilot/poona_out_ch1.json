@@ -1,0 +1,191 @@
+[
+ {
+  "verse": "8",
+  "poona_image": "n5 (Poona p.1, v.10)",
+  "passage_found": true,
+  "matches": "A",
+  "own_reading_of_differing_letters": "तन्नम्रे (ending -म्रे; may be तन्नप्त्रे-like blur)",
+  "confidence": "low",
+  "note": "Same passage (rest of pada identical: चातियशसे जातूकर्ण्णाय चर्षये). Print shows म/प + ्र + े; A (तन्नम्र) is closest; B (तन्नमे) and relook (तन्नमस्ये) lack a visible ्र. Poona has an extra े after ्र so none is exact."
+ },
+ {
+  "verse": "13",
+  "poona_image": "n5 (Poona p.1, v.15-16)",
+  "passage_found": true,
+  "matches": "relook",
+  "own_reading_of_differing_letters": "द्रष्टुं तान्स ... लोमानि ... श्रोतॄणां ... लोकेऽस्मि[न्]ल्लो(?)मह",
+  "confidence": "low",
+  "note": "Poona v.15 'द्रष्टुं तान् स' matches relook द्रष्टुन्तान् (not A दृष्ट्वा, not B दृष्ट्वान्तान्); v.16 'लोमानि' matches B/relook (not A रोमाणि). Last word before लोमहर्षणः is fuzzy (could be -स्मिन् ल्लो / -स्मिल्लो); श्रोतॄणां long-vowel mark not clearly resolved."
+ },
+ {
+  "verse": "34",
+  "poona_image": "n6 (Poona p.2, v.40)",
+  "passage_found": true,
+  "matches": "B",
+  "own_reading_of_differing_letters": "पितॄणां (long ॄ mark visible under तृ); पित्रभिर्मत्स्य (single म in मत्स्य)",
+  "confidence": "medium",
+  "note": "Clearly same passage. First word has ृ with extra tick = ॄ -> B/(not A, not relook). Poona prints मत्स्य with single म, so B/relook doubled म्म is not shown; edition may simply not double. Split evidence, B favoured on the long vowel."
+ },
+ {
+  "verse": "66",
+  "poona_image": "n7 (Poona p.3, v.73)",
+  "passage_found": true,
+  "matches": "relook",
+  "own_reading_of_differing_letters": "देवैश्चस्तुतोष",
+  "confidence": "medium",
+  "note": "Poona v.73 'स्तुतस्ताभ्यां स देवैश्चस्तुतोष भगवाञ्छिवः'; a stray ink stroke overlays the श्च but the letters read देवैश्च-स्तुतोष (run together, ष ending) = relook; not A (देवैश्च स्तुतोऽथ) nor B (देवेशस्तुतोष). Preceding pada differs (Poona 72 has 'ब्रह्मनारायणाभ्यां च यत्र स्तोत्रं प्रकीर्तितम्')."
+ },
+ {
+  "verse": "70",
+  "poona_image": "n8 (Poona p.4, v.77)",
+  "passage_found": true,
+  "matches": "B",
+  "own_reading_of_differing_letters": "पितॄणां (ॄ mark clearly present under तृ)",
+  "confidence": "medium-high",
+  "note": "Same passage (अग्नेः प्रजायाः ... स्वाहायां यत्र कीर्तिता / पितॄणां द्विःप्रकाराणां स्वधायास्तदनन्तरम्). Poona has a vowel mark on त, so relook's पितणां (no mark) is not supported; ॄ vs ृ resolved as ॄ (same glyph as in v.34). A (ृ) is the alternative if the tick is read as noise."
+ },
+ {
+  "verse": "85",
+  "poona_image": "n8 (Poona p.4, v.93-94)",
+  "passage_found": true,
+  "matches": "none",
+  "own_reading_of_differing_letters": "काष्ठयोर्लेखयोश्चैव ... अक्षो (looks like अक्षो / अह्को) विषुवत्",
+  "confidence": "medium (लेख), low (अक्षो)",
+  "note": "Poona 'काष्ठयोर्लेखयोश्चैव' = B on लेख (not A लङ्घ, not relook लख). Word before विषुवत् reads अक्षो-like (अ + क्ष + ो), not अयनो (A), not अञ्जो (B); relook अङ्को is the nearest shape. So split: B on लेख, none/relook-ish on the last word."
+ },
+ {
+  "verse": "91",
+  "poona_image": "n8 (Poona p.4, v.99-100)",
+  "passage_found": true,
+  "matches": "B",
+  "own_reading_of_differing_letters": "वृद्धिक्षयौ च सोमस्य कीर्त्येते सूर्यकारितौ",
+  "confidence": "high",
+  "note": "Poona v.100 'वृद्धिक्षयौ च सोमस्य कीर्त्येते सूर्यकारितौ' exactly B; v.99 'अपां सारमयश्चेन्दोः कीर्त्यते च रथस्तथा' agrees with A/B on the first pada (relook सारमयस्येन्दोः not supported). Clear print."
+ },
+ {
+  "verse": "113",
+  "poona_image": "n9 (Poona p.5, v.124)",
+  "passage_found": true,
+  "matches": "none",
+  "own_reading_of_differing_letters": "पात्राणां पयसां चैव वंशानां च विशेषणम्",
+  "confidence": "medium",
+  "note": "Poona reads पात्राणां (A/relook), वंशानां (B/relook), विशेषणम् (A/B). relook's विश्लेषणम् is NOT in the print (clear विशेषणम्). No candidate matches all; best composite is पात्राणां...वंशानां...विशेषणम्. Poona also has 'पृथुना वाऽपि वैन्येन भूमेर्दोहप्रवर्तनम्' in line before (edition variant)."
+ },
+ {
+  "verse": "129",
+  "poona_image": "n10 (Poona p.6, v.141)",
+  "passage_found": true,
+  "matches": "relook",
+  "own_reading_of_differing_letters": "विकुक्षिचरितं चोक्तं धुन्धोश्चैव निवर्हणम्; ...संक्षेपा",
+  "confidence": "medium",
+  "note": "Poona 'निवर्हणम्' (व, not ब) = relook; 'बृहद्वलान्तसंक्षेपा' with anusvara (not ङ्क्ष) = A/relook; 'चरितं' has anusvara, not A's श्चोक्तं nor B/relook's ञ्चोक्तं (edition spelling)."
+ },
+ {
+  "verse": "130",
+  "poona_image": "n10 (Poona p.6, v.142)",
+  "passage_found": true,
+  "matches": "none",
+  "own_reading_of_differing_letters": "निम्यादीनां क्षितीशानां यावज्जह्नुगणादिति",
+  "confidence": "medium-high",
+  "note": "Clear print. निम्यादीनां = B/relook; the second word क्षितीशानां matches none (A निषादानां चितौधानां, B नितोष्ठानां, relook चितौघानां); जह्नुगणादिति is nearest relook (जङ्कुगणादिति) and not A/B (जङ्गुगादिति/जङ्गमादिति). Relook closest overall."
+ },
+ {
+  "verse": "132",
+  "poona_image": "n10 (Poona p.6, v.145)",
+  "passage_found": true,
+  "matches": "B",
+  "own_reading_of_differing_letters": "देवावृधस्य त्वर्कस्य(?) वृष्णेश्चैव महात्मनः",
+  "confidence": "low",
+  "note": "Poona reads 'देवावृधस्य त्वर्कस्य वृष्णेश्चैव' (second word fuzzy: त्वर्कस्य/बभ्रोः-like). Ending 'वृ...श्चैव' matches B (वृष्टेश्चैव), not A (हृष्टस्यैव) or relook (हृष्टेश्चैव); first-word differs from all (edition variant). Verse is inside a bracketed passage in Poona."
+ },
+ {
+  "verse": "134",
+  "poona_image": "n10 (Poona p.6, v.147)",
+  "passage_found": true,
+  "matches": "A",
+  "own_reading_of_differing_letters": "राजर्षेर्देवमीढुषः (and कीर्त्यते चान्वयः)",
+  "confidence": "medium",
+  "note": "Poona 'कीर्त्यते चान्वयः श्रीमान् राजर्षेर्देवमीढुषः': last word देवमीढुषः = A exactly (B वमीयुषः, relook हवमीयुषः rejected); 'कीर्त्यते' (ते) matches B/relook rather than A's कीर्त्यन्ते; 'चान्वयः' = A/B. Split on the first word, A on the decisive final word."
+ },
+ {
+  "verse": "139",
+  "poona_image": "n10 (Poona p.6, v.152-153)",
+  "passage_found": true,
+  "matches": "relook",
+  "own_reading_of_differing_letters": "वरदानप्रलुब्धेन यत्र शर्वस्तवः कृतः; विनिर्दिष्टं",
+  "confidence": "medium",
+  "note": "प्रलुब्धेन = B/relook (not A प्रलम्भेन). Word before स्तवः reads शर्वस्तवः: nearest relook अर्वस्तवः (B प्रवस्तवः, A भवस्तवः). 'विनिर्दिष्टं' single द = B. So B/relook; relook marginally closest on र्वस्तवः."
+ },
+ {
+  "verse": "140",
+  "poona_image": "n10 (Poona p.6, v.153-154)",
+  "passage_found": true,
+  "matches": "unclear",
+  "own_reading_of_differing_letters": "जयन्त्या सह सक्ते तु यत्र शुक्रे महात्मनि; ताञ्शुक्रः शशाप",
+  "confidence": "medium",
+  "note": "Poona line 1 'सक्ते तु यत्र शुक्रे' = A exactly; line 3 'शशाप' = B (A/relook प्रमाप rejected). Split between A and B, so none single reader matches."
+ },
+ {
+  "verse": "143",
+  "poona_image": "n10 (Poona p.6, v.157-158)",
+  "passage_found": true,
+  "matches": "B",
+  "own_reading_of_differing_letters": "कुशिकस्य च विप्रर्षेः सम्यग्यो धर्मसंश्रयः",
+  "confidence": "high",
+  "note": "Clear: 'कुशिकस्य' (not relook कुम्भिकस्य), 'सम्यग्यो' = B (not A सम्यगग्र्यो, not relook सम्यग्गयो). Next v.158 'वार्हस्पत्यं तु सुरभिर्यत्र शापमिहानुदत्' same."
+ },
+ {
+  "verse": "162",
+  "poona_image": "n11 (Poona p.7, v.177-178)",
+  "passage_found": true,
+  "matches": "A",
+  "own_reading_of_differing_letters": "वसिष्ठसम्भृतश्चाग्निः; चीर्णः",
+  "confidence": "medium",
+  "note": "Poona 'वसिष्ठसंभृतश्चाग्निर्विश्वामित्रजिघांसया' = A (वसिष्ठ with स, श्चाग्निः), not B/relook (…स्याग्निः); 'चीर्णः' = A/B (not relook चौर्णः). Anusvara vs म् in सम्भृत is edition spelling."
+ },
+ {
+  "verse": "163",
+  "poona_image": "n11 (Poona p.7, v.179)",
+  "passage_found": true,
+  "matches": "A",
+  "own_reading_of_differing_letters": "एकं वेदं चतुष्पादं चतुर्धा पुनरीश्वरः; सर्वान्",
+  "confidence": "medium",
+  "note": "Poona 'वेदं चतुष्पादं चतुर्धा' = A (B चतुर्द्धा, relook वेदश्चतुष्पादश्चतुर्धा rejected). 'सर्वान्स्वबुद्धितः' (conjoined) fits any candidate; doubling of र्व not shown in Poona."
+ },
+ {
+  "verse": "167",
+  "poona_image": "n11 (Poona p.7, v.185-186)",
+  "passage_found": true,
+  "matches": "relook",
+  "own_reading_of_differing_letters": "मृते शरद्वति",
+  "confidence": "medium",
+  "note": "Poona 'ईजिरे चैव सत्रेण मुनयो नैमिषे तदा । मृते शरद्वति तथा तस्य चोत्थापनं कृतम्'. मृते = relook (A सृते, B स्मृते rejected); शरद्वति vs relook आरद्वति: Poona has श, i.e. A's शरद्वति on that word. Split but the first word decides for relook; Poona line 'गङ्गागर्भसमाहारं नैमिषेयत्वमेव च' also same."
+ },
+ {
+  "verse": "173",
+  "poona_image": "n12 (Poona p.8, v.192)",
+  "passage_found": true,
+  "matches": "A",
+  "own_reading_of_differing_letters": "स्वरण्यान्त / (त्वरण्यान्ते?) first conjunct स्व-or-त्व",
+  "confidence": "low",
+  "note": "Poona 'जनयित्वा स्वरण्यान्त ऐडपुत्रं यथायुषम्'. First conjunct fuzzy (स्व vs त्व); the 'रण्य' cluster is clear, matching A (त्वरण्यान्ते) and not B (लरख्य) or relook (त्वरस्य). Ending in Poona is -न्त before ऐ (sandhi), so the final ते/ते cannot be compared."
+ },
+ {
+  "verse": "178",
+  "poona_image": "n12 (Poona p.8, v.197-198)",
+  "passage_found": true,
+  "matches": "B",
+  "own_reading_of_differing_letters": "पुराणं संप्रचक्ष्यते; पश्चाद्वक्ष्यामि",
+  "confidence": "high",
+  "note": "Poona 'अनेन हि क्रमेणेदं पुराणं संप्रचक्ष्यते' = B/relook; 'पश्चाद्वक्ष्यामि' = A/B (relook वच्यामि rejected). So B only. Clear print."
+ },
+ {
+  "verse": "0c",
+  "poona_image": "n5 (Poona p.1, v.2)",
+  "passage_found": true,
+  "matches": "A",
+  "own_reading_of_differing_letters": "यस्याऽऽस्यकमलगलितं वाङ्मयममृतं जगत्पिबति",
+  "confidence": "medium",
+  "note": "Only candidate A. Poona has 'यस्याऽऽस्य' (avagraha-spelled) vs A 'यस्यास्य', and 'जगत्पिबति' (no space); otherwise same words. A's reading consistent with Poona; no B to compare."
+ }
+]
