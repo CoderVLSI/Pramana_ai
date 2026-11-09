@@ -1,0 +1,252 @@
+[
+ {
+  "chapter": 2,
+  "verse": "2",
+  "poona_image": "n12",
+  "passage_found": true,
+  "matches": "B",
+  "own_reading_of_differing_letters": "आचचक्ष (no व after क्ष; stray mark below is from next line)",
+  "confidence": "medium-high",
+  "note": "Poona v2, same verse number; zoomed 4x"
+ },
+ {
+  "chapter": 2,
+  "verse": "6",
+  "poona_image": "n12",
+  "passage_found": true,
+  "matches": "unclear",
+  "own_reading_of_differing_letters": "शामित्रं ... मृत्युश्चक्रे",
+  "confidence": "low",
+  "note": "Mixed: श of शा matches B (A has प्रा), but मृत्युश्चक्रे matches A (B मृत्युस्वक्रे); Poona has extra त्र (शामित्रं). Same verse 6."
+ },
+ {
+  "chapter": 2,
+  "verse": "9",
+  "poona_image": "n13",
+  "passage_found": true,
+  "matches": "A",
+  "own_reading_of_differing_letters": "शक्तिर्ज्येष्ठः ... शतमुत्तम",
+  "confidence": "medium-high",
+  "note": "Poona v10 (our v9 = Poona 10, numbering offset +1 begins after Poona v9); text same passage with वशिष्ठस्य/अरुन्धत्याः"
+ },
+ {
+  "chapter": 2,
+  "verse": "14",
+  "poona_image": "n13",
+  "passage_found": true,
+  "matches": "none",
+  "own_reading_of_differing_letters": "द्वीपानश्नन् (श्न)",
+  "confidence": "medium",
+  "note": "Poona v15. Poona reads श्नन्, neither A स्नन् nor B ग्नन्; closer to A in form but not equal"
+ },
+ {
+  "chapter": 2,
+  "verse": "19",
+  "poona_image": "n13",
+  "passage_found": true,
+  "matches": "A",
+  "own_reading_of_differing_letters": "महदाश्चर्यं (single य)",
+  "confidence": "low",
+  "note": "Poona v20; only orthographic difference (र्यं vs र्य्यं); Poona style generally single य, weak evidence"
+ },
+ {
+  "chapter": 2,
+  "verse": "21",
+  "poona_image": "n13",
+  "passage_found": true,
+  "matches": "B",
+  "own_reading_of_differing_letters": "पुत्रं चकुर्नृपं / चक्रुर्नृपं",
+  "confidence": "low-medium",
+  "note": "Poona v23: ततस्तस्य पुत्रं चक्रु(कु?)र्नृपं. पुत्र matches B (A पुनश्चक्रु); rest ambiguous; B's स्वङ्कु not seen"
+ },
+ {
+  "chapter": 2,
+  "verse": "24",
+  "poona_image": "n13",
+  "passage_found": true,
+  "matches": "A",
+  "own_reading_of_differing_letters": "वह्वाश्चर्यं",
+  "confidence": "medium",
+  "note": "Poona v26; ह्व (not ब्रह्म) so A बह्वा-; ब written व in Poona"
+ },
+ {
+  "chapter": 2,
+  "verse": "27",
+  "poona_image": "n13",
+  "passage_found": true,
+  "matches": "B",
+  "own_reading_of_differing_letters": "पितॄन् पित्र्यैश्च",
+  "confidence": "medium",
+  "note": "Poona v29: पित्र्यैश्च (B), not पित्र्याश्च"
+ },
+ {
+  "chapter": 2,
+  "verse": "29",
+  "poona_image": "n13",
+  "passage_found": true,
+  "matches": "A",
+  "own_reading_of_differing_letters": "व्याजह्रुर्मुनयो (with reph)",
+  "confidence": "medium",
+  "note": "Poona v31; reph visible on मु, matches A (B lacks र्)"
+ },
+ {
+  "chapter": 2,
+  "verse": "32",
+  "poona_image": "n13",
+  "passage_found": true,
+  "matches": "A",
+  "own_reading_of_differing_letters": "शक्तिप्रज्ञाक्रियायोगैर्",
+  "confidence": "medium",
+  "note": "Poona v35 (same passage); a pen stroke crosses the later part of line but शक्ति read clearly"
+ },
+ {
+  "chapter": 2,
+  "verse": "34",
+  "poona_image": "n13/n14",
+  "passage_found": true,
+  "matches": "B",
+  "own_reading_of_differing_letters": "भवद्भिर्यदहं ; प्रणोदितश्च (ण)",
+  "confidence": "medium",
+  "note": "Poona v37 (n13) and v38 (n14 top); भवद्भिः and ण match B; Poona single य vs B य्य is orthographic"
+ },
+ {
+  "chapter": 2,
+  "verse": "35",
+  "poona_image": "n14",
+  "passage_found": true,
+  "matches": "unclear",
+  "own_reading_of_differing_letters": "शिष्यः ... सर्वप्रत्यक्षदृग्वशी",
+  "confidence": "medium",
+  "note": "Poona v38: शिष्यः matches B, but दृग्वशी matches A (B दर्शी). Mixed"
+ },
+ {
+  "chapter": 2,
+  "verse": "36",
+  "poona_image": "n14",
+  "passage_found": true,
+  "matches": "B",
+  "own_reading_of_differing_letters": "सप्तस्कन्धादिकं",
+  "confidence": "low-medium",
+  "note": "Poona v40; second glyph appears to be प्त (two stems), not म; fuzzy print"
+ },
+ {
+  "chapter": 2,
+  "verse": "41",
+  "poona_image": "n14",
+  "passage_found": true,
+  "matches": "B",
+  "own_reading_of_differing_letters": "श्लक्ष्णया ... पुराणज्ञः",
+  "confidence": "high",
+  "note": "Poona v45; both differing words clearly B"
+ },
+ {
+  "chapter": 3,
+  "verse": "3",
+  "poona_image": "n14",
+  "passage_found": true,
+  "matches": "unclear",
+  "own_reading_of_differing_letters": "वशिष्ठदक्षात्रि ... मूर्ध्ना",
+  "confidence": "low",
+  "note": "Poona v3: वशिष्ठदक्षात्रि matches A (B वशिष्ठश्चात्रि); मूर्ध्ना (single ध?) looks B but blurry. Mixed"
+ },
+ {
+  "chapter": 3,
+  "verse": "4",
+  "poona_image": "n14",
+  "passage_found": true,
+  "matches": "unclear",
+  "own_reading_of_differing_letters": "तथैव चु(च?)क्रोधनमेकविंशति प्रजाविवृद्ध्याऽर्पितकार्यशासनम्",
+  "confidence": "low",
+  "note": "Poona text differs from both; चुक्रोधन resembles A, ...द्ध्यार्पित resembles B's ...ष्ट्यार्पित; editor's bracket (च?). Same verse by neighbouring lines (पुरातनानप्यपरांश्च...)"
+ },
+ {
+  "chapter": 3,
+  "verse": "5",
+  "poona_image": "n14",
+  "passage_found": true,
+  "matches": "unclear",
+  "own_reading_of_differing_letters": "धैर्यशोभिनः ; मुनीन्बृहस्पत्युशनःपुरोगमान्",
+  "confidence": "medium",
+  "note": "Poona: बृहस्पत्युशनःपुरोगमान् = B clearly; धैर्यशोभिनः differs from A धर्मशौभिनः and B धर्मशीलिनः (nearer A). Lean B on the main differing words"
+ },
+ {
+  "chapter": 3,
+  "verse": "6",
+  "poona_image": "n14",
+  "passage_found": true,
+  "matches": "unclear",
+  "own_reading_of_differing_letters": "सुरेशदेवर्षि ; ममदा/ममहामृषिप्रियाम् ; चोल्बणार्चिषां(ब/व unsure)",
+  "confidence": "low",
+  "note": "सुरेश matches B (A सुरर्षि); ममहा- nearer A (B महर्षि); Poona reads like ममदामृषिप्रियाम्. Mixed; Poona has bracketed (+विशुद्ध...) lines"
+ },
+ {
+  "chapter": 3,
+  "verse": "8",
+  "poona_image": "n14/n15",
+  "passage_found": true,
+  "matches": "B",
+  "own_reading_of_differing_letters": "विशब्दनेनापि ; बद्धा ; प्राधानिकी",
+  "confidence": "low-medium",
+  "note": "Poona v8 (n14 bottom) विशब्दनेनापि resembles A (B विशब्देनापि); n15 top line बद्धा (ब) and प्राधानिकी match B. Two B points vs one A point; Poona 'यस्यां च' differs from both"
+ },
+ {
+  "chapter": 3,
+  "verse": "10",
+  "poona_image": "n15",
+  "passage_found": true,
+  "matches": "B",
+  "own_reading_of_differing_letters": "तद्दृष्टि (द्दृ; some mark above त)",
+  "confidence": "medium",
+  "note": "Poona v10; द्दृष्टि not ग्रष्टि"
+ },
+ {
+  "chapter": 3,
+  "verse": "12",
+  "poona_image": "n15",
+  "passage_found": true,
+  "matches": "B",
+  "own_reading_of_differing_letters": "ताराग्रहार्क्ष-निशाचराणां",
+  "confidence": "low",
+  "note": "Poona v13-14 (split by a bracketed gloss); ग्रह matches B, no anusvara after तारा like A, and the end (र्क्ष) matches neither"
+ },
+ {
+  "chapter": 3,
+  "verse": "13",
+  "poona_image": "n15",
+  "passage_found": true,
+  "matches": "B",
+  "own_reading_of_differing_letters": "रात्र्यह्नानां / रात्र्यर्हानां",
+  "confidence": "low",
+  "note": "Poona v14; हानां like B (A ग्रहाणां), glyph blurred"
+ },
+ {
+  "chapter": 3,
+  "verse": "14",
+  "poona_image": "n15",
+  "passage_found": true,
+  "matches": "A",
+  "own_reading_of_differing_letters": "यद्वियत्स्थं (द्व?) ; विभक्तिराब्रह्मणो ; सर्वस्य",
+  "confidence": "medium-low",
+  "note": "आब्रह्मणो matches A (B रात्रब्रह्मणो); यद्(द)्वि part ambiguous (leans B); विहङ्गमानां joins v15 line as in A split"
+ },
+ {
+  "chapter": 3,
+  "verse": "15",
+  "poona_image": "n15",
+  "passage_found": true,
+  "matches": "B",
+  "own_reading_of_differing_letters": "यदभीप्सितं च",
+  "confidence": "medium-high",
+  "note": "Poona v16; भीप्सित matches B (A यदभोपसित); ञ्च vs ं च orthographic; Poona ends 'प्रजानाम्' (neither A nor B प्रजापतेः)"
+ },
+ {
+  "chapter": 3,
+  "verse": "16",
+  "poona_image": "n15",
+  "passage_found": true,
+  "matches": "B",
+  "own_reading_of_differing_letters": "वैवस्वतस्यास्य ; सुरेशदेवर्षि ; भूषितं च",
+  "confidence": "medium",
+  "note": "Poona v17-18; all differing words fit B (भूषितं च vs B भूषितञ्च orthographic)"
+ }
+]
