@@ -1,0 +1,223 @@
+{
+ "edition": "Kurma Purana, ed. Nilmani Mukhopadhyaya, Bibliotheca Indica, Calcutta 1890 (archive.org b30094914); Chapter 3 = Caturasramyakathana, images n78-n82",
+ "convention": "Verses numbered 1,2,3... by double-danda (॥) endings within the chapter; speaker lines are '0a','0b' (unnumbered, in page order); colophon as 'colophon'. Half-verses (single danda) joined into the verse. Footnote marks dropped; printed spelling kept; heading 'तृतीयोऽध्यायः' not an entry.",
+ "entries": [
+  {
+   "verse": "0a",
+   "text": "ऋषय ऊचुः ।",
+   "page_index": 78,
+   "confidence": "high",
+   "note": "speaker line below heading 'तृतीयोऽध्यायः ।' (heading not an entry)"
+  },
+  {
+   "verse": "1",
+   "text": "वर्णा भगवतोद्दिष्टाश्चत्वारोऽप्याश्रमास्तथा । इदानीं क्रममस्माकमाश्रमाणां वद प्रभो ॥",
+   "page_index": 78,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "0b",
+   "text": "कूर्म्म उवाच ।",
+   "page_index": 78,
+   "confidence": "high",
+   "note": "speaker line"
+  },
+  {
+   "verse": "2",
+   "text": "ब्रह्मचारी गृहस्थश्च वानप्रस्थो यतिस्तथा । क्रमेणैवाश्रमाः प्रोक्ताः कारणादन्यथा भवेत् ॥",
+   "page_index": 78,
+   "confidence": "high",
+   "note": "footnote mark dropped"
+  },
+  {
+   "verse": "3",
+   "text": "उत्पन्नज्ञानविज्ञानो वैराग्यं परमं गतः । प्रव्रजेद्ब्रह्मचर्य्यात्तु यदीच्छेत्परमां गतिम् ॥",
+   "page_index": 78,
+   "confidence": "medium",
+   "note": "ब्रह्मचर्य्यात्तु: reph-य्य conjunct and त्तु read as seen; footnote mark dropped"
+  },
+  {
+   "verse": "4",
+   "text": "दारानाहृत्य विधिवदन्यथा विविधैर्मखैः । यजेदुत्पादयेत्पुत्रान् विरक्तो यदि संन्यसेत् ॥",
+   "page_index": 78,
+   "confidence": "medium",
+   "note": "दारानाहृत्य विधिवदन्यथा: second word-group glyphs (दन्यथा) look compressed, read as seen"
+  },
+  {
+   "verse": "5",
+   "text": "अनिष्ट्वा विधिवद्यज्ञैरनुत्पाद्य तथात्मजान् । न गार्हस्थ्यं गृही त्यक्त्वा संन्यसेद्बुद्धिमान् द्विजः ॥",
+   "page_index": 78,
+   "confidence": "medium",
+   "note": "गार्हस्थ्यं: printed form looks like गार्हस्थं (thya ligature unclear); footnote mark dropped"
+  },
+  {
+   "verse": "6",
+   "text": "अथ वैराग्यवेगेन स्थातुं नोत्सहते गृहे । तत्रैव संन्यसेद्विद्वाननिष्ठापि द्विजोत्तमः ॥",
+   "page_index": 78,
+   "confidence": "medium",
+   "note": "संन्यसेद्विद्वाननिष्ठापि: the cluster after विद्वान reads like 'त्रि'/'नि'; read as seen"
+  },
+  {
+   "verse": "7",
+   "text": "तथापि विविधैर्यज्ञैरिष्ट्वा वनमथाश्रयन् । तपस्तप्त्वा तपोयोगाद्विरक्तः संन्यसेद्वहिः ॥",
+   "page_index": 79,
+   "confidence": "medium",
+   "note": "संन्यसेद्वहिः: last word read as seen (footnote lists variants संन्यसेद्यदि / संन्यसेद्यतिः); footnote marks dropped"
+  },
+  {
+   "verse": "8",
+   "text": "वानप्रस्थाश्रमं गत्वा न गृहं प्रविशेत्पुनः । न सन्यासी वनञ्चाथ ब्रह्मचर्यञ्च साधकः ॥",
+   "page_index": 79,
+   "confidence": "medium",
+   "note": "सन्यासी single न as printed; ब्रह्मचर्यञ्च looks single य after reph; footnote marks dropped"
+  },
+  {
+   "verse": "9",
+   "text": "प्राजापत्यान्निरूप्येष्टिमाग्नेयीमथवा द्विजः । प्रव्रजेत्तु गृही विद्वान् वनाद्वा श्रुतिचोदनात् ॥",
+   "page_index": 79,
+   "confidence": "high",
+   "note": "footnote mark dropped"
+  },
+  {
+   "verse": "10",
+   "text": "प्रकर्त्तुमसमर्थोऽपि जुहोति यजति क्रियाः । अन्धः पङ्गुर्दरिद्रो वा विरक्तः संन्यसेद्विजः ॥",
+   "page_index": 79,
+   "confidence": "medium",
+   "note": "stray thin double bar (॥-like) between यजति and क्रियाः is a printing artefact, omitted; संन्यसेद्विजः द्वि ligature read as single द्"
+  },
+  {
+   "verse": "11",
+   "text": "सर्वेषामेव वैराग्यं संन्यासे तु विधीयते । पतत्येवाविरक्तो यः संन्यासं कर्त्तुमिच्छति ॥",
+   "page_index": 79,
+   "confidence": "high",
+   "note": "footnote marks (** after तु, †† after यः) dropped"
+  },
+  {
+   "verse": "12",
+   "text": "एकस्मिन्नथवा सम्यग्वर्त्तेतामरणान्तिकम् । श्रद्धावानाश्रमे युक्तः सोऽमृतत्वाय कल्पते ॥",
+   "page_index": 80,
+   "confidence": "high",
+   "note": "footnote mark dropped; श prints like ग्र"
+  },
+  {
+   "verse": "13",
+   "text": "न्यायागतधनः शान्तो ब्रह्मविद्यापरायणः । स्वधर्मपालको नित्यं ब्रह्मभूयाय कल्पते ॥",
+   "page_index": 80,
+   "confidence": "medium",
+   "note": "स्वधर्मपालको looks single म (anusvara-like mark over र); footnote mark dropped"
+  },
+  {
+   "verse": "14",
+   "text": "ब्रह्मण्याधाय कर्म्माणि निःसङ्गः कामवर्ज्जितः । प्रसन्नेनैव मनसा कुर्वाणो याति तत्पदम् ॥",
+   "page_index": 80,
+   "confidence": "medium",
+   "note": "कुर्वाणो doubling of व uncertain (looks single)"
+  },
+  {
+   "verse": "15",
+   "text": "ब्रह्मणा दीयते देयं ब्रह्मणे संप्रदीयते । ब्रह्मैव दीयते चेति ब्रह्मार्पणमिदं परम् ॥",
+   "page_index": 80,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "16",
+   "text": "नाहं कर्त्ता सर्वमेतद्ब्रह्मैव कुरुते तथा । एतद्ब्रह्मार्पणं प्रोक्तमृषिभिस्तत्त्वदर्शिभिः ॥",
+   "page_index": 80,
+   "confidence": "high",
+   "note": "सर्वम् single व as printed"
+  },
+  {
+   "verse": "17",
+   "text": "प्रीणातु भगवानीशः कर्म्मणानेन शाश्वतः । करोति सततं बुद्ध्या ब्रह्मार्पणमिदं परम् ॥",
+   "page_index": 80,
+   "confidence": "high",
+   "note": "श in शाश्वतः prints like ग्र"
+  },
+  {
+   "verse": "18",
+   "text": "यद्वा फलानां संन्यासं प्रकुर्यात्परमेश्वरे । कर्म्मणामेतदप्याहुर्ब्रह्मार्पणमनुत्तमम् ॥",
+   "page_index": 80,
+   "confidence": "high",
+   "note": "footnote mark dropped"
+  },
+  {
+   "verse": "19",
+   "text": "कार्य्यमित्येव यत्कर्म्म नियतं सङ्गवर्ज्जितम् । क्रियते विदुषा कर्म्म तद्भवेदपि मोक्षदम् ॥",
+   "page_index": 80,
+   "confidence": "high",
+   "note": "क्ष prints like च; कार्य्यम् read as seen (single य glyph with reph)"
+  },
+  {
+   "verse": "20",
+   "text": "अथवा यदि कर्म्माणि कुर्यान्नित्यान्यपि द्विजः । अकृत्वा फलसंन्यासं बध्यते तत्फलेन तु ॥",
+   "page_index": 81,
+   "confidence": "medium",
+   "note": "अकृत्वा: second glyph prints like क्त (अक्त्वा); read as अकृत्वा with doubt; footnote mark dropped"
+  },
+  {
+   "verse": "21",
+   "text": "तस्मात्सर्वप्रयत्नेन त्यक्त्वा कर्म्माश्रितं फलम् । अविद्वानपि कुर्वीत कर्म्माप्नोति चिरात्पदम् ॥",
+   "page_index": 81,
+   "confidence": "medium",
+   "note": "सर्व looks single व; कुर्वीत single व; read as seen"
+  },
+  {
+   "verse": "22",
+   "text": "कर्म्मणा क्षीयते पापमैहिकं पौर्व्विकं तथा । मनःप्रसादमन्वेति ब्रह्मविज्ञायते नरः ॥",
+   "page_index": 81,
+   "confidence": "medium",
+   "note": "क्ष prints like च; footnote mark dropped; पौर्व्विकं doubling read as seen"
+  },
+  {
+   "verse": "23",
+   "text": "कर्म्मणा सहिताज्ज्ञानात् सम्यग्योगोऽभिजायते । ज्ञानं च कर्म्मसहितं जायते दोषवर्ज्जितम् ॥",
+   "page_index": 81,
+   "confidence": "medium",
+   "note": "दोषवर्ज्जितम् ज्ज vs single ज uncertain (looks like single ज with reph... read as seen र्ज्ज)"
+  },
+  {
+   "verse": "24",
+   "text": "तस्मात्सर्वप्रयत्नेन यत्र तत्राश्रमे रतः । कर्म्माणीश्वरतुष्ट्यर्थं कुर्य्यान्नैष्कर्म्म्यमाप्नुयात् ॥",
+   "page_index": 81,
+   "confidence": "low",
+   "note": "नैष्कर्म्म्यम् cluster after ष्क is cramped and unclear (printed like 'नैष्कर्म्मंग्र'); footnote mark dropped; तुष्ट्यर्थं read as seen"
+  },
+  {
+   "verse": "25",
+   "text": "संप्राप्य परमं ज्ञानं नैष्कर्म्म्यं तत्प्रसादतः । एकाकी निर्म्ममः शान्तो जीवन्नेव विमुच्यते ॥",
+   "page_index": 81,
+   "confidence": "medium",
+   "note": "नैष्कर्म्म्यं same unclear cluster; footnote mark (§) dropped"
+  },
+  {
+   "verse": "26",
+   "text": "वीक्षते परमात्मानं परं ब्रह्म महेश्वरम् । नित्यानन्दी निराभासः तस्मिन्नेव लयं व्रजेत् ॥",
+   "page_index": 81,
+   "confidence": "medium",
+   "note": "क्ष prints like च; निराभासः followed by footnote mark then तस्मिन्; footnote mark after निराभासः dropped"
+  },
+  {
+   "verse": "27",
+   "text": "तस्मात्सेवेत सततं कर्म्मयोगं प्रसन्नधीः । तृप्तये परमेशस्य तत्पदं याति शाश्वतम् ॥",
+   "page_index": 82,
+   "confidence": "low",
+   "note": "तृप्तये: first glyph is the तृ form, then प्त/ष्ट cluster unclear (sense might suggest तुष्टये); श prints like ग्र; footnote mark dropped"
+  },
+  {
+   "verse": "28",
+   "text": "एतद्वः कथितं सर्वं चातुराश्रम्यमुत्तमम् । न ह्येतत्समतिक्रम्य सिद्धिं विन्दति मानवः ॥",
+   "page_index": 82,
+   "confidence": "medium",
+   "note": "footnote marks (†, ‡) dropped; footnote variants not transcribed"
+  },
+  {
+   "verse": "colophon",
+   "text": "इति श्रीकूर्म्मपुराणे चातुराश्रम्यकथनं नाम तृतीयोऽध्यायः ।",
+   "page_index": 82,
+   "confidence": "high",
+   "note": "colophon, smaller type, followed by ornament rule"
+  }
+ ]
+}

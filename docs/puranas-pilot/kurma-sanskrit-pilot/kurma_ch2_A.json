@@ -1,0 +1,804 @@
+{
+ "edition": "Kurma Purana, ed. Nilmani Mukhopadhyaya, Bibliotheca Indica, Calcutta 1890 (archive.org b30094914); Chapter 2 = Varnasramavarnana, images n63-n77",
+ "convention": "Verses numbered 1,2,3... by double-danda (॥) endings within the chapter; speaker lines are '0a','0b','0c' (unnumbered, in page order); colophon as 'colophon'. Half-verses (single danda) joined into the verse. Footnote marks dropped; printed spelling kept (doubled consonants after reph as printed); heading 'द्वितीयोऽध्यायः' not an entry.",
+ "entries": [
+  {
+   "verse": "0a",
+   "text": "कूर्म्म उवाच ।",
+   "page_index": 63,
+   "confidence": "high",
+   "note": "speaker line below heading 'द्वितीयोऽध्यायः ।' (heading not an entry); space before उवाच tiny"
+  },
+  {
+   "verse": "1",
+   "text": "शृणुध्वमृषयः सर्व्वं यत्पृष्टोऽहं जगद्धितम् । वक्ष्यमाणं मया सर्व्वमिन्द्रद्युम्नाय भाषितम् ॥",
+   "page_index": 63,
+   "confidence": "medium",
+   "note": "footnote mark after ऋषयः dropped; क्ष in वक्ष्यमाणं prints like च; सर्व्वं doubling read as seen"
+  },
+  {
+   "verse": "2",
+   "text": "भूतैर्भव्यैर्भवद्भिश्च चरितैरुपवृंहितम् । पुराणं पुण्यदं नृणां मोक्षधर्म्मानुकीर्त्तनम् ॥",
+   "page_index": 63,
+   "confidence": "medium",
+   "note": "footnote marks dropped; उपवृंहितम् glyph could also be उपबृंहितम्; भवद्भिश्च conjunct glyph slightly unclear"
+  },
+  {
+   "verse": "3",
+   "text": "अहं नारायणो देवः पूर्व्वमासन्न मे परम् । उपास्य विपुलां निद्रां भोगिशय्यां समाश्रितः । चिन्तयामि पुनः सृष्टिं निशान्ते प्रतिबुध्य तु ॥",
+   "page_index": 63,
+   "confidence": "high",
+   "note": "three half-lines (single dandas after परम् and समाश्रितः), verse ends ॥ after तु; footnote mark dropped; श prints like ग्र"
+  },
+  {
+   "verse": "4",
+   "text": "ततो मे सहसोत्पन्नः प्रसादो मुनिपुंगवाः । चतुर्मुखस्ततो जातो ब्रह्मा लोकपितामहः ॥",
+   "page_index": 63,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "5",
+   "text": "तदन्तरेऽभवत्क्रोधः कस्माच्चित्कारणात्तदा । आत्मनोषा मुनिशार्दूलास्तत्र देवो महेश्वरः ॥",
+   "page_index": 63,
+   "confidence": "low",
+   "note": "आत्मनोषा: glyph after नो is unclear (looks like षा / पा), kept as seen; कस्माच्चित् doubling of च uncertain"
+  },
+  {
+   "verse": "6",
+   "text": "रुद्रः क्रोधात्मको जज्ञे शूलपाणिस्त्रिलोचनः । तेजसा सूर्य्यसङ्काशस्त्रैलोक्यं संदहन्निव ॥",
+   "page_index": 64,
+   "confidence": "high",
+   "note": "footnote mark dropped"
+  },
+  {
+   "verse": "7",
+   "text": "तदा श्रीरभवद्देवी कमलायतलोचना । सुरूपा सौम्यवदना मोहिनी सर्व्वदेहिनाम् ॥",
+   "page_index": 64,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "8",
+   "text": "शुचिस्मिता सुप्रसन्ना मङ्गला महिमास्पदा । दिव्यकान्तिसमायुक्ता दिव्यमाल्योपशोभिता ॥",
+   "page_index": 64,
+   "confidence": "high",
+   "note": "footnote mark dropped; श prints like ग्र"
+  },
+  {
+   "verse": "9",
+   "text": "नारायणी महामाया मूलप्रकृतिरव्यया । स्वधाम्ना पूरयन्तीदं मत्पार्श्वं समुपाविशत् ॥",
+   "page_index": 64,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "10",
+   "text": "तां दृष्ट्वा भगवान् ब्रह्मा मामुवाच जगत्पतिम् । मोहायाशेषभूतानां नियोजय सुरूपिणीम् ॥",
+   "page_index": 64,
+   "confidence": "high",
+   "note": "footnote mark dropped"
+  },
+  {
+   "verse": "11",
+   "text": "येनेयं विपुला सृष्टिर्वर्द्धते मम माधव । तथोक्तोऽहं श्रियं देवीमब्रवं प्रहसन्निव ॥",
+   "page_index": 64,
+   "confidence": "high",
+   "note": "footnote mark dropped"
+  },
+  {
+   "verse": "12",
+   "text": "देवीदमखिलं विश्वं सदेवासुरमानुषम् । मोहयित्वा ममादेशात्संसारे विनिपातय ॥",
+   "page_index": 64,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "13",
+   "text": "ज्ञानयोगरतान्दान्तान् ब्रह्मनिष्ठान् ब्रह्मवादिनः । अक्रोधनान् सत्यपरान्दूरतः परिवर्ज्जय ॥",
+   "page_index": 65,
+   "confidence": "high",
+   "note": "footnote mark dropped"
+  },
+  {
+   "verse": "14",
+   "text": "ध्यायिनो निर्म्ममान् शान्तान्धार्म्मिकान्वेदपारगान् । याजिनस्तापसान्विप्रान्दूरतः परिवर्ज्जय ॥",
+   "page_index": 65,
+   "confidence": "medium",
+   "note": "श prints like ग्र; शान्तान्धार्म्मिकान् न्ध sequence read as seen (footnote quotes variant); footnote mark dropped"
+  },
+  {
+   "verse": "15",
+   "text": "वेदवेदान्तविज्ञानसंछिन्नाशेषसंशयान् । महायज्ञपरान्विप्रान्दूरतः परिवर्ज्जय ॥",
+   "page_index": 65,
+   "confidence": "high",
+   "note": "श prints like ग्र"
+  },
+  {
+   "verse": "16",
+   "text": "ये यजन्ति जपैर्होमैर्देवदेवं महेश्वरम् । स्वाध्यायेनेज्यया दूरात्तान् प्रयत्नेन वर्ज्जय ॥",
+   "page_index": 65,
+   "confidence": "high",
+   "note": "footnote mark dropped"
+  },
+  {
+   "verse": "17",
+   "text": "भक्तियोगसमायुक्तानीश्वरार्पितमानसान् । प्राणायामादिषु रतान्दूरात्परिहरामलान् ॥",
+   "page_index": 65,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "18",
+   "text": "प्रणवासक्तमनसो रुद्रजप्यपरायणान् । अथर्व्वशिरसो वेत्तॄन् धर्म्मज्ञान् परिवर्ज्जय ॥",
+   "page_index": 65,
+   "confidence": "medium",
+   "note": "read as अथर्व्वशिरसो + footnote mark + वेत्तॄन्; stray glyph after वेत्तॄन् treated as footnote mark and dropped"
+  },
+  {
+   "verse": "19",
+   "text": "बहुनात्र किमुक्तेन स्वधर्म्मपरिपालकान् । ईश्वराराधनरतान्मन्नियोगान्न मोहय ॥",
+   "page_index": 65,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "20",
+   "text": "एवं मया महामाया प्रेरिता हरिवल्लभा । यथादेशं चकारासौ तस्माल्लक्ष्मीं समर्च्चयेत् ॥",
+   "page_index": 66,
+   "confidence": "high",
+   "note": "क्ष prints like च in लक्ष्मीं"
+  },
+  {
+   "verse": "21",
+   "text": "श्रियं ददाति विपुलां पुष्टिं मेधां यशो बलम् । अर्च्चिता भगवत्पत्नी तस्माल्लक्ष्मीं समर्च्चयेत् ॥",
+   "page_index": 66,
+   "confidence": "high",
+   "note": "श prints like ग्र"
+  },
+  {
+   "verse": "22",
+   "text": "ततोऽसृजत्स भगवान् ब्रह्मा लोकपितामहः । चराचराणि भूतानि यथापूर्व्वं ममाज्ञया ॥",
+   "page_index": 66,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "23",
+   "text": "मरीचिभृग्वङ्गिरसं पुलस्त्यं पुलहं क्रतुम् । दक्षमत्रिं वसिष्ठञ्च सोऽसृजद्योगविद्यया ॥",
+   "page_index": 66,
+   "confidence": "medium",
+   "note": "क्ष in दक्ष prints like च"
+  },
+  {
+   "verse": "24",
+   "text": "नवैते ब्रह्मणः पुत्रा ब्राह्मणा ब्राह्मणोत्तमाः । ब्रह्मवादिन एवैते मरीच्याद्यास्तु साधकाः ॥",
+   "page_index": 66,
+   "confidence": "high",
+   "note": "footnote mark after ब्राह्मणा dropped"
+  },
+  {
+   "verse": "25",
+   "text": "ससर्ज्ज ब्राह्मणान्वक्त्रात् क्षत्रियांश्च भुजाद्विभुः । वैश्यानूरुद्वयाद्देवः पद्भ्यां शूद्रान् पितामहः ॥",
+   "page_index": 66,
+   "confidence": "medium",
+   "note": "पद्भ्यां glyph looks like 'पज्ञ्यां', read as पद्भ्यां; क्ष prints like च"
+  },
+  {
+   "verse": "26",
+   "text": "यज्ञनिष्पत्तये ब्रह्मा शूद्रवर्जं ससर्ज्ज ह । गुप्तये सर्व्वदेवानां तेभ्यो यज्ञो हि निर्बभौ ॥",
+   "page_index": 66,
+   "confidence": "medium",
+   "note": "शूद्रवर्जं looks like single ज; गुप्तये and निर्बभौ conjunct readings uncertain (निर्बभौ printed with reph over ब)"
+  },
+  {
+   "verse": "27",
+   "text": "ऋचो यजूंषि सामानि तथैवाथर्व्वणानि च । ब्रह्मणः सहजं रूपं नित्यैषा शक्तिरव्यया ॥",
+   "page_index": 66,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "28",
+   "text": "अनादिनिधना दिव्या वागुत्सृष्टा स्वयम्भुवा । आदौ वेदमयी भूता यतः सर्व्वाः प्रवृत्तयः ॥",
+   "page_index": 66,
+   "confidence": "high",
+   "note": "footnote mark dropped"
+  },
+  {
+   "verse": "29",
+   "text": "अतोऽन्यानि हि शास्त्राणि पृथिव्यां यानि कानिचित् । न तेषु रमते धीरः पाषण्डी रमते बुधः ॥",
+   "page_index": 67,
+   "confidence": "high",
+   "note": "footnote marks dropped; श prints like ग्र; ण्ड in पाषण्डी prints like ख"
+  },
+  {
+   "verse": "30",
+   "text": "वेदार्थवित्तमैः कार्य्यं यत्स्मृतं मुनिभिः पुरा । स ज्ञेयः परमो धर्म्मो नान्यशास्त्रेषु संस्थितः ॥",
+   "page_index": 67,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "31",
+   "text": "या वेदबाह्याः स्मृतयो याश्च काश्च कुदृष्टयः । सर्व्वास्ता निष्फलाः प्रेत्य तमोनिष्ठा हि ताः स्मृताः ॥",
+   "page_index": 67,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "32",
+   "text": "पूर्वकल्पे प्रजा जाताः सर्व्वबाधाविवर्ज्जिताः । शुद्धान्तःकरणाः सर्व्वाः स्वधर्म्मपरिपालकाः ॥",
+   "page_index": 67,
+   "confidence": "medium",
+   "note": "पूर्वकल्पे looks single व; footnote mark dropped"
+  },
+  {
+   "verse": "33",
+   "text": "ततः कालवशात्तासां रागद्वेषादिकोऽभवत् । अधर्म्मोमुनिशार्दूलाः स्वधर्म्मप्रतिबन्धकः ॥",
+   "page_index": 67,
+   "confidence": "high",
+   "note": "अधर्म्मोमुनिशार्दूलाः printed with no space; श prints like ग्र"
+  },
+  {
+   "verse": "34",
+   "text": "ततः सा सहजा सिद्धिस्तासां नातीव जायते । रजोमात्रात्मिकास्तासां सिद्धयोऽन्यास्तदाभवन् ॥",
+   "page_index": 67,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "35",
+   "text": "तासु क्षीणास्वशेषासु कालयोगेन ताः पुनः । वार्त्तोपायं पुनश्चक्रुर्हस्तसिद्धिञ्च कर्म्मजाम् ॥",
+   "page_index": 67,
+   "confidence": "high",
+   "note": "क्ष prints like च"
+  },
+  {
+   "verse": "36",
+   "text": "ततस्तासां विभुः ब्रह्मा कर्म्माजीवमकल्पयत् । स्वायम्भुवो मनुः पूर्व्वं धर्म्मान्प्रोवाच सर्व्वदृक् ॥",
+   "page_index": 67,
+   "confidence": "high",
+   "note": "printed 'विभुः[§] ब्रह्मा' - visarga kept (footnote mark dropped)"
+  },
+  {
+   "verse": "37",
+   "text": "साक्षात्प्रजापतेर्मूर्त्तिर्निसृष्टा ब्रह्मणो द्विजाः । भृग्वादयस्तद्वदनाच्छुत्वा धर्म्मानथोचिरे ॥",
+   "page_index": 68,
+   "confidence": "medium",
+   "note": "च्छुत्वा: printed with plain ु (no visible ra), read as seen; sense would suggest श्रु; मूर्त्ति spelling (single vs doubled म्म after reph) uncertain; क्ष in साक्षात् prints like च"
+  },
+  {
+   "verse": "38",
+   "text": "यजनं याजनं दानं ब्राह्मणस्य प्रतिग्रहः । अध्यापनं चाध्ययनं षट् कर्म्माणि द्विजोत्तमाः ॥",
+   "page_index": 68,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "39",
+   "text": "दानमध्ययनं यज्ञो धर्म्मः क्षत्रियवैश्ययोः । दण्डोयुद्धं क्षत्रियस्य कृषिर्वैश्यस्य शस्यते ॥",
+   "page_index": 68,
+   "confidence": "high",
+   "note": "दण्डोयुद्धं printed run together (no space)"
+  },
+  {
+   "verse": "40",
+   "text": "शुश्रूषैव द्विजातीनां शूद्राणां धर्म्मसाधनम् । कारुकर्म्म तथाजीवः पाकयज्ञादि धर्म्मतः ॥",
+   "page_index": 68,
+   "confidence": "high",
+   "note": "footnote marks dropped"
+  },
+  {
+   "verse": "41",
+   "text": "ततः स्थितेषु वर्णेषु स्थापयामास चाश्रमान् । गृहस्थञ्च वनस्थञ्च भिक्षुकं ब्रह्मचारिणम् ॥",
+   "page_index": 68,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "42",
+   "text": "अग्नयोऽतिथिशुश्रूषा यज्ञो दानं सुरार्चनम् । गृहस्थस्य समासेन धर्म्मोऽयं मुनिपुंगवाः ॥",
+   "page_index": 68,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "43",
+   "text": "होमोमूलफलाशित्वं स्वाध्यायस्तप एव च । संविभागो यथान्यायं धर्म्मोऽयं वनवासिनाम् ॥",
+   "page_index": 68,
+   "confidence": "high",
+   "note": "होमोमूलफलाशित्वं printed run together"
+  },
+  {
+   "verse": "44",
+   "text": "भैक्षाशनञ्च मौनित्वं तपो ध्यानं विशेषतः । सम्यग्ज्ञानञ्च वैराग्यं धर्म्मोऽयं भिक्षुके मतः ॥",
+   "page_index": 68,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "45",
+   "text": "भिक्षाचर्य्या च शुश्रूषा गुरोः स्वाध्याय एव च । सन्ध्याकर्म्माग्निकार्य्यञ्च धर्म्मोऽयं ब्रह्मचारिणाम् ॥",
+   "page_index": 69,
+   "confidence": "high",
+   "note": "क्ष prints like च; footnote mark dropped"
+  },
+  {
+   "verse": "46",
+   "text": "ब्रह्मचारिवनस्थानां भिक्षुकाणां द्विजोत्तमाः । साधारणं ब्रह्मचर्य्यं प्रोवाच कमलोद्भवः ॥",
+   "page_index": 69,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "47",
+   "text": "ऋतुकालाभिगामित्वं स्वदारेषु न चान्यतः । पर्व्ववर्ज्जं गृहस्थस्य ब्रह्मचर्य्यमुदाहृतम् ॥",
+   "page_index": 69,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "48",
+   "text": "आगर्भधारणादाज्ञा कार्य्या तेनाप्रमादतः । अकुर्व्वाणस्तु विप्रेन्द्रा भ्रूणहा तूपजायते ॥",
+   "page_index": 69,
+   "confidence": "high",
+   "note": "footnote mark dropped"
+  },
+  {
+   "verse": "49",
+   "text": "वेदाभ्यासोऽन्वहं शक्त्या श्राद्धञ्चातिथिपूजनम् । गृहस्थस्य परो धर्म्मो देवताभ्यर्चनं तथा ॥",
+   "page_index": 69,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "50",
+   "text": "वैवाह्यमग्निमिन्धीत सायं प्रातर्यथाविधि । देशान्तरगतो वाथ मृतपत्नीक एव च ॥",
+   "page_index": 69,
+   "confidence": "high",
+   "note": "footnote mark dropped"
+  },
+  {
+   "verse": "51",
+   "text": "त्रयाणामाश्रमाणान्तु गृहस्थो योनिरुच्यते । अन्ये तमुपजीवन्ति तस्माच्छ्रेयान् गृहाश्रमी ॥",
+   "page_index": 69,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "52",
+   "text": "ऐकाश्रम्यं गृहस्थस्य चतुर्णां श्रुतिदर्शनात् । तस्माद्गार्हस्थ्यमेवैकं विज्ञेयं धर्म्मसाधनम् ॥",
+   "page_index": 69,
+   "confidence": "medium",
+   "note": "तस्माद्गार्हस्थ्य: first syllable after तस्मा prints like ज्ञा/न्ना; read as द्गा"
+  },
+  {
+   "verse": "53",
+   "text": "परित्यजेदर्थकामौ यौ स्यातां धर्मवर्जितौ । सर्वलोकविरुद्धञ्च धर्म्ममप्याचरेन्न तु ॥",
+   "page_index": 70,
+   "confidence": "medium",
+   "note": "धर्मवर्जितौ and सर्वलोक look single (no doubled consonant after reph) in print; copied as seen"
+  },
+  {
+   "verse": "54",
+   "text": "धर्म्मात्संजायते ह्यर्थो धर्म्मात्कामोऽभिजायते । धर्म्म एवापवर्गाय तस्माद्धर्म्मं समाश्रयेत् ॥",
+   "page_index": 70,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "55",
+   "text": "धर्म्मश्चार्थश्च कामश्च त्रिवर्गस्त्रिगुणो मतः । सत्त्वं रजस्तमश्चेति तस्माद्धर्म्मं समाश्रयेत् ॥",
+   "page_index": 70,
+   "confidence": "medium",
+   "note": "doubled म in धर्म्मश्च unclear; सत्त्वं printed with त्त्व cluster that looks like ल्व"
+  },
+  {
+   "verse": "56",
+   "text": "ऊर्द्ध्वं गच्छन्ति सत्त्वस्था मध्ये तिष्ठन्ति राजसाः । जघन्यगुणवृत्तिस्था अधो गच्छन्ति तामसाः ॥",
+   "page_index": 70,
+   "confidence": "medium",
+   "note": "ऊर्द्ध्वं conjunct glyph unclear; footnote mark dropped"
+  },
+  {
+   "verse": "57",
+   "text": "यस्मिन्धर्म्मसमायुक्तौ ह्यर्थकामौ व्यवस्थितौ । इहलोके सुखी भूत्वा प्रेत्यानन्त्याय कल्पते ॥",
+   "page_index": 70,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "58",
+   "text": "धर्म्मात्संजायते मोक्षो ह्यर्थात्कामोऽभिजायते । एवं साधनसाध्यत्वं चातुर्विध्ये प्रदर्शितम् ॥",
+   "page_index": 70,
+   "confidence": "high",
+   "note": "चातुर्विध्ये: ending glyph followed by footnote mark; read ये; footnote mark dropped"
+  },
+  {
+   "verse": "59",
+   "text": "य एवं वेद धर्म्मार्थकाममोक्षस्य मानवः । माहात्म्यं चानुतिष्ठेत सचानन्त्याय कल्पते ॥",
+   "page_index": 70,
+   "confidence": "medium",
+   "note": "माहात्म्यं / सचानन्त्याय read as seen; footnote marks dropped"
+  },
+  {
+   "verse": "60",
+   "text": "तस्मादर्थञ्च कामञ्च त्यक्त्वा धर्म्मं समाश्रयेत् । धर्म्मात्संजायते सर्वमित्याहुर्ब्रह्मवादिनः ॥",
+   "page_index": 71,
+   "confidence": "medium",
+   "note": "त्यक्त्वा conjunct prints like त्यत्का (क्ष/क्त glyphs similar); सर्वम् looks single व"
+  },
+  {
+   "verse": "61",
+   "text": "धर्म्मेण धार्यते सर्वं जगत्स्थावरजङ्गमम् । अनादिनिधना शक्तिः सैषा ब्राह्मी द्विजोत्तमाः ॥",
+   "page_index": 71,
+   "confidence": "medium",
+   "note": "धार्यते and सर्वं appear with single य / single व after reph"
+  },
+  {
+   "verse": "62",
+   "text": "कर्म्मणा प्राप्यते धर्म्मो ज्ञानेन च न संशयः । तस्माज्ज्ञानेन सहितं कर्मयोगं समाश्रयेत् ॥",
+   "page_index": 71,
+   "confidence": "medium",
+   "note": "कर्मयोगं looks single म; footnote mark dropped"
+  },
+  {
+   "verse": "63",
+   "text": "प्रवृत्तञ्च निवृत्तञ्च द्विविधं कर्म्म वैदिकम् । ज्ञानपूर्वं निवृत्तं स्यात्प्रवृत्तं यदतोऽन्यथा ॥",
+   "page_index": 71,
+   "confidence": "medium",
+   "note": "ज्ञानपूर्वं looks single व"
+  },
+  {
+   "verse": "64",
+   "text": "निवृत्तं सेवमानस्तु याति तत्परमं पदम् । तस्मान्निवृत्तं संसेव्यमन्यथा संसरेत्पुनः ॥",
+   "page_index": 71,
+   "confidence": "high",
+   "note": "footnote mark dropped"
+  },
+  {
+   "verse": "65",
+   "text": "क्षमा दमो दया दानमलोभस्त्याग एव च । आर्जवं चानसूया च तीर्थानुसरणं तथा ॥",
+   "page_index": 71,
+   "confidence": "high",
+   "note": "क्ष prints like च"
+  },
+  {
+   "verse": "66",
+   "text": "सत्यं सन्तोषमास्तिक्यं श्रद्धा चेन्द्रियनिग्रहः । देवताभ्यर्चनं पूजा ब्राह्मणानां विशेषतः ॥",
+   "page_index": 71,
+   "confidence": "high",
+   "note": "footnote mark between सन्तोष and आस्तिक्यं dropped (no space printed)"
+  },
+  {
+   "verse": "67",
+   "text": "अहिंसा प्रियवादित्वमपैशून्यमकल्कता । सामासिकमिमं धर्म्मं चातुर्वर्ण्येऽब्रवीन्मनुः ॥",
+   "page_index": 71,
+   "confidence": "high",
+   "note": "footnote mark dropped"
+  },
+  {
+   "verse": "68",
+   "text": "प्राजापत्यं ब्राह्मणानां स्मृतं स्थानं क्रियावताम् । स्थानमैन्द्रं क्षत्रियाणां संग्रामेष्वपलायिनाम् ॥",
+   "page_index": 72,
+   "confidence": "high",
+   "note": "क्ष prints like च"
+  },
+  {
+   "verse": "69",
+   "text": "वैश्यानां मारुतं स्थानं स्वधर्म्ममनुवर्त्तताम् । गान्धर्वं शूद्रजातीनां परिचारेण वर्त्तताम् ॥",
+   "page_index": 72,
+   "confidence": "medium",
+   "note": "footnote marks dropped; गान्धर्वं looks single व"
+  },
+  {
+   "verse": "70",
+   "text": "अष्टाशीतिसहस्राणामृषीणामूर्द्ध्वरेतसाम् । स्मृतं तेषान्तु यत्स्थानं तदेव गुरुवासिनाम् ॥",
+   "page_index": 72,
+   "confidence": "high",
+   "note": "footnote mark dropped"
+  },
+  {
+   "verse": "71",
+   "text": "सप्तर्षीणान्तु यत्स्थानं स्मृतं तद्वै वनौकसाम् । प्राजापत्यं गृहस्थानां स्थानमुक्तं स्वयंभुवा ॥",
+   "page_index": 72,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "72",
+   "text": "यतीनां जितचित्तानां न्यासिनामूर्द्ध्वरेतसाम् । हैरण्यगर्भं तत्स्थानं यस्मान्नावर्त्तते पुनः ॥",
+   "page_index": 72,
+   "confidence": "high",
+   "note": "न्यासिनां[mark]ऊर्द्ध्वरेतसाम्: a footnote mark sits between the words and the join is unclear (printed न्यासिना⁂मूर्द्ध्वरेतसाम्); read as two words; footnote mark dropped"
+  },
+  {
+   "verse": "73",
+   "text": "योगिनाममृतं स्थानं व्योमाख्यं परमक्षरम् । आनन्दमैश्वरं धाम सा काष्ठा सा परा गतिः ॥",
+   "page_index": 72,
+   "confidence": "medium",
+   "note": "योगिनाममृतं: third-fourth syllables print like 'मम्ृत'; परमक्षरम् क्ष prints like च; footnote mark dropped"
+  },
+  {
+   "verse": "0b",
+   "text": "ऋषय ऊचुः ।",
+   "page_index": 72,
+   "confidence": "high",
+   "note": "speaker line after verse 73 (printed 'ऋषय ऊचुः')"
+  },
+  {
+   "verse": "74",
+   "text": "भगवन्देवतारिघ्न हिरण्याक्षनिषूदन । चत्वारो ह्याश्रमाः प्रोक्ता योगिनामेक उच्यते ॥",
+   "page_index": 72,
+   "confidence": "high",
+   "note": "क्ष prints like च"
+  },
+  {
+   "verse": "0c",
+   "text": "कूर्म्म उवाच ।",
+   "page_index": 73,
+   "confidence": "high",
+   "note": "speaker line after verse 74"
+  },
+  {
+   "verse": "75",
+   "text": "सर्वकर्माणि संन्यस्य समाधिमचलं श्रितः । य आस्ते निश्चलो योगी स सन्यासी च पञ्चमः ॥",
+   "page_index": 73,
+   "confidence": "medium",
+   "note": "सर्वकर्माणि looks single म (no doubled म्म); सन्यासी: conjunct न्य/न्न्य unclear; footnote mark dropped"
+  },
+  {
+   "verse": "76",
+   "text": "सर्वेषामाश्रमाणान्तु द्वैविध्यं श्रुतिदर्शितम् । ब्रह्मचार्य्युपकुर्वाणो नैष्ठिको ब्रह्मतत्परः ॥",
+   "page_index": 73,
+   "confidence": "high",
+   "note": "footnote mark dropped"
+  },
+  {
+   "verse": "77",
+   "text": "योऽधीत्य विधिवद्वेदान् गृहस्थाश्रममाव्रजेत् । उपकुर्वाणको ज्ञेयो नैष्ठिको मरणान्तिकः ॥",
+   "page_index": 73,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "78",
+   "text": "उदासीनः साधकश्च गृहस्थो द्विविधो भवेत् । कुटुम्बभरणायत्तः साधकोऽसौ गृही भवेत् ॥",
+   "page_index": 73,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "79",
+   "text": "ऋणानि त्रीण्यपाकृत्य त्यक्त्वा भार्याधनादिकम् । एकाकी यस्तु विचरेदुदासीनः स मौक्षिकः ॥",
+   "page_index": 73,
+   "confidence": "medium",
+   "note": "भार्याधनादिकम् looks single य; क्ष prints like च; footnote mark dropped"
+  },
+  {
+   "verse": "80",
+   "text": "तपस्तप्यति योऽरण्ये यजेद्देवान् जुहोति च । स्वाध्याये चैव निरतो वनस्थस्तापसोमतः ॥",
+   "page_index": 73,
+   "confidence": "high",
+   "note": "तापसोमतः printed run together"
+  },
+  {
+   "verse": "81",
+   "text": "तपसा कर्षितोऽत्यर्थं यस्तु ध्यानपरो भवेत् । सान्यासिकः स विज्ञेयो वानप्रस्थाश्रमे स्थितः ॥",
+   "page_index": 73,
+   "confidence": "high",
+   "note": "सान्यासिकः: conjunct looks like न्य (single न); read as seen"
+  },
+  {
+   "verse": "82",
+   "text": "योगाभ्यासरतो नित्यमारुरुक्षुर्जितेन्द्रियः । ज्ञानाय वर्त्तते भिक्षुः प्रोच्यते पारमेष्ठिकः ॥",
+   "page_index": 73,
+   "confidence": "high",
+   "note": "क्ष prints like च; footnote mark dropped"
+  },
+  {
+   "verse": "83",
+   "text": "यस्त्वात्मरतिरेव स्यान्नित्यतृप्तो महामुनिः । सम्यग्दर्शनसम्पन्नः स योगी भिक्षुरुच्यते ॥",
+   "page_index": 74,
+   "confidence": "high",
+   "note": "first word: स्त्वा conjunct read as seen"
+  },
+  {
+   "verse": "84",
+   "text": "ज्ञानसन्न्यासिनः केचिद्वेदसन्न्यासिनोऽपरे । कर्म्मसन्न्यासिनः केचित्त्रिविधाः पारमेष्ठिकाः ॥",
+   "page_index": 74,
+   "confidence": "medium",
+   "note": "सन्न्यासिन conjunct न्न्य/न्य unclear (looks like न्या with extra stroke); केचिद्वेद printed with द्वे ligature"
+  },
+  {
+   "verse": "85",
+   "text": "योगी च त्रिविधो ज्ञेयो भौतिकः सांख्य एव च । तृतीयो ह्याश्रमी प्रोक्तो योगमुत्तममाश्रितः ॥",
+   "page_index": 74,
+   "confidence": "high",
+   "note": "footnote mark dropped"
+  },
+  {
+   "verse": "86",
+   "text": "प्रथमा भावना पूर्वं सांख्ये त्वचरभावना । तृतीये चान्तिमा प्रोक्ता भावना पारमेश्वरी ॥",
+   "page_index": 74,
+   "confidence": "medium",
+   "note": "त्वचरभावना glyph (च-like) read as seen; footnote marks dropped"
+  },
+  {
+   "verse": "87",
+   "text": "तस्मादेतद्विजानीध्वमाश्रमाणां चतुष्टयम् । सर्वेषु वेदशास्त्रेषु पञ्चमो नोपपद्यते ॥",
+   "page_index": 74,
+   "confidence": "high",
+   "note": "footnote mark dropped"
+  },
+  {
+   "verse": "88",
+   "text": "एवं वर्णाश्रमान् सृष्ट्वा देवदेवो निरञ्जनः । दक्षादीन्प्राह विश्वात्मा सृजध्वं विविधाः प्रजाः ॥",
+   "page_index": 74,
+   "confidence": "medium",
+   "note": "footnote mark dropped; दक्षादीन् क्ष prints like च"
+  },
+  {
+   "verse": "89",
+   "text": "ब्रह्मणो वचनात्पुत्रा दक्षाद्या मुनिसत्तमाः । असृजन्त प्रजाः सर्वे देवमानुषपूर्वकाः ॥",
+   "page_index": 74,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "90",
+   "text": "इत्येवं भगवान् ब्रह्मा स्रष्टृत्वे संव्यवस्थितः । अहं वै पालयामीदं संहरिष्यति शूलभृत् ॥",
+   "page_index": 74,
+   "confidence": "high",
+   "note": "footnote mark dropped"
+  },
+  {
+   "verse": "91",
+   "text": "तिस्रस्तु मूर्त्तयः प्रोक्ता ब्रह्मविष्णुमहेश्वराः । रजःसत्त्वतमोयोगात्परस्य परमात्मनः ॥",
+   "page_index": 75,
+   "confidence": "high",
+   "note": "रजःसत्त्वतमो printed run together; footnote marks none"
+  },
+  {
+   "verse": "92",
+   "text": "अन्योन्यमनुरक्तास्ते ह्यन्योन्यमुपजीविनः । अन्योन्यप्रणताश्चैव लीलया परमेश्वराः ॥",
+   "page_index": 75,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "93",
+   "text": "ब्राह्मी माहेश्वरी चैव तथैवाचरभावना । तिस्रस्तु भावना रुद्रे वर्त्तन्ते सततं द्विजाः ॥",
+   "page_index": 75,
+   "confidence": "medium",
+   "note": "अचरभावना: the glyph after व/ऽ prints like च (क्ष-type face); read as seen"
+  },
+  {
+   "verse": "94",
+   "text": "प्रवर्त्तते मध्यजस्रमाद्या त्वचरभावना । द्वितीया ब्रह्मणः प्रोक्ता देवस्याचरभावना ॥",
+   "page_index": 75,
+   "confidence": "medium",
+   "note": "त्वचरभावना and मध्यजस्र read as seen; footnote mark dropped (footnote cites variant 'चाचरभावना')"
+  },
+  {
+   "verse": "95",
+   "text": "अहं चैव महादेवो न भिन्नः परमार्थतः । विभज्य स्वेच्छयात्मानं सोऽन्तर्यामीश्वरः स्थितः ॥",
+   "page_index": 75,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "96",
+   "text": "त्रैलोक्यमखिलं स्रष्टुं सदेवासुरमानुषम् । पुरुषः परतोऽव्यक्तो ब्रह्मत्वं समुपागमत् ॥",
+   "page_index": 75,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "97",
+   "text": "तस्माद्ब्रह्मा महादेवो विष्णुर्विश्वेश्वरः परः । एकस्यैव स्मृतास्तिस्रस्तद्वत्कार्य्यवशात्प्रभोः ॥",
+   "page_index": 75,
+   "confidence": "medium",
+   "note": "तद्वत्कार्य्य glyph run unclear (looks like 'तद्वल्कार्य')"
+  },
+  {
+   "verse": "98",
+   "text": "तस्मात्सर्व्वप्रयत्नेन वन्द्याः पूज्या विशेषतः । यदीच्छेदचिरात्स्थानं यत्तन्मोक्षाख्यमव्ययम् ॥",
+   "page_index": 75,
+   "confidence": "medium",
+   "note": "क्ष prints like च in मोक्षाख्यम्; यदीच्छेद conjunct च्छ read as seen"
+  },
+  {
+   "verse": "99",
+   "text": "वर्णाश्रमप्रयुक्तेन धर्म्मेण प्रीतिसंयुतः । पूजयेद्भावयुक्तेन यावज्जीवं प्रतिज्ञया ॥",
+   "page_index": 75,
+   "confidence": "medium",
+   "note": "पूजयेद्भावयुक्तेन: conjunct after पूजये prints like द्ञ; ज्ञ in प्रतिज्ञया read as seen"
+  },
+  {
+   "verse": "100",
+   "text": "चतुर्णामाश्रमाणान्तु प्रोक्तोऽयं विधिवद्द्विजाः । आश्रमो वैष्णवो ब्राह्मो हराश्रम इति त्रयः ॥",
+   "page_index": 76,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "101",
+   "text": "तल्लिङ्गधारी नियतं तद्भक्तजनवत्सलः । ध्यायेदथार्च्चयेदेतान् ब्रह्मविद्यापरायणः ॥",
+   "page_index": 76,
+   "confidence": "medium",
+   "note": "footnote mark after नियतं dropped (footnote: सततमिति B); first line तद्भक्त glyph read as seen"
+  },
+  {
+   "verse": "102",
+   "text": "सवषामेव भक्तानां शम्भोर्लिङ्गमनुत्तमम् । सितेन भस्मना कार्यं ललाटे तु त्रिपुंड्रकम् ॥",
+   "page_index": 76,
+   "confidence": "low",
+   "note": "सवषामेव printed without visible reph/ए: copied as seen (expected सर्वेषामेव); त्रिपुंड्रकम् anusvara + ड्र as seen"
+  },
+  {
+   "verse": "103",
+   "text": "यस्तु नारायणं देवं प्रपन्नः परमं पदम् । धारयेत्सर्व्वदा शूलं ललाटे गन्धवारिभिः ॥",
+   "page_index": 76,
+   "confidence": "high",
+   "note": "footnote mark (†) after देवं not visible in main line; शूलं श prints like ग्र"
+  },
+  {
+   "verse": "104",
+   "text": "प्रपन्ना ये जगद्वीजं ब्रह्माणं परमेष्ठिनम् । तेषां ललाटे तिलकं धारणीयन्तु सर्वदा ॥",
+   "page_index": 76,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "105",
+   "text": "योऽसावनादिर्भूतादिः कालात्मासौ धृतो भवेत् । उपर्य्यधोभावयोगात्त्रिपुंड्रस्य तु धारणात् ॥",
+   "page_index": 76,
+   "confidence": "high",
+   "note": "footnote mark dropped; त्रिपुंड्रस्य anusvara form as seen"
+  },
+  {
+   "verse": "106",
+   "text": "यत्तत्प्रधानं त्रिगुणं ब्रह्मविष्णुशिवात्मकम् । धृतन्तु शूलधरणाद्भवत्येव न संशयः ॥",
+   "page_index": 76,
+   "confidence": "high",
+   "note": "footnote mark dropped; श prints like ग्र"
+  },
+  {
+   "verse": "107",
+   "text": "ब्रह्मतेजोमयं शुक्लं यदेतन्मण्डलं रवेः । भवत्येव धृतं स्थानमैश्वरं तिलके कृते ॥",
+   "page_index": 76,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "verse": "108",
+   "text": "तस्मात्कार्यं त्रिशूलाङ्कं तथा च तिलकं शुभम् । आयुष्यञ्चापि भक्तानां त्रयाणां विधिपूर्व्वकम् ॥",
+   "page_index": 77,
+   "confidence": "high",
+   "note": "footnote mark dropped"
+  },
+  {
+   "verse": "109",
+   "text": "यजेत जुहुयादग्नौ जपेद्द्याज्जितेन्द्रियः । शान्तो दान्तो जितक्रोधो वर्णाश्रमविधानवित् ॥",
+   "page_index": 77,
+   "confidence": "medium",
+   "note": "जपेद्द्या conjunct unclear; श prints like ग्र"
+  },
+  {
+   "verse": "110",
+   "text": "एवं परिचरेद्देवान् यावज्जीवं समाहितः । तेषां स्वस्थानमचलं सोऽचिरादधिगच्छति ॥",
+   "page_index": 77,
+   "confidence": "high",
+   "note": "footnote mark dropped; printed 'सोऽचिरादधिगच्छति'"
+  },
+  {
+   "verse": "colophon",
+   "text": "इति श्रीकूर्म्मपुराणे वर्णाश्रमवर्णनं नाम द्वितीयोऽध्यायः ।",
+   "page_index": 77,
+   "confidence": "high",
+   "note": "colophon, smaller type"
+  }
+ ]
+}

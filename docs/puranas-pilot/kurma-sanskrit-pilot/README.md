@@ -5,3 +5,6 @@ Source: *Kūrmapurāṇam*, ed. Nilmani Mukhopadhyaya Nyayalankara, Bibliotheca 
 
 ## Chapter 1 arbiter result
 Arbiters looked at the page image for each of the 106 differing spots (`arbk_out_1.json`, `arbk_out_2.json`; `arbk_out_redo.json` re-did 23 spots the first arbiter could not view). Most differences are the press's doubled consonants after reph (कूर्म्म, सर्व्व) where reader B followed the print and reader A normalised. `kurma_ch1_checked.json` (built by `assemble_kurma1.py`): **110 of 131 verses settled** (63 identical in both readings, 37 where every call picks B, 10 where every call picks A); **21 unresolved** (low-confidence or mixed A/B calls; both readings kept, a human or a better look is needed; two verses, 41 and 43, have glyphs the arbiter could not parse). Single-edition check: catches reading slips, not damage in the print. Not for publication.
+
+## Chapters 2–3 (images n63–n82)
+Two blind readings each (`kurma_ch2_A/B.json`: 110 verses, n63–n77; `kurma_ch3_A/B.json`: 28 verses, n78–n82). Verse comparison: ch2 70 of 110 identical, 40 differ (56 spots); ch3 17 of 28 identical, 11 differ (12 spots) (`arbiter_input_kurma23.json`). Arbiter pass pending. Not for publication.
