@@ -1,0 +1,281 @@
+[
+ {
+  "chapter": 2,
+  "verse": "1",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "सर्व्वें",
+  "confidence": "low",
+  "note": "print shows a vowel sign e/ai plus a dot above; not plain anusvara; B closer; reph+doubled व"
+ },
+ {
+  "chapter": 2,
+  "verse": "2",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "उपवृंहितम्",
+  "confidence": "high",
+  "note": "व open-topped, not ब"
+ },
+ {
+  "chapter": 2,
+  "verse": "5",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "आत्मनो¶ मुनि",
+  "confidence": "high",
+  "note": "¶ is a footnote mark, no letters"
+ },
+ {
+  "chapter": 2,
+  "verse": "13",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "ब्रह्निष्ठा (conjunct ह्नि)",
+  "confidence": "low",
+  "note": "only one conjunct glyph between ब्र and ष्ठा, no separate न+ि visible; म not clearly present; A needs extra glyph"
+ },
+ {
+  "chapter": 2,
+  "verse": "16",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "ध्यायेनेज्यया",
+  "confidence": "high",
+  "note": "ने visible"
+ },
+ {
+  "chapter": 2,
+  "verse": "25",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "ससर्ज्ज",
+  "confidence": "high",
+  "note": "doubled ज्ज visible"
+ },
+ {
+  "chapter": 2,
+  "verse": "25",
+  "spot_index": 1,
+  "decision": "A",
+  "own_reading": "भुजाद्विभुः",
+  "confidence": "medium",
+  "note": "द्वि conjunct"
+ },
+ {
+  "chapter": 2,
+  "verse": "26",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "वर्जं",
+  "confidence": "high",
+  "note": "single ज under reph"
+ },
+ {
+  "chapter": 2,
+  "verse": "32",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "पूर्वकल्पे",
+  "confidence": "high",
+  "note": "single व"
+ },
+ {
+  "chapter": 2,
+  "verse": "37",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "तेर्मूर्त्ति",
+  "confidence": "medium",
+  "note": "single म with reph"
+ },
+ {
+  "chapter": 2,
+  "verse": "37",
+  "spot_index": 1,
+  "decision": "A",
+  "own_reading": "च्छुत्वा",
+  "confidence": "low",
+  "note": "lower hook looks like ु curl, no clear र stroke"
+ },
+ {
+  "chapter": 2,
+  "verse": "42",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "सुरार्चनम्",
+  "confidence": "medium",
+  "note": "single च under reph"
+ },
+ {
+  "chapter": 2,
+  "verse": "49",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "भ्यर्चनं",
+  "confidence": "high",
+  "note": "single च"
+ },
+ {
+  "chapter": 2,
+  "verse": "52",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "धर्मसाधनम्",
+  "confidence": "high",
+  "note": "single म"
+ },
+ {
+  "chapter": 2,
+  "verse": "53",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "वर्जितौ",
+  "confidence": "high",
+  "note": "single ज"
+ },
+ {
+  "chapter": 2,
+  "verse": "53",
+  "spot_index": 1,
+  "decision": "A",
+  "own_reading": "सर्वलोक",
+  "confidence": "high",
+  "note": "single व"
+ },
+ {
+  "chapter": 2,
+  "verse": "58",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "चातुर्विध्ये",
+  "confidence": "high",
+  "note": "े sign, not ं"
+ },
+ {
+  "chapter": 2,
+  "verse": "59",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "ात्म्यं चानु",
+  "confidence": "high",
+  "note": "anusvara then च"
+ },
+ {
+  "chapter": 2,
+  "verse": "60",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "सर्वमित्या",
+  "confidence": "high",
+  "note": "single व"
+ },
+ {
+  "chapter": 2,
+  "verse": "61",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "धार्यते",
+  "confidence": "medium",
+  "note": "single य"
+ },
+ {
+  "chapter": 2,
+  "verse": "61",
+  "spot_index": 1,
+  "decision": "A",
+  "own_reading": "सर्वं",
+  "confidence": "high",
+  "note": "single व"
+ },
+ {
+  "chapter": 2,
+  "verse": "62",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "कर्मयोगं",
+  "confidence": "high",
+  "note": "single म"
+ },
+ {
+  "chapter": 2,
+  "verse": "63",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "ज्ञानपूर्वं",
+  "confidence": "high",
+  "note": "single व"
+ },
+ {
+  "chapter": 2,
+  "verse": "66",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "भ्यर्चनं",
+  "confidence": "high",
+  "note": "single च"
+ },
+ {
+  "chapter": 2,
+  "verse": "69",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "गान्धर्वं",
+  "confidence": "high",
+  "note": "single व"
+ },
+ {
+  "chapter": 2,
+  "verse": "71",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "स्वयंभुवा",
+  "confidence": "high",
+  "note": "anusvara"
+ },
+ {
+  "chapter": 2,
+  "verse": "75",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "श्रितः",
+  "confidence": "high",
+  "note": "श्रि not स्थि"
+ },
+ {
+  "chapter": 2,
+  "verse": "75",
+  "spot_index": 1,
+  "decision": "A",
+  "own_reading": "श्रितः",
+  "confidence": "high",
+  "note": "same word"
+ },
+ {
+  "chapter": 2,
+  "verse": "76",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "सर्वेषाम्",
+  "confidence": "high",
+  "note": "single व"
+ },
+ {
+  "chapter": 2,
+  "verse": "76",
+  "spot_index": 1,
+  "decision": "A",
+  "own_reading": "पकुर्वाणो",
+  "confidence": "high",
+  "note": "single व"
+ },
+ {
+  "chapter": 2,
+  "verse": "77",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "पकुर्व्वाणको",
+  "confidence": "medium",
+  "note": "doubled व्व visible"
+ }
+]

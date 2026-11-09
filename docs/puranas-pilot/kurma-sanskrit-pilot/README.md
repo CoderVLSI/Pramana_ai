@@ -8,3 +8,6 @@ Arbiters looked at the page image for each of the 106 differing spots (`arbk_out
 
 ## Chapters 2–3 (images n63–n82)
 Two blind readings each (`kurma_ch2_A/B.json`: 110 verses, n63–n77; `kurma_ch3_A/B.json`: 28 verses, n78–n82). Verse comparison: ch2 70 of 110 identical, 40 differ (56 spots); ch3 17 of 28 identical, 11 differ (12 spots) (`arbiter_input_kurma23.json`). Arbiter pass pending. Not for publication.
+
+## Chapters 2–3 arbiter result
+Arbiters looked at the page image for all 68 differing spots (`arbk23_out_1.json`, `arbk23_out_2.json`): reader A right in 54, B in 14, none unclear or unviewable. Unlike chapter 1, most of this stretch prints a single consonant after reph, so single-versus-doubled has to be judged spot by spot. `kurma_ch23_checked.json` (built by `assemble_kurma23.py`): **chapter 2: 105 of 110 verses settled, 5 unresolved; chapter 3: all 28 settled**. Chapters 1–3 together: 243 of 269 verses settled. Single-edition check: catches reading slips, not damage in the print. Not for publication.

@@ -1,0 +1,335 @@
+[
+ {
+  "chapter": 2,
+  "verse": "79",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "भार्याधना",
+  "confidence": "high",
+  "note": "single य visible in भार्याधनादिकम्"
+ },
+ {
+  "chapter": 2,
+  "verse": "79",
+  "spot_index": 1,
+  "decision": "A",
+  "own_reading": "समौक्षिकः",
+  "confidence": "medium",
+  "note": "औ mark (two strokes) over म; क्ष glyph"
+ },
+ {
+  "chapter": 2,
+  "verse": "84",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "सन्यासि",
+  "confidence": "medium",
+  "note": "single न्य conjunct in ज्ञानसन्यासिनः"
+ },
+ {
+  "chapter": 2,
+  "verse": "84",
+  "spot_index": 1,
+  "decision": "B",
+  "own_reading": "सन्यासि",
+  "confidence": "medium",
+  "note": "single न्य conjunct in वेदसन्यासिनः"
+ },
+ {
+  "chapter": 2,
+  "verse": "86",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "पूर्वं",
+  "confidence": "high",
+  "note": "single व under reph"
+ },
+ {
+  "chapter": 2,
+  "verse": "86",
+  "spot_index": 1,
+  "decision": "B",
+  "own_reading": "त्वक्षरभावना",
+  "confidence": "medium",
+  "note": "glyph identical to क्ष glyph (box with tail) seen in मौक्षिकः"
+ },
+ {
+  "chapter": 2,
+  "verse": "87",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "सर्व्वेषु",
+  "confidence": "medium",
+  "note": "two bowls (व्व) under reph in सर्व्वेषु"
+ },
+ {
+  "chapter": 2,
+  "verse": "89",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "सर्वे",
+  "confidence": "high",
+  "note": "single व"
+ },
+ {
+  "chapter": 2,
+  "verse": "89",
+  "spot_index": 1,
+  "decision": "A",
+  "own_reading": "पूर्वकाः",
+  "confidence": "high",
+  "note": "single व"
+ },
+ {
+  "chapter": 2,
+  "verse": "93",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "तथैवाक्षरभावना",
+  "confidence": "medium",
+  "note": "क्ष glyph, not plain च"
+ },
+ {
+  "chapter": 2,
+  "verse": "94",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "क्षर",
+  "confidence": "medium",
+  "note": "क्ष glyph in स्वक्षरभावना (line ending with footnote asterisk); preceding letters printed look like 'द्या स्व' not exactly context but differing letters clearly क्ष"
+ },
+ {
+  "chapter": 2,
+  "verse": "94",
+  "spot_index": 1,
+  "decision": "B",
+  "own_reading": "क्षर",
+  "confidence": "medium",
+  "note": "क्ष glyph in देवस्याक्षरभावना"
+ },
+ {
+  "chapter": 2,
+  "verse": "97",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "स्रस्तद्वत्कार्",
+  "confidence": "medium",
+  "note": "print: तिस्रस्तद्वत्कार्य; द्व present"
+ },
+ {
+  "chapter": 2,
+  "verse": "98",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "पूज्याः विशेषतः",
+  "confidence": "high",
+  "note": "visarga after पूज्या clearly printed"
+ },
+ {
+  "chapter": 2,
+  "verse": "101",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "ध्यायेदथार्च",
+  "confidence": "medium",
+  "note": "no य glyph between द and थ; printed ध्यायेदथार्चयेदेतान्"
+ },
+ {
+  "chapter": 2,
+  "verse": "102",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "सवषामेव",
+  "confidence": "high",
+  "note": "print has स व ष with no reph and no e-matra on व"
+ },
+ {
+  "chapter": 2,
+  "verse": "102",
+  "spot_index": 1,
+  "decision": "A",
+  "own_reading": "सवषामेव",
+  "confidence": "high",
+  "note": "same word, same print"
+ },
+ {
+  "chapter": 2,
+  "verse": "102",
+  "spot_index": 2,
+  "decision": "A",
+  "own_reading": "कार्यं",
+  "confidence": "high",
+  "note": "single य"
+ },
+ {
+  "chapter": 2,
+  "verse": "104",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "जगद्वीजं",
+  "confidence": "medium",
+  "note": "small closed loop of व visible in ligature; not flat ब"
+ },
+ {
+  "chapter": 2,
+  "verse": "104",
+  "spot_index": 1,
+  "decision": "A",
+  "own_reading": "सर्वदा",
+  "confidence": "high",
+  "note": "single व"
+ },
+ {
+  "chapter": 2,
+  "verse": "108",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "कार्यं",
+  "confidence": "high",
+  "note": "single य"
+ },
+ {
+  "chapter": 2,
+  "verse": "108",
+  "spot_index": 1,
+  "decision": "A",
+  "own_reading": "त्रयाणां",
+  "confidence": "high",
+  "note": "त्र glyph identical to त्र in त्रिशूल"
+ },
+ {
+  "chapter": 2,
+  "verse": "108",
+  "spot_index": 2,
+  "decision": "A",
+  "own_reading": "त्रयाणां",
+  "confidence": "high",
+  "note": "same word"
+ },
+ {
+  "chapter": 2,
+  "verse": "109",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "पेद्द्या",
+  "confidence": "low",
+  "note": "two glyphs (tailed द + द्या/ध्या-like ligature) before ा; B would have a single ligature. Ligature identity uncertain"
+ },
+ {
+  "chapter": 2,
+  "verse": "110",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "रादधि",
+  "confidence": "medium",
+  "note": "separate tailed द then full ध, not a द्ध conjunct"
+ },
+ {
+  "chapter": 3,
+  "verse": "6",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "निष्ट्वापि",
+  "confidence": "medium",
+  "note": "stacked ट over व ligature, different from ष्ठ glyph in नैष्ठिको"
+ },
+ {
+  "chapter": 3,
+  "verse": "8",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "चर्यञ्च",
+  "confidence": "high",
+  "note": "single य"
+ },
+ {
+  "chapter": 3,
+  "verse": "10",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "सेद्विजः",
+  "confidence": "high",
+  "note": "single द्वि ligature, no extra द"
+ },
+ {
+  "chapter": 3,
+  "verse": "13",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "धर्मपालको",
+  "confidence": "high",
+  "note": "single म"
+ },
+ {
+  "chapter": 3,
+  "verse": "14",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "कुर्वाणो",
+  "confidence": "high",
+  "note": "single व"
+ },
+ {
+  "chapter": 3,
+  "verse": "16",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "सर्वमेतद्",
+  "confidence": "high",
+  "note": "single व"
+ },
+ {
+  "chapter": 3,
+  "verse": "18",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "यद्वा",
+  "confidence": "high",
+  "note": "द्व ligature present in यद्वा फलानां"
+ },
+ {
+  "chapter": 3,
+  "verse": "18",
+  "spot_index": 1,
+  "decision": "A",
+  "own_reading": "प्रकुर्यात्",
+  "confidence": "high",
+  "note": "single य"
+ },
+ {
+  "chapter": 3,
+  "verse": "20",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "कुर्यान्न",
+  "confidence": "high",
+  "note": "single य"
+ },
+ {
+  "chapter": 3,
+  "verse": "21",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "सर्व",
+  "confidence": "high",
+  "note": "single व"
+ },
+ {
+  "chapter": 3,
+  "verse": "24",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "सर्व",
+  "confidence": "high",
+  "note": "single व (both occurrences of तस्मात्सर्वप्रयत्नेन on p81 checked)"
+ },
+ {
+  "chapter": 3,
+  "verse": "28",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "सर्वं",
+  "confidence": "high",
+  "note": "single व"
+ }
+]
