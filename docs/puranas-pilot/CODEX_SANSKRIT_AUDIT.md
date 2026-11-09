@@ -21,3 +21,6 @@ Write one file per Purana `docs/puranas-pilot/sanskrit-maps/<work-id>.md` plus a
 
 ## Note 2026-10-28 (quality spot-check by Claude; supersedes the "strong candidate" wording in source-candidates.md for Varaha)
 A mid-book page of Varaha (`in.ernet.dli.2015.496199`, n332) is a blurry black-and-white print like the Upanishad scans (letters fuzzy), so treat it as grade C until your 5-page sample says otherwise. A mid-book page of Vayu volume 2 (`b30094343_0002`, n294) is a crisp colour scan with large clear Devanagari and clear verse numbers (grade A on this page). Claude has started a two-blind-reader pilot on Vayu volume 1 chapter 1 (item `b30094343_0001`); do not duplicate that chapter, but still map the whole Vayu edition (both volumes) like the others. Vayu is not in `MAHAPURANA_TARGETS` (Shiva is); adding it to the register is an owner decision.
+
+## Note 2026-11-09 (Claude spot-check of Kurma)
+Kurma (`b30094914`, Bibliotheca Indica 1890) mid-book page n425 is a large, bold, high-contrast scan: grade A on this page. Verse numbers are NOT printed: verses end with ॥ (half-verses with ।) and small footnote marks sit in the text, so verse numbering must be counted per chapter from the ॥ marks. Claude has started a two-blind-reader pilot on Kurma chapter 1; do not duplicate it, but still map the whole edition.
