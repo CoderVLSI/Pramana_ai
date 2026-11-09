@@ -1,0 +1,4 @@
+# Kurma Purana (Sanskrit) — Chapter 1 pilot: two blind readings of one scan — NOT FOR PUBLICATION
+
+Source: *Kūrmapurāṇam*, ed. Nilmani Mukhopadhyaya Nyayalankara, Bibliotheca Indica, Calcutta 1890, archive.org `b30094914`; chapter 1 on images n44–n62 (colophon at foot of n62). Editor's death year UNCONFIRMED; India rights unresolved. Verse numbers are not printed: verses are numbered here by counting the ॥ endings within the chapter (131 verses), speaker lines are `0a…`.
+`kurma_ch1_A.json` (143 entries: 119 high / 22 medium / 2 low) and `kurma_ch1_B.json` (144 entries: 128 high / 13 medium / 3 low). Whole-chapter verse comparison (spaces, dandas, digits ignored): 63 of 131 verses identical; 68 verses with 106 differing spots (`arbiter_input_kurma1.json`). Many spots are likely spelling conventions (doubled consonants after reph etc.). Arbiter pass pending. Single-edition check: catches reading slips, not damage in the print.
