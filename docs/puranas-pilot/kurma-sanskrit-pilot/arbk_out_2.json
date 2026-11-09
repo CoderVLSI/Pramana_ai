@@ -1,0 +1,418 @@
+[
+ {
+  "verse": "77",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "सर्व्वभूताना",
+  "confidence": "medium",
+  "note": "doubled consonant glyph printed"
+ },
+ {
+  "verse": "78",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "सर्व्वस्याधा",
+  "confidence": "medium",
+  "note": "doubled consonant glyph printed"
+ },
+ {
+  "verse": "79",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "भवतो",
+  "confidence": "high",
+  "note": "final vowel o-matra clearly printed"
+ },
+ {
+  "verse": "81",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "ज्ञातवांस्त्वत्",
+  "confidence": "medium",
+  "note": "anusvara on va, cluster stva then tpra"
+ },
+ {
+  "verse": "81",
+  "spot_index": 1,
+  "decision": "A",
+  "own_reading": "वांस्त्वत्प्र",
+  "confidence": "medium",
+  "note": "anusvara on va, cluster stva then tpra"
+ },
+ {
+  "verse": "81",
+  "spot_index": 2,
+  "decision": "A",
+  "own_reading": "स्त्वत्प्रसाद",
+  "confidence": "medium",
+  "note": "anusvara on va, cluster stva then tpra"
+ },
+ {
+  "verse": "82",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "जनार्द्दनम्",
+  "confidence": "medium",
+  "note": "doubled consonant glyph printed"
+ },
+ {
+  "verse": "87",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "कार्य्यं",
+  "confidence": "high",
+  "note": "doubled consonant glyph printed"
+ },
+ {
+  "verse": "87",
+  "spot_index": 1,
+  "decision": "B",
+  "own_reading": "मर्च्चयेत्",
+  "confidence": "high",
+  "note": "doubled consonant glyph printed"
+ },
+ {
+  "verse": "88",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "सर्व्वसङ्ग",
+  "confidence": "high",
+  "note": "doubled consonant glyph printed"
+ },
+ {
+  "verse": "92",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "सर्व्वप्रय",
+  "confidence": "high",
+  "note": "doubled consonant glyph printed"
+ },
+ {
+  "verse": "93",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "जनार्द्दन",
+  "confidence": "medium",
+  "note": "doubled consonant glyph printed"
+ },
+ {
+  "verse": "93",
+  "spot_index": 1,
+  "decision": "B",
+  "own_reading": "कार्य्यं",
+  "confidence": "high",
+  "note": "doubled consonant glyph printed"
+ },
+ {
+  "verse": "95",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "ऐश्वर्य्यं",
+  "confidence": "high",
+  "note": "doubled consonant glyph printed"
+ },
+ {
+  "verse": "95",
+  "spot_index": 1,
+  "decision": "B",
+  "own_reading": "कार्य्यं",
+  "confidence": "high",
+  "note": "doubled consonant glyph printed"
+ },
+ {
+  "verse": "96",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "सर्व्वभूता",
+  "confidence": "high",
+  "note": "doubled consonant glyph printed"
+ },
+ {
+  "verse": "96",
+  "spot_index": 1,
+  "decision": "A",
+  "own_reading": "अन्तर्यामी",
+  "confidence": "medium",
+  "note": "single consonant glyph printed"
+ },
+ {
+  "verse": "96",
+  "spot_index": 2,
+  "decision": "A",
+  "own_reading": "कर्तृत्वं",
+  "confidence": "medium",
+  "note": "single consonant glyph printed"
+ },
+ {
+  "verse": "97",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "कर्म्मयोगेन",
+  "confidence": "high",
+  "note": "doubled consonant glyph printed"
+ },
+ {
+  "verse": "97",
+  "spot_index": 1,
+  "decision": "B",
+  "own_reading": "गर्च्चय",
+  "confidence": "high",
+  "note": "doubled consonant glyph printed"
+ },
+ {
+  "verse": "99",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "पूर्वं",
+  "confidence": "medium",
+  "note": "single consonant glyph printed"
+ },
+ {
+  "verse": "101",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "पर्व्वताश्",
+  "confidence": "high",
+  "note": "doubled consonant glyph printed"
+ },
+ {
+  "verse": "105",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "सर्व्वकर्म्म",
+  "confidence": "high",
+  "note": "doubled consonant glyph printed"
+ },
+ {
+  "verse": "105",
+  "spot_index": 1,
+  "decision": "B",
+  "own_reading": "सर्व्वकर्म्माणि",
+  "confidence": "high",
+  "note": "doubled consonant glyph printed"
+ },
+ {
+  "verse": "106",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "पूर्व्विकाम्",
+  "confidence": "high",
+  "note": "doubled consonant glyph printed"
+ },
+ {
+  "verse": "108",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "निर्द्देशान्",
+  "confidence": "medium",
+  "note": "doubled consonant glyph printed"
+ },
+ {
+  "verse": "108",
+  "spot_index": 1,
+  "decision": "B",
+  "own_reading": "पर्व्वतम्",
+  "confidence": "high",
+  "note": "doubled consonant glyph printed"
+ },
+ {
+  "verse": "109",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "श्वर्य्यप्रभाव",
+  "confidence": "medium",
+  "note": "doubled consonant glyph printed"
+ },
+ {
+  "verse": "109",
+  "spot_index": 1,
+  "decision": "B",
+  "own_reading": "सूर्य्यसङ्क",
+  "confidence": "medium",
+  "note": "doubled consonant glyph printed"
+ },
+ {
+  "verse": "110",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "गन्धर्वाप्स",
+  "confidence": "high",
+  "note": "single consonant glyph printed"
+ },
+ {
+  "verse": "112",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "सूर्य्यायुत",
+  "confidence": "medium",
+  "note": "doubled consonant glyph printed"
+ },
+ {
+  "verse": "113",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "सर्व्वदेहि",
+  "confidence": "high",
+  "note": "doubled consonant glyph printed"
+ },
+ {
+  "verse": "114",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "पूर्व्वम",
+  "confidence": "high",
+  "note": "doubled consonant glyph printed"
+ },
+ {
+  "verse": "115",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "मर्चिर्भिरुप",
+  "confidence": "medium",
+  "note": "doubled consonant glyph printed"
+ },
+ {
+  "verse": "116",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "परिष्वजे",
+  "confidence": "high",
+  "note": "single consonant glyph printed"
+ },
+ {
+  "verse": "120",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "ार्चिर्म्मयो",
+  "confidence": "medium",
+  "note": "doubled consonant glyph printed"
+ },
+ {
+  "verse": "120",
+  "spot_index": 1,
+  "decision": "B",
+  "own_reading": "सर्व्वत्रगं",
+  "confidence": "low",
+  "note": "doubled consonant glyph printed"
+ },
+ {
+  "verse": "122",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "सर्वभूता",
+  "confidence": "high",
+  "note": "single consonant glyph printed"
+ },
+ {
+  "verse": "122",
+  "spot_index": 1,
+  "decision": "B",
+  "own_reading": "मैश्वर्य्यमास्",
+  "confidence": "medium",
+  "note": "doubled consonant glyph printed"
+ },
+ {
+  "verse": "123",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "सर्वप्रय",
+  "confidence": "medium",
+  "note": "single consonant glyph printed"
+ },
+ {
+  "verse": "124",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "सर्वेपप्रच",
+  "confidence": "medium",
+  "note": "single consonant glyph printed"
+ },
+ {
+  "verse": "124",
+  "spot_index": 1,
+  "decision": "A",
+  "own_reading": "रुड़ध्वजम् (nukta dot under ड)",
+  "confidence": "high",
+  "note": "single consonant glyph printed"
+ },
+ {
+  "verse": "125",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "तद्वदाशेषमस्",
+  "confidence": "medium",
+  "note": "glyph for dva then da printed, so extra letters present"
+ },
+ {
+  "verse": "126",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "धर्म्मादि",
+  "confidence": "high",
+  "note": "doubled consonant glyph printed"
+ },
+ {
+  "verse": "126",
+  "spot_index": 1,
+  "decision": "A",
+  "own_reading": "शक्रः",
+  "confidence": "high",
+  "note": "single consonant glyph printed"
+ },
+ {
+  "verse": "126",
+  "spot_index": 2,
+  "decision": "A",
+  "own_reading": "शक्रः",
+  "confidence": "high",
+  "note": "single consonant glyph printed"
+ },
+ {
+  "verse": "127",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "कूर्म्मरूपी",
+  "confidence": "high",
+  "note": "doubled consonant glyph printed"
+ },
+ {
+  "verse": "127",
+  "spot_index": 1,
+  "decision": "B",
+  "own_reading": "जनार्द्दनः",
+  "confidence": "medium",
+  "note": "doubled consonant glyph printed"
+ },
+ {
+  "verse": "128",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "कौर्म्ममुत्",
+  "confidence": "high",
+  "note": "doubled consonant glyph printed"
+ },
+ {
+  "verse": "130",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "सर्वपापै",
+  "confidence": "high",
+  "note": "single consonant glyph printed"
+ },
+ {
+  "verse": "131",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "कौर्म्मंकूर्म्म",
+  "confidence": "medium",
+  "note": "doubled consonant glyph printed"
+ },
+ {
+  "verse": "131",
+  "spot_index": 1,
+  "decision": "B",
+  "own_reading": "कूर्म्मस्वर",
+  "confidence": "medium",
+  "note": "doubled consonant glyph printed"
+ }
+]

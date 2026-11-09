@@ -1,0 +1,186 @@
+[
+ {
+  "verse": 33,
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "र्द",
+  "confidence": "high",
+  "note": "single द under reph"
+ },
+ {
+  "verse": 33,
+  "spot_index": 1,
+  "decision": "A",
+  "own_reading": "र्द",
+  "confidence": "high",
+  "note": "single द under reph"
+ },
+ {
+  "verse": 35,
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "र्व्व",
+  "confidence": "high",
+  "note": "व visibly doubled (two bowls) under reph"
+ },
+ {
+  "verse": 37,
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "र्व्वे",
+  "confidence": "high",
+  "note": "doubled व"
+ },
+ {
+  "verse": 37,
+  "spot_index": 1,
+  "decision": "B",
+  "own_reading": "र्व्व",
+  "confidence": "high",
+  "note": "doubled व"
+ },
+ {
+  "verse": 38,
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "र्व्व",
+  "confidence": "high",
+  "note": "doubled व"
+ },
+ {
+  "verse": 39,
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "र्य्य",
+  "confidence": "medium",
+  "note": "य appears doubled, wide conjunct"
+ },
+ {
+  "verse": 39,
+  "spot_index": 1,
+  "decision": "B",
+  "own_reading": "र्व्व",
+  "confidence": "high",
+  "note": "doubled व"
+ },
+ {
+  "verse": 41,
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "द्वि",
+  "confidence": "medium",
+  "note": "lower element looks like व not द"
+ },
+ {
+  "verse": 41,
+  "spot_index": 1,
+  "decision": "unclear",
+  "own_reading": "ण or गा (neither श nor plain ग clearly)",
+  "confidence": "low",
+  "note": "final glyph has blob plus two verticals; unlike the ग्र-like श seen elsewhere and unlike single-stem ग; cannot resolve between ण/गा"
+ },
+ {
+  "verse": 43,
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "र्व्व",
+  "confidence": "high",
+  "note": "doubled व"
+ },
+ {
+  "verse": 43,
+  "spot_index": 1,
+  "decision": "unclear",
+  "own_reading": "व + ट्ट-like glyph (top loop, stem, large lower loop with tail) + ष्य-like ligature",
+  "confidence": "low",
+  "note": "glyph 2 differs from printed ष्ठ (round stacked loops seen in तिष्ठ) and no clear धृ; ligature not parsable"
+ },
+ {
+  "verse": 43,
+  "spot_index": 2,
+  "decision": "unclear",
+  "own_reading": "same as previous spot",
+  "confidence": "low",
+  "note": "same word; neither reading verified"
+ },
+ {
+  "verse": 43,
+  "spot_index": 3,
+  "decision": "B",
+  "own_reading": "र्म्म",
+  "confidence": "medium",
+  "note": "म्म conjunct before म"
+ },
+ {
+  "verse": 46,
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "र्व्वि",
+  "confidence": "high",
+  "note": "doubled व"
+ },
+ {
+  "verse": 46,
+  "spot_index": 1,
+  "decision": "B",
+  "own_reading": "र्व्वे",
+  "confidence": "high",
+  "note": "doubled व"
+ },
+ {
+  "verse": 48,
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "निर्वृतः",
+  "confidence": "high",
+  "note": "reph visible above व, ृ below"
+ },
+ {
+  "verse": 48,
+  "spot_index": 1,
+  "decision": "B",
+  "own_reading": "र्य्य",
+  "confidence": "medium",
+  "note": "य appears doubled"
+ },
+ {
+  "verse": 49,
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "र्म्म",
+  "confidence": "high",
+  "note": "म्म conjunct"
+ },
+ {
+  "verse": 49,
+  "spot_index": 1,
+  "decision": "A",
+  "own_reading": "च्छे",
+  "confidence": "high",
+  "note": "च्छे with no व visible"
+ },
+ {
+  "verse": 52,
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "र्च्च",
+  "confidence": "high",
+  "note": "च stacked on च under reph"
+ },
+ {
+  "verse": 60,
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "र्च्च",
+  "confidence": "high",
+  "note": "stacked च्च"
+ },
+ {
+  "verse": 60,
+  "spot_index": 1,
+  "decision": "B",
+  "own_reading": "र्म्म",
+  "confidence": "high",
+  "note": "म्म conjunct"
+ }
+]

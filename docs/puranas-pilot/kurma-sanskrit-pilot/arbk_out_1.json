@@ -1,0 +1,434 @@
+[
+ {
+  "verse": "1",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "",
+  "confidence": "medium",
+  "note": "printed doubled consonant after reph"
+ },
+ {
+  "verse": "4",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "",
+  "confidence": "medium",
+  "note": "printed doubled consonant after reph"
+ },
+ {
+  "verse": "7",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "",
+  "confidence": "medium",
+  "note": "printed doubled consonant after reph"
+ },
+ {
+  "verse": "9",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "",
+  "confidence": "medium",
+  "note": "printed doubled consonant after reph"
+ },
+ {
+  "verse": "10",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "",
+  "confidence": "medium",
+  "note": "printed doubled consonant after reph"
+ },
+ {
+  "verse": "10",
+  "spot_index": 1,
+  "decision": "A",
+  "own_reading": "",
+  "confidence": "medium",
+  "note": "ङ्ग printed, not anusvara"
+ },
+ {
+  "verse": "11",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "",
+  "confidence": "low",
+  "note": "double-d form looked printed"
+ },
+ {
+  "verse": "11",
+  "spot_index": 1,
+  "decision": "B",
+  "own_reading": "",
+  "confidence": "medium",
+  "note": "printed doubled consonant after reph"
+ },
+ {
+  "verse": "12",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "",
+  "confidence": "medium",
+  "note": "glyph same as ञ्च in वंशानुचरितञ्चैव"
+ },
+ {
+  "verse": "12",
+  "spot_index": 1,
+  "decision": "B",
+  "own_reading": "",
+  "confidence": "medium",
+  "note": "same"
+ },
+ {
+  "verse": "15",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "",
+  "confidence": "medium",
+  "note": "nukta dot visible under ड"
+ },
+ {
+  "verse": "16",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "",
+  "confidence": "medium",
+  "note": "anusvara over ं+क्ष, no ङ्"
+ },
+ {
+  "verse": "18",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "",
+  "confidence": "medium",
+  "note": "printed doubled consonant after reph"
+ },
+ {
+  "verse": "18",
+  "spot_index": 1,
+  "decision": "B",
+  "own_reading": "",
+  "confidence": "medium",
+  "note": "printed doubled consonant after reph"
+ },
+ {
+  "verse": "20",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "",
+  "confidence": "medium",
+  "note": "printed doubled consonant after reph"
+ },
+ {
+  "verse": "21",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "",
+  "confidence": "medium",
+  "note": "printed doubled consonant after reph"
+ },
+ {
+  "verse": "22",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "",
+  "confidence": "medium",
+  "note": "printed doubled consonant after reph"
+ },
+ {
+  "verse": "23",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "",
+  "confidence": "medium",
+  "note": "printed doubled consonant after reph"
+ },
+ {
+  "verse": "24",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "",
+  "confidence": "medium",
+  "note": "printed doubled consonant after reph"
+ },
+ {
+  "verse": "25",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "",
+  "confidence": "medium",
+  "note": "same ञ्च glyph"
+ },
+ {
+  "verse": "25",
+  "spot_index": 1,
+  "decision": "B",
+  "own_reading": "",
+  "confidence": "medium",
+  "note": "same"
+ },
+ {
+  "verse": "26",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "",
+  "confidence": "medium",
+  "note": "printed doubled consonant after reph"
+ },
+ {
+  "verse": "26",
+  "spot_index": 1,
+  "decision": "B",
+  "own_reading": "",
+  "confidence": "medium",
+  "note": "printed doubled consonant after reph"
+ },
+ {
+  "verse": "26",
+  "spot_index": 2,
+  "decision": "B",
+  "own_reading": "",
+  "confidence": "medium",
+  "note": "printed doubled consonant after reph"
+ },
+ {
+  "verse": "28",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "",
+  "confidence": "medium",
+  "note": "printed doubled consonant after reph"
+ },
+ {
+  "verse": "28",
+  "spot_index": 1,
+  "decision": "B",
+  "own_reading": "",
+  "confidence": "low",
+  "note": "द्द-like glyph"
+ },
+ {
+  "verse": "29",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "",
+  "confidence": "low",
+  "note": "द्द-like glyph"
+ },
+ {
+  "verse": "29",
+  "spot_index": 1,
+  "decision": "B",
+  "own_reading": "",
+  "confidence": "medium",
+  "note": "printed doubled consonant after reph"
+ },
+ {
+  "verse": "33",
+  "spot_index": 0,
+  "decision": "unclear",
+  "own_reading": "",
+  "confidence": "low",
+  "note": "not reliably viewed (image views failed/ambiguous)"
+ },
+ {
+  "verse": "33",
+  "spot_index": 1,
+  "decision": "unclear",
+  "own_reading": "",
+  "confidence": "low",
+  "note": "not reliably viewed (image views failed/ambiguous)"
+ },
+ {
+  "verse": "34",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "",
+  "confidence": "low",
+  "note": "न्म glyph visible between र्म and यी"
+ },
+ {
+  "verse": "35",
+  "spot_index": 0,
+  "decision": "unclear",
+  "own_reading": "",
+  "confidence": "low",
+  "note": "not reliably viewed (image views failed/ambiguous)"
+ },
+ {
+  "verse": "37",
+  "spot_index": 0,
+  "decision": "unclear",
+  "own_reading": "",
+  "confidence": "low",
+  "note": "not reliably viewed (image views failed/ambiguous)"
+ },
+ {
+  "verse": "37",
+  "spot_index": 1,
+  "decision": "unclear",
+  "own_reading": "",
+  "confidence": "low",
+  "note": "not reliably viewed (image views failed/ambiguous)"
+ },
+ {
+  "verse": "38",
+  "spot_index": 0,
+  "decision": "unclear",
+  "own_reading": "",
+  "confidence": "low",
+  "note": "not reliably viewed (image views failed/ambiguous)"
+ },
+ {
+  "verse": "39",
+  "spot_index": 0,
+  "decision": "unclear",
+  "own_reading": "",
+  "confidence": "low",
+  "note": "not reliably viewed (image views failed/ambiguous)"
+ },
+ {
+  "verse": "39",
+  "spot_index": 1,
+  "decision": "unclear",
+  "own_reading": "",
+  "confidence": "low",
+  "note": "not reliably viewed (image views failed/ambiguous)"
+ },
+ {
+  "verse": "41",
+  "spot_index": 0,
+  "decision": "unclear",
+  "own_reading": "",
+  "confidence": "low",
+  "note": "not reliably viewed (image views failed/ambiguous)"
+ },
+ {
+  "verse": "41",
+  "spot_index": 1,
+  "decision": "unclear",
+  "own_reading": "",
+  "confidence": "low",
+  "note": "not reliably viewed (image views failed/ambiguous)"
+ },
+ {
+  "verse": "43",
+  "spot_index": 0,
+  "decision": "unclear",
+  "own_reading": "",
+  "confidence": "low",
+  "note": "not reliably viewed (image views failed/ambiguous)"
+ },
+ {
+  "verse": "43",
+  "spot_index": 1,
+  "decision": "unclear",
+  "own_reading": "",
+  "confidence": "low",
+  "note": "not reliably viewed (image views failed/ambiguous)"
+ },
+ {
+  "verse": "43",
+  "spot_index": 2,
+  "decision": "unclear",
+  "own_reading": "",
+  "confidence": "low",
+  "note": "not reliably viewed (image views failed/ambiguous)"
+ },
+ {
+  "verse": "43",
+  "spot_index": 3,
+  "decision": "unclear",
+  "own_reading": "",
+  "confidence": "low",
+  "note": "not reliably viewed (image views failed/ambiguous)"
+ },
+ {
+  "verse": "46",
+  "spot_index": 0,
+  "decision": "unclear",
+  "own_reading": "",
+  "confidence": "low",
+  "note": "not reliably viewed (image views failed/ambiguous)"
+ },
+ {
+  "verse": "46",
+  "spot_index": 1,
+  "decision": "unclear",
+  "own_reading": "",
+  "confidence": "low",
+  "note": "not reliably viewed (image views failed/ambiguous)"
+ },
+ {
+  "verse": "48",
+  "spot_index": 0,
+  "decision": "unclear",
+  "own_reading": "",
+  "confidence": "low",
+  "note": "not reliably viewed (image views failed/ambiguous)"
+ },
+ {
+  "verse": "48",
+  "spot_index": 1,
+  "decision": "unclear",
+  "own_reading": "",
+  "confidence": "low",
+  "note": "not reliably viewed (image views failed/ambiguous)"
+ },
+ {
+  "verse": "49",
+  "spot_index": 0,
+  "decision": "unclear",
+  "own_reading": "",
+  "confidence": "low",
+  "note": "not reliably viewed (image views failed/ambiguous)"
+ },
+ {
+  "verse": "49",
+  "spot_index": 1,
+  "decision": "unclear",
+  "own_reading": "",
+  "confidence": "low",
+  "note": "not reliably viewed (image views failed/ambiguous)"
+ },
+ {
+  "verse": "52",
+  "spot_index": 0,
+  "decision": "unclear",
+  "own_reading": "",
+  "confidence": "low",
+  "note": "not reliably viewed (image views failed/ambiguous)"
+ },
+ {
+  "verse": "60",
+  "spot_index": 0,
+  "decision": "unclear",
+  "own_reading": "",
+  "confidence": "low",
+  "note": "not reliably viewed (image views failed/ambiguous)"
+ },
+ {
+  "verse": "60",
+  "spot_index": 1,
+  "decision": "B",
+  "own_reading": "",
+  "confidence": "medium",
+  "note": "printed doubled consonant after reph"
+ },
+ {
+  "verse": "61",
+  "spot_index": 0,
+  "decision": "B",
+  "own_reading": "",
+  "confidence": "medium",
+  "note": "printed doubled consonant after reph"
+ },
+ {
+  "verse": "68",
+  "spot_index": 0,
+  "decision": "A",
+  "own_reading": "",
+  "confidence": "medium",
+  "note": "nukta dot under ड"
+ }
+]
