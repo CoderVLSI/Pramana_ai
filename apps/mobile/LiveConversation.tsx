@@ -1971,9 +1971,6 @@ export default function LiveConversation({
           </View>
           <Text style={styles.footnote}>
             AI replies · check sources
-            {process.env.EXPO_PUBLIC_BUILD_NUMBER
-              ? ` · build ${process.env.EXPO_PUBLIC_BUILD_NUMBER}`
-              : ""}
           </Text>
         </View>
       </View>
